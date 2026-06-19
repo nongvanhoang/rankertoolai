@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" rx="18" fill="#312e81"/>
+  <!-- Speech bubble icon -->
+  <path fill="white" opacity="0.95" d="M18 22 Q18 16 24 16 L76 16 Q82 16 82 22 L82 58 Q82 64 76 64 L40 64 L24 80 L24 64 Q18 64 18 58 Z"/>
+  <!-- Text lines inside bubble -->
+  <rect fill="#312e81" x="28" y="30" width="44" height="5" rx="2.5"/>
+  <rect fill="#312e81" x="28" y="42" width="32" height="5" rx="2.5"/>
+</svg>

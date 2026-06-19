@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" rx="20" fill="#10a37f"/>
+  <!-- OpenAI simplified swirl -->
+  <path fill="white" d="M50 22a28 28 0 0 1 13.3 52.7A28 28 0 0 1 36.7 25.3 27.8 27.8 0 0 1 50 22zm0 5a23 23 0 1 0 0 46 23 23 0 0 0 0-46zm0 6a17 17 0 0 1 8 32.2V53l-8-4.6-8 4.6v12.2A17 17 0 0 1 50 33zm6 16.9L50 53l-6-3.1V38.6l6-3.4 6 3.4v11.3z"/>
+</svg>

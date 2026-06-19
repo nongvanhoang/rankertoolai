@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" rx="18" fill="#FF8400"/>
+  <!-- Ahrefs "A" lettermark -->
+  <path fill="white" d="M50 18 L76 78 L63 78 L57 62 L43 62 L37 78 L24 78 Z M50 32 L44 52 L56 52 Z"/>
+</svg>

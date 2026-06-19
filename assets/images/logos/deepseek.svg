@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" rx="20" fill="#0b1120"/>
+  <!-- DeepSeek: whale/wave shape with teal glow -->
+  <defs>
+    <linearGradient id="dsGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+  </defs>
+  <!-- body -->
+  <ellipse fill="url(#dsGrad)" cx="50" cy="52" rx="26" ry="20"/>
+  <!-- tail fin -->
+  <path fill="url(#dsGrad)" d="M74 52 L86 40 L86 64 Z"/>
+  <!-- eye -->
+  <circle fill="white" cx="36" cy="48" r="5"/>
+  <circle fill="#0b1120" cx="37" cy="48" r="3"/>
+  <!-- top wave / spout -->
+  <path fill="#06b6d4" d="M50 30 C45 22 50 18 55 22 C52 26 54 30 50 30z" opacity="0.8"/>
+</svg>

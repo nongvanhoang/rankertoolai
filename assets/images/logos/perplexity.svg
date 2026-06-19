@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" rx="20" fill="#1c1c2e"/>
+  <!-- Perplexity: diamond/rhombus icon -->
+  <defs>
+    <linearGradient id="pxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#20c997"/>
+      <stop offset="100%" stop-color="#5c7cfa"/>
+    </linearGradient>
+  </defs>
+  <polygon fill="url(#pxGrad)" points="50,18 76,50 50,82 24,50"/>
+  <polygon fill="#1c1c2e" points="50,30 66,50 50,70 34,50"/>
+  <polygon fill="url(#pxGrad)" points="50,38 60,50 50,62 40,50"/>
+</svg>

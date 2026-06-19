@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="jbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5b21b6"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="18" fill="url(#jbg)"/>
+  <!-- Jasper flame/spark icon -->
+  <path fill="white" opacity="0.95" d="
+    M50 18
+    C50 18 62 28 64 40
+    C66 52 58 54 60 62
+    C62 70 56 76 50 78
+    C44 76 38 70 40 62
+    C42 54 34 52 36 40
+    C38 28 50 18 50 18Z
+  "/>
+  <path fill="#a78bfa" d="
+    M50 36
+    C50 36 56 42 56 50
+    C56 56 52 58 52 62
+    C51 65 50 66 50 66
+    C50 66 49 65 48 62
+    C48 58 44 56 44 50
+    C44 42 50 36 50 36Z
+  "/>
+</svg>

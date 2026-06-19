@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" rx="18" fill="#FF7A59"/>
+  <!-- HubSpot sprocket/atom icon -->
+  <circle cx="50" cy="50" r="14" fill="white"/>
+  <!-- Arms of the sprocket -->
+  <rect fill="white" x="46" y="14" width="8" height="22" rx="4"/>
+  <rect fill="white" x="46" y="64" width="8" height="22" rx="4"/>
+  <rect fill="white" x="14" y="46" width="22" height="8" rx="4"/>
+  <rect fill="white" x="64" y="46" width="22" height="8" rx="4"/>
+</svg>

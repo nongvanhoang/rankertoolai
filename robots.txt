@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+Disallow: /pages/
+Disallow: /link-building-guide.html
+Disallow: /deploy-checklist.html
+Disallow: /500.html
+
+Sitemap: https://rankertoolai.com/sitemap.xml
+
+# IndexNow
+IndexNow-Key: bcbb9e83c3f84cd098e9a71dcf38b086
+IndexNow-Key-Location: https://rankertoolai.com/bcbb9e83c3f84cd098e9a71dcf38b086.txt

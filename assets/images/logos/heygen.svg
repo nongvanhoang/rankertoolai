@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="hg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff4b26"/>
+      <stop offset="100%" stop-color="#ff8a00"/>
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="18" fill="url(#hg)"/>
+  <!-- Video camera icon -->
+  <rect fill="white" opacity="0.95" x="16" y="32" width="48" height="36" rx="8"/>
+  <path fill="white" opacity="0.85" d="M68 42 L84 34 L84 66 L68 58 Z"/>
+  <!-- Lens circle -->
+  <circle cx="36" cy="50" r="8" fill="#ff4b26"/>
+  <circle cx="36" cy="50" r="4" fill="white"/>
+</svg>

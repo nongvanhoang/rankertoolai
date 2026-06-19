@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" rx="20" fill="#1565c0"/>
+  <!-- Otter.ai: sound wave / transcript lines -->
+  <rect fill="white" x="22" y="44" width="8" height="12" rx="4"/>
+  <rect fill="white" x="36" y="34" width="8" height="32" rx="4"/>
+  <rect fill="white" x="50" y="26" width="8" height="48" rx="4"/>
+  <rect fill="white" x="64" y="34" width="8" height="32" rx="4"/>
+  <rect fill="white" x="78" y="44" width="8" height="12" rx="4" opacity="0.7"/>
+</svg>

@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Use Midjourney in 2026 — Complete Beginner's Guide</title>
+  <meta name="description" content="Step-by-step Midjourney guide for beginners. Set up Discord or use the web app, write good prompts, use v6.1 parameters, and generate professional images. Updated for 2026.">
+  <link rel="canonical" href="https://rankertoolai.com/blog/how-to-use-midjourney/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="How to Use Midjourney in 2026 — Complete Beginner's Guide">
+  <meta property="og:description" content="Complete Midjourney guide: Discord setup, web app, writing prompts, v6.1 parameters, aspect ratios, and tips to generate professional images fast.">
+  <meta property="og:url" content="https://rankertoolai.com/blog/how-to-use-midjourney/">
+  <meta property="og:site_name" content="RankerToolAI">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"How to Use Midjourney in 2026","description":"A complete beginner's guide to using Midjourney for AI image generation.","author":{"@type":"Person","name":"Sara Lin","url":"https://rankertoolai.com/author/sara-lin/"},"step":[{"@type":"HowToStep","name":"Create a Midjourney account","text":"Go to midjourney.com and sign up with your Discord account. Choose a plan starting at $10/month."},{"@type":"HowToStep","name":"Access Midjourney","text":"Use the web interface at midjourney.com or join the Midjourney Discord server."},{"@type":"HowToStep","name":"Write your first prompt","text":"Type a detailed description of the image you want. Include subject, style, lighting, and mood."},{"@type":"HowToStep","name":"Use parameters to refine","text":"Add parameters like --ar for aspect ratio, --style for artistic style, and --v 6.1 for the latest model."}]}</script>
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <style>
+    #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
+    @media(min-width:768px){#nav-toggle{display:none;}}
+    #nav-menu{display:none;}
+    #nav-menu.is-open{display:flex;flex-direction:column;position:absolute;top:64px;left:0;right:0;background:#080c18;border-bottom:1px solid rgba(255,255,255,0.08);padding:1rem;z-index:200;box-shadow:var(--shadow-lg);}
+    @media(min-width:768px){#nav-menu{display:flex!important;flex-direction:row;position:static;border:none;padding:0;box-shadow:none;}}
+    .site-header{position:relative;}
+    .step-block{background:var(--color-bg-alt);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:1.25rem 1.5rem;margin-bottom:1.25rem;display:flex;gap:1.25rem;align-items:flex-start;}
+    .step-num{font-size:1.5rem;font-weight:900;color:rgba(249,115,22,0.35);line-height:1;min-width:2rem;flex-shrink:0;}
+    .step-body h3{margin:0 0 0.4rem;font-size:1rem;}
+    .step-body p{margin:0;font-size:0.875rem;color:var(--color-text-muted);line-height:1.7;}
+    .code-block{background:#0d1224;border:1px solid var(--color-border);border-radius:var(--radius);padding:0.75rem 1rem;font-family:monospace;font-size:0.85rem;color:#94a3b8;margin:1rem 0;overflow-x:auto;}
+    .param-table{width:100%;border-collapse:collapse;font-size:0.85rem;margin:1rem 0;}
+    .param-table th{background:#0d1224;padding:0.5rem 0.75rem;text-align:left;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.05em;color:#94a3b8;border-bottom:1px solid var(--color-border);}
+    .param-table td{padding:0.6rem 0.75rem;border-bottom:1px solid rgba(255,255,255,0.05);font-size:0.85rem;}
+    .param-table tr:last-child td{border:none;}
+    code{background:#0d1224;padding:0.15rem 0.4rem;border-radius:4px;font-family:monospace;font-size:0.85rem;color:#94a3b8;}
+    .article-body p{line-height:1.8;color:var(--color-text-muted);margin-bottom:1rem;}
+    .article-body h2{margin-top:2rem;font-size:1.3rem;}
+    .callout{background:var(--color-bg-alt);border-left:3px solid #f97316;border-radius:0 var(--radius) var(--radius) 0;padding:1rem 1.25rem;margin:1.5rem 0;}
+    .callout p{margin:0;font-size:0.9rem;color:var(--color-text-muted);}
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="/" class="site-logo" style="-webkit-text-fill-color:unset;background:none;display:flex;align-items:center;gap:0.5rem;text-decoration:none;">
+        <img src="/assets/images/logo-dark.png" alt="RankerToolAI" width="38" height="38" style="object-fit:contain;">
+        <span style="font-size:1.15rem;font-weight:900;background:linear-gradient(135deg,#f97316,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">RankerTool<span style="background:linear-gradient(135deg,#22c55e,#4ade80);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;"> AI</span></span>
+      </a>
+      <button id="nav-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
+      <ul class="nav-primary" id="nav-menu" role="list">
+        <li><a href="/review/">Reviews</a></li>
+        <li><a href="/best/">Best Tools</a></li>
+        <li><a href="/blog/" class="nav-active">Blog</a></li>
+        <li><a href="/deals/" style="color:#fbbf24;font-weight:600;">Deals</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<div class="container"><nav class="breadcrumb"><a href="/">Home</a><span class="breadcrumb-sep">›</span><a href="/blog/">Blog</a><span class="breadcrumb-sep">›</span><span>How to Use Midjourney</span></nav></div>
+
+<main class="container" style="padding-top:1rem;padding-bottom:4rem;max-width:820px;">
+  <div style="margin-bottom:1.5rem;"><span style="background:rgba(249,115,22,0.1);border:1px solid rgba(249,115,22,0.25);color:#fbbf24;font-size:0.75rem;padding:0.25rem 0.65rem;border-radius:9999px;">Tutorial</span></div>
+  <h1 style="font-size:2rem;line-height:1.3;margin-bottom:0.75rem;">How to Use Midjourney in 2026: Complete Beginner's Guide</h1>
+  <div style="color:var(--color-text-muted);font-size:0.875rem;margin-bottom:2rem;">By <a href="/author/sara-lin/" style="color:#f97316;">Sara Lin</a> · June 18, 2026 · 15 min read · Updated for v6.1</div>
+
+  <div class="callout"><p><strong style="color:#fbbf24;">What you'll learn:</strong> How to set up Midjourney (Discord + web), write effective prompts, use key parameters, control aspect ratios, and generate consistently high-quality images. No prior experience needed.</p></div>
+
+  <div class="article-body">
+    <p>Midjourney produces the best AI images available — but it's also one of the less intuitive tools to start with. This guide walks you through everything from account creation to advanced prompting, based on 5,000+ test images our team has generated.</p>
+  </div>
+
+  <h2 style="font-size:1.3rem;margin-top:2rem;">Step 1: Get Started with Midjourney</h2>
+
+  <div class="step-block">
+    <div class="step-num">1</div>
+    <div class="step-body">
+      <h3>Create your account</h3>
+      <p>Go to <strong>midjourney.com</strong> and click "Sign In." You'll use your Discord account — create one if you don't have it (free). Then choose a plan: Basic ($10/mo, ~200 images) is enough to start. No free trial available in 2026.</p>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-num">2</div>
+    <div class="step-body">
+      <h3>Choose: Web App or Discord</h3>
+      <p><strong>Web app (midjourney.com):</strong> Easier for beginners. Clean interface, no Discord knowledge needed. Still in beta but fully functional.<br><strong>Discord:</strong> More control, community access, faster for power users. Join the official Midjourney Discord server and use any channel marked "image-gen."</p>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-num">3</div>
+    <div class="step-body">
+      <h3>Generate your first image</h3>
+      <p>In the web app, type in the prompt box. On Discord, type <code>/imagine</code> followed by your prompt. Press Enter and wait 30–60 seconds for 4 image variations to appear.</p>
+    </div>
+  </div>
+
+  <h2 style="font-size:1.3rem;margin-top:2rem;">Step 2: Write Effective Prompts</h2>
+
+  <div class="article-body">
+    <p>The biggest difference between mediocre and excellent Midjourney results is prompt quality. Here's the structure that consistently works:</p>
+  </div>
+
+  <div class="code-block">[Subject], [Style/Medium], [Lighting], [Color palette], [Mood/Atmosphere], [Camera angle]</div>
+
+  <div class="article-body">
+    <p><strong>Example (weak):</strong> <code>a woman in a coffee shop</code><br>
+    <strong>Example (strong):</strong> <code>a young woman reading a book in a cozy Parisian café, warm morning light through large windows, soft bokeh background, muted earth tones, peaceful and contemplative mood, eye-level perspective, shot on 85mm lens</code></p>
+    <p>The strong prompt gives Midjourney specific creative direction. The weak prompt leaves too much to interpretation — results vary widely and often don't match your vision.</p>
+  </div>
+
+  <h2 style="font-size:1.3rem;margin-top:2rem;">Step 3: Essential Midjourney Parameters</h2>
+  <div class="article-body"><p>Parameters go at the end of your prompt and control specific aspects of image generation:</p></div>
+
+  <div style="overflow-x:auto;">
+    <table class="param-table">
+      <thead><tr><th>Parameter</th><th>What it does</th><th>Example</th></tr></thead>
+      <tbody>
+        <tr><td><code>--ar 16:9</code></td><td>Aspect ratio (landscape, portrait, square)</td><td><code>--ar 16:9</code> for widescreen</td></tr>
+        <tr><td><code>--v 6.1</code></td><td>Model version (6.1 = latest, best quality)</td><td>Always add <code>--v 6.1</code></td></tr>
+        <tr><td><code>--style raw</code></td><td>Reduces aesthetic processing for photorealism</td><td>Portraits, product shots</td></tr>
+        <tr><td><code>--q 2</code></td><td>Quality (1=fast, 2=high detail)</td><td>Use <code>--q 2</code> for final images</td></tr>
+        <tr><td><code>--chaos 20</code></td><td>Variation (0=consistent, 100=wild)</td><td>Brainstorming: <code>--chaos 40</code></td></tr>
+        <tr><td><code>--no text</code></td><td>Exclude text from images</td><td>Prevents unwanted letters</td></tr>
+        <tr><td><code>--sref [url]</code></td><td>Style reference — match a visual style</td><td>Brand consistency</td></tr>
+        <tr><td><code>--seed [number]</code></td><td>Repeat exact same generation</td><td>Reproduce a good result</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="article-body">
+    <p><strong>Full example with parameters:</strong></p>
+  </div>
+  <div class="code-block">a minimalist home office setup with clean lines, Scandinavian design, natural light from left window, white and oak wood tones, calm and productive atmosphere --ar 16:9 --v 6.1 --style raw --q 2</div>
+
+  <h2 style="font-size:1.3rem;margin-top:2rem;">Step 4: Aspect Ratios for Common Use Cases</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:0.75rem;margin:1rem 0;">
+    <div style="background:var(--color-bg-alt);border-radius:var(--radius);padding:0.75rem;text-align:center;"><div style="font-size:0.75rem;color:#f97316;font-weight:700;margin-bottom:0.25rem;">Social Media Post</div><code>--ar 1:1</code></div>
+    <div style="background:var(--color-bg-alt);border-radius:var(--radius);padding:0.75rem;text-align:center;"><div style="font-size:0.75rem;color:#f97316;font-weight:700;margin-bottom:0.25rem;">Instagram Story</div><code>--ar 9:16</code></div>
+    <div style="background:var(--color-bg-alt);border-radius:var(--radius);padding:0.75rem;text-align:center;"><div style="font-size:0.75rem;color:#f97316;font-weight:700;margin-bottom:0.25rem;">Blog Header</div><code>--ar 16:9</code></div>
+    <div style="background:var(--color-bg-alt);border-radius:var(--radius);padding:0.75rem;text-align:center;"><div style="font-size:0.75rem;color:#f97316;font-weight:700;margin-bottom:0.25rem;">Portrait / Poster</div><code>--ar 2:3</code></div>
+    <div style="background:var(--color-bg-alt);border-radius:var(--radius);padding:0.75rem;text-align:center;"><div style="font-size:0.75rem;color:#f97316;font-weight:700;margin-bottom:0.25rem;">Wide Landscape</div><code>--ar 21:9</code></div>
+    <div style="background:var(--color-bg-alt);border-radius:var(--radius);padding:0.75rem;text-align:center;"><div style="font-size:0.75rem;color:#f97316;font-weight:700;margin-bottom:0.25rem;">A4 Print</div><code>--ar 3:4</code></div>
+  </div>
+
+  <div class="article-body">
+    <h2>5 Tips for Better Results</h2>
+    <p><strong>1. Be specific about photography style.</strong> Adding "shot on Sony A7IV, 50mm f/1.4, shallow depth of field" to portrait prompts dramatically improves photorealism.</p>
+    <p><strong>2. Use negative prompts.</strong> Add <code>--no blurry, low quality, watermark, text</code> to avoid common issues in generated images.</p>
+    <p><strong>3. Vary with U and V buttons.</strong> After getting 4 initial images, U1-U4 upscales a specific variation. V1-V4 generates more variations of one image. Start with V to explore, then U to finalize.</p>
+    <p><strong>4. Seed number for consistency.</strong> Copy the seed from a successful image and reuse it with slightly different prompts to maintain visual consistency across a series.</p>
+    <p><strong>5. Style reference for brand work.</strong> Upload a reference image URL with <code>--sref [url]</code> to match a specific visual aesthetic across multiple generations — crucial for brand consistency.</p>
+
+    <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem;">
+      <a href="/review/midjourney/" class="btn btn-primary">Midjourney Full Review →</a>
+      <a href="/best/ai-image-generators/" class="btn btn-secondary">Best AI Image Generators →</a>
+      <a href="/alternatives/midjourney/" class="btn btn-secondary">Free Alternatives →</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="/" style="display:flex;align-items:center;gap:0.5rem;text-decoration:none;margin-bottom:0.75rem;"><img src="/assets/images/logo-dark.png" alt="" width="32" height="32" style="object-fit:contain;"><span style="font-size:1rem;font-weight:900;background:linear-gradient(135deg,#f97316,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">RankerToolAI</span></a><p style="color:var(--color-text-muted);font-size:0.875rem;">Independent AI tool reviews.</p></div>
+      <div><h4 class="footer-heading">Blog</h4><ul class="footer-links"><li><a href="/blog/">All Posts</a></li><li><a href="/blog/chatgpt-vs-claude-for-writing/">ChatGPT vs Claude</a></li><li><a href="/blog/best-ai-tools-for-freelancers/">AI for Freelancers</a></li></ul></div>
+      <div><h4 class="footer-heading">Reviews</h4><ul class="footer-links"><li><a href="/review/midjourney/">Midjourney</a></li><li><a href="/best/ai-image-generators/">Best Image Generators</a></li></ul></div>
+      <div><h4 class="footer-heading">Company</h4><ul class="footer-links"><li><a href="/about/">About</a></li><li><a href="/affiliate-disclosure/">Affiliate Disclosure</a></li><li><a href="/privacy-policy/">Privacy Policy</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 RankerToolAI. All rights reserved.</span></div>
+  </div>
+</footer>
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/cookie-consent.js" defer></script>
+</body>
+</html>
