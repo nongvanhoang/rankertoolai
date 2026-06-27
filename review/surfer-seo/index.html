@@ -86,15 +86,11 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-81KB8ECCVF');
-    gtag('config', 'AW-XXXXXXXXXX');
-
     // Conversion: affiliate click (fires when user clicks /go/ link)
     document.addEventListener('DOMContentLoaded', function() {
       document.querySelectorAll('a[href*="/go/"]').forEach(function(el) {
         el.addEventListener('click', function() {
-          gtag('event', 'conversion', {
-            'send_to': 'AW-XXXXXXXXXX/YYYYYYYYYY',
-            'value': 1.0,
+          gtag('event', 'conversion', {            'value': 1.0,
             'currency': 'USD'
           });
           gtag('event', 'affiliate_click', {
@@ -105,9 +101,7 @@
       });
 
       // Conversion: 60-second engaged page view
-      setTimeout(function() {
-        gtag('event', 'conversion', {'send_to': 'AW-XXXXXXXXXX/ZZZZZZZZZZ'});
-      }, 60000);
+      setTimeout(function() {      }, 60000);
     });
   </script>
 
