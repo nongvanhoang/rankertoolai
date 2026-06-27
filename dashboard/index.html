@@ -54,7 +54,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
   <span style="color:#1e293b;font-size:1.2rem">|</span>
   <span style="font-size:0.8rem;font-weight:600;color:#475569">Site Dashboard</span>
   <div class="header-meta">
-    <span class="ts">Generated: 2026-06-27 14:14</span>
+    <span class="ts">Generated: 2026-06-27 14:27</span>
     <a href="/" style="font-size:0.78rem;color:#334155">← Live Site</a>
   </div>
 </div>
@@ -1743,33 +1743,129 @@ tr:hover{background:rgba(255,255,255,0.015)}
 <!-- ANALYTICS -->
 <div class="panel" id="tab-analytics">
   <div style="margin-bottom:1rem;padding:1rem;background:rgba(99,102,241,0.06);border:1px solid rgba(99,102,241,0.2);border-radius:10px;font-size:0.82rem;color:#94a3b8">
-    Analytics data requires Google account login. Click the links below to open live dashboards — they open in a new tab.
+    GA4 property: <strong style="color:#f97316">G-81KB8ECCVF</strong> · Clarity: <strong style="color:#f97316">x97zf4vn2v</strong> · Cần login Google Account để xem data.
   </div>
-  <div class="link-grid">
+
+  <div class="link-grid" style="margin-bottom:1.5rem">
     <div class="link-card">
-      <a href="https://analytics.google.com/analytics/web/#/p{GA4_PROPERTY_ID}/reports/home" target="_blank">Google Analytics 4 →</a>
-      <p>Sessions, users, pageviews, events. Property ID: G-81KB8ECCVF. Check real-time tab for live visitors.</p>
+      <a href="https://analytics.google.com/analytics/web/" target="_blank">GA4 Dashboard →</a>
+      <p>Sessions, users, pageviews, bounce rate. Xem tab Realtime để thấy người dùng đang online ngay lúc này.</p>
     </div>
     <div class="link-card">
       <a href="https://search.google.com/search-console/performance/search-analytics" target="_blank">Google Search Console →</a>
-      <p>Impressions, clicks, average position, CTR. Filter by page to see ranking keywords per review.</p>
+      <p>Impressions, clicks, CTR, average position. Filter by Page để xem keyword nào rank cho từng review page.</p>
+    </div>
+    <div class="link-card">
+      <a href="https://clarity.microsoft.com" target="_blank">Microsoft Clarity →</a>
+      <p>Session recordings + heatmaps. Xem user thực sự làm gì: click đâu, scroll đến đâu, rage click. ID: x97zf4vn2v</p>
     </div>
     <div class="link-card">
       <a href="https://dash.cloudflare.com" target="_blank">Cloudflare Analytics →</a>
-      <p>Total requests, bandwidth, caching stats, bot traffic. Free tier included with Pages deployment.</p>
+      <p>Total requests, bandwidth, bot vs human traffic. Không cần JS — track cả các visit bị adblock chặn GA4.</p>
     </div>
-    <div class="link-card">
-      <a href="https://analytics.google.com/analytics/web/#/report/content-event-events" target="_blank">GA4 Events — Affiliate Clicks →</a>
-      <p>Filter by event "affiliate_click" to see which tools get clicked most. Tracked on all /go/ pages.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-hdr"><span class="card-title">Events đang track — Cách xem trong GA4</span><span class="card-meta">GA4 → Reports → Engagement → Events</span></div>
+    <table>
+      <thead><tr><th>Event</th><th>Ý nghĩa</th><th>Cách xem trong GA4</th><th>Dùng để làm gì</th></tr></thead>
+      <tbody>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><code style="color:#f97316;font-size:0.78rem">affiliate_click</code></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#94a3b8">Click vào /go/ link từ review/compare pages</td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#64748b">Events → affiliate_click → dim: event_label = tool name</td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#64748b">Tool nào được click nhiều nhất</td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><code style="color:#6366f1;font-size:0.78rem">cta_click</code></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#94a3b8">Click CTA với context vị trí (hero/verdict/table/faq...)</td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#64748b">Events → cta_click → dim: cta_context</td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#64748b">CTA ở vị trí nào convert tốt nhất</td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><code style="color:#22c55e;font-size:0.78rem">scroll_depth</code></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#94a3b8">Scroll đến 25% / 50% / 75% / 95% trang</td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#64748b">Events → scroll_depth → dim: depth_pct</td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#64748b">User đọc đến đâu thì bỏ — biết chỗ nào cần cải thiện</td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><code style="color:#22c55e;font-size:0.78rem">engaged</code></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#94a3b8">Ở lại page 15s / 30s / 60s / 120s / 300s</td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#64748b">Events → engaged → dim: seconds</td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#64748b">Content quality: user có thực sự đọc không</td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><code style="color:#eab308;font-size:0.78rem">form_submit</code></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#94a3b8">Submit newsletter form (inline + exit popup)</td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#64748b">Events → form_submit → dim: form_id</td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#64748b">Email list growth rate</td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><code style="color:#eab308;font-size:0.78rem">form_start</code></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#94a3b8">User click vào ô email (intent to subscribe)</td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#64748b">Events → form_start</td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#64748b">form_start ÷ form_submit = completion rate</td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><code style="color:#06b6d4;font-size:0.78rem">outbound_click</code></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#94a3b8">Click link ra ngoài không qua /go/ (chatgpt.com, etc.)</td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#64748b">Events → outbound_click → dim: outbound_domain</td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#64748b">User thoát sang đâu — cơ hội thêm affiliate link</td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><code style="color:#06b6d4;font-size:0.78rem">internal_navigate</code></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#94a3b8">Click link nội bộ (review→compare→alternatives)</td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#64748b">Events → internal_navigate → dim: destination</td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#64748b">User journey funnel: đọc review → đi đâu tiếp</td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><code style="color:#94a3b8;font-size:0.78rem">site_search</code></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#94a3b8">Tìm kiếm trên site (search overlay)</td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#64748b">Events → site_search → dim: search_term</td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#64748b">Keyword gap: user tìm gì nhưng chưa có trang</td>
+        </tr>
+        <tr>
+          <td style="padding:0.65rem 0.75rem"><code style="color:#94a3b8;font-size:0.78rem">faq_expand</code></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#94a3b8">Click mở FAQ item</td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#64748b">Events → faq_expand → dim: faq_question</td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#64748b">FAQ nào được xem nhiều nhất</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card" style="margin-top:1.5rem">
+    <div class="card-hdr"><span class="card-title">Cách xem user journey trong GA4</span></div>
+    <div style="padding:1.25rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;font-size:0.8rem">
+      <div style="background:#080c18;border-radius:8px;padding:1rem">
+        <div style="color:#f97316;font-weight:700;margin-bottom:0.5rem">Traffic vào từ đâu</div>
+        <div style="color:#64748b;line-height:1.8">GA4 → Reports → Acquisition → Traffic Acquisition<br>Phân tích: Organic Search / Direct / Social / Referral</div>
+      </div>
+      <div style="background:#080c18;border-radius:8px;padding:1rem">
+        <div style="color:#6366f1;font-weight:700;margin-bottom:0.5rem">Trang nào được xem nhiều</div>
+        <div style="color:#64748b;line-height:1.8">GA4 → Reports → Engagement → Pages and Screens<br>Sort by Views → xem top review pages</div>
+      </div>
+      <div style="background:#080c18;border-radius:8px;padding:1rem">
+        <div style="color:#22c55e;font-weight:700;margin-bottom:0.5rem">User làm gì trên page</div>
+        <div style="color:#64748b;line-height:1.8">Clarity → Recordings → filter by page<br>Xem session recording theo từng review page</div>
+      </div>
+      <div style="background:#080c18;border-radius:8px;padding:1rem">
+        <div style="color:#eab308;font-weight:700;margin-bottom:0.5rem">Funnel affiliate</div>
+        <div style="color:#64748b;line-height:1.8">GA4 → Explore → Funnel Exploration<br>Step 1: page_view (review) → Step 2: cta_click → Step 3: affiliate_click</div>
+      </div>
     </div>
   </div>
 
   <div class="card" style="margin-top:1.5rem">
-    <div class="card-hdr"><span class="card-title">Affiliate Click Tracking Setup</span></div>
+    <div class="card-hdr"><span class="card-title">Heatmap & Session Recording</span><span class="card-meta">Microsoft Clarity — không cần setup thêm</span></div>
     <div style="padding:1.25rem;font-size:0.82rem;color:#64748b;line-height:1.8">
-      <p>All <code style="color:#f97316">/go/[tool]/</code> pages fire a GA4 event on load:</p>
-      <div class="cmd">gtag('event', 'affiliate_click', &#123; tool: '[slug]', source_path: '[referrer]' &#125;)</div>
-      <p style="margin-top:0.75rem">To see in GA4: Reports → Engagement → Events → filter "affiliate_click" → Secondary dimension: Event parameter "tool"</p>
+      <p>Clarity đã được cài trên toàn bộ site (ID: <code style="color:#f97316">x97zf4vn2v</code>). Vào <a href="https://clarity.microsoft.com" target="_blank" style="color:#f97316">clarity.microsoft.com</a> → chọn project rankertoolai.com:</p>
+      <ul style="margin:0.5rem 0 0 1.25rem;display:flex;flex-direction:column;gap:0.35rem">
+        <li><strong style="color:#94a3b8">Heatmaps</strong> — xem user click đâu, scroll đến đâu trên từng trang</li>
+        <li><strong style="color:#94a3b8">Recordings</strong> — xem lại toàn bộ session của từng user (ẩn danh)</li>
+        <li><strong style="color:#94a3b8">Rage clicks</strong> — chỗ nào user click nhiều lần liên tiếp (UX bug)</li>
+        <li><strong style="color:#94a3b8">Dead clicks</strong> — click vào element không có action</li>
+      </ul>
     </div>
   </div>
 </div>
