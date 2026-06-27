@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting to Roam Research | RankerToolAI</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://rankertoolai.com/go/roam/">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-81KB8ECCVF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-81KB8ECCVF');
+  </script>
+</head>
+<body>
+  <p>Redirecting you to <a href="https://roamresearch.com/" rel="nofollow">Roam Research</a>...</p>
+  <script>
+    (function() {
+      var ref = document.referrer ? new URL(document.referrer).pathname : 'direct';
+      var params = new URLSearchParams(window.location.search);
+      var subid = params.get('ref') || ref.replace(/\//g,'_').replace(/^_|_$/g,'') || 'direct';
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'affiliate_click', {
+          tool: 'roam', source_path: ref, sub_id: subid
+        });
+      }
+      var dest = new URL('https://roamresearch.com/');
+      ['utm_source','utm_medium','utm_campaign'].forEach(function(k) {
+        if (params.has(k)) dest.searchParams.set(k, params.get(k));
+      });
+      setTimeout(function(){ window.location.replace(dest.toString()); }, 280);
+    })();
+  </script>
+</body>
+</html>

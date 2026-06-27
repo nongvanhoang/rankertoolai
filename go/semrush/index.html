@@ -1,14 +1,48 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Redirecting to Semrush | RankerToolAI</title>
+  <title>Redirecting to SEMrush | RankerToolAI</title>
   <meta name="robots" content="noindex, nofollow">
-  <meta http-equiv="refresh" content="0; url=https://www.semrush.com/">
   <link rel="canonical" href="https://rankertoolai.com/go/semrush/">
+
+  <!-- GA4 + Google Ads on redirect page -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-81KB8ECCVF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-81KB8ECCVF');
+    gtag('config', 'AW-XXXXXXXXXX');
+  </script>
+  <script async src="/assets/js/pint.js"></script>
 </head>
 <body>
-  <p>Redirecting you to <a href="https://www.semrush.com/" rel="nofollow sponsored">Semrush</a>...</p>
-  <script>window.location.replace("https://www.semrush.com/");</script>
+  <p>Redirecting you to <a href="https://www.semrush.com/" rel="nofollow sponsored">SEMrush</a>...</p>
+
+  <script>
+  (function() {
+    var ref  = document.referrer ? new URL(document.referrer).pathname : 'direct';
+    var params = new URLSearchParams(window.location.search);
+    var subid  = params.get('ref') || ref.replace(/\//g,'_').replace(/^_|_$/g,'') || 'direct';
+
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'affiliate_click', {
+        tool:        'semrush',
+        source_path: ref,
+        sub_id:      subid,
+      });
+    }
+
+    var dest = new URL('https://www.semrush.com/');
+    dest.searchParams.set('utm_source', 'rankertoolai');
+    dest.searchParams.set('utm_medium', 'affiliate');
+    dest.searchParams.set('utm_campaign', 'review');
+    dest.searchParams.set('utm_content', subid);
+    // PENDING AFFILIATE APPROVAL — replace URL above with Impact Radius link when approved
+
+    setTimeout(function(){ window.location.replace(dest.toString()); }, 280);
+  })();
+  </script>
 </body>
 </html>

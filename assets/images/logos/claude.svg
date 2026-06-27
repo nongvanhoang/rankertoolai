@@ -1,5 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <rect width="100" height="100" rx="20" fill="#c96442"/>
-  <!-- Anthropic A-shape / Claude mark -->
-  <path fill="white" d="M50 18L76 76H24L50 18zm0 14L33 70h34L50 32zm0 12l-9 22h18L50 44z" opacity="0.95"/>
+  <rect width="100" height="100" rx="18" fill="#CF7555"/>
+  <!-- Claude starburst / asterisk mark (12 rays) -->
+  <g transform="translate(50,50)" fill="white">
+    <rect x="-5" y="-34" width="10" height="24" rx="5"/>
+    <rect x="-5" y="-34" width="10" height="24" rx="5" transform="rotate(30)"/>
+    <rect x="-5" y="-34" width="10" height="24" rx="5" transform="rotate(60)"/>
+    <rect x="-5" y="-34" width="10" height="24" rx="5" transform="rotate(90)"/>
+    <rect x="-5" y="-34" width="10" height="24" rx="5" transform="rotate(120)"/>
+    <rect x="-5" y="-34" width="10" height="24" rx="5" transform="rotate(150)"/>
+    <rect x="-5" y="-34" width="10" height="24" rx="5" transform="rotate(180)"/>
+    <rect x="-5" y="-34" width="10" height="24" rx="5" transform="rotate(210)"/>
+    <rect x="-5" y="-34" width="10" height="24" rx="5" transform="rotate(240)"/>
+    <rect x="-5" y="-34" width="10" height="24" rx="5" transform="rotate(270)"/>
+    <rect x="-5" y="-34" width="10" height="24" rx="5" transform="rotate(300)"/>
+    <rect x="-5" y="-34" width="10" height="24" rx="5" transform="rotate(330)"/>
+  </g>
 </svg>

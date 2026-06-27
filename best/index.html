@@ -3,10 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
   <title>Best AI Tools 2026 — Top Picks by Category | RankerToolAI</title>
   <meta name="description" content="The best AI tools in 2026, hand-picked by our team. Best AI writing, image, video, SEO, coding, and productivity tools — all tested and ranked.">
   <link rel="canonical" href="https://rankertoolai.com/best/">
   <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico"><link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
   <link rel="stylesheet" href="/assets/css/base.css">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid rgba(255,255,255,0.1);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;color:var(--color-text);}
@@ -67,13 +72,57 @@
   <meta name="twitter:site" content="@rankertoolai">
   <meta name="twitter:title" content="Best AI Tools 2026 — Top Picks by Category | RankerToolAI">
   <meta name="twitter:description" content="The best AI tools in 2026, hand-picked by our team. Best AI writing, image, video, SEO, coding, and productivity tools — all tested and ranked.">
-  <meta name="twitter:image" content="https://rankertoolai.com/assets/images/og-image.png"></head>
+  <meta name="twitter:image" content="https://rankertoolai.com/assets/images/og-image.png">
+  <!-- ═══ ANALYTICS & ADS TRACKING ═══ -->
+  <!-- Google tag (gtag.js) — GA4 + Google Ads -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-81KB8ECCVF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-81KB8ECCVF');
+    gtag('config', 'AW-XXXXXXXXXX');
+
+    // Conversion: affiliate click (fires when user clicks /go/ link)
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('a[href*="/go/"]').forEach(function(el) {
+        el.addEventListener('click', function() {
+          gtag('event', 'conversion', {
+            'send_to': 'AW-XXXXXXXXXX/YYYYYYYYYY',
+            'value': 1.0,
+            'currency': 'USD'
+          });
+          gtag('event', 'affiliate_click', {
+            'tool': el.href.split('/go/')[1]?.replace(/\//g,'') || 'unknown',
+            'page': window.location.pathname
+          });
+        });
+      });
+
+      // Conversion: 60-second engaged page view
+      setTimeout(function() {
+        gtag('event', 'conversion', {'send_to': 'AW-XXXXXXXXXX/ZZZZZZZZZZ'});
+      }, 60000);
+    });
+  </script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window,document,"clarity","script","x97zf4vn2v");
+  </script>
+  <!-- ══════════════════════════════════ -->
+    <script async src="/assets/js/pint.js"></script>
+</head>
 <body>
 <header class="site-header">
   <div class="container">
     <div class="header-inner">
       <a href="/" class="site-logo" style="-webkit-text-fill-color:unset;background:none;display:flex;align-items:center;gap:0.5rem;text-decoration:none;">
-        <img src="/assets/images/logo-dark.png" alt="" style="height:38px;width:38px;object-fit:contain;">
+        <img src="/assets/images/logo-dark.webp" onerror="this.src='/assets/images/logo-dark.png'" alt="Dark logo" style="height:38px;width:38px;object-fit:contain;">
         <span style="font-size:1.15rem;font-weight:900;background:linear-gradient(135deg,#f97316,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">RankerTool<span style="background:linear-gradient(135deg,#22c55e,#4ade80);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;"> AI</span></span>
       </a>
       <button id="nav-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
@@ -83,6 +132,8 @@
         <li><a href="/alternatives/">Alternatives</a></li>
         <li><a href="/best/" style="color:var(--color-primary);">Best Tools</a></li>
         <li><a href="/category/">Categories</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/deals/" style="color:#fbbf24;font-weight:600;">Deals</a></li>
       </ul>
     </div>
   </div>
@@ -128,6 +179,54 @@
       <div style="font-size:0.8rem;color:var(--color-text-muted);">No credit card required — genuinely useful free tiers</div>
       <div style="margin-top:0.75rem;font-size:0.8rem;color:#f97316;font-weight:600;">Read →</div>
     </a>
+    <a href="/best/ai-chatbots/" style="text-decoration:none;display:block;border:1px solid rgba(249,115,22,0.35);border-radius:var(--radius-lg);padding:1.25rem;background:linear-gradient(135deg,rgba(249,115,22,0.07),rgba(251,191,36,0.03));color:inherit;">
+      <div style="font-size:1.5rem;margin-bottom:0.5rem;">🤖</div>
+      <div style="font-weight:800;font-size:1rem;margin-bottom:0.35rem;">5 Best AI Chatbots</div>
+      <div style="font-size:0.8rem;color:var(--color-text-muted);">Claude vs ChatGPT vs Gemini — tested daily for 60 days</div>
+      <div style="margin-top:0.75rem;font-size:0.8rem;color:#f97316;font-weight:600;">Read →</div>
+    </a>
+    <a href="/best/text-to-speech/" style="text-decoration:none;display:block;border:1px solid rgba(249,115,22,0.35);border-radius:var(--radius-lg);padding:1.25rem;background:linear-gradient(135deg,rgba(249,115,22,0.07),rgba(251,191,36,0.03));color:inherit;">
+      <div style="font-size:1.5rem;margin-bottom:0.5rem;">🔊</div>
+      <div style="font-weight:800;font-size:1rem;margin-bottom:0.35rem;">5 Best Text-to-Speech AI</div>
+      <div style="font-size:0.8rem;color:var(--color-text-muted);">ElevenLabs, Murf, Play.ht, Speechify — ranked by voice quality</div>
+      <div style="margin-top:0.75rem;font-size:0.8rem;color:#f97316;font-weight:600;">Read →</div>
+    </a>
+    <a href="/best/ai-coding-tools/" style="text-decoration:none;display:block;border:1px solid rgba(249,115,22,0.35);border-radius:var(--radius-lg);padding:1.25rem;background:linear-gradient(135deg,rgba(249,115,22,0.07),rgba(251,191,36,0.03));color:inherit;">
+      <div style="font-size:1.5rem;margin-bottom:0.5rem;">💻</div>
+      <div style="font-weight:800;font-size:1rem;margin-bottom:0.35rem;">5 Best AI Coding Tools</div>
+      <div style="font-size:0.8rem;color:var(--color-text-muted);">Cursor, GitHub Copilot, Windsurf — ranked after 60-day testing</div>
+      <div style="margin-top:0.75rem;font-size:0.8rem;color:#f97316;font-weight:600;">Read →</div>
+    </a>
+    <a href="/best/ai-seo-tools/" style="text-decoration:none;display:block;border:1px solid rgba(249,115,22,0.35);border-radius:var(--radius-lg);padding:1.25rem;background:linear-gradient(135deg,rgba(249,115,22,0.07),rgba(251,191,36,0.03));color:inherit;">
+      <div style="font-size:1.5rem;margin-bottom:0.5rem;">📈</div>
+      <div style="font-weight:800;font-size:1rem;margin-bottom:0.35rem;">5 Best AI SEO Tools</div>
+      <div style="font-size:0.8rem;color:var(--color-text-muted);">Surfer SEO, Semrush, Clearscope — ranked by real ranking results</div>
+      <div style="margin-top:0.75rem;font-size:0.8rem;color:#f97316;font-weight:600;">Read →</div>
+    </a>
+    <a href="/best/ai-video-tools/" style="text-decoration:none;display:block;border:1px solid rgba(249,115,22,0.35);border-radius:var(--radius-lg);padding:1.25rem;background:linear-gradient(135deg,rgba(249,115,22,0.07),rgba(251,191,36,0.03));color:inherit;">
+      <div style="font-size:1.5rem;margin-bottom:0.5rem;">🎬</div>
+      <div style="font-weight:800;font-size:1rem;margin-bottom:0.35rem;">5 Best AI Video Tools</div>
+      <div style="font-size:0.8rem;color:var(--color-text-muted);">Runway, Synthesia, HeyGen — ranked by video quality</div>
+      <div style="margin-top:0.75rem;font-size:0.8rem;color:#f97316;font-weight:600;">Read →</div>
+    </a>
+    <a href="/best/ai-productivity-tools/" style="text-decoration:none;display:block;border:1px solid rgba(249,115,22,0.35);border-radius:var(--radius-lg);padding:1.25rem;background:linear-gradient(135deg,rgba(249,115,22,0.07),rgba(251,191,36,0.03));color:inherit;">
+      <div style="font-size:1.5rem;margin-bottom:0.5rem;">⚡</div>
+      <div style="font-weight:800;font-size:1rem;margin-bottom:0.35rem;">5 Best AI Productivity Tools</div>
+      <div style="font-size:0.8rem;color:var(--color-text-muted);">Claude, Notion AI, Perplexity, Otter AI — save 10+ hours/week</div>
+      <div style="margin-top:0.75rem;font-size:0.8rem;color:#f97316;font-weight:600;">Read →</div>
+    </a>
+    <a href="/best/ai-marketing-tools/" style="text-decoration:none;display:block;border:1px solid rgba(249,115,22,0.35);border-radius:var(--radius-lg);padding:1.25rem;background:linear-gradient(135deg,rgba(249,115,22,0.07),rgba(251,191,36,0.03));color:inherit;">
+      <div style="font-size:1.5rem;margin-bottom:0.5rem;">📣</div>
+      <div style="font-weight:800;font-size:1rem;margin-bottom:0.35rem;">5 Best AI Marketing Tools</div>
+      <div style="font-size:0.8rem;color:var(--color-text-muted);">HubSpot AI, AdCreative.ai, Jasper — ranked by marketing ROI</div>
+      <div style="margin-top:0.75rem;font-size:0.8rem;color:#f97316;font-weight:600;">Read →</div>
+    </a>
+    <a href="/best/ai-data-tools/" style="text-decoration:none;display:block;border:1px solid rgba(249,115,22,0.35);border-radius:var(--radius-lg);padding:1.25rem;background:linear-gradient(135deg,rgba(249,115,22,0.07),rgba(251,191,36,0.03));color:inherit;">
+      <div style="font-size:1.5rem;margin-bottom:0.5rem;">📊</div>
+      <div style="font-weight:800;font-size:1rem;margin-bottom:0.35rem;">5 Best AI Data Analysis Tools</div>
+      <div style="font-size:0.8rem;color:var(--color-text-muted);">Julius AI, Polymer, Akkio — chat with your data, no code needed</div>
+      <div style="margin-top:0.75rem;font-size:0.8rem;color:#f97316;font-weight:600;">Read →</div>
+    </a>
   </div>
 
   <!-- Quick Picks -->
@@ -167,19 +266,19 @@
     <div class="best-list">
       <a href="/review/jasper/" class="best-item">
         <div class="best-item-rank top">1</div>
-        <img src="/assets/images/logos/jasper.png" alt="Jasper" class="best-item-logo">
+        <img src="/assets/images/logos/jasper.png" alt="Jasper" class="best-item-logo" loading="lazy">
         <div><div class="best-item-name">Jasper AI <span class="best-badge badge-top">Editor's Choice</span></div><div class="best-item-desc">Best for enterprise marketing teams — Brand Voice, Campaigns, Surfer SEO integration</div></div>
         <div class="best-item-right"><div class="best-score">8.5</div><div class="best-price">From $39/mo</div></div>
       </a>
       <a href="/review/writesonic/" class="best-item">
         <div class="best-item-rank">2</div>
-        <img src="/assets/images/logos/writesonic.png" alt="Writesonic" class="best-item-logo">
+        <img src="/assets/images/logos/writesonic.png" alt="Writesonic" class="best-item-logo" loading="lazy">
         <div><div class="best-item-name">Writesonic <span class="best-badge badge-free">Free Plan</span></div><div class="best-item-desc">Best budget pick — 10,000 words/mo free, Chatsonic with web access</div></div>
         <div class="best-item-right"><div class="best-score">8.3</div><div class="best-price">Free / $16/mo</div></div>
       </a>
       <a href="/review/copy-ai/" class="best-item">
         <div class="best-item-rank">3</div>
-        <img src="/assets/images/logos/copy-ai.png" alt="Copy.ai" class="best-item-logo">
+        <img src="/assets/images/logos/copy-ai.png" alt="Copy.ai" class="best-item-logo" loading="lazy">
         <div><div class="best-item-name">Copy.ai <span class="best-badge badge-free">Free Plan</span></div><div class="best-item-desc">Best for GTM teams — workflow automation and multi-step content pipelines</div></div>
         <div class="best-item-right"><div class="best-score">8.1</div><div class="best-price">Free / $36/mo</div></div>
       </a>
@@ -201,22 +300,19 @@
     <div class="best-list">
       <a href="/review/surfer-seo/" class="best-item">
         <div class="best-item-rank top">1</div>
-        <img src="/assets/images/logos/surfer-seo.png" alt="Surfer SEO" class="best-item-logo">
+        <img src="/assets/images/logos/surfer-seo.png" alt="Surfer SEO" class="best-item-logo" loading="lazy">
         <div><div class="best-item-name">Surfer SEO <span class="best-badge badge-top">Top Pick</span></div><div class="best-item-desc">Real-time NLP scoring, Content Editor, SERP Analyzer, and Keyword Research in one platform</div></div>
         <div class="best-item-right"><div class="best-score">9.0</div><div class="best-price">From $89/mo</div></div>
       </a>
-      <div class="best-item" style="opacity:0.6;cursor:default;">
+      <a href="/go/semrush/" class="best-item" rel="nofollow sponsored">
         <div class="best-item-rank">2</div>
-        <div class="best-item-logo-placeholder" style="background:linear-gradient(135deg,#1d4ed8,#3b82f6);">S</div>
+        <img src="/assets/images/logos/semrush.svg" alt="Semrush" class="best-item-logo" loading="lazy">
         <div><div class="best-item-name">Semrush AI</div><div class="best-item-desc">All-in-one SEO suite with AI content assistant and keyword intelligence</div></div>
         <div class="best-item-right"><div class="best-score">8.7</div><div class="best-price">From $117/mo</div></div>
-      </div>
-      <div class="best-item" style="opacity:0.6;cursor:default;">
-        <div class="best-item-rank">3</div>
-        <div class="best-item-logo-placeholder" style="background:linear-gradient(135deg,#0284c7,#38bdf8);">A</div>
-        <div><div class="best-item-name">Ahrefs</div><div class="best-item-desc">Best backlink analysis and keyword research — paired with AI writing suggestions</div></div>
-        <div class="best-item-right"><div class="best-score">8.5</div><div class="best-price">From $99/mo</div></div>
-      </div>
+      </a>
+      <a href="/best/ai-seo-tools/" class="best-item" style="border-style:dashed;justify-content:center;text-align:center;display:flex;align-items:center;padding:0.9rem;">
+        <div style="color:var(--color-primary);font-size:0.875rem;font-weight:600;">See Full AI SEO Ranking →</div>
+      </a>
     </div>
   </div>
 
@@ -232,22 +328,22 @@
     <div class="best-list">
       <a href="/review/elevenlabs/" class="best-item">
         <div class="best-item-rank top">1</div>
-        <img src="/assets/images/logos/elevenlabs.svg" alt="ElevenLabs" class="best-item-logo">
+        <img src="/assets/images/logos/elevenlabs.svg" alt="ElevenLabs" class="best-item-logo" loading="lazy">
         <div><div class="best-item-name">ElevenLabs <span class="best-badge badge-top">Best Overall</span></div><div class="best-item-desc">Most realistic AI voice generator — voice cloning, 29 languages, ultra-low latency API</div></div>
         <div class="best-item-right"><div class="best-score">9.2</div><div class="best-price">Free / $22/mo</div></div>
       </a>
-      <div class="best-item" style="opacity:0.6;cursor:default;">
+      <a href="/go/murf/" class="best-item" rel="nofollow sponsored">
         <div class="best-item-rank">2</div>
         <div class="best-item-logo-placeholder" style="background:linear-gradient(135deg,#7c3aed,#a855f7);">M</div>
         <div><div class="best-item-name">Murf AI</div><div class="best-item-desc">Best for video voiceovers — 120+ voices, studio-quality output, team collaboration</div></div>
         <div class="best-item-right"><div class="best-score">8.6</div><div class="best-price">Free / $19/mo</div></div>
-      </div>
-      <div class="best-item" style="opacity:0.6;cursor:default;">
+      </a>
+      <a href="/go/play-ht/" class="best-item" rel="nofollow sponsored">
         <div class="best-item-rank">3</div>
         <div class="best-item-logo-placeholder" style="background:linear-gradient(135deg,#059669,#10b981);">P</div>
         <div><div class="best-item-name">Play.ht</div><div class="best-item-desc">Best voice cloning speed — ultra-realistic text-to-speech with instant cloning</div></div>
         <div class="best-item-right"><div class="best-score">8.4</div><div class="best-price">Free / $31/mo</div></div>
-      </div>
+      </a>
     </div>
   </div>
 
@@ -267,18 +363,18 @@
         <div><div class="best-item-name">Midjourney <span class="best-badge badge-top">Best Quality</span></div><div class="best-item-desc">Industry-leading image quality — most used by designers and creative professionals</div></div>
         <div class="best-item-right"><div class="best-score">9.1</div><div class="best-price">From $10/mo</div></div>
       </a>
-      <div class="best-item" style="opacity:0.6;cursor:default;">
+      <a href="/review/chatgpt/" class="best-item">
         <div class="best-item-rank">2</div>
-        <div class="best-item-logo-placeholder" style="background:linear-gradient(135deg,#ea580c,#f97316);">D</div>
+        <img src="/assets/images/logos/dalle3.svg" alt="DALL·E 3" class="best-item-logo" loading="lazy">
         <div><div class="best-item-name">DALL·E 3</div><div class="best-item-desc">Best for prompt accuracy — follows complex instructions better than any competitor</div></div>
         <div class="best-item-right"><div class="best-score">9.0</div><div class="best-price">Via ChatGPT Plus</div></div>
-      </div>
-      <div class="best-item" style="opacity:0.6;cursor:default;">
+      </a>
+      <a href="/review/stable-diffusion/" class="best-item">
         <div class="best-item-rank">3</div>
-        <div class="best-item-logo-placeholder" style="background:linear-gradient(135deg,#0284c7,#38bdf8);">S</div>
+        <img src="/assets/images/logos/stable-diffusion.svg" alt="Stable Diffusion" class="best-item-logo" loading="lazy">
         <div><div class="best-item-name">Stable Diffusion</div><div class="best-item-desc">Best free option — fully open-source, runs locally, unlimited generations</div></div>
         <div class="best-item-right"><div class="best-score">8.8</div><div class="best-price">Free (self-hosted)</div></div>
-      </div>
+      </a>
     </div>
   </div>
 
@@ -292,24 +388,21 @@
       <div class="best-section-count">3 picks</div>
     </div>
     <div class="best-list">
-      <div class="best-item" style="opacity:0.6;cursor:default;">
+      <a href="/review/github-copilot/" class="best-item">
         <div class="best-item-rank top">1</div>
-        <div class="best-item-logo-placeholder" style="background:linear-gradient(135deg,#111827,#1f2937);">G</div>
+        <img src="/assets/images/logos/github-copilot.svg" alt="GitHub Copilot" class="best-item-logo" loading="lazy">
         <div><div class="best-item-name">GitHub Copilot <span class="best-badge badge-top">Most Used</span></div><div class="best-item-desc">Best IDE integration — real-time code suggestions across all major languages and editors</div></div>
         <div class="best-item-right"><div class="best-score">9.1</div><div class="best-price">$10/mo</div></div>
-      </div>
-      <div class="best-item" style="opacity:0.6;cursor:default;">
+      </a>
+      <a href="/review/cursor/" class="best-item">
         <div class="best-item-rank">2</div>
-        <div class="best-item-logo-placeholder" style="background:linear-gradient(135deg,#7c3aed,#a855f7);">C</div>
+        <img src="/assets/images/logos/cursor.svg" alt="Cursor" class="best-item-logo" loading="lazy">
         <div><div class="best-item-name">Cursor</div><div class="best-item-desc">Best AI-first IDE — chat with your codebase, multi-file edits, GPT-4 and Claude support</div></div>
         <div class="best-item-right"><div class="best-score">9.0</div><div class="best-price">Free / $20/mo</div></div>
-      </div>
-      <div class="best-item" style="opacity:0.6;cursor:default;">
-        <div class="best-item-rank">3</div>
-        <div class="best-item-logo-placeholder" style="background:linear-gradient(135deg,#059669,#10b981);">T</div>
-        <div><div class="best-item-name">Tabnine</div><div class="best-item-desc">Best for private codebases — on-premises deployment with no data sharing</div></div>
-        <div class="best-item-right"><div class="best-score">8.5</div><div class="best-price">Free / $12/mo</div></div>
-      </div>
+      </a>
+      <a href="/best/ai-coding-tools/" class="best-item" style="border-style:dashed;justify-content:center;text-align:center;display:flex;align-items:center;padding:0.9rem;">
+        <div style="color:var(--color-primary);font-size:0.875rem;font-weight:600;">See Full AI Coding Ranking →</div>
+      </a>
     </div>
   </div>
 
@@ -323,24 +416,92 @@
       <div class="best-section-count">4 picks</div>
     </div>
     <div class="best-list">
-      <div class="best-item" style="opacity:0.6;cursor:default;">
+      <a href="/review/notion/" class="best-item">
         <div class="best-item-rank top">1</div>
-        <div class="best-item-logo-placeholder" style="background:linear-gradient(135deg,#111827,#374151);">N</div>
+        <img src="/assets/images/logos/notion.svg" alt="Notion AI" class="best-item-logo" loading="lazy">
         <div><div class="best-item-name">Notion AI <span class="best-badge badge-top">Best Value</span></div><div class="best-item-desc">AI writing and summarization built into the most popular productivity workspace</div></div>
         <div class="best-item-right"><div class="best-score">8.9</div><div class="best-price">+$10/mo add-on</div></div>
-      </div>
-      <div class="best-item" style="opacity:0.6;cursor:default;">
+      </a>
+      <a href="/review/otter-ai/" class="best-item">
         <div class="best-item-rank">2</div>
-        <div class="best-item-logo-placeholder" style="background:linear-gradient(135deg,#0284c7,#38bdf8);">O</div>
+        <img src="/assets/images/logos/otter-ai.svg" alt="Otter.ai" class="best-item-logo" loading="lazy">
         <div><div class="best-item-name">Otter.ai</div><div class="best-item-desc">Best AI meeting assistant — real-time transcription, summaries, and action items</div></div>
         <div class="best-item-right"><div class="best-score">8.7</div><div class="best-price">Free / $16/mo</div></div>
-      </div>
-      <div class="best-item" style="opacity:0.6;cursor:default;">
+      </a>
+      <a href="/review/perplexity/" class="best-item">
         <div class="best-item-rank">3</div>
-        <div class="best-item-logo-placeholder" style="background:linear-gradient(135deg,#ea580c,#f97316);">Z</div>
-        <div><div class="best-item-name">Zapier AI</div><div class="best-item-desc">Best AI workflow automation — connect 6,000+ apps with AI-powered triggers and actions</div></div>
-        <div class="best-item-right"><div class="best-score">8.6</div><div class="best-price">Free / $19/mo</div></div>
+        <div class="best-item-logo-placeholder" style="background:linear-gradient(135deg,#1e3a5f,#2563eb);">P</div>
+        <div><div class="best-item-name">Perplexity AI <span class="best-badge badge-free">Free Plan</span></div><div class="best-item-desc">Best AI research tool — real-time web search with cited sources</div></div>
+        <div class="best-item-right"><div class="best-score">8.8</div><div class="best-price">Free / $20/mo</div></div>
+      </a>
+    </div>
+  </div>
+
+  <!-- AI Marketing -->
+  <div class="best-section">
+    <div class="best-section-header">
+      <div class="best-section-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
       </div>
+      <div class="best-section-title">Best AI Marketing Tools</div>
+      <div class="best-section-count">3 picks</div>
+    </div>
+    <div class="best-list">
+      <a href="/review/jasper/" class="best-item">
+        <div class="best-item-rank top">1</div>
+        <img src="/assets/images/logos/jasper.png" alt="Jasper" class="best-item-logo" loading="lazy">
+        <div><div class="best-item-name">Jasper AI <span class="best-badge badge-top">Best for Teams</span></div><div class="best-item-desc">Brand Voice, Campaigns, Surfer integration — best AI writer for marketing teams</div></div>
+        <div class="best-item-right"><div class="best-score">8.5</div><div class="best-price">From $39/mo</div></div>
+      </a>
+      <a href="/go/adcreative-ai/" class="best-item" rel="nofollow sponsored">
+        <div class="best-item-rank">2</div>
+        <div class="best-item-logo-placeholder" style="background:linear-gradient(135deg,#7c3aed,#a855f7);">A</div>
+        <div><div class="best-item-name">AdCreative.ai</div><div class="best-item-desc">Best AI ad generator — conversion-optimized ad creatives in seconds</div></div>
+        <div class="best-item-right"><div class="best-score">8.7</div><div class="best-price">From $29/mo</div></div>
+      </a>
+      <a href="/review/copy-ai/" class="best-item">
+        <div class="best-item-rank">3</div>
+        <img src="/assets/images/logos/copy-ai.png" alt="Copy.ai" class="best-item-logo" loading="lazy">
+        <div><div class="best-item-name">Copy.ai</div><div class="best-item-desc">Best for GTM workflows — AI-powered content automation pipelines at scale</div></div>
+        <div class="best-item-right"><div class="best-score">8.1</div><div class="best-price">Free / $36/mo</div></div>
+      </a>
+      <a href="/best/ai-marketing-tools/" class="best-item" style="border-style:dashed;justify-content:center;text-align:center;display:flex;align-items:center;padding:0.9rem;">
+        <div style="color:var(--color-primary);font-size:0.875rem;font-weight:600;">See Full AI Marketing Ranking →</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- AI Data Analysis -->
+  <div class="best-section">
+    <div class="best-section-header">
+      <div class="best-section-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+      </div>
+      <div class="best-section-title">Best AI Data Analysis Tools</div>
+      <div class="best-section-count">3 picks</div>
+    </div>
+    <div class="best-list">
+      <a href="/go/julius-ai/" class="best-item" rel="nofollow sponsored">
+        <div class="best-item-rank top">1</div>
+        <div class="best-item-logo-placeholder" style="background:linear-gradient(135deg,#2563eb,#3b82f6);">J</div>
+        <div><div class="best-item-name">Julius AI <span class="best-badge badge-top">Best Overall</span></div><div class="best-item-desc">Chat with your data — instant charts and insights from CSV/Excel files</div></div>
+        <div class="best-item-right"><div class="best-score">9.2</div><div class="best-price">Free / $20/mo</div></div>
+      </a>
+      <a href="/go/polymer/" class="best-item" rel="nofollow sponsored">
+        <div class="best-item-rank">2</div>
+        <div class="best-item-logo-placeholder" style="background:linear-gradient(135deg,#0891b2,#06b6d4);">P</div>
+        <div><div class="best-item-name">Polymer</div><div class="best-item-desc">Best no-code BI — drag-and-drop AI dashboards from any spreadsheet</div></div>
+        <div class="best-item-right"><div class="best-score">8.8</div><div class="best-price">From $25/mo</div></div>
+      </a>
+      <a href="/go/akkio/" class="best-item" rel="nofollow sponsored">
+        <div class="best-item-rank">3</div>
+        <div class="best-item-logo-placeholder" style="background:linear-gradient(135deg,#059669,#10b981);">A</div>
+        <div><div class="best-item-name">Akkio</div><div class="best-item-desc">Best AI prediction — no-code ML models for business forecasting and churn</div></div>
+        <div class="best-item-right"><div class="best-score">8.5</div><div class="best-price">From $49/mo</div></div>
+      </a>
+      <a href="/best/ai-data-tools/" class="best-item" style="border-style:dashed;justify-content:center;text-align:center;display:flex;align-items:center;padding:0.9rem;">
+        <div style="color:var(--color-primary);font-size:0.875rem;font-weight:600;">See Full AI Data Tools Ranking →</div>
+      </a>
     </div>
   </div>
 
@@ -361,10 +522,34 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="/" style="display:flex;align-items:center;gap:0.5rem;text-decoration:none;margin-bottom:0.75rem;">
-          <img src="/assets/images/logo-dark.png" alt="" style="height:32px;width:32px;object-fit:contain;">
+          <img src="/assets/images/logo-dark.webp" onerror="this.src='/assets/images/logo-dark.png'" alt="Dark logo" style="height:32px;width:32px;object-fit:contain;" loading="lazy">
           <span style="font-size:1rem;font-weight:900;background:linear-gradient(135deg,#f97316,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">RankerTool AI</span>
         </a>
         <p class="footer-tagline">Independent reviews and comparisons of the best AI tools.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:0.55rem;margin-top:1rem;">
+          <a href="https://twitter.com/rankertoolai" rel="noopener noreferrer" target="_blank" aria-label="X (Twitter)" style="width:32px;height:32px;border-radius:8px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;color:#94a3b8;text-decoration:none;transition:background 150ms,color 150ms;" onmouseover="this.style.background='rgba(255,255,255,0.14)';this.style.color='#f1f5f9'" onmouseout="this.style.background='rgba(255,255,255,0.07)';this.style.color='#94a3b8'">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://reddit.com/u/rankertoolai" rel="noopener noreferrer" target="_blank" aria-label="Reddit" style="width:32px;height:32px;border-radius:8px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;color:#94a3b8;text-decoration:none;transition:background 150ms,color 150ms;" onmouseover="this.style.background='rgba(255,69,0,0.2)';this.style.color='#ff4500'" onmouseout="this.style.background='rgba(255,255,255,0.07)';this.style.color='#94a3b8'">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/rankertoolai" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn" style="width:32px;height:32px;border-radius:8px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;color:#94a3b8;text-decoration:none;transition:background 150ms,color 150ms;" onmouseover="this.style.background='rgba(0,119,181,0.2)';this.style.color='#0077b5'" onmouseout="this.style.background='rgba(255,255,255,0.07)';this.style.color='#94a3b8'">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@rankertoolai" rel="noopener noreferrer" target="_blank" aria-label="YouTube" style="width:32px;height:32px;border-radius:8px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;color:#94a3b8;text-decoration:none;transition:background 150ms,color 150ms;" onmouseover="this.style.background='rgba(255,0,0,0.2)';this.style.color='#ff0000'" onmouseout="this.style.background='rgba(255,255,255,0.07)';this.style.color='#94a3b8'">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/rankertoolai" rel="noopener noreferrer" target="_blank" aria-label="Instagram" style="width:32px;height:32px;border-radius:8px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;color:#94a3b8;text-decoration:none;transition:background 150ms,color 150ms;" onmouseover="this.style.background='rgba(225,48,108,0.2)';this.style.color='#e1306c'" onmouseout="this.style.background='rgba(255,255,255,0.07)';this.style.color='#94a3b8'">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@rankertoolai" rel="noopener noreferrer" target="_blank" aria-label="TikTok" style="width:32px;height:32px;border-radius:8px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;color:#94a3b8;text-decoration:none;transition:background 150ms,color 150ms;" onmouseover="this.style.background='rgba(255,255,255,0.14)';this.style.color='#f1f5f9'" onmouseout="this.style.background='rgba(255,255,255,0.07)';this.style.color='#94a3b8'">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.28 6.28 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.79a4.85 4.85 0 01-1.01-.1z"/></svg>
+          </a>
+          <a href="https://www.pinterest.com/rankertoolai" rel="noopener noreferrer" target="_blank" aria-label="Pinterest" style="width:32px;height:32px;border-radius:8px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;color:#94a3b8;text-decoration:none;transition:background 150ms,color 150ms;" onmouseover="this.style.background='rgba(230,0,35,0.2)';this.style.color='#e60023'" onmouseout="this.style.background='rgba(255,255,255,0.07)';this.style.color='#94a3b8'">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+          </a>
+          <a href="https://dev.to/rankertoolai" rel="noopener noreferrer" target="_blank" aria-label="Dev.to" style="width:32px;height:32px;border-radius:8px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;color:#94a3b8;text-decoration:none;transition:background 150ms,color 150ms;font-size:9px;font-weight:900;letter-spacing:-0.5px;" onmouseover="this.style.background='rgba(255,255,255,0.14)';this.style.color='#f1f5f9'" onmouseout="this.style.background='rgba(255,255,255,0.07)';this.style.color='#94a3b8'">DEV</a>
+        </div>
       </div>
       <div class="footer-col"><h5>Best Tools</h5><ul>
         <li><a href="/category/ai-writing/">AI Writing</a></li>

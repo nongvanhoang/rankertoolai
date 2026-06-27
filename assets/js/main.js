@@ -1,123 +1,14 @@
-/* RankerToolAI — main.js
-   Minimal, dependency-free. No jQuery. No framework. Fast. */
-
-/* ── Google Analytics 4 ──────────────────────────────────────────
-   Thay GA_ID bằng Measurement ID thật từ analytics.google.com
-   Định dạng: G-XXXXXXXXXX
-   ─────────────────────────────────────────────────────────────── */
-(function () {
-  var GA_ID = 'G-XXXXXXXXXX'; /* <<< THAY CHỖ NÀY */
-  if (GA_ID !== 'G-XXXXXXXXXX') {
-    var s = document.createElement('script');
-    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
-    s.async = true;
-    document.head.appendChild(s);
-    window.dataLayer = window.dataLayer || [];
-    window.gtag = function () { window.dataLayer.push(arguments); };
-    window.gtag('js', new Date());
-    window.gtag('config', GA_ID, { anonymize_ip: true });
-  }
-})();
-
-(function () {
-  'use strict';
-
-  /* ── Mobile Navigation ─────────────────────────────────── */
-  const navToggle = document.getElementById('nav-toggle');
-  const navMenu   = document.getElementById('nav-menu');
-  if (navToggle && navMenu) {
-    navToggle.addEventListener('click', function () {
-      const open = navMenu.classList.toggle('is-open');
-      navToggle.setAttribute('aria-expanded', open);
-      navToggle.innerHTML = open ? '✕' : '☰';
-    });
-    document.addEventListener('click', function (e) {
-      if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
-        navMenu.classList.remove('is-open');
-        navToggle.setAttribute('aria-expanded', 'false');
-        navToggle.innerHTML = '☰';
-      }
-    });
-  }
-
-  /* ── TOC Scroll Spy ────────────────────────────────────── */
-  const tocLinks = document.querySelectorAll('.toc a[href^="#"]');
-  if (tocLinks.length) {
-    const headings = Array.from(tocLinks).map(function (a) {
-      return document.querySelector(a.getAttribute('href'));
-    }).filter(Boolean);
-
-    function onScroll() {
-      const scrollY = window.scrollY + 120;
-      let active = null;
-      headings.forEach(function (h) {
-        if (h.offsetTop <= scrollY) active = h;
-      });
-      tocLinks.forEach(function (a) {
-        a.classList.toggle(
-          'toc-active',
-          active && a.getAttribute('href') === '#' + active.id
-        );
-      });
-    }
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
-  }
-
-  /* ── Smooth Scroll ─────────────────────────────────────── */
-  document.querySelectorAll('a[href^="#"]').forEach(function (a) {
-    a.addEventListener('click', function (e) {
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        history.pushState(null, null, this.getAttribute('href'));
-      }
-    });
-  });
-
-  /* ── Back to Top ───────────────────────────────────────── */
-  const btt = document.getElementById('back-to-top');
-  if (btt) {
-    window.addEventListener('scroll', function () {
-      btt.style.display = window.scrollY > 600 ? 'flex' : 'none';
-    }, { passive: true });
-    btt.addEventListener('click', function () {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  }
-
-  /* ── Affiliate Click Tracker ───────────────────────────── */
-  document.querySelectorAll('a[href*="/go/"]').forEach(function (a) {
-    a.addEventListener('click', function () {
-      const slug = this.href.match(/\/go\/([^/]+)/);
-      if (slug && typeof gtag !== 'undefined') {
-        gtag('event', 'affiliate_click', {
-          event_category: 'Affiliate',
-          event_label: slug[1],
-          transport_type: 'beacon'
-        });
-      }
-    });
-  });
-
-  /* ── Lazy Images ───────────────────────────────────────── */
-  if ('IntersectionObserver' in window) {
-    const imgObserver = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          const img = entry.target;
-          if (img.dataset.src) {
-            img.src = img.dataset.src;
-            img.removeAttribute('data-src');
-          }
-          imgObserver.unobserve(img);
-        }
-      });
-    }, { rootMargin: '200px' });
-    document.querySelectorAll('img[data-src]').forEach(function (img) {
-      imgObserver.observe(img);
-    });
-  }
-
-})();
+(function(){var GA_ID='G-81KB8ECCVF';if(GA_ID!=='G-XXXXXXXXXX'){var s=document.createElement('script');s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;s.async=true;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments);};window.gtag('js',new Date());window.gtag('config',GA_ID,{anonymize_ip:true});}})();(function(){'use strict';const navToggle=document.getElementById('nav-toggle');const navMenu=document.getElementById('nav-menu');if(navToggle&&navMenu){navToggle.addEventListener('click',function(){const open=navMenu.classList.toggle('is-open');navToggle.setAttribute('aria-expanded',open);navToggle.innerHTML=open?'✕':'☰';});document.addEventListener('click',function(e){if(!navToggle.contains(e.target)&&!navMenu.contains(e.target)){navMenu.classList.remove('is-open');navToggle.setAttribute('aria-expanded','false');navToggle.innerHTML='☰';}});}
+(function(){var article=document.querySelector('article.main-content');if(!article)return;var bar=document.createElement('div');bar.id='reading-progress';document.body.prepend(bar);window.addEventListener('scroll',function(){var st=window.scrollY;var docH=document.documentElement.scrollHeight-window.innerHeight;bar.style.width=(docH>0?Math.min(100,(st/docH)*100):0)+'%';},{passive:true});})();const tocLinks=document.querySelectorAll('.toc a[href^="#"]');if(tocLinks.length){const headings=Array.from(tocLinks).map(function(a){return document.querySelector(a.getAttribute('href'));}).filter(Boolean);function onScroll(){const scrollY=window.scrollY+120;let active=null;headings.forEach(function(h){if(h.offsetTop<=scrollY)active=h;});tocLinks.forEach(function(a){a.classList.toggle('toc-active',active&&a.getAttribute('href')==='#'+active.id);});}
+window.addEventListener('scroll',onScroll,{passive:true});onScroll();}
+document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){const target=document.querySelector(this.getAttribute('href'));if(target){e.preventDefault();target.scrollIntoView({behavior:'smooth',block:'start'});history.pushState(null,null,this.getAttribute('href'));}});});const btt=document.getElementById('back-to-top');if(btt){window.addEventListener('scroll',function(){btt.style.display=window.scrollY>600?'flex':'none';},{passive:true});btt.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});}
+document.querySelectorAll('a[href*="/go/"]').forEach(function(a){a.addEventListener('click',function(){const slug=this.href.match(/\/go\/([^/]+)/);if(slug&&typeof gtag!=='undefined'){gtag('event','affiliate_click',{event_category:'Affiliate',event_label:slug[1],transport_type:'beacon'});}});});(function(){var searchToggle=document.getElementById('search-toggle');var searchClose=document.getElementById('search-close');var searchOverlay=document.getElementById('search-overlay');var searchInput=document.getElementById('search-input');var searchResults=document.getElementById('search-results');if(!searchToggle||!searchOverlay)return;var PAGES=[{title:'ChatGPT Review',cat:'AI Assistant',url:'/review/chatgpt/',score:'8.8'},{title:'Claude Review',cat:'AI Assistant',url:'/review/claude/',score:'9.1'},{title:'Gemini Review',cat:'AI Assistant',url:'/review/gemini/',score:'8.5'},{title:'Jasper Review',cat:'AI Writing',url:'/review/jasper/',score:'8.5'},{title:'Writesonic Review',cat:'AI Writing',url:'/review/writesonic/',score:'8.3'},{title:'Copy.ai Review',cat:'AI Writing',url:'/review/copy-ai/',score:'8.1'},{title:'Surfer SEO Review',cat:'AI SEO',url:'/review/surfer-seo/',score:'9.0'},{title:'ElevenLabs Review',cat:'AI Voice',url:'/review/elevenlabs/',score:'9.2'},{title:'GitHub Copilot Review',cat:'AI Coding',url:'/review/github-copilot/',score:'9.0'},{title:'Cursor Review',cat:'AI Coding',url:'/review/cursor/',score:'9.3'},{title:'Adobe Firefly Review',cat:'AI Image',url:'/review/adobe-firefly/',score:'8.4'},{title:'Canva AI Review',cat:'AI Design',url:'/review/canva-ai/',score:'8.6'},{title:'DeepSeek Review',cat:'AI Assistant',url:'/review/deepseek/',score:'8.7'},{title:'ChatGPT vs Claude',cat:'Comparison',url:'/compare/chatgpt-vs-claude/'},{title:'Jasper vs Writesonic',cat:'Comparison',url:'/compare/jasper-vs-writesonic/'},{title:'Midjourney vs DALL-E 3',cat:'Comparison',url:'/compare/midjourney-vs-dall-e/'},{title:'Best ChatGPT Alternatives',cat:'Alternatives',url:'/alternatives/chatgpt/'},{title:'Best Jasper Alternatives',cat:'Alternatives',url:'/alternatives/jasper/'},{title:'Best Midjourney Alternatives',cat:'Alternatives',url:'/alternatives/midjourney/'},{title:'Best AI Writing Tools',cat:'Best Lists',url:'/category/ai-writing/'},{title:'Best AI Image Generators',cat:'Best Lists',url:'/category/ai-image/'},{title:'Best AI SEO Tools',cat:'Best Lists',url:'/category/ai-seo/'},{title:'Best AI Coding Tools',cat:'Best Lists',url:'/category/ai-coding/'},{title:'AI Tool Deals & Discounts',cat:'Deals',url:'/deals/'},];function openSearch(){searchOverlay.style.display='block';document.body.style.overflow='hidden';setTimeout(function(){searchInput.focus();},50);renderResults('');}
+function closeSearch(){searchOverlay.style.display='none';document.body.style.overflow='';searchInput.value='';searchResults.innerHTML='';}
+function renderResults(q){q=q.toLowerCase().trim();var matches=q===''?PAGES.slice(0,6):PAGES.filter(function(p){return p.title.toLowerCase().includes(q)||p.cat.toLowerCase().includes(q);}).slice(0,8);if(!matches.length){searchResults.innerHTML='<div style="padding:1.25rem;text-align:center;color:#475569;font-size:0.875rem;">No results for "'+q+'"</div>';return;}
+searchResults.innerHTML=matches.map(function(p,i){return'<a href="'+p.url+'" data-idx="'+i+'" style="display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:0.75rem 1.1rem;border-bottom:1px solid rgba(255,255,255,0.05);color:var(--color-text);text-decoration:none;transition:background 120ms;" onmouseover="this.style.background=\'rgba(249,115,22,0.07)\'" onmouseout="this.style.background=\'\'"><span><span style="display:block;font-weight:600;font-size:0.9rem;">'+p.title+'</span><span style="font-size:0.72rem;color:#64748b;">'+p.cat+'</span></span>'+(p.score?'<span style="background:linear-gradient(135deg,#f97316,#fbbf24);color:white;border-radius:6px;padding:2px 8px;font-size:0.75rem;font-weight:800;flex-shrink:0;">'+p.score+'</span>':'<span style="color:#64748b;font-size:0.8rem;flex-shrink:0;">→</span>')+'</a>';}).join('');}
+searchToggle.addEventListener('click',openSearch);searchClose.addEventListener('click',closeSearch);searchInput.addEventListener('input',function(){renderResults(this.value);});searchInput.addEventListener('keydown',function(e){if(e.key==='Enter'){var first=searchResults.querySelector('a');if(first)first.click();}});searchOverlay.addEventListener('click',function(e){if(e.target===searchOverlay)closeSearch();});document.addEventListener('keydown',function(e){if(e.key==='Escape')closeSearch();if((e.metaKey||e.ctrlKey)&&e.key==='k'){e.preventDefault();openSearch();}});})();(function(){var STORAGE_KEY='rtai_popup_v1';var shown=localStorage.getItem(STORAGE_KEY);if(shown)return;var popup=document.createElement('div');popup.id='exit-popup';popup.innerHTML=['<div id="exit-popup-box">','<button id="exit-popup-close" aria-label="Close">✕</button>','<div style="font-size:2rem;margin-bottom:0.5rem;">🎯</div>','<div style="font-size:0.7rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;color:#f97316;margin-bottom:0.5rem;">Free Resource</div>','<h2 style="font-size:1.4rem;font-weight:900;color:#f1f5f9;margin:0 0 0.5rem;line-height:1.25;">Top 10 AI Tools Comparison<br><span style="color:#f97316;">— Free PDF Guide</span></h2>','<p style="font-size:0.85rem;color:#94a3b8;margin:0 0 1.25rem;">We tested 50+ AI tools and ranked the best ones by use case. Get the full breakdown — free, no spam.</p>','<form id="exit-popup-form" action="https://formsubmit.co/nongvanhoang1608@gmail.com" method="POST">','<input type="hidden" name="_subject" value="Exit Popup Subscriber — RankerToolAI">','<input type="hidden" name="_next" value="https://rankertoolai.com/?subscribed=1">','<input type="hidden" name="_captcha" value="false">','<input type="hidden" name="source" value="exit_popup">','<input type="email" name="email" placeholder="your@email.com" required autocomplete="email" style="width:100%;background:rgba(255,255,255,0.07);border:1.5px solid rgba(255,255,255,0.15);border-radius:8px;padding:0.7rem 1rem;color:#f1f5f9;font-size:0.9rem;outline:none;box-sizing:border-box;margin-bottom:0.65rem;" onfocus="this.style.borderColor=\'#f97316\'" onblur="this.style.borderColor=\'rgba(255,255,255,0.15)\'">','<button type="submit" style="width:100%;background:linear-gradient(135deg,#f97316,#fbbf24);color:#000;font-weight:800;font-size:0.9rem;padding:0.75rem;border:none;border-radius:8px;cursor:pointer;">Get Free PDF Guide →</button>','</form>','<p style="font-size:0.7rem;color:#475569;margin:0.75rem 0 0;text-align:center;">No spam. Unsubscribe anytime.</p>','</div>'].join('');var style=document.createElement('style');style.textContent=['#exit-popup{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.7);z-index:9999;','align-items:center;justify-content:center;padding:1rem;backdrop-filter:blur(4px);}','#exit-popup.visible{display:flex;}','#exit-popup-box{background:linear-gradient(145deg,#0f1e38,#0d1224);border:1px solid rgba(249,115,22,0.35);','border-radius:20px;padding:2rem;max-width:420px;width:100%;position:relative;','box-shadow:0 25px 60px rgba(0,0,0,0.6),0 0 0 1px rgba(249,115,22,0.1);text-align:center;','animation:popIn 0.35s cubic-bezier(0.34,1.56,0.64,1);}','@keyframes popIn{from{opacity:0;transform:scale(0.85) translateY(20px)}to{opacity:1;transform:scale(1) translateY(0)}}','#exit-popup-close{position:absolute;top:1rem;right:1rem;background:rgba(255,255,255,0.08);','border:none;color:#94a3b8;width:30px;height:30px;border-radius:50%;cursor:pointer;','font-size:0.9rem;display:flex;align-items:center;justify-content:center;transition:all 0.15s;}','#exit-popup-close:hover{background:rgba(255,255,255,0.15);color:#f1f5f9;}',].join('');document.head.appendChild(style);document.body.appendChild(popup);function showPopup(){if(localStorage.getItem(STORAGE_KEY))return;popup.classList.add('visible');localStorage.setItem(STORAGE_KEY,'1');if(typeof gtag!=='undefined')gtag('event','popup_shown',{event_category:'Lead'});}
+function closePopup(){popup.classList.remove('visible');}
+document.getElementById('exit-popup-close').addEventListener('click',closePopup);popup.addEventListener('click',function(e){if(e.target===popup)closePopup();});document.addEventListener('keydown',function(e){if(e.key==='Escape')closePopup();});var triggered=false;document.addEventListener('mouseleave',function(e){if(!triggered&&e.clientY<20){triggered=true;showPopup();}});setTimeout(function(){if(!triggered){triggered=true;showPopup();}},45000);})();(function(){if(localStorage.getItem('rtai_cookies_v1'))return;var bar=document.createElement('div');bar.id='cookie-bar';bar.innerHTML='<div id="cookie-bar-inner"><span style="font-size:0.85rem;color:#94a3b8;flex:1;">We use cookies to analyze traffic and improve your experience. By continuing, you agree to our <a href="/privacy-policy/" style="color:#f97316;">Privacy Policy</a>.</span><div style="display:flex;gap:0.5rem;flex-shrink:0;"><button id="cookie-decline" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);color:#64748b;padding:0.4rem 0.85rem;border-radius:6px;cursor:pointer;font-size:0.8rem;">Decline</button><button id="cookie-accept" style="background:linear-gradient(135deg,#f97316,#fbbf24);border:none;color:#000;padding:0.4rem 0.9rem;border-radius:6px;cursor:pointer;font-size:0.8rem;font-weight:700;">Accept</button></div></div>';var st=document.createElement('style');st.textContent='#cookie-bar{position:fixed;bottom:0;left:0;right:0;background:#0d1224;border-top:1px solid rgba(255,255,255,0.08);z-index:9998;padding:0.75rem 1.25rem;box-shadow:0 -4px 24px rgba(0,0,0,0.4);}#cookie-bar-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:1rem;flex-wrap:wrap;}';document.head.appendChild(st);document.body.appendChild(bar);function dismiss(){bar.remove();}
+document.getElementById('cookie-accept').onclick=function(){localStorage.setItem('rtai_cookies_v1','1');dismiss();};document.getElementById('cookie-decline').onclick=dismiss;})();(function(){var toggle=document.getElementById('theme-toggle');if(!toggle)return;var saved=localStorage.getItem('rtai_theme')||'dark';if(saved==='light')document.documentElement.classList.add('light-mode');toggle.innerHTML=saved==='light'?'☀️':'🌙';toggle.title='Toggle dark/light mode';toggle.addEventListener('click',function(){var isLight=document.documentElement.classList.toggle('light-mode');localStorage.setItem('rtai_theme',isLight?'light':'dark');toggle.innerHTML=isLight?'☀️':'🌙';});})();(function(){var nums=document.querySelectorAll('.stat-num[data-target]');if(!nums.length||!('IntersectionObserver'in window))return;var obs=new IntersectionObserver(function(entries){entries.forEach(function(entry){if(!entry.isIntersecting)return;var el=entry.target;var target=parseInt(el.dataset.target,10);var suffix=el.dataset.suffix||'';var start=0,duration=1200,startTime=null;function step(ts){if(!startTime)startTime=ts;var pct=Math.min((ts-startTime)/duration,1);var val=Math.floor(pct*target);el.textContent=(val>=1000?(val/1000).toFixed(0)+'K':val)+suffix;if(pct<1)requestAnimationFrame(step);}
+requestAnimationFrame(step);obs.unobserve(el);});},{threshold:0.5});nums.forEach(function(el){obs.observe(el);});})();if('IntersectionObserver'in window){const imgObserver=new IntersectionObserver(function(entries){entries.forEach(function(entry){if(entry.isIntersecting){const img=entry.target;if(img.dataset.src){img.src=img.dataset.src;img.removeAttribute('data-src');}
+imgObserver.unobserve(img);}});},{rootMargin:'200px'});document.querySelectorAll('img[data-src]').forEach(function(img){imgObserver.observe(img);});}})();

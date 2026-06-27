@@ -1,14 +1,54 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Redirecting to Google Gemini | RankerToolAI</title>
+  <title>Redirecting to Gemini | RankerToolAI</title>
   <meta name="robots" content="noindex, nofollow">
-  <meta http-equiv="refresh" content="0; url=https://gemini.google.com/">
   <link rel="canonical" href="https://rankertoolai.com/go/gemini/">
+
+  <!-- GA4 + Google Ads on redirect page -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-81KB8ECCVF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-81KB8ECCVF');
+    gtag('config', 'AW-XXXXXXXXXX');
+  </script>
+  <script async src="/assets/js/pint.js"></script>
 </head>
 <body>
-  <p>Redirecting you to <a href="https://gemini.google.com/" rel="nofollow sponsored">Google Gemini</a>...</p>
-  <script>window.location.replace("https://gemini.google.com/");</script>
+  <p>Redirecting you to <a href="https://gemini.google.com/" rel="nofollow sponsored">Gemini</a>...</p>
+
+    <script>
+    (function() {
+      var tool = document.title.match(/Redirecting to (.+?) \|/)?.[1] || '';
+      var ref  = document.referrer ? new URL(document.referrer).pathname : 'direct';
+      var params = new URLSearchParams(window.location.search);
+      var subid  = params.get('ref') || ref.replace(/\//g,'_').replace(/^_|_$/g,'') || 'direct';
+
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'affiliate_click', {
+          tool:        document.querySelector('[data-tool]')?.dataset.tool || subid,
+          source_path: ref,
+          sub_id:      subid,
+          utm_source:  params.get('utm_source') || '',
+          utm_medium:  params.get('utm_medium') || '',
+        });
+      }
+
+      // Append ref as subid to destination URL for affiliate network tracking
+      var destEl = document.querySelector('a[href]');
+      if (!destEl) return;
+      var dest = new URL(destEl.href);
+      ['utm_source','utm_medium','utm_campaign','utm_content','gclid'].forEach(function(k){
+        if (params.has(k)) dest.searchParams.set(k, params.get(k));
+      });
+      // Pass sub_id (each network uses different param — update when you get affiliate links)
+      dest.searchParams.set('ref', subid);
+
+      setTimeout(function(){ window.location.replace(dest.toString()); }, 280);
+    })();
+  </script>
 </body>
 </html>

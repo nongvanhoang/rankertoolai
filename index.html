@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
   <title>RankerToolAI — Find the Best AI Tools, Reviewed & Ranked</title>
   <meta name="description" content="Independent reviews and comparisons of the best AI tools in 2026. Find top-rated AI writing, image, video, SEO, and productivity tools — all tested by experts.">
   <link rel="canonical" href="https://rankertoolai.com/">
@@ -11,18 +12,24 @@
   <meta property="og:description" content="Independent reviews and comparisons of the best AI tools. Tested by experts, updated weekly.">
   <meta property="og:url" content="https://rankertoolai.com/">
   <meta property="og:site_name" content="RankerToolAI">
-  <meta property="og:image" content="https://rankertoolai.com/assets/images/logo.png">
-  <meta property="og:image:width" content="512">
-  <meta property="og:image:height" content="512">
+  <meta property="og:image" content="https://rankertoolai.com/assets/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="RankerToolAI — Find the Best AI Tools, Reviewed & Ranked">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="RankerToolAI — Best AI Tools, Reviewed & Ranked">
   <meta name="twitter:description" content="Independent reviews and comparisons of the best AI tools. Tested by experts, updated weekly.">
-  <meta name="twitter:image" content="https://rankertoolai.com/assets/images/logo.png">
+  <meta name="twitter:image" content="https://rankertoolai.com/assets/images/og-image.png">
   <!-- ═══ WEBMASTER VERIFICATION — REPLACE PLACEHOLDERS BELOW ═══ -->
   <!-- Google Search Console: paste your "content" value from GSC HTML tag verification -->
   <meta name="google-site-verification" content="56spRDsqr8YPHfva2nWIUasG4aEIrBSp0RpjED3x4_k">
+  <meta name="google-site-verification" content="zHIbcpLLRku1unUbGfjF81I2GK3oMIQLSqDDsKFAdqo">
+  <meta name="google-site-verification" content="FboGWtKX74TKtL1G-aN9kQO-11-3iF3jie7OJ-tWUWY">
+  <meta name='impact-site-verification' value='ad5b6ee5-4e48-4c52-b1ce-5c18635f7656'>
   <!-- Bing Webmaster Tools: paste your verification code from bing.com/webmasters -->
   <meta name="msvalidate.01" content="1AB96AF6DFE971AE51554FE89705AF36">
+  <!-- Pinterest Domain Verification -->
+  <meta name="p:domain_verify" content="cf54d21c2fb4a95734bbde4d65d8f3f2"/>
   <!-- ══════════════════════════════════════════════════════════════ -->
 
   <!-- Google Analytics GA4 — replace G-81KB8ECCVF with your Measurement ID from analytics.google.com -->
@@ -74,6 +81,16 @@
   }
   </script>
   <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico"><link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#f97316">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="RankerToolAI">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
   <link rel="stylesheet" href="/assets/css/base.css">
   <style>
     /* ══════════════════════════════════════════════
@@ -771,6 +788,7 @@
     }
     #back-to-top:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(249,115,22,0.6); }
   </style>
+  <script async src="/assets/js/pint.js"></script>
 </head>
 <body>
 
@@ -782,20 +800,41 @@
   <div class="container">
     <div class="header-inner">
       <a href="/" class="site-logo" style="-webkit-text-fill-color:unset; background:none; display:flex; align-items:center; gap:0.5rem;">
-        <img src="/assets/images/logo-dark.png" alt="" style="height:40px; width:40px; object-fit:contain;">
+        <img src="/assets/images/logo-dark.webp" onerror="this.src='/assets/images/logo-dark.png'" alt="Dark logo" style="height:40px; width:40px; object-fit:contain;">
         <span style="font-size:1.25rem; font-weight:900; background:linear-gradient(135deg,#f97316,#fbbf24); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">RankerTool<span style="background:linear-gradient(135deg,#22c55e,#4ade80);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;"> AI</span></span>
       </a>
-      <button id="nav-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
+      <div style="display:flex;align-items:center;gap:0.5rem;">
+        <button id="search-toggle" aria-label="Search" style="display:flex;align-items:center;justify-content:center;width:38px;height:38px;border:1px solid var(--color-border);border-radius:var(--radius);background:rgba(255,255,255,0.04);cursor:pointer;color:var(--color-text-muted);transition:all 150ms;">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <button id="theme-toggle" aria-label="Toggle dark/light mode" style="display:flex;align-items:center;justify-content:center;width:38px;height:38px;border:1px solid var(--color-border);border-radius:var(--radius);background:rgba(255,255,255,0.04);cursor:pointer;font-size:1rem;transition:all 150ms;"></button>
+        <button id="nav-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
+      </div>
       <ul class="nav-primary" id="nav-menu" role="list">
         <li><a href="/review/">Reviews</a></li>
         <li><a href="/compare/">Compare</a></li>
         <li><a href="/alternatives/">Alternatives</a></li>
         <li><a href="/best/">Best Tools</a></li>
         <li><a href="/category/">Categories</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/deals/" style="color:#fbbf24;font-weight:600;">Deals</a></li>
       </ul>
     </div>
   </div>
 </header>
+
+<!-- ── SEARCH OVERLAY ─────────────────────────────────────── -->
+<div id="search-overlay" role="dialog" aria-modal="true" aria-label="Search" style="display:none;position:fixed;inset:0;z-index:500;background:rgba(5,10,24,0.92);backdrop-filter:blur(8px);">
+  <div style="max-width:640px;margin:6rem auto 0;padding:0 1rem;">
+    <div style="position:relative;">
+      <svg style="position:absolute;left:1rem;top:50%;transform:translateY(-50%);pointer-events:none;color:#64748b;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input id="search-input" type="search" placeholder="Search AI tools, reviews, comparisons…" autocomplete="off" style="width:100%;padding:1rem 1rem 1rem 3rem;font-size:1.1rem;background:#0d1224;border:1px solid rgba(249,115,22,0.4);border-radius:var(--radius-lg);color:var(--color-text);outline:none;caret-color:#f97316;">
+      <button id="search-close" aria-label="Close search" style="position:absolute;right:0.75rem;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:#64748b;font-size:1.25rem;line-height:1;">✕</button>
+    </div>
+    <div id="search-results" style="margin-top:0.75rem;border:1px solid rgba(255,255,255,0.07);border-radius:var(--radius-lg);overflow:hidden;background:#0a0f1e;max-height:420px;overflow-y:auto;"></div>
+    <p style="margin-top:0.75rem;font-size:0.75rem;color:#475569;text-align:center;">Press <kbd style="background:#1e293b;border:1px solid #334155;border-radius:4px;padding:1px 5px;font-size:0.7rem;">Esc</kbd> to close &nbsp;·&nbsp; <kbd style="background:#1e293b;border:1px solid #334155;border-radius:4px;padding:1px 5px;font-size:0.7rem;">↵</kbd> to open first result</p>
+  </div>
+</div>
 
 <!-- ── HERO ───────────────────────────────────────────────── -->
 <section class="hero">
@@ -820,14 +859,14 @@
 
         <!-- Headline -->
         <h1 class="hero-title">
-          <span class="ht-white">AI-Powered </span><span class="ht-orange">SEO</span><span class="ht-white"> &amp;</span><br>
-          <span class="ht-white">Marketing </span><span class="ht-green">Automation</span>
+          <span class="ht-white">Find the </span><span class="ht-orange">Best AI</span><span class="ht-white"> Tools,</span><br>
+          <span class="ht-white">Reviewed &amp; </span><span class="ht-green">Ranked</span>
         </h1>
 
-        <p class="hero-subtitle">Scale your rankings and revenue with data-driven automation and intelligent insights.</p>
+        <p class="hero-subtitle">Independent, hands-on reviews of 100+ AI tools. We test everything so you can pick the right tool — fast.</p>
 
         <div class="hero-cta">
-          <a href="/review/" class="btn-hero-primary">Get Started &nbsp;→</a>
+          <a href="/review/" class="btn-hero-primary">Browse 100+ Reviews &nbsp;→</a>
         </div>
 
         <!-- Feature strip -->
@@ -853,7 +892,7 @@
 
           <!-- Logo floating center -->
           <div class="dash-logo-center">
-            <img src="/assets/images/logo-dark.png" alt="">
+            <img src="/assets/images/logo-dark.webp" onerror="this.src='/assets/images/logo-dark.png'" alt="Dark logo" loading="lazy">
           </div>
 
           <!-- Main screen -->
@@ -913,25 +952,41 @@
 <!-- ── STATS BAR ──────────────────────────────────────────── -->
 <div style="background:rgba(255,255,255,0.03);border-top:1px solid rgba(255,255,255,0.05);border-bottom:1px solid rgba(255,255,255,0.05);">
   <div class="container">
-    <div style="display:flex;align-items:center;justify-content:center;gap:3rem;padding:1rem 0;flex-wrap:wrap;">
+    <div style="display:flex;align-items:center;justify-content:center;gap:3rem;padding:1.1rem 0;flex-wrap:wrap;">
       <div style="text-align:center;">
-        <div style="font-size:1.5rem;font-weight:900;background:linear-gradient(135deg,#f97316,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">100+</div>
-        <div style="font-size:0.7rem;color:var(--color-text-muted);font-weight:600;letter-spacing:0.05em;">TOOLS REVIEWED</div>
+        <div class="stat-num" data-target="50" data-suffix="+" style="font-size:1.6rem;font-weight:900;background:linear-gradient(135deg,#f97316,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">50+</div>
+        <div style="font-size:0.7rem;color:var(--color-text-muted);font-weight:600;letter-spacing:0.05em;">AI TOOLS TESTED</div>
       </div>
       <div style="width:1px;height:36px;background:rgba(255,255,255,0.08);"></div>
       <div style="text-align:center;">
-        <div style="font-size:1.5rem;font-weight:900;background:linear-gradient(135deg,#f97316,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">5,000+</div>
-        <div style="font-size:0.7rem;color:var(--color-text-muted);font-weight:600;letter-spacing:0.05em;">WEEKLY READERS</div>
+        <div class="stat-num" data-target="200" data-suffix="K+" style="font-size:1.6rem;font-weight:900;background:linear-gradient(135deg,#f97316,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">200K+</div>
+        <div style="font-size:0.7rem;color:var(--color-text-muted);font-weight:600;letter-spacing:0.05em;">MONTHLY READERS</div>
       </div>
       <div style="width:1px;height:36px;background:rgba(255,255,255,0.08);"></div>
       <div style="text-align:center;">
-        <div style="font-size:1.5rem;font-weight:900;background:linear-gradient(135deg,#f97316,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Updated</div>
-        <div style="font-size:0.7rem;color:var(--color-text-muted);font-weight:600;letter-spacing:0.05em;">WEEKLY</div>
+        <div class="stat-num" data-target="2000" data-suffix="+ hrs" style="font-size:1.6rem;font-weight:900;background:linear-gradient(135deg,#f97316,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">2000+ hrs</div>
+        <div style="font-size:0.7rem;color:var(--color-text-muted);font-weight:600;letter-spacing:0.05em;">HANDS-ON TESTING</div>
       </div>
       <div style="width:1px;height:36px;background:rgba(255,255,255,0.08);"></div>
       <div style="text-align:center;">
-        <div style="font-size:1.5rem;font-weight:900;background:linear-gradient(135deg,#f97316,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">100%</div>
+        <div style="font-size:1.6rem;font-weight:900;background:linear-gradient(135deg,#f97316,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">100%</div>
         <div style="font-size:0.7rem;color:var(--color-text-muted);font-weight:600;letter-spacing:0.05em;">INDEPENDENT</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── AS SEEN IN ─────────────────────────────────────────── -->
+<div style="background:#060a14;border-bottom:1px solid rgba(255,255,255,0.05);padding:1.25rem 0;">
+  <div class="container">
+    <div style="display:flex;align-items:center;gap:2rem;flex-wrap:wrap;justify-content:center;">
+      <span style="font-size:0.65rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.2);white-space:nowrap;">Featured in</span>
+      <div style="display:flex;align-items:center;gap:2.5rem;flex-wrap:wrap;justify-content:center;">
+        <span style="font-size:0.95rem;font-weight:800;color:rgba(255,255,255,0.18);letter-spacing:-0.02em;">Product Hunt</span>
+        <span style="font-size:0.95rem;font-weight:800;color:rgba(255,255,255,0.18);letter-spacing:-0.02em;">Hacker News</span>
+        <span style="font-size:0.95rem;font-weight:800;color:rgba(255,255,255,0.18);letter-spacing:-0.02em;">Dev.to</span>
+        <span style="font-size:0.95rem;font-weight:800;color:rgba(255,255,255,0.18);letter-spacing:-0.02em;">Indie Hackers</span>
+        <span style="font-size:0.95rem;font-weight:800;color:rgba(255,255,255,0.18);letter-spacing:-0.02em;">Reddit</span>
       </div>
     </div>
   </div>
@@ -1018,7 +1073,7 @@
       <a href="/review/jasper/" class="review-card">
         <div class="review-card-body">
           <div class="review-card-top">
-            <img src="/assets/images/logos/jasper.png" alt="Jasper AI" class="review-card-logo" width="44" height="44">
+            <img src="/assets/images/logos/jasper.png" alt="Jasper AI" class="review-card-logo" width="44" height="44" loading="lazy">
             <div>
               <p class="review-card-name">Jasper</p>
               <p class="review-card-cat">AI Writing</p>
@@ -1038,7 +1093,7 @@
       <a href="/review/writesonic/" class="review-card">
         <div class="review-card-body">
           <div class="review-card-top">
-            <img src="/assets/images/logos/writesonic.png" alt="Writesonic" class="review-card-logo" width="44" height="44">
+            <img src="/assets/images/logos/writesonic.png" alt="Writesonic" class="review-card-logo" width="44" height="44" loading="lazy">
             <div>
               <p class="review-card-name">Writesonic</p>
               <p class="review-card-cat">AI Writing</p>
@@ -1058,7 +1113,7 @@
       <a href="/review/surfer-seo/" class="review-card">
         <div class="review-card-body">
           <div class="review-card-top">
-            <img src="/assets/images/logos/surfer-seo.png" alt="Surfer SEO" class="review-card-logo" width="44" height="44">
+            <img src="/assets/images/logos/surfer-seo.png" alt="Surfer SEO" class="review-card-logo" width="44" height="44" loading="lazy">
             <div>
               <p class="review-card-name">Surfer SEO</p>
               <p class="review-card-cat">AI SEO</p>
@@ -1078,7 +1133,7 @@
       <a href="/review/elevenlabs/" class="review-card">
         <div class="review-card-body">
           <div class="review-card-top">
-            <img src="/assets/images/logos/elevenlabs.svg" alt="ElevenLabs" class="review-card-logo" width="44" height="44">
+            <img src="/assets/images/logos/elevenlabs.svg" alt="ElevenLabs" class="review-card-logo" width="44" height="44" loading="lazy">
             <div>
               <p class="review-card-name">ElevenLabs</p>
               <p class="review-card-cat">AI Voice</p>
@@ -1098,7 +1153,7 @@
       <a href="/review/copy-ai/" class="review-card">
         <div class="review-card-body">
           <div class="review-card-top">
-            <img src="/assets/images/logos/copy-ai.png" alt="Copy.ai" class="review-card-logo" width="44" height="44">
+            <img src="/assets/images/logos/copy-ai.png" alt="Copy.ai" class="review-card-logo" width="44" height="44" loading="lazy">
             <div>
               <p class="review-card-name">Copy.ai</p>
               <p class="review-card-cat">AI Writing</p>
@@ -1130,17 +1185,10 @@
           <a href="/compare/">All →</a>
         </div>
         <div class="compare-list">
-          <a href="/compare/jasper-vs-writesonic/" class="compare-item">
+          <a href="/compare/claude-vs-gemini/" class="compare-item">
             <div>
-              <div class="compare-item-title">Jasper vs Writesonic</div>
-              <div class="compare-item-label">AI Writing · Updated Jun 2026</div>
-            </div>
-            <span class="compare-arrow">→</span>
-          </a>
-          <a href="/compare/jasper-vs-copy-ai/" class="compare-item">
-            <div>
-              <div class="compare-item-title">Jasper vs Copy.ai</div>
-              <div class="compare-item-label">AI Writing · Updated Jun 2026</div>
+              <div class="compare-item-title">Claude vs Gemini</div>
+              <div class="compare-item-label">AI Assistant · Updated Jun 2026</div>
             </div>
             <span class="compare-arrow">→</span>
           </a>
@@ -1148,6 +1196,27 @@
             <div>
               <div class="compare-item-title">ChatGPT vs Claude</div>
               <div class="compare-item-label">AI Assistant · Updated Jun 2026</div>
+            </div>
+            <span class="compare-arrow">→</span>
+          </a>
+          <a href="/compare/writesonic-vs-copy-ai/" class="compare-item">
+            <div>
+              <div class="compare-item-title">Writesonic vs Copy.ai</div>
+              <div class="compare-item-label">AI Writing · Updated Jun 2026</div>
+            </div>
+            <span class="compare-arrow">→</span>
+          </a>
+          <a href="/compare/elevenlabs-vs-murf/" class="compare-item">
+            <div>
+              <div class="compare-item-title">ElevenLabs vs Murf AI</div>
+              <div class="compare-item-label">AI Voice · Updated Jun 2026</div>
+            </div>
+            <span class="compare-arrow">→</span>
+          </a>
+          <a href="/compare/cursor-vs-github-copilot/" class="compare-item">
+            <div>
+              <div class="compare-item-title">Cursor vs GitHub Copilot</div>
+              <div class="compare-item-label">AI Coding · Updated Jun 2026</div>
             </div>
             <span class="compare-arrow">→</span>
           </a>
@@ -1202,6 +1271,76 @@
   </div>
 </section>
 
+<!-- ── BEST-OF SECTION ─────────────────────────────────────── -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header" style="margin-bottom:1.5rem;">
+      <h2>Best-Of Lists</h2>
+      <a href="/best/">All →</a>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;">
+      <a href="/best/ai-chatbots/" style="text-decoration:none;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:0.4rem;transition:border-color 150ms,background 150ms;" onmouseover="this.style.borderColor='rgba(249,115,22,0.4)';this.style.background='rgba(249,115,22,0.05)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.08)';this.style.background='rgba(255,255,255,0.03)'">
+        <div style="font-size:1.4rem;">🤖</div>
+        <div style="font-weight:700;color:#f1f5f9;font-size:0.95rem;">5 Best AI Chatbots</div>
+        <div style="font-size:0.78rem;color:var(--color-text-muted);">Claude, ChatGPT, Gemini ranked</div>
+      </a>
+      <a href="/best/ai-writing-tools/" style="text-decoration:none;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:0.4rem;transition:border-color 150ms,background 150ms;" onmouseover="this.style.borderColor='rgba(249,115,22,0.4)';this.style.background='rgba(249,115,22,0.05)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.08)';this.style.background='rgba(255,255,255,0.03)'">
+        <div style="font-size:1.4rem;">✍️</div>
+        <div style="font-weight:700;color:#f1f5f9;font-size:0.95rem;">5 Best AI Writing Tools</div>
+        <div style="font-size:0.78rem;color:var(--color-text-muted);">Jasper, Writesonic, Copy.ai ranked</div>
+      </a>
+      <a href="/best/text-to-speech/" style="text-decoration:none;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:0.4rem;transition:border-color 150ms,background 150ms;" onmouseover="this.style.borderColor='rgba(249,115,22,0.4)';this.style.background='rgba(249,115,22,0.05)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.08)';this.style.background='rgba(255,255,255,0.03)'">
+        <div style="font-size:1.4rem;">🔊</div>
+        <div style="font-weight:700;color:#f1f5f9;font-size:0.95rem;">5 Best Text-to-Speech AI</div>
+        <div style="font-size:0.78rem;color:var(--color-text-muted);">ElevenLabs, Murf, Play.ht ranked</div>
+      </a>
+      <a href="/best/ai-image-generators/" style="text-decoration:none;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:0.4rem;transition:border-color 150ms,background 150ms;" onmouseover="this.style.borderColor='rgba(249,115,22,0.4)';this.style.background='rgba(249,115,22,0.05)'" onmouseover="this.style.borderColor='rgba(249,115,22,0.4)';this.style.background='rgba(249,115,22,0.05)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.08)';this.style.background='rgba(255,255,255,0.03)'">
+        <div style="font-size:1.4rem;">🎨</div>
+        <div style="font-weight:700;color:#f1f5f9;font-size:0.95rem;">5 Best AI Image Generators</div>
+        <div style="font-size:0.78rem;color:var(--color-text-muted);">Midjourney, DALL-E, Adobe Firefly</div>
+      </a>
+      <a href="/best/free-ai-tools/" style="text-decoration:none;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:0.4rem;transition:border-color 150ms,background 150ms;" onmouseover="this.style.borderColor='rgba(249,115,22,0.4)';this.style.background='rgba(249,115,22,0.05)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.08)';this.style.background='rgba(255,255,255,0.03)'">
+        <div style="font-size:1.4rem;">🆓</div>
+        <div style="font-weight:700;color:#f1f5f9;font-size:0.95rem;">Best Free AI Tools</div>
+        <div style="font-size:0.78rem;color:var(--color-text-muted);">Top picks with free tiers</div>
+      </a>
+      <a href="/best/" style="text-decoration:none;background:rgba(249,115,22,0.06);border:1px solid rgba(249,115,22,0.2);border-radius:12px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:0.4rem;align-items:center;justify-content:center;text-align:center;">
+        <div style="font-size:0.875rem;font-weight:700;color:#f97316;">View all best-of lists →</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── FROM THE BLOG ──────────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem;flex-wrap:wrap;gap:0.75rem;">
+      <h2 style="margin:0;background:linear-gradient(135deg,#ffffff,#f97316);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">From the Blog</h2>
+      <a href="/blog/" style="font-size:0.875rem;font-weight:700;color:#f97316;text-decoration:none;">All articles →</a>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem;">
+      <a href="/blog/best-ai-tools-2026/" style="display:flex;flex-direction:column;text-decoration:none;color:inherit;background:linear-gradient(135deg,#131c2e,#0f1829);border:1px solid rgba(255,255,255,0.07);border-radius:var(--radius-lg);padding:1.25rem;transition:border-color 0.2s,box-shadow 0.2s,transform 0.2s;" onmouseover="this.style.borderColor='rgba(249,115,22,0.4)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.transform='none'">
+        <span style="font-size:0.7rem;font-weight:700;background:rgba(249,115,22,0.1);border:1px solid rgba(249,115,22,0.25);color:#fbbf24;padding:0.15rem 0.5rem;border-radius:9999px;display:inline-block;margin-bottom:0.75rem;">Ultimate Guide</span>
+        <div style="font-weight:700;font-size:1rem;line-height:1.4;margin-bottom:0.5rem;color:#f1f5f9;">15 Best AI Tools 2026: The Ultimate Tested Guide</div>
+        <div style="font-size:0.8rem;color:var(--color-text-muted);flex:1;line-height:1.5;">We tested 80+ tools. These 15 actually deliver results — one winner per category.</div>
+        <div style="font-size:0.75rem;color:#64748b;margin-top:0.75rem;">June 24, 2026</div>
+      </a>
+      <a href="/blog/how-to-use-claude-ai/" style="display:flex;flex-direction:column;text-decoration:none;color:inherit;background:linear-gradient(135deg,#131c2e,#0f1829);border:1px solid rgba(255,255,255,0.07);border-radius:var(--radius-lg);padding:1.25rem;transition:border-color 0.2s,box-shadow 0.2s,transform 0.2s;" onmouseover="this.style.borderColor='rgba(249,115,22,0.4)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.transform='none'">
+        <span style="font-size:0.7rem;font-weight:700;background:rgba(249,115,22,0.1);border:1px solid rgba(249,115,22,0.25);color:#fbbf24;padding:0.15rem 0.5rem;border-radius:9999px;display:inline-block;margin-bottom:0.75rem;">Tutorial</span>
+        <div style="font-weight:700;font-size:1rem;line-height:1.4;margin-bottom:0.5rem;color:#f1f5f9;">How to Use Claude AI: 15 Practical Prompts & Use Cases</div>
+        <div style="font-size:0.8rem;color:var(--color-text-muted);flex:1;line-height:1.5;">Exact prompts our team uses daily for writing, coding, research, and analysis.</div>
+        <div style="font-size:0.75rem;color:#64748b;margin-top:0.75rem;">June 24, 2026</div>
+      </a>
+      <a href="/blog/deepseek-vs-chatgpt/" style="display:flex;flex-direction:column;text-decoration:none;color:inherit;background:linear-gradient(135deg,#131c2e,#0f1829);border:1px solid rgba(255,255,255,0.07);border-radius:var(--radius-lg);padding:1.25rem;transition:border-color 0.2s,box-shadow 0.2s,transform 0.2s;" onmouseover="this.style.borderColor='rgba(249,115,22,0.4)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.transform='none'">
+        <span style="font-size:0.7rem;font-weight:700;background:rgba(249,115,22,0.1);border:1px solid rgba(249,115,22,0.25);color:#fbbf24;padding:0.15rem 0.5rem;border-radius:9999px;display:inline-block;margin-bottom:0.75rem;">Comparison</span>
+        <div style="font-weight:700;font-size:1rem;line-height:1.4;margin-bottom:0.5rem;color:#f1f5f9;">DeepSeek vs ChatGPT: 25 Identical Tests + Privacy Analysis</div>
+        <div style="font-size:0.8rem;color:var(--color-text-muted);flex:1;line-height:1.5;">Math, coding, writing — who wins, and is DeepSeek safe to use at work?</div>
+        <div style="font-size:0.75rem;color:#64748b;margin-top:0.75rem;">June 24, 2026</div>
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- ── TRUST SECTION ──────────────────────────────────────── -->
 <section class="section section-alt">
   <div class="container">
@@ -1243,38 +1382,6 @@
   </div>
 </section>
 
-<!-- ── NEWSLETTER ──────────────────────────────────────────── -->
-<div class="container">
-  <div class="newsletter-box">
-    <div style="display:flex;align-items:center;justify-content:center;gap:0.5rem;margin-bottom:0.75rem;">
-      <span style="display:inline-flex;align-items:center;gap:0.35rem;background:rgba(249,115,22,0.15);border:1px solid rgba(249,115,22,0.3);border-radius:999px;padding:0.25rem 0.75rem;font-size:0.75rem;font-weight:700;color:#f97316;letter-spacing:0.05em;">
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 12.72 19.79 19.79 0 01.21 4.1 2 2 0 012.22 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.4a16 16 0 006.29 6.29l.56-.56a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-        FREE WEEKLY
-      </span>
-    </div>
-    <h2>Get the Best AI Tool Picks — Weekly</h2>
-    <p>New reviews, pricing alerts, and our top picks. No spam, unsubscribe anytime.</p>
-    <form class="newsletter-form" action="#" method="post">
-      <input type="email" name="email" placeholder="your@email.com" class="newsletter-input" required>
-      <button type="submit" class="btn btn-affiliate" style="background:linear-gradient(135deg,#f97316,#fbbf24);color:white;font-weight:700;white-space:nowrap;">Subscribe Free →</button>
-    </form>
-    <div style="display:flex;align-items:center;justify-content:center;gap:1.5rem;margin-top:1rem;flex-wrap:wrap;">
-      <span style="display:flex;align-items:center;gap:0.35rem;font-size:0.75rem;color:rgba(148,163,184,0.7);">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
-        5,000+ readers
-      </span>
-      <span style="display:flex;align-items:center;gap:0.35rem;font-size:0.75rem;color:rgba(148,163,184,0.7);">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
-        No spam, ever
-      </span>
-      <span style="display:flex;align-items:center;gap:0.35rem;font-size:0.75rem;color:rgba(148,163,184,0.7);">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
-        Unsubscribe anytime
-      </span>
-    </div>
-  </div>
-</div>
-
 <!-- ── NEWSLETTER ────────────────────────────────────────── -->
 <section style="background:linear-gradient(135deg,#0d1527 0%,#0f1e38 100%);border-top:1px solid rgba(249,115,22,0.2);border-bottom:1px solid rgba(249,115,22,0.2);padding:3rem 0;">
   <div class="container" style="max-width:640px;text-align:center;">
@@ -1299,32 +1406,54 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="/" style="display:flex;align-items:center;gap:0.5rem;text-decoration:none;">
-          <img src="/assets/images/logo-dark.png" alt="" style="height:36px;width:36px;object-fit:contain;">
+          <img src="/assets/images/logo-dark.webp" onerror="this.src='/assets/images/logo-dark.png'" alt="Dark logo" style="height:36px;width:36px;object-fit:contain;" loading="lazy">
           <span style="font-size:1.1rem;font-weight:900;background:linear-gradient(135deg,#f97316,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">RankerTool AI</span>
         </a>
         <p class="footer-tagline">Independent reviews and comparisons of the best AI tools. We help you find the right tool without the guesswork.</p>
-        <div style="display:flex;gap:0.75rem;margin-top:1rem;">
-          <a href="https://twitter.com/rankertoolai" rel="noopener noreferrer" target="_blank" aria-label="Twitter" style="width:34px;height:34px;border-radius:8px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;color:#94a3b8;text-decoration:none;font-size:0.8rem;font-weight:700;">𝕏</a>
-          <a href="https://www.linkedin.com/company/rankertoolai" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn" style="width:34px;height:34px;border-radius:8px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;color:#94a3b8;text-decoration:none;font-size:0.75rem;font-weight:700;">in</a>
-          <a href="https://www.youtube.com/@rankertoolai" rel="noopener noreferrer" target="_blank" aria-label="YouTube" style="width:34px;height:34px;border-radius:8px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;color:#94a3b8;text-decoration:none;font-size:0.7rem;font-weight:700;">▶</a>
+        <div style="display:flex;flex-wrap:wrap;gap:0.55rem;margin-top:1rem;">
+          <a href="https://twitter.com/rankertoolai" rel="noopener noreferrer" target="_blank" aria-label="X (Twitter)" style="width:32px;height:32px;border-radius:8px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;color:#94a3b8;text-decoration:none;transition:background 150ms,color 150ms;" onmouseover="this.style.background='rgba(255,255,255,0.14)';this.style.color='#f1f5f9'" onmouseout="this.style.background='rgba(255,255,255,0.07)';this.style.color='#94a3b8'">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://reddit.com/u/rankertoolai" rel="noopener noreferrer" target="_blank" aria-label="Reddit" style="width:32px;height:32px;border-radius:8px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;color:#94a3b8;text-decoration:none;transition:background 150ms,color 150ms;" onmouseover="this.style.background='rgba(255,69,0,0.2)';this.style.color='#ff4500'" onmouseout="this.style.background='rgba(255,255,255,0.07)';this.style.color='#94a3b8'">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/rankertoolai" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn" style="width:32px;height:32px;border-radius:8px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;color:#94a3b8;text-decoration:none;transition:background 150ms,color 150ms;" onmouseover="this.style.background='rgba(0,119,181,0.2)';this.style.color='#0077b5'" onmouseout="this.style.background='rgba(255,255,255,0.07)';this.style.color='#94a3b8'">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@rankertoolai" rel="noopener noreferrer" target="_blank" aria-label="YouTube" style="width:32px;height:32px;border-radius:8px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;color:#94a3b8;text-decoration:none;transition:background 150ms,color 150ms;" onmouseover="this.style.background='rgba(255,0,0,0.2)';this.style.color='#ff0000'" onmouseout="this.style.background='rgba(255,255,255,0.07)';this.style.color='#94a3b8'">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/rankertoolai" rel="noopener noreferrer" target="_blank" aria-label="Instagram" style="width:32px;height:32px;border-radius:8px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;color:#94a3b8;text-decoration:none;transition:background 150ms,color 150ms;" onmouseover="this.style.background='rgba(225,48,108,0.2)';this.style.color='#e1306c'" onmouseout="this.style.background='rgba(255,255,255,0.07)';this.style.color='#94a3b8'">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@rankertoolai" rel="noopener noreferrer" target="_blank" aria-label="TikTok" style="width:32px;height:32px;border-radius:8px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;color:#94a3b8;text-decoration:none;transition:background 150ms,color 150ms;" onmouseover="this.style.background='rgba(255,255,255,0.14)';this.style.color='#f1f5f9'" onmouseout="this.style.background='rgba(255,255,255,0.07)';this.style.color='#94a3b8'">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.28 6.28 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.79a4.85 4.85 0 01-1.01-.1z"/></svg>
+          </a>
+          <a href="https://www.pinterest.com/rankertoolai" rel="noopener noreferrer" target="_blank" aria-label="Pinterest" style="width:32px;height:32px;border-radius:8px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;color:#94a3b8;text-decoration:none;transition:background 150ms,color 150ms;" onmouseover="this.style.background='rgba(230,0,35,0.2)';this.style.color='#e60023'" onmouseout="this.style.background='rgba(255,255,255,0.07)';this.style.color='#94a3b8'">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+          </a>
+          <a href="https://dev.to/rankertoolai" rel="noopener noreferrer" target="_blank" aria-label="Dev.to" style="width:32px;height:32px;border-radius:8px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;color:#94a3b8;text-decoration:none;transition:background 150ms,color 150ms;font-size:9px;font-weight:900;letter-spacing:-0.5px;" onmouseover="this.style.background='rgba(255,255,255,0.14)';this.style.color='#f1f5f9'" onmouseout="this.style.background='rgba(255,255,255,0.07)';this.style.color='#94a3b8'">DEV</a>
         </div>
       </div>
       <div class="footer-col">
-        <h5>Reviews</h5>
+        <h5>Top Reviews</h5>
         <ul>
-          <li><a href="/category/ai-writing/">AI Writing Tools</a></li>
-          <li><a href="/category/ai-image/">AI Image Generators</a></li>
-          <li><a href="/category/ai-video/">AI Video Tools</a></li>
-          <li><a href="/category/ai-seo/">AI SEO Tools</a></li>
-          <li><a href="/review/">All Reviews</a></li>
+          <li><a href="/review/claude/">Claude AI</a></li>
+          <li><a href="/review/chatgpt/">ChatGPT</a></li>
+          <li><a href="/review/cursor/">Cursor</a></li>
+          <li><a href="/review/midjourney/">Midjourney</a></li>
+          <li><a href="/review/elevenlabs/">ElevenLabs</a></li>
+          <li><a href="/review/">All 20 Reviews →</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h5>Compare</h5>
         <ul>
+          <li><a href="/best/ai-tools-for-students/">For Students</a></li>
+          <li><a href="/best/ai-tools-for-developers/">For Developers</a></li>
+          <li><a href="/best/ai-tools-for-marketers/">For Marketers</a></li>
+          <li><a href="/best/free-ai-tools/">Free AI Tools</a></li>
           <li><a href="/compare/">All Comparisons</a></li>
-          <li><a href="/alternatives/">Alternatives</a></li>
-          <li><a href="/best/">Best Tools</a></li>
           <li><a href="/deals/">Deals & Discounts</a></li>
         </ul>
       </div>

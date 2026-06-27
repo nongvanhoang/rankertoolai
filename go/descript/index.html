@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting to Descript | RankerToolAI</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://rankertoolai.com/go/descript/">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-81KB8ECCVF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-81KB8ECCVF');
+    gtag('config', 'AW-XXXXXXXXXX');
+  </script>
+  <script async src="/assets/js/pint.js"></script>
+</head>
+<body>
+  <p>Redirecting you to <a href="https://www.descript.com/?lmref=rankertoolai" rel="nofollow sponsored">Descript</a>...</p>
+  <script>
+    (function() {
+      var ref  = document.referrer ? new URL(document.referrer).pathname : 'direct';
+      var params = new URLSearchParams(window.location.search);
+      var subid  = params.get('ref') || ref.replace(/\//g,'_').replace(/^_|_$/g,'') || 'direct';
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'affiliate_click', { tool: 'descript', source_path: ref, sub_id: subid });
+      }
+      var destEl = document.querySelector('a[href]');
+      if (!destEl) return;
+      var dest = new URL(destEl.href);
+      ['utm_source','utm_medium','utm_campaign','utm_content','gclid'].forEach(function(k){
+        if (params.has(k)) dest.searchParams.set(k, params.get(k));
+      });
+      dest.searchParams.set('ref', subid);
+      setTimeout(function(){ window.location.replace(dest.toString()); }, 280);
+    })();
+  </script>
+</body>
+</html>

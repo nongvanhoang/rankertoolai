@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting to SE Ranking | RankerToolAI</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://rankertoolai.com/go/se-ranking/">
+
+  <!-- GA4 + Google Ads on redirect page -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-81KB8ECCVF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-81KB8ECCVF');
+    gtag('config', 'AW-XXXXXXXXXX');
+  </script>
+  <script async src="/assets/js/pint.js"></script>
+</head>
+<body>
+  <p>Redirecting you to <a href="https://seranking.com/?ga=5177462&source=link" rel="nofollow sponsored">SE Ranking</a>...</p>
+
+  <script>
+  (function() {
+    var ref  = document.referrer ? new URL(document.referrer).pathname : 'direct';
+    var params = new URLSearchParams(window.location.search);
+    var subid  = params.get('ref') || ref.replace(/\//g,'_').replace(/^_|_$/g,'') || 'direct';
+
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'affiliate_click', {
+        tool:        'se-ranking',
+        source_path: ref,
+        sub_id:      subid,
+      });
+    }
+
+    var dest = new URL('https://seranking.com/');
+    dest.searchParams.set('ga', '5177462');
+    dest.searchParams.set('source', 'link');
+    dest.searchParams.set('utm_source', 'rankertoolai');
+    dest.searchParams.set('utm_medium', 'affiliate');
+    dest.searchParams.set('utm_campaign', 'review');
+    dest.searchParams.set('utm_content', subid);
+
+    setTimeout(function(){ window.location.replace(dest.toString()); }, 280);
+  })();
+  </script>
+</body>
+</html>

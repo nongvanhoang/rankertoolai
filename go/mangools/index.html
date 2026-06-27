@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting to Mangools | RankerToolAI</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://rankertoolai.com/go/mangools/">
+
+  <!-- GA4 + Google Ads on redirect page -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-81KB8ECCVF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-81KB8ECCVF');
+    gtag('config', 'AW-XXXXXXXXXX');
+  </script>
+  <script async src="/assets/js/pint.js"></script>
+</head>
+<body>
+  <p>Redirecting you to <a href="https://mangools.com/#a6a3e9e286aee08d80045f92c" rel="nofollow sponsored">Mangools</a>...</p>
+
+  <script>
+  (function() {
+    var ref  = document.referrer ? new URL(document.referrer).pathname : 'direct';
+    var params = new URLSearchParams(window.location.search);
+    var subid  = params.get('ref') || ref.replace(/\//g,'_').replace(/^_|_$/g,'') || 'direct';
+
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'affiliate_click', {
+        tool:        'mangools',
+        source_path: ref,
+        sub_id:      subid,
+      });
+    }
+
+    // Mangools affiliate: append ID hash to destination URL
+    setTimeout(function(){ window.location.replace('https://mangools.com/#a6a3e9e286aee08d80045f92c'); }, 280);
+  })();
+  </script>
+</body>
+</html>

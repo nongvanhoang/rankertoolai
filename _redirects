@@ -1,3 +1,6 @@
+# WWW to apex redirect
+https://www.rankertoolai.com/* https://rankertoolai.com/:splat 301
+
 # Trailing slash normalization
 /review  /review/  301
 /blog    /blog/    301
