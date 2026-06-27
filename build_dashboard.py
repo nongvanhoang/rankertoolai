@@ -52,21 +52,18 @@ def get_schema_types(html: str):
     for raw in scripts:
         try:
             obj = json.loads(raw.strip())
-            t = obj.get("@type", "")
-            if isinstance(t, list):
-                types.extend(t)
-            elif t:
-                types.append(t)
+            for item in obj.get("@graph", [obj]):
+                t = item.get("@type", "")
+                if isinstance(t, list):
+                    types.extend(t)
+                elif t:
+                    types.append(t)
         except:
             pass
     return types
 
 def count_affiliate_links(html: str) -> int:
     return len(re.findall(r'href=["\'][^"\']*\/go\/[^"\']+["\']', html, re.IGNORECASE))
-
-def get_meta(html: str, name: str) -> str:
-    m = re.search(rf'<meta[^>]*name=["\']description["\'][^>]*content=["\']([^"\']*)["\']', html, re.IGNORECASE)
-    return m.group(1) if m else ""
 
 def scan_pages():
     pages = []
