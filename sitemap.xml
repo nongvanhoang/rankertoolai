@@ -576,7 +576,7 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/best/ai-productivity-tools/</loc>
-    <lastmod>2026-06-27</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
@@ -588,13 +588,13 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/best/ai-tools-for-agencies/</loc>
-    <lastmod>2026-06-27</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/best/ai-tools-for-bloggers/</loc>
-    <lastmod>2026-06-27</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
@@ -612,7 +612,7 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/best/ai-tools-for-students/</loc>
-    <lastmod>2026-06-27</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
@@ -630,13 +630,13 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/best/free-ai-tools/</loc>
-    <lastmod>2026-06-27</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/best/text-to-speech/</loc>
-    <lastmod>2026-06-27</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
@@ -799,6 +799,14 @@
     <lastmod>2026-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.72</priority>
+  </url>
+
+  <!-- Coupons Pages -->
+  <url>
+    <loc>https://rankertoolai.com/coupons/julius-ai/</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
   </url>
 
 </urlset>
