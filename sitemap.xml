@@ -803,7 +803,25 @@
 
   <!-- Coupons Pages -->
   <url>
+    <loc>https://rankertoolai.com/coupons/elevenlabs/</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
     <loc>https://rankertoolai.com/coupons/julius-ai/</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/coupons/mangools/</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/coupons/se-ranking/</loc>
     <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
