@@ -26,6 +26,7 @@ SECTION_CONFIG = {
     "best":         {"priority": "0.78", "changefreq": "monthly"},
     "category":     {"priority": "0.75", "changefreq": "monthly"},
     "blog":         {"priority": "0.72", "changefreq": "monthly"},
+    "coupons":      {"priority": "0.88", "changefreq": "weekly"},
 }
 
 # Static entries always written first (not auto-discovered)
