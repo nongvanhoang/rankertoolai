@@ -144,7 +144,7 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/review/elevenlabs/</loc>
-    <lastmod>2026-06-27</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -198,13 +198,13 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/review/julius-ai/</loc>
-    <lastmod>2026-06-27</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/review/mangools/</loc>
-    <lastmod>2026-06-27</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -246,7 +246,7 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/review/se-ranking/</loc>
-    <lastmod>2026-06-27</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -355,6 +355,12 @@
     <priority>0.82</priority>
   </url>
   <url>
+    <loc>https://rankertoolai.com/compare/mangools-vs-ahrefs/</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+  </url>
+  <url>
     <loc>https://rankertoolai.com/compare/mangools-vs-semrush/</loc>
     <lastmod>2026-06-27</lastmod>
     <changefreq>monthly</changefreq>
@@ -387,6 +393,12 @@
   <url>
     <loc>https://rankertoolai.com/compare/perplexity-vs-google/</loc>
     <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/compare/se-ranking-vs-ahrefs/</loc>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
