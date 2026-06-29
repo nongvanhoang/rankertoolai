@@ -136,13 +136,23 @@
 
 <script>
 (function() {
-  var DEST = 'https://mangools.com/#a6a3e9e286aee08d80045f92c';
+  var DEST_BASE = 'https://mangools.com/';
+  var HASH = 'a6a3e9e286aee08d80045f92c';
   var countdown = 5;
   var redirected = false;
 
   var params = new URLSearchParams(window.location.search);
   var ref = document.referrer ? new URL(document.referrer).pathname : 'direct';
   var subid = params.get('ref') || ref.replace(/\//g,'_').replace(/^_|_$/g,'') || 'direct';
+
+  var dest = new URL(DEST_BASE);
+  ['utm_source','utm_medium','utm_campaign','utm_content','gclid'].forEach(function(k){
+    if (params.has(k)) dest.searchParams.set(k, params.get(k));
+  });
+  dest.searchParams.set('ref', subid);
+  var finalUrl = dest.toString() + '#' + HASH;
+
+  document.getElementById('ctaBtn').href = finalUrl;
 
   if (typeof gtag !== 'undefined') {
     gtag('event', 'affiliate_click', { tool: 'mangools', source_path: ref, sub_id: subid, page_type: 'bridge' });
@@ -160,7 +170,7 @@
     if (redirected) return;
     redirected = true;
     clearInterval(interval);
-    window.location.replace(DEST);
+    window.location.replace(finalUrl);
   };
 })();
 </script>
