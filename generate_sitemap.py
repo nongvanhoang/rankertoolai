@@ -28,6 +28,7 @@ SECTION_CONFIG = {
     "blog":         {"priority": "0.72", "changefreq": "monthly"},
     "coupons":      {"priority": "0.88", "changefreq": "weekly"},
     "tools":        {"priority": "0.82", "changefreq": "monthly"},
+    "pricing":      {"priority": "0.86", "changefreq": "weekly"},
 }
 
 # Static entries always written first (not auto-discovered)
@@ -40,6 +41,8 @@ STATIC_ENTRIES = [
     {"loc": "/category/",           "priority": "0.80", "changefreq": "weekly"},
     {"loc": "/deals/",              "priority": "0.80", "changefreq": "weekly"},
     {"loc": "/blog/",               "priority": "0.75", "changefreq": "weekly"},
+    {"loc": "/pricing/",            "priority": "0.86", "changefreq": "weekly"},
+    {"loc": "/coupons/",            "priority": "0.88", "changefreq": "weekly"},
     {"loc": "/about/",              "priority": "0.60", "changefreq": "monthly"},
     {"loc": "/contact/",            "priority": "0.50", "changefreq": "monthly"},
     {"loc": "/methodology/",        "priority": "0.55", "changefreq": "monthly"},
