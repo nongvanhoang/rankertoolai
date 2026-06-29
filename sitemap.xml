@@ -4,91 +4,91 @@
   <!-- Static Pages -->
   <url>
     <loc>https://rankertoolai.com/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/review/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/compare/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/alternatives/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/best/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/category/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/deals/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/blog/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/about/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.60</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/contact/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.50</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/methodology/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.55</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/affiliate-disclosure/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.40</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/privacy-policy/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.40</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/terms/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.40</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/cookie-policy/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.40</priority>
   </url>
@@ -144,7 +144,7 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/review/elevenlabs/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -198,13 +198,13 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/review/julius-ai/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/review/mangools/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -246,7 +246,7 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/review/se-ranking/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -350,7 +350,13 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/compare/julius-ai-vs-chatgpt/</loc>
-    <lastmod>2026-06-27</lastmod>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/compare/julius-ai-vs-excel/</loc>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
@@ -448,7 +454,7 @@
   <!-- Alternatives Pages -->
   <url>
     <loc>https://rankertoolai.com/alternatives/chatgpt/</loc>
-    <lastmod>2026-06-27</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -606,7 +612,7 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/best/ai-tools-for-marketers/</loc>
-    <lastmod>2026-06-27</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
@@ -876,7 +882,7 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/coupons/julius-ai/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
   </url>
