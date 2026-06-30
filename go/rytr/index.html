@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Redirecting to Rytr | RankerToolAI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rytr Free Plan — Redirecting | RankerToolAI</title>
   <meta name="robots" content="noindex, nofollow">
   <link rel="canonical" href="https://rankertoolai.com/go/rytr/">
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-81KB8ECCVF"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -12,25 +14,163 @@
     gtag('js', new Date());
     gtag('config', 'G-81KB8ECCVF');
   </script>
+  <script async src="/assets/js/pint.js"></script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0a100f;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .card {
+      background: #0f1a18;
+      border: 1px solid #1a3830;
+      border-radius: 16px;
+      max-width: 520px;
+      width: 100%;
+      padding: 40px 36px;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    }
+    .logo-row {
+      display: flex; align-items: center; justify-content: center;
+      gap: 12px; margin-bottom: 24px; font-size: 13px; color: #888;
+    }
+    .arrow { font-size: 18px; color: #555; }
+    .heading { font-size: 22px; font-weight: 700; color: #fff; margin-bottom: 8px; line-height: 1.3; }
+    .sub { color: #aaa; font-size: 14px; margin-bottom: 28px; line-height: 1.6; }
+
+    .badge {
+      background: linear-gradient(135deg, #16a34a, #22c55e);
+      border-radius: 12px;
+      padding: 22px 24px;
+      margin-bottom: 28px;
+    }
+    .badge-num { font-size: 48px; font-weight: 900; color: #fff; line-height: 1; }
+    .badge-label { font-size: 17px; font-weight: 700; color: rgba(255,255,255,0.9); margin-top: 4px; }
+    .badge-note { font-size: 13px; color: rgba(255,255,255,0.75); margin-top: 8px; }
+
+    .benefits { text-align: left; margin-bottom: 28px; }
+    .benefit {
+      display: flex; align-items: flex-start; gap: 10px;
+      padding: 8px 0; border-bottom: 1px solid #1a3830;
+      color: #ccc; font-size: 14px; line-height: 1.5;
+    }
+    .benefit:last-child { border-bottom: none; }
+    .benefit .icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+
+    .cta-btn {
+      display: block; width: 100%;
+      background: linear-gradient(135deg, #22c55e, #16a34a);
+      color: #fff; font-size: 16px; font-weight: 700;
+      padding: 16px 24px; border-radius: 10px; text-decoration: none;
+      border: none; cursor: pointer;
+      transition: opacity 0.2s, transform 0.15s;
+      margin-bottom: 12px;
+    }
+    .cta-btn:hover { opacity: 0.92; transform: translateY(-1px); }
+
+    .countdown-row { font-size: 13px; color: #666; }
+    .countdown-row span { color: #4ade80; font-weight: 600; }
+    .skip-link {
+      color: #666; font-size: 12px; text-decoration: underline; cursor: pointer;
+      background: none; border: none; display: block; margin-top: 8px;
+    }
+    .skip-link:hover { color: #aaa; }
+    .footer-note { margin-top: 24px; font-size: 11px; color: #555; line-height: 1.6; }
+    .footer-note a { color: #22c55e; text-decoration: none; }
+  </style>
 </head>
 <body>
-  <p>Redirecting you to <a href="https://rytr.me/?via=rankertoolai" rel="nofollow">Rytr</a>...</p>
-  <script>
-    (function() {
-      var ref = document.referrer ? new URL(document.referrer).pathname : 'direct';
-      var params = new URLSearchParams(window.location.search);
-      var subid = params.get('ref') || ref.replace(/\//g,'_').replace(/^_|_$/g,'') || 'direct';
-      if (typeof gtag !== 'undefined') {
-        gtag('event', 'affiliate_click', {
-          tool: 'rytr', source_path: ref, sub_id: subid
-        });
-      }
-      var dest = new URL('https://rytr.me/?via=rankertoolai');
-      ['utm_source','utm_medium','utm_campaign'].forEach(function(k) {
-        if (params.has(k)) dest.searchParams.set(k, params.get(k));
-      });
-      setTimeout(function(){ window.location.replace(dest.toString()); }, 280);
-    })();
-  </script>
+
+<div class="card">
+  <div class="logo-row">
+    <span>RankerToolAI</span>
+    <span class="arrow">&#8594;</span>
+    <span>Rytr</span>
+  </div>
+
+  <h1 class="heading">Try Rytr free &mdash; 10,000 chars/month forever</h1>
+  <p class="sub">Rytr's free plan gives you 10,000 characters of AI writing per month — no credit card. The Unlimited plan is $29/month, the cheapest in the industry.</p>
+
+  <div class="badge">
+    <div class="badge-num">10K</div>
+    <div class="badge-label">Free Chars/Month</div>
+    <div class="badge-note">Permanent free plan &middot; No credit card &middot; Unlimited from $29/mo</div>
+  </div>
+
+  <div class="benefits">
+    <div class="benefit">
+      <span class="icon">✍️</span>
+      <span><strong>40+ use case templates</strong> &mdash; Emails, ads, product descriptions, social captions — purpose-built templates for every short-form task</span>
+    </div>
+    <div class="benefit">
+      <span class="icon">🌍</span>
+      <span><strong>30+ languages</strong> &mdash; Generate content in English, Spanish, French, German, and 27 more languages</span>
+    </div>
+    <div class="benefit">
+      <span class="icon">🎭</span>
+      <span><strong>20+ tone presets</strong> &mdash; Convincing, witty, formal, persuasive — tone settings that actually change the output</span>
+    </div>
+    <div class="benefit">
+      <span class="icon">💰</span>
+      <span><strong>Cheapest unlimited plan</strong> &mdash; Unlimited generation at $29/mo — the most affordable serious AI writer available</span>
+    </div>
+  </div>
+
+  <a id="ctaBtn" href="https://rytr.me/?via=rankertoolai" rel="nofollow sponsored" class="cta-btn">
+    Try Rytr Free &rarr;
+  </a>
+  <div class="countdown-row">Redirecting to Rytr in <span id="timer">5</span> seconds</div>
+  <button class="skip-link" onclick="goNow()">Skip countdown</button>
+
+  <div class="footer-note">
+    <a href="/review/rytr/">Full Rytr review</a> &middot; <a href="/compare/rytr-vs-jasper/">Rytr vs Jasper</a> &middot; <a href="/alternatives/rytr/">Rytr alternatives</a>
+  </div>
+</div>
+
+<script>
+(function() {
+  var DEST_BASE = 'https://rytr.me/?via=rankertoolai';
+  var countdown = 5;
+  var redirected = false;
+
+  var params = new URLSearchParams(window.location.search);
+  var ref = document.referrer ? new URL(document.referrer).pathname : 'direct';
+  var subid = params.get('ref') || ref.replace(/\//g,'_').replace(/^_|_$/g,'') || 'direct';
+
+  var dest = new URL(DEST_BASE);
+  ['utm_source','utm_medium','utm_campaign','utm_content','gclid'].forEach(function(k){
+    if (params.has(k)) dest.searchParams.set(k, params.get(k));
+  });
+  dest.searchParams.set('ref', subid);
+  var finalUrl = dest.toString();
+
+  document.getElementById('ctaBtn').href = finalUrl;
+
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'affiliate_click', { tool: 'rytr', source_path: ref, sub_id: subid, page_type: 'bridge' });
+  }
+
+  var timerEl = document.getElementById('timer');
+  var interval = setInterval(function() {
+    countdown--;
+    timerEl.textContent = countdown;
+    if (countdown <= 0) { clearInterval(interval); goNow(); }
+  }, 1000);
+
+  window.goNow = function() {
+    if (redirected) return;
+    redirected = true;
+    clearInterval(interval);
+    window.location.replace(finalUrl);
+  };
+})();
+</script>
 </body>
 </html>
