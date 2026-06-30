@@ -281,6 +281,12 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://rankertoolai.com/review/pictory/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://rankertoolai.com/review/playht/</loc>
     <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
@@ -385,6 +391,12 @@
     <priority>0.82</priority>
   </url>
   <url>
+    <loc>https://rankertoolai.com/compare/codeium-vs-github-copilot/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+  </url>
+  <url>
     <loc>https://rankertoolai.com/compare/cursor-vs-github-copilot/</loc>
     <lastmod>2026-06-27</lastmod>
     <changefreq>monthly</changefreq>
@@ -475,6 +487,12 @@
     <priority>0.82</priority>
   </url>
   <url>
+    <loc>https://rankertoolai.com/compare/mistral-vs-chatgpt/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+  </url>
+  <url>
     <loc>https://rankertoolai.com/compare/notion-vs-chatgpt/</loc>
     <lastmod>2026-06-27</lastmod>
     <changefreq>monthly</changefreq>
@@ -507,6 +525,12 @@
   <url>
     <loc>https://rankertoolai.com/compare/semrush-vs-se-ranking/</loc>
     <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/compare/speechify-vs-elevenlabs/</loc>
+    <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
@@ -774,7 +798,7 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/best/ai-writing-tools/</loc>
-    <lastmod>2026-06-27</lastmod>
+    <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
@@ -842,13 +866,13 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/category/ai-voice/</loc>
-    <lastmod>2026-06-27</lastmod>
+    <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/category/ai-writing/</loc>
-    <lastmod>2026-06-27</lastmod>
+    <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
