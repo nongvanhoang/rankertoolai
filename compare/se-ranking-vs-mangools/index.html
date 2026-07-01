@@ -58,6 +58,11 @@
     .faq-item{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.25rem;margin-bottom:0.75rem;}
     .faq-item h3{color:#f1f5f9;margin:0 0 0.5rem;font-size:0.95rem;}
     .faq-item p{color:rgba(148,163,184,0.8);margin:0;font-size:0.875rem;line-height:1.65;}
+    #back-to-top{display:none;position:fixed;bottom:4rem;right:1.5rem;width:44px;height:44px;border-radius:50%;background:var(--color-primary);color:white;align-items:center;justify-content:center;font-size:1.25rem;cursor:pointer;border:none;box-shadow:var(--shadow-lg);z-index:50;}
+    .sticky-cta{position:fixed;bottom:0;left:0;right:0;background:linear-gradient(90deg,#0a0f1e,#0d1528);border-top:1px solid rgba(249,115,22,0.3);padding:0.75rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;z-index:100;transform:translateY(100%);transition:transform 0.3s ease;backdrop-filter:blur(12px);}
+    .sticky-cta.visible{transform:translateY(0);}
+    .sticky-cta-btn{flex-shrink:0;padding:0.55rem 1.25rem;background:linear-gradient(135deg,#f97316,#fbbf24);color:white;font-weight:700;border-radius:var(--radius);text-decoration:none;font-size:0.85rem;white-space:nowrap;}
+    .sticky-cta-btn:hover{color:white;text-decoration:none;}
   </style>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-81KB8ECCVF"></script>
@@ -83,7 +88,11 @@
   <script async src="/assets/js/pint.js"></script>
 </head>
 <body>
-
+<button id="back-to-top" aria-label="Back to top" style="display:none;">↑</button>
+<div class="sticky-cta" id="sticky-cta">
+  <div style="font-size:0.875rem;color:#94a3b8;"><strong style="color:#4ade80;">SE Ranking</strong> for agencies · <strong style="color:#60a5fa;">Mangools</strong> for bloggers · Free trials both</div>
+  <a href="/go/se-ranking/" class="sticky-cta-btn" rel="nofollow sponsored" target="_blank">Try SE Ranking Free →</a>
+</div>
 <header class="site-header">
   <div class="container">
     <div class="header-inner">
@@ -280,6 +289,13 @@
   </div>
 </footer>
 <script>
+  const stickyCta=document.getElementById('sticky-cta');
+  const backToTop=document.getElementById('back-to-top');
+  window.addEventListener('scroll',()=>{
+    if(window.scrollY>300){stickyCta.classList.add('visible');backToTop.style.display='flex';}
+    else{stickyCta.classList.remove('visible');backToTop.style.display='none';}
+  });
+  backToTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
   const t=document.getElementById('nav-toggle'),m=document.getElementById('nav-menu');
   t.addEventListener('click',()=>{const o=m.classList.toggle('is-open');t.setAttribute('aria-expanded',o);});
 </script>
