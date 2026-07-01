@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny-ps"
+     viewBox="0 0 500 500" width="500" height="500">
+  <title>RankerToolAI</title>
+  <rect width="500" height="500" rx="90" fill="#f97316"/>
+  <path fill="white" fill-rule="evenodd" d="M 125,95 L 295,95 A 80,80 0 0,1 295,255 L 295,285 L 375,410 L 280,410 L 200,285 L 200,410 L 125,410 Z M 295,135 A 40,40 0 0,1 295,215 Z"/>
+</svg>

@@ -193,12 +193,40 @@
     <p><strong>2. Use negative prompts.</strong> Add <code>--no blurry, low quality, watermark, text</code> to avoid common issues in generated images.</p>
     <p><strong>3. Vary with U and V buttons.</strong> After getting 4 initial images, U1-U4 upscales a specific variation. V1-V4 generates more variations of one image. Start with V to explore, then U to finalize.</p>
     <p><strong>4. Seed number for consistency.</strong> Copy the seed from a successful image and reuse it with slightly different prompts to maintain visual consistency across a series.</p>
-    <p><strong>5. Style reference for brand work.</strong> Upload a reference image URL with <code>--sref [url]</code> to match a specific visual aesthetic across multiple generations — crucial for brand consistency.</p>
+    <p><strong>5. Style reference for brand work.</strong> Upload a reference image URL with <code>--sref [url]</code> to match a specific visual aesthetic across multiple generations — crucial for brand consistency. You can combine multiple reference images with <code>--sref url1 url2</code> and adjust their relative influence with the <code>--sw</code> (style weight) parameter. A value of <code>--sw 100</code> applies the reference style strongly; <code>--sw 500</code> dominates the generation with the reference style almost entirely. This makes <code>--sref</code> essential for any client work requiring consistent visual language across a series of assets.</p>
 
     <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem;">
       <a href="/review/midjourney/" class="btn btn-primary">Midjourney Full Review →</a>
       <a href="/best/ai-image-generators/" class="btn btn-secondary">Best AI Image Generators →</a>
       <a href="/alternatives/midjourney/" class="btn btn-secondary">Free Alternatives →</a>
+    </div>
+  </div>
+
+  <div class="article-body" style="margin-top:2rem;">
+    <h2>Frequently Asked Questions</h2>
+    <div style="border-bottom:1px solid rgba(255,255,255,0.07);padding:1.25rem 0;">
+      <h3 style="font-size:1rem;color:#f1f5f9;margin-bottom:0.5rem;">How much does Midjourney cost?</h3>
+      <p style="font-size:0.9rem;margin:0;">Midjourney plans start at $10/month for the Basic plan, which gives approximately 200 GPU minutes per month — enough for roughly 200 standard-quality images at default settings. The Standard plan ($30/month) gives 15 GPU hours plus unlimited relaxed-mode generations, which is the most popular choice for active creators. Pro ($60/month) adds stealth mode (private generations) and more fast GPU hours for high-volume workflows. Annual billing gives a 20% discount on all plans. There is no free trial as of 2024, though Midjourney periodically restores limited free access.</p>
+    </div>
+    <div style="border-bottom:1px solid rgba(255,255,255,0.07);padding:1.25rem 0;">
+      <h3 style="font-size:1rem;color:#f1f5f9;margin-bottom:0.5rem;">Can I use Midjourney images commercially?</h3>
+      <p style="font-size:0.9rem;margin:0;">Paid subscribers (Basic and above) own their generated images and can use them commercially — for client work, print-on-demand, advertising, book covers, and merchandise. Free users (if free access is available) cannot use images commercially under Midjourney's terms. Pro and Mega plan subscribers also get stealth mode, which keeps generations private and prevents them from appearing in the public feed. Always check the latest Midjourney Terms of Service for the most current commercial usage rules, as they update periodically.</p>
+    </div>
+    <div style="border-bottom:1px solid rgba(255,255,255,0.07);padding:1.25rem 0;">
+      <h3 style="font-size:1rem;color:#f1f5f9;margin-bottom:0.5rem;">What is the --niji parameter in Midjourney?</h3>
+      <p style="font-size:0.9rem;margin:0;">Adding <code>--niji 6</code> to your prompt switches Midjourney to its anime and illustration-focused model. It produces distinctly different output — high-detail anime characters, illustration-style environments, and manga-inspired compositions. Use <code>--niji 6 --style expressive</code> for dynamic, energetic anime art or <code>--niji 6 --style scenic</code> for peaceful, atmospheric backgrounds. If you're creating character art, visual novel assets, or anime-style illustrations, the niji model consistently outperforms the default model for those specific aesthetics.</p>
+    </div>
+    <div style="border-bottom:1px solid rgba(255,255,255,0.07);padding:1.25rem 0;">
+      <h3 style="font-size:1rem;color:#f1f5f9;margin-bottom:0.5rem;">Is there a free alternative to Midjourney?</h3>
+      <p style="font-size:0.9rem;margin:0;">Several free alternatives are worth testing: <a href="/go/ideogram/" rel="nofollow sponsored" style="color:#f97316;">Ideogram</a> offers 25 free image generations per day with excellent text rendering — better than Midjourney for images that include readable text. <a href="/go/adobe-firefly/" rel="nofollow sponsored" style="color:#f97316;">Adobe Firefly</a> gives 25 free generative credits per month with commercially safe output (trained only on licensed images). <a href="/go/stable-diffusion/" rel="nofollow sponsored" style="color:#f97316;">Stable Diffusion</a> is completely free and open-source, runnable locally on your own hardware with no generation limits — the tradeoff being a steeper technical setup compared to Midjourney's Discord interface.</p>
+    </div>
+    <div style="border-bottom:1px solid rgba(255,255,255,0.07);padding:1.25rem 0;">
+      <h3 style="font-size:1rem;color:#f1f5f9;margin-bottom:0.5rem;">What Midjourney version should I use in 2026?</h3>
+      <p style="font-size:0.9rem;margin:0;">As of 2026, Midjourney V6.1 is the default and produces the best results for photorealistic images, portraits, and detailed scenes. For stylized and painterly aesthetics, V5.2 with <code>--style raw</code> still produces excellent results with a different aesthetic character that some artists prefer. Niji V6 remains the go-to for anime and illustration styles. When starting a new project, test both V6.1 and V5.2 with the same prompt to see which aesthetic better suits your intended style before committing to a full generation run.</p>
+    </div>
+    <div style="padding:1.25rem 0;">
+      <h3 style="font-size:1rem;color:#f1f5f9;margin-bottom:0.5rem;">Can Midjourney generate text in images?</h3>
+      <p style="font-size:0.9rem;margin:0;">Midjourney V6 significantly improved text rendering compared to earlier versions, but it remains inconsistent for complex typography. For logos, posters, or images where specific readable text is critical, <a href="/go/ideogram/" rel="nofollow sponsored" style="color:#f97316;">Ideogram</a> is the better choice — it was specifically designed with text rendering as a priority and produces clean, readable typography in most cases. For combining Midjourney's superior photorealism with text, the recommended workflow is to generate the image in Midjourney and add text overlays using <a href="/go/canva-ai/" rel="nofollow sponsored" style="color:#f97316;">Canva</a> or Photoshop afterward.</p>
     </div>
   </div>
 
