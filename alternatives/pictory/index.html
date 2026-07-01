@@ -37,6 +37,8 @@
     .sticky-cta.visible{transform:translateY(0);}
     .sticky-cta-btn{flex-shrink:0;padding:0.55rem 1.25rem;background:linear-gradient(135deg,#f97316,#fbbf24);color:white;font-weight:700;border-radius:var(--radius);text-decoration:none;font-size:0.85rem;white-space:nowrap;}
     .sticky-cta-btn:hover{color:white;text-decoration:none;}
+    .coupon-box{display:inline-flex;align-items:center;gap:0.75rem;background:rgba(249,115,22,0.12);border:1px dashed rgba(249,115,22,0.5);border-radius:var(--radius);padding:0.6rem 1.25rem;margin:0.75rem 0;cursor:pointer;}
+    .coupon-code{font-family:monospace;font-weight:700;font-size:1.1rem;color:#fbbf24;letter-spacing:0.08em;}
   </style>
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="RankerToolAI">
@@ -117,6 +119,10 @@
 
     <div style="background:rgba(59,130,246,0.07);border:1px solid rgba(59,130,246,0.22);border-radius:10px;padding:1rem 1.2rem;margin-bottom:1.25rem;font-size:0.875rem;color:rgba(148,163,184,0.9);">
       <strong style="color:#93c5fd;">Before switching:</strong> Pictory's blog-to-video speed and auto-caption accuracy (95%+) are genuinely best-in-class for content repurposing. If your use case is turning blog posts into videos quickly, no alternative does it faster. <a href="/go/pictory/" rel="nofollow sponsored" target="_blank" style="color:#f97316;font-weight:700;">Try Pictory free →</a>
+      <div class="coupon-box" onclick="navigator.clipboard.writeText('RankerToolAI').then(()=>{this.querySelector('.coupon-code').textContent='Copied!';setTimeout(()=>{this.querySelector('.coupon-code').textContent='RankerToolAI'},2000)})" title="Click to copy">
+        <span style="font-size:0.8rem;color:rgba(203,213,225,0.7);">Sign-up discount — use code:</span>
+        <span class="coupon-code">RankerToolAI</span>
+      </div>
     </div>
 
     <div class="quick-picks">
@@ -411,6 +417,7 @@
       <div style="font-size:0.8rem;color:rgba(148,163,184,0.6);margin-bottom:1rem;">Fastest URL-to-video tool</div>
       <a href="/go/pictory/" rel="nofollow sponsored" target="_blank" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.7rem 1.5rem;background:linear-gradient(135deg,#f97316,#fbbf24);color:white;font-weight:800;font-size:0.9rem;border-radius:999px;text-decoration:none;width:100%;justify-content:center;">Try Pictory Free →</a>
       <div style="font-size:0.72rem;color:rgba(148,163,184,0.4);margin-top:0.5rem;">No credit card required</div>
+      <div style="font-size:0.72rem;color:rgba(148,163,184,0.5);margin-top:0.4rem;">Code <strong style="font-family:monospace;color:#fbbf24;">RankerToolAI</strong> → sign-up discount</div>
     </div>
     <div style="background:linear-gradient(135deg,#131c2e,#0f1829);border:1px solid rgba(255,255,255,0.07);border-radius:var(--radius-lg);padding:1.25rem;">
       <h4 style="font-size:0.8rem;text-transform:uppercase;letter-spacing:0.05em;color:rgba(148,163,184,0.6);margin-bottom:0.75rem;font-weight:700;">AI Video Reviews</h4>
