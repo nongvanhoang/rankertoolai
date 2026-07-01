@@ -39,7 +39,11 @@
     .tag-value{background:rgba(34,197,94,0.12);color:#4ade80;border:1px solid rgba(34,197,94,0.2);}
     .tag-free{background:rgba(96,165,250,0.12);color:#60a5fa;border:1px solid rgba(96,165,250,0.2);}
     .tag-team{background:rgba(167,139,250,0.12);color:#a78bfa;border:1px solid rgba(167,139,250,0.2);}
-    #back-to-top{display:none;position:fixed;bottom:1.5rem;right:1.5rem;width:44px;height:44px;border-radius:50%;background:var(--color-primary);color:white;align-items:center;justify-content:center;font-size:1.25rem;cursor:pointer;border:none;box-shadow:var(--shadow-lg);z-index:50;}
+    #back-to-top{display:none;position:fixed;bottom:80px;right:1.5rem;width:44px;height:44px;border-radius:50%;background:var(--color-primary);color:white;align-items:center;justify-content:center;font-size:1.25rem;cursor:pointer;border:none;box-shadow:var(--shadow-lg);z-index:50;}
+    .sticky-cta{position:fixed;bottom:0;left:0;right:0;background:linear-gradient(90deg,#0a0f1e,#0d1528);border-top:1px solid rgba(124,58,237,0.35);padding:0.75rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;z-index:100;transform:translateY(100%);transition:transform 0.3s ease;backdrop-filter:blur(12px);}
+    .sticky-cta.visible{transform:translateY(0);}
+    .sticky-cta-btn{flex-shrink:0;padding:0.55rem 1.25rem;background:linear-gradient(135deg,#7c3aed,#6d28d9);color:white;font-weight:700;border-radius:var(--radius);text-decoration:none;font-size:0.85rem;white-space:nowrap;}
+    .sticky-cta-btn:hover{color:white;text-decoration:none;}
   </style>
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="RankerToolAI">
@@ -89,7 +93,15 @@
     <script async src="/assets/js/pint.js"></script>
 </head>
 <body>
-<button id="back-to-top" aria-label="Back to top" style="display:none;">↑</button>
+<button id="back-to-top" aria-label="Back to top">↑</button>
+<div class="sticky-cta" id="sticky-cta">
+  <div style="display:flex;align-items:center;gap:0.75rem;min-width:0;flex-wrap:wrap;">
+    <div style="font-size:0.875rem;color:#f1f5f9;font-weight:700;white-space:nowrap;">Julius AI</div>
+    <div style="font-size:0.8rem;color:#94a3b8;white-space:nowrap;">#1 Data AI · Free plan · 10% off with code</div>
+    <div style="font-family:monospace;font-size:0.8rem;font-weight:800;color:#c4b5fd;background:rgba(124,58,237,0.15);border:1px solid rgba(124,58,237,0.3);border-radius:4px;padding:0.1rem 0.5rem;white-space:nowrap;">25RQK3UL</div>
+  </div>
+  <a href="/go/julius-ai/" class="sticky-cta-btn" rel="nofollow sponsored" target="_blank">Try Free →</a>
+</div>
 <header class="site-header">
   <div class="container">
     <div class="header-inner">
@@ -368,7 +380,11 @@
   const t=document.getElementById('nav-toggle'),m=document.getElementById('nav-menu');
   t.addEventListener('click',()=>{const o=m.classList.toggle('is-open');t.setAttribute('aria-expanded',o);});
   const b=document.getElementById('back-to-top');
-  window.addEventListener('scroll',()=>{b.style.display=window.scrollY>400?'flex':'none';});
+  const sc=document.getElementById('sticky-cta');
+  window.addEventListener('scroll',()=>{
+    b.style.display=window.scrollY>400?'flex':'none';
+    sc.classList.toggle('visible',window.scrollY>300);
+  });
   b.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
 </script>
 </body>
