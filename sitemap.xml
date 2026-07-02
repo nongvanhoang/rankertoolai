@@ -1152,7 +1152,14 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/coupons/se-ranking/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+
+  <url>
+    <loc>https://rankertoolai.com/coupons/pictory/</loc>
+    <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
   </url>
