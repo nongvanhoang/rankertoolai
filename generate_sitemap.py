@@ -44,12 +44,10 @@ STATIC_ENTRIES = [
     {"loc": "/pricing/",            "priority": "0.86", "changefreq": "weekly"},
     {"loc": "/coupons/",            "priority": "0.88", "changefreq": "weekly"},
     {"loc": "/about/",              "priority": "0.60", "changefreq": "monthly"},
-    {"loc": "/contact/",            "priority": "0.50", "changefreq": "monthly"},
     {"loc": "/methodology/",        "priority": "0.55", "changefreq": "monthly"},
-    {"loc": "/affiliate-disclosure/","priority": "0.40", "changefreq": "yearly"},
-    {"loc": "/privacy-policy/",     "priority": "0.40", "changefreq": "yearly"},
-    {"loc": "/terms/",              "priority": "0.40", "changefreq": "yearly"},
-    {"loc": "/cookie-policy/",      "priority": "0.40", "changefreq": "yearly"},
+    # /contact/, /affiliate-disclosure/, /privacy-policy/, /terms/, /cookie-policy/
+    # are all noindex -- deliberately excluded from the sitemap to avoid sending
+    # mixed signals to search engines.
 ]
 
 # Sections that are /go/ redirects — exclude from sitemap
