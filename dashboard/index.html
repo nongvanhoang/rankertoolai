@@ -46,50 +46,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
 .search:focus{border-color:#334155}
 .ga-frame{width:100%;height:600px;border:none;border-radius:8px;background:#0d1224}
 </style>
-
-  <!-- ═══ ANALYTICS & ADS TRACKING ═══ -->
-  <!-- Google tag (gtag.js) — GA4 + Google Ads -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-81KB8ECCVF"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-81KB8ECCVF');
-    gtag('config', 'AW-XXXXXXXXXX');
-
-    // Conversion: affiliate click (fires when user clicks /go/ link)
-    document.addEventListener('DOMContentLoaded', function() {
-      document.querySelectorAll('a[href*="/go/"]').forEach(function(el) {
-        el.addEventListener('click', function() {
-          gtag('event', 'conversion', {
-            'send_to': 'AW-XXXXXXXXXX/YYYYYYYYYY',
-            'value': 1.0,
-            'currency': 'USD'
-          });
-          gtag('event', 'affiliate_click', {
-            'tool': el.href.split('/go/')[1]?.replace(/\//g,'') || 'unknown',
-            'page': window.location.pathname
-          });
-        });
-      });
-
-      // Conversion: 60-second engaged page view
-      setTimeout(function() {
-        gtag('event', 'conversion', {'send_to': 'AW-XXXXXXXXXX/ZZZZZZZZZZ'});
-      }, 60000);
-    });
-  </script>
-
-  <!-- Microsoft Clarity -->
-  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window,document,"clarity","script","x97zf4vn2v");
-  </script>
-  <!-- ══════════════════════════════════ -->
-  </head>
+</head>
 <body>
 
 <div class="header">
@@ -97,15 +54,15 @@ tr:hover{background:rgba(255,255,255,0.015)}
   <span style="color:#1e293b;font-size:1.2rem">|</span>
   <span style="font-size:0.8rem;font-weight:600;color:#475569">Site Dashboard</span>
   <div class="header-meta">
-    <span class="ts">Generated: 2026-06-28 14:28</span>
+    <span class="ts">Generated: 2026-07-02 14:30</span>
     <a href="/" style="font-size:0.78rem;color:#334155">← Live Site</a>
   </div>
 </div>
 
 <div class="tab-bar">
   <div class="tab active" onclick="showTab('overview')">Overview</div>
-  <div class="tab" onclick="showTab('content')">Content (100)</div>
-  <div class="tab" onclick="showTab('affiliate')">Affiliate (19)</div>
+  <div class="tab" onclick="showTab('content')">Content (142)</div>
+  <div class="tab" onclick="showTab('affiliate')">Affiliate (32)</div>
   <div class="tab" onclick="showTab('analytics')">Analytics</div>
   <div class="tab" onclick="showTab('tools')">Quick Actions</div>
 </div>
@@ -114,32 +71,32 @@ tr:hover{background:rgba(255,255,255,0.015)}
 <div class="panel active" id="tab-overview">
   <div class="metric-grid">
     <div class="metric">
-      <div class="metric-val" style="color:#f97316">100</div>
+      <div class="metric-val" style="color:#f97316">142</div>
       <div class="metric-lbl">Total Content Pages</div>
-      <div class="metric-sub">79 go/ redirects</div>
+      <div class="metric-sub">91 go/ redirects</div>
     </div>
     <div class="metric">
-      <div class="metric-val" style="color:#f97316">96%</div>
+      <div class="metric-val" style="color:#22c55e">100%</div>
       <div class="metric-lbl">SEO Audit Pass Rate</div>
-      <div class="metric-sub">96/100 pages passing</div>
+      <div class="metric-sub">142/142 pages passing</div>
     </div>
     <div class="metric">
-      <div class="metric-val" style="color:#22c55e">11</div>
+      <div class="metric-val" style="color:#22c55e">23</div>
       <div class="metric-lbl">Active Affiliates</div>
-      <div class="metric-sub">3 pending approval</div>
+      <div class="metric-sub">2 pending approval</div>
     </div>
     <div class="metric">
-      <div class="metric-val" style="color:#6366f1">26</div>
+      <div class="metric-val" style="color:#6366f1">37</div>
       <div class="metric-lbl">Compare Pages</div>
       <div class="metric-sub">Highest buyer intent</div>
     </div>
     <div class="metric">
-      <div class="metric-val" style="color:#eab308">32</div>
+      <div class="metric-val" style="color:#eab308">42</div>
       <div class="metric-lbl">Review Pages</div>
       <div class="metric-sub">Core affiliate content</div>
     </div>
     <div class="metric">
-      <div class="metric-val" style="color:#06b6d4">32</div>
+      <div class="metric-val" style="color:#06b6d4">53</div>
       <div class="metric-lbl">Alt + Best Pages</div>
       <div class="metric-sub">Comparison funnel</div>
     </div>
@@ -148,19 +105,19 @@ tr:hover{background:rgba(255,255,255,0.015)}
   <div class="section-bar">
     
         <div style="background:#0d1224;border:1px solid #1e293b;border-left:3px solid #f97316;border-radius:10px;padding:1rem 1.25rem;min-width:130px">
-          <div style="font-size:1.8rem;font-weight:900;color:#f97316">32</div>
+          <div style="font-size:1.8rem;font-weight:900;color:#f97316">42</div>
           <div style="font-size:0.72rem;color:#64748b;text-transform:capitalize;margin-top:0.2rem">review pages</div>
         </div>
         <div style="background:#0d1224;border:1px solid #1e293b;border-left:3px solid #6366f1;border-radius:10px;padding:1rem 1.25rem;min-width:130px">
-          <div style="font-size:1.8rem;font-weight:900;color:#6366f1">26</div>
+          <div style="font-size:1.8rem;font-weight:900;color:#6366f1">37</div>
           <div style="font-size:0.72rem;color:#64748b;text-transform:capitalize;margin-top:0.2rem">compare pages</div>
         </div>
         <div style="background:#0d1224;border:1px solid #1e293b;border-left:3px solid #22c55e;border-radius:10px;padding:1rem 1.25rem;min-width:130px">
-          <div style="font-size:1.8rem;font-weight:900;color:#22c55e">16</div>
+          <div style="font-size:1.8rem;font-weight:900;color:#22c55e">36</div>
           <div style="font-size:0.72rem;color:#64748b;text-transform:capitalize;margin-top:0.2rem">alternatives pages</div>
         </div>
         <div style="background:#0d1224;border:1px solid #1e293b;border-left:3px solid #eab308;border-radius:10px;padding:1rem 1.25rem;min-width:130px">
-          <div style="font-size:1.8rem;font-weight:900;color:#eab308">16</div>
+          <div style="font-size:1.8rem;font-weight:900;color:#eab308">17</div>
           <div style="font-size:0.72rem;color:#64748b;text-transform:capitalize;margin-top:0.2rem">best pages</div>
         </div>
         <div style="background:#0d1224;border:1px solid #1e293b;border-left:3px solid #06b6d4;border-radius:10px;padding:1rem 1.25rem;min-width:130px">
@@ -172,43 +129,43 @@ tr:hover{background:rgba(255,255,255,0.015)}
   <div class="card">
     <div class="card-hdr">
       <span class="card-title">Content Breakdown</span>
-      <span class="card-meta">100 pages scanned</span>
+      <span class="card-meta">142 pages scanned</span>
     </div>
     <div style="padding:1.25rem;display:flex;gap:1rem;flex-wrap:wrap">
       <div style="flex:1;min-width:160px">
         <div style="font-size:0.72rem;color:#475569;margin-bottom:0.35rem;text-transform:capitalize">review</div>
         <div style="background:#1e293b;border-radius:4px;height:8px;overflow:hidden">
-          <div style="width:32%;height:8px;background:#f97316;border-radius:4px"></div>
+          <div style="width:30%;height:8px;background:#f97316;border-radius:4px"></div>
         </div>
-        <div style="font-size:0.72rem;color:#334155;margin-top:0.25rem">32 pages · 32%</div>
+        <div style="font-size:0.72rem;color:#334155;margin-top:0.25rem">42 pages · 30%</div>
       </div>
 <div style="flex:1;min-width:160px">
         <div style="font-size:0.72rem;color:#475569;margin-bottom:0.35rem;text-transform:capitalize">compare</div>
         <div style="background:#1e293b;border-radius:4px;height:8px;overflow:hidden">
           <div style="width:26%;height:8px;background:#6366f1;border-radius:4px"></div>
         </div>
-        <div style="font-size:0.72rem;color:#334155;margin-top:0.25rem">26 pages · 26%</div>
+        <div style="font-size:0.72rem;color:#334155;margin-top:0.25rem">37 pages · 26%</div>
       </div>
 <div style="flex:1;min-width:160px">
         <div style="font-size:0.72rem;color:#475569;margin-bottom:0.35rem;text-transform:capitalize">alternatives</div>
         <div style="background:#1e293b;border-radius:4px;height:8px;overflow:hidden">
-          <div style="width:16%;height:8px;background:#22c55e;border-radius:4px"></div>
+          <div style="width:25%;height:8px;background:#22c55e;border-radius:4px"></div>
         </div>
-        <div style="font-size:0.72rem;color:#334155;margin-top:0.25rem">16 pages · 16%</div>
+        <div style="font-size:0.72rem;color:#334155;margin-top:0.25rem">36 pages · 25%</div>
       </div>
 <div style="flex:1;min-width:160px">
         <div style="font-size:0.72rem;color:#475569;margin-bottom:0.35rem;text-transform:capitalize">best</div>
         <div style="background:#1e293b;border-radius:4px;height:8px;overflow:hidden">
-          <div style="width:16%;height:8px;background:#eab308;border-radius:4px"></div>
+          <div style="width:12%;height:8px;background:#eab308;border-radius:4px"></div>
         </div>
-        <div style="font-size:0.72rem;color:#334155;margin-top:0.25rem">16 pages · 16%</div>
+        <div style="font-size:0.72rem;color:#334155;margin-top:0.25rem">17 pages · 12%</div>
       </div>
 <div style="flex:1;min-width:160px">
         <div style="font-size:0.72rem;color:#475569;margin-bottom:0.35rem;text-transform:capitalize">category</div>
         <div style="background:#1e293b;border-radius:4px;height:8px;overflow:hidden">
-          <div style="width:10%;height:8px;background:#06b6d4;border-radius:4px"></div>
+          <div style="width:7%;height:8px;background:#06b6d4;border-radius:4px"></div>
         </div>
-        <div style="font-size:0.72rem;color:#334155;margin-top:0.25rem">10 pages · 10%</div>
+        <div style="font-size:0.72rem;color:#334155;margin-top:0.25rem">10 pages · 7%</div>
       </div>
     </div>
   </div>
@@ -216,7 +173,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
   <div class="card">
     <div class="card-hdr"><span class="card-title">SEO Issues Summary</span></div>
     <div class="issues-summary">
-      <div style="background:rgba(239,68,68,0.08);border:1px solid rgba(239,68,68,0.15);border-radius:8px;padding:0.5rem 0.75rem;display:flex;align-items:center;gap:0.5rem"><span style="font-size:1rem;font-weight:900;color:#f97316">4</span><span style="font-size:0.78rem;color:#94a3b8">No Review schema</span></div>
+      <div style="color:#22c55e;font-size:0.85rem;font-weight:700">✓ All pages passing — no critical issues found</div>
     </div>
   </div>
 </div>
@@ -226,7 +183,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
   <div class="card">
     <div class="card-hdr">
       <span class="card-title">All Pages</span>
-      <span class="card-meta">100 total</span>
+      <span class="card-meta">142 total</span>
     </div>
     <div class="filter-row">
       <input class="search" type="text" placeholder="Filter by slug..." oninput="filterTable(this.value)" id="search-content">
@@ -258,6 +215,19 @@ tr:hover{background:rgba(255,255,255,0.015)}
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
           <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">3</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#f97316;font-size:0.7rem;font-weight:700;text-transform:uppercase">review</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/review/anyword/" target="_blank" style="color:#94a3b8;text-decoration:none">anyword</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,827</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, SoftwareApplication, …</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">5</td>
           <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
@@ -301,15 +271,41 @@ tr:hover{background:rgba(255,255,255,0.015)}
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
           <td style="padding:0.65rem 0.75rem"><span style="color:#f97316;font-size:0.7rem;font-weight:700;text-transform:uppercase">review</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/review/clearscope/" target="_blank" style="color:#94a3b8;text-decoration:none">clearscope</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,085</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, SoftwareApplication, …</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">5</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#f97316;font-size:0.7rem;font-weight:700;text-transform:uppercase">review</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/review/codeium/" target="_blank" style="color:#94a3b8;text-decoration:none">codeium</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,812</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, SoftwareApplication, …</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">5</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#f97316;font-size:0.7rem;font-weight:700;text-transform:uppercase">review</span></td>
           <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/review/copy-ai/" target="_blank" style="color:#94a3b8;text-decoration:none">copy-ai</a></td>
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,658</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,724</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
-          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">3</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">4</td>
           <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
@@ -344,7 +340,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,176</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,186</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -357,11 +353,11 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,551</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,384</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, SoftwareApplication, …</td>
-          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">4</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">6</td>
           <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
@@ -409,7 +405,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,234</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,241</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -435,7 +431,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,207</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,212</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -461,11 +457,11 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,085</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,153</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
-          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">6</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">7</td>
           <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
@@ -474,11 +470,11 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,691</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,459</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, SoftwareApplication, …</td>
-          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">4</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">6</td>
           <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
@@ -487,11 +483,24 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,712</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,634</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, SoftwareApplication, …</td>
-          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">4</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">8</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#f97316;font-size:0.7rem;font-weight:700;text-transform:uppercase">review</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/review/marketmuse/" target="_blank" style="color:#94a3b8;text-decoration:none">marketmuse</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,994</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, SoftwareApplication, …</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">5</td>
           <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
@@ -505,6 +514,19 @@ tr:hover{background:rgba(255,255,255,0.015)}
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
           <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">4</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#f97316;font-size:0.7rem;font-weight:700;text-transform:uppercase">review</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/review/mistral/" target="_blank" style="color:#94a3b8;text-decoration:none">mistral</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,024</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, SoftwareApplication, …</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">5</td>
           <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
@@ -526,11 +548,11 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,892</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,959</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
-          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">4</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">5</td>
           <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
@@ -561,11 +583,37 @@ tr:hover{background:rgba(255,255,255,0.015)}
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
           <td style="padding:0.65rem 0.75rem"><span style="color:#f97316;font-size:0.7rem;font-weight:700;text-transform:uppercase">review</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/review/pictory/" target="_blank" style="color:#94a3b8;text-decoration:none">pictory</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,369</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">5</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#f97316;font-size:0.7rem;font-weight:700;text-transform:uppercase">review</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/review/playht/" target="_blank" style="color:#94a3b8;text-decoration:none">playht</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,834</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, SoftwareApplication, …</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">5</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#f97316;font-size:0.7rem;font-weight:700;text-transform:uppercase">review</span></td>
           <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/review/runway/" target="_blank" style="color:#94a3b8;text-decoration:none">runway</a></td>
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,762</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,769</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -574,15 +622,28 @@ tr:hover{background:rgba(255,255,255,0.015)}
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
           <td style="padding:0.65rem 0.75rem"><span style="color:#f97316;font-size:0.7rem;font-weight:700;text-transform:uppercase">review</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/review/rytr/" target="_blank" style="color:#94a3b8;text-decoration:none">rytr</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,849</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, SoftwareApplication, …</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">5</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#f97316;font-size:0.7rem;font-weight:700;text-transform:uppercase">review</span></td>
           <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/review/se-ranking/" target="_blank" style="color:#94a3b8;text-decoration:none">se-ranking</a></td>
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,637</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,575</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, SoftwareApplication, …</td>
-          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">4</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">7</td>
           <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
@@ -595,6 +656,19 @@ tr:hover{background:rgba(255,255,255,0.015)}
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">5</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#f97316;font-size:0.7rem;font-weight:700;text-transform:uppercase">review</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/review/speechify/" target="_blank" style="color:#94a3b8;text-decoration:none">speechify</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,875</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, SoftwareApplication, …</td>
           <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">5</td>
           <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
         </tr>
@@ -617,11 +691,11 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,700</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,771</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
-          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">3</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">4</td>
           <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
@@ -630,11 +704,24 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,132</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,135</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
           <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">3</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#f97316;font-size:0.7rem;font-weight:700;text-transform:uppercase">review</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/review/tabnine/" target="_blank" style="color:#94a3b8;text-decoration:none">tabnine</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,776</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, SoftwareApplication, …</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">5</td>
           <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
@@ -656,11 +743,11 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,510</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,576</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
-          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">4</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">5</td>
           <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
@@ -674,6 +761,19 @@ tr:hover{background:rgba(255,255,255,0.015)}
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
           <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">8</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#6366f1;font-size:0.7rem;font-weight:700;text-transform:uppercase">compare</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/compare/chatgpt-vs-copilot/" target="_blank" style="color:#94a3b8;text-decoration:none">chatgpt-vs-copilot</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,055</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">7</td>
           <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
@@ -717,6 +817,19 @@ tr:hover{background:rgba(255,255,255,0.015)}
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
           <td style="padding:0.65rem 0.75rem"><span style="color:#6366f1;font-size:0.7rem;font-weight:700;text-transform:uppercase">compare</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/compare/codeium-vs-github-copilot/" target="_blank" style="color:#94a3b8;text-decoration:none">codeium-vs-github-copilot</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,042</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">10</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#6366f1;font-size:0.7rem;font-weight:700;text-transform:uppercase">compare</span></td>
           <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/compare/cursor-vs-github-copilot/" target="_blank" style="color:#94a3b8;text-decoration:none">cursor-vs-github-copilot</a></td>
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
@@ -743,11 +856,50 @@ tr:hover{background:rgba(255,255,255,0.015)}
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
           <td style="padding:0.65rem 0.75rem"><span style="color:#6366f1;font-size:0.7rem;font-weight:700;text-transform:uppercase">compare</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/compare/elevenlabs-vs-descript/" target="_blank" style="color:#94a3b8;text-decoration:none">elevenlabs-vs-descript</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,212</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">6</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#6366f1;font-size:0.7rem;font-weight:700;text-transform:uppercase">compare</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/compare/elevenlabs-vs-lovo/" target="_blank" style="color:#94a3b8;text-decoration:none">elevenlabs-vs-lovo</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,000</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">4</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#6366f1;font-size:0.7rem;font-weight:700;text-transform:uppercase">compare</span></td>
           <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/compare/elevenlabs-vs-murf/" target="_blank" style="color:#94a3b8;text-decoration:none">elevenlabs-vs-murf</a></td>
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,220</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,230</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">8</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#6366f1;font-size:0.7rem;font-weight:700;text-transform:uppercase">compare</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/compare/elevenlabs-vs-murf-ai/" target="_blank" style="color:#94a3b8;text-decoration:none">elevenlabs-vs-murf-ai</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,089</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -760,11 +912,37 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,049</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,055</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
           <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">9</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#6366f1;font-size:0.7rem;font-weight:700;text-transform:uppercase">compare</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/compare/grammarly-vs-quillbot/" target="_blank" style="color:#94a3b8;text-decoration:none">grammarly-vs-quillbot</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,089</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">5</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#6366f1;font-size:0.7rem;font-weight:700;text-transform:uppercase">compare</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/compare/heygen-vs-synthesia/" target="_blank" style="color:#94a3b8;text-decoration:none">heygen-vs-synthesia</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,625</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage, ItemList</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">10</td>
           <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
@@ -799,7 +977,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,367</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,366</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -808,16 +986,29 @@ tr:hover{background:rgba(255,255,255,0.015)}
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
           <td style="padding:0.65rem 0.75rem"><span style="color:#6366f1;font-size:0.7rem;font-weight:700;text-transform:uppercase">compare</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/compare/julius-ai-vs-excel/" target="_blank" style="color:#94a3b8;text-decoration:none">julius-ai-vs-excel</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,375</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">5</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#6366f1;font-size:0.7rem;font-weight:700;text-transform:uppercase">compare</span></td>
           <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/compare/mangools-vs-ahrefs/" target="_blank" style="color:#94a3b8;text-decoration:none">mangools-vs-ahrefs</a></td>
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">3,830</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">3,904</span>
             </div>
           </td>
-          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Article, BreadcrumbList, FAQPage</td>
-          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">6</td>
-          <td style="padding:0.65rem 0.75rem"><span style="background:rgba(239,68,68,0.1);color:#f87171;border:1px solid rgba(239,68,68,0.2);border-radius:4px;padding:0.1rem 0.4rem;font-size:0.65rem">No Review schema</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, Article, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">7</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
           <td style="padding:0.65rem 0.75rem"><span style="color:#6366f1;font-size:0.7rem;font-weight:700;text-transform:uppercase">compare</span></td>
@@ -825,11 +1016,11 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,141</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,178</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Article, BreadcrumbList, FAQPage, Review</td>
-          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">4</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">5</td>
           <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
@@ -873,6 +1064,19 @@ tr:hover{background:rgba(255,255,255,0.015)}
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
           <td style="padding:0.65rem 0.75rem"><span style="color:#6366f1;font-size:0.7rem;font-weight:700;text-transform:uppercase">compare</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/compare/mistral-vs-chatgpt/" target="_blank" style="color:#94a3b8;text-decoration:none">mistral-vs-chatgpt</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,070</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">13</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#6366f1;font-size:0.7rem;font-weight:700;text-transform:uppercase">compare</span></td>
           <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/compare/notion-vs-chatgpt/" target="_blank" style="color:#94a3b8;text-decoration:none">notion-vs-chatgpt</a></td>
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
@@ -899,16 +1103,29 @@ tr:hover{background:rgba(255,255,255,0.015)}
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
           <td style="padding:0.65rem 0.75rem"><span style="color:#6366f1;font-size:0.7rem;font-weight:700;text-transform:uppercase">compare</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/compare/pictory-vs-invideo/" target="_blank" style="color:#94a3b8;text-decoration:none">pictory-vs-invideo</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,012</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">4</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#6366f1;font-size:0.7rem;font-weight:700;text-transform:uppercase">compare</span></td>
           <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/compare/se-ranking-vs-ahrefs/" target="_blank" style="color:#94a3b8;text-decoration:none">se-ranking-vs-ahrefs</a></td>
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">3,453</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">3,528</span>
             </div>
           </td>
-          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Article, BreadcrumbList, FAQPage</td>
-          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">5</td>
-          <td style="padding:0.65rem 0.75rem"><span style="background:rgba(239,68,68,0.1);color:#f87171;border:1px solid rgba(239,68,68,0.2);border-radius:4px;padding:0.1rem 0.4rem;font-size:0.65rem">No Review schema</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, Article, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">6</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
           <td style="padding:0.65rem 0.75rem"><span style="color:#6366f1;font-size:0.7rem;font-weight:700;text-transform:uppercase">compare</span></td>
@@ -916,11 +1133,11 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,050</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,088</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Article, BreadcrumbList, FAQPage, Review</td>
-          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">4</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">5</td>
           <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
@@ -942,12 +1159,25 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,322</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,399</span>
             </div>
           </td>
-          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">FAQPage, Article</td>
-          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">8</td>
-          <td style="padding:0.65rem 0.75rem"><span style="background:rgba(239,68,68,0.1);color:#f87171;border:1px solid rgba(239,68,68,0.2);border-radius:4px;padding:0.1rem 0.4rem;font-size:0.65rem">No Review schema</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, FAQPage, Article</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">9</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#6366f1;font-size:0.7rem;font-weight:700;text-transform:uppercase">compare</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/compare/speechify-vs-elevenlabs/" target="_blank" style="color:#94a3b8;text-decoration:none">speechify-vs-elevenlabs</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,090</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">9</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
           <td style="padding:0.65rem 0.75rem"><span style="color:#6366f1;font-size:0.7rem;font-weight:700;text-transform:uppercase">compare</span></td>
@@ -968,12 +1198,12 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,445</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,481</span>
             </div>
           </td>
-          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">FAQPage, Article</td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, FAQPage, Article</td>
           <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">7</td>
-          <td style="padding:0.65rem 0.75rem"><span style="background:rgba(239,68,68,0.1);color:#f87171;border:1px solid rgba(239,68,68,0.2);border-radius:4px;padding:0.1rem 0.4rem;font-size:0.65rem">No Review schema</span></td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
           <td style="padding:0.65rem 0.75rem"><span style="color:#6366f1;font-size:0.7rem;font-weight:700;text-transform:uppercase">compare</span></td>
@@ -1003,141 +1233,24 @@ tr:hover{background:rgba(255,255,255,0.015)}
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
           <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/anyword/" target="_blank" style="color:#94a3b8;text-decoration:none">anyword</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,641</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">11</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
           <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/chatgpt/" target="_blank" style="color:#94a3b8;text-decoration:none">chatgpt</a></td>
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,565</span>
-            </div>
-          </td>
-          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
-          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">25</td>
-          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
-        </tr>
-        <tr style="border-bottom:1px solid #0d1224">
-          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
-          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/copy-ai/" target="_blank" style="color:#94a3b8;text-decoration:none">copy-ai</a></td>
-          <td style="padding:0.65rem 0.75rem">
-            <div style="display:flex;align-items:center;gap:0.5rem">
-              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,555</span>
-            </div>
-          </td>
-          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
-          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">23</td>
-          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
-        </tr>
-        <tr style="border-bottom:1px solid #0d1224">
-          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
-          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/cursor/" target="_blank" style="color:#94a3b8;text-decoration:none">cursor</a></td>
-          <td style="padding:0.65rem 0.75rem">
-            <div style="display:flex;align-items:center;gap:0.5rem">
-              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,706</span>
-            </div>
-          </td>
-          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
-          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">14</td>
-          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
-        </tr>
-        <tr style="border-bottom:1px solid #0d1224">
-          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
-          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/deepseek/" target="_blank" style="color:#94a3b8;text-decoration:none">deepseek</a></td>
-          <td style="padding:0.65rem 0.75rem">
-            <div style="display:flex;align-items:center;gap:0.5rem">
-              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,679</span>
-            </div>
-          </td>
-          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
-          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">10</td>
-          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
-        </tr>
-        <tr style="border-bottom:1px solid #0d1224">
-          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
-          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/elevenlabs/" target="_blank" style="color:#94a3b8;text-decoration:none">elevenlabs</a></td>
-          <td style="padding:0.65rem 0.75rem">
-            <div style="display:flex;align-items:center;gap:0.5rem">
-              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,618</span>
-            </div>
-          </td>
-          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
-          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">14</td>
-          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
-        </tr>
-        <tr style="border-bottom:1px solid #0d1224">
-          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
-          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/frase/" target="_blank" style="color:#94a3b8;text-decoration:none">frase</a></td>
-          <td style="padding:0.65rem 0.75rem">
-            <div style="display:flex;align-items:center;gap:0.5rem">
-              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">3,100</span>
-            </div>
-          </td>
-          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">FAQPage, Article</td>
-          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">19</td>
-          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
-        </tr>
-        <tr style="border-bottom:1px solid #0d1224">
-          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
-          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/gemini/" target="_blank" style="color:#94a3b8;text-decoration:none">gemini</a></td>
-          <td style="padding:0.65rem 0.75rem">
-            <div style="display:flex;align-items:center;gap:0.5rem">
-              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,601</span>
-            </div>
-          </td>
-          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
-          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">10</td>
-          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
-        </tr>
-        <tr style="border-bottom:1px solid #0d1224">
-          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
-          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/jasper/" target="_blank" style="color:#94a3b8;text-decoration:none">jasper</a></td>
-          <td style="padding:0.65rem 0.75rem">
-            <div style="display:flex;align-items:center;gap:0.5rem">
-              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,514</span>
-            </div>
-          </td>
-          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
-          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">25</td>
-          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
-        </tr>
-        <tr style="border-bottom:1px solid #0d1224">
-          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
-          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/julius-ai/" target="_blank" style="color:#94a3b8;text-decoration:none">julius-ai</a></td>
-          <td style="padding:0.65rem 0.75rem">
-            <div style="display:flex;align-items:center;gap:0.5rem">
-              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">5,663</span>
-            </div>
-          </td>
-          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">BreadcrumbList, FAQPage, ItemList</td>
-          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">14</td>
-          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
-        </tr>
-        <tr style="border-bottom:1px solid #0d1224">
-          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
-          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/mangools/" target="_blank" style="color:#94a3b8;text-decoration:none">mangools</a></td>
-          <td style="padding:0.65rem 0.75rem">
-            <div style="display:flex;align-items:center;gap:0.5rem">
-              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">4,199</span>
-            </div>
-          </td>
-          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">BreadcrumbList, FAQPage, ItemList</td>
-          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">12</td>
-          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
-        </tr>
-        <tr style="border-bottom:1px solid #0d1224">
-          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
-          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/midjourney/" target="_blank" style="color:#94a3b8;text-decoration:none">midjourney</a></td>
-          <td style="padding:0.65rem 0.75rem">
-            <div style="display:flex;align-items:center;gap:0.5rem">
-              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,525</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,683</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1146,50 +1259,37 @@ tr:hover{background:rgba(255,255,255,0.015)}
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
           <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
-          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/notion/" target="_blank" style="color:#94a3b8;text-decoration:none">notion</a></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/clearscope/" target="_blank" style="color:#94a3b8;text-decoration:none">clearscope</a></td>
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,539</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,571</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
-          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">10</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">11</td>
           <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
           <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
-          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/se-ranking/" target="_blank" style="color:#94a3b8;text-decoration:none">se-ranking</a></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/codeium/" target="_blank" style="color:#94a3b8;text-decoration:none">codeium</a></td>
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">4,558</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,752</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
-          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">15</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">11</td>
           <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
           <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
-          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/semrush/" target="_blank" style="color:#94a3b8;text-decoration:none">semrush</a></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/copy-ai/" target="_blank" style="color:#94a3b8;text-decoration:none">copy-ai</a></td>
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,507</span>
-            </div>
-          </td>
-          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
-          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">8</td>
-          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
-        </tr>
-        <tr style="border-bottom:1px solid #0d1224">
-          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
-          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/surfer-seo/" target="_blank" style="color:#94a3b8;text-decoration:none">surfer-seo</a></td>
-          <td style="padding:0.65rem 0.75rem">
-            <div style="display:flex;align-items:center;gap:0.5rem">
-              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,504</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,578</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1198,15 +1298,405 @@ tr:hover{background:rgba(255,255,255,0.015)}
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
           <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/cursor/" target="_blank" style="color:#94a3b8;text-decoration:none">cursor</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,730</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">15</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/deepseek/" target="_blank" style="color:#94a3b8;text-decoration:none">deepseek</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,703</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">11</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/descript/" target="_blank" style="color:#94a3b8;text-decoration:none">descript</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,504</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">11</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/elevenlabs/" target="_blank" style="color:#94a3b8;text-decoration:none">elevenlabs</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">4,002</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">17</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/frase/" target="_blank" style="color:#94a3b8;text-decoration:none">frase</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">3,126</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">FAQPage, Article</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">20</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/gemini/" target="_blank" style="color:#94a3b8;text-decoration:none">gemini</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,625</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">11</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/github-copilot/" target="_blank" style="color:#94a3b8;text-decoration:none">github-copilot</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,525</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">11</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/grammarly/" target="_blank" style="color:#94a3b8;text-decoration:none">grammarly</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,805</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">11</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/heygen/" target="_blank" style="color:#94a3b8;text-decoration:none">heygen</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,509</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">11</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/jasper/" target="_blank" style="color:#94a3b8;text-decoration:none">jasper</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,536</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">26</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/julius-ai/" target="_blank" style="color:#94a3b8;text-decoration:none">julius-ai</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">5,685</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">BreadcrumbList, FAQPage, ItemList</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">15</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/lovo-ai/" target="_blank" style="color:#94a3b8;text-decoration:none">lovo-ai</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,512</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">13</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/mangools/" target="_blank" style="color:#94a3b8;text-decoration:none">mangools</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">4,228</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">BreadcrumbList, FAQPage, ItemList</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">13</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/marketmuse/" target="_blank" style="color:#94a3b8;text-decoration:none">marketmuse</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,558</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">11</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/midjourney/" target="_blank" style="color:#94a3b8;text-decoration:none">midjourney</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,550</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">27</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/mistral/" target="_blank" style="color:#94a3b8;text-decoration:none">mistral</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,685</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">11</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/murf-ai/" target="_blank" style="color:#94a3b8;text-decoration:none">murf-ai</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,951</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">12</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/notion/" target="_blank" style="color:#94a3b8;text-decoration:none">notion</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,564</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">11</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/perplexity/" target="_blank" style="color:#94a3b8;text-decoration:none">perplexity</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,696</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">11</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/pictory/" target="_blank" style="color:#94a3b8;text-decoration:none">pictory</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,558</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">12</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/playht/" target="_blank" style="color:#94a3b8;text-decoration:none">playht</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,691</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">11</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/runway/" target="_blank" style="color:#94a3b8;text-decoration:none">runway</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,847</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, SoftwareApplication…</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">8</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/rytr/" target="_blank" style="color:#94a3b8;text-decoration:none">rytr</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,631</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">11</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/se-ranking/" target="_blank" style="color:#94a3b8;text-decoration:none">se-ranking</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">4,583</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">16</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/semrush/" target="_blank" style="color:#94a3b8;text-decoration:none">semrush</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,535</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">9</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/speechify/" target="_blank" style="color:#94a3b8;text-decoration:none">speechify</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,604</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">11</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/surfer-seo/" target="_blank" style="color:#94a3b8;text-decoration:none">surfer-seo</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,529</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">25</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/synthesia/" target="_blank" style="color:#94a3b8;text-decoration:none">synthesia</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">3,130</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, SoftwareApplication…</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">8</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/tabnine/" target="_blank" style="color:#94a3b8;text-decoration:none">tabnine</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,604</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">11</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/windsurf/" target="_blank" style="color:#94a3b8;text-decoration:none">windsurf</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,519</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">11</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.7rem;font-weight:700;text-transform:uppercase">alternatives</span></td>
           <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/alternatives/writesonic/" target="_blank" style="color:#94a3b8;text-decoration:none">writesonic</a></td>
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,531</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,554</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
-          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">18</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">19</td>
           <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
@@ -1241,11 +1731,11 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,073</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,105</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
-          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">9</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">10</td>
           <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
@@ -1310,7 +1800,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
-          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">10</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">11</td>
           <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
@@ -1319,11 +1809,11 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,113</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,163</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
-          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">17</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">18</td>
           <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
@@ -1345,11 +1835,11 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,097</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,191</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Article, BreadcrumbList, FAQPage</td>
-          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">13</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">14</td>
           <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
@@ -1371,20 +1861,20 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,514</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,600</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
-          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">7</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">8</td>
           <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
           <td style="padding:0.65rem 0.75rem"><span style="color:#eab308;font-size:0.7rem;font-weight:700;text-transform:uppercase">best</span></td>
-          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/best/ai-writing-tools/" target="_blank" style="color:#94a3b8;text-decoration:none">ai-writing-tools</a></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/best/ai-voice-generators/" target="_blank" style="color:#94a3b8;text-decoration:none">ai-voice-generators</a></td>
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,315</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,053</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1393,15 +1883,28 @@ tr:hover{background:rgba(255,255,255,0.015)}
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
           <td style="padding:0.65rem 0.75rem"><span style="color:#eab308;font-size:0.7rem;font-weight:700;text-transform:uppercase">best</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/best/ai-writing-tools/" target="_blank" style="color:#94a3b8;text-decoration:none">ai-writing-tools</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,403</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">11</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#eab308;font-size:0.7rem;font-weight:700;text-transform:uppercase">best</span></td>
           <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/best/free-ai-tools/" target="_blank" style="color:#94a3b8;text-decoration:none">free-ai-tools</a></td>
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,413</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,488</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
-          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">8</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">9</td>
           <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
@@ -1514,7 +2017,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,576</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,640</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, FAQPage</td>
@@ -1527,11 +2030,11 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,738</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,849</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, FAQPage</td>
-          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">5</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">6</td>
           <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
@@ -1540,11 +2043,11 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,729</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,942</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, FAQPage</td>
-          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">5</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">7</td>
           <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
         </tr>
       </tbody>
@@ -1557,20 +2060,20 @@ tr:hover{background:rgba(255,255,255,0.015)}
 <div class="panel" id="tab-affiliate">
   <div class="metric-grid">
     <div class="metric">
-      <div class="metric-val" style="color:#22c55e">11</div>
+      <div class="metric-val" style="color:#22c55e">23</div>
       <div class="metric-lbl">Active Programs</div>
     </div>
     <div class="metric">
-      <div class="metric-val" style="color:#f97316">3</div>
+      <div class="metric-val" style="color:#f97316">2</div>
       <div class="metric-lbl">Pending Approval</div>
       <div class="metric-sub">Need to join</div>
     </div>
     <div class="metric">
-      <div class="metric-val" style="color:#6366f1">18</div>
+      <div class="metric-val" style="color:#6366f1">30</div>
       <div class="metric-lbl">Have Review Page</div>
     </div>
     <div class="metric">
-      <div class="metric-val" style="color:#eab308">15</div>
+      <div class="metric-val" style="color:#eab308">26</div>
       <div class="metric-lbl">Have Compare Page</div>
     </div>
   </div>
@@ -1774,12 +2277,12 @@ tr:hover{background:rgba(255,255,255,0.015)}
         <tr style="border-bottom:1px solid #0d1224">
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
-              <span style="background:rgba(99,102,241,0.15);color:#22c55e;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">P2</span>
+              <span style="background:rgba(99,102,241,0.15);color:#475569;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">P2</span>
               <span style="font-size:0.82rem;color:#cbd5e1;font-weight:600">cursor</span>
             </div>
           </td>
-          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#f97316;font-weight:600">varies</td>
-          <td style="padding:0.65rem 0.75rem"><span style="background:rgba(99,102,241,0.15);color:#22c55e;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">ACTIVE</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#f97316;font-weight:600">no commission (referral credit only)</td>
+          <td style="padding:0.65rem 0.75rem"><span style="background:rgba(99,102,241,0.15);color:#64748b;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">NONE</span></td>
           <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
           <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
           <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
@@ -1818,10 +2321,10 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem"><span style="background:rgba(99,102,241,0.15);color:#64748b;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">NONE</span></td>
           <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
           <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
-          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#ef4444;font-size:0.85rem">✗</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;gap:2px">
-              <div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div><div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div><div style="width:8px;height:8px;border-radius:2px;background:#1e293b"></div>
+              <div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div><div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div><div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div>
             </div>
           </td>
         </tr>
@@ -1865,10 +2368,118 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <span style="background:rgba(99,102,241,0.15);color:#22c55e;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">P3</span>
+              <span style="font-size:0.82rem;color:#cbd5e1;font-weight:600">adcreative-ai</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#f97316;font-weight:600">active (rate unverified)</td>
+          <td style="padding:0.65rem 0.75rem"><span style="background:rgba(99,102,241,0.15);color:#22c55e;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">ACTIVE</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#ef4444;font-size:0.85rem">✗</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#ef4444;font-size:0.85rem">✗</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#ef4444;font-size:0.85rem">✗</span></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;gap:2px">
+              <div style="width:8px;height:8px;border-radius:2px;background:#1e293b"></div><div style="width:8px;height:8px;border-radius:2px;background:#1e293b"></div><div style="width:8px;height:8px;border-radius:2px;background:#1e293b"></div>
+            </div>
+          </td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <span style="background:rgba(99,102,241,0.15);color:#22c55e;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">P3</span>
+              <span style="font-size:0.82rem;color:#cbd5e1;font-weight:600">anyword</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#f97316;font-weight:600">active (rate unverified)</td>
+          <td style="padding:0.65rem 0.75rem"><span style="background:rgba(99,102,241,0.15);color:#22c55e;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">ACTIVE</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#ef4444;font-size:0.85rem">✗</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;gap:2px">
+              <div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div><div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div><div style="width:8px;height:8px;border-radius:2px;background:#1e293b"></div>
+            </div>
+          </td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <span style="background:rgba(99,102,241,0.15);color:#22c55e;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">P3</span>
+              <span style="font-size:0.82rem;color:#cbd5e1;font-weight:600">descript</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#f97316;font-weight:600">active (rate unverified)</td>
+          <td style="padding:0.65rem 0.75rem"><span style="background:rgba(99,102,241,0.15);color:#22c55e;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">ACTIVE</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;gap:2px">
+              <div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div><div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div><div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div>
+            </div>
+          </td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <span style="background:rgba(99,102,241,0.15);color:#22c55e;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">P3</span>
+              <span style="font-size:0.82rem;color:#cbd5e1;font-weight:600">frase</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#f97316;font-weight:600">active (rate unverified)</td>
+          <td style="padding:0.65rem 0.75rem"><span style="background:rgba(99,102,241,0.15);color:#22c55e;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">ACTIVE</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;gap:2px">
+              <div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div><div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div><div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div>
+            </div>
+          </td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <span style="background:rgba(99,102,241,0.15);color:#22c55e;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">P3</span>
               <span style="font-size:0.82rem;color:#cbd5e1;font-weight:600">grammarly</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#f97316;font-weight:600">$0.20 CPA</td>
+          <td style="padding:0.65rem 0.75rem"><span style="background:rgba(99,102,241,0.15);color:#22c55e;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">ACTIVE</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;gap:2px">
+              <div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div><div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div><div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div>
+            </div>
+          </td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <span style="background:rgba(99,102,241,0.15);color:#22c55e;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">P3</span>
+              <span style="font-size:0.82rem;color:#cbd5e1;font-weight:600">heygen</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#f97316;font-weight:600">active (rate unverified)</td>
+          <td style="padding:0.65rem 0.75rem"><span style="background:rgba(99,102,241,0.15);color:#22c55e;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">ACTIVE</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;gap:2px">
+              <div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div><div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div><div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div>
+            </div>
+          </td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <span style="background:rgba(99,102,241,0.15);color:#22c55e;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">P3</span>
+              <span style="font-size:0.82rem;color:#cbd5e1;font-weight:600">hubspot</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#f97316;font-weight:600">active (rate unverified)</td>
           <td style="padding:0.65rem 0.75rem"><span style="background:rgba(99,102,241,0.15);color:#22c55e;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">ACTIVE</span></td>
           <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
           <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#ef4444;font-size:0.85rem">✗</span></td>
@@ -1876,6 +2487,24 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;gap:2px">
               <div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div><div style="width:8px;height:8px;border-radius:2px;background:#1e293b"></div><div style="width:8px;height:8px;border-radius:2px;background:#1e293b"></div>
+            </div>
+          </td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <span style="background:rgba(99,102,241,0.15);color:#22c55e;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">P3</span>
+              <span style="font-size:0.82rem;color:#cbd5e1;font-weight:600">julius-ai</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#f97316;font-weight:600">active (rate unverified)</td>
+          <td style="padding:0.65rem 0.75rem"><span style="background:rgba(99,102,241,0.15);color:#22c55e;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">ACTIVE</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;gap:2px">
+              <div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div><div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div><div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div>
             </div>
           </td>
         </tr>
@@ -1901,35 +2530,143 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <span style="background:rgba(99,102,241,0.15);color:#22c55e;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">P3</span>
-              <span style="font-size:0.82rem;color:#cbd5e1;font-weight:600">pictory</span>
+              <span style="font-size:0.82rem;color:#cbd5e1;font-weight:600">murf</span>
             </div>
           </td>
-          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#f97316;font-weight:600">20% recurring</td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#f97316;font-weight:600">active (rate unverified)</td>
           <td style="padding:0.65rem 0.75rem"><span style="background:rgba(99,102,241,0.15);color:#22c55e;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">ACTIVE</span></td>
           <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#ef4444;font-size:0.85rem">✗</span></td>
-          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#ef4444;font-size:0.85rem">✗</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
           <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#ef4444;font-size:0.85rem">✗</span></td>
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;gap:2px">
-              <div style="width:8px;height:8px;border-radius:2px;background:#1e293b"></div><div style="width:8px;height:8px;border-radius:2px;background:#1e293b"></div><div style="width:8px;height:8px;border-radius:2px;background:#1e293b"></div>
+              <div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div><div style="width:8px;height:8px;border-radius:2px;background:#1e293b"></div><div style="width:8px;height:8px;border-radius:2px;background:#1e293b"></div>
             </div>
           </td>
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
-              <span style="background:rgba(99,102,241,0.15);color:#f97316;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">P3</span>
+              <span style="background:rgba(99,102,241,0.15);color:#22c55e;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">P3</span>
+              <span style="font-size:0.82rem;color:#cbd5e1;font-weight:600">pictory</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#f97316;font-weight:600">20% recurring</td>
+          <td style="padding:0.65rem 0.75rem"><span style="background:rgba(99,102,241,0.15);color:#22c55e;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">ACTIVE</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;gap:2px">
+              <div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div><div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div><div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div>
+            </div>
+          </td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <span style="background:rgba(99,102,241,0.15);color:#22c55e;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">P3</span>
+              <span style="font-size:0.82rem;color:#cbd5e1;font-weight:600">playht</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#f97316;font-weight:600">active (rate unverified)</td>
+          <td style="padding:0.65rem 0.75rem"><span style="background:rgba(99,102,241,0.15);color:#22c55e;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">ACTIVE</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;gap:2px">
+              <div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div><div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div><div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div>
+            </div>
+          </td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <span style="background:rgba(99,102,241,0.15);color:#475569;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">P3</span>
               <span style="font-size:0.82rem;color:#cbd5e1;font-weight:600">runway</span>
             </div>
           </td>
-          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#f97316;font-weight:600">TBD</td>
-          <td style="padding:0.65rem 0.75rem"><span style="background:rgba(99,102,241,0.15);color:#f97316;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">PENDING</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#f97316;font-weight:600">no program</td>
+          <td style="padding:0.65rem 0.75rem"><span style="background:rgba(99,102,241,0.15);color:#64748b;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">NONE</span></td>
           <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
           <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#ef4444;font-size:0.85rem">✗</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;gap:2px">
+              <div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div><div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div><div style="width:8px;height:8px;border-radius:2px;background:#1e293b"></div>
+            </div>
+          </td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <span style="background:rgba(99,102,241,0.15);color:#22c55e;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">P3</span>
+              <span style="font-size:0.82rem;color:#cbd5e1;font-weight:600">rytr</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#f97316;font-weight:600">active (rate unverified)</td>
+          <td style="padding:0.65rem 0.75rem"><span style="background:rgba(99,102,241,0.15);color:#22c55e;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">ACTIVE</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#ef4444;font-size:0.85rem">✗</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;gap:2px">
+              <div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div><div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div><div style="width:8px;height:8px;border-radius:2px;background:#1e293b"></div>
+            </div>
+          </td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <span style="background:rgba(99,102,241,0.15);color:#22c55e;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">P3</span>
+              <span style="font-size:0.82rem;color:#cbd5e1;font-weight:600">speechify</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#f97316;font-weight:600">active (rate unverified)</td>
+          <td style="padding:0.65rem 0.75rem"><span style="background:rgba(99,102,241,0.15);color:#22c55e;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">ACTIVE</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;gap:2px">
+              <div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div><div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div><div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div>
+            </div>
+          </td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <span style="background:rgba(99,102,241,0.15);color:#22c55e;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">P3</span>
+              <span style="font-size:0.82rem;color:#cbd5e1;font-weight:600">stable-diffusion</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#f97316;font-weight:600">active (rate unverified)</td>
+          <td style="padding:0.65rem 0.75rem"><span style="background:rgba(99,102,241,0.15);color:#22c55e;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">ACTIVE</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
           <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#ef4444;font-size:0.85rem">✗</span></td>
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;gap:2px">
-              <div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div><div style="width:8px;height:8px;border-radius:2px;background:#1e293b"></div><div style="width:8px;height:8px;border-radius:2px;background:#1e293b"></div>
+              <div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div><div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div><div style="width:8px;height:8px;border-radius:2px;background:#1e293b"></div>
+            </div>
+          </td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <span style="background:rgba(99,102,241,0.15);color:#22c55e;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">P3</span>
+              <span style="font-size:0.82rem;color:#cbd5e1;font-weight:600">synthesia</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#f97316;font-weight:600">active (rate unverified)</td>
+          <td style="padding:0.65rem 0.75rem"><span style="background:rgba(99,102,241,0.15);color:#22c55e;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">ACTIVE</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;gap:2px">
+              <div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div><div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div><div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div>
             </div>
           </td>
         </tr></tbody>
