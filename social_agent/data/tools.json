@@ -949,5 +949,347 @@
       "AI voice generators",
       "text to speech software"
     ]
+  },
+  {
+    "slug": "adobe-firefly",
+    "name": "Adobe Firefly",
+    "category": "AI Image Generator",
+    "score": 8.5,
+    "tagline": "Commercially-safe AI image generator built into Photoshop & Illustrator",
+    "price": "Free / $24.99/mo",
+    "best_for": "Designers and brands needing IP-indemnified, commercially safe AI images",
+    "pros": [
+      "Commercially safe — IP indemnified",
+      "Integrated in Photoshop & Illustrator",
+      "Free tier included (25 credits/mo)"
+    ],
+    "cons": [
+      "Image quality below Midjourney overall",
+      "Credits used up quickly on high quality"
+    ]
+  },
+  {
+    "slug": "anyword",
+    "name": "Anyword",
+    "category": "AI Writing Tool",
+    "score": 8.4,
+    "tagline": "AI copywriter with a Predictive Performance Score for ad copy",
+    "price": "From $39/mo",
+    "best_for": "Performance marketers who need ad copy, landing pages, and email subject lines that convert",
+    "pros": [
+      "Predictive Performance Score correlates with real-world CTR",
+      "Best-in-class for ad copy, landing pages, and email subject lines",
+      "Custom Brand Voice training keeps copy on-brand"
+    ],
+    "cons": [
+      "Long-form blog content weaker than Jasper or Writesonic",
+      "Word/credit limits fill up fast on Starter"
+    ]
+  },
+  {
+    "slug": "clearscope",
+    "name": "Clearscope",
+    "category": "AI SEO Tool",
+    "score": 8.8,
+    "tagline": "The most accurate NLP content grading tool for SEO writers",
+    "price": "From $170/mo",
+    "best_for": "Content teams and agencies who need the most accurate term reports for SEO writing",
+    "pros": [
+      "Most accurate term reports of any content-grading tool tested",
+      "A-F content grade instantly understandable for non-SEO writers",
+      "Clean Google Docs and WordPress integrations"
+    ],
+    "cons": [
+      "No content briefs or topic clusters",
+      "Starts at $170/month, no lower tier"
+    ]
+  },
+  {
+    "slug": "codeium",
+    "name": "Codeium",
+    "category": "AI Coding Tool",
+    "score": 8.1,
+    "tagline": "Best free AI code completion tool — full-featured at $0",
+    "price": "Free / Teams pricing",
+    "best_for": "Individual developers who want a genuinely full-featured free AI autocomplete",
+    "pros": [
+      "Free plan has no meaningful feature gating",
+      "Supports 70+ languages and every major IDE",
+      "Autocomplete latency is consistently fast"
+    ],
+    "cons": [
+      "Multi-file context reasoning weaker than Copilot or Windsurf",
+      "Teams tier needed for self-hosting"
+    ]
+  },
+  {
+    "slug": "copy-ai",
+    "name": "Copy.ai",
+    "category": "AI Writing Tool",
+    "score": 8.1,
+    "tagline": "Best free plan in AI writing, plus workflow automation for marketing teams",
+    "price": "Free / $36/mo",
+    "best_for": "Marketing teams wanting workflow automation and 90+ ready-made templates",
+    "pros": [
+      "Best free plan in the AI writing category",
+      "Workflows automation saves hours for marketing teams",
+      "90+ templates covering almost every copy use case"
+    ],
+    "cons": [
+      "Long-form output quality trails Jasper and Writesonic",
+      "Workflows builder has a steep learning curve"
+    ]
+  },
+  {
+    "slug": "frase",
+    "name": "Frase",
+    "category": "AI SEO Tool",
+    "score": 8.2,
+    "tagline": "Fast AI content briefs pulling live SERP data in under 2 minutes",
+    "price": "$1 trial / $115/mo",
+    "best_for": "Content teams needing fast, SERP-driven content briefs for writers",
+    "pros": [
+      "Generates full content briefs in under 2 minutes",
+      "Pulls SERP data from top 20 Google results automatically",
+      "PAA and topic cluster extraction built in"
+    ],
+    "cons": [
+      "Real-time content scoring weaker than Surfer SEO",
+      "Solo plan limited to 4 articles/month"
+    ]
+  },
+  {
+    "slug": "grammarly",
+    "name": "Grammarly",
+    "category": "AI Writing Tool",
+    "score": 8.9,
+    "tagline": "The gold-standard AI grammar & writing assistant, works in 500K+ apps",
+    "price": "Free / $12/mo",
+    "best_for": "Anyone who writes daily and wants real-time grammar, clarity & tone feedback",
+    "pros": [
+      "Highest accuracy of any AI grammar checker tested",
+      "Works in 500K+ apps via browser extension",
+      "Free plan genuinely useful, not crippled"
+    ],
+    "cons": [
+      "$30/month (monthly) is expensive for basic use cases",
+      "Plagiarism detector less accurate than Turnitin"
+    ]
+  },
+  {
+    "slug": "heygen",
+    "name": "HeyGen",
+    "category": "AI Video Generator",
+    "score": 9.0,
+    "tagline": "Most realistic AI avatar videos in 2026, with 40+ language translation",
+    "price": "Free / $29/mo",
+    "best_for": "Creators and teams who want a talking AI avatar instead of stock footage",
+    "pros": [
+      "Most realistic AI avatars in 2026 (Avatar 2.0)",
+      "Video Translation in 40+ languages with lip sync",
+      "Free plan: 3 videos/month to evaluate quality"
+    ],
+    "cons": [
+      "Only 40+ languages vs Synthesia's 140+",
+      "No SCORM export for LMS integration"
+    ]
+  },
+  {
+    "slug": "mangools",
+    "name": "Mangools",
+    "category": "AI SEO Tool",
+    "score": 8.7,
+    "tagline": "5 SEO tools in one, with the most beginner-friendly UI in the category",
+    "price": "From $29/mo",
+    "best_for": "SEO beginners and solo bloggers wanting keyword research without complexity",
+    "pros": [
+      "KWFinder has best-in-class keyword difficulty accuracy",
+      "Cleanest, most beginner-friendly SEO UI available",
+      "5 tools in one subscription — excellent value"
+    ],
+    "cons": [
+      "Daily search limits on lower plans",
+      "Backlink database smaller than Ahrefs"
+    ]
+  },
+  {
+    "slug": "marketmuse",
+    "name": "MarketMuse",
+    "category": "AI SEO Tool",
+    "score": 8.5,
+    "tagline": "Content strategy AI with a Personalized Difficulty score for your domain",
+    "price": "Free / $149/mo",
+    "best_for": "Content strategists planning topic clusters and content gap analysis at scale",
+    "pros": [
+      "Personalized Difficulty score factors in your own domain authority",
+      "Topic clusters and content gap analysis go beyond single articles",
+      "Genuinely usable free plan"
+    ],
+    "cons": [
+      "Steeper learning curve than Clearscope or Surfer SEO",
+      "Dense interface — expect a 1-2 week ramp-up"
+    ]
+  },
+  {
+    "slug": "mistral",
+    "name": "Mistral AI",
+    "category": "AI Chatbot",
+    "score": 8.4,
+    "tagline": "Open-weight European AI lab — self-hostable with competitive API pricing",
+    "price": "Free / API pay-per-token",
+    "best_for": "Developers wanting open-weight models to self-host for cost or data control",
+    "pros": [
+      "Open-weight releases let developers self-host for cost or data residency",
+      "La Plateforme API pricing among the most competitive of any major lab",
+      "Le Chat offers a genuinely usable free tier"
+    ],
+    "cons": [
+      "Top-tier reasoning/coding still trails GPT-5 and Claude Opus class models",
+      "Smaller third-party plugin ecosystem than ChatGPT or Claude"
+    ]
+  },
+  {
+    "slug": "murf-ai",
+    "name": "Murf AI",
+    "category": "AI Voice Generator",
+    "score": 8.6,
+    "tagline": "120+ studio-quality voices with a full narration studio editor",
+    "price": "Free / $29/mo",
+    "best_for": "Corporate trainers and narrators wanting a studio editor with slide sync",
+    "pros": [
+      "120+ high-quality voices, 20+ languages",
+      "Studio editor with slide sync and media upload",
+      "Excellent pitch, speed, and pause controls"
+    ],
+    "cons": [
+      "Less realistic than ElevenLabs on raw TTS quality",
+      "Voice cloning only on Business plan ($75/mo)"
+    ]
+  },
+  {
+    "slug": "pictory",
+    "name": "Pictory",
+    "category": "AI Video Generator",
+    "score": 8.5,
+    "tagline": "Fastest blog-to-video workflow — turn text into shareable videos",
+    "price": "Free trial / $19/mo",
+    "best_for": "Bloggers and content marketers wanting to repurpose text into video fast",
+    "pros": [
+      "Fastest blog-to-video workflow we've tested",
+      "Auto-captions with 95%+ accuracy for English",
+      "3M+ licensed stock clips (Getty + Storyblocks)"
+    ],
+    "cons": [
+      "No AI avatar presenter",
+      "Limited creative control vs full video editors"
+    ]
+  },
+  {
+    "slug": "playht",
+    "name": "Play.ht",
+    "category": "AI Voice Generator",
+    "score": 8.2,
+    "tagline": "Ultra-realistic AI voices with a developer-friendly cloning API",
+    "price": "From $39/mo",
+    "best_for": "Podcasters and developers needing long-form narration and a clean API",
+    "pros": [
+      "Strong long-form narration consistency for podcast/audiobook scripts",
+      "Developer-friendly API with clear documentation",
+      "Wide voice library spanning 140+ languages"
+    ],
+    "cons": [
+      "Top-tier realism slightly behind ElevenLabs in A/B tests",
+      "Free trial word allowance modest vs ElevenLabs"
+    ]
+  },
+  {
+    "slug": "rytr",
+    "name": "Rytr",
+    "category": "AI Writing Tool",
+    "score": 7.9,
+    "tagline": "Cheapest unlimited AI writer with a genuinely usable free plan",
+    "price": "Free / $29/mo unlimited",
+    "best_for": "Budget-conscious freelancers and beginners needing short-form copy",
+    "pros": [
+      "Genuinely usable free plan — 10,000 characters/month, no card required",
+      "Unlimited plan at $29/month is the cheapest unlimited tier among major AI writers",
+      "40+ use case templates cover most short-form marketing needs"
+    ],
+    "cons": [
+      "Long-form blog content lags noticeably behind Jasper and Writesonic",
+      "No brand voice training or team collaboration at lower tiers"
+    ]
+  },
+  {
+    "slug": "se-ranking",
+    "name": "SE Ranking",
+    "category": "AI SEO Tool",
+    "score": 8.5,
+    "tagline": "Full SEO suite at roughly half the price of Semrush",
+    "price": "From $65/mo",
+    "best_for": "Solo operators and small agencies wanting a proper SEO suite on a budget",
+    "pros": [
+      "Full SEO suite at roughly half the Semrush price",
+      "Daily rank tracking with local and mobile options",
+      "Keyword grouper saves hours of manual clustering"
+    ],
+    "cons": [
+      "Backlink database smaller than Ahrefs or Semrush",
+      "Keyword volume data less accurate for low-volume terms"
+    ]
+  },
+  {
+    "slug": "speechify",
+    "name": "Speechify",
+    "category": "AI Voice Generator",
+    "score": 8.3,
+    "tagline": "Best AI text-to-speech reader — listen to any page at up to 9x speed",
+    "price": "Free / $139/yr",
+    "best_for": "Readers wanting to listen to articles, PDFs, and books at high speed",
+    "pros": [
+      "Premium AI voices stay clear and natural even at 2-3x listening speed",
+      "OCR camera scanning reads physical book pages aloud",
+      "Browser extension reads any webpage or PDF with one click"
+    ],
+    "cons": [
+      "Not designed for producing voiceover content for videos or products",
+      "Premium+ tier (voice cloning) costs significantly more"
+    ]
+  },
+  {
+    "slug": "synthesia",
+    "name": "Synthesia",
+    "category": "AI Video Generator",
+    "score": 8.7,
+    "tagline": "160+ AI avatars in 140+ languages, built for enterprise e-learning",
+    "price": "From $29/mo",
+    "best_for": "L&D and training teams producing e-learning videos at scale",
+    "pros": [
+      "160+ diverse, professional AI avatars",
+      "140+ languages with native-quality TTS",
+      "SCORM export for LMS integration"
+    ],
+    "cons": [
+      "No free plan, free trial only",
+      "HeyGen avatars slightly more realistic"
+    ]
+  },
+  {
+    "slug": "tabnine",
+    "name": "Tabnine",
+    "category": "AI Coding Tool",
+    "score": 8.0,
+    "tagline": "Self-hosted AI code completion — code never leaves your infrastructure",
+    "price": "Free / $9/mo",
+    "best_for": "Regulated industries and teams needing on-premises AI coding deployment",
+    "pros": [
+      "Self-hosted and on-premises deployment — code never leaves your infrastructure",
+      "Strong fit for regulated industries with strict data residency",
+      "Free Basic plan with reasonable autocomplete quality"
+    ],
+    "cons": [
+      "Autocomplete quality solid but not clearly ahead of free alternatives like Codeium",
+      "Self-hosted deployment needs more setup than cloud competitors"
+    ]
   }
 ]
