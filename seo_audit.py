@@ -46,13 +46,21 @@ def extract_attr(html: str, tag: str, attr: str) -> str:
 
 
 def extract_meta(html: str, name: str) -> str:
-    pattern = rf'<meta\s[^>]*name=["\']{re.escape(name)}["\'][^>]*content=["\']([^"\']*)["\']'
+    # match content="..." and content='...' separately so a quote char used to
+    # open the attribute isn't confused with an apostrophe inside the text
+    pattern = rf'<meta\s[^>]*name=["\']{re.escape(name)}["\'][^>]*content="([^"]*)"'
     m = re.search(pattern, html, re.IGNORECASE)
+    if not m:
+        pattern = rf"<meta\s[^>]*name=[\"']{re.escape(name)}[\"'][^>]*content='([^']*)'"
+        m = re.search(pattern, html, re.IGNORECASE)
     if m:
         return m.group(1).strip()
     # alternate attribute order
-    pattern2 = rf'<meta\s[^>]*content=["\']([^"\']*)["\'][^>]*name=["\']{re.escape(name)}["\']'
+    pattern2 = rf'<meta\s[^>]*content="([^"]*)"[^>]*name=["\']{re.escape(name)}["\']'
     m2 = re.search(pattern2, html, re.IGNORECASE)
+    if not m2:
+        pattern2 = rf"<meta\s[^>]*content='([^']*)'[^>]*name=[\"']{re.escape(name)}[\"']"
+        m2 = re.search(pattern2, html, re.IGNORECASE)
     return m2.group(1).strip() if m2 else ""
 
 
