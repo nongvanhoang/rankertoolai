@@ -1,0 +1,28 @@
+{
+  "tools": {
+    "wispr-flow": {
+      "name": "Wispr Flow",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "tier_history": [
+        {"date": "2026-07-03", "tier": "HOT", "composite": 8.0}
+      ]
+    },
+    "airops": {
+      "name": "AirOps",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "tier_history": [
+        {"date": "2026-07-03", "tier": "WATCH", "composite": 6.75}
+      ]
+    },
+    "scrunch-ai": {
+      "name": "Scrunch AI",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "tier_history": [
+        {"date": "2026-07-03", "tier": "WATCH", "composite": 6.0}
+      ]
+    }
+  }
+}
