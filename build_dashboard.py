@@ -48,6 +48,9 @@ AFFILIATE_DB = {
     "adcreative-ai":    {"commission": "active (rate unverified)", "status": "active", "priority": 3, "color": "green"},
     "heygen":           {"commission": "active (rate unverified)", "status": "active", "priority": 3, "color": "green"},
     "julius-ai":        {"commission": "active (rate unverified)", "status": "active", "priority": 3, "color": "green"},
+    "lovable":          {"commission": "10% / 6mo (confirm at signup)", "status": "pending", "priority": 1, "color": "orange"},
+    "gamma":            {"commission": "30% recurring / 12mo", "status": "pending", "priority": 1, "color": "orange"},
+    "wispr-flow":       {"commission": "25% recurring / 12mo", "status": "active", "priority": 2, "color": "green"},
 }
 
 MIN_WORDS = {"review": 1500, "compare": 2000, "alternatives": 2500, "best": 2000, "category": 1000}
