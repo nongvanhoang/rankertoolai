@@ -9,10 +9,11 @@ Usage:
 import os, re, json, sys
 sys.stdout.reconfigure(encoding="utf-8")
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 
 HTML_DIR = Path(__file__).parent / "html"
 OUT_FILE = HTML_DIR / "dashboard" / "index.html"
+GA4_REPORT_FILE = Path(__file__).parent / "ga4_report.json"
 SECTIONS = ["review", "compare", "alternatives", "best", "category"]
 
 AFFILIATE_DB = {
@@ -51,6 +52,7 @@ AFFILIATE_DB = {
     "lovable":          {"commission": "10% / 6mo (confirm at signup)", "status": "pending", "priority": 1, "color": "orange"},
     "gamma":            {"commission": "30% recurring / 12mo", "status": "pending", "priority": 1, "color": "orange"},
     "wispr-flow":       {"commission": "25% recurring / 12mo", "status": "active", "priority": 2, "color": "green"},
+    "beehiiv":          {"commission": "50% recurring / 12mo", "status": "active", "priority": 1, "color": "green"},
 }
 
 MIN_WORDS = {"review": 1500, "compare": 2000, "alternatives": 2500, "best": 2000, "category": 1000}
@@ -174,7 +176,8 @@ def check_icon(ok):
         return '<span style="color:#22c55e;font-size:1rem">✓</span>'
     return '<span style="color:#ef4444;font-size:0.85rem">✗</span>'
 
-def build_html(pages, affiliate_rows, generated_at):
+def build_html(pages, affiliate_rows, generated_at, ga4_report=None):
+    ga4_live_html = _ga4_live_section(ga4_report)
     total = len(pages)
     passing = sum(1 for p in pages if p["ok"])
     pass_pct = round(passing / total * 100) if total else 0
@@ -471,6 +474,8 @@ tr:hover{{background:rgba(255,255,255,0.015)}}
     GA4 property: <strong style="color:#f97316">G-81KB8ECCVF</strong> · Clarity: <strong style="color:#f97316">x97zf4vn2v</strong> · Cần login Google Account để xem data.
   </div>
 
+  {ga4_live_html}
+
   <div class="link-grid" style="margin-bottom:1.5rem">
     <div class="link-card">
       <a href="https://analytics.google.com/analytics/web/" target="_blank">GA4 Dashboard →</a>
@@ -498,7 +503,7 @@ tr:hover{{background:rgba(255,255,255,0.015)}}
         <tr style="border-bottom:1px solid #0d1224">
           <td style="padding:0.65rem 0.75rem"><code style="color:#f97316;font-size:0.78rem">affiliate_click</code></td>
           <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#94a3b8">Click vào /go/ link từ review/compare pages</td>
-          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#64748b">Events → affiliate_click → dim: event_label = tool name</td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#64748b">Events → affiliate_click → dim: tool (custom dimension)</td>
           <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#64748b">Tool nào được click nhiều nhất</td>
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
@@ -726,6 +731,90 @@ def _issues_summary(pages):
     return html
 
 
+def load_ga4_report():
+    if not GA4_REPORT_FILE.exists():
+        return None
+    try:
+        return json.loads(GA4_REPORT_FILE.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return None
+
+
+def _ga4_live_section(report):
+    if not report:
+        return f"""
+  <div class="card" style="margin-bottom:1.5rem">
+    <div class="card-hdr"><span class="card-title">Live Summary — chưa có dữ liệu</span></div>
+    <div style="padding:1.25rem;font-size:0.82rem;color:#64748b;line-height:1.8">
+      Chưa tìm thấy <code style="color:#f97316">ga4_report.json</code>. Chạy lệnh sau rồi build lại dashboard:
+      <div class="cmd">python ga4_tracker.py --json ga4_report.json && python build_dashboard.py</div>
+      Xem <code style="color:#f97316">ga4_tracker.py</code> (docstring đầu file) để setup OAuth + Property ID lần đầu.
+    </div>
+  </div>"""
+
+    t = report.get("totals", {})
+    days = report.get("days", 7)
+    gen_at = report.get("generated_at", "")[:16].replace("T", " ")
+
+    stale_banner = '<div style="margin-bottom:1rem;padding:0.6rem 1rem;background:rgba(34,197,94,0.06);border:1px solid rgba(34,197,94,0.2);border-radius:8px;font-size:0.75rem;color:#64748b">Live GA4 data · generated {gen_at} · Refresh: <code class="cmd" style="display:inline;padding:0.15rem 0.4rem">python ga4_tracker.py --json ga4_report.json</code></div>'
+    try:
+        generated_dt = datetime.fromisoformat(report["generated_at"])
+        age_hours = (datetime.now(timezone.utc) - generated_dt).total_seconds() / 3600
+        if age_hours > 36:
+            stale_banner = f'<div style="margin-bottom:1rem;padding:0.6rem 1rem;background:rgba(239,68,68,0.08);border:1px solid rgba(239,68,68,0.25);border-radius:8px;font-size:0.75rem;color:#fca5a5">⚠ STALE — last refreshed {age_hours/24:.1f} days ago (generated {gen_at}). The daily refresh may have broken (check OAuth: <code style="color:#f97316">python ga4_tracker.py --auth</code>). Refresh: <code class="cmd" style="display:inline;padding:0.15rem 0.4rem">python ga4_tracker.py --json ga4_report.json</code></div>'
+        else:
+            stale_banner = stale_banner.format(gen_at=gen_at)
+    except (KeyError, ValueError):
+        stale_banner = stale_banner.format(gen_at=gen_at)
+
+    metric_cards = ""
+    if t:
+        metric_cards = f"""
+  <div class="metric-grid" style="margin-bottom:1.5rem">
+    <div class="metric"><div class="metric-val" style="color:#f97316">{t.get('users', 0):,}</div><div class="metric-lbl">Users</div><div class="metric-sub">last {days}d</div></div>
+    <div class="metric"><div class="metric-val" style="color:#6366f1">{t.get('sessions', 0):,}</div><div class="metric-lbl">Sessions</div></div>
+    <div class="metric"><div class="metric-val" style="color:#22c55e">{t.get('pageviews', 0):,}</div><div class="metric-lbl">Pageviews</div></div>
+    <div class="metric"><div class="metric-val" style="color:#eab308">{t.get('engagement_rate', 0)}%</div><div class="metric-lbl">Engagement Rate</div></div>
+    <div class="metric"><div class="metric-val" style="color:#06b6d4">{t.get('avg_session_sec', 0):.0f}s</div><div class="metric-lbl">Avg Session</div></div>
+  </div>"""
+
+    events_rows = ""
+    for e in report.get("events", [])[:12]:
+        events_rows += f'<tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#e2e8f0">{e["name"]}</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">{e["count"]:,}</td></tr>'
+
+    breakdown_cards = ""
+    labels = {"affiliate_click": "Top Tools — affiliate_click", "cta_click": "Top CTA Context — cta_click",
+              "outbound_click": "Top Outbound Domains", "internal_navigate": "Top Internal Destinations",
+              "form_submit": "Top Forms — form_submit", "site_search": "Top Searches"}
+    for event_name, rows in report.get("breakdowns", {}).items():
+        if not rows:
+            continue
+        items = "".join(f'<tr><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#e2e8f0">{r["value"]}</td><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#94a3b8;text-align:right">{r["count"]:,}</td></tr>' for r in rows[:10])
+        breakdown_cards += f"""
+    <div class="card">
+      <div class="card-hdr"><span class="card-title">{labels.get(event_name, event_name)}</span></div>
+      <table><tbody>{items}</tbody></table>
+    </div>"""
+
+    pages_rows = ""
+    for p in report.get("top_pages", [])[:15]:
+        pages_rows += f'<tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem"><a href="{p["path"]}" target="_blank">{p["path"]}</a></td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">{p["views"]:,}</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#475569;text-align:right">{p["sessions"]:,}</td></tr>'
+
+    return f"""
+  {stale_banner}
+  {metric_cards}
+  <div class="card" style="margin-bottom:1.5rem">
+    <div class="card-hdr"><span class="card-title">Events — last {days} days</span></div>
+    <table><thead><tr><th>Event</th><th style="text-align:right">Count</th></tr></thead><tbody>{events_rows}</tbody></table>
+  </div>
+  <div class="link-grid" style="margin-bottom:1.5rem">{breakdown_cards}
+  </div>
+  <div class="card" style="margin-bottom:1.5rem">
+    <div class="card-hdr"><span class="card-title">Top Pages by Views</span></div>
+    <table><thead><tr><th>Path</th><th style="text-align:right">Views</th><th style="text-align:right">Sessions</th></tr></thead><tbody>{pages_rows}</tbody></table>
+  </div>"""
+
+
 # ── Main ───────────────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
@@ -733,9 +822,11 @@ if __name__ == "__main__":
     pages = scan_pages()
     affiliate_rows = build_affiliate_table(pages)
     generated_at = datetime.now().strftime("%Y-%m-%d %H:%M")
+    ga4_report = load_ga4_report()
+    print("GA4 live data: found" if ga4_report else "GA4 live data: not found (run ga4_tracker.py --json ga4_report.json)")
 
     print(f"Found {len(pages)} pages. Building dashboard...")
-    html = build_html(pages, affiliate_rows, generated_at)
+    html = build_html(pages, affiliate_rows, generated_at, ga4_report)
 
     OUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     OUT_FILE.write_text(html, encoding="utf-8")
