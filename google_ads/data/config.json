@@ -1,0 +1,34 @@
+{
+  "ga4_id": "G-81KB8ECCVF",
+  "google_ads_id": "AW-XXXXXXXXXX",
+  "google_ads_conversion": {
+    "affiliate_click": "AW-XXXXXXXXXX/YYYYYYYYYY",
+    "page_view_60s": "AW-XXXXXXXXXX/ZZZZZZZZZZ"
+  },
+  "site_url": "https://rankertoolai.com",
+  "clarity_id": "x97zf4vn2v",
+  "utm_defaults": {
+    "utm_source": "google",
+    "utm_medium": "cpc",
+    "utm_campaign": "ai-tools-review"
+  },
+  "budget": {
+    "daily_budget_usd": 20,
+    "monthly_cap_usd": 500,
+    "max_cpc_usd": 2.5,
+    "target_cpa_usd": 15,
+    "stop_loss_daily_usd": 50,
+    "min_roas": 2.0
+  },
+  "tools_with_affiliate": [
+    "elevenlabs", "julius-ai", "se-ranking", "mangools", "pictory",
+    "wispr-flow", "beehiiv", "jasper", "writesonic", "surfer-seo",
+    "copy-ai", "notion", "grammarly", "hubspot", "synthesia",
+    "speechify", "descript", "frase", "stable-diffusion", "rytr",
+    "anyword", "playht", "murf", "adcreative-ai", "heygen"
+  ],
+  "priority_tools": [
+    "julius-ai", "mangools", "se-ranking", "beehiiv",
+    "elevenlabs", "pictory", "wispr-flow"
+  ]
+}

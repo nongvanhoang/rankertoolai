@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RankerToolAI — Deploy Checklist</title>
+  <style>
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#0f172a;color:#f1f5f9;max-width:860px;margin:0 auto;padding:2rem 1rem;line-height:1.7;}
+    h1{background:linear-gradient(135deg,#f97316,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-size:1.75rem;margin-bottom:0.25rem;}
+    h2{color:#f97316;font-size:1.1rem;margin:2rem 0 0.75rem;border-bottom:1px solid rgba(249,115,22,0.3);padding-bottom:0.4rem;}
+    h3{color:#fbbf24;font-size:0.95rem;margin:1.25rem 0 0.5rem;}
+    p,li{font-size:0.9rem;color:#cbd5e1;}
+    code{background:#1e293b;padding:0.15rem 0.4rem;border-radius:4px;font-size:0.85rem;color:#67e8f9;font-family:"JetBrains Mono","Fira Code",monospace;}
+    .section{background:#1e293b;border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.5rem;margin-bottom:1.5rem;}
+    .step{display:flex;gap:1rem;margin-bottom:1rem;align-items:flex-start;}
+    .step-num{min-width:28px;height:28px;border-radius:50%;background:#f97316;color:white;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.8rem;flex-shrink:0;margin-top:0.1rem;}
+    .step-body p{margin:0.25rem 0 0;}
+    .check{color:#22c55e;font-weight:700;}
+    .warn{color:#f59e0b;font-weight:600;}
+    .required{background:#7c3aed;color:white;font-size:0.65rem;padding:0.15rem 0.4rem;border-radius:4px;font-weight:700;text-transform:uppercase;vertical-align:middle;margin-left:0.4rem;}
+    .optional{background:#0369a1;color:white;font-size:0.65rem;padding:0.15rem 0.4rem;border-radius:4px;font-weight:700;text-transform:uppercase;vertical-align:middle;margin-left:0.4rem;}
+    .url{color:#38bdf8;word-break:break-all;}
+    table{width:100%;border-collapse:collapse;font-size:0.85rem;margin:0.75rem 0;}
+    th{background:#0f172a;padding:0.5rem 0.75rem;text-align:left;color:#94a3b8;font-weight:600;border-bottom:1px solid rgba(255,255,255,0.08);}
+    td{padding:0.5rem 0.75rem;border-bottom:1px solid rgba(255,255,255,0.05);}
+    .status-todo{color:#f97316;}
+    .status-done{color:#22c55e;}
+    .note{background:rgba(249,115,22,0.08);border-left:3px solid #f97316;padding:0.75rem 1rem;border-radius:0 8px 8px 0;font-size:0.85rem;margin:0.75rem 0;}
+  </style>
+</head>
+<body>
+
+<h1>RankerToolAI — Deploy Checklist</h1>
+<p style="color:#64748b;font-size:0.85rem;margin-bottom:2rem;">Hướng dẫn từng bước để website live và SEO đúng chuẩn. Làm theo thứ tự.</p>
+
+<!-- ════════════════════════════════════════ -->
+<h2>PHASE 1 — Server &amp; Domain (Ngày 1)</h2>
+
+<div class="section">
+  <h3>1.1 Mua Domain &amp; Hosting <span class="required">bắt buộc</span></h3>
+  <div class="step">
+    <div class="step-num">1</div>
+    <div class="step-body">
+      <strong>Mua domain <code>rankertoolai.com</code></strong>
+      <p>Dùng Cloudflare Registrar (rẻ nhất, không markup) hoặc Namecheap. Bật Privacy Protection.</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">2</div>
+    <div class="step-body">
+      <strong>Thuê VPS hoặc hosting</strong>
+      <p>Khuyến nghị: <strong>Hetzner Cloud CX21</strong> (~€5/tháng, EU datacenter) hoặc <strong>DigitalOcean Droplet 1GB</strong> (~$6/tháng). Cài Ubuntu 22.04.</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">3</div>
+    <div class="step-body">
+      <strong>Upload website lên server</strong>
+      <p>Copy toàn bộ thư mục <code>html/</code> lên <code>/var/www/rankertoolai/html/</code></p>
+      <p><code>rsync -avz ./html/ user@your-server:/var/www/rankertoolai/html/</code></p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">4</div>
+    <div class="step-body">
+      <strong>Cài nginx + cấu hình</strong>
+      <p>Copy <code>infrastructure/nginx-site.conf</code> lên server:</p>
+      <p><code>sudo cp nginx-site.conf /etc/nginx/sites-available/rankertoolai.com</code></p>
+      <p><code>sudo ln -s /etc/nginx/sites-available/rankertoolai.com /etc/nginx/sites-enabled/</code></p>
+      <p><code>sudo nginx -t &amp;&amp; sudo systemctl reload nginx</code></p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">5</div>
+    <div class="step-body">
+      <strong>Cài SSL certificate (HTTPS)</strong>
+      <p><code>sudo apt install certbot python3-certbot-nginx</code></p>
+      <p><code>sudo certbot --nginx -d rankertoolai.com -d www.rankertoolai.com</code></p>
+      <p>Auto-renew đã được cài tự động bởi Certbot.</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">6</div>
+    <div class="step-body">
+      <strong>Trỏ DNS về server</strong>
+      <p>Trong Cloudflare DNS, thêm A record:</p>
+      <table>
+        <tr><th>Type</th><th>Name</th><th>Content</th><th>Proxy</th></tr>
+        <tr><td>A</td><td>@</td><td>IP_SERVER_CUA_BAN</td><td>Proxied (cam)</td></tr>
+        <tr><td>A</td><td>www</td><td>IP_SERVER_CUA_BAN</td><td>Proxied (cam)</td></tr>
+      </table>
+      <p class="note">Bật Cloudflare proxy (cam) để có CDN miễn phí + DDoS protection.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<h2>PHASE 2 — Google Analytics 4 (Ngày 1)</h2>
+
+<div class="section">
+  <h3>2.1 Tạo GA4 Property <span class="required">bắt buộc</span></h3>
+  <div class="step">
+    <div class="step-num">1</div>
+    <div class="step-body">
+      <strong>Vào analytics.google.com</strong>
+      <p>→ Admin → Create Property → chọn "Web" → nhập <code>rankertoolai.com</code></p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">2</div>
+    <div class="step-body">
+      <strong>Lấy Measurement ID</strong>
+      <p>Admin → Data Streams → chọn stream → copy ID dạng <code>G-XXXXXXXXXX</code></p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">3</div>
+    <div class="step-body">
+      <strong>Thay vào main.js</strong>
+      <p>Mở <code>html/assets/js/main.js</code>, tìm dòng:</p>
+      <p><code>var GA_ID = 'G-XXXXXXXXXX';</code></p>
+      <p>Thay <code>G-XXXXXXXXXX</code> bằng ID thật của bạn.</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">4</div>
+    <div class="step-body">
+      <strong>Xóa GA snippet cũ trong index.html (nếu có)</strong>
+      <p>Mở <code>html/index.html</code>, xóa đoạn &lt;script&gt; GA cũ trong &lt;head&gt; vì main.js đã handle rồi.</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">5</div>
+    <div class="step-body">
+      <strong>Test bằng GA4 DebugView</strong>
+      <p>Cài Chrome extension "Google Analytics Debugger" → mở website → kiểm tra DebugView trong GA4.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<h2>PHASE 3 — Google Search Console (Ngày 1-2)</h2>
+
+<div class="section">
+  <h3>3.1 Verify domain &amp; Submit Sitemap <span class="required">bắt buộc</span></h3>
+  <div class="step">
+    <div class="step-num">1</div>
+    <div class="step-body">
+      <strong>Vào search.google.com/search-console</strong>
+      <p>→ Add Property → chọn "Domain" → nhập <code>rankertoolai.com</code></p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">2</div>
+    <div class="step-body">
+      <strong>Verify qua DNS TXT record</strong>
+      <p>Copy TXT record Google cung cấp → thêm vào Cloudflare DNS → Done.</p>
+      <table>
+        <tr><th>Type</th><th>Name</th><th>Content</th></tr>
+        <tr><td>TXT</td><td>@</td><td>google-site-verification=XXXXXX</td></tr>
+      </table>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">3</div>
+    <div class="step-body">
+      <strong>Submit Sitemap</strong>
+      <p>Search Console → Sitemaps → nhập <code>https://rankertoolai.com/sitemap.xml</code> → Submit</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">4</div>
+    <div class="step-body">
+      <strong>Request Indexing cho trang homepage</strong>
+      <p>URL Inspection → nhập <code>https://rankertoolai.com/</code> → "Request Indexing"</p>
+      <p>Làm tương tự cho 5 review pages quan trọng nhất.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<h2>PHASE 4 — Bing Webmaster Tools (Ngày 2)</h2>
+
+<div class="section">
+  <h3>4.1 Setup Bing <span class="optional">nên làm</span></h3>
+  <div class="step">
+    <div class="step-num">1</div>
+    <div class="step-body">
+      <strong>Vào bing.com/webmasters</strong>
+      <p>→ Add a Site → nhập <code>https://rankertoolai.com</code></p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">2</div>
+    <div class="step-body">
+      <strong>Import từ Google Search Console</strong>
+      <p>Bing cho phép import sitemap và settings trực tiếp từ GSC — tiết kiệm thời gian.</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">3</div>
+    <div class="step-body">
+      <strong>Submit Sitemap</strong>
+      <p>Sitemaps → nhập <code>https://rankertoolai.com/sitemap.xml</code></p>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<h2>PHASE 5 — Cloudflare Settings (Ngày 1-2)</h2>
+
+<div class="section">
+  <h3>5.1 Performance &amp; Security <span class="optional">nên làm</span></h3>
+  <div class="step">
+    <div class="step-num">1</div>
+    <div class="step-body">
+      <strong>Bật Automatic HTTPS Rewrites</strong>
+      <p>SSL/TLS → Edge Certificates → bật "Always Use HTTPS" + "Automatic HTTPS Rewrites"</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">2</div>
+    <div class="step-body">
+      <strong>Bật Speed optimizations</strong>
+      <p>Speed → Optimization → bật Auto Minify (JS, CSS, HTML) + Brotli compression</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">3</div>
+    <div class="step-body">
+      <strong>Bật Rocket Loader (cẩn thận)</strong>
+      <p>Speed → Optimization → Rocket Loader: <span class="warn">TEST trước</span> — đôi khi ảnh hưởng JS.</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">4</div>
+    <div class="step-body">
+      <strong>Cài Page Rules cho redirect www</strong>
+      <p>Rules → Page Rules → <code>www.rankertoolai.com/*</code> → "Forwarding URL 301" → <code>https://rankertoolai.com/$1</code></p>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<h2>PHASE 6 — PageSpeed Audit (Ngày 2-3)</h2>
+
+<div class="section">
+  <h3>6.1 Kiểm tra Core Web Vitals <span class="required">bắt buộc</span></h3>
+  <div class="step">
+    <div class="step-num">1</div>
+    <div class="step-body">
+      <strong>Chạy PageSpeed Insights</strong>
+      <p><span class="url">pagespeed.web.dev</span> — test cả Mobile và Desktop. Target: Mobile ≥ 80, Desktop ≥ 95.</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">2</div>
+    <div class="step-body">
+      <strong>Kiểm tra LCP (Largest Contentful Paint)</strong>
+      <p>Target: &lt; 2.5s. Nếu chậm → thêm <code>fetchpriority="high"</code> vào logo image trong header.</p>
+      <p><code>&lt;img src="/assets/images/logo-dark.png" fetchpriority="high" width="38" height="38"&gt;</code></p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">3</div>
+    <div class="step-body">
+      <strong>Kiểm tra CLS (Cumulative Layout Shift)</strong>
+      <p>Target: &lt; 0.1. Thêm <code>width</code> và <code>height</code> attribute vào tất cả &lt;img&gt; tags để tránh layout shift.</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">4</div>
+    <div class="step-body">
+      <strong>Test trên WebPageTest.org</strong>
+      <p><span class="url">webpagetest.org</span> → chọn location Singapore (gần VN nhất) → test 3 lần → xem waterfall.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<h2>PHASE 7 — Formspree (Contact &amp; Newsletter)</h2>
+
+<div class="section">
+  <h3>7.1 Kết nối Contact Form <span class="required">bắt buộc trước live</span></h3>
+  <div class="step">
+    <div class="step-num">1</div>
+    <div class="step-body">
+      <strong>Đăng ký tại formspree.io</strong>
+      <p>Free plan: 50 submissions/tháng. Đủ để bắt đầu.</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">2</div>
+    <div class="step-body">
+      <strong>Tạo form mới → lấy Form ID</strong>
+      <p>Dạng: <code>xyzabc12</code> (8 ký tự)</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">3</div>
+    <div class="step-body">
+      <strong>Cập nhật action trong contact/index.html</strong>
+      <p>Tìm dòng <code>action="https://formspree.io/f/YOUR_FORM_ID"</code></p>
+      <p>Thay <code>YOUR_FORM_ID</code> bằng ID thật.</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">4</div>
+    <div class="step-body">
+      <strong>Newsletter form: dùng riêng một Form ID khác</strong>
+      <p>Tạo form thứ 2 trong Formspree cho newsletter. Hoặc dùng Mailchimp embed.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<h2>Checklist Tổng Hợp</h2>
+
+<div class="section">
+  <table>
+    <tr><th>Hạng mục</th><th>Trạng thái</th><th>Ghi chú</th></tr>
+    <tr><td>Domain đã mua</td><td class="status-todo">☐ Chưa</td><td>rankertoolai.com</td></tr>
+    <tr><td>VPS / hosting</td><td class="status-todo">☐ Chưa</td><td>Hetzner / DigitalOcean</td></tr>
+    <tr><td>Upload website lên server</td><td class="status-todo">☐ Chưa</td><td>rsync html/ folder</td></tr>
+    <tr><td>nginx cấu hình + SSL</td><td class="status-todo">☐ Chưa</td><td>Certbot auto-SSL</td></tr>
+    <tr><td>DNS trỏ về server</td><td class="status-todo">☐ Chưa</td><td>Cloudflare A record</td></tr>
+    <tr><td>GA4 Property tạo xong</td><td class="status-todo">☐ Chưa</td><td>analytics.google.com</td></tr>
+    <tr><td>GA_ID thay trong main.js</td><td class="status-todo">☐ Chưa</td><td>G-XXXXXXXXXX</td></tr>
+    <tr><td>GA snippet xóa khỏi index.html</td><td class="status-todo">☐ Chưa</td><td>Tránh double tracking</td></tr>
+    <tr><td>Google Search Console verify</td><td class="status-todo">☐ Chưa</td><td>DNS TXT method</td></tr>
+    <tr><td>Sitemap submitted to GSC</td><td class="status-todo">☐ Chưa</td><td>/sitemap.xml</td></tr>
+    <tr><td>Bing Webmaster Tools</td><td class="status-todo">☐ Chưa</td><td>bing.com/webmasters</td></tr>
+    <tr><td>Cloudflare performance settings</td><td class="status-todo">☐ Chưa</td><td>Auto Minify, Brotli</td></tr>
+    <tr><td>PageSpeed test Mobile ≥ 80</td><td class="status-todo">☐ Chưa</td><td>pagespeed.web.dev</td></tr>
+    <tr><td>Formspree contact form</td><td class="status-todo">☐ Chưa</td><td>formspree.io</td></tr>
+    <tr><td>Homepage indexing requested</td><td class="status-todo">☐ Chưa</td><td>URL Inspection tool</td></tr>
+  </table>
+</div>
+
+<p style="color:#475569;font-size:0.8rem;text-align:center;margin-top:2rem;">RankerToolAI Deploy Checklist — Generated 2026-06-18</p>
+
+</body>
+</html>

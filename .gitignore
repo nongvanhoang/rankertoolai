@@ -1,0 +1,71 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.env
+
+# Wrangler
+.wrangler/
+html/.wrangler/
+
+# Chrome profile data (large, binary)
+social_agent/data/quora_chrome_profile/
+
+# SQLite DB (runtime state, not source)
+social_agent/data/posts.db
+social_agent/data/twitter_token.json
+
+# Screenshots / audit images (generated)
+hero-screenshot*.png
+hero-shot*.png
+audit_*.png
+logo-check*.png
+ring_check.png
+screenshot*.png
+logo_size_check.png
+best_page.png
+
+# Google API credentials (do not commit)
+client_secret.json
+gsc_token.json
+ga4_token.json
+ga4_report.json
+ga4_service_account.json
+google_oauth_token.json
+
+# Social media credentials/tokens (do not commit)
+social_agent/linkedin_tokens.json
+social_agent/linkedin_config.json
+social_agent/data/twitter_token.json
+social_agent/data/*.db
+social_agent/linkedin_posted.json
+social_agent/schedule_log.json
+
+# Social agent runtime output / logs / generated drafts
+social_agent/data/*.log
+social_agent/data/run_log.txt
+social_agent/data/quora_debug.html
+social_agent/data/quora_answers/
+social_agent/data/content_ready.md
+social_agent/data/medium_article_*.txt
+social_agent/instagram_content.md
+social_agent/output/
+social-covers/
+
+# Stock media downloaded for social posts (large binaries, not source)
+social_agent/assets/media/
+
+# Google Ads exports / personal account data (not source)
+google_ads/data/*.csv
+google_ads/data/tracking_backup/
+
+# Audit CSV outputs (generated)
+audit_current.csv
+audit_results.csv
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
