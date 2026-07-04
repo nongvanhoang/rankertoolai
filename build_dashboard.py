@@ -44,7 +44,7 @@ AFFILIATE_DB = {
     "stable-diffusion": {"commission": "active (rate unverified)", "status": "active", "priority": 3, "color": "green"},
     "rytr":             {"commission": "active (rate unverified)", "status": "active", "priority": 3, "color": "green"},
     "anyword":          {"commission": "active (rate unverified)", "status": "active", "priority": 3, "color": "green"},
-    "playht":           {"commission": "active (rate unverified)", "status": "active", "priority": 3, "color": "green"},
+    "playht":           {"commission": "n/a - discontinued (Meta shutdown Dec 2025)", "status": "none", "priority": 3, "color": "gray"},
     "murf":             {"commission": "active (rate unverified)", "status": "active", "priority": 3, "color": "green"},
     "adcreative-ai":    {"commission": "active (rate unverified)", "status": "active", "priority": 3, "color": "green"},
     "heygen":           {"commission": "active (rate unverified)", "status": "active", "priority": 3, "color": "green"},

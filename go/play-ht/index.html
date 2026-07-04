@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Redirecting to Play.ht | RankerToolAI</title>
+  <title>Play.ht Discontinued | RankerToolAI</title>
   <meta name="robots" content="noindex, nofollow">
   <link rel="canonical" href="https://rankertoolai.com/go/play-ht/">
 
@@ -16,36 +16,14 @@
   <script async src="/assets/js/pint.js"></script>
 </head>
 <body>
-  <p>Redirecting you to <a href="https://play.ht/?via=rankertoolai" rel="nofollow sponsored">Play.ht</a>...</p>
+  <p>Play.ht was discontinued (acquired by Meta, shut down Dec 2025). Redirecting you to <a href="/review/playht/">our updated Play.ht review</a>...</p>
 
     <script>
     (function() {
-      var tool = document.title.match(/Redirecting to (.+?) \|/)?.[1] || '';
-      var ref  = document.referrer ? new URL(document.referrer).pathname : 'direct';
-      var params = new URLSearchParams(window.location.search);
-      var subid  = params.get('ref') || ref.replace(/\//g,'_').replace(/^_|_$/g,'') || 'direct';
-
       if (typeof gtag !== 'undefined') {
-        gtag('event', 'affiliate_click', {
-          tool:        document.querySelector('[data-tool]')?.dataset.tool || subid,
-          source_path: ref,
-          sub_id:      subid,
-          utm_source:  params.get('utm_source') || '',
-          utm_medium:  params.get('utm_medium') || '',
-        });
+        gtag('event', 'discontinued_redirect', { tool: 'playht', page_type: 'bridge' });
       }
-
-      // Append ref as subid to destination URL for affiliate network tracking
-      var destEl = document.querySelector('a[href]');
-      if (!destEl) return;
-      var dest = new URL(destEl.href);
-      ['utm_source','utm_medium','utm_campaign','utm_content','gclid'].forEach(function(k){
-        if (params.has(k)) dest.searchParams.set(k, params.get(k));
-      });
-      // Pass sub_id (each network uses different param — update when you get affiliate links)
-      dest.searchParams.set('ref', subid);
-
-      setTimeout(function(){ window.location.replace(dest.toString()); }, 280);
+      setTimeout(function(){ window.location.replace('/review/playht/'); }, 280);
     })();
   </script>
 </body>
