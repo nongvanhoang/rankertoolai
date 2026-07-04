@@ -77,6 +77,12 @@
 
   <!-- Review Pages -->
   <url>
+    <loc>https://rankertoolai.com/review/adcreative-ai/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://rankertoolai.com/review/adobe-firefly/</loc>
     <lastmod>2026-06-27</lastmod>
     <changefreq>monthly</changefreq>
@@ -349,6 +355,12 @@
 
   <!-- Compare Pages -->
   <url>
+    <loc>https://rankertoolai.com/compare/beehiiv-vs-substack/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+  </url>
+  <url>
     <loc>https://rankertoolai.com/compare/chatgpt-vs-claude/</loc>
     <lastmod>2026-06-27</lastmod>
     <changefreq>monthly</changefreq>
@@ -575,6 +587,12 @@
   <url>
     <loc>https://rankertoolai.com/alternatives/anyword/</loc>
     <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/alternatives/beehiiv/</loc>
+    <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -994,7 +1012,7 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/blog/best-ai-tools-for-solopreneurs/</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.72</priority>
   </url>
