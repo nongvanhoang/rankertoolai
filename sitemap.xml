@@ -577,6 +577,12 @@
     <priority>0.82</priority>
   </url>
   <url>
+    <loc>https://rankertoolai.com/compare/wispr-flow-vs-superwhisper/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+  </url>
+  <url>
     <loc>https://rankertoolai.com/compare/writesonic-vs-copy-ai/</loc>
     <lastmod>2026-06-27</lastmod>
     <changefreq>monthly</changefreq>
@@ -584,6 +590,12 @@
   </url>
 
   <!-- Alternatives Pages -->
+  <url>
+    <loc>https://rankertoolai.com/alternatives/airops/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
   <url>
     <loc>https://rankertoolai.com/alternatives/anyword/</loc>
     <lastmod>2026-07-02</lastmod>
@@ -797,6 +809,12 @@
   <url>
     <loc>https://rankertoolai.com/alternatives/windsurf/</loc>
     <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/alternatives/wispr-flow/</loc>
+    <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
