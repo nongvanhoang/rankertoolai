@@ -23,6 +23,30 @@
       "tier_history": [
         {"date": "2026-07-03", "tier": "WATCH", "composite": 6.0}
       ]
+    },
+    "context-dev": {
+      "name": "Context.dev",
+      "first_seen": "2026-07-04",
+      "last_seen": "2026-07-04",
+      "tier_history": [
+        {"date": "2026-07-04", "tier": "WATCH", "composite": 7.25}
+      ]
+    },
+    "twelvelabs": {
+      "name": "TwelveLabs",
+      "first_seen": "2026-07-04",
+      "last_seen": "2026-07-04",
+      "tier_history": [
+        {"date": "2026-07-04", "tier": "WATCH", "composite": 6.75}
+      ]
+    },
+    "mina-meeting-assistant": {
+      "name": "Mina Meeting Assistant",
+      "first_seen": "2026-07-04",
+      "last_seen": "2026-07-04",
+      "tier_history": [
+        {"date": "2026-07-04", "tier": "WATCH", "composite": 5.25}
+      ]
     }
   }
 }
