@@ -53,6 +53,7 @@ AFFILIATE_DB = {
     "gamma":            {"commission": "30% recurring / 12mo", "status": "pending", "priority": 1, "color": "orange"},
     "wispr-flow":       {"commission": "25% recurring / 12mo", "status": "active", "priority": 2, "color": "green"},
     "beehiiv":          {"commission": "50% recurring / 12mo", "status": "active", "priority": 1, "color": "green"},
+    "airops":           {"commission": "20% / 12mo", "status": "active", "priority": 2, "color": "green"},
 }
 
 MIN_WORDS = {"review": 1500, "compare": 2000, "alternatives": 2500, "best": 2000, "category": 1000}
