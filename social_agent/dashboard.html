@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RankerToolAI — Social Dashboard v2</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#080c18;color:#e2e8f0;min-height:100vh}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:#0a0f1e}::-webkit-scrollbar-thumb{background:#1e293b;border-radius:3px}
+
+.app{display:grid;grid-template-columns:256px 1fr;grid-template-rows:52px 1fr;height:100vh;overflow:hidden}
+
+header{grid-column:1/-1;background:#0f172a;border-bottom:1px solid #1e293b;padding:0 1rem;display:flex;align-items:center;gap:.6rem;flex-shrink:0}
+.logo{width:28px;height:28px;background:linear-gradient(135deg,#f97316,#fb923c);border-radius:6px;display:flex;align-items:center;justify-content:center;font-weight:900;color:#fff;font-size:.85rem;flex-shrink:0}
+header h1{font-size:.95rem;font-weight:700;color:#fff}
+.hchip{font-size:.68rem;background:#1e293b;color:#475569;padding:.18rem .5rem;border-radius:20px}
+.header-right{margin-left:auto;display:flex;align-items:center;gap:.5rem}
+.stat-chip{font-size:.68rem;background:rgba(249,115,22,.1);border:1px solid rgba(249,115,22,.18);color:#f97316;padding:.18rem .6rem;border-radius:20px;white-space:nowrap}
+.kbd-btn{font-size:.68rem;background:#1e293b;border:1px solid #1e293b;color:#475569;padding:.2rem .5rem;border-radius:5px;cursor:pointer;transition:.1s}
+.kbd-btn:hover{color:#cbd5e1;border-color:#334155}
+
+aside{background:#0a0f1e;border-right:1px solid #1e293b;overflow-y:auto;padding:.55rem .45rem;display:flex;flex-direction:column;gap:.05rem}
+.sec-label{font-size:.6rem;font-weight:700;color:#1e293b;text-transform:uppercase;letter-spacing:.09em;padding:.45rem .5rem .2rem;flex-shrink:0}
+.ptab{padding:.38rem .6rem;border-radius:6px;cursor:pointer;font-size:.76rem;font-weight:600;color:#475569;display:flex;align-items:center;gap:.4rem;transition:.1s;flex-shrink:0;user-select:none}
+.ptab:hover{background:#1e293b;color:#cbd5e1}
+.ptab.active{background:rgba(249,115,22,.12);color:#f97316;border-left:3px solid #f97316;padding-left:.38rem}
+.cnt{margin-left:auto;font-size:.62rem;border-radius:8px;padding:.07rem .35rem;background:#1e293b;color:#334155;flex-shrink:0}
+.cnt.c-low{background:rgba(249,115,22,.12);color:#f97316}
+.cnt.c-med{background:rgba(59,130,246,.12);color:#60a5fa}
+.cnt.c-hi{background:rgba(34,197,94,.12);color:#22c55e}
+.ptab.active .cnt{background:rgba(249,115,22,.15);color:#f97316}
+
+.tools-hdr{display:flex;align-items:center;gap:.3rem;padding:.35rem .5rem .1rem;flex-shrink:0}
+.tools-hdr .sec-label{padding:0;flex:1}
+.filter-btn{font-size:.58rem;font-weight:700;background:#1e293b;border:1px solid #1e293b;color:#334155;padding:.15rem .42rem;border-radius:10px;cursor:pointer;transition:.1s;white-space:nowrap;flex-shrink:0}
+.filter-btn:hover,.filter-btn.on{background:rgba(249,115,22,.1);border-color:rgba(249,115,22,.25);color:#f97316}
+.sort-sel{font-size:.58rem;background:#0a0f1e;border:1px solid #1e293b;color:#334155;padding:.15rem .28rem;border-radius:4px;cursor:pointer;outline:none;flex-shrink:0}
+.sort-sel:focus{border-color:#334155;color:#94a3b8}
+
+.tool-item{padding:.33rem .55rem;border-radius:6px;cursor:pointer;font-size:.74rem;color:#475569;display:flex;align-items:center;gap:.38rem;transition:.1s;flex-shrink:0;min-width:0;user-select:none}
+.tool-item:hover{background:#1e293b;color:#cbd5e1}
+.tool-item.active{background:#1e293b;color:#fff}
+.tool-item.posted{opacity:.38}
+.tool-item .chk{margin-left:auto;font-size:.58rem;font-weight:700;color:#22c55e;flex-shrink:0}
+.tool-item .ts-hint{margin-left:auto;font-size:.56rem;color:#1e293b;flex-shrink:0;white-space:nowrap}
+.tool-item.active .ts-hint{color:#334155}
+.sdot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
+.tname{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.tool-logo-sm{width:15px;height:15px;object-fit:contain;border-radius:3px;flex-shrink:0}
+.tool-logo-lg{width:36px;height:36px;object-fit:contain;border-radius:8px;flex-shrink:0}
+.cat-label{padding:.28rem .55rem;font-size:.6rem;font-weight:700;color:#1e293b;text-transform:uppercase;letter-spacing:.06em;flex-shrink:0;margin-top:.15rem}
+
+main{overflow-y:auto;padding:1rem 1.2rem;min-width:0}
+.done-bar{display:flex;align-items:center;gap:.6rem;margin-bottom:1rem}
+.done-btn{padding:.33rem .85rem;border-radius:6px;border:1px solid #1e293b;background:#0f172a;color:#64748b;font-size:.74rem;font-weight:600;cursor:pointer;transition:.1s;white-space:nowrap;flex-shrink:0}
+.done-btn:hover{border-color:#f97316;color:#f97316}
+.done-btn.yes{background:rgba(34,197,94,.08);border-color:rgba(34,197,94,.25);color:#22c55e}
+.pbar-wrap{flex:1;height:4px;background:#1e293b;border-radius:2px;overflow:hidden;min-width:0}
+.pbar-fill{height:100%;background:linear-gradient(90deg,#f97316,#fbbf24);border-radius:2px;transition:.4s}
+.pbar-txt{font-size:.67rem;color:#334155;white-space:nowrap;flex-shrink:0}
+.next-btn{font-size:.68rem;background:#1e293b;border:1px solid #1e293b;color:#334155;padding:.3rem .65rem;border-radius:6px;cursor:pointer;transition:.1s;flex-shrink:0;white-space:nowrap}
+.next-btn:hover{color:#cbd5e1;border-color:#475569}
+
+.tool-header{display:flex;align-items:center;gap:.75rem;margin-bottom:1rem;padding-bottom:.8rem;border-bottom:1px solid #1e293b}
+.tool-icon-wrap{width:44px;height:44px;border-radius:10px;background:rgba(249,115,22,.08);border:1px solid rgba(249,115,22,.12);display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden}
+.tool-name{font-size:1.05rem;font-weight:700;color:#fff}
+.tool-sub{font-size:.72rem;color:#334155;margin-top:.1rem}
+.score-pill{margin-left:auto;background:rgba(249,115,22,.08);border:1px solid rgba(249,115,22,.2);border-radius:20px;padding:.25rem .7rem;font-size:.82rem;font-weight:700;color:#f97316;white-space:nowrap;flex-shrink:0}
+
+.img-block{border:1px solid #1e293b;border-radius:10px;overflow:hidden;margin-bottom:.85rem}
+.img-block-head{background:#0f172a;padding:.5rem .85rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #1e293b;flex-wrap:wrap;gap:.3rem}
+.img-block-title{font-size:.72rem;font-weight:700;color:#cbd5e1;display:flex;align-items:center;gap:.35rem;flex-wrap:wrap}
+.img-btns{display:flex;gap:.35rem;flex-wrap:wrap;align-items:center}
+.img-btn{font-size:.65rem;background:#1e293b;border:1px solid #1e293b;color:#475569;padding:.2rem .55rem;border-radius:5px;cursor:pointer;transition:.1s;text-decoration:none;display:inline-flex;align-items:center;gap:.22rem}
+.img-btn:hover{color:#e2e8f0;background:#334155;border-color:#334155}
+.img-btn.ok{background:rgba(34,197,94,.08);border-color:rgba(34,197,94,.22);color:#22c55e}
+.img-preview{background:#080c18;padding:.85rem;display:flex;justify-content:center;align-items:center;min-height:180px;position:relative}
+.img-preview img{width:auto;height:auto;max-width:100%;max-height:320px;border-radius:8px;box-shadow:0 4px 24px rgba(0,0,0,.5);display:block}
+.img-placeholder{display:flex;flex-direction:column;align-items:center;gap:.5rem;color:#1e293b;font-size:.75rem;padding:2rem}
+.img-placeholder .ph-icon{font-size:2.2rem;opacity:.4}
+.img-placeholder .ph-lbl{font-size:.68rem;color:#1e293b}
+
+.pblock{border:1px solid #1e293b;border-radius:10px;overflow:hidden;margin-bottom:.85rem}
+.pblock-head{background:#0f172a;padding:.55rem .85rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #1e293b}
+.pblock-title{font-size:.74rem;font-weight:700;color:#e2e8f0;display:flex;align-items:center;gap:.35rem}
+.copy-all{font-size:.65rem;background:#1e293b;border:1px solid #1e293b;color:#475569;padding:.22rem .58rem;border-radius:5px;cursor:pointer;transition:.1s}
+.copy-all:hover{color:#e2e8f0;background:#334155}
+.copy-all.ok{background:rgba(34,197,94,.08);border-color:rgba(34,197,94,.22);color:#22c55e}
+.fields{padding:.75rem .85rem}
+.field{margin-bottom:.75rem}
+.field:last-child{margin-bottom:0}
+.flabel{font-size:.63rem;font-weight:700;color:#334155;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.28rem;display:flex;align-items:center;gap:.35rem;flex-wrap:wrap}
+.fmeta{font-size:.63rem;font-weight:400;color:#1e293b;text-transform:none;letter-spacing:0}
+.fwrap{position:relative}
+pre.fval{background:#080c18;border:1px solid #1e293b;border-radius:6px;padding:.55rem 2.4rem .55rem .7rem;font-size:.75rem;color:#94a3b8;line-height:1.6;white-space:pre-wrap;word-break:break-word;font-family:inherit;min-height:34px}
+.cbtn{position:absolute;top:.32rem;right:.32rem;background:#1e293b;border:none;color:#334155;padding:.18rem .42rem;border-radius:4px;cursor:pointer;font-size:.63rem;transition:.1s}
+.cbtn:hover{color:#e2e8f0}
+.cbtn.ok{color:#22c55e}
+.fdiv{height:1px;background:#1e293b;margin:.6rem 0}
+
+.ov-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:.65rem;margin-bottom:1rem}
+.ov-card{background:#0f172a;border:1px solid #1e293b;border-radius:8px;padding:.65rem .85rem}
+.ov-val{font-size:1.5rem;font-weight:900;color:#f97316;line-height:1}
+.ov-lbl{font-size:.64rem;color:#334155;margin-top:.25rem}
+.ov-wrap{overflow-x:auto;border:1px solid #1e293b;border-radius:10px}
+.ov-table{width:100%;border-collapse:collapse;font-size:.7rem}
+.ov-table th{background:#0f172a;color:#334155;font-weight:700;padding:.38rem .45rem;text-align:center;border:1px solid #1e293b;white-space:nowrap;font-size:.6rem;position:sticky;top:0;z-index:2}
+.ov-table th.th-tool{text-align:left;min-width:130px;position:sticky;left:0;top:0;background:#0f172a;z-index:3}
+.ov-table td{border:1px solid #0f172a;padding:.3rem .38rem;text-align:center;background:#080c18;cursor:pointer}
+.ov-table td.td-tool{text-align:left;background:#0a0f1e;position:sticky;left:0;z-index:1;padding:.3rem .55rem;color:#94a3b8;font-size:.7rem;font-weight:600;border-right:1px solid #1e293b;white-space:nowrap}
+.ov-table td.td-tool:hover{color:#fff}
+.ov-table tr:hover td{background:#0f172a !important}
+.ov-table td.c-done{background:rgba(34,197,94,.07) !important;color:#22c55e}
+.ov-table tr:hover td.c-done{background:rgba(34,197,94,.14) !important}
+.ov-table td.c-empty{color:#1e293b}
+.ov-table td.td-sum{background:#0f172a !important;font-weight:700;font-size:.62rem;color:#475569}
+.ov-table td.td-sum.s-done{color:#22c55e}
+.ov-table tr.tr-sum td{background:#0a0f1e !important;border-top:1px solid #1e293b;font-weight:700;font-size:.62rem;color:#334155}
+.ov-table tr.tr-sum td.c-done{color:#22c55e;background:rgba(34,197,94,.05) !important}
+
+.empty{text-align:center;padding:3rem 1rem;color:#1e293b;font-size:.82rem}
+
+.kbd-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:100;align-items:center;justify-content:center}
+.kbd-overlay.show{display:flex}
+.kbd-box{background:#0f172a;border:1px solid #1e293b;border-radius:12px;padding:1.2rem 1.4rem;max-width:340px;width:90%}
+.kbd-box h3{font-size:.88rem;font-weight:700;color:#fff;margin-bottom:.75rem;display:flex;align-items:center;gap:.4rem}
+.kbd-row{display:flex;align-items:center;justify-content:space-between;padding:.3rem 0;border-bottom:1px solid #0f172a;gap:.75rem}
+.kbd-row:last-child{border-bottom:none}
+.kbd-keys{display:flex;gap:.25rem;flex-shrink:0}
+.kk{background:#1e293b;border:1px solid #334155;border-bottom:2px solid #334155;border-radius:4px;padding:.12rem .38rem;font-size:.63rem;color:#94a3b8;font-family:monospace}
+.kbd-desc{font-size:.7rem;color:#475569}
+.kbd-close{margin-top:.8rem;width:100%;padding:.38rem;background:#1e293b;border:1px solid #334155;border-radius:6px;color:#64748b;font-size:.73rem;cursor:pointer;transition:.1s}
+.kbd-close:hover{color:#e2e8f0}
+
+/* ── Spinner ──────────────────────────────────────────────────── */
+@keyframes spin{to{transform:rotate(360deg)}}
+.spin{display:inline-block;width:11px;height:11px;border:2px solid rgba(249,115,22,.25);border-top-color:#f97316;border-radius:50%;animation:spin .7s linear infinite;flex-shrink:0}
+
+/* ── Generate button ──────────────────────────────────────────── */
+.gen-btn{font-size:.65rem;background:rgba(249,115,22,.08);border:1px solid rgba(249,115,22,.22);color:#f97316;padding:.2rem .6rem;border-radius:5px;cursor:pointer;transition:.1s;display:inline-flex;align-items:center;gap:.28rem;white-space:nowrap;flex-shrink:0}
+.gen-btn:hover{background:rgba(249,115,22,.18)}
+.gen-btn:disabled{opacity:.4;cursor:not-allowed;pointer-events:none}
+
+/* ── Image gen overlay ────────────────────────────────────────── */
+.img-gen-overlay{position:absolute;inset:0;background:rgba(8,12,24,.8);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.5rem;z-index:5;border-radius:0}
+.img-gen-overlay .spin{width:22px;height:22px;border-width:3px}
+.img-gen-overlay span{font-size:.72rem;color:#f97316}
+
+/* ── Enhance button (in field label) ─────────────────────────── */
+.enh-btn{font-size:.6rem;background:rgba(139,92,246,.08);border:1px solid rgba(139,92,246,.18);color:#a78bfa;padding:.1rem .35rem;border-radius:4px;cursor:pointer;transition:.1s;line-height:1.4}
+.enh-btn:hover{background:rgba(139,92,246,.18)}
+.enh-btn:disabled{opacity:.4;cursor:not-allowed}
+
+/* ── Suggestion box ───────────────────────────────────────────── */
+.suggest-wrap{margin-top:.4rem;border:1px solid rgba(139,92,246,.18);border-radius:6px;background:rgba(139,92,246,.04);padding:.5rem .65rem}
+.suggest-lbl{font-size:.58rem;font-weight:700;color:#a78bfa;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.28rem}
+.suggest-txt{font-size:.73rem;color:#94a3b8;line-height:1.6;white-space:pre-wrap;word-break:break-word;max-height:200px;overflow-y:auto}
+.suggest-acts{display:flex;gap:.3rem;margin-top:.38rem}
+.sug-btn{font-size:.62rem;padding:.18rem .45rem;border-radius:4px;cursor:pointer;border:1px solid #1e293b;background:#080c18;color:#475569;transition:.1s}
+.sug-btn:hover{color:#e2e8f0}
+.sug-btn.apply{background:rgba(34,197,94,.08);border-color:rgba(34,197,94,.22);color:#22c55e}
+.sug-btn.apply:hover{background:rgba(34,197,94,.18)}
+
+/* ── Video block ──────────────────────────────────────────────── */
+.vid-block{border:1px solid #1e293b;border-radius:10px;overflow:hidden;margin-bottom:.85rem}
+.vid-block-head{background:#0f172a;padding:.5rem .85rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #1e293b;flex-wrap:wrap;gap:.3rem}
+.vid-block-title{font-size:.72rem;font-weight:700;color:#cbd5e1;display:flex;align-items:center;gap:.35rem}
+.vid-btns{display:flex;gap:.35rem;align-items:center;flex-wrap:wrap}
+.cost-note{font-size:.6rem;color:#1e293b;flex-shrink:0}
+.vid-area{background:#080c18;padding:.85rem;min-height:120px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.4rem}
+.vid-area video{max-width:100%;max-height:280px;border-radius:8px;box-shadow:0 4px 24px rgba(0,0,0,.5)}
+.vid-placeholder{color:#1e293b;font-size:.74rem;text-align:center}
+.vid-placeholder .vp-icon{font-size:2rem;opacity:.3;display:block;margin-bottom:.4rem}
+.vid-status-row{display:flex;align-items:center;gap:.4rem;font-size:.7rem;color:#f97316}
+.vid-pbar-wrap{width:200px;height:3px;background:#1e293b;border-radius:2px;overflow:hidden}
+.vid-pbar-fill{height:100%;background:linear-gradient(90deg,#f97316,#fbbf24);border-radius:2px;transition:.6s}
+
+/* ── Settings overlay ─────────────────────────────────────────── */
+.settings-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:200;align-items:center;justify-content:center}
+.settings-overlay.show{display:flex}
+.settings-box{background:#0f172a;border:1px solid #1e293b;border-radius:14px;padding:1.4rem;width:min(500px,94vw);max-height:90vh;overflow-y:auto}
+.settings-box h3{font-size:.9rem;font-weight:700;color:#fff;margin-bottom:1.1rem;display:flex;align-items:center;gap:.4rem}
+.sg{margin-bottom:.65rem}
+.sg label{display:block;font-size:.62rem;font-weight:700;color:#334155;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.28rem}
+.sg input,.sg select{width:100%;background:#080c18;border:1px solid #1e293b;border-radius:6px;padding:.4rem .65rem;color:#94a3b8;font-size:.75rem;outline:none;font-family:inherit}
+.sg input:focus{border-color:#334155;color:#e2e8f0}
+.sg .note{font-size:.62rem;color:#1e293b;margin-top:.22rem;line-height:1.5}
+.sg .note code{background:#080c18;border:1px solid #0f172a;border-radius:3px;padding:.05rem .25rem;font-size:.61rem;color:#334155;font-family:monospace}
+.settings-div{height:1px;background:#1e293b;margin:.8rem 0}
+.settings-group-lbl{font-size:.6rem;font-weight:700;color:#1e293b;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.55rem}
+.settings-acts{display:flex;gap:.5rem;margin-top:1.1rem}
+.sbtn{flex:1;padding:.42rem;border-radius:6px;font-size:.74rem;font-weight:600;cursor:pointer;transition:.1s;border:1px solid}
+.sbtn.primary{background:rgba(249,115,22,.1);border-color:rgba(249,115,22,.3);color:#f97316}
+.sbtn.primary:hover{background:rgba(249,115,22,.2)}
+.sbtn.ghost{background:#1e293b;border-color:#1e293b;color:#475569}
+.sbtn.ghost:hover{color:#cbd5e1}
+.proxy-status{font-size:.65rem;display:flex;align-items:center;gap:.3rem;margin-top:.3rem}
+.proxy-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+
+/* ── Toast ────────────────────────────────────────────────────── */
+.toast-wrap{position:fixed;bottom:1.1rem;right:1.1rem;z-index:500;display:flex;flex-direction:column-reverse;gap:.35rem;pointer-events:none;max-width:320px}
+.toast{background:#0f172a;border:1px solid #1e293b;border-radius:8px;padding:.5rem .85rem;font-size:.73rem;color:#94a3b8;opacity:0;transform:translateY(6px);transition:.22s;pointer-events:none;word-break:break-word}
+.toast.show{opacity:1;transform:none}
+.toast.t-ok{border-color:rgba(34,197,94,.3);color:#22c55e}
+.toast.t-err{border-color:rgba(239,68,68,.3);color:#f87171}
+.toast.t-warn{border-color:rgba(249,115,22,.3);color:#f97316}
+</style>
+</head>
+<body>
+<div class="app">
+
+<header>
+  <div class="logo">R</div>
+  <h1>Social Dashboard</h1>
+  <span class="hchip">v2</span>
+  <div class="header-right">
+    <span class="stat-chip" id="stat">0 / 420 bài</span>
+    <button class="kbd-btn" onclick="showSettings()" title="API Settings">⚙</button>
+    <button class="kbd-btn" onclick="showKbd()" title="Phím tắt">⌨ ?</button>
+  </div>
+</header>
+
+<aside>
+  <div class="sec-label">Nền tảng</div>
+  <div class="ptab" data-p="overview" onclick="setP('overview',this)">📊 Tổng quan <span class="cnt" id="c-overview"></span></div>
+  <div class="ptab active" data-p="pinterest"  onclick="setP('pinterest',this)">📌 Pinterest   <span class="cnt" id="c-pinterest">0/42</span></div>
+  <div class="ptab"        data-p="instagram"  onclick="setP('instagram',this)">📷 Instagram   <span class="cnt" id="c-instagram">0/42</span></div>
+  <div class="ptab"        data-p="tiktok"     onclick="setP('tiktok',this)">🎵 TikTok      <span class="cnt" id="c-tiktok">0/42</span></div>
+  <div class="ptab"        data-p="youtube"    onclick="setP('youtube',this)">🎬 YouTube     <span class="cnt" id="c-youtube">0/42</span></div>
+  <div class="ptab"        data-p="twitter"    onclick="setP('twitter',this)">🐦 Twitter / X <span class="cnt" id="c-twitter">0/42</span></div>
+  <div class="ptab"        data-p="threads"    onclick="setP('threads',this)">✦ Threads     <span class="cnt" id="c-threads">0/42</span></div>
+  <div class="ptab"        data-p="linkedin"   onclick="setP('linkedin',this)">💼 LinkedIn    <span class="cnt" id="c-linkedin">0/42</span></div>
+  <div class="ptab"        data-p="facebook"   onclick="setP('facebook',this)">👥 Facebook    <span class="cnt" id="c-facebook">0/42</span></div>
+  <div class="ptab"        data-p="reddit"     onclick="setP('reddit',this)">💬 Reddit      <span class="cnt" id="c-reddit">0/42</span></div>
+  <div class="ptab"        data-p="quora"      onclick="setP('quora',this)">❓ Quora       <span class="cnt" id="c-quora">0/42</span></div>
+
+  <div class="tools-hdr">
+    <span class="sec-label">Công cụ</span>
+    <button class="filter-btn" id="filter-btn" onclick="toggleFilter()">Chưa đăng</button>
+    <select class="sort-sel" id="sort-sel" onchange="renderSidebar()">
+      <option value="default">↕ Mặc định</option>
+      <option value="score">⭐ Điểm số</option>
+      <option value="cat">📁 Nhóm</option>
+    </select>
+  </div>
+  <div id="tool-list"></div>
+</aside>
+
+<main id="main">
+  <div class="empty">📌<br><br>Chọn công cụ bên trái để xem nội dung</div>
+</main>
+</div>
+
+<!-- Keyboard overlay -->
+<div class="kbd-overlay" id="kbd-overlay" onclick="hideKbd()">
+  <div class="kbd-box" onclick="event.stopPropagation()">
+    <h3>⌨ Phím tắt</h3>
+    <div class="kbd-row"><div class="kbd-keys"><span class="kk">j</span><span class="kk">↓</span></div><div class="kbd-desc">Công cụ tiếp theo</div></div>
+    <div class="kbd-row"><div class="kbd-keys"><span class="kk">k</span><span class="kk">↑</span></div><div class="kbd-desc">Công cụ trước đó</div></div>
+    <div class="kbd-row"><div class="kbd-keys"><span class="kk">Space</span></div><div class="kbd-desc">Đánh dấu đã đăng / bỏ đánh dấu</div></div>
+    <div class="kbd-row"><div class="kbd-keys"><span class="kk">g</span></div><div class="kbd-desc">Generate ảnh (kie.ai)</div></div>
+    <div class="kbd-row"><div class="kbd-keys"><span class="kk">f</span></div><div class="kbd-desc">Lọc chưa đăng / tất cả</div></div>
+    <div class="kbd-row"><div class="kbd-keys"><span class="kk">o</span></div><div class="kbd-desc">Tổng quan (Overview)</div></div>
+    <div class="kbd-row"><div class="kbd-keys"><span class="kk">1</span>–<span class="kk">9</span><span class="kk">0</span></div><div class="kbd-desc">Chuyển nền tảng</div></div>
+    <div class="kbd-row"><div class="kbd-keys"><span class="kk">?</span></div><div class="kbd-desc">Hiện / ẩn bảng phím tắt này</div></div>
+    <button class="kbd-close" onclick="hideKbd()">Đóng</button>
+  </div>
+</div>
+
+<!-- Settings overlay -->
+<div class="settings-overlay" id="settings-overlay" onclick="hideSettings()">
+  <div class="settings-box" onclick="event.stopPropagation()">
+    <h3>⚙ API Settings</h3>
+
+    <div class="settings-group-lbl">🎨 kie.ai — Image Generation</div>
+    <div class="sg">
+      <label>API Key</label>
+      <input type="password" id="s-kieai-key" placeholder="sk-...">
+    </div>
+    <div class="sg">
+      <label>API Endpoint</label>
+      <input type="text" id="s-kieai-ep" placeholder="https://api.kie.ai/v1/images/generations">
+      <div class="note">Xem tài liệu API của kie.ai để lấy đúng endpoint</div>
+    </div>
+    <div class="sg">
+      <label>Status Endpoint (nếu async)</label>
+      <input type="text" id="s-kieai-status" placeholder="https://api.kie.ai/v1/tasks/{task_id}">
+      <div class="note">Để trống nếu kie.ai trả kết quả ngay (synchronous)</div>
+    </div>
+
+    <div class="settings-div"></div>
+    <div class="settings-group-lbl">🎬 fal.ai — Video Generation (Kling 1.5 Pro)</div>
+    <div class="sg">
+      <label>API Key</label>
+      <input type="password" id="s-fal-key" placeholder="...">
+      <div class="note">Lấy tại <code>fal.ai/dashboard/keys</code></div>
+    </div>
+
+    <div class="settings-div"></div>
+    <div class="settings-group-lbl">✨ Claude — Caption Enhancement</div>
+    <div class="sg">
+      <label>Anthropic API Key</label>
+      <input type="password" id="s-claude-key" placeholder="sk-ant-...">
+    </div>
+    <div class="sg">
+      <label>Proxy URL (cần chạy api_proxy.py)</label>
+      <input type="text" id="s-proxy-url" placeholder="http://localhost:7842">
+      <div class="proxy-status" id="proxy-status-row">
+        <div class="proxy-dot" id="proxy-dot" style="background:#334155"></div>
+        <span id="proxy-status-txt" style="color:#334155">Chưa kiểm tra</span>
+        <button class="sug-btn" onclick="checkProxy()" style="margin-left:.3rem">Ping</button>
+      </div>
+      <div class="note">Mở terminal: <code>python social_agent/api_proxy.py</code></div>
+    </div>
+
+    <div class="settings-acts">
+      <button class="sbtn primary" onclick="saveSettings()">💾 Lưu</button>
+      <button class="sbtn ghost" onclick="hideSettings()">Đóng</button>
+    </div>
+  </div>
+</div>
+
+<!-- Toast container -->
+<div class="toast-wrap" id="toast-wrap"></div>
+
+<script>
+const SITE = 'https://rankertoolai.com';
+const PLATFORMS = ['pinterest','instagram','tiktok','youtube','twitter','threads','linkedin','facebook','reddit','quora'];
+const P_NAME = {pinterest:'Pinterest',instagram:'Instagram',tiktok:'TikTok',youtube:'YouTube',twitter:'Twitter / X',threads:'Threads',linkedin:'LinkedIn',facebook:'Facebook',reddit:'Reddit',quora:'Quora'};
+const P_ICON = {pinterest:'📌',instagram:'📷',tiktok:'🎵',youtube:'🎬',twitter:'🐦',threads:'✦',linkedin:'💼',facebook:'👥',reddit:'💬',quora:'❓'};
+const P_ABBR = {pinterest:'Pin',instagram:'IG',tiktok:'TT',youtube:'YT',twitter:'TW',threads:'Th',linkedin:'LI',facebook:'FB',reddit:'Re',quora:'Qu'};
+
+const TOOLS = [
+  {name:"ChatGPT",slug:"chatgpt",score:8.8,cat:"AI Chatbot",em:"🤖",
+   tagline:"Most versatile AI assistant — GPT-4o, images, voice & 1,000+ plugins",
+   price:"Free / $20/mo Plus",best_for:"Anyone needing an all-in-one AI for writing, code, and research",
+   pros:["GPT-4o with vision, voice & DALL-E 3","1,000+ plugins & Custom GPTs","Browse the web in real-time"],
+   cons:["Free tier rate-limited fast","Occasionally hallucinates confidently"],
+   tags:["#ChatGPT","#OpenAI","#GPT4","#AITools","#ArtificialIntelligence","#Productivity"],
+   subs:["r/ChatGPT","r/artificial","r/OpenAI","r/AItools","r/productivity"],
+   qTopics:["ChatGPT tips and tricks","best AI chatbots 2026","ChatGPT vs Claude"],board:"AI Chatbot Reviews 2026"},
+  {name:"Claude",slug:"claude",score:9.2,cat:"AI Chatbot",em:"🧠",
+   tagline:"Best AI for writing & reasoning — 200K context, safest frontier model",
+   price:"Free / $20/mo Pro",best_for:"Writers, researchers & devs needing nuanced reasoning",
+   pros:["200K token context window","Best writing quality of any AI","Stronger free tier than ChatGPT"],
+   cons:["No image generation","Smaller plugin ecosystem"],
+   tags:["#Claude","#Anthropic","#AITools","#AIWriting","#AIAssistant"],
+   subs:["r/ClaudeAI","r/artificial","r/AItools","r/ChatGPT"],
+   qTopics:["Claude AI vs ChatGPT","best AI for writing 2026","Anthropic Claude review"],board:"AI Chatbot Reviews 2026"},
+  {name:"Midjourney",slug:"midjourney",score:9.1,cat:"AI Image Generator",em:"🎨",
+   tagline:"Best AI image generator — stunning quality preferred by designers",
+   price:"From $10/mo",best_for:"Designers, artists & creators needing highest quality AI images",
+   pros:["Best image quality of any AI tool","V6 handles photorealism & art styles","Active creative community"],
+   cons:["No free tier","Commercial license needs Pro plan"],
+   tags:["#Midjourney","#AIArt","#AIImage","#DigitalArt","#AITools"],
+   subs:["r/midjourney","r/AIArt","r/artificial","r/graphic_design"],
+   qTopics:["Midjourney review 2026","best AI image generators","Midjourney vs DALL-E 3"],board:"AI Image Generator Reviews 2026"},
+  {name:"Cursor",slug:"cursor",score:9.2,cat:"AI Coding Tool",em:"💻",
+   tagline:"Best AI code editor that writes code faster than you",
+   price:"Free hobby / $20/mo Pro",best_for:"Developers who want AI to write, debug & refactor code",
+   pros:["Composer writes multi-file code from scratch","Understands your entire codebase","Best autocomplete of any tool"],
+   cons:["$20/mo for full power","Can suggest outdated patterns"],
+   tags:["#Cursor","#AICoding","#Developer","#CodingTools","#AITools"],
+   subs:["r/programming","r/webdev","r/learnprogramming","r/artificial"],
+   qTopics:["best AI coding tools 2026","Cursor vs GitHub Copilot","AI code editors"],board:"AI Coding Tools Reviews 2026"},
+  {name:"Semrush",slug:"semrush",score:9.1,cat:"AI SEO Suite",em:"📊",
+   tagline:"Most complete SEO and marketing platform powered by AI",
+   price:"Free / $139/mo Pro",best_for:"SEO pros, agencies & businesses needing competitor intelligence",
+   pros:["25B+ keyword database","Best competitor analysis tool","ContentShake AI writes SEO content"],
+   cons:["Expensive for solopreneurs","Overwhelming for beginners"],
+   tags:["#Semrush","#SEO","#DigitalMarketing","#ContentMarketing","#AITools"],
+   subs:["r/SEO","r/bigseo","r/digital_marketing","r/Entrepreneur"],
+   qTopics:["SEO software comparison 2026","is Semrush worth it","best keyword research tool"],board:"AI SEO & Marketing Tools 2026"},
+  {name:"ElevenLabs",slug:"elevenlabs",score:9.2,cat:"AI Voice Generator",em:"🎙",
+   tagline:"Most realistic AI voice generator in 2026",
+   price:"Free / $5/mo Starter",best_for:"Creators, podcasters & marketers needing human-like AI voices",
+   pros:["99 languages, 3,000+ voices","Clone your voice in 1 minute","Lowest latency API"],
+   cons:["Free: 10K chars/month only","Voice cloning needs audio sample"],
+   tags:["#ElevenLabs","#AIVoice","#TextToSpeech","#ContentCreation","#AITools"],
+   subs:["r/artificial","r/podcasting","r/ChatGPT","r/AItools"],
+   qTopics:["AI voice generators 2026","ElevenLabs vs Murf","best text to speech software"],board:"AI Voice & TTS Tool Reviews 2026"},
+  {name:"GitHub Copilot",slug:"github-copilot",score:9.1,cat:"AI Coding Tool",em:"🐙",
+   tagline:"Most-used AI coding assistant — real-time suggestions in every IDE",
+   price:"Free for individuals / $10/mo Pro",best_for:"Developers wanting AI inside VS Code, JetBrains, or Neovim",
+   pros:["Works in any editor","FREE for individual developers","Excellent autocomplete quality"],
+   cons:["Copilot Chat weaker than Cursor","No multi-file editing"],
+   tags:["#GitHubCopilot","#AICoding","#GitHub","#Developer","#AITools"],
+   subs:["r/programming","r/webdev","r/github","r/learnprogramming"],
+   qTopics:["GitHub Copilot review 2026","Cursor vs GitHub Copilot","best AI coding assistant"],board:"AI Coding Tools Reviews 2026"},
+  {name:"Perplexity AI",slug:"perplexity",score:8.8,cat:"AI Search Tool",em:"🔍",
+   tagline:"Best AI for research — real-time answers with cited sources",
+   price:"Free / $20/mo Pro",best_for:"Researchers, journalists & students needing verified info",
+   pros:["Real-time web search with citations","Pro unlocks GPT-4o & Claude","No ads or tracking"],
+   cons:["Free tier limited to standard model","Less conversational than ChatGPT"],
+   tags:["#PerplexityAI","#AISearch","#Research","#FutureOfSearch","#AITools"],
+   subs:["r/artificial","r/ChatGPT","r/AItools","r/research"],
+   qTopics:["Perplexity AI vs Google","best AI research tools","is Perplexity Pro worth it"],board:"Best AI Tools 2026 — RankerToolAI"},
+  {name:"Jasper AI",slug:"jasper",score:8.9,cat:"AI Writing Tool",em:"✍",
+   tagline:"Best AI writing assistant for marketing teams",
+   price:"$39/mo Creator / $59/mo Pro",best_for:"Marketing teams, agencies & brands needing consistent AI content",
+   pros:["50+ templates for every content type","Brand Voice learns your tone","Integrates with Surfer SEO"],
+   cons:["Expensive vs alternatives","Can hallucinate facts"],
+   tags:["#JasperAI","#AIWriting","#ContentMarketing","#MarketingTools","#AITools"],
+   subs:["r/marketing","r/copywriting","r/digital_marketing","r/content_marketing"],
+   qTopics:["best AI writing tools 2026","Jasper AI review","AI for content marketing"],board:"AI Writing Tools Reviews 2026"},
+  {name:"Windsurf",slug:"windsurf",score:8.9,cat:"AI Coding IDE",em:"🏄",
+   tagline:"Best value AI coding IDE — Cascade agent at $15/mo",
+   price:"Free / $15/mo Pro",best_for:"Developers wanting Cursor-quality AI coding at $5/mo less",
+   pros:["Cascade AI agent for multi-file editing","VS Code compatible","$5 cheaper than Cursor"],
+   cons:["Smaller community than Cursor","Flow credit limits on free plan"],
+   tags:["#Windsurf","#AICoding","#Developer","#CodingTools","#AITools"],
+   subs:["r/programming","r/webdev","r/learnprogramming","r/artificial"],
+   qTopics:["Windsurf vs Cursor AI","best AI coding IDE 2026","AI code editors comparison"],board:"AI Coding Tools Reviews 2026"},
+  {name:"Stable Diffusion",slug:"stable-diffusion",score:8.9,cat:"AI Image Generator",em:"🖼",
+   tagline:"Best free open-source AI image generator in 2026",
+   price:"Free (self-hosted) / $10/mo DreamStudio",best_for:"Developers & designers wanting unlimited free image generation",
+   pros:["100% free and open source","Run locally — unlimited generations","10,000+ community models"],
+   cons:["Requires technical setup","Needs good GPU for speed"],
+   tags:["#StableDiffusion","#AIArt","#OpenSource","#FreeAI","#AIImage"],
+   subs:["r/StableDiffusion","r/artificial","r/MachineLearning","r/AIArt"],
+   qTopics:["Stable Diffusion tutorial 2026","free AI art generators","Stable Diffusion vs Midjourney"],board:"AI Image Generator Reviews 2026"},
+  {name:"Canva AI",slug:"canva-ai",score:8.7,cat:"AI Design Tool",em:"🎨",
+   tagline:"Best AI design tool for non-designers in 2026",
+   price:"Free / $15/mo Pro",best_for:"Non-designers, small businesses & social media managers",
+   pros:["Magic Design generates full layouts","Dream Lab AI image generation","1M+ templates"],
+   cons:["AI features require Pro plan","Limited vs Photoshop"],
+   tags:["#CanvaAI","#GraphicDesign","#AIDesign","#SocialMedia","#ContentCreation"],
+   subs:["r/graphic_design","r/smallbusiness","r/socialmedia","r/Entrepreneur"],
+   qTopics:["Canva AI features 2026","best design tools for non-designers","Canva vs Adobe"],board:"AI Image Generator Reviews 2026"},
+  {name:"Grok 3",slug:"grok",score:8.4,cat:"AI Chatbot",em:"⚡",
+   tagline:"Elon Musk's AI chatbot with real-time X data access",
+   price:"X Premium $8/mo",best_for:"X/Twitter users needing real-time news & trending topics",
+   pros:["Real-time X/Twitter data access","No content restrictions","Included with X Premium"],
+   cons:["Requires X subscription","Smaller knowledge base than GPT-4"],
+   tags:["#Grok","#XAI","#AIChat","#ElonMusk","#AITools"],
+   subs:["r/artificial","r/ChatGPT","r/technology","r/AItools"],
+   qTopics:["Grok AI vs ChatGPT","xAI Grok review 2026","is X Premium worth it for Grok"],board:"AI Chatbot Reviews 2026"},
+  {name:"Runway ML",slug:"runway",score:9.0,cat:"AI Video Generator",em:"🎞",
+   tagline:"Best AI video generation platform for creators",
+   price:"Free 125 credits / $15/mo Standard",best_for:"Filmmakers, YouTubers & creators needing AI video",
+   pros:["Gen-3 Alpha highest quality AI video","Text-to-video and image-to-video","AI inpainting & motion brush"],
+   cons:["Credits run out fast","Render times 1-5 min per clip"],
+   tags:["#RunwayML","#AIVideo","#VideoCreation","#AITools","#ContentCreator"],
+   subs:["r/artificial","r/videoproduction","r/filmmakers","r/AItools"],
+   qTopics:["Runway ML review 2026","best AI video generators","AI video creation tools"],board:"AI Video Tools Reviews 2026"},
+  {name:"DeepSeek",slug:"deepseek",score:9.0,cat:"AI Chatbot",em:"🌊",
+   tagline:"Open-source AI that shocked Silicon Valley — free & GPT-4 quality",
+   price:"Free / API $0.14/M tokens",best_for:"Developers & researchers wanting GPT-4 quality at open-source prices",
+   pros:["100% free to use","Cheapest API: $0.14 per 1M tokens","Matches GPT-4 on benchmarks"],
+   cons:["Chinese company — data privacy concerns","Occasional refusals on sensitive topics"],
+   tags:["#DeepSeek","#OpenSource","#FreeAI","#AITools","#ArtificialIntelligence"],
+   subs:["r/artificial","r/MachineLearning","r/ChatGPT","r/programming"],
+   qTopics:["DeepSeek vs ChatGPT","is DeepSeek safe to use","best free AI tools 2026"],board:"AI Chatbot Reviews 2026"},
+  {name:"Gemini",slug:"gemini",score:8.7,cat:"AI Chatbot",em:"✨",
+   tagline:"Google's AI — best for G-Suite users and real-time search",
+   price:"Free / $20/mo Advanced",best_for:"Google Workspace users wanting AI in Gmail, Docs & Sheets",
+   pros:["Deeply integrated with Google apps","Real-time search access","Most generous free tier"],
+   cons:["Inconsistent quality vs Claude/ChatGPT","Weaker at creative writing"],
+   tags:["#Gemini","#GoogleAI","#AITools","#AIChat","#Productivity"],
+   subs:["r/GoogleGemini","r/artificial","r/AItools","r/ChatGPT"],
+   qTopics:["Google Gemini review 2026","ChatGPT vs Gemini","Google AI assistant features"],board:"AI Chatbot Reviews 2026"},
+  {name:"Notion AI",slug:"notion",score:8.9,cat:"AI Productivity Tool",em:"📝",
+   tagline:"AI writing & summarization built into the best productivity workspace",
+   price:"+$10/mo add-on",best_for:"Teams & individuals already using Notion for notes & project mgmt",
+   pros:["AI built directly into your workspace","Summarize, rewrite, translate in 1 click","Best value for Notion users"],
+   cons:["Requires Notion subscription","Less powerful than standalone tools"],
+   tags:["#NotionAI","#Productivity","#AITools","#PKM","#WorkSmarter"],
+   subs:["r/Notion","r/productivity","r/selfimprovement","r/pkm"],
+   qTopics:["Notion AI features 2026","best productivity apps with AI","is Notion AI worth it"],board:"AI Productivity Tools Reviews 2026"},
+  {name:"Otter.ai",slug:"otter-ai",score:8.7,cat:"AI Productivity Tool",em:"🦦",
+   tagline:"Best AI meeting assistant — real-time transcription & action items",
+   price:"Free / $16.99/mo Pro",best_for:"Remote workers & teams who never want to take manual meeting notes",
+   pros:["95%+ transcription accuracy","Auto-generated summaries & action items","Integrates with Zoom & Google Meet"],
+   cons:["Free: 300 min/month limit","Accuracy drops with heavy accents"],
+   tags:["#OtterAI","#MeetingNotes","#Transcription","#RemoteWork","#Productivity"],
+   subs:["r/productivity","r/remotework","r/artificial","r/freelance"],
+   qTopics:["best AI meeting tools 2026","Otter AI review","how to transcribe meetings automatically"],board:"AI Productivity Tools Reviews 2026"},
+  {name:"HubSpot AI",slug:"hubspot",score:8.2,cat:"AI CRM & Marketing",em:"🦊",
+   tagline:"CRM-native AI — Breeze AI for sales & marketing teams",
+   price:"Free CRM / $20/mo Starter",best_for:"Sales & marketing teams already using HubSpot CRM",
+   pros:["AI has full CRM context","Best-in-class chatbot builder","Free CRM tier included"],
+   cons:["Full AI suite needs $800+/mo Pro","Overkill for small businesses"],
+   tags:["#HubSpot","#CRM","#MarketingAI","#SalesTools","#AITools"],
+   subs:["r/marketing","r/sales","r/digital_marketing","r/Entrepreneur"],
+   qTopics:["HubSpot AI features 2026","best CRM with AI","HubSpot vs Salesforce AI"],board:"AI SEO & Marketing Tools 2026"},
+  {name:"Surfer SEO",slug:"surfer-seo",score:9.0,cat:"AI SEO Tool",em:"🏄",
+   tagline:"Best AI content optimizer that ranks pages faster",
+   price:"$89/mo Essential / $129/mo Scale",best_for:"Content writers, SEO agencies & bloggers wanting data-driven rankings",
+   pros:["Real-time NLP content scoring","Keyword density insights","Integrates with Google Docs & Jasper"],
+   cons:["Pricey for solopreneurs","NLP suggestions take time to learn"],
+   tags:["#SurferSEO","#SEO","#ContentMarketing","#Blogging","#AITools"],
+   subs:["r/SEO","r/bigseo","r/juststart","r/blogging"],
+   qTopics:["Surfer SEO review 2026","best SEO content optimization tools","how to rank on Google with AI"],board:"AI SEO & Marketing Tools 2026"},
+  {name:"Writesonic",slug:"writesonic",score:8.7,cat:"AI Writing Tool",em:"📝",
+   tagline:"Best budget AI writer with GPT-4 quality output",
+   price:"Free tier / $16/mo Chatsonic",best_for:"Freelancers & small businesses needing affordable AI writing",
+   pros:["Powered by GPT-4","Chatsonic has real-time web access","Affordable — best value AI writer"],
+   cons:["Quality inconsistent on long-form","UI feels cluttered"],
+   tags:["#Writesonic","#AIWriting","#ContentCreation","#Freelance","#AITools"],
+   subs:["r/freelance","r/blogging","r/content_marketing","r/artificial"],
+   qTopics:["Writesonic vs Jasper AI","best affordable AI writing tools","GPT-4 writing tools comparison"],board:"AI Writing Tools Reviews 2026"},
+
+  {name:"Adobe Firefly",slug:"adobe-firefly",score:8.5,cat:"AI Image Generator",em:"🔥",
+   tagline:"Commercially-safe AI image generator built into Photoshop & Illustrator",
+   price:"Free / $24.99/mo",best_for:"Designers and brands needing IP-indemnified, commercially safe AI images",
+   pros:["Commercially safe — IP indemnified","Integrated in Photoshop & Illustrator","Free tier included (25 credits/mo)"],
+   cons:["Image quality below Midjourney overall","Credits used up quickly on high quality"],
+   tags:["#AdobeFirefly","#AIArt","#Photoshop","#GenerativeAI","#AITools"],
+   subs:["r/adobe","r/AIArt","r/graphic_design","r/artificial"],
+   qTopics:["Adobe Firefly review 2026","is Adobe Firefly commercially safe","Firefly vs Midjourney"],board:"AI Image Generator Reviews 2026"},
+  {name:"Anyword",slug:"anyword",score:8.4,cat:"AI Writing Tool",em:"📢",
+   tagline:"AI copywriter with a Predictive Performance Score for ad copy",
+   price:"From $39/mo",best_for:"Performance marketers who need ad copy, landing pages, and email subject lines that convert",
+   pros:["Predictive Performance Score correlates with real-world CTR","Best-in-class for ad copy, landing pages, and email subject lines","Custom Brand Voice training keeps copy on-brand"],
+   cons:["Long-form blog content weaker than Jasper or Writesonic","Word/credit limits fill up fast on Starter"],
+   tags:["#Anyword","#AICopywriting","#AdCopy","#MarketingAI","#AITools"],
+   subs:["r/marketing","r/PPC","r/copywriting","r/digital_marketing"],
+   qTopics:["Anyword review 2026","best AI ad copy generator","Anyword vs Jasper"],board:"AI Writing Tools Reviews 2026"},
+  {name:"Clearscope",slug:"clearscope",score:8.8,cat:"AI SEO Tool",em:"🔬",
+   tagline:"The most accurate NLP content grading tool for SEO writers",
+   price:"From $170/mo",best_for:"Content teams and agencies who need the most accurate term reports for SEO writing",
+   pros:["Most accurate term reports of any content-grading tool tested","A-F content grade instantly understandable for non-SEO writers","Clean Google Docs and WordPress integrations"],
+   cons:["No content briefs or topic clusters","Starts at $170/month, no lower tier"],
+   tags:["#Clearscope","#SEO","#ContentMarketing","#ContentOptimization","#AITools"],
+   subs:["r/SEO","r/bigseo","r/content_marketing","r/juststart"],
+   qTopics:["Clearscope review 2026","is Clearscope worth it","Clearscope vs Surfer SEO"],board:"AI SEO & Marketing Tools 2026"},
+  {name:"Codeium",slug:"codeium",score:8.1,cat:"AI Coding Tool",em:"🧬",
+   tagline:"Best free AI code completion tool — full-featured at $0",
+   price:"Free / Teams pricing",best_for:"Individual developers who want a genuinely full-featured free AI autocomplete",
+   pros:["Free plan has no meaningful feature gating","Supports 70+ languages and every major IDE","Autocomplete latency is consistently fast"],
+   cons:["Multi-file context reasoning weaker than Copilot or Windsurf","Teams tier needed for self-hosting"],
+   tags:["#Codeium","#AICoding","#FreeAI","#Developer","#AITools"],
+   subs:["r/programming","r/webdev","r/learnprogramming","r/artificial"],
+   qTopics:["Codeium review 2026","best free AI coding tools","Codeium vs GitHub Copilot"],board:"AI Coding Tools Reviews 2026"},
+  {name:"Copy.ai",slug:"copy-ai",score:8.1,cat:"AI Writing Tool",em:"📋",
+   tagline:"Best free plan in AI writing, plus workflow automation for marketing teams",
+   price:"Free / $36/mo",best_for:"Marketing teams wanting workflow automation and 90+ ready-made templates",
+   pros:["Best free plan in the AI writing category","Workflows automation saves hours for marketing teams","90+ templates covering almost every copy use case"],
+   cons:["Long-form output quality trails Jasper and Writesonic","Workflows builder has a steep learning curve"],
+   tags:["#CopyAI","#AIWriting","#MarketingAutomation","#ContentMarketing","#AITools"],
+   subs:["r/marketing","r/copywriting","r/Entrepreneur","r/digital_marketing"],
+   qTopics:["Copy.ai review 2026","best free AI writing tools","Copy.ai vs Jasper"],board:"AI Writing Tools Reviews 2026"},
+  {name:"Descript",slug:"descript",score:8.8,cat:"AI Video Generator",em:"🎤",
+   tagline:"Edit audio & video by editing text — revolutionary podcast/video workflow",
+   price:"Free / $24/mo",best_for:"Podcasters and video creators who want to edit by editing a transcript",
+   pros:["Revolutionary text-based audio/video editing","95%+ transcription accuracy for clear speech","Overdub voice cloning fixes errors without re-recording"],
+   cons:["Limited professional audio processing (no EQ/compression)","Video editing basic vs Premiere/Final Cut"],
+   tags:["#Descript","#Podcasting","#VideoEditing","#AIVideo","#AITools"],
+   subs:["r/podcasting","r/videoediting","r/artificial","r/content_marketing"],
+   qTopics:["Descript review 2026","best podcast editing software","Descript vs Riverside"],board:"AI Video Tools Reviews 2026"},
+  {name:"Frase",slug:"frase",score:8.2,cat:"AI SEO Tool",em:"📄",
+   tagline:"Fast AI content briefs pulling live SERP data in under 2 minutes",
+   price:"$1 trial / $115/mo",best_for:"Content teams needing fast, SERP-driven content briefs for writers",
+   pros:["Generates full content briefs in under 2 minutes","Pulls SERP data from top 20 Google results automatically","PAA and topic cluster extraction built in"],
+   cons:["Real-time content scoring weaker than Surfer SEO","Solo plan limited to 4 articles/month"],
+   tags:["#Frase","#SEO","#ContentBriefs","#ContentMarketing","#AITools"],
+   subs:["r/SEO","r/bigseo","r/content_marketing","r/juststart"],
+   qTopics:["Frase review 2026","best AI content brief tool","Frase vs Surfer SEO"],board:"AI SEO & Marketing Tools 2026"},
+  {name:"Grammarly",slug:"grammarly",score:8.9,cat:"AI Writing Tool",em:"✅",
+   tagline:"The gold-standard AI grammar & writing assistant, works in 500K+ apps",
+   price:"Free / $12/mo",best_for:"Anyone who writes daily and wants real-time grammar, clarity & tone feedback",
+   pros:["Highest accuracy of any AI grammar checker tested","Works in 500K+ apps via browser extension","Free plan genuinely useful, not crippled"],
+   cons:["$30/month (monthly) is expensive for basic use cases","Plagiarism detector less accurate than Turnitin"],
+   tags:["#Grammarly","#AIWriting","#Writing","#Productivity","#AITools"],
+   subs:["r/writing","r/GrammarlyPremium","r/productivity","r/college"],
+   qTopics:["Grammarly review 2026","is Grammarly Premium worth it","Grammarly free vs premium"],board:"AI Writing Tools Reviews 2026"},
+  {name:"HeyGen",slug:"heygen",score:9.0,cat:"AI Video Generator",em:"👤",
+   tagline:"Most realistic AI avatar videos in 2026, with 40+ language translation",
+   price:"Free / $29/mo",best_for:"Creators and teams who want a talking AI avatar instead of stock footage",
+   pros:["Most realistic AI avatars in 2026 (Avatar 2.0)","Video Translation in 40+ languages with lip sync","Free plan: 3 videos/month to evaluate quality"],
+   cons:["Only 40+ languages vs Synthesia's 140+","No SCORM export for LMS integration"],
+   tags:["#HeyGen","#AIAvatar","#AIVideo","#ContentCreation","#AITools"],
+   subs:["r/artificial","r/videoproduction","r/content_marketing","r/Entrepreneur"],
+   qTopics:["HeyGen review 2026","best AI avatar video tool","HeyGen vs Synthesia"],board:"AI Video Tools Reviews 2026"},
+  {name:"Julius AI",slug:"julius-ai",score:9.2,cat:"AI Data Analysis Tool",em:"📈",
+   tagline:"Ask data questions in plain English, get instant charts and Python code",
+   price:"Free / $20/mo",best_for:"Analysts and marketers who want to query spreadsheets in plain English",
+   pros:["Natural language turns into instant charts and insights","Generates Python/R code automatically","Handles CSV, Excel, SQL, Google Sheets"],
+   cons:["Not suited for real-time data streams","Free tier limited to 15 analyses/month"],
+   tags:["#JuliusAI","#DataAnalysis","#AITools","#DataScience","#Productivity"],
+   subs:["r/dataanalysis","r/analytics","r/artificial","r/Entrepreneur"],
+   qTopics:["Julius AI review 2026","best AI data analysis tool","Julius AI vs ChatGPT for data"],board:"AI Data Analysis Tools 2026"},
+  {name:"Mangools",slug:"mangools",score:8.7,cat:"AI SEO Tool",em:"🔭",
+   tagline:"5 SEO tools in one, with the most beginner-friendly UI in the category",
+   price:"From $29/mo",best_for:"SEO beginners and solo bloggers wanting keyword research without complexity",
+   pros:["KWFinder has best-in-class keyword difficulty accuracy","Cleanest, most beginner-friendly SEO UI available","5 tools in one subscription — excellent value"],
+   cons:["Daily search limits on lower plans","Backlink database smaller than Ahrefs"],
+   tags:["#Mangools","#KWFinder","#SEO","#KeywordResearch","#AITools"],
+   subs:["r/SEO","r/juststart","r/bigseo","r/blogging"],
+   qTopics:["Mangools review 2026","is KWFinder worth it","Mangools vs Ahrefs"],board:"AI SEO & Marketing Tools 2026"},
+  {name:"MarketMuse",slug:"marketmuse",score:8.5,cat:"AI SEO Tool",em:"📐",
+   tagline:"Content strategy AI with a Personalized Difficulty score for your domain",
+   price:"Free / $149/mo",best_for:"Content strategists planning topic clusters and content gap analysis at scale",
+   pros:["Personalized Difficulty score factors in your own domain authority","Topic clusters and content gap analysis go beyond single articles","Genuinely usable free plan"],
+   cons:["Steeper learning curve than Clearscope or Surfer SEO","Dense interface — expect a 1-2 week ramp-up"],
+   tags:["#MarketMuse","#ContentStrategy","#SEO","#ContentMarketing","#AITools"],
+   subs:["r/SEO","r/content_marketing","r/bigseo","r/Entrepreneur"],
+   qTopics:["MarketMuse review 2026","best content strategy tool","MarketMuse vs Clearscope"],board:"AI SEO & Marketing Tools 2026"},
+  {name:"Mistral AI",slug:"mistral",score:8.4,cat:"AI Chatbot",em:"🍃",
+   tagline:"Open-weight European AI lab — self-hostable with competitive API pricing",
+   price:"Free / API pay-per-token",best_for:"Developers wanting open-weight models to self-host for cost or data control",
+   pros:["Open-weight releases let developers self-host for cost or data residency","La Plateforme API pricing among the most competitive of any major lab","Le Chat offers a genuinely usable free tier"],
+   cons:["Top-tier reasoning/coding still trails GPT-5 and Claude Opus class models","Smaller third-party plugin ecosystem than ChatGPT or Claude"],
+   tags:["#MistralAI","#OpenSource","#LLM","#AITools","#ArtificialIntelligence"],
+   subs:["r/artificial","r/LocalLLaMA","r/MachineLearning","r/OpenSourceAI"],
+   qTopics:["Mistral AI review 2026","Mistral vs ChatGPT","best open-weight AI models"],board:"AI Chatbot Reviews 2026"},
+  {name:"Murf AI",slug:"murf-ai",score:8.6,cat:"AI Voice Generator",em:"🎧",
+   tagline:"120+ studio-quality voices with a full narration studio editor",
+   price:"Free / $29/mo",best_for:"Corporate trainers and narrators wanting a studio editor with slide sync",
+   pros:["120+ high-quality voices, 20+ languages","Studio editor with slide sync and media upload","Excellent pitch, speed, and pause controls"],
+   cons:["Less realistic than ElevenLabs on raw TTS quality","Voice cloning only on Business plan ($75/mo)"],
+   tags:["#MurfAI","#AIVoice","#TextToSpeech","#VoiceOver","#AITools"],
+   subs:["r/artificial","r/podcasting","r/voiceover","r/AItools"],
+   qTopics:["Murf AI review 2026","best AI voice generator for narration","Murf vs ElevenLabs"],board:"AI Voice & TTS Tool Reviews 2026"},
+  {name:"Pictory",slug:"pictory",score:8.5,cat:"AI Video Generator",em:"🎬",
+   tagline:"Fastest blog-to-video workflow — turn text into shareable videos",
+   price:"Free trial / $19/mo",best_for:"Bloggers and content marketers wanting to repurpose text into video fast",
+   pros:["Fastest blog-to-video workflow we've tested","Auto-captions with 95%+ accuracy for English","3M+ licensed stock clips (Getty + Storyblocks)"],
+   cons:["No AI avatar presenter","Limited creative control vs full video editors"],
+   tags:["#Pictory","#AIVideo","#ContentRepurposing","#VideoMarketing","#AITools"],
+   subs:["r/content_marketing","r/blogging","r/socialmedia","r/Entrepreneur"],
+   qTopics:["Pictory review 2026","best blog to video tool","Pictory vs InVideo"],board:"AI Video Tools Reviews 2026"},
+  {name:"Play.ht",slug:"playht",score:8.2,cat:"AI Voice Generator",em:"▶",
+   tagline:"Ultra-realistic AI voices with a developer-friendly cloning API",
+   price:"From $39/mo",best_for:"Podcasters and developers needing long-form narration and a clean API",
+   pros:["Strong long-form narration consistency for podcast/audiobook scripts","Developer-friendly API with clear documentation","Wide voice library spanning 140+ languages"],
+   cons:["Top-tier realism slightly behind ElevenLabs in A/B tests","Free trial word allowance modest vs ElevenLabs"],
+   tags:["#PlayHT","#AIVoice","#TextToSpeech","#Podcasting","#AITools"],
+   subs:["r/artificial","r/podcasting","r/AItools","r/audiobooks"],
+   qTopics:["Play.ht review 2026","best AI voice API","Play.ht vs ElevenLabs"],board:"AI Voice & TTS Tool Reviews 2026"},
+  {name:"Rytr",slug:"rytr",score:7.9,cat:"AI Writing Tool",em:"✍",
+   tagline:"Cheapest unlimited AI writer with a genuinely usable free plan",
+   price:"Free / $29/mo unlimited",best_for:"Budget-conscious freelancers and beginners needing short-form copy",
+   pros:["Genuinely usable free plan — 10,000 characters/month, no card required","Unlimited plan at $29/month is the cheapest unlimited tier among major AI writers","40+ use case templates cover most short-form marketing needs"],
+   cons:["Long-form blog content lags noticeably behind Jasper and Writesonic","No brand voice training or team collaboration at lower tiers"],
+   tags:["#Rytr","#AIWriting","#Budget","#ContentCreation","#AITools"],
+   subs:["r/freelance","r/blogging","r/Entrepreneur","r/content_marketing"],
+   qTopics:["Rytr review 2026","best cheap AI writing tool","Rytr vs Jasper"],board:"AI Writing Tools Reviews 2026"},
+  {name:"SE Ranking",slug:"se-ranking",score:8.5,cat:"AI SEO Tool",em:"📉",
+   tagline:"Full SEO suite at roughly half the price of Semrush",
+   price:"From $65/mo",best_for:"Solo operators and small agencies wanting a proper SEO suite on a budget",
+   pros:["Full SEO suite at roughly half the Semrush price","Daily rank tracking with local and mobile options","Keyword grouper saves hours of manual clustering"],
+   cons:["Backlink database smaller than Ahrefs or Semrush","Keyword volume data less accurate for low-volume terms"],
+   tags:["#SERanking","#SEO","#RankTracking","#DigitalMarketing","#AITools"],
+   subs:["r/SEO","r/bigseo","r/juststart","r/digital_marketing"],
+   qTopics:["SE Ranking review 2026","SE Ranking vs Semrush","best affordable SEO tool"],board:"AI SEO & Marketing Tools 2026"},
+  {name:"Speechify",slug:"speechify",score:8.3,cat:"AI Voice Generator",em:"🔊",
+   tagline:"Best AI text-to-speech reader — listen to any page at up to 9x speed",
+   price:"Free / $139/yr",best_for:"Readers wanting to listen to articles, PDFs, and books at high speed",
+   pros:["Premium AI voices stay clear and natural even at 2-3x listening speed","OCR camera scanning reads physical book pages aloud","Browser extension reads any webpage or PDF with one click"],
+   cons:["Not designed for producing voiceover content for videos or products","Premium+ tier (voice cloning) costs significantly more"],
+   tags:["#Speechify","#TextToSpeech","#Accessibility","#Productivity","#AITools"],
+   subs:["r/productivity","r/audiobooks","r/ADHD","r/college"],
+   qTopics:["Speechify review 2026","best text to speech app","Speechify vs Natural Reader"],board:"AI Voice & TTS Tool Reviews 2026"},
+  {name:"Synthesia",slug:"synthesia",score:8.7,cat:"AI Video Generator",em:"🎓",
+   tagline:"160+ AI avatars in 140+ languages, built for enterprise e-learning",
+   price:"From $29/mo",best_for:"L&D and training teams producing e-learning videos at scale",
+   pros:["160+ diverse, professional AI avatars","140+ languages with native-quality TTS","SCORM export for LMS integration"],
+   cons:["No free plan, free trial only","HeyGen avatars slightly more realistic"],
+   tags:["#Synthesia","#AIAvatar","#ELearning","#AIVideo","#AITools"],
+   subs:["r/artificial","r/elearning","r/humanresources","r/Entrepreneur"],
+   qTopics:["Synthesia review 2026","best AI video for e-learning","Synthesia vs HeyGen"],board:"AI Video Tools Reviews 2026"},
+  {name:"Tabnine",slug:"tabnine",score:8.0,cat:"AI Coding Tool",em:"🔐",
+   tagline:"Self-hosted AI code completion — code never leaves your infrastructure",
+   price:"Free / $9/mo",best_for:"Regulated industries and teams needing on-premises AI coding deployment",
+   pros:["Self-hosted and on-premises deployment — code never leaves your infrastructure","Strong fit for regulated industries with strict data residency","Free Basic plan with reasonable autocomplete quality"],
+   cons:["Autocomplete quality solid but not clearly ahead of free alternatives like Codeium","Self-hosted deployment needs more setup than cloud competitors"],
+   tags:["#Tabnine","#AICoding","#Privacy","#Developer","#AITools"],
+   subs:["r/programming","r/webdev","r/devops","r/artificial"],
+   qTopics:["Tabnine review 2026","best AI coding tool for privacy","Tabnine vs Codeium"],board:"AI Coding Tools Reviews 2026"},
+];
+
+const LOGOS = {
+  'adobe-firefly':'../html/assets/images/logos/adobe-firefly.svg',
+  clearscope:'../html/assets/images/logos/clearscope.svg',
+  codeium:'../html/assets/images/logos/codeium.svg',
+  'copy-ai':'../html/assets/images/logos/copy-ai.svg',
+  descript:'../html/assets/images/logos/descript.svg',
+  frase:'../html/assets/images/logos/frase.svg',
+  grammarly:'../html/assets/images/logos/grammarly.svg',
+  heygen:'../html/assets/images/logos/heygen.svg',
+  'julius-ai':'../html/assets/images/logos/julius.svg',
+  mangools:'../html/assets/images/logos/mangools.svg',
+  marketmuse:'../html/assets/images/logos/marketmuse.svg',
+  'murf-ai':'../html/assets/images/logos/murf.svg',
+  pictory:'../html/assets/images/logos/pictory.svg',
+  rytr:'../html/assets/images/logos/rytr.svg',
+  'se-ranking':'../html/assets/images/logos/se-ranking.svg',
+  synthesia:'../html/assets/images/logos/synthesia.svg',
+  tabnine:'../html/assets/images/logos/tabnine.svg',
+  chatgpt:'../html/assets/images/logos/chatgpt.svg',
+  claude:'../html/assets/images/logos/claude.svg',
+  midjourney:'../html/assets/images/logos/midjourney.svg',
+  cursor:'../html/assets/images/logos/cursor.svg',
+  semrush:'../html/assets/images/logos/semrush.svg',
+  elevenlabs:'../html/assets/images/logos/elevenlabs.svg',
+  'github-copilot':'../html/assets/images/logos/github-copilot.svg',
+  perplexity:'../html/assets/images/logos/perplexity.svg',
+  jasper:'../html/assets/images/logos/jasper.svg',
+  windsurf:'../html/assets/images/logos/windsurf.svg',
+  'stable-diffusion':'../html/assets/images/logos/stable-diffusion.svg',
+  'canva-ai':'../html/assets/images/logos/canva-ai.svg',
+  grok:'../html/assets/images/logos/grok.svg',
+  runway:'../html/assets/images/logos/runway.svg',
+  deepseek:'../html/assets/images/logos/deepseek.svg',
+  gemini:'../html/assets/images/logos/gemini.svg',
+  notion:'../html/assets/images/logos/notion.svg',
+  'otter-ai':'../html/assets/images/logos/otter-ai.svg',
+  hubspot:'../html/assets/images/logos/hubspot.svg',
+  'surfer-seo':'../html/assets/images/logos/surfer-seo.svg',
+  writesonic:'../html/assets/images/logos/writesonic.svg',
+};
+
+const tIcon = (t, lg) => LOGOS[t.slug]
+  ? `<img class="tool-logo-${lg?'lg':'sm'}" src="${LOGOS[t.slug]}" alt="${t.name}" onerror="this.style.display='none'">`
+  : `<span style="font-size:${lg?'1.3rem':'.85rem'}">${t.em}</span>`;
+
+// ── State ──────────────────────────────────────────────────────────────────────
+let P = 'pinterest', slug = null, filterOn = false;
+const KEY = 'rta_done_v3';
+
+const db   = () => { try{ return JSON.parse(localStorage.getItem(KEY)||'{}') } catch{ return {} } };
+const save = d => localStorage.setItem(KEY, JSON.stringify(d));
+const done = (s,p) => { const d=db(); if(!d[s]||!d[s][p]) return false; return typeof d[s][p]==='object' ? d[s][p].done : !!d[s][p]; };
+const getTs= (s,p) => { const d=db(); if(!d[s]||!d[s][p]) return null; return typeof d[s][p]==='object' ? d[s][p].ts : null; };
+const mark = (s,p,v) => { const d=db(); if(!d[s]) d[s]={}; d[s][p] = v ? {done:true, ts:Date.now()} : false; save(d); };
+
+function timeAgo(ms) {
+  if (!ms) return '';
+  const s = (Date.now()-ms)/1000;
+  if (s < 3600)  return 'Vừa xong';
+  if (s < 86400) return `${Math.floor(s/3600)}g trước`;
+  const d = Math.floor(s/86400);
+  if (d === 1)   return 'Hôm qua';
+  if (d < 7)     return `${d} ngày trước`;
+  return `${Math.floor(d/7)} tuần trước`;
+}
+
+// ── Image URLs ─────────────────────────────────────────────────────────────────
+const _imgFile = (t,p) => {
+  if (p==='pinterest') return `pin-${t.slug}.jpg`;
+  if (p==='instagram') return `ig-${t.slug}.jpg`;
+  if (p==='tiktok')    return `tt-${t.slug}.jpg`;
+  if (p==='youtube')   return `yt-${t.slug}.jpg`;
+  return `og-review-${t.slug}.jpg`;
+};
+const imgFor     = (t,p) => `../html/assets/images/${_imgFile(t,p)}`;
+const imgLiveUrl = (t,p) => `${SITE}/assets/images/${_imgFile(t,p)}`;
+const IMG_SIZE = {pinterest:'1000×1500',instagram:'1080×1080',tiktok:'1080×1920',youtube:'1280×720'};
+
+// ── API Keys ────────────────────────────────────────────────────────────────────
+const getKey = name => localStorage.getItem('rta_api_'+name) || '';
+const setKey = (name, v) => v ? localStorage.setItem('rta_api_'+name, v) : localStorage.removeItem('rta_api_'+name);
+const getProxy = () => getKey('proxy_url') || 'http://localhost:7842';
+
+// ── Generated asset cache ──────────────────────────────────────────────────────
+const getCachedImg  = (s,p) => localStorage.getItem(`rta_img_${s}_${p}`) || null;
+const setCachedImg  = (s,p,url) => url ? localStorage.setItem(`rta_img_${s}_${p}`, url) : localStorage.removeItem(`rta_img_${s}_${p}`);
+const getCachedVid  = (s,p) => localStorage.getItem(`rta_vid_${s}_${p}`) || null;
+const setCachedVid  = (s,p,url) => url ? localStorage.setItem(`rta_vid_${s}_${p}`, url) : localStorage.removeItem(`rta_vid_${s}_${p}`);
+const getPendingJob = (s,p) => { try{ return JSON.parse(localStorage.getItem(`rta_vidjob_${s}_${p}`)||'null') } catch{ return null } };
+const setPendingJob = (s,p,v) => v ? localStorage.setItem(`rta_vidjob_${s}_${p}`, JSON.stringify(v)) : localStorage.removeItem(`rta_vidjob_${s}_${p}`);
+
+// ── Content generator (unchanged) ─────────────────────────────────────────────
+const url   = t => `${SITE}/review/${t.slug}/`;
+const pros3 = t => t.pros.slice(0,3).map(p=>`+ ${p}`).join('\n');
+const cons1 = t => `- ${t.cons[0]}`;
+const esc   = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+const sc    = s => s>=9?'#22c55e':s>=8.5?'#f97316':'#94a3b8';
+
+function gen(t,p){
+  const u=url(t);
+  if(p==='pinterest'){
+    const title=`${t.name} Review 2026: ${t.score}/10 — ${t.tagline}`.slice(0,100);
+    const desc=`${t.tagline}\n\n${pros3(t)}\n${cons1(t)}\n\nGiá: ${t.price}\nPhù hợp nhất: ${t.best_for}\n\nReview đầy đủ: ${u}\n\n${t.tags.slice(0,5).join(' ')}`.slice(0,500);
+    return [
+      {l:'Tiêu đề (Title)',m:title.length+'/100',v:title},
+      {l:'Mô tả (Description)',m:desc.length+'/500',v:desc},
+      {l:'Liên kết (Link)',m:'Dán vào ô "Link"',v:u},
+      {l:'Bảng (Board)',m:'Chọn board này',v:t.board},
+    ];
+  }
+  if(p==='instagram'){
+    const hook=t.score>=9?'Công cụ AI này đã thay đổi cách tôi làm việc.':'Một công cụ AI đáng biết trong 2026.';
+    const cap=`${hook}\n\n${t.score}/10 — ${t.name}\n${t.tagline}\n\n${pros3(t)}\n${cons1(t)}\n\nGiá: ${t.price}\n\nReview đầy đủ: rankertoolai.com/review/${t.slug}/\n.\n.\n.`;
+    const tags=[...t.tags,'#AITools','#ArtificialIntelligence','#Tech','#Productivity','#FutureOfWork'].slice(0,10).join(' ');
+    return [
+      {l:'Caption',m:cap.length+' ký tự',v:cap},
+      {l:'Hashtags — paste vào BÌNH LUẬN đầu tiên',m:'',v:tags},
+    ];
+  }
+  if(p==='tiktok'){
+    const hook=`POV: Bạn phát hiện ra ${t.name} và nó có thể [${t.tagline.toLowerCase().slice(0,50)}]`;
+    const script=`HOOK (0-3s): "${t.score>=9?`Công cụ AI này đạt ${t.score}/10 — đây là lý do`:`Bạn có thể chưa nghe đến ${t.name}`}"\n\nĐIỂM 1 (3-8s): ${t.pros[0]}\nĐIỂM 2 (8-13s): ${t.pros[1]}\nĐIỂM 3 (13-18s): ${t.pros[2]||t.pros[0]}\nNHƯỢC ĐIỂM (18-22s): NHƯNG — ${t.cons[0]}\nCTA (22-27s): "Giá từ ${t.price}. Link trong bio để xem full review."`;
+    const cap=`${t.name} review 2026: ${t.score}/10\n${t.tagline.slice(0,80)}\nFull review tại rankertoolai.com`;
+    const ttags=[...t.tags,'#AITools','#AIReview','#TechTok','#LearnOnTikTok','#FutureOfWork'].slice(0,8).join(' ');
+    return [
+      {l:'Hook (3 giây đầu quyết định tất cả)',m:'',v:hook},
+      {l:'Script Outline',m:'~27 giây, 5 điểm chính',v:script},
+      {l:'Caption',m:cap.length+'/150 ký tự',v:cap},
+      {l:'Hashtags',m:'Dán vào cuối caption',v:ttags},
+    ];
+  }
+  if(p==='youtube'){
+    const title=`${t.name} Review 2026: Is It Worth It? (Honest ${t.score}/10 Score)`;
+    const desc=`In this video, I give my honest review of ${t.name} after testing it for weeks.\n\nScore: ${t.score}/10\n\n${t.tagline}\n\nWHAT WE COVER:\n00:00 - Intro\n01:30 - What is ${t.name}?\n03:00 - Key Features\n06:00 - Pros & Cons\n08:30 - Pricing\n10:00 - Who Should Use It?\n11:30 - Final Verdict\n\nPROS:\n${t.pros.map(p=>`+ ${p}`).join('\n')}\n\nCONS:\n${t.cons.map(c=>`- ${c}`).join('\n')}\n\nPRICING: ${t.price}\nBEST FOR: ${t.best_for}\n\nFull written review (free): ${u}\n\n${t.tags.slice(0,5).join(' ')} #Review #AIReview`;
+    return [
+      {l:'Tiêu đề video',m:title.length+'/70 ký tự',v:title},
+      {l:'Mô tả (Description)',m:'Paste toàn bộ vào YouTube',v:desc},
+      {l:'Text trên Thumbnail',m:'Viết lên thumbnail Canva',v:`${t.name}\n${t.score}/10\nIS IT WORTH IT?`},
+      {l:'Tags (YouTube Tags field)',m:'',v:[t.name,...t.tags.map(x=>x.replace('#','')),`${t.name} review 2026`,`${t.name} tutorial`,'AI tools 2026','best AI tools'].join(', ')},
+    ];
+  }
+  if(p==='twitter'){
+    const tw1=`${t.name} honest review (${t.score}/10):\n\n${t.pros.slice(0,2).map(p=>`+ ${p}`).join('\n')}\n- ${t.cons[0]}\n\nGiá: ${t.price}\n\n${u}`.slice(0,280);
+    const tw2=`${t.tagline}\n\n${t.name} đạt ${t.score}/10 trong review của chúng tôi\n\nPhù hợp nhất: ${t.best_for.slice(0,55)}\n\n${t.tags.slice(0,2).join(' ')}\n${u}`.slice(0,280);
+    const tw3=`Hot take: ${t.name} ${t.score>=9?'thực sự xứng đáng với giá tiền':'đang bị đánh giá thấp'}\n\nƯu: ${t.pros[0]}\nNhược: ${t.cons[0]}\n\nReview đầy đủ: ${u}`.slice(0,280);
+    return [
+      {l:'Tweet 1 — Dạng review',m:tw1.length+'/280',v:tw1},
+      {l:'Tweet 2 — Dạng tagline',m:tw2.length+'/280',v:tw2},
+      {l:'Tweet 3 — Dạng hot take',m:tw3.length+'/280',v:tw3},
+    ];
+  }
+  if(p==='threads'){
+    const th=`${t.name} — ${t.score}/10 sau nhiều tuần sử dụng.\n\n${t.pros.slice(0,2).map(p=>`+ ${p}`).join('\n')}\n- ${t.cons[0]}\n\nGiá: ${t.price}\n\nReview đầy đủ: rankertoolai.com/review/${t.slug}/\n\n${t.tags.slice(0,3).join(' ')}`.slice(0,500);
+    return [{l:'Bài đăng Threads',m:th.length+'/500 ký tự',v:th}];
+  }
+  if(p==='linkedin'){
+    const li=`Tôi vừa công bố review về ${t.name} sau nhiều tuần sử dụng.\n\nĐánh giá: ${t.score}/10 — ${t.tagline}\n\nNhững điểm nổi bật:\n\n${t.pros.map((pr,i)=>`${i+1}. ${pr}`).join('\n')}\n\nHạn chế chính:\n${t.cons[0]}\n\nPhù hợp nhất:\n${t.best_for}\n\nGiá: ${t.price}\n\nReview đầy đủ với bảng so sánh và phân tích giá:\n${u}\n\n${t.tags.slice(0,4).join(' ')} #AIReview #TechReview`;
+    return [
+      {l:'Bài đăng LinkedIn',m:li.length+' ký tự — nên dưới 1300',v:li},
+      {l:'Link (dán vào post riêng hoặc comment)',m:'',v:u},
+    ];
+  }
+  if(p==='facebook'){
+    const fb=`Vừa đăng: Review ${t.name} 2026.\n\nĐiểm: ${t.score}/10\n${t.tagline}\n\nƯu điểm:\n${t.pros.map(p=>`+ ${p}`).join('\n')}\n\nNhược điểm:\n${t.cons.map(c=>`- ${c}`).join('\n')}\n\nGiá: ${t.price}\nPhù hợp nhất: ${t.best_for}\n\nĐọc review đầy đủ (miễn phí): ${u}\n\n${t.tags.slice(0,4).join(' ')}`;
+    return [
+      {l:'Bài đăng Facebook',m:fb.length+' ký tự',v:fb},
+      {l:'Link (dán vào ô link riêng khi post)',m:'',v:u},
+    ];
+  }
+  if(p==='reddit'){
+    const title=`Honest review of ${t.name} after [X] weeks — ${t.score}/10. Here's what they don't tell you.`;
+    const body=`I've been using ${t.name} for the past few weeks and wanted to share my honest take.\n\n**TL;DR: ${t.score}/10 — ${t.tagline}**\n\n---\n\n**What I liked:**\n${t.pros.map(p=>`- ${p}`).join('\n')}\n\n**What I didn't like:**\n${t.cons.map(c=>`- ${c}`).join('\n')}\n\n**Pricing:** ${t.price}\n\n**Best for:** ${t.best_for}\n\n---\n\nFull written review with comparison tables here: ${u}\n\nHappy to answer any questions in the comments.`;
+    return [
+      {l:'Subreddit (đăng vào đây)',m:'Chọn 1 trong số này',v:t.subs.join('\n')},
+      {l:'Tiêu đề Reddit',m:'Hook tạo upvote cao',v:title},
+      {l:'Nội dung bài đăng',m:'Định dạng Markdown',v:body},
+    ];
+  }
+  if(p==='quora'){
+    const ans=`I've been testing AI tools for a year and reviewing them at RankerToolAI. Here's my take on ${t.name}:\n\n**Score: ${t.score}/10**\n\n${t.tagline}\n\n**What makes ${t.name} stand out:**\n${t.pros.map(p=>`- ${p}`).join('\n')}\n\n**The drawbacks:**\n${t.cons.map(c=>`- ${c}`).join('\n')}\n\n**Pricing:** ${t.price}\n\n**Bottom line:** ${t.best_for}\n\nI wrote a detailed review comparing it with alternatives here: [${t.name} Full Review](${url(t)})\n\nHope this helps!`;
+    return [
+      {l:'Câu hỏi cần tìm trên Quora',m:'Tìm kiếm & trả lời',v:t.qTopics.join('\n')},
+      {l:'Nội dung câu trả lời',m:'Dán vào ô trả lời Quora',v:ans},
+    ];
+  }
+  return [];
+}
+
+// ── Sorted tool list ───────────────────────────────────────────────────────────
+function sortedTools() {
+  const sort = document.getElementById('sort-sel')?.value || 'default';
+  const list = [...TOOLS];
+  if (sort === 'score') list.sort((a,b) => b.score - a.score);
+  if (sort === 'cat')   list.sort((a,b) => a.cat.localeCompare(b.cat));
+  return list;
+}
+function visibleTools() {
+  let list = sortedTools();
+  if (filterOn && P !== 'overview') list = list.filter(t => !done(t.slug, P));
+  return list;
+}
+
+// ── Render sidebar ─────────────────────────────────────────────────────────────
+function renderSidebar() {
+  const list  = sortedTools();
+  const vlist = visibleTools();
+  const sort  = document.getElementById('sort-sel')?.value || 'default';
+  let html = '', lastCat = '';
+
+  vlist.forEach(t => {
+    if (sort === 'cat' && t.cat !== lastCat) {
+      html += `<div class="cat-label">${t.cat}</div>`;
+      lastCat = t.cat;
+    }
+    const isDone = P !== 'overview' && done(t.slug, P);
+    const ts_    = P !== 'overview' ? getTs(t.slug, P) : null;
+    const ta     = ts_ ? timeAgo(ts_) : '';
+    const hasImg = P !== 'overview' && !!getCachedImg(t.slug, P);
+    const hasVid = P !== 'overview' && !!getCachedVid(t.slug, P);
+    const aiDot  = (hasImg || hasVid) ? `<span title="${hasImg?'AI img':''} ${hasVid?'AI vid':''}" style="font-size:.55rem;color:#f97316;flex-shrink:0">${hasImg?'🎨':''}${hasVid?'🎬':''}</span>` : '';
+    html += `<div class="tool-item${t.slug===slug?' active':''}${isDone?' posted':''}" onclick="sel('${t.slug}')">
+      <div class="sdot" style="background:${sc(t.score)}"></div>
+      ${tIcon(t)}<span class="tname">${t.name}</span>
+      ${aiDot}
+      ${isDone
+        ? `<span class="chk" title="${ta}">✓</span>`
+        : (ta ? `<span class="ts-hint">${ta}</span>` : '')}
+    </div>`;
+  });
+
+  if (!html) html = `<div style="padding:.5rem .6rem;font-size:.71rem;color:#1e293b">Tất cả đã đăng 🎉</div>`;
+  document.getElementById('tool-list').innerHTML = html;
+
+  PLATFORMS.forEach(p => {
+    const n   = list.filter(t => done(t.slug, p)).length;
+    const tot = list.length;
+    const pct = n / tot;
+    const el  = document.getElementById('c-'+p);
+    if (!el) return;
+    el.textContent = `${n}/${tot}`;
+    el.className   = 'cnt' + (pct===0?'': pct<0.5?' c-low': pct<1?' c-med':' c-hi');
+  });
+
+  const totalDone = list.reduce((a,t) => a + PLATFORMS.filter(p=>done(t.slug,p)).length, 0);
+  const totalPos  = list.length * PLATFORMS.length;
+  const ovEl = document.getElementById('c-overview');
+  if (ovEl) {
+    ovEl.textContent = `${totalDone}/${totalPos}`;
+    ovEl.className   = 'cnt' + (totalDone===0?'': totalDone<totalPos/2?' c-low': totalDone<totalPos?' c-med':' c-hi');
+  }
+  document.getElementById('stat').textContent = `${totalDone} / ${totalPos} bài`;
+  const fb = document.getElementById('filter-btn');
+  if (fb) fb.classList.toggle('on', filterOn);
+}
+
+// ── Render main ────────────────────────────────────────────────────────────────
+function renderMain() {
+  if (P === 'overview') { renderOverview(); return; }
+  const t = TOOLS.find(x => x.slug === slug);
+  if (!t) {
+    document.getElementById('main').innerHTML = `<div class="empty">📌<br><br>Chọn công cụ bên trái để xem nội dung</div>`;
+    return;
+  }
+
+  const fields   = gen(t, P);
+  const isDone   = done(t.slug, P);
+  const pct      = Math.round(TOOLS.filter(x=>done(x.slug,P)).length / TOOLS.length * 100);
+  const genImg   = getCachedImg(t.slug, P);
+  const displayImg = genImg || imgFor(t, P);
+  const shareImg   = genImg || imgLiveUrl(t, P);
+  const sizeLabel  = IMG_SIZE[P] ? `${IMG_SIZE[P]} · ` : '';
+
+  const fhtml = fields.map((f,i) => `
+    <div class="field">
+      <div class="flabel">
+        ${esc(f.l)}
+        ${f.m?`<span class="fmeta">(${esc(f.m)})</span>`:''}
+        <button class="enh-btn" title="Enhance with Claude AI" data-pre="fv${i}" data-slug="${t.slug}" data-lbl="${esc(f.l)}" onclick="enhField(this)">✨</button>
+      </div>
+      <div class="fwrap"><pre class="fval" id="fv${i}">${esc(f.v)}</pre><button class="cbtn" onclick="cpF('fv${i}',this)">Copy</button></div>
+      <div id="sg${i}"></div>
+    </div>
+    ${i<fields.length-1?'<div class="fdiv"></div>':''}
+  `).join('');
+
+  // Video block content
+  const genVid     = getCachedVid(t.slug, P);
+  const pendingJob = getPendingJob(t.slug, P);
+  const vidAR = {pinterest:'2:3',instagram:'1:1',tiktok:'9:16',youtube:'16:9'}[P]||'16:9';
+
+  let vidInner = '';
+  if (genVid) {
+    vidInner = `
+      <video controls loop style="max-width:100%;max-height:280px;border-radius:8px;box-shadow:0 4px 24px rgba(0,0,0,.5)">
+        <source src="${genVid}" type="video/mp4">
+      </video>
+      <div style="display:flex;gap:.35rem;margin-top:.55rem;flex-wrap:wrap">
+        <a class="img-btn" href="${genVid}" target="_blank">↗ Mở video</a>
+        <button class="img-btn" onclick="navigator.clipboard.writeText('${genVid}').then(()=>toast('✓ Copied URL','ok'))">🔗 Copy URL</button>
+        <button class="gen-btn" onclick="genVideo()" style="margin-left:auto">🔄 Regen</button>
+      </div>`;
+  } else if (pendingJob) {
+    const pct2 = pendingJob.status === 'IN_PROGRESS' ? 55 : 12;
+    vidInner = `
+      <div class="vid-status-row"><div class="spin"></div><span id="vid-status-txt">${pendingJob.status === 'IN_PROGRESS' ? 'Đang render...' : 'Đang chờ trong hàng...'}</span></div>
+      <div class="vid-pbar-wrap" style="margin-top:.4rem"><div class="vid-pbar-fill" id="vid-pbar" style="width:${pct2}%"></div></div>
+      <div style="font-size:.62rem;color:#1e293b;margin-top:.35rem">Kling thường mất 2–5 phút</div>`;
+  } else {
+    vidInner = `<div class="vid-placeholder"><span class="vp-icon">🎬</span>Chưa có video &nbsp;·&nbsp; Kling 1.5 Pro image-to-video<br><span style="font-size:.61rem">${vidAR} · ~5 giây · ~$0.14</span></div>`;
+  }
+
+  document.getElementById('main').innerHTML = `
+    <div class="done-bar">
+      <button class="done-btn${isDone?' yes':''}" onclick="tog('${t.slug}')">
+        ${isDone ? '✓ Đã đăng' : 'Đánh dấu đã đăng'}
+      </button>
+      <div class="pbar-wrap"><div class="pbar-fill" style="width:${pct}%"></div></div>
+      <div class="pbar-txt">${pct}%</div>
+      <button class="next-btn" onclick="goNext()">Tiếp →</button>
+    </div>
+
+    <div class="tool-header">
+      <div class="tool-icon-wrap">${tIcon(t,true)}</div>
+      <div>
+        <div class="tool-name">${t.name}</div>
+        <div class="tool-sub">${t.cat} &nbsp;·&nbsp; ${t.price}</div>
+      </div>
+      <div class="score-pill">${t.score}/10</div>
+    </div>
+
+    <div class="img-block">
+      <div class="img-block-head">
+        <div class="img-block-title">
+          ${P_ICON[P]} Ảnh ${P_NAME[P]}
+          <span style="color:#1e293b;font-weight:400;font-size:.65rem">${sizeLabel}${t.slug}</span>
+          ${genImg?'<span style="color:#22c55e;font-size:.6rem;background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);border-radius:3px;padding:.05rem .3rem">AI</span>':''}
+        </div>
+        <div class="img-btns">
+          <button class="img-btn" id="cp-img-url" onclick="navigator.clipboard.writeText('${shareImg}').then(()=>{const b=document.getElementById('cp-img-url');b.textContent='✓';b.classList.add('ok');setTimeout(()=>{b.textContent='🔗 Copy URL';b.classList.remove('ok')},1600)})">🔗 Copy URL</button>
+          <a class="img-btn" href="${displayImg}" target="_blank">↗ Mở ảnh</a>
+          <button class="gen-btn" id="gen-img-btn" onclick="genImage()">🎨 Generate</button>
+        </div>
+      </div>
+      <div class="img-preview" id="img-wrap">
+        <div class="img-gen-overlay" id="img-gen-overlay" style="display:none">
+          <div class="spin" style="width:22px;height:22px;border-width:3px"></div>
+          <span id="img-gen-msg">Đang tạo ảnh qua kie.ai...</span>
+        </div>
+        <img src="${displayImg}" alt="${t.name}"
+          onload="this.style.opacity=1"
+          onerror="this.style.display='none';document.getElementById('img-wrap').insertAdjacentHTML('beforeend','<div class=\\'img-placeholder\\'><div class=\\'ph-icon\\'>${P_ICON[P]}</div><div class=\\'ph-lbl\\'>Ảnh chưa có</div></div>')"
+          style="opacity:0;transition:opacity .25s">
+      </div>
+    </div>
+
+    <div class="pblock">
+      <div class="pblock-head">
+        <div class="pblock-title">${P_ICON[P]} Nội dung ${P_NAME[P]}</div>
+        <button class="copy-all" id="ca" onclick="cpAll('${t.slug}')">Copy tất cả</button>
+      </div>
+      <div class="fields">${fhtml}</div>
+    </div>
+
+    <div class="vid-block">
+      <div class="vid-block-head">
+        <div class="vid-block-title">🎬 Video <span style="color:#334155;font-size:.62rem;font-weight:400;margin-left:.2rem">fal.ai · Kling 1.5 Pro</span></div>
+        <div class="vid-btns">
+          <span class="cost-note">~$0.14 / 5s</span>
+          ${!pendingJob?`<button class="gen-btn" id="gen-vid-btn" onclick="genVideo()">${genVid?'🔄 Regen':'🎬 Generate'}</button>`:''}
+        </div>
+      </div>
+      <div class="vid-area" id="vid-area">${vidInner}</div>
+    </div>`;
+
+  // Resume polling for pending job
+  if (pendingJob?.requestId) {
+    setTimeout(() => pollVideo(pendingJob.requestId, t.slug, P), 2000);
+  }
+}
+
+// ── Render overview (unchanged) ────────────────────────────────────────────────
+function renderOverview() {
+  const list = sortedTools();
+  const totalDone = list.reduce((a,t) => a + PLATFORMS.filter(p=>done(t.slug,p)).length, 0);
+  const totalPos  = list.length * PLATFORMS.length;
+  const toolsDone = list.filter(t => PLATFORMS.some(p=>done(t.slug,p))).length;
+  const thCols = PLATFORMS.map(p => `<th title="${P_NAME[p]}">${P_ABBR[p]}</th>`).join('');
+  const rows = list.map(t => {
+    const cells = PLATFORMS.map(p => {
+      const ok = done(t.slug, p); const ts_= getTs(t.slug, p);
+      return ok
+        ? `<td class="c-done" title="${P_NAME[p]}${ts_?' — '+timeAgo(ts_):''}" onclick="selAndP('${t.slug}','${p}')"><span>✓</span></td>`
+        : `<td class="c-empty" onclick="selAndP('${t.slug}','${p}')"><span>·</span></td>`;
+    }).join('');
+    const n = PLATFORMS.filter(p=>done(t.slug,p)).length;
+    return `<tr>
+      <td class="td-tool" onclick="selAndP('${t.slug}','${P==='overview'?'pinterest':P}')">${t.name}</td>
+      ${cells}
+      <td class="td-sum${n>0?' s-done':''}">${n}/10</td>
+    </tr>`;
+  }).join('');
+  const sumCells = PLATFORMS.map(p => {
+    const n = list.filter(t=>done(t.slug,p)).length;
+    return `<td class="${n===list.length?'c-done':n>0?'':'c-empty'}">${n}<div style="font-size:.55rem;opacity:.6">${Math.round(n/list.length*100)}%</div></td>`;
+  }).join('');
+  document.getElementById('main').innerHTML = `
+    <div class="ov-stats">
+      <div class="ov-card"><div class="ov-val">${totalDone}</div><div class="ov-lbl">Bài đã đăng</div></div>
+      <div class="ov-card"><div class="ov-val">${toolsDone}</div><div class="ov-lbl">Công cụ đã bắt đầu</div></div>
+      <div class="ov-card"><div class="ov-val">${Math.round(totalDone/totalPos*100)}%</div><div class="ov-lbl">Hoàn thành tổng</div></div>
+      <div class="ov-card"><div class="ov-val" style="color:#475569">${totalPos-totalDone}</div><div class="ov-lbl">Bài còn lại</div></div>
+    </div>
+    <div class="ov-wrap">
+      <table class="ov-table">
+        <thead><tr><th class="th-tool">Công cụ</th>${thCols}<th>Tổng</th></tr></thead>
+        <tbody>${rows}<tr class="tr-sum"><td class="td-tool" style="color:#475569">Tổng cộng</td>${sumCells}<td class="c-done" style="font-weight:900">${totalDone}</td></tr></tbody>
+      </table>
+    </div>`;
+}
+
+// ── Settings ───────────────────────────────────────────────────────────────────
+function showSettings() {
+  document.getElementById('s-kieai-key').value   = getKey('kieai_key');
+  document.getElementById('s-kieai-ep').value    = getKey('kieai_ep') || 'https://api.kie.ai/v1/images/generations';
+  document.getElementById('s-kieai-status').value= getKey('kieai_status') || '';
+  document.getElementById('s-fal-key').value     = getKey('fal_key');
+  document.getElementById('s-claude-key').value  = getKey('claude_key');
+  document.getElementById('s-proxy-url').value   = getKey('proxy_url') || 'http://localhost:7842';
+  document.getElementById('settings-overlay').classList.add('show');
+}
+function hideSettings() {
+  document.getElementById('settings-overlay').classList.remove('show');
+}
+function saveSettings() {
+  setKey('kieai_key',    document.getElementById('s-kieai-key').value.trim());
+  setKey('kieai_ep',     document.getElementById('s-kieai-ep').value.trim());
+  setKey('kieai_status', document.getElementById('s-kieai-status').value.trim());
+  setKey('fal_key',      document.getElementById('s-fal-key').value.trim());
+  setKey('claude_key',   document.getElementById('s-claude-key').value.trim());
+  setKey('proxy_url',    document.getElementById('s-proxy-url').value.trim());
+  hideSettings();
+  toast('✓ Đã lưu settings', 'ok');
+}
+async function checkProxy() {
+  const url = (document.getElementById('s-proxy-url').value.trim() || 'http://localhost:7842') + '/ping';
+  const dot = document.getElementById('proxy-dot');
+  const txt = document.getElementById('proxy-status-txt');
+  dot.style.background = '#334155'; txt.textContent = 'Đang kiểm tra...'; txt.style.color = '#334155';
+  try {
+    const r = await fetch(url, {signal: AbortSignal.timeout(3000)});
+    const d = await r.json();
+    if (d.ok) { dot.style.background='#22c55e'; txt.style.color='#22c55e'; txt.textContent='Proxy đang chạy ✓'; }
+    else throw new Error();
+  } catch {
+    dot.style.background='#ef4444'; txt.style.color='#f87171'; txt.textContent='Proxy chưa chạy';
+  }
+}
+
+// ── Image generation (kie.ai) ──────────────────────────────────────────────────
+function buildImagePrompt(t, p) {
+  const base = `dark navy background, orange accent color #f97316, professional tech aesthetic, high quality digital art, clean minimalist design`;
+  const prompts = {
+    pinterest: `Tall portrait review card for "${t.name}" AI tool. "${t.tagline}". Score badge ${t.score}/10. ${base}. 1000x1500 portrait format social media pin.`,
+    instagram: `Square social media review post for "${t.name}" AI tool. Score ${t.score}/10. "${t.tagline}". ${base}. 1080x1080 square Instagram post.`,
+    tiktok:    `Vertical TikTok thumbnail for "${t.name}" AI review video. Bold text overlay "${t.score}/10". Eye-catching. ${base}. 1080x1920 vertical format.`,
+    youtube:   `YouTube thumbnail for "${t.name} Review 2026". Text: "IS IT WORTH IT? ${t.score}/10". High contrast, readable at small sizes. ${base}. 1280x720 landscape.`,
+    twitter:   `Wide social card for "${t.name}" AI tool review. Score ${t.score}/10. "${t.tagline}". ${base}. 1200x628 Twitter card format.`,
+    linkedin:  `Professional LinkedIn post image for "${t.name}" AI tool. "${t.tagline}". Score ${t.score}/10. Corporate tech style. ${base}. 1200x628.`,
+    facebook:  `Facebook post image for "${t.name}" AI tool review. ${t.score}/10. "${t.tagline}". ${base}. 1200x630 Facebook format.`,
+    threads:   `Square social post for "${t.name}" AI review. ${t.score}/10. "${t.tagline}". ${base}.`,
+    reddit:    `Wide banner for "${t.name}" honest review. ${t.score}/10. "${t.tagline}". ${base}.`,
+    quora:     `Featured image for "${t.name}" AI tool answer. ${t.score}/10. ${base}.`,
+  };
+  return prompts[p] || `Social media image for ${t.name} AI tool review. ${t.score}/10. ${base}.`;
+}
+
+async function genImage() {
+  const t = TOOLS.find(x => x.slug === slug);
+  if (!t) return;
+  const key = getKey('kieai_key');
+  if (!key) { toast('Nhập kie.ai API key trong Settings ⚙', 'warn'); showSettings(); return; }
+
+  // Show overlay
+  const overlay = document.getElementById('img-gen-overlay');
+  const btn = document.getElementById('gen-img-btn');
+  if (overlay) overlay.style.display = 'flex';
+  if (btn) { btn.innerHTML = '<span class="spin"></span> Generating…'; btn.disabled = true; }
+
+  try {
+    const prompt   = buildImagePrompt(t, P);
+    const endpoint = getKey('kieai_ep') || 'https://api.kie.ai/v1/images/generations';
+    const statusEp = getKey('kieai_status') || '';
+    const proxy    = getProxy();
+    const sizes    = {pinterest:{w:1024,h:1536},instagram:{w:1024,h:1024},tiktok:{w:576,h:1024},youtube:{w:1280,h:720}};
+    const sz       = sizes[P] || {w:1024,h:1024};
+
+    const res = await fetch(`${proxy}/kieai`, {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({
+        api_key: key,
+        endpoint,
+        status_endpoint: statusEp,
+        prompt,
+        width: sz.w,
+        height: sz.h,
+        n: 1
+      })
+    });
+
+    if (!res.ok) {
+      const err = await res.text();
+      throw new Error(err.slice(0, 120));
+    }
+    const data = await res.json();
+    if (data.error) throw new Error(data.error);
+    if (!data.url) throw new Error(data.hint || 'No image URL returned. Check API endpoint in Settings.');
+
+    // Cache and display
+    setCachedImg(t.slug, P, data.url);
+    const img = document.querySelector('#img-wrap img');
+    if (img) { img.style.opacity = '0'; img.src = data.url; img.onload = () => { img.style.opacity='1'; }; }
+    if (overlay) overlay.style.display = 'none';
+    if (btn) { btn.innerHTML = '🔄 Regen'; btn.disabled = false; }
+    renderSidebar();
+    toast(`✓ Ảnh ${t.name} / ${P_NAME[P]} đã tạo!`, 'ok');
+
+  } catch (e) {
+    if (overlay) overlay.style.display = 'none';
+    if (btn) { btn.innerHTML = '🎨 Generate'; btn.disabled = false; }
+    const msg = e.message.includes('fetch') || e.message.includes('Failed')
+      ? 'Proxy chưa chạy → python social_agent/api_proxy.py'
+      : 'kie.ai error: ' + e.message;
+    toast(msg, 'err');
+  }
+}
+
+// ── Video generation (fal.ai Kling) ───────────────────────────────────────────
+async function genVideo() {
+  const t = TOOLS.find(x => x.slug === slug);
+  if (!t) return;
+  const falKey = getKey('fal_key');
+  if (!falKey) { toast('Nhập fal.ai API key trong Settings ⚙', 'warn'); showSettings(); return; }
+
+  const btn = document.getElementById('gen-vid-btn');
+  if (btn) { btn.innerHTML = '<span class="spin"></span> Starting…'; btn.disabled = true; }
+
+  const imgSrc = getCachedImg(t.slug, P) || imgLiveUrl(t, P);
+  const ar = {pinterest:'2:3',instagram:'1:1',tiktok:'9:16',youtube:'16:9'}[P]||'16:9';
+  const vidPrompt = {
+    tiktok:    'smooth cinematic zoom in, dynamic motion, tech product reveal',
+    youtube:   'dramatic cinematic reveal, zoom from center, professional showcase',
+    instagram: 'smooth parallax zoom, aesthetic product reveal',
+    pinterest: 'gentle ken burns effect, elegant upward motion',
+  }[P] || 'smooth zoom in, professional product showcase';
+
+  try {
+    const res = await fetch('https://queue.fal.run/fal-ai/kling-video/v1.5/pro/image-to-video', {
+      method: 'POST',
+      headers: {'Authorization':`Key ${falKey}`,'Content-Type':'application/json'},
+      body: JSON.stringify({image_url: imgSrc, prompt: vidPrompt, duration: '5', aspect_ratio: ar})
+    });
+
+    if (!res.ok) {
+      const err = await res.text();
+      throw new Error(err.slice(0, 150));
+    }
+    const data = await res.json();
+    const requestId = data.request_id;
+    if (!requestId) throw new Error('No request_id from fal.ai');
+
+    setPendingJob(t.slug, P, {requestId, status: 'IN_QUEUE', startedAt: Date.now()});
+
+    // Update UI to polling state
+    const area = document.getElementById('vid-area');
+    if (area) area.innerHTML = `
+      <div class="vid-status-row"><div class="spin"></div><span id="vid-status-txt">Đang chờ trong hàng...</span></div>
+      <div class="vid-pbar-wrap" style="margin-top:.4rem"><div class="vid-pbar-fill" id="vid-pbar" style="width:12%"></div></div>
+      <div style="font-size:.62rem;color:#1e293b;margin-top:.35rem">Kling thường mất 2–5 phút</div>`;
+
+    const hdBtn = document.querySelector('.vid-block-head .vid-btns');
+    if (hdBtn) hdBtn.innerHTML = '<span class="cost-note">~$0.14 / 5s</span>';
+
+    pollVideo(requestId, t.slug, P);
+    toast('🎬 Video đang tạo — sẽ tự động cập nhật', 'warn');
+
+  } catch (e) {
+    if (btn) { btn.innerHTML = '🎬 Generate'; btn.disabled = false; }
+    toast('fal.ai error: ' + e.message, 'err');
+  }
+}
+
+const _vidTimers = {};
+
+function pollVideo(requestId, toolSlug, platform) {
+  const jobKey = `${toolSlug}_${platform}`;
+  clearTimeout(_vidTimers[jobKey]);
+
+  const falKey = getKey('fal_key');
+  if (!falKey) return;
+
+  const base = 'https://queue.fal.run/fal-ai/kling-video/v1.5/pro/image-to-video';
+
+  fetch(`${base}/requests/${requestId}/status`, {
+    headers: {'Authorization': `Key ${falKey}`}
+  })
+  .then(r => r.json())
+  .then(data => {
+    const status = data.status;
+    const job = getPendingJob(toolSlug, platform);
+    if (job) setPendingJob(toolSlug, platform, {...job, status});
+
+    // Update UI if still viewing this tool+platform
+    if (slug === toolSlug && P === platform) {
+      const txt  = document.getElementById('vid-status-txt');
+      const pbar = document.getElementById('vid-pbar');
+      if (status === 'IN_PROGRESS') {
+        if (txt)  txt.textContent  = '🎬 Đang render video...';
+        if (pbar) pbar.style.width = '55%';
+      }
+    }
+
+    if (status === 'COMPLETED') {
+      fetch(`${base}/requests/${requestId}`, {
+        headers: {'Authorization': `Key ${falKey}`}
+      })
+      .then(r => r.json())
+      .then(result => {
+        const vidUrl = result.video?.url || result.output?.video?.url || result.url;
+        if (!vidUrl) { toast('Video done but no URL found', 'err'); return; }
+        setCachedVid(toolSlug, platform, vidUrl);
+        setPendingJob(toolSlug, platform, null);
+        if (slug === toolSlug && P === platform) renderMain();
+        renderSidebar();
+        toast(`✓ Video ${toolSlug} / ${P_NAME[platform]} xong!`, 'ok');
+      });
+    } else if (status === 'FAILED') {
+      setPendingJob(toolSlug, platform, null);
+      if (slug === toolSlug && P === platform) renderMain();
+      toast('Video generation failed', 'err');
+    } else {
+      _vidTimers[jobKey] = setTimeout(() => pollVideo(requestId, toolSlug, platform), 6000);
+    }
+  })
+  .catch(() => {
+    _vidTimers[jobKey] = setTimeout(() => pollVideo(requestId, toolSlug, platform), 10000);
+  });
+}
+
+// ── Caption enhancement (Claude via proxy) ─────────────────────────────────────
+async function enhField(btn) {
+  const preId    = btn.dataset.pre;
+  const toolSlug = btn.dataset.slug;
+  const fieldLbl = btn.dataset.lbl;
+  const t = TOOLS.find(x => x.slug === toolSlug);
+  if (!t) return;
+
+  const claudeKey = getKey('claude_key');
+  if (!claudeKey) { toast('Nhập Claude API key trong Settings ⚙', 'warn'); showSettings(); return; }
+
+  const current = document.getElementById(preId)?.innerText || '';
+  const proxy   = getProxy();
+
+  btn.innerHTML = '<span class="spin"></span>';
+  btn.disabled  = true;
+
+  const sugId = 'sg' + preId.replace('fv','');
+
+  try {
+    const res = await fetch(`${proxy}/claude`, {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({
+        api_key: claudeKey,
+        model: 'claude-sonnet-4-6',
+        max_tokens: 1500,
+        system: `You are a social media expert for RankerToolAI.com specializing in AI tool marketing.
+Write compelling, platform-optimized content that drives clicks and engagement.
+Keep the same language as the original (Vietnamese or mixed Vietnamese/English).
+Return ONLY the improved content, no explanations.`,
+        messages: [{
+          role: 'user',
+          content: `Improve this ${P_NAME[P]} content for the field "${fieldLbl}" about ${t.name} (${t.score}/10 — "${t.tagline}").
+
+Current:
+${current}
+
+Make it more engaging and compelling. Keep similar length.`
+        }]
+      })
+    });
+
+    if (!res.ok) {
+      const err = await res.text();
+      throw new Error(err.slice(0, 120));
+    }
+    const data = await res.json();
+    if (data.error) throw new Error(data.error);
+    const enhanced = data.content?.[0]?.text;
+    if (!enhanced) throw new Error('Empty response from Claude');
+
+    const sugEl = document.getElementById(sugId);
+    if (sugEl) sugEl.innerHTML = `
+      <div class="suggest-wrap">
+        <div class="suggest-lbl">✨ Claude suggestion</div>
+        <div class="suggest-txt">${esc(enhanced)}</div>
+        <div class="suggest-acts">
+          <button class="sug-btn apply" onclick="applySug('${preId}','${sugId}')">✓ Áp dụng</button>
+          <button class="sug-btn" onclick="document.getElementById('${sugId}').innerHTML=''">Bỏ qua</button>
+        </div>
+      </div>`;
+    toast('✨ Gợi ý từ Claude đã sẵn sàng', 'ok');
+
+  } catch (e) {
+    const msg = (e.message.includes('fetch') || e.message.includes('Failed'))
+      ? 'Proxy chưa chạy → python social_agent/api_proxy.py'
+      : 'Claude error: ' + e.message.slice(0, 80);
+    toast(msg, 'err');
+  } finally {
+    btn.innerHTML = '✨';
+    btn.disabled  = false;
+  }
+}
+
+function applySug(preId, sugId) {
+  const pre  = document.getElementById(preId);
+  const sug  = document.getElementById(sugId);
+  const txt  = sug?.querySelector('.suggest-txt');
+  if (pre && txt) {
+    pre.innerText = txt.innerText;
+    sug.innerHTML = '';
+    toast('✓ Đã áp dụng gợi ý', 'ok');
+  }
+}
+
+// ── Toast ──────────────────────────────────────────────────────────────────────
+function toast(msg, type = '') {
+  const wrap = document.getElementById('toast-wrap');
+  const el   = document.createElement('div');
+  el.className = `toast${type?` t-${type}`:''}`;
+  el.textContent = msg;
+  wrap.appendChild(el);
+  requestAnimationFrame(() => { el.classList.add('show'); });
+  setTimeout(() => {
+    el.classList.remove('show');
+    setTimeout(() => el.remove(), 300);
+  }, type === 'err' ? 5000 : 3000);
+}
+
+// ── Actions ────────────────────────────────────────────────────────────────────
+function sel(s) { slug = s; renderMain(); renderSidebar(); }
+
+function setP(p, el) {
+  P = p;
+  document.querySelectorAll('.ptab').forEach(x => x.classList.remove('active'));
+  el.classList.add('active');
+  renderSidebar();
+  if (P === 'overview') renderOverview();
+  else if (slug) renderMain();
+  else document.getElementById('main').innerHTML = `<div class="empty">📌<br><br>Chọn công cụ bên trái để xem nội dung</div>`;
+}
+
+function selAndP(s, p) {
+  P = p; slug = s;
+  document.querySelectorAll('.ptab').forEach(x => x.classList.remove('active'));
+  document.querySelector(`.ptab[data-p="${p}"]`)?.classList.add('active');
+  renderSidebar(); renderMain();
+}
+
+function tog(s) {
+  const newVal = !done(s, P);
+  mark(s, P, newVal);
+  if (newVal) goNext(true);
+  else { renderMain(); renderSidebar(); }
+}
+
+function goNext(skipCurrent) {
+  const list = visibleTools();
+  const idx  = list.findIndex(t => t.slug === slug);
+  const remaining = sortedTools().filter(t => !done(t.slug, P) && (skipCurrent ? t.slug !== slug : true));
+  if (remaining.length) slug = remaining[0].slug;
+  else if (idx < list.length - 1) slug = list[idx + 1].slug;
+  renderMain(); renderSidebar();
+  setTimeout(() => document.querySelector('.tool-item.active')?.scrollIntoView({block:'nearest'}), 50);
+}
+
+function toggleFilter() { filterOn = !filterOn; renderSidebar(); if(slug && P!=='overview') renderMain(); }
+
+function cpF(id, btn) {
+  navigator.clipboard.writeText(document.getElementById(id).innerText).then(() => {
+    btn.textContent='✓'; btn.classList.add('ok');
+    setTimeout(() => { btn.textContent='Copy'; btn.classList.remove('ok'); }, 1600);
+  });
+}
+
+function cpAll(s) {
+  const t   = TOOLS.find(x => x.slug === s);
+  const txt = gen(t, P).map(f => `=== ${f.l} ===\n${f.v}`).join('\n\n---\n\n');
+  const btn = document.getElementById('ca');
+  navigator.clipboard.writeText(txt).then(() => {
+    btn.textContent='✓ Đã copy!'; btn.classList.add('ok');
+    setTimeout(() => { btn.textContent='Copy tất cả'; btn.classList.remove('ok'); }, 2000);
+  });
+}
+
+async function dlImg(url, filename) {
+  try {
+    const res  = await fetch(url);
+    const blob = await res.blob();
+    const a    = document.createElement('a');
+    a.href     = URL.createObjectURL(blob);
+    a.download = filename; a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 5000);
+  } catch { window.open(url, '_blank'); }
+}
+
+// ── Keyboard shortcuts ─────────────────────────────────────────────────────────
+const P_KEYS = ['pinterest','instagram','tiktok','youtube','twitter','threads','linkedin','facebook','reddit','quora'];
+
+document.addEventListener('keydown', e => {
+  if (['INPUT','TEXTAREA','SELECT'].includes(e.target.tagName)) return;
+  if (document.getElementById('settings-overlay').classList.contains('show')) return;
+  const k = e.key;
+
+  if (k==='?' || k==='/') { showKbd(); return; }
+  if (k==='Escape') { hideKbd(); hideSettings(); return; }
+  if (k==='f') { toggleFilter(); return; }
+  if (k==='o') { const el=document.querySelector('.ptab[data-p="overview"]'); if(el) setP('overview',el); return; }
+  if (k==='g' && slug && P!=='overview') { genImage(); return; }
+
+  if (k>='1' && k<='9') {
+    const idx=parseInt(k)-1;
+    if(idx<P_KEYS.length){const el=document.querySelector(`.ptab[data-p="${P_KEYS[idx]}"]`);if(el)setP(P_KEYS[idx],el);}
+    return;
+  }
+  if (k==='0') { const el=document.querySelector(`.ptab[data-p="${P_KEYS[9]}"]`); if(el) setP(P_KEYS[9],el); return; }
+
+  if (P==='overview') return;
+  const list = visibleTools();
+  const idx  = list.findIndex(t => t.slug === slug);
+
+  if (k==='j' || k==='ArrowDown') {
+    e.preventDefault();
+    if (idx < list.length-1) sel(list[idx+1].slug);
+    setTimeout(()=>document.querySelector('.tool-item.active')?.scrollIntoView({block:'nearest'}),30);
+    return;
+  }
+  if (k==='k' || k==='ArrowUp') {
+    e.preventDefault();
+    if (idx > 0) sel(list[idx-1].slug);
+    setTimeout(()=>document.querySelector('.tool-item.active')?.scrollIntoView({block:'nearest'}),30);
+    return;
+  }
+  if (k===' ' && slug) { e.preventDefault(); tog(slug); return; }
+});
+
+function showKbd() { document.getElementById('kbd-overlay').classList.add('show'); }
+function hideKbd() { document.getElementById('kbd-overlay').classList.remove('show'); }
+
+// ── Init ───────────────────────────────────────────────────────────────────────
+renderSidebar();
+sel(TOOLS[0].slug);
+
+// Resume any pending video polls from previous session
+TOOLS.forEach(t => {
+  PLATFORMS.forEach(p => {
+    const job = getPendingJob(t.slug, p);
+    if (job?.requestId && !getCachedVid(t.slug, p)) {
+      pollVideo(job.requestId, t.slug, p);
+    }
+  });
+});
+</script>
+</body>
+</html>
