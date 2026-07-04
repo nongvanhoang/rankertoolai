@@ -1,5 +1,8 @@
 """Setup BIMI: update DMARC p=quarantine + add BIMI DNS record."""
 import os, requests, sys, time
+from pathlib import Path
+from dotenv import load_dotenv
+load_dotenv(Path(__file__).parent / ".env")
 
 CF_TOKEN = os.environ["CF_API_TOKEN"]
 ZONE_ID  = "ae5011d58da0b374427226ea91f85ff6"

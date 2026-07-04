@@ -1,5 +1,8 @@
 """Fix Cloudflare robots.txt via Worker to allow AI crawlers."""
 import os, requests, json, sys
+from pathlib import Path
+from dotenv import load_dotenv
+load_dotenv(Path(__file__).parent / ".env")
 
 CF_TOKEN = os.environ["CF_API_TOKEN"]
 DOMAIN   = "rankertoolai.com"
