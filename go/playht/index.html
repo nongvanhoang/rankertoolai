@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Play.ht Free Trial — Redirecting | RankerToolAI</title>
+  <title>Play.ht Discontinued — Redirecting | RankerToolAI</title>
   <meta name="robots" content="noindex, nofollow">
   <link rel="canonical" href="https://rankertoolai.com/go/playht/">
 
@@ -95,66 +95,28 @@
     <span>Play.ht</span>
   </div>
 
-  <h1 class="heading">Try Play.ht free &mdash; 12,500 words included</h1>
-  <p class="sub">Play.ht is the best AI voice generator for podcasters and audiobook creators. 140+ language voices, developer API, and an unlimited-word plan. Free trial available.</p>
+  <h1 class="heading">Play.ht has been discontinued</h1>
+  <p class="sub">Play.ht was acquired by Meta and permanently shut down on December 31, 2025. There is no free trial or sign-up available anymore. Taking you to our updated Play.ht review with the closest active alternative.</p>
 
-  <div class="badge">
-    <div class="badge-num">12,500</div>
-    <div class="badge-label">Free Trial Words</div>
-    <div class="badge-note">No credit card for trial &middot; 140+ languages &middot; Developer API</div>
-  </div>
-
-  <div class="benefits">
-    <div class="benefit">
-      <span class="icon">🎙️</span>
-      <span><strong>Ultra-realistic AI voices</strong> &mdash; 140+ languages and accents — ultra-realistic tier passes most naturalness tests</span>
-    </div>
-    <div class="benefit">
-      <span class="icon">🔌</span>
-      <span><strong>Developer API</strong> &mdash; Well-documented REST API, up and running in minutes — best in category for programmatic voice generation</span>
-    </div>
-    <div class="benefit">
-      <span class="icon">🎧</span>
-      <span><strong>Long-form narration</strong> &mdash; Consistent tone across full podcast episodes and audiobook chapters</span>
-    </div>
-    <div class="benefit">
-      <span class="icon">♾️</span>
-      <span><strong>Unlimited word plan</strong> &mdash; Professional plan at $99/mo for unlimited generation — predictable cost for high-volume creators</span>
-    </div>
-  </div>
-
-  <a id="ctaBtn" href="https://play.ht/?via=rankertoolai" rel="nofollow sponsored" class="cta-btn">
-    Start Free Trial &rarr;
+  <a id="ctaBtn" href="/review/playht/" class="cta-btn">
+    See What Replaced It &rarr;
   </a>
-  <div class="countdown-row">Redirecting to Play.ht in <span id="timer">5</span> seconds</div>
+  <div class="countdown-row">Redirecting in <span id="timer">3</span> seconds</div>
   <button class="skip-link" onclick="goNow()">Skip countdown</button>
 
   <div class="footer-note">
-    <a href="/review/playht/">Full Play.ht review</a> &middot; <a href="/compare/elevenlabs-vs-playht/">Play.ht vs ElevenLabs</a> &middot; <a href="/alternatives/playht/">Play.ht alternatives</a>
+    <a href="/go/elevenlabs/">Try ElevenLabs instead</a> &middot; <a href="/compare/elevenlabs-vs-playht/">Play.ht vs ElevenLabs</a> &middot; <a href="/alternatives/playht/">All Play.ht alternatives</a>
   </div>
 </div>
 
 <script>
 (function() {
-  var DEST_BASE = 'https://play.ht/?via=rankertoolai';
-  var countdown = 5;
+  var finalUrl = '/review/playht/';
+  var countdown = 3;
   var redirected = false;
 
-  var params = new URLSearchParams(window.location.search);
-  var ref = document.referrer ? new URL(document.referrer).pathname : 'direct';
-  var subid = params.get('ref') || ref.replace(/\//g,'_').replace(/^_|_$/g,'') || 'direct';
-
-  var dest = new URL(DEST_BASE);
-  ['utm_source','utm_medium','utm_campaign','utm_content','gclid'].forEach(function(k){
-    if (params.has(k)) dest.searchParams.set(k, params.get(k));
-  });
-  dest.searchParams.set('ref', subid);
-  var finalUrl = dest.toString();
-
-  document.getElementById('ctaBtn').href = finalUrl;
-
   if (typeof gtag !== 'undefined') {
-    gtag('event', 'affiliate_click', { tool: 'playht', source_path: ref, sub_id: subid, page_type: 'bridge' });
+    gtag('event', 'discontinued_redirect', { tool: 'playht', page_type: 'bridge' });
   }
 
   var timerEl = document.getElementById('timer');
