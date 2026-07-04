@@ -2,7 +2,7 @@
 import os, requests, json, sys
 from pathlib import Path
 from dotenv import load_dotenv
-load_dotenv(Path(__file__).parent / ".env")
+load_dotenv(Path(__file__).parent / ".env.cloudflare")
 
 CF_TOKEN = os.environ["CF_API_TOKEN"]
 DOMAIN   = "rankertoolai.com"
