@@ -39,6 +39,7 @@
     .sticky-cta-btn{flex-shrink:0;padding:0.55rem 1.25rem;background:linear-gradient(135deg,#f97316,#fbbf24);color:white;font-weight:700;border-radius:var(--radius);text-decoration:none;font-size:0.85rem;white-space:nowrap;}
     .sticky-cta-btn:hover{color:white;text-decoration:none;}
   </style>
+    <script async src="/assets/js/pint.js"></script>
 
   <!-- ═══ ANALYTICS & ADS TRACKING ═══ -->
   <!-- Google tag (gtag.js) — GA4 + Google Ads -->
@@ -48,11 +49,15 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-81KB8ECCVF');
+    gtag('config', 'AW-17663925702');
+
     // Conversion: affiliate click (fires when user clicks /go/ link)
     document.addEventListener('DOMContentLoaded', function() {
       document.querySelectorAll('a[href*="/go/"]').forEach(function(el) {
         el.addEventListener('click', function() {
-          gtag('event', 'conversion', {            'value': 1.0,
+          gtag('event', 'conversion', {
+            'send_to': 'AW-17663925702/zc7PCJ-9nMscEMa76OZB',
+            'value': 1.0,
             'currency': 'USD'
           });
           gtag('event', 'affiliate_click', {
@@ -63,7 +68,9 @@
       });
 
       // Conversion: 60-second engaged page view
-      setTimeout(function() {      }, 60000);
+      setTimeout(function() {
+        gtag('event', 'conversion', {'send_to': 'AW-17663925702/DfXPCNLAucscEMa76OZB'});
+      }, 60000);
     });
   </script>
 
@@ -76,8 +83,7 @@
     })(window,document,"clarity","script","x97zf4vn2v");
   </script>
   <!-- ══════════════════════════════════ -->
-    <script async src="/assets/js/pint.js"></script>
-</head>
+  </head>
 <body>
 <div class="sticky-cta" id="sticky-cta">
   <div style="display:flex;align-items:center;gap:0.75rem;min-width:0;">

@@ -64,6 +64,7 @@
     .faq-item{border-bottom:1px solid rgba(255,255,255,0.07);padding:1.25rem 0;}
     .section-heading{font-size:1.35rem;font-weight:800;margin:2rem 0 1rem;color:#f1f5f9;}
   </style>
+    <script async src="/assets/js/pint.js"></script>
 
   <!-- ═══ ANALYTICS & ADS TRACKING ═══ -->
   <!-- Google tag (gtag.js) — GA4 + Google Ads -->
@@ -73,11 +74,15 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-81KB8ECCVF');
+    gtag('config', 'AW-17663925702');
+
     // Conversion: affiliate click (fires when user clicks /go/ link)
     document.addEventListener('DOMContentLoaded', function() {
       document.querySelectorAll('a[href*="/go/"]').forEach(function(el) {
         el.addEventListener('click', function() {
-          gtag('event', 'conversion', {            'value': 1.0,
+          gtag('event', 'conversion', {
+            'send_to': 'AW-17663925702/zc7PCJ-9nMscEMa76OZB',
+            'value': 1.0,
             'currency': 'USD'
           });
           gtag('event', 'affiliate_click', {
@@ -88,7 +93,9 @@
       });
 
       // Conversion: 60-second engaged page view
-      setTimeout(function() {      }, 60000);
+      setTimeout(function() {
+        gtag('event', 'conversion', {'send_to': 'AW-17663925702/DfXPCNLAucscEMa76OZB'});
+      }, 60000);
     });
   </script>
 
@@ -101,8 +108,7 @@
     })(window,document,"clarity","script","x97zf4vn2v");
   </script>
   <!-- ══════════════════════════════════ -->
-    <script async src="/assets/js/pint.js"></script>
-</head>
+  </head>
 <body>
 <header class="site-header">
   <div class="container">

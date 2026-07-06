@@ -79,6 +79,7 @@
     .toc a{color:rgba(148,163,184,0.8);text-decoration:none;}
     .toc a:hover{color:#f97316;}
   </style>
+    <script async src="/assets/js/pint.js"></script>
 
   <!-- ═══ ANALYTICS & ADS TRACKING ═══ -->
   <!-- Google tag (gtag.js) — GA4 + Google Ads -->
@@ -88,11 +89,15 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-81KB8ECCVF');
+    gtag('config', 'AW-17663925702');
+
     // Conversion: affiliate click (fires when user clicks /go/ link)
     document.addEventListener('DOMContentLoaded', function() {
       document.querySelectorAll('a[href*="/go/"]').forEach(function(el) {
         el.addEventListener('click', function() {
-          gtag('event', 'conversion', {            'value': 1.0,
+          gtag('event', 'conversion', {
+            'send_to': 'AW-17663925702/zc7PCJ-9nMscEMa76OZB',
+            'value': 1.0,
             'currency': 'USD'
           });
           gtag('event', 'affiliate_click', {
@@ -103,7 +108,9 @@
       });
 
       // Conversion: 60-second engaged page view
-      setTimeout(function() {      }, 60000);
+      setTimeout(function() {
+        gtag('event', 'conversion', {'send_to': 'AW-17663925702/DfXPCNLAucscEMa76OZB'});
+      }, 60000);
     });
   </script>
 
@@ -116,8 +123,7 @@
     })(window,document,"clarity","script","x97zf4vn2v");
   </script>
   <!-- ══════════════════════════════════ -->
-    <script async src="/assets/js/pint.js"></script>
-</head>
+  </head>
 <body>
 <header class="site-header">
   <div class="container">

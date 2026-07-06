@@ -13,8 +13,6 @@
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does KWFinder have a free trial?","acceptedAnswer":{"@type":"Answer","text":"Yes. KWFinder is part of the Mangools suite and is included in the 10-day free trial. You get full access to KWFinder and all 4 other Mangools tools with no credit card required."}},{"@type":"Question","name":"Does the Mangools free trial require a credit card?","acceptedAnswer":{"@type":"Answer","text":"No. The Mangools 10-day free trial does not require a credit card. You only need an email address to sign up. You will not be charged unless you manually choose a paid plan after the trial."}},{"@type":"Question","name":"Is there a Mangools coupon code in 2026?","acceptedAnswer":{"@type":"Answer","text":"There is no public coupon code for Mangools in 2026. The best available deal is the 10-day free trial with full access to all 5 tools — no credit card required. Annual billing also saves roughly 30% compared to monthly pricing."}},{"@type":"Question","name":"How long is the Mangools free trial?","acceptedAnswer":{"@type":"Answer","text":"The Mangools free trial lasts 10 days. During this period you get full access to KWFinder, SERPChecker, SERPWatcher, LinkMiner, and SiteProfiler — the same features available on a paid plan."}},{"@type":"Question","name":"What happens when the Mangools trial ends?","acceptedAnswer":{"@type":"Answer","text":"When the 10-day trial ends your account is automatically downgraded to a free tier with limited lookups. You will not be charged. If you want to continue with full access, you choose a paid plan at that point."}}]}</script>
 
   <!-- GA4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-81KB8ECCVF"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-81KB8ECCVF');</script>
   <!-- Clarity -->
   <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","x97zf4vn2v");</script>
 
@@ -60,7 +58,50 @@
     .faq-item h3{margin:0 0 0.5rem;font-size:1rem;color:#f1f5f9;}
     .faq-item p{margin:0;color:var(--color-text-muted);font-size:0.9rem;line-height:1.7;}
   </style>
-</head>
+
+  <!-- ═══ ANALYTICS & ADS TRACKING ═══ -->
+  <!-- Google tag (gtag.js) — GA4 + Google Ads -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-81KB8ECCVF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-81KB8ECCVF');
+    gtag('config', 'AW-17663925702');
+
+    // Conversion: affiliate click (fires when user clicks /go/ link)
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('a[href*="/go/"]').forEach(function(el) {
+        el.addEventListener('click', function() {
+          gtag('event', 'conversion', {
+            'send_to': 'AW-17663925702/zc7PCJ-9nMscEMa76OZB',
+            'value': 1.0,
+            'currency': 'USD'
+          });
+          gtag('event', 'affiliate_click', {
+            'tool': el.href.split('/go/')[1]?.replace(/\//g,'') || 'unknown',
+            'page': window.location.pathname
+          });
+        });
+      });
+
+      // Conversion: 60-second engaged page view
+      setTimeout(function() {
+        gtag('event', 'conversion', {'send_to': 'AW-17663925702/DfXPCNLAucscEMa76OZB'});
+      }, 60000);
+    });
+  </script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window,document,"clarity","script","x97zf4vn2v");
+  </script>
+  <!-- ══════════════════════════════════ -->
+  </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">

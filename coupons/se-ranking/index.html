@@ -13,8 +13,6 @@
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does SE Ranking have a free trial in 2026?","acceptedAnswer":{"@type":"Answer","text":"Yes. SE Ranking offers a 14-day free trial with full access to all features including rank tracking, site audit, keyword research, backlink analysis, and competitor research. No credit card is required to start."}},{"@type":"Question","name":"Is there an SE Ranking coupon code for 2026?","acceptedAnswer":{"@type":"Answer","text":"Yes. The exclusive SE Ranking coupon code for 2026 is welcome15. It gives 15% off your first purchase on any paid plan. Apply it at checkout after your free trial. The code applies to the first payment only and is not a recurring discount."}},{"@type":"Question","name":"What is included in the SE Ranking free trial?","acceptedAnswer":{"@type":"Answer","text":"The SE Ranking free trial includes rank tracking, keyword research, site audit, backlink analysis, competitor analysis, on-page SEO checker, and white-label reports. You get access to the full platform for 14 days with no payment details required."}},{"@type":"Question","name":"How does SE Ranking compare to Ahrefs for a free trial?","acceptedAnswer":{"@type":"Answer","text":"SE Ranking offers a 14-day free trial with no credit card required. Ahrefs discontinued its free trial in 2024 and only offers a paid $7 trial for some accounts. For users who want to try before they buy, SE Ranking is the clear winner."}},{"@type":"Question","name":"What happens after the SE Ranking free trial ends?","acceptedAnswer":{"@type":"Answer","text":"After 14 days, your account is automatically paused — it is not charged. You need to actively choose a paid plan to continue. Plans start at $65/month (Essential), with annual billing saving around 20%."}}]}</script>
 
   <!-- GA4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-81KB8ECCVF"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-81KB8ECCVF');</script>
   <!-- Clarity -->
   <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","x97zf4vn2v");</script>
 
@@ -50,7 +48,50 @@
     .feature-text strong{color:#f1f5f9;display:block;font-size:0.9rem;margin-bottom:0.2rem;}
     .verdict-card{background:linear-gradient(135deg,rgba(249,115,22,0.09),rgba(251,191,36,0.04));border:1px solid rgba(249,115,22,0.25);border-radius:var(--radius-lg);padding:1.5rem;margin:2rem 0;}
   </style>
-</head>
+
+  <!-- ═══ ANALYTICS & ADS TRACKING ═══ -->
+  <!-- Google tag (gtag.js) — GA4 + Google Ads -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-81KB8ECCVF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-81KB8ECCVF');
+    gtag('config', 'AW-17663925702');
+
+    // Conversion: affiliate click (fires when user clicks /go/ link)
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('a[href*="/go/"]').forEach(function(el) {
+        el.addEventListener('click', function() {
+          gtag('event', 'conversion', {
+            'send_to': 'AW-17663925702/zc7PCJ-9nMscEMa76OZB',
+            'value': 1.0,
+            'currency': 'USD'
+          });
+          gtag('event', 'affiliate_click', {
+            'tool': el.href.split('/go/')[1]?.replace(/\//g,'') || 'unknown',
+            'page': window.location.pathname
+          });
+        });
+      });
+
+      // Conversion: 60-second engaged page view
+      setTimeout(function() {
+        gtag('event', 'conversion', {'send_to': 'AW-17663925702/DfXPCNLAucscEMa76OZB'});
+      }, 60000);
+    });
+  </script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window,document,"clarity","script","x97zf4vn2v");
+  </script>
+  <!-- ══════════════════════════════════ -->
+  </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
