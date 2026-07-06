@@ -197,6 +197,17 @@ Maintain this database. Update it when programs change.
     "tracking_url": "https://ref.wisprflow.ai/ranker-tool-ai",
     "go_url": "https://rankertoolai.com/go/wispr-flow/",
     "status": "active"
+  },
+  {
+    "tool": "Context.dev",
+    "slug": "context",
+    "platform": "Direct",
+    "commission": "25% commission on every sale, for 3 years",
+    "tracking_url": "https://link.context.dev/ranker-tool-ai",
+    "go_url": "https://rankertoolai.com/go/context/",
+    "coupon_note": "New users get 25% off for 6 months",
+    "status": "active",
+    "notes": "Approved 2026-07-06. Bonus: $250 once referrals generate $500 in revenue. No review/alternatives page live yet — redirect only."
   }
 ]
 ```
