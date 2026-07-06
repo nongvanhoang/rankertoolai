@@ -43,6 +43,7 @@ STATIC_ENTRIES = [
     {"loc": "/blog/",               "priority": "0.75", "changefreq": "weekly"},
     {"loc": "/pricing/",            "priority": "0.86", "changefreq": "weekly"},
     {"loc": "/coupons/",            "priority": "0.88", "changefreq": "weekly"},
+    {"loc": "/newsletter/",         "priority": "0.70", "changefreq": "monthly"},
     {"loc": "/about/",              "priority": "0.60", "changefreq": "monthly"},
     {"loc": "/methodology/",        "priority": "0.55", "changefreq": "monthly"},
     # /contact/, /affiliate-disclosure/, /privacy-policy/, /terms/, /cookie-policy/

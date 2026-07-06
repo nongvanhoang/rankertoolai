@@ -6,20 +6,28 @@
 
 ---
 
-## HIỆN TRẠNG (2026-06-27)
+## HIỆN TRẠNG (2026-07-06)
 
 | Hạng mục | Trạng thái | Ghi chú |
 |----------|-----------|---------|
-| Website | ✅ Live | 90+ trang, Cloudflare Pages |
+| Website | ✅ Live | ~220 trang, Cloudflare Pages |
 | Content Pipeline | ✅ Hoạt động | PIPELINE.md |
 | Social auto-post | ⚠️ 4/9 platforms | Discord, Twitter, Dev.to, Quora đang chạy |
-| Reddit | ❌ Thiếu credentials | Cần nhất — intent traffic cao |
-| LinkedIn | ❌ Thiếu credentials | B2B audience |
-| Pinterest | ❌ Thiếu credentials | Long-tail visual traffic |
-| Instagram | ❌ Thiếu credentials | Cần Business account |
-| Google Ads | ❌ Chưa khởi động | Scripts sẵn sàng, cần AW ID |
+| Reddit | ❌ Thiếu credentials | Cần nhất — intent traffic cao. Chạy: `social_agent/get_reddit_token.py` |
+| LinkedIn | ❌ Thiếu credentials | B2B audience. Chạy: `social_agent/get_linkedin_token.py` |
+| Pinterest | ❌ Thiếu credentials | Long-tail visual. Chạy: `social_agent/get_pinterest_token.py` |
+| Instagram | ❌ Thiếu credentials | Cần Business account. Chạy: `social_agent/get_instagram_token.py` |
+| Google Ads | ⚠️ Đang setup | Tag AW-17663925702 + conversion tracking đã gắn. Còn: tạo campaign đầu tiên theo `google_ads/LAUNCH_CHECKLIST.md` |
 | Affiliate Semrush | ⚠️ Pending approval | 40% recurring — ưu tiên #1 |
-| Email list | ❌ Chưa có | Cần build ngay |
+| Email list | ✅ Đã build (2026-07-06) | Form trên toàn bộ ~220 trang + exit-intent popup + trang `/newsletter/`. Signup gửi về email qua formsubmit.co. Conversion đo tại `/newsletter/thanks/` |
+
+### Email capture — đã triển khai 2026-07-06
+
+- **Form inline** trên tất cả trang review/blog/best/alternatives/compare/coupons/category (script: `inject_newsletter_sitewide.py`, chạy lại được — idempotent)
+- **Exit-intent popup** (main.js) giờ load trên 100% trang nội dung
+- **Landing page:** `/newsletter/` (có trong sitemap) — dùng làm link bio social, CTA cuối bài
+- **Trang cảm ơn:** `/newsletter/thanks/` (noindex) — mọi form redirect về đây → dùng làm **destination conversion** trong GA4 + Google Ads (event `newsletter_confirmed` tự bắn)
+- **Nâng cấp sau:** khi >100 subscribers, chuyển từ formsubmit.co sang beehiiv/ConvertKit (đổi `action` của form trong `inject_newsletter_sitewide.py` + `assets/js/main.js` rồi chạy lại)
 
 ---
 
