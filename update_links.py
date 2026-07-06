@@ -82,14 +82,21 @@ def make_review_card(slug, name, score, category, description, url):
 
 
 def make_compare_card(slug, name, score, category, description, url):
-    tools = slug.replace("-vs-", " vs ").title()
+    # compare/index.html's grid uses .compare-card/.compare-vs/.compare-tool-label/
+    # .compare-vs-badge — NOT .review-card (that class isn't even defined on this
+    # page). Match the established template so new cards aren't unstyled
+    # (found 2026-07-06: 19 cards had silently rendered with zero CSS for months).
+    if " vs " in name:
+        tool_a, tool_b = name.split(" vs ", 1)
+    else:
+        parts = slug.split("-vs-")
+        tool_a = parts[0].replace("-", " ").title()
+        tool_b = parts[1].replace("-", " ").title() if len(parts) > 1 else ""
     return f"""      <a href="{url}" style="text-decoration:none;color:inherit;" data-cat="{category}" data-name="{name}">
-        <div class="review-card">
-          <div class="review-card-header">
-            <div><div class="review-card-title">{tools}</div></div>
-          </div>
-          <p class="review-card-desc">{description}</p>
-          <span class="btn btn-sm btn-secondary" style="font-size:0.8rem;">Compare →</span>
+        <div class="compare-card">
+          <div class="compare-vs"><span class="compare-tool-label">{tool_a}</span><span class="compare-vs-badge">VS</span><span class="compare-tool-label">{tool_b}</span></div>
+          <p style="font-size:0.875rem;color:var(--color-text-muted);margin-top:0.5rem;">{description}</p>
+          <span style="font-size:0.875rem;color:var(--color-primary);font-weight:600;">Read comparison →</span>
         </div>
       </a>"""
 
@@ -104,6 +111,44 @@ def make_generic_card(slug, name, score, category, description, url, cta="View �
           <span class="btn btn-sm btn-secondary" style="font-size:0.8rem;">{cta}</span>
         </div>
       </a>"""
+
+
+def make_alt_index_card(slug, name, score, category, description, url):
+    # alternatives/index.html's grid uses .alt-index-card/.alt-count/.alt-top-pick —
+    # NOT .review-card (found 2026-07-06, same bug as compare's card mismatch).
+    # "Top Pick" needs an editorial claim we can't reliably auto-extract from the
+    # page, so that line is omitted rather than guessed.
+    title = name if name.lower().endswith("alternatives") else f"Best {name} Alternatives"
+    return f"""      <a href="{url}" style="text-decoration:none;color:inherit;" data-cat="{category}" data-name="{name}">
+        <div class="alt-index-card">
+          <h3>{title}</h3>
+          <p class="review-card-desc">{description}</p>
+          <span style="font-size:0.875rem;color:var(--color-primary);font-weight:600;">See alternatives →</span>
+        </div>
+      </a>"""
+
+
+BEST_EMOJI = {
+    "agencies": "🏢", "bloggers": "✍️", "developers": "👨‍💻",
+    "marketers": "📈", "students": "🎓",
+}
+
+
+def make_best_card(slug, name, score, category, description, url):
+    # best/index.html's "Deep-Dive Best-Of Lists" grid has no CSS class at all —
+    # every card is hand-styled inline (found 2026-07-06). Match that structure
+    # so a new card isn't left completely unstyled.
+    emoji = "🤖"
+    for key, e in BEST_EMOJI.items():
+        if key in slug:
+            emoji = e
+            break
+    return f"""    <a href="{url}" style="text-decoration:none;display:block;border:1px solid rgba(249,115,22,0.35);border-radius:var(--radius-lg);padding:1.25rem;background:linear-gradient(135deg,rgba(249,115,22,0.07),rgba(251,191,36,0.03));color:inherit;" data-cat="{category}" data-name="{name}">
+      <div style="font-size:1.5rem;margin-bottom:0.5rem;">{emoji}</div>
+      <div style="font-weight:800;font-size:1rem;margin-bottom:0.35rem;">{name}</div>
+      <div style="font-size:0.8rem;color:var(--color-text-muted);">{description}</div>
+      <div style="margin-top:0.75rem;font-size:0.8rem;color:#f97316;font-weight:600;">Read →</div>
+    </a>"""
 
 
 def inject_card_into_index(page_type, slug, name, score, category, description):
@@ -133,8 +178,11 @@ def inject_card_into_index(page_type, slug, name, score, category, description):
         card = make_compare_card(slug, name, score, category, description, url)
         cta = "Compare →"
     elif page_type == "alternatives":
-        card = make_generic_card(slug, name, score, category, description, url, "See Alternatives →")
+        card = make_alt_index_card(slug, name, score, category, description, url)
         cta = "See Alternatives →"
+    elif page_type == "best":
+        card = make_best_card(slug, name, score, category, description, url)
+        cta = "Read →"
     else:
         card = make_generic_card(slug, name, score, category, description, url, "View →")
         cta = "View →"
