@@ -6,14 +6,6 @@
   <title>Writesonic Free Plan — Start Free Today | RankerToolAI</title>
   <meta name="robots" content="noindex, nofollow">
   <link rel="canonical" href="https://rankertoolai.com/go/writesonic/">
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-81KB8ECCVF"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-81KB8ECCVF');
-  </script>
   <script async src="/assets/js/pint.js"></script>
 
   <style>
@@ -87,7 +79,50 @@
     .footer-note { margin-top: 24px; font-size: 11px; color: #555; line-height: 1.6; }
     .footer-note a { color: #059669; text-decoration: none; }
   </style>
-</head>
+  
+  <!-- ═══ ANALYTICS & ADS TRACKING ═══ -->
+  <!-- Google tag (gtag.js) — GA4 + Google Ads -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-81KB8ECCVF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-81KB8ECCVF');
+    gtag('config', 'AW-17663925702');
+
+    // Conversion: affiliate click (fires when user clicks /go/ link)
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('a[href*="/go/"]').forEach(function(el) {
+        el.addEventListener('click', function() {
+          gtag('event', 'conversion', {
+            'send_to': 'AW-17663925702/zc7PCJ-9nMscEMa76OZB',
+            'value': 1.0,
+            'currency': 'USD'
+          });
+          gtag('event', 'affiliate_click', {
+            'tool': el.href.split('/go/')[1]?.replace(/\//g,'') || 'unknown',
+            'page': window.location.pathname
+          });
+        });
+      });
+
+      // Conversion: 60-second engaged page view
+      setTimeout(function() {
+        gtag('event', 'conversion', {'send_to': 'AW-17663925702/DfXPCNLAucscEMa76OZB'});
+      }, 60000);
+    });
+  </script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window,document,"clarity","script","x97zf4vn2v");
+  </script>
+  <!-- ══════════════════════════════════ -->
+  </head>
 <body>
 
 <div class="card">

@@ -78,20 +78,42 @@
     .faq-item p{font-size:0.9rem;color:rgba(148,163,184,0.85);margin:0;line-height:1.7;}
     #back-to-top{display:none;position:fixed;bottom:1.5rem;right:1.5rem;width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#f97316,#fbbf24);color:white;align-items:center;justify-content:center;font-size:1.25rem;cursor:pointer;border:none;box-shadow:0 4px 20px rgba(249,115,22,0.5);z-index:50;transition:all 0.15s;}
   </style>
-
+  <script async src="/assets/js/pint.js"></script>
+  
+  <!-- ═══ ANALYTICS & ADS TRACKING ═══ -->
+  <!-- Google tag (gtag.js) — GA4 + Google Ads -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-81KB8ECCVF"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-81KB8ECCVF');    document.addEventListener('DOMContentLoaded', function() {
+    gtag('config', 'G-81KB8ECCVF');
+    gtag('config', 'AW-17663925702');
+
+    // Conversion: affiliate click (fires when user clicks /go/ link)
+    document.addEventListener('DOMContentLoaded', function() {
       document.querySelectorAll('a[href*="/go/"]').forEach(function(el) {
         el.addEventListener('click', function() {
-          gtag('event', 'affiliate_click', {'tool': el.href.split('/go/')[1]?.replace(/\//g,'') || 'unknown','page': window.location.pathname});
+          gtag('event', 'conversion', {
+            'send_to': 'AW-17663925702/zc7PCJ-9nMscEMa76OZB',
+            'value': 1.0,
+            'currency': 'USD'
+          });
+          gtag('event', 'affiliate_click', {
+            'tool': el.href.split('/go/')[1]?.replace(/\//g,'') || 'unknown',
+            'page': window.location.pathname
+          });
         });
       });
+
+      // Conversion: 60-second engaged page view
+      setTimeout(function() {
+        gtag('event', 'conversion', {'send_to': 'AW-17663925702/DfXPCNLAucscEMa76OZB'});
+      }, 60000);
     });
   </script>
+
+  <!-- Microsoft Clarity -->
   <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
       c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -99,8 +121,8 @@
       y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window,document,"clarity","script","x97zf4vn2v");
   </script>
-  <script async src="/assets/js/pint.js"></script>
-</head>
+  <!-- ══════════════════════════════════ -->
+  </head>
 <body>
 <button id="back-to-top" aria-label="Back to top">↑</button>
 

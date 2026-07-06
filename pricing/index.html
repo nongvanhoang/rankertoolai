@@ -18,8 +18,6 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
   <link rel="stylesheet" href="/assets/css/base.css">
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-81KB8ECCVF"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-81KB8ECCVF');</script>
   <style>
     .pricing-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:1.5rem; margin-top:2rem; }
     .pricing-card { background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:1.75rem; text-decoration:none; color:inherit; display:flex; flex-direction:column; gap:1rem; transition:transform 0.15s,border-color 0.15s,background 0.15s; }
@@ -33,7 +31,50 @@
     .hero h1 { font-size:clamp(1.8rem,4vw,2.8rem); font-weight:900; margin-bottom:0.75rem; }
     .hero p { font-size:1.05rem; color:rgba(148,163,184,0.8); max-width:600px; margin:0 auto; }
   </style>
-</head>
+  
+  <!-- ═══ ANALYTICS & ADS TRACKING ═══ -->
+  <!-- Google tag (gtag.js) — GA4 + Google Ads -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-81KB8ECCVF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-81KB8ECCVF');
+    gtag('config', 'AW-17663925702');
+
+    // Conversion: affiliate click (fires when user clicks /go/ link)
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('a[href*="/go/"]').forEach(function(el) {
+        el.addEventListener('click', function() {
+          gtag('event', 'conversion', {
+            'send_to': 'AW-17663925702/zc7PCJ-9nMscEMa76OZB',
+            'value': 1.0,
+            'currency': 'USD'
+          });
+          gtag('event', 'affiliate_click', {
+            'tool': el.href.split('/go/')[1]?.replace(/\//g,'') || 'unknown',
+            'page': window.location.pathname
+          });
+        });
+      });
+
+      // Conversion: 60-second engaged page view
+      setTimeout(function() {
+        gtag('event', 'conversion', {'send_to': 'AW-17663925702/DfXPCNLAucscEMa76OZB'});
+      }, 60000);
+    });
+  </script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window,document,"clarity","script","x97zf4vn2v");
+  </script>
+  <!-- ══════════════════════════════════ -->
+  </head>
 <body>
 <nav class="site-nav">
   <div class="container nav-inner">
