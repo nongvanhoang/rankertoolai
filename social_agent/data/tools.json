@@ -1369,5 +1369,42 @@
       "Autocomplete quality solid but not clearly ahead of free alternatives like Codeium",
       "Self-hosted deployment needs more setup than cloud competitors"
     ]
+  },
+  {
+    "name": "Context.dev",
+    "slug": "context",
+    "score": 8.2,
+    "category": "Web Scraping & Data API",
+    "tagline": "Web scraping + brand intelligence API for AI agents and RAG pipelines",
+    "url": "https://rankertoolai.com/review/context/",
+    "affiliate_url": "https://rankertoolai.com/go/context/",
+    "price": "Free 500 credits/mo, $25/mo Developer",
+    "best_for": "Developers building AI agents or RAG systems that need live web context",
+    "pros": [
+      "Combines URL-to-markdown/HTML/JSON scraping with brand intelligence extraction in one API",
+      "SDKs for TypeScript, Python, Ruby, Go, and PHP",
+      "500 free credits/month, no credit card required"
+    ],
+    "cons": [
+      "Credit-based pricing harder to forecast at scale — brand extraction costs 10x a basic scrape",
+      "Overkill for occasional, one-off scraping needs"
+    ],
+    "hashtags": [
+      "#ContextDev",
+      "#WebScraping",
+      "#RAG",
+      "#AIAgents",
+      "#DeveloperTools"
+    ],
+    "reddit_subs": [
+      "r/LangChain",
+      "r/artificial",
+      "r/webscraping",
+      "r/SaaS"
+    ],
+    "quora_topics": [
+      "best web scraping API for AI agents",
+      "Context.dev review"
+    ]
   }
 ]
