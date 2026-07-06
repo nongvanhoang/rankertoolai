@@ -8,8 +8,11 @@
 
 > **Cập nhật 2026-07-06:** Bước 1–4 đã xong (account AW-17663925702, 2 conversion actions,
 > config.json + tracking đã inject, campaign CSV đã generate lại 2026-07-06 sau khi
-> sửa 9 URL đích bị 404 trong generator — dùng file `google_ads_campaign_all_20260706_0442.csv`
-> và `negative_keywords_20260706_0440.csv`, generator giờ tự cảnh báo nếu URL đích không tồn tại).
+> sửa 9 URL đích bị 404 trong generator — dùng file `google_ads_campaign_all_20260706_0452.csv`
+> và `negative_keywords_20260706_0450.csv`, generator giờ tự cảnh báo nếu URL đích không tồn tại).
+> CSV đã audit đạt chuẩn Editor 2026-07-06: format wide (1 dòng/entity, cột Headline 1-15,
+> Description 1-4), headline ≤30 ký tự không cắt cụt, description ≤90 kết thúc trọn câu,
+> display path ≤15, không headline trùng, không xung đột negative↔keyword, 32/32 URL đích tồn tại.
 > **Còn lại: BƯỚC 5 (upload qua Google Ads Editor) + BƯỚC 6 (bật campaign, set budget).**
 
 ## PRE-LAUNCH (cần hoàn thành trước)
@@ -90,7 +93,7 @@ python setup/inject_tracking.py --verify
 
 ---
 
-## BƯỚC 4 — Generate Campaign CSV (10 phút) ✅ XONG (data/google_ads_campaign_all_20260706_0442.csv + negative_keywords_20260706_0440.csv)
+## BƯỚC 4 — Generate Campaign CSV (10 phút) ✅ XONG (data/google_ads_campaign_all_20260706_0452.csv + negative_keywords_20260706_0450.csv)
 
 ```bash
 python google_ads/campaigns/generate_campaigns.py

@@ -62,8 +62,9 @@ def generate():
     for category, keywords in NEGATIVE_KEYWORDS.items():
         for kw in keywords:
             # Add as both broad and phrase for maximum coverage
+            # Broad negative already blocks any query containing the term; a quoted
+            # phrase duplicate imports the quotes literally and breaks the negative.
             rows.append([kw, "Broad", "All Campaigns", category])
-            rows.append([f'"{kw}"', "Phrase", "All Campaigns", category])
             total += 2
 
     with open(out_path, "w", newline="", encoding="utf-8") as f:

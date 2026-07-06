@@ -288,6 +288,67 @@ BEST_CATEGORIES = {
     "ai-productivity-tools": "AI Productivity Tool",
 }
 
+
+# ── EDITOR-SAFE SERIALIZATION ────────────────────────────────────────────────
+# Google Ads Editor imports a wide CSV: one row per entity, RSA headlines and
+# descriptions as columns. Hard limits: headline 30, description 90, path 15.
+
+EDITOR_COLUMNS = (
+    ["Campaign", "Campaign Daily Budget", "Campaign Type", "Networks", "Campaign Status",
+     "Ad Group", "Ad Group Status", "Max CPC", "Keyword", "Criterion Type", "Status",
+     "Ad Type", "Final URL", "Path 1", "Path 2"]
+    + [f"Headline {i}" for i in range(1, 16)]
+    + [f"Description {i}" for i in range(1, 5)]
+)
+
+STOP_TAIL = {"vs", "or", "and", "with", "for", "the", "in", "of", "to", "on",
+             "a", "an", "is", "your", "our", "at", "by", "from", "which", "see"}
+
+def smart_trim(text: str, limit: int) -> str:
+    """Trim to limit at a word boundary; never leave dangling punctuation
+    or a trailing connector word ("... Midjourney vs")."""
+    text = text.strip()
+    if len(text) <= limit:
+        return text.rstrip(" ,;:—–-(&/")
+    cut = text[:limit]
+    if text[limit] != " " and " " in cut:  # only backtrack on a mid-word cut
+        cut = cut[:cut.rfind(" ")]
+    cut = cut.rstrip(" ,;:—–-(&/")
+    words = cut.split(" ")
+    while words and words[-1].lower().strip(",:;—–-?") in STOP_TAIL:
+        words.pop()
+    return " ".join(words).rstrip(" ,;:—–-(&/")
+
+def clean_headlines(headlines: list) -> list:
+    out, seen = [], set()
+    for h in headlines:
+        h = smart_trim(h, 30)
+        if h and h.lower() not in seen:
+            seen.add(h.lower())
+            out.append(h)
+    return out[:15]
+
+def clean_descriptions(descs: list) -> list:
+    out, seen = [], set()
+    for d in descs:
+        d = smart_trim(d, 89)
+        if d and not d.endswith((".", "!", "?")):
+            d += "."
+        if d and d.lower() not in seen:
+            seen.add(d.lower())
+            out.append(d)
+    return out[:4]
+
+def clamp_path(path: str) -> str:
+    """Display paths max 15 chars; cut at a dash boundary when possible."""
+    path = path.strip()
+    if len(path) <= 15:
+        return path
+    cut = path[:15]
+    if "-" in cut:
+        cut = cut[:cut.rfind("-")]
+    return cut.rstrip("-")
+
 def generate_csv(campaign_type="all", tool_slug=None, preview=False):
     tools_list = load_tools()
     cfg = load_config()
@@ -295,25 +356,32 @@ def generate_csv(campaign_type="all", tool_slug=None, preview=False):
     budget = cfg["budget"]
 
     rows = []
-    rows.append(["Type", "Campaign", "Ad Group", "Match Type", "Keyword / Ad Element", "Value", "Max CPC", "Status", "Final URL"])
 
     def add_campaign(name, daily_budget):
-        rows.append(["Campaign", name, "", "", "", "", "", "Enabled", ""])
-        rows.append(["Campaign Budget", name, "", "", "Daily Budget", str(daily_budget), "", "", ""])
+        rows.append({"Campaign": name, "Campaign Daily Budget": f"{daily_budget:.2f}",
+                     "Campaign Type": "Search", "Networks": "Google search",
+                     "Campaign Status": "Enabled"})
 
     def add_ad_group(campaign, group_name):
-        rows.append(["Ad Group", campaign, group_name, "", "", "", "", "Enabled", ""])
+        rows.append({"Campaign": campaign, "Ad Group": group_name, "Ad Group Status": "Enabled"})
 
     def add_keyword(campaign, group, kw):
-        rows.append(["Keyword", campaign, group, kw["match"], kw["keyword"], "", str(kw["bid"]), "Enabled", ""])
+        rows.append({"Campaign": campaign, "Ad Group": group, "Keyword": kw["keyword"],
+                     "Criterion Type": kw["match"], "Max CPC": str(kw["bid"]), "Status": "Enabled"})
 
     def add_ad(campaign, group, ad):
-        for i, h in enumerate(ad["headlines"], 1):
-            rows.append([f"Headline {i}", campaign, group, "", h[:30], "", "", "", ad["final_url"]])
-        for i, d in enumerate(ad["descriptions"], 1):
-            rows.append([f"Description {i}", campaign, group, "", d[:90], "", "", "", ""])
-        rows.append(["Display URL Path 1", campaign, group, "", ad.get("display_url_path1",""), "", "", "", ""])
-        rows.append(["Display URL Path 2", campaign, group, "", ad.get("display_url_path2",""), "", "", "", ""])
+        row = {"Campaign": campaign, "Ad Group": group, "Ad Type": "Responsive search ad",
+               "Status": "Enabled", "Final URL": ad["final_url"],
+               "Path 1": clamp_path(ad.get("display_url_path1", "")),
+               "Path 2": clamp_path(ad.get("display_url_path2", ""))}
+        headlines = clean_headlines(ad["headlines"])
+        descriptions = clean_descriptions(ad["descriptions"])
+        assert len(headlines) >= 3 and len(descriptions) >= 2, f"RSA under minimums: {campaign} / {group}"
+        for i, h in enumerate(headlines, 1):
+            row[f"Headline {i}"] = h
+        for i, d in enumerate(descriptions, 1):
+            row[f"Description {i}"] = d
+        rows.append(row)
 
     # ── REVIEW CAMPAIGN ────────────────────────────────────────────────────────
     if campaign_type in ("all", "review"):
@@ -382,9 +450,9 @@ def generate_csv(campaign_type="all", tool_slug=None, preview=False):
     # Guard: every destination must be a real page in the repo
     site_root = Path(__file__).parent.parent.parent
     missing = set()
-    for row in rows[1:]:
-        u = row[8] if len(row) > 8 else ""
-        if u and u.startswith("http"):
+    for row in rows:
+        u = row.get("Final URL", "")
+        if u.startswith("http"):
             rel = u.split("rankertoolai.com", 1)[-1].split("?")[0].strip("/")
             if rel and not (site_root / rel / "index.html").exists():
                 missing.add(u)
@@ -394,9 +462,8 @@ def generate_csv(campaign_type="all", tool_slug=None, preview=False):
             print(f"  404: {u}")
 
     if preview:
-        # Print first 40 rows
-        for row in rows[:40]:
-            print(" | ".join(str(c) for c in row))
+        for row in rows[:20]:
+            print(" | ".join(f"{k}={v}" for k, v in row.items() if v))
         print(f"\n... ({len(rows)} total rows)")
         return
 
@@ -405,7 +472,8 @@ def generate_csv(campaign_type="all", tool_slug=None, preview=False):
     filename = f"google_ads_campaign_{campaign_type}_{ts}.csv"
     out_path = OUT_DIR / filename
     with open(out_path, "w", newline="", encoding="utf-8") as f:
-        writer = csv.writer(f)
+        writer = csv.DictWriter(f, fieldnames=EDITOR_COLUMNS)
+        writer.writeheader()
         writer.writerows(rows)
 
     print(f"\n[generate_campaigns] Campaign CSV generated:")

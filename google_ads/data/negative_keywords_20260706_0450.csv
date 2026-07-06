@@ -1,0 +1,81 @@
+Keyword,Match Type,Campaign / List,Notes
+job,Broad,All Campaigns,Job / Career (not buyers)
+jobs,Broad,All Campaigns,Job / Career (not buyers)
+career,Broad,All Campaigns,Job / Career (not buyers)
+careers,Broad,All Campaigns,Job / Career (not buyers)
+hire,Broad,All Campaigns,Job / Career (not buyers)
+hiring,Broad,All Campaigns,Job / Career (not buyers)
+salary,Broad,All Campaigns,Job / Career (not buyers)
+internship,Broad,All Campaigns,Job / Career (not buyers)
+work at,Broad,All Campaigns,Job / Career (not buyers)
+work for,Broad,All Campaigns,Job / Career (not buyers)
+employee,Broad,All Campaigns,Job / Career (not buyers)
+apply,Broad,All Campaigns,Job / Career (not buyers)
+free download,Broad,All Campaigns,Free / Cracked (non-buyers)
+crack,Broad,All Campaigns,Free / Cracked (non-buyers)
+cracked,Broad,All Campaigns,Free / Cracked (non-buyers)
+pirate,Broad,All Campaigns,Free / Cracked (non-buyers)
+torrent,Broad,All Campaigns,Free / Cracked (non-buyers)
+nulled,Broad,All Campaigns,Free / Cracked (non-buyers)
+keygen,Broad,All Campaigns,Free / Cracked (non-buyers)
+serial key,Broad,All Campaigns,Free / Cracked (non-buyers)
+license key free,Broad,All Campaigns,Free / Cracked (non-buyers)
+activate free,Broad,All Campaigns,Free / Cracked (non-buyers)
+thesis,Broad,All Campaigns,Education / Research (low purchase intent)
+dissertation,Broad,All Campaigns,Education / Research (low purchase intent)
+essay,Broad,All Campaigns,Education / Research (low purchase intent)
+homework,Broad,All Campaigns,Education / Research (low purchase intent)
+assignment,Broad,All Campaigns,Education / Research (low purchase intent)
+what is,Broad,All Campaigns,Education / Research (low purchase intent)
+definition,Broad,All Campaigns,Education / Research (low purchase intent)
+how does,Broad,All Campaigns,Education / Research (low purchase intent)
+history of,Broad,All Campaigns,Education / Research (low purchase intent)
+wikipedia,Broad,All Campaigns,Education / Research (low purchase intent)
+research paper,Broad,All Campaigns,Education / Research (low purchase intent)
+academic,Broad,All Campaigns,Education / Research (low purchase intent)
+news,Broad,All Campaigns,"News / General Info (informational, no purchase)"
+latest news,Broad,All Campaigns,"News / General Info (informational, no purchase)"
+update,Broad,All Campaigns,"News / General Info (informational, no purchase)"
+announcement,Broad,All Campaigns,"News / General Info (informational, no purchase)"
+press release,Broad,All Campaigns,"News / General Info (informational, no purchase)"
+stock,Broad,All Campaigns,"News / General Info (informational, no purchase)"
+ipo,Broad,All Campaigns,"News / General Info (informational, no purchase)"
+funding,Broad,All Campaigns,"News / General Info (informational, no purchase)"
+valuation,Broad,All Campaigns,"News / General Info (informational, no purchase)"
+scam,Broad,All Campaigns,Complaints (avoid negative sentiment)
+fraud,Broad,All Campaigns,Complaints (avoid negative sentiment)
+fake,Broad,All Campaigns,Complaints (avoid negative sentiment)
+legit,Broad,All Campaigns,Complaints (avoid negative sentiment)
+safe,Broad,All Campaigns,Complaints (avoid negative sentiment)
+dangerous,Broad,All Campaigns,Complaints (avoid negative sentiment)
+hacked,Broad,All Campaigns,Complaints (avoid negative sentiment)
+data breach,Broad,All Campaigns,Complaints (avoid negative sentiment)
+privacy issue,Broad,All Campaigns,Complaints (avoid negative sentiment)
+cancelled,Broad,All Campaigns,Complaints (avoid negative sentiment)
+photoshop,Broad,All Campaigns,Unrelated Tools
+microsoft word,Broad,All Campaigns,Unrelated Tools
+excel,Broad,All Campaigns,Unrelated Tools
+google docs,Broad,All Campaigns,Unrelated Tools
+powerpoint,Broad,All Campaigns,Unrelated Tools
+gmail,Broad,All Campaigns,Unrelated Tools
+outlook,Broad,All Campaigns,Unrelated Tools
+slack,Broad,All Campaigns,Unrelated Tools
+zoom,Broad,All Campaigns,Unrelated Tools
+tiktok,Broad,All Campaigns,Unrelated Tools
+instagram,Broad,All Campaigns,Unrelated Tools
+facebook,Broad,All Campaigns,Unrelated Tools
+youtube creator,Broad,All Campaigns,Unrelated Tools
+customer service,Broad,All Campaigns,Support / Customer Service
+support number,Broad,All Campaigns,Support / Customer Service
+help desk,Broad,All Campaigns,Support / Customer Service
+refund,Broad,All Campaigns,Support / Customer Service
+cancel subscription,Broad,All Campaigns,Support / Customer Service
+contact,Broad,All Campaigns,Support / Customer Service
+phone number,Broad,All Campaigns,Support / Customer Service
+github repo,Broad,All Campaigns,Coding / Technical for wrong audience
+open source,Broad,All Campaigns,Coding / Technical for wrong audience
+self hosted,Broad,All Campaigns,Coding / Technical for wrong audience
+docker,Broad,All Campaigns,Coding / Technical for wrong audience
+kubernetes,Broad,All Campaigns,Coding / Technical for wrong audience
+api documentation,Broad,All Campaigns,Coding / Technical for wrong audience
+sdk tutorial,Broad,All Campaigns,Coding / Technical for wrong audience
