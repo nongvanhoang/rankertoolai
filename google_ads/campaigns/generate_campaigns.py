@@ -80,6 +80,21 @@ def best_keywords(category: str) -> list[dict]:
         {"keyword": f"{c} review",            "match": "Phrase", "bid": 1.60},
     ]
 
+def deal_keywords(name: str, has_code: bool) -> list[dict]:
+    n = name.lower()
+    kws = [
+        {"keyword": f"{n} discount",          "match": "Exact", "bid": 1.00},
+        {"keyword": f"{n} deal",              "match": "Exact", "bid": 1.00},
+        {"keyword": f"{n} free trial",        "match": "Exact", "bid": 1.10},
+    ]
+    if has_code:
+        kws += [
+            {"keyword": f"{n} coupon code",   "match": "Exact", "bid": 0.90},
+            {"keyword": f"{n} promo code",    "match": "Exact", "bid": 0.90},
+            {"keyword": f"{n} discount code 2026", "match": "Exact", "bid": 0.90},
+        ]
+    return kws
+
 # ── AD COPY TEMPLATES ─────────────────────────────────────────────────────────
 
 def review_ads(tool: dict, cfg: dict) -> list[dict]:
@@ -193,7 +208,62 @@ def best_ads(category: str, tools_list: list, cfg: dict) -> list[dict]:
         ][:4],
     }]
 
+def deal_ads(tool: dict, deal: dict, cfg: dict) -> list[dict]:
+    name = tool["name"]
+    slug = tool["slug"]
+    site = cfg["site_url"]
+    url = f"{site}/go/{slug}/"
+    offer = deal["offer"]
+    code = deal.get("code")
+
+    code_line = f"Use code {code} at checkout. " if code else ""
+    headlines = [
+        f"{name} {offer}",
+        f"{name} Coupon Code" if code else f"{name} Free Trial",
+        f"{name}: {offer}",
+        f"Get {offer} on {name}",
+        code if code else f"{name} Deal Verified",
+        "Verified July 2026",
+        f"{name} Discount — Apply Now",
+        f"No Card Needed" if "trial" in offer.lower() else f"{name} Checkout Discount",
+        f"{name} Official Deal",
+        f"Best {name} Price 2026",
+        f"{name} — Exclusive Reader Deal",
+        f"Apply {code}" if code else f"Try {name} Free",
+        f"{name} Savings Inside",
+        "Limited-Time Offer",
+        f"{name} Pricing + Discount",
+    ][:15]
+    descriptions = [
+        f"{code_line}{offer} on {name}. Verified working July 2026. Click through for details.",
+        f"Exclusive {name} deal for RankerToolAI readers: {offer}. {code_line}No hidden fees.",
+        f"{name}: {offer}. See how it compares before you buy — full review + deal details inside.",
+        f"Save on {name} today. {code_line}Offer verified and updated regularly.",
+    ][:4]
+
+    return [{
+        "type": "Responsive Search Ad",
+        "final_url": url,
+        "display_url_path1": "Deal",
+        "display_url_path2": name.replace(" ", "-")[:15],
+        "headlines": headlines,
+        "descriptions": descriptions,
+    }]
+
 # ── CSV EXPORT ────────────────────────────────────────────────────────────────
+
+# Minimum-budget test set — tools with a live affiliate link + confirmed real
+# offer (coupon code or verified % off / trial). One campaign each so spend
+# and conversions can be compared cleanly instead of sharing one campaign budget.
+DEAL_TOOLS = {
+    "julius-ai":  {"offer": "10% Off First Payment", "code": "25RQK3UL"},
+    "se-ranking": {"offer": "15% Off First Purchase", "code": "welcome15"},
+    "pictory":    {"offer": "Exclusive Checkout Discount", "code": "RankerToolAI"},
+    "elevenlabs": {"offer": "50% Off First Month", "code": None},
+    "beehiiv":    {"offer": "14-Day Trial + 20% Off 3 Months", "code": None},
+    "mangools":   {"offer": "10-Day Free Trial", "code": None},
+    "wispr-flow": {"offer": "14-Day Free Pro Trial", "code": None},
+}
 
 COMPARE_PAIRS = [
     ("chatgpt", "claude"), ("chatgpt", "gemini"), ("claude", "gemini"),
@@ -273,6 +343,23 @@ def generate_csv(campaign_type="all", tool_slug=None, preview=False):
                 for ad in compare_ads(t1, t2, cfg):
                     add_ad(campaign, group, ad)
 
+    # ── DEAL TEST CAMPAIGN (minimum-budget, one campaign per tool) ─────────────
+    if campaign_type in ("all", "deals"):
+        deal_daily_budget = budget.get("deal_test_daily_budget_usd", 3)
+        deal_targets = {tool_slug: DEAL_TOOLS[tool_slug]} if tool_slug and tool_slug in DEAL_TOOLS else DEAL_TOOLS
+        for slug, deal in deal_targets.items():
+            if slug not in tools:
+                continue
+            tool = tools[slug]
+            campaign = f"RankerToolAI - Deal Test - {tool['name']}"
+            add_campaign(campaign, deal_daily_budget)
+            group = f"{tool['name']} Deal"
+            add_ad_group(campaign, group)
+            for kw in deal_keywords(tool["name"], has_code=bool(deal.get("code"))):
+                add_keyword(campaign, group, kw)
+            for ad in deal_ads(tool, deal, cfg):
+                add_ad(campaign, group, ad)
+
     # ── BEST-OF CAMPAIGN ───────────────────────────────────────────────────────
     if campaign_type in ("all", "best") and not tool_slug:
         campaign = "RankerToolAI - Best AI Tools"
@@ -313,7 +400,7 @@ def generate_csv(campaign_type="all", tool_slug=None, preview=False):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--type", default="all", choices=["all","review","compare","best"])
+    parser.add_argument("--type", default="all", choices=["all","review","compare","best","deals"])
     parser.add_argument("--tool", help="Single tool slug")
     parser.add_argument("--preview", action="store_true")
     args = parser.parse_args()

@@ -131,14 +131,72 @@ Maintain this database. Update it when programs change.
     "tool": "Pictory",
     "slug": "pictory",
     "program_name": "Pictory Affiliate Program",
-    "platform": "PartnerStack",
+    "platform": "Direct",
     "commission": "20% recurring",
     "cookie_days": 30,
     "payout_schedule": "Monthly",
-    "tracking_url": "https://pictory.ai/?via=rankertoolai",
+    "tracking_url": "https://pictory.ai/?fpr=hoang75",
     "go_url": "https://rankertoolai.com/go/pictory/",
+    "coupon_code": "RankerToolAI",
+    "coupon_note": "Exclusive discount at checkout",
     "status": "active",
-    "notes": ""
+    "notes": "Verified 2026-07-04 — go page appends fpr=hoang75 via JS on top of base pictory.ai URL"
+  }
+]
+```
+
+### Verified Active — Confirmed 2026-07-04
+
+```json
+[
+  {
+    "tool": "Beehiiv",
+    "slug": "beehiiv",
+    "platform": "Direct",
+    "commission": "50% commission for 12 months",
+    "tracking_url": "https://www.beehiiv.com/?via=hoang-nong-van",
+    "go_url": "https://rankertoolai.com/go/beehiiv/",
+    "status": "active",
+    "notes": "Reader-side perk: 14-day trial + 20% off for 3 months"
+  },
+  {
+    "tool": "AirOps",
+    "slug": "airops",
+    "platform": "Rewardful",
+    "commission": "20% commission on all payments, first 12 months",
+    "tracking_url": "https://www.airops.com/?via=rankertoolai",
+    "go_url": "https://rankertoolai.com/go/airops/",
+    "status": "active",
+    "notes": "Joined 2026-07-04. Any page on airops.com can be linked by appending ?via=rankertoolai"
+  },
+  {
+    "tool": "SE Ranking",
+    "slug": "se-ranking",
+    "platform": "Direct",
+    "commission": "TBD",
+    "tracking_url": "https://seranking.com/?ga=5177462&source=link",
+    "go_url": "https://rankertoolai.com/go/se-ranking/",
+    "coupon_code": "welcome15",
+    "coupon_note": "15% off first payment",
+    "status": "active"
+  },
+  {
+    "tool": "Mangools",
+    "slug": "mangools",
+    "platform": "Direct",
+    "commission": "TBD",
+    "tracking_url": "https://mangools.com/#a6a3e9e286aee08d80045f92c",
+    "go_url": "https://rankertoolai.com/go/mangools/",
+    "status": "active"
+  },
+  {
+    "tool": "Wispr Flow",
+    "slug": "wispr-flow",
+    "platform": "Direct",
+    "commission": "TBD",
+    "tracking_url": "https://ref.wisprflow.ai/ranker-tool-ai",
+    "go_url": "https://rankertoolai.com/go/wispr-flow/",
+    "status": "active"
   }
 ]
 ```
