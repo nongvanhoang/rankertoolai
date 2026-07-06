@@ -17,6 +17,7 @@ GA4_REPORT_FILE = Path(__file__).parent / "ga4_report.json"
 SECTIONS = ["review", "compare", "alternatives", "best", "category"]
 
 AFFILIATE_DB = {
+    "context":          {"commission": "25% / 3yr",     "status": "active",  "priority": 2, "color": "green"},
     "jasper":           {"commission": "30% recurring", "status": "active",  "priority": 1, "color": "green"},
     "writesonic":       {"commission": "30% recurring", "status": "active",  "priority": 1, "color": "green"},
     "surfer-seo":       {"commission": "25% recurring", "status": "active",  "priority": 1, "color": "green"},
