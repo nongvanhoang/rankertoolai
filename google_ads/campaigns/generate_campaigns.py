@@ -138,7 +138,7 @@ def compare_ads(tool1: dict, tool2: dict, cfg: dict) -> list[dict]:
     n1, n2 = tool1["name"], tool2["name"]
     slug1, slug2 = tool1["slug"], tool2["slug"]
     site = cfg["site_url"]
-    url = f"{site}/compare/{slug1}-vs-{slug2}/"
+    url = f"{site}/compare/{COMPARE_URL_ALIASES.get((slug1, slug2), f'{slug1}-vs-{slug2}')}/"
 
     return [{
         "type": "Responsive Search Ad",
@@ -170,9 +170,8 @@ def compare_ads(tool1: dict, tool2: dict, cfg: dict) -> list[dict]:
         ][:4],
     }]
 
-def best_ads(category: str, tools_list: list, cfg: dict) -> list[dict]:
+def best_ads(category: str, tools_list: list, cfg: dict, slug: str) -> list[dict]:
     site = cfg["site_url"]
-    slug = category.lower().replace(" ", "-")
     url = f"{site}/best/{slug}/"
 
     names = [t["name"] for t in tools_list[:3]]
@@ -265,6 +264,10 @@ DEAL_TOOLS = {
     "wispr-flow": {"offer": "14-Day Free Pro Trial", "code": None},
 }
 
+COMPARE_URL_ALIASES = {
+    ("elevenlabs", "lovo-ai"): "elevenlabs-vs-lovo",
+}
+
 COMPARE_PAIRS = [
     ("chatgpt", "claude"), ("chatgpt", "gemini"), ("claude", "gemini"),
     ("cursor", "github-copilot"), ("cursor", "windsurf"),
@@ -279,7 +282,7 @@ BEST_CATEGORIES = {
     "ai-image-generators": "AI Image Generator",
     "ai-coding-tools": "AI Coding Tool",
     "ai-seo-tools": "AI SEO Tool",
-    "ai-voice-tools": "AI Voice Generator",
+    "ai-voice-generators": "AI Voice Generator",
     "ai-video-tools": "AI Video Tool",
     "ai-chatbots": "AI Chatbot",
     "ai-productivity-tools": "AI Productivity Tool",
@@ -373,8 +376,22 @@ def generate_csv(campaign_type="all", tool_slug=None, preview=False):
             add_ad_group(campaign, group)
             for kw in best_keywords(category):
                 add_keyword(campaign, group, kw)
-            for ad in best_ads(category, cat_tools, cfg):
+            for ad in best_ads(category, cat_tools, cfg, slug):
                 add_ad(campaign, group, ad)
+
+    # Guard: every destination must be a real page in the repo
+    site_root = Path(__file__).parent.parent.parent
+    missing = set()
+    for row in rows[1:]:
+        u = row[8] if len(row) > 8 else ""
+        if u and u.startswith("http"):
+            rel = u.split("rankertoolai.com", 1)[-1].split("?")[0].strip("/")
+            if rel and not (site_root / rel / "index.html").exists():
+                missing.add(u)
+    if missing:
+        print("\n[generate_campaigns] WARNING — Final URL không tồn tại trên site (sửa trước khi upload!):")
+        for u in sorted(missing):
+            print(f"  404: {u}")
 
     if preview:
         # Print first 40 rows

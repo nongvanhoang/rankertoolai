@@ -21,9 +21,18 @@ from datetime import datetime
 
 TOOLS_PATH = Path(__file__).parent.parent.parent / "social_agent" / "data" / "tools.json"
 CONFIG_PATH = Path(__file__).parent.parent / "data" / "config.json"
-OUT_DIR = Path(__file__).parent.parent.parent / "html" / "lp"
+OUT_DIR = Path(__file__).parent.parent.parent / "lp"
 
 EXTRA_DATA = {
+    "pictory": {
+        "hero": "Turn Blog Posts Into Videos in Minutes",
+        "sub": "No editing skills needed. 3M+ licensed stock clips, auto-captions at 95%+ accuracy.",
+        "cta": "Try Pictory Free",
+        "badge": "Exclusive Checkout Discount",
+        "trust": ["Blog-to-video in minutes", "Auto-captions 95%+ accuracy", "3M+ licensed stock clips", "No credit card for trial"],
+        "urgency": "Use code RankerToolAI at checkout for an exclusive discount",
+        "category": "AI Video Generator",
+    },
     "elevenlabs": {
         "hero": "Turn Text Into Studio-Quality Voice in Seconds",
         "sub": "Used by 1M+ creators. Most realistic AI voice in 2026.",

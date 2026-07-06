@@ -6,16 +6,26 @@
 
 ---
 
+> **Cập nhật 2026-07-06:** Bước 1–4 đã xong (account AW-17663925702, 2 conversion actions,
+> config.json + tracking đã inject, campaign CSV đã generate lại 2026-07-06 sau khi
+> sửa 9 URL đích bị 404 trong generator — dùng file `google_ads_campaign_all_20260706_0442.csv`
+> và `negative_keywords_20260706_0440.csv`, generator giờ tự cảnh báo nếu URL đích không tồn tại).
+> **Còn lại: BƯỚC 5 (upload qua Google Ads Editor) + BƯỚC 6 (bật campaign, set budget).**
+
 ## PRE-LAUNCH (cần hoàn thành trước)
 
-- [ ] Website có ít nhất 10 landing pages (/lp/) ✅ đã có 7
-- [ ] GA4 tracking đang hoạt động (G-81KB8ECCVF) ✅
-- [ ] /go/ redirect tracking đang hoạt động ✅
-- [ ] Đã test conversion flow: LP → /go/ → affiliate site
+- [x] Website có ít nhất 10 landing pages (/lp/) ✅ đã có 14
+- [x] GA4 tracking đang hoạt động (G-81KB8ECCVF) ✅
+- [x] /go/ redirect tracking đang hoạt động ✅
+- [x] Đã test conversion flow: LP → /go/ → affiliate site ✅ (test tự động 2026-07-06: LP render, click CTA bắn conversion AW-17663925702, /go/ redirect đúng link affiliate)
+
+**Gợi ý thêm (2026-07-06):** tạo thêm conversion action thứ 3 — "Newsletter Signup",
+loại Page view, đích là `https://rankertoolai.com/newsletter/thanks/` (mọi form newsletter
+trên site giờ redirect về trang này, event `newsletter_confirmed` cũng tự bắn qua GA4).
 
 ---
 
-## BƯỚC 1 — Tạo Google Ads Account (30 phút)
+## BƯỚC 1 — Tạo Google Ads Account (30 phút) ✅ XONG (AW-17663925702)
 
 ```
 1. Vào: https://ads.google.com
@@ -32,7 +42,7 @@
 
 ---
 
-## BƯỚC 2 — Tạo Conversion Actions (20 phút)
+## BƯỚC 2 — Tạo Conversion Actions (20 phút) ✅ XONG (2 actions, labels trong config.json)
 
 ```
 Goals > Conversions > New conversion action > Website
@@ -55,7 +65,7 @@ ACTION 2: Engaged Visit
 
 ---
 
-## BƯỚC 3 — Update config.json (5 phút)
+## BƯỚC 3 — Update config.json (5 phút) ✅ XONG (tracking đã inject site-wide)
 
 Mở file: `google_ads/data/config.json`
 
@@ -80,7 +90,7 @@ python setup/inject_tracking.py --verify
 
 ---
 
-## BƯỚC 4 — Generate Campaign CSV (10 phút)
+## BƯỚC 4 — Generate Campaign CSV (10 phút) ✅ XONG (data/google_ads_campaign_all_20260706_0442.csv + negative_keywords_20260706_0440.csv)
 
 ```bash
 python google_ads/campaigns/generate_campaigns.py
