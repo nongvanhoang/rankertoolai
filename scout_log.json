@@ -35,19 +35,37 @@
     "twelvelabs": {
       "name": "TwelveLabs",
       "first_seen": "2026-07-04",
-      "last_seen": "2026-07-05",
+      "last_seen": "2026-07-06",
       "tier_history": [
         {"date": "2026-07-04", "tier": "WATCH", "composite": 6.75},
-        {"date": "2026-07-05", "tier": "WATCH", "composite": 6.75}
+        {"date": "2026-07-05", "tier": "WATCH", "composite": 6.75},
+        {"date": "2026-07-06", "tier": "WATCH", "composite": 6.75}
       ]
     },
     "mina-meeting-assistant": {
       "name": "Mina Meeting Assistant",
       "first_seen": "2026-07-04",
-      "last_seen": "2026-07-05",
+      "last_seen": "2026-07-06",
       "tier_history": [
         {"date": "2026-07-04", "tier": "WATCH", "composite": 5.25},
-        {"date": "2026-07-05", "tier": "WATCH", "composite": 5.25}
+        {"date": "2026-07-05", "tier": "WATCH", "composite": 5.25},
+        {"date": "2026-07-06", "tier": "WATCH", "composite": 5.25}
+      ]
+    },
+    "klariqo": {
+      "name": "Klariqo",
+      "first_seen": "2026-07-06",
+      "last_seen": "2026-07-06",
+      "tier_history": [
+        {"date": "2026-07-06", "tier": "HOT", "composite": 7.5}
+      ]
+    },
+    "profound": {
+      "name": "Profound",
+      "first_seen": "2026-07-06",
+      "last_seen": "2026-07-06",
+      "tier_history": [
+        {"date": "2026-07-06", "tier": "WATCH", "composite": 5.75}
       ]
     }
   }
