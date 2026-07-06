@@ -65,26 +65,8 @@
     .sticky-cta-btn{flex-shrink:0;padding:0.55rem 1.25rem;background:linear-gradient(135deg,#f97316,#fbbf24);color:white;font-weight:700;border-radius:var(--radius);text-decoration:none;font-size:0.85rem;white-space:nowrap;}
     .sticky-cta-btn:hover{color:white;text-decoration:none;}
   </style>
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-81KB8ECCVF"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-81KB8ECCVF');
-    document.addEventListener('DOMContentLoaded', function() {
-      document.querySelectorAll('a[href*="/go/"]').forEach(function(el) {
-        el.addEventListener('click', function() {
-          gtag('event', 'affiliate_click', {
-            'tool': el.href.split('/go/')[1]?.replace(/\//g,'') || 'unknown',
-            'page': window.location.pathname
-          });
-        });
-      });
-    });
-  </script>
   <script async src="/assets/js/pint.js"></script>
-
+  
   <!-- ═══ ANALYTICS & ADS TRACKING ═══ -->
   <!-- Google tag (gtag.js) — GA4 + Google Ads -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-81KB8ECCVF"></script>

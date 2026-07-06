@@ -122,22 +122,42 @@ def strip_old_block(html: str) -> str:
 def strip_bare_ga4(html: str, ga4_id: str) -> str:
     """Remove the pre-existing bare GA4-only gtag snippet so the full
     Ads+GA4 snippet we inject doesn't load gtag.js / init dataLayer twice
-    (which would double-count GA4 pageviews)."""
+    (which would double-count GA4 pageviews). Non-greedy to the next
+    </script> rather than anchoring on an exact final gtag() call — some
+    landing-page generators add an extra gtag('config', 'AW-XXXXXXXXXX')
+    line before the closing tag, which an exact-match regex would miss,
+    leaving a dead duplicate block behind (found 2026-07-06)."""
     pattern = re.compile(
         r'\s*<script async src="https://www\.googletagmanager\.com/gtag/js\?id='
         + re.escape(ga4_id) +
-        r'"></script>\s*<script>\s*window\.dataLayer[\s\S]*?gtag\(\'config\',\s*\''
-        + re.escape(ga4_id) +
-        r'\'\);\s*</script>',
+        r'"></script>\s*<script>[\s\S]*?</script>',
+        re.IGNORECASE,
+    )
+    return pattern.sub("", html, count=1)
+
+def strip_bare_clarity(html: str) -> str:
+    """Remove a pre-existing bare Microsoft Clarity snippet so the copy in
+    our tracking block doesn't double-load the same session recorder.
+    Tolerant of several variants seen across the site's history (found
+    2026-07-06): the preceding '<!-- Microsoft Clarity -->' comment is
+    optional, the <script> tag may or may not carry type="text/javascript",
+    and the IIFE may start on the same line as <script> or its own line."""
+    pattern = re.compile(
+        r'\s*(?:<!--[^>]*[Cc]larity[^>]*-->\s*)?'
+        r'<script(?:\s+type="text/javascript")?>\s*'
+        r'\(function\(c,l,a,r,i,t,y\)\{\s*c\[a\]=c\[a\]\|\|function\(\)'
+        r'[\s\S]*?</script>',
         re.IGNORECASE,
     )
     return pattern.sub("", html, count=1)
 
 def inject_into_page(html: str, snippet: str, ga4_id: str) -> str:
-    """Strip any previous tracking (stale full block or bare GA4-only tag),
-    then insert the current tracking snippet just before </head>."""
+    """Strip any previous tracking (stale full block, bare GA4-only tag, or
+    bare Clarity snippet), then insert the current tracking snippet just
+    before </head>."""
     html = strip_old_block(html)
     html = strip_bare_ga4(html, ga4_id)
+    html = strip_bare_clarity(html)
     target = "</head>"
     idx = html.lower().find(target)
     if idx == -1:

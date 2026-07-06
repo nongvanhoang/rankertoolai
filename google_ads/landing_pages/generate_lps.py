@@ -20,7 +20,6 @@ from pathlib import Path
 from datetime import datetime
 
 TOOLS_PATH = Path(__file__).parent.parent.parent / "social_agent" / "data" / "tools.json"
-CONFIG_PATH = Path(__file__).parent.parent / "data" / "config.json"
 OUT_DIR = Path(__file__).parent.parent.parent / "html" / "lp"
 
 EXTRA_DATA = {
@@ -147,11 +146,7 @@ def load_tools():
     with open(TOOLS_PATH, encoding="utf-8") as f:
         return {t["slug"]: t for t in json.load(f)}
 
-def load_config():
-    with open(CONFIG_PATH, encoding="utf-8") as f:
-        return json.load(f)
-
-def build_lp(tool: dict, extra: dict, cfg: dict) -> str:
+def build_lp(tool: dict, extra: dict) -> str:
     slug = tool["slug"]
     name = tool["name"]
     score = tool["score"]
@@ -160,10 +155,6 @@ def build_lp(tool: dict, extra: dict, cfg: dict) -> str:
     best_for = tool.get("best_for", "")
     review_url = f"https://rankertoolai.com/review/{slug}/"
     go_url = f"https://rankertoolai.com/go/{slug}/"
-    ga4 = cfg["ga4_id"]
-    ads_id = cfg["google_ads_id"]
-    ads_click = cfg["google_ads_conversion"]["affiliate_click"]
-    clarity = cfg["clarity_id"]
 
     hero = extra.get("hero", f"Is {name} Right For You? Honest Review.")
     sub = extra.get("sub", f"Expert-tested. Unbiased score: {score}/10")
@@ -188,17 +179,11 @@ def build_lp(tool: dict, extra: dict, cfg: dict) -> str:
   <link rel="canonical" href="https://rankertoolai.com/review/{slug}/">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png">
 
-  <!-- GA4 + Google Ads -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id={ga4}"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){{dataLayer.push(arguments);}}
-    gtag('js', new Date());
-    gtag('config', '{ga4}', {{'page_title': 'LP-{slug}'}});
-    gtag('config', '{ads_id}');
-  </script>
-  <!-- Microsoft Clarity -->
-  <script>(function(c,l,a,r,i,t,y){{c[a]=c[a]||function(){{(c[a].q=c[a].q||[]).push(arguments)}};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)}})(window,document,"clarity","script","{clarity}");</script>
+  <!-- GA4 + Google Ads + Clarity are injected by inject_tracking.py --apply,
+       which also wires up affiliate_click / conversion tracking on /go/
+       links. Run it after generating LPs — don't embed a bare tracking
+       snippet here, it desyncs from config.json and double-fires events
+       once inject_tracking.py's copy is added too (found + fixed 2026-07-06). -->
 
   <style>
     *,*::before,*::after{{box-sizing:border-box;margin:0;padding:0}}
@@ -294,22 +279,6 @@ def build_lp(tool: dict, extra: dict, cfg: dict) -> str:
 </footer>
 
 <script>
-  // Track all CTA clicks as conversions
-  document.querySelectorAll('a[href*="/go/"]').forEach(function(el) {{
-    el.addEventListener('click', function() {{
-      gtag('event', 'conversion', {{
-        'send_to': '{ads_click}',
-        'value': 1.0,
-        'currency': 'USD'
-      }});
-      gtag('event', 'affiliate_click', {{
-        'tool': '{slug}',
-        'page_type': 'landing_page',
-        'cta_id': el.id || 'unknown'
-      }});
-    }});
-  }});
-
   // Pass UTM to /go/ links
   (function() {{
     var params = new URLSearchParams(window.location.search);
@@ -331,7 +300,6 @@ def build_lp(tool: dict, extra: dict, cfg: dict) -> str:
 
 def generate(tool_slug=None):
     tools = load_tools()
-    cfg = load_config()
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
     targets = [tool_slug] if tool_slug else list(EXTRA_DATA.keys())
@@ -347,7 +315,7 @@ def generate(tool_slug=None):
 
         tool = tools[slug]
         extra = EXTRA_DATA[slug]
-        html = build_lp(tool, extra, cfg)
+        html = build_lp(tool, extra)
 
         lp_dir = OUT_DIR / slug
         lp_dir.mkdir(parents=True, exist_ok=True)
