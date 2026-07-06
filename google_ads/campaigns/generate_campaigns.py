@@ -263,6 +263,7 @@ DEAL_TOOLS = {
     "beehiiv":    {"offer": "14-Day Trial + 20% Off 3 Months", "code": None},
     "mangools":   {"offer": "10-Day Free Trial", "code": None},
     "wispr-flow": {"offer": "14-Day Free Pro Trial", "code": None},
+    "context":    {"offer": "25% Off First 6 Months", "code": None},
 }
 
 COMPARE_PAIRS = [
