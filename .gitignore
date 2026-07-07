@@ -7,6 +7,10 @@ __pycache__/
 .env
 .env.*
 
+# Deploy-time quarantine holding area (see deploy_quarantine.py) — must
+# never contain anything except transiently, between quarantine and restore
+.deploy_quarantine_holding/
+
 # Wrangler
 .wrangler/
 html/.wrangler/
