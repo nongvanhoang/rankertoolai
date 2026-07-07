@@ -35,11 +35,12 @@
     "twelvelabs": {
       "name": "TwelveLabs",
       "first_seen": "2026-07-04",
-      "last_seen": "2026-07-06",
+      "last_seen": "2026-07-07",
       "tier_history": [
         {"date": "2026-07-04", "tier": "WATCH", "composite": 6.75},
         {"date": "2026-07-05", "tier": "WATCH", "composite": 6.75},
-        {"date": "2026-07-06", "tier": "WATCH", "composite": 6.75}
+        {"date": "2026-07-06", "tier": "WATCH", "composite": 6.75},
+        {"date": "2026-07-07", "tier": "WATCH", "composite": 6.75}
       ]
     },
     "mina-meeting-assistant": {
@@ -66,6 +67,22 @@
       "last_seen": "2026-07-06",
       "tier_history": [
         {"date": "2026-07-06", "tier": "WATCH", "composite": 5.75}
+      ]
+    },
+    "humantone": {
+      "name": "HumanTone",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "tier_history": [
+        {"date": "2026-07-07", "tier": "WATCH", "composite": 5.5}
+      ]
+    },
+    "quarterzip": {
+      "name": "Quarterzip",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "tier_history": [
+        {"date": "2026-07-07", "tier": "WATCH", "composite": 6.0}
       ]
     }
   }
