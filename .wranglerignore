@@ -1,0 +1,19 @@
+# Internal automation and business-ops files — not site content.
+# These are git-tracked (source of truth lives in the root RankerToolAI repo)
+# but must never be uploaded to the public Cloudflare Pages deployment.
+
+agents/
+social_agent/
+google_ads/
+infrastructure/
+dashboard/
+.wrangler/
+
+*.py
+*.ps1
+*.sh
+*.md
+
+catalog.csv
+ga4_config.json
+html
