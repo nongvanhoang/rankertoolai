@@ -1,0 +1,36 @@
+{
+  "ga4_id": "G-81KB8ECCVF",
+  "google_ads_id": "AW-17663925702",
+  "google_ads_conversion": {
+    "affiliate_click": "AW-17663925702/zc7PCJ-9nMscEMa76OZB",
+    "page_view_60s": "AW-17663925702/DfXPCNLAucscEMa76OZB"
+  },
+  "site_url": "https://rankertoolai.com",
+  "clarity_id": "x97zf4vn2v",
+  "utm_defaults": {
+    "utm_source": "google",
+    "utm_medium": "cpc",
+    "utm_campaign": "ai-tools-review"
+  },
+  "budget": {
+    "daily_budget_usd": 20,
+    "monthly_cap_usd": 500,
+    "max_cpc_usd": 2.5,
+    "target_cpa_usd": 15,
+    "stop_loss_daily_usd": 50,
+    "min_roas": 2.0,
+    "deal_test_daily_budget_usd": 3,
+    "deal_test_note": "Minimum-budget test: $3/day per tool, one campaign each (see DEAL_TOOLS in generate_campaigns.py). Fail-fast after ~$15-20 spend with 0 affiliate_click conversions; scale winners to $10/day."
+  },
+  "tools_with_affiliate": [
+    "elevenlabs", "julius-ai", "se-ranking", "mangools", "pictory",
+    "wispr-flow", "beehiiv", "jasper", "writesonic", "surfer-seo",
+    "copy-ai", "notion", "grammarly", "hubspot", "synthesia",
+    "speechify", "descript", "frase", "stable-diffusion", "rytr",
+    "anyword", "playht", "murf", "adcreative-ai", "heygen"
+  ],
+  "priority_tools": [
+    "julius-ai", "mangools", "se-ranking", "beehiiv",
+    "elevenlabs", "pictory", "wispr-flow"
+  ]
+}

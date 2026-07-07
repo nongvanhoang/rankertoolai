@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Ads Dashboard — RankerToolAI</title>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--brand:#f97316;--bg:#080c18;--bg2:#0d1224;--bg3:#111827;--border:rgba(255,255,255,0.08);--text:#f1f5f9;--muted:#94a3b8;--green:#22c55e;--red:#ef4444;--yellow:#fbbf24;--radius:0.75rem}
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);min-height:100vh;padding:1.5rem}
+    h1{font-size:1.5rem;font-weight:900;margin-bottom:0.25rem;background:linear-gradient(135deg,#f97316,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .subtitle{color:var(--muted);font-size:0.875rem;margin-bottom:2rem}
+    .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-bottom:2rem}
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-bottom:2rem}
+    @media(max-width:900px){.grid-4{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:500px){.grid-4{grid-template-columns:1fr}.grid-2{grid-template-columns:1fr}}
+    .card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem}
+    .card-label{font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:0.5rem}
+    .card-value{font-size:1.75rem;font-weight:900;color:var(--text)}
+    .card-value.green{color:var(--green)}
+    .card-value.red{color:var(--red)}
+    .card-value.yellow{color:var(--yellow)}
+    .card-sub{font-size:0.8rem;color:var(--muted);margin-top:0.25rem}
+    .status-ok{color:var(--green)}
+    .status-warn{color:var(--yellow)}
+    .status-bad{color:var(--red)}
+    table{width:100%;border-collapse:collapse;font-size:0.875rem}
+    th{background:var(--bg3);padding:0.6rem 0.75rem;text-align:left;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--muted);border-bottom:1px solid var(--border)}
+    td{padding:0.65rem 0.75rem;border-bottom:1px solid rgba(255,255,255,0.04)}
+    tr:last-child td{border:none}
+    .badge{display:inline-flex;align-items:center;padding:0.2rem 0.6rem;border-radius:9999px;font-size:0.7rem;font-weight:700;text-transform:uppercase}
+    .badge-green{background:rgba(34,197,94,0.15);color:#4ade80;border:1px solid rgba(34,197,94,0.3)}
+    .badge-yellow{background:rgba(251,191,36,0.15);color:#fde047;border:1px solid rgba(251,191,36,0.3)}
+    .badge-red{background:rgba(239,68,68,0.15);color:#f87171;border:1px solid rgba(239,68,68,0.3)}
+    .section-title{font-size:1rem;font-weight:700;margin-bottom:0.75rem;padding-bottom:0.5rem;border-bottom:1px solid var(--border)}
+    .alert-box{background:rgba(239,68,68,0.08);border:1px solid rgba(239,68,68,0.3);border-radius:var(--radius);padding:1rem 1.25rem;margin-bottom:1rem}
+    .alert-box h3{color:var(--red);font-size:0.9rem;margin-bottom:0.25rem}
+    .alert-box p{font-size:0.825rem;color:var(--muted)}
+    .warn-box{background:rgba(251,191,36,0.08);border:1px solid rgba(251,191,36,0.3);border-radius:var(--radius);padding:1rem 1.25rem;margin-bottom:1rem}
+    .warn-box h3{color:var(--yellow);font-size:0.9rem;margin-bottom:0.25rem}
+    .progress-bar{height:6px;background:rgba(255,255,255,0.08);border-radius:9999px;overflow:hidden;margin-top:0.5rem}
+    .progress-fill{height:100%;border-radius:9999px;background:linear-gradient(90deg,var(--brand),var(--yellow))}
+    .rule-list{list-style:none;padding:0}
+    .rule-list li{padding:0.5rem 0;border-bottom:1px solid rgba(255,255,255,0.04);font-size:0.875rem;display:flex;justify-content:space-between}
+    .rule-list li:last-child{border:none}
+    input[type=number],input[type=text]{background:var(--bg3);border:1px solid var(--border);border-radius:0.5rem;color:var(--text);padding:0.5rem 0.75rem;font-size:0.875rem;width:100%;margin-bottom:0.5rem}
+    button{background:linear-gradient(135deg,var(--brand),var(--yellow));color:#000;font-weight:700;padding:0.5rem 1.25rem;border:none;border-radius:0.5rem;cursor:pointer;font-size:0.875rem}
+    button:hover{opacity:0.9}
+    .form-row{display:grid;grid-template-columns:repeat(3,1fr);gap:0.5rem;margin-bottom:0.5rem}
+    @media(max-width:600px){.form-row{grid-template-columns:1fr}}
+    label{font-size:0.75rem;color:var(--muted);display:block;margin-bottom:0.25rem}
+  </style>
+
+  <!-- ═══ ANALYTICS & ADS TRACKING ═══ -->
+  <!-- Google tag (gtag.js) — GA4 + Google Ads -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-81KB8ECCVF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-81KB8ECCVF');
+    gtag('config', 'AW-17663925702');
+
+    // Conversion: affiliate click (fires when user clicks /go/ link)
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('a[href*="/go/"]').forEach(function(el) {
+        el.addEventListener('click', function() {
+          gtag('event', 'conversion', {
+            'send_to': 'AW-17663925702/zc7PCJ-9nMscEMa76OZB',
+            'value': 1.0,
+            'currency': 'USD'
+          });
+          gtag('event', 'affiliate_click', {
+            'tool': el.href.split('/go/')[1]?.replace(/\//g,'') || 'unknown',
+            'page': window.location.pathname
+          });
+        });
+      });
+
+      // Conversion: 60-second engaged page view
+      setTimeout(function() {
+        gtag('event', 'conversion', {'send_to': 'AW-17663925702/DfXPCNLAucscEMa76OZB'});
+      }, 60000);
+    });
+  </script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window,document,"clarity","script","x97zf4vn2v");
+  </script>
+  <!-- ══════════════════════════════════ -->
+  </head>
+<body>
+
+<h1>Google Ads Dashboard</h1>
+<p class="subtitle" id="last-updated">RankerToolAI · Cập nhật lúc: <span id="ts">--</span></p>
+
+<!-- KPI Cards -->
+<div class="grid-4">
+  <div class="card">
+    <div class="card-label">Chi phí hôm nay</div>
+    <div class="card-value" id="kpi-spend">$0.00</div>
+    <div class="card-sub">Giới hạn: $20/ngày</div>
+    <div class="progress-bar"><div class="progress-fill" id="spend-bar" style="width:0%"></div></div>
+  </div>
+  <div class="card">
+    <div class="card-label">Conversions</div>
+    <div class="card-value green" id="kpi-conv">0</div>
+    <div class="card-sub" id="kpi-cpa">CPA: N/A</div>
+  </div>
+  <div class="card">
+    <div class="card-label">ROAS</div>
+    <div class="card-value" id="kpi-roas">0.0x</div>
+    <div class="card-sub">Mục tiêu: 2.0x</div>
+  </div>
+  <div class="card">
+    <div class="card-label">Click / CTR</div>
+    <div class="card-value" id="kpi-clicks">0</div>
+    <div class="card-sub" id="kpi-ctr">CTR: 0%</div>
+  </div>
+</div>
+
+<!-- Alerts -->
+<div id="alerts-section"></div>
+
+<div class="grid-2">
+  <!-- Campaign Table -->
+  <div class="card">
+    <div class="section-title">Hiệu quả theo Campaign</div>
+    <table id="campaign-table">
+      <thead>
+        <tr>
+          <th>Campaign</th>
+          <th>Chi phí</th>
+          <th>Conv</th>
+          <th>ROAS</th>
+          <th>Trạng thái</th>
+        </tr>
+      </thead>
+      <tbody id="campaign-body">
+        <tr><td colspan="5" style="color:var(--muted);text-align:center;padding:1rem">Chưa có dữ liệu. Nhập số liệu bên dưới.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Stop-Loss Rules -->
+  <div class="card">
+    <div class="section-title">Stop-Loss Rules</div>
+    <ul class="rule-list" id="rules-list">
+      <li><span>Daily spend > $50</span><span class="badge badge-green">OK</span></li>
+      <li><span>ROAS < 2.0x (với spend > $10)</span><span class="badge badge-green">OK</span></li>
+      <li><span>CPA > $22.50 (1.5x target)</span><span class="badge badge-green">OK</span></li>
+      <li><span>$20+ spend + 0 conv</span><span class="badge badge-green">OK</span></li>
+    </ul>
+
+    <div style="margin-top:1.25rem">
+      <div class="section-title">Chi phí tháng này</div>
+      <div style="display:flex;justify-content:space-between;margin-bottom:0.4rem">
+        <span style="font-size:0.875rem" id="month-spend-label">$0 / $500 cap</span>
+        <span style="font-size:0.875rem;color:var(--muted)" id="month-remaining">Còn lại: $500</span>
+      </div>
+      <div class="progress-bar"><div class="progress-fill" id="month-bar" style="width:0%"></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- Log Entry Form -->
+<div class="card">
+  <div class="section-title">Nhập số liệu thủ công</div>
+  <div class="form-row">
+    <div>
+      <label>Campaign</label>
+      <input type="text" id="f-campaign" value="RankerToolAI - AI Tool Reviews">
+    </div>
+    <div>
+      <label>Chi phí (USD)</label>
+      <input type="number" id="f-spend" step="0.01" placeholder="0.00">
+    </div>
+    <div>
+      <label>Clicks</label>
+      <input type="number" id="f-clicks" placeholder="0">
+    </div>
+  </div>
+  <div class="form-row">
+    <div>
+      <label>Impressions</label>
+      <input type="number" id="f-impressions" placeholder="0">
+    </div>
+    <div>
+      <label>Conversions</label>
+      <input type="number" id="f-conversions" placeholder="0">
+    </div>
+    <div>
+      <label>Conv Value (USD)</label>
+      <input type="number" id="f-convvalue" step="0.01" placeholder="0.00">
+    </div>
+  </div>
+  <button onclick="logEntry()">Lưu số liệu</button>
+</div>
+
+<!-- Tool Performance -->
+<div class="card" style="margin-top:1rem">
+  <div class="section-title">Top Tools theo Affiliate Click</div>
+  <p style="font-size:0.85rem;color:var(--muted)">Dữ liệu từ GA4 → Events → affiliate_click. Xem trong Google Analytics: Events → affiliate_click → Tool parameter.</p>
+  <table style="margin-top:1rem">
+    <thead>
+      <tr><th>Tool</th><th>Clicks hôm nay</th><th>Revenue est.</th><th>Ưu tiên</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>ElevenLabs</td><td id="el-clicks">--</td><td>--</td><td><span class="badge badge-green">HIGH</span></td></tr>
+      <tr><td>Jasper AI</td><td>--</td><td>--</td><td><span class="badge badge-green">HIGH</span></td></tr>
+      <tr><td>Surfer SEO</td><td>--</td><td>--</td><td><span class="badge badge-green">HIGH</span></td></tr>
+      <tr><td>Writesonic</td><td>--</td><td>--</td><td><span class="badge badge-yellow">MED</span></td></tr>
+      <tr><td>Copy.AI</td><td>--</td><td>--</td><td><span class="badge badge-yellow">MED</span></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<script>
+  const DAILY_BUDGET = 20;
+  const MONTHLY_CAP = 500;
+  const MIN_ROAS = 2.0;
+  const STOP_LOSS_DAILY = 50;
+  const TARGET_CPA = 15;
+
+  const STORAGE_KEY = 'ranker_ads_log';
+
+  function getLog() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'); } catch { return []; }
+  }
+
+  function saveLog(log) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(log));
+  }
+
+  function today() {
+    return new Date().toISOString().slice(0,10);
+  }
+
+  function thisMonth() {
+    return new Date().toISOString().slice(0,7);
+  }
+
+  function logEntry() {
+    const entry = {
+      date: today(),
+      campaign: document.getElementById('f-campaign').value || 'Unknown',
+      spend: parseFloat(document.getElementById('f-spend').value) || 0,
+      clicks: parseInt(document.getElementById('f-clicks').value) || 0,
+      impressions: parseInt(document.getElementById('f-impressions').value) || 0,
+      conversions: parseInt(document.getElementById('f-conversions').value) || 0,
+      conv_value: parseFloat(document.getElementById('f-convvalue').value) || 0,
+    };
+    if (entry.spend === 0) { alert('Vui lòng nhập chi phí'); return; }
+    const log = getLog();
+    log.push(entry);
+    saveLog(log);
+    refreshDashboard();
+    ['f-spend','f-clicks','f-impressions','f-conversions','f-convvalue'].forEach(id => {
+      document.getElementById(id).value = '';
+    });
+    alert('Đã lưu!');
+  }
+
+  function getBadge(status) {
+    if (status === 'SCALE') return '<span class="badge badge-green">SCALE ↑</span>';
+    if (status === 'KEEP') return '<span class="badge badge-green">KEEP ✓</span>';
+    if (status === 'REVIEW') return '<span class="badge badge-yellow">REVIEW ⚠</span>';
+    if (status === 'PAUSE') return '<span class="badge badge-red">PAUSE ✗</span>';
+    return '<span class="badge badge-yellow">NEW</span>';
+  }
+
+  function getStatus(spend, roas) {
+    if (spend < 5) return 'NEW';
+    if (roas >= 3) return 'SCALE';
+    if (roas >= 2) return 'KEEP';
+    if (roas >= 1) return 'REVIEW';
+    return 'PAUSE';
+  }
+
+  function refreshDashboard() {
+    const log = getLog();
+    const todayStr = today();
+    const monthStr = thisMonth();
+
+    const todayEntries = log.filter(e => e.date === todayStr);
+    const monthEntries = log.filter(e => e.date.startsWith(monthStr));
+
+    const totalSpend = todayEntries.reduce((s,e) => s+e.spend, 0);
+    const totalConv = todayEntries.reduce((s,e) => s+e.conversions, 0);
+    const totalValue = todayEntries.reduce((s,e) => s+e.conv_value, 0);
+    const totalClicks = todayEntries.reduce((s,e) => s+e.clicks, 0);
+    const totalImpr = todayEntries.reduce((s,e) => s+e.impressions, 0);
+    const roas = totalSpend > 0 ? totalValue/totalSpend : 0;
+    const cpa = totalConv > 0 ? totalSpend/totalConv : 0;
+    const ctr = totalImpr > 0 ? totalClicks/totalImpr*100 : 0;
+    const monthSpend = monthEntries.reduce((s,e) => s+e.spend, 0);
+
+    // KPI cards
+    document.getElementById('kpi-spend').textContent = '$'+totalSpend.toFixed(2);
+    document.getElementById('kpi-spend').className = 'card-value' + (totalSpend > STOP_LOSS_DAILY ? ' red' : totalSpend > DAILY_BUDGET ? ' yellow' : '');
+    document.getElementById('spend-bar').style.width = Math.min(100, totalSpend/DAILY_BUDGET*100)+'%';
+    document.getElementById('kpi-conv').textContent = totalConv;
+    document.getElementById('kpi-cpa').textContent = totalConv > 0 ? 'CPA: $'+cpa.toFixed(2) : 'CPA: N/A';
+    document.getElementById('kpi-roas').textContent = roas.toFixed(1)+'x';
+    document.getElementById('kpi-roas').className = 'card-value' + (roas >= MIN_ROAS ? ' green' : roas > 0 ? ' yellow' : ' red');
+    document.getElementById('kpi-clicks').textContent = totalClicks;
+    document.getElementById('kpi-ctr').textContent = 'CTR: '+ctr.toFixed(2)+'%';
+
+    // Month progress
+    document.getElementById('month-spend-label').textContent = '$'+monthSpend.toFixed(0)+' / $'+MONTHLY_CAP+' cap';
+    document.getElementById('month-remaining').textContent = 'Còn lại: $'+(MONTHLY_CAP-monthSpend).toFixed(0);
+    document.getElementById('month-bar').style.width = Math.min(100, monthSpend/MONTHLY_CAP*100)+'%';
+
+    // Alerts
+    const alertSection = document.getElementById('alerts-section');
+    let alertsHtml = '';
+    if (totalSpend > STOP_LOSS_DAILY)
+      alertsHtml += `<div class="alert-box"><h3>⛔ CRITICAL: Chi phí vượt stop-loss ($${STOP_LOSS_DAILY}/ngày)</h3><p>Đã chi $${totalSpend.toFixed(2)}. Hành động: PAUSE tất cả campaigns ngay.</p></div>`;
+    if (totalSpend > 10 && roas < MIN_ROAS && roas > 0)
+      alertsHtml += `<div class="warn-box"><h3>⚠ WARNING: ROAS ${roas.toFixed(1)}x dưới mức tối thiểu (${MIN_ROAS}x)</h3><p>Hành động: Giảm bid 30%, kiểm tra landing pages.</p></div>`;
+    if (totalSpend > 20 && totalConv === 0)
+      alertsHtml += `<div class="alert-box"><h3>⛔ CRITICAL: $${totalSpend.toFixed(2)} chi phí nhưng 0 conversions</h3><p>Hành động: Pause và kiểm tra keyword targeting.</p></div>`;
+    alertSection.innerHTML = alertsHtml;
+
+    // Stop-loss rules
+    const rules = [
+      ['Daily spend > $'+STOP_LOSS_DAILY, totalSpend > STOP_LOSS_DAILY],
+      ['ROAS < '+MIN_ROAS+'x (với spend > $10)', totalSpend > 10 && roas > 0 && roas < MIN_ROAS],
+      ['CPA > $'+(TARGET_CPA*1.5).toFixed(0)+' (1.5x target)', totalConv > 0 && cpa > TARGET_CPA*1.5],
+      ['$20+ spend + 0 conv', totalSpend > 20 && totalConv === 0],
+    ];
+    document.getElementById('rules-list').innerHTML = rules.map(([name, triggered]) =>
+      `<li><span>${name}</span><span class="badge ${triggered ? 'badge-red' : 'badge-green'}">${triggered ? 'TRIGGERED' : 'OK'}</span></li>`
+    ).join('');
+
+    // Campaign table
+    const campaigns = {};
+    todayEntries.forEach(e => {
+      if (!campaigns[e.campaign]) campaigns[e.campaign] = {spend:0,conv:0,value:0,clicks:0};
+      campaigns[e.campaign].spend += e.spend;
+      campaigns[e.campaign].conv += e.conversions;
+      campaigns[e.campaign].value += e.conv_value;
+      campaigns[e.campaign].clicks += e.clicks;
+    });
+
+    const tbody = document.getElementById('campaign-body');
+    if (Object.keys(campaigns).length === 0) {
+      tbody.innerHTML = '<tr><td colspan="5" style="color:var(--muted);text-align:center;padding:1rem">Chưa có dữ liệu.</td></tr>';
+    } else {
+      tbody.innerHTML = Object.entries(campaigns).sort((a,b)=>b[1].spend-a[1].spend).map(([name, v]) => {
+        const r = v.spend > 0 ? v.value/v.spend : 0;
+        const status = getStatus(v.spend, r);
+        return `<tr>
+          <td>${name.replace('RankerToolAI - ','')}</td>
+          <td>$${v.spend.toFixed(2)}</td>
+          <td>${v.conv}</td>
+          <td>${r.toFixed(1)}x</td>
+          <td>${getBadge(status)}</td>
+        </tr>`;
+      }).join('');
+    }
+
+    document.getElementById('ts').textContent = new Date().toLocaleString('vi-VN');
+  }
+
+  refreshDashboard();
+  setInterval(refreshDashboard, 60000);
+</script>
+
+</body>
+</html>
