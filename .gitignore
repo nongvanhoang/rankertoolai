@@ -70,6 +70,71 @@ google_ads/data/tracking_backup/
 audit_current.csv
 audit_results.csv
 
+# Internal automation dirs — root keeps these on disk (untracked) for its
+# own operation, but they must never be tracked on the shared branch that
+# html/'s clone also pulls from, since wrangler pages deploy uploads
+# whatever's physically in html/'s working tree with no ignore mechanism
+# of its own. Untracked+gitignored here means a merge into html/'s clone
+# has nothing to add. Core site-management tools (update_links.py,
+# seo_audit.py, build_dashboard.py, generate_*.py, review_data.py,
+# fix_schema_blocks.py, deploy_quarantine.py, deploy_restore.py) are
+# deliberately NOT listed here — they never had html/ copies and pose no
+# deploy-exposure risk, so they stay git-tracked for version history.
+agents/
+social_agent/
+google_ads/
+infrastructure/
+dashboard/
+pages/
+templates/
+add_og_image.py
+add_social_links.py
+after_deploy.py
+check_dns.py
+cloudflare_fix.py
+deploy.ps1
+download_logos.py
+download_logos2.py
+download_logos3.py
+expand_elevenlabs_alts.py
+expand_reviews_faq.py
+expand_reviews_faq2.py
+fetch_logos.py
+fix_ads_placeholder.py
+fix_meta.py
+ga4_tracker.py
+generate_og_images.py
+generate_pinterest_catalog.py
+get_twitter_token.py
+google_oauth.py
+gsc_setup.py
+gsc_tracker.py
+inject_compare_widget.py
+inject_cta.py
+inject_pint_tag.py
+inject_premium.py
+inject_sticky_cta.py
+probe_cf.py
+refresh_analytics.ps1
+remove_bg.py
+remove_bg2.py
+setup_bimi.py
+setup_ga4_scheduler.ps1
+setup_scheduler.ps1
+setup_vps.sh
+update_analytics_data.ps1
+update_go_pages.py
+weekly_ops.py
+BACKLINK_GUIDE.md
+CHEATSHEET.md
+DEPLOY.md
+GROWTH_SYSTEM.md
+PIPELINE.md
+ecosystem-design.md
+download_logos.html
+ga4_config.json
+catalog.csv
+
 # OS
 .DS_Store
 Thumbs.db
