@@ -199,6 +199,16 @@ Maintain this database. Update it when programs change.
     "status": "active"
   },
   {
+    "tool": "Descript",
+    "slug": "descript",
+    "platform": "Direct",
+    "commission": "TBD — approval email did not state a rate",
+    "tracking_url": "https://get.descript.com/eli6of01ciy0",
+    "go_url": "https://rankertoolai.com/go/descript/",
+    "status": "active",
+    "notes": "Approved 2026-07-07. Review page and /go/ bridge already existed pre-approval with a placeholder link (?lmref=rankertoolai); updated to the real referral link."
+  },
+  {
     "tool": "Context.dev",
     "slug": "context",
     "platform": "Direct",
@@ -231,7 +241,6 @@ Maintain this database. Update it when programs change.
     "status": "active"
   },
   {"tool": "Runway ML", "slug": "runway", "status": "pending_join"},
-  {"tool": "Descript", "slug": "descript", "status": "pending_join"},
   {"tool": "MarketMuse", "slug": "marketmuse", "status": "pending_join"},
   {"tool": "Clearscope", "slug": "clearscope", "status": "pending_join"},
   {"tool": "Canva", "slug": "canva-ai", "commission": "15% per sale", "status": "pending_join"},
