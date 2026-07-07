@@ -46,50 +46,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
 .search:focus{border-color:#334155}
 .ga-frame{width:100%;height:600px;border:none;border-radius:8px;background:#0d1224}
 </style>
-  
-  <!-- ═══ ANALYTICS & ADS TRACKING ═══ -->
-  <!-- Google tag (gtag.js) — GA4 + Google Ads -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-81KB8ECCVF"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-81KB8ECCVF');
-    gtag('config', 'AW-17663925702');
-
-    // Conversion: affiliate click (fires when user clicks /go/ link)
-    document.addEventListener('DOMContentLoaded', function() {
-      document.querySelectorAll('a[href*="/go/"]').forEach(function(el) {
-        el.addEventListener('click', function() {
-          gtag('event', 'conversion', {
-            'send_to': 'AW-17663925702/zc7PCJ-9nMscEMa76OZB',
-            'value': 1.0,
-            'currency': 'USD'
-          });
-          gtag('event', 'affiliate_click', {
-            'tool': el.href.split('/go/')[1]?.replace(/\//g,'') || 'unknown',
-            'page': window.location.pathname
-          });
-        });
-      });
-
-      // Conversion: 60-second engaged page view
-      setTimeout(function() {
-        gtag('event', 'conversion', {'send_to': 'AW-17663925702/DfXPCNLAucscEMa76OZB'});
-      }, 60000);
-    });
-  </script>
-
-  <!-- Microsoft Clarity -->
-  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window,document,"clarity","script","x97zf4vn2v");
-  </script>
-  <!-- ══════════════════════════════════ -->
-  </head>
+</head>
 <body>
 
 <div class="header">
@@ -97,15 +54,15 @@ tr:hover{background:rgba(255,255,255,0.015)}
   <span style="color:#1e293b;font-size:1.2rem">|</span>
   <span style="font-size:0.8rem;font-weight:600;color:#475569">Site Dashboard</span>
   <div class="header-meta">
-    <span class="ts">Generated: 2026-07-06 07:31</span>
+    <span class="ts">Generated: 2026-07-07 07:35</span>
     <a href="/" style="font-size:0.78rem;color:#334155">← Live Site</a>
   </div>
 </div>
 
 <div class="tab-bar">
   <div class="tab active" onclick="showTab('overview')">Overview</div>
-  <div class="tab" onclick="showTab('content')">Content (157)</div>
-  <div class="tab" onclick="showTab('affiliate')">Affiliate (37)</div>
+  <div class="tab" onclick="showTab('content')">Content (158)</div>
+  <div class="tab" onclick="showTab('affiliate')">Affiliate (38)</div>
   <div class="tab" onclick="showTab('analytics')">Analytics</div>
   <div class="tab" onclick="showTab('tools')">Quick Actions</div>
 </div>
@@ -114,17 +71,17 @@ tr:hover{background:rgba(255,255,255,0.015)}
 <div class="panel active" id="tab-overview">
   <div class="metric-grid">
     <div class="metric">
-      <div class="metric-val" style="color:#f97316">157</div>
+      <div class="metric-val" style="color:#f97316">158</div>
       <div class="metric-lbl">Total Content Pages</div>
-      <div class="metric-sub">96 go/ redirects</div>
+      <div class="metric-sub">97 go/ redirects</div>
     </div>
     <div class="metric">
       <div class="metric-val" style="color:#22c55e">100%</div>
       <div class="metric-lbl">SEO Audit Pass Rate</div>
-      <div class="metric-sub">157/157 pages passing</div>
+      <div class="metric-sub">158/158 pages passing</div>
     </div>
     <div class="metric">
-      <div class="metric-val" style="color:#22c55e">25</div>
+      <div class="metric-val" style="color:#22c55e">26</div>
       <div class="metric-lbl">Active Affiliates</div>
       <div class="metric-sub">4 pending approval</div>
     </div>
@@ -134,7 +91,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
       <div class="metric-sub">Highest buyer intent</div>
     </div>
     <div class="metric">
-      <div class="metric-val" style="color:#eab308">46</div>
+      <div class="metric-val" style="color:#eab308">47</div>
       <div class="metric-lbl">Review Pages</div>
       <div class="metric-sub">Core affiliate content</div>
     </div>
@@ -148,7 +105,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
   <div class="section-bar">
     
         <div style="background:#0d1224;border:1px solid #1e293b;border-left:3px solid #f97316;border-radius:10px;padding:1rem 1.25rem;min-width:130px">
-          <div style="font-size:1.8rem;font-weight:900;color:#f97316">46</div>
+          <div style="font-size:1.8rem;font-weight:900;color:#f97316">47</div>
           <div style="font-size:0.72rem;color:#64748b;text-transform:capitalize;margin-top:0.2rem">review pages</div>
         </div>
         <div style="background:#0d1224;border:1px solid #1e293b;border-left:3px solid #6366f1;border-radius:10px;padding:1rem 1.25rem;min-width:130px">
@@ -172,15 +129,15 @@ tr:hover{background:rgba(255,255,255,0.015)}
   <div class="card">
     <div class="card-hdr">
       <span class="card-title">Content Breakdown</span>
-      <span class="card-meta">157 pages scanned</span>
+      <span class="card-meta">158 pages scanned</span>
     </div>
     <div style="padding:1.25rem;display:flex;gap:1rem;flex-wrap:wrap">
       <div style="flex:1;min-width:160px">
         <div style="font-size:0.72rem;color:#475569;margin-bottom:0.35rem;text-transform:capitalize">review</div>
         <div style="background:#1e293b;border-radius:4px;height:8px;overflow:hidden">
-          <div style="width:29%;height:8px;background:#f97316;border-radius:4px"></div>
+          <div style="width:30%;height:8px;background:#f97316;border-radius:4px"></div>
         </div>
-        <div style="font-size:0.72rem;color:#334155;margin-top:0.25rem">46 pages · 29%</div>
+        <div style="font-size:0.72rem;color:#334155;margin-top:0.25rem">47 pages · 30%</div>
       </div>
 <div style="flex:1;min-width:160px">
         <div style="font-size:0.72rem;color:#475569;margin-bottom:0.35rem;text-transform:capitalize">compare</div>
@@ -226,7 +183,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
   <div class="card">
     <div class="card-hdr">
       <span class="card-title">All Pages</span>
-      <span class="card-meta">157 total</span>
+      <span class="card-meta">158 total</span>
     </div>
     <div class="filter-row">
       <input class="search" type="text" placeholder="Filter by slug..." oninput="filterTable(this.value)" id="search-content">
@@ -253,7 +210,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,688</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,730</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, SoftwareApplication, …</td>
@@ -266,7 +223,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,882</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,890</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -279,7 +236,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,026</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,068</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, SoftwareApplication, …</td>
@@ -292,7 +249,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,827</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,866</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, SoftwareApplication, …</td>
@@ -305,7 +262,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,897</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,939</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, SoftwareApplication, …</td>
@@ -318,7 +275,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,665</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,673</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -331,7 +288,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,937</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,945</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -344,7 +301,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,859</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,867</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -357,7 +314,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,085</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,124</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, SoftwareApplication, …</td>
@@ -370,7 +327,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,812</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,851</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, SoftwareApplication, …</td>
@@ -379,11 +336,24 @@ tr:hover{background:rgba(255,255,255,0.015)}
         </tr>
         <tr style="border-bottom:1px solid #0d1224">
           <td style="padding:0.65rem 0.75rem"><span style="color:#f97316;font-size:0.7rem;font-weight:700;text-transform:uppercase">review</span></td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/review/context/" target="_blank" style="color:#94a3b8;text-decoration:none">context</a></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,956</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, SoftwareApplication, …</td>
+          <td style="padding:0.65rem 0.75rem;text-align:center;font-size:0.8rem;color:#94a3b8">6</td>
+          <td style="padding:0.65rem 0.75rem"><span style="color:#22c55e;font-size:0.72rem">✓ OK</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem"><span style="color:#f97316;font-size:0.7rem;font-weight:700;text-transform:uppercase">review</span></td>
           <td style="padding:0.65rem 0.75rem;font-size:0.8rem;color:#cbd5e1"><a href="https://rankertoolai.com/review/copy-ai/" target="_blank" style="color:#94a3b8;text-decoration:none">copy-ai</a></td>
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,724</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,732</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -396,7 +366,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,266</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,274</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -409,7 +379,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,852</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,860</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -422,7 +392,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,186</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,222</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -435,7 +405,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,384</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,392</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, SoftwareApplication, …</td>
@@ -448,7 +418,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,589</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,648</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -461,7 +431,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,948</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,956</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -474,7 +444,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,917</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,925</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -487,7 +457,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,241</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,277</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -500,7 +470,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,979</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,987</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -513,7 +483,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,212</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,248</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -526,7 +496,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,972</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,980</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -539,7 +509,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,201</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,209</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -552,7 +522,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,459</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,501</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, SoftwareApplication, …</td>
@@ -565,7 +535,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,634</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,673</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, SoftwareApplication, …</td>
@@ -578,7 +548,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,994</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,033</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, SoftwareApplication, …</td>
@@ -591,7 +561,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,768</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,776</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -604,7 +574,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,024</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,063</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, SoftwareApplication, …</td>
@@ -617,7 +587,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,250</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,286</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -630,7 +600,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,959</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,967</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -643,7 +613,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,092</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,100</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -656,7 +626,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,802</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,810</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -669,7 +639,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,369</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,405</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -682,7 +652,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,921</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,960</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, SoftwareApplication, …</td>
@@ -695,7 +665,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,769</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,777</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -708,7 +678,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,849</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,888</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, SoftwareApplication, …</td>
@@ -721,7 +691,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,575</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,614</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, SoftwareApplication, …</td>
@@ -734,7 +704,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,898</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,906</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -747,7 +717,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,875</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,914</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, SoftwareApplication, …</td>
@@ -760,7 +730,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,179</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,187</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -773,7 +743,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,823</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,831</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -786,7 +756,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,135</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,171</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -799,7 +769,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,776</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,815</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, SoftwareApplication, …</td>
@@ -812,7 +782,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,761</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,769</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -825,7 +795,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,153</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,195</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, SoftwareApplication, …</td>
@@ -838,7 +808,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,576</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,584</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -851,7 +821,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,025</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,065</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -864,7 +834,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,014</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,054</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -877,7 +847,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,022</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,030</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -890,7 +860,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,055</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,107</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -903,7 +873,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,051</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,059</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Article, BreadcrumbList, FAQPage, Review</td>
@@ -916,7 +886,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,115</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,123</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -929,7 +899,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,100</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,108</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -942,7 +912,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,042</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,084</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -955,7 +925,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,067</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,075</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Article, BreadcrumbList, FAQPage, Review</td>
@@ -968,7 +938,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,029</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,037</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -981,7 +951,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,212</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,248</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -994,7 +964,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,000</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,036</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -1007,7 +977,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,230</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,238</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -1020,7 +990,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,089</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,136</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -1033,7 +1003,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,113</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,121</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -1046,7 +1016,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,089</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,141</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -1059,7 +1029,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,625</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,667</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage, ItemList</td>
@@ -1072,7 +1042,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,015</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,055</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -1085,7 +1055,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,063</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,071</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -1098,7 +1068,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,053</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,061</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -1111,7 +1081,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,366</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,389</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -1124,7 +1094,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,375</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,416</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -1137,7 +1107,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">3,904</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">3,932</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, Article, BreadcrumbList, FAQPage</td>
@@ -1150,7 +1120,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,178</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,217</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Article, BreadcrumbList, FAQPage, Review</td>
@@ -1163,7 +1133,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,051</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,059</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -1176,7 +1146,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,015</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,023</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -1189,7 +1159,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,057</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,065</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -1202,7 +1172,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,070</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,112</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -1215,7 +1185,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,003</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,011</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -1228,7 +1198,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,052</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,060</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -1241,7 +1211,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,012</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,042</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -1254,7 +1224,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,004</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,044</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -1267,7 +1237,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">3,528</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">3,556</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, Article, BreadcrumbList, FAQPage</td>
@@ -1280,7 +1250,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,088</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,127</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Article, BreadcrumbList, FAQPage, Review</td>
@@ -1293,7 +1263,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,047</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,075</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Article, BreadcrumbList, FAQPage, Review</td>
@@ -1306,7 +1276,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,399</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,468</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, FAQPage, Article</td>
@@ -1319,7 +1289,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,090</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,132</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -1332,7 +1302,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,013</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,021</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -1345,7 +1315,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,481</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,550</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, FAQPage, Article</td>
@@ -1358,7 +1328,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,082</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,090</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Article, BreadcrumbList, FAQPage, Review</td>
@@ -1371,7 +1341,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,005</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,045</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -1384,7 +1354,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,064</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,072</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Review, BreadcrumbList, FAQPage</td>
@@ -1397,7 +1367,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,500</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,540</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1410,7 +1380,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,561</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,601</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1423,7 +1393,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,641</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,683</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1436,7 +1406,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,517</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,557</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1449,7 +1419,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,683</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,691</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1462,7 +1432,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,571</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,613</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1475,7 +1445,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,752</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,794</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1488,7 +1458,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,578</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,586</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1501,7 +1471,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,730</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,738</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1514,7 +1484,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,703</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,711</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1527,7 +1497,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,504</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,546</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1540,7 +1510,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">4,002</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">4,010</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1553,7 +1523,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">3,126</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">3,195</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">FAQPage, Article</td>
@@ -1566,7 +1536,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,625</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,633</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1579,7 +1549,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,525</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,567</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1592,7 +1562,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,805</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,847</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1605,7 +1575,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,509</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,551</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1618,7 +1588,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,502</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,542</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1631,7 +1601,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,536</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,544</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1644,7 +1614,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">5,685</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">5,712</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">BreadcrumbList, FAQPage, ItemList</td>
@@ -1657,7 +1627,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,512</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,554</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1670,7 +1640,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">4,228</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">4,256</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">BreadcrumbList, FAQPage, ItemList</td>
@@ -1683,7 +1653,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,558</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,600</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1696,7 +1666,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,550</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,558</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1709,7 +1679,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,685</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,727</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1722,7 +1692,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,951</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,993</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1735,7 +1705,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,564</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,572</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1748,7 +1718,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,696</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,738</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1761,7 +1731,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,558</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,594</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1774,7 +1744,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,721</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,763</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1787,7 +1757,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,847</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,889</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, SoftwareApplication…</td>
@@ -1800,7 +1770,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,631</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,673</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1813,7 +1783,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">4,583</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">4,593</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1826,7 +1796,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,535</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,563</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1839,7 +1809,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,604</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,646</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1852,7 +1822,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,510</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,550</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1865,7 +1835,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,529</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,537</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1878,7 +1848,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">3,130</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">3,172</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, SoftwareApplication…</td>
@@ -1891,7 +1861,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,604</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,646</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1904,7 +1874,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,519</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,561</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1917,7 +1887,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,502</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,542</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1930,7 +1900,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,554</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,562</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1943,7 +1913,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,091</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,099</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1956,7 +1926,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,019</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,027</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1969,7 +1939,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,105</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,113</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1982,7 +1952,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,134</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,142</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -1995,7 +1965,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,125</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,133</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -2008,7 +1978,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,153</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,161</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -2021,7 +1991,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,182</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,190</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -2034,7 +2004,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,021</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,049</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -2047,7 +2017,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,163</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,191</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -2060,7 +2030,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,024</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,095</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Article, BreadcrumbList, FAQPage</td>
@@ -2073,7 +2043,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,191</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,262</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Article, BreadcrumbList, FAQPage</td>
@@ -2086,7 +2056,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,126</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,197</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">Article, BreadcrumbList, FAQPage</td>
@@ -2099,7 +2069,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,600</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,608</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -2112,7 +2082,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,053</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,092</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -2125,7 +2095,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,403</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,411</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -2138,7 +2108,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,488</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,496</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -2151,7 +2121,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,368</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">2,376</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, BreadcrumbList, FAQPage</td>
@@ -2164,7 +2134,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,826</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,835</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, FAQPage</td>
@@ -2177,7 +2147,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,752</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,772</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, FAQPage</td>
@@ -2190,7 +2160,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,707</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,717</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, FAQPage</td>
@@ -2203,7 +2173,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,596</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,604</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, FAQPage</td>
@@ -2216,7 +2186,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,758</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,769</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, FAQPage</td>
@@ -2229,7 +2199,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,856</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,864</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, FAQPage</td>
@@ -2242,7 +2212,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,536</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,582</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, FAQPage</td>
@@ -2255,7 +2225,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,640</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,658</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, FAQPage</td>
@@ -2268,7 +2238,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,849</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,864</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, FAQPage</td>
@@ -2281,7 +2251,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
           <td style="padding:0.65rem 0.75rem">
             <div style="display:flex;align-items:center;gap:0.5rem">
               <div style="flex:1;height:4px;background:#1e293b;border-radius:2px;min-width:50px"><div style="width:100%;height:4px;background:#22c55e;border-radius:2px"></div></div>
-              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,948</span>
+              <span style="font-size:0.72rem;color:#64748b;white-space:nowrap">1,956</span>
             </div>
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.7rem;color:#475569">ItemList, FAQPage</td>
@@ -2298,7 +2268,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
 <div class="panel" id="tab-affiliate">
   <div class="metric-grid">
     <div class="metric">
-      <div class="metric-val" style="color:#22c55e">25</div>
+      <div class="metric-val" style="color:#22c55e">26</div>
       <div class="metric-lbl">Active Programs</div>
     </div>
     <div class="metric">
@@ -2307,7 +2277,7 @@ tr:hover{background:rgba(255,255,255,0.015)}
       <div class="metric-sub">Need to join</div>
     </div>
     <div class="metric">
-      <div class="metric-val" style="color:#6366f1">34</div>
+      <div class="metric-val" style="color:#6366f1">35</div>
       <div class="metric-lbl">Have Review Page</div>
     </div>
     <div class="metric">
@@ -2557,6 +2527,24 @@ tr:hover{background:rgba(255,255,255,0.015)}
           </td>
           <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#f97316;font-weight:600">15%/sale</td>
           <td style="padding:0.65rem 0.75rem"><span style="background:rgba(99,102,241,0.15);color:#f97316;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">PENDING</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#ef4444;font-size:0.85rem">✗</span></td>
+          <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#ef4444;font-size:0.85rem">✗</span></td>
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;gap:2px">
+              <div style="width:8px;height:8px;border-radius:2px;background:#22c55e"></div><div style="width:8px;height:8px;border-radius:2px;background:#1e293b"></div><div style="width:8px;height:8px;border-radius:2px;background:#1e293b"></div>
+            </div>
+          </td>
+        </tr>
+        <tr style="border-bottom:1px solid #0d1224">
+          <td style="padding:0.65rem 0.75rem">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <span style="background:rgba(99,102,241,0.15);color:#22c55e;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">P2</span>
+              <span style="font-size:0.82rem;color:#cbd5e1;font-weight:600">context</span>
+            </div>
+          </td>
+          <td style="padding:0.65rem 0.75rem;font-size:0.78rem;color:#f97316;font-weight:600">25% / 3yr</td>
+          <td style="padding:0.65rem 0.75rem"><span style="background:rgba(99,102,241,0.15);color:#22c55e;border:1px solid rgba(99,102,241,0.3);border-radius:6px;padding:0.15rem 0.5rem;font-size:0.72rem;font-weight:600;white-space:nowrap">ACTIVE</span></td>
           <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#22c55e;font-size:1rem">✓</span></td>
           <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#ef4444;font-size:0.85rem">✗</span></td>
           <td style="padding:0.65rem 0.75rem;text-align:center"><span style="color:#ef4444;font-size:0.85rem">✗</span></td>
@@ -3024,36 +3012,36 @@ tr:hover{background:rgba(255,255,255,0.015)}
   </div>
 
   
-  <div style="margin-bottom:1rem;padding:0.6rem 1rem;background:rgba(34,197,94,0.06);border:1px solid rgba(34,197,94,0.2);border-radius:8px;font-size:0.75rem;color:#64748b">Live GA4 data · generated 2026-07-06 00:31 · Refresh: <code class="cmd" style="display:inline;padding:0.15rem 0.4rem">python ga4_tracker.py --json ga4_report.json</code></div>
+  <div style="margin-bottom:1rem;padding:0.6rem 1rem;background:rgba(34,197,94,0.06);border:1px solid rgba(34,197,94,0.2);border-radius:8px;font-size:0.75rem;color:#64748b">Live GA4 data · generated 2026-07-07 00:34 · Refresh: <code class="cmd" style="display:inline;padding:0.15rem 0.4rem">python ga4_tracker.py --json ga4_report.json</code></div>
   
   <div class="metric-grid" style="margin-bottom:1.5rem">
-    <div class="metric"><div class="metric-val" style="color:#f97316">99</div><div class="metric-lbl">Users</div><div class="metric-sub">last 7d</div></div>
-    <div class="metric"><div class="metric-val" style="color:#6366f1">137</div><div class="metric-lbl">Sessions</div></div>
-    <div class="metric"><div class="metric-val" style="color:#22c55e">200</div><div class="metric-lbl">Pageviews</div></div>
-    <div class="metric"><div class="metric-val" style="color:#eab308">48.2%</div><div class="metric-lbl">Engagement Rate</div></div>
-    <div class="metric"><div class="metric-val" style="color:#06b6d4">93s</div><div class="metric-lbl">Avg Session</div></div>
+    <div class="metric"><div class="metric-val" style="color:#f97316">100</div><div class="metric-lbl">Users</div><div class="metric-sub">last 7d</div></div>
+    <div class="metric"><div class="metric-val" style="color:#6366f1">136</div><div class="metric-lbl">Sessions</div></div>
+    <div class="metric"><div class="metric-val" style="color:#22c55e">195</div><div class="metric-lbl">Pageviews</div></div>
+    <div class="metric"><div class="metric-val" style="color:#eab308">41.9%</div><div class="metric-lbl">Engagement Rate</div></div>
+    <div class="metric"><div class="metric-val" style="color:#06b6d4">68s</div><div class="metric-lbl">Avg Session</div></div>
   </div>
   <div class="card" style="margin-bottom:1.5rem">
     <div class="card-hdr"><span class="card-title">Events — last 7 days</span></div>
-    <table><thead><tr><th>Event</th><th style="text-align:right">Count</th></tr></thead><tbody><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#e2e8f0">page_view</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">200</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#e2e8f0">session_start</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">136</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#e2e8f0">user_engagement</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">108</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#e2e8f0">first_visit</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">95</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#e2e8f0">engaged</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">43</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#e2e8f0">popup_shown</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">29</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#e2e8f0">scroll</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">29</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#e2e8f0">form_start</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">22</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#e2e8f0">affiliate_click</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">8</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#e2e8f0">internal_navigate</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">7</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#e2e8f0">click</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">6</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#e2e8f0">scroll_depth</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">5</td></tr></tbody></table>
+    <table><thead><tr><th>Event</th><th style="text-align:right">Count</th></tr></thead><tbody><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#e2e8f0">page_view</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">195</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#e2e8f0">session_start</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">135</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#e2e8f0">first_visit</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">95</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#e2e8f0">user_engagement</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">95</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#e2e8f0">engaged</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">44</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#e2e8f0">affiliate_click</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">32</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#e2e8f0">scroll</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">27</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#e2e8f0">popup_shown</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">26</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#e2e8f0">form_start</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">20</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#e2e8f0">bridge_deal_shown</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">7</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#e2e8f0">internal_navigate</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">7</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#e2e8f0">bridge_coupon_shown</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">5</td></tr></tbody></table>
   </div>
   <div class="link-grid" style="margin-bottom:1.5rem">
     <div class="card">
       <div class="card-hdr"><span class="card-title">Top Tools — affiliate_click</span></div>
-      <table><tbody><tr><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#e2e8f0">(not set)</td><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#94a3b8;text-align:right">8</td></tr></tbody></table>
+      <table><tbody><tr><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#e2e8f0">elevenlabs</td><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#94a3b8;text-align:right">16</td></tr><tr><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#e2e8f0">(not set)</td><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#94a3b8;text-align:right">6</td></tr><tr><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#e2e8f0">julius-ai</td><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#94a3b8;text-align:right">6</td></tr><tr><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#e2e8f0">(not set)</td><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#94a3b8;text-align:right">4</td></tr></tbody></table>
     </div>
     <div class="card">
       <div class="card-hdr"><span class="card-title">Top Internal Destinations</span></div>
-      <table><tbody><tr><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#e2e8f0">(not set)</td><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#94a3b8;text-align:right">1</td></tr><tr><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#e2e8f0">/alternatives/</td><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#94a3b8;text-align:right">1</td></tr><tr><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#e2e8f0">/alternatives/rytr/</td><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#94a3b8;text-align:right">1</td></tr><tr><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#e2e8f0">/best/</td><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#94a3b8;text-align:right">1</td></tr><tr><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#e2e8f0">/best/ai-writing-tools/</td><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#94a3b8;text-align:right">1</td></tr><tr><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#e2e8f0">/category/</td><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#94a3b8;text-align:right">1</td></tr><tr><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#e2e8f0">/category/ai-image/</td><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#94a3b8;text-align:right">1</td></tr></tbody></table>
+      <table><tbody><tr><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#e2e8f0">/alternatives/</td><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#94a3b8;text-align:right">1</td></tr><tr><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#e2e8f0">/alternatives/rytr/</td><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#94a3b8;text-align:right">1</td></tr><tr><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#e2e8f0">/best/</td><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#94a3b8;text-align:right">1</td></tr><tr><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#e2e8f0">/best/ai-writing-tools/</td><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#94a3b8;text-align:right">1</td></tr><tr><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#e2e8f0">/category/</td><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#94a3b8;text-align:right">1</td></tr><tr><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#e2e8f0">/category/ai-image/</td><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#94a3b8;text-align:right">1</td></tr><tr><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#e2e8f0">/review/speechify/</td><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#94a3b8;text-align:right">1</td></tr></tbody></table>
     </div>
     <div class="card">
       <div class="card-hdr"><span class="card-title">engaged</span></div>
-      <table><tbody><tr><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#e2e8f0">(not set)</td><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#94a3b8;text-align:right">20</td></tr><tr><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#e2e8f0">home</td><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#94a3b8;text-align:right">9</td></tr><tr><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#e2e8f0">category</td><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#94a3b8;text-align:right">5</td></tr><tr><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#e2e8f0">review</td><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#94a3b8;text-align:right">4</td></tr><tr><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#e2e8f0">best</td><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#94a3b8;text-align:right">3</td></tr><tr><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#e2e8f0">alternatives</td><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#94a3b8;text-align:right">2</td></tr></tbody></table>
+      <table><tbody><tr><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#e2e8f0">(not set)</td><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#94a3b8;text-align:right">18</td></tr><tr><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#e2e8f0">home</td><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#94a3b8;text-align:right">12</td></tr><tr><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#e2e8f0">category</td><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#94a3b8;text-align:right">5</td></tr><tr><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#e2e8f0">review</td><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#94a3b8;text-align:right">4</td></tr><tr><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#e2e8f0">best</td><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#94a3b8;text-align:right">3</td></tr><tr><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#e2e8f0">alternatives</td><td style="padding:0.5rem 0.75rem;font-size:0.78rem;color:#94a3b8;text-align:right">2</td></tr></tbody></table>
     </div>
   </div>
   <div class="card" style="margin-bottom:1.5rem">
     <div class="card-hdr"><span class="card-title">Top Pages by Views</span></div>
-    <table><thead><tr><th>Path</th><th style="text-align:right">Views</th><th style="text-align:right">Sessions</th></tr></thead><tbody><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem"><a href="/" target="_blank">/</a></td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">68</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#475569;text-align:right">58</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem"><a href="/affiliate-disclosure/" target="_blank">/affiliate-disclosure/</a></td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">17</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#475569;text-align:right">20</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem"><a href="/privacy-policy/" target="_blank">/privacy-policy/</a></td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">11</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#475569;text-align:right">15</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem"><a href="/alternatives/murf-ai/" target="_blank">/alternatives/murf-ai/</a></td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">5</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#475569;text-align:right">3</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem"><a href="/contact/" target="_blank">/contact/</a></td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">5</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#475569;text-align:right">4</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem"><a href="/review/otter-ai/" target="_blank">/review/otter-ai/</a></td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">5</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#475569;text-align:right">5</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem"><a href="/deals/" target="_blank">/deals/</a></td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">4</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#475569;text-align:right">2</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem"><a href="/review/gemini/" target="_blank">/review/gemini/</a></td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">4</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#475569;text-align:right">3</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem"><a href="/review/hubspot/" target="_blank">/review/hubspot/</a></td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">4</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#475569;text-align:right">4</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem"><a href="/best/" target="_blank">/best/</a></td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">3</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#475569;text-align:right">3</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem"><a href="/category/ai-image/" target="_blank">/category/ai-image/</a></td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">3</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#475569;text-align:right">4</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem"><a href="/review/" target="_blank">/review/</a></td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">3</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#475569;text-align:right">4</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem"><a href="/review/deepseek/" target="_blank">/review/deepseek/</a></td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">3</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#475569;text-align:right">3</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem"><a href="/review/grammarly/" target="_blank">/review/grammarly/</a></td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">3</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#475569;text-align:right">2</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem"><a href="/review/surfer-seo/" target="_blank">/review/surfer-seo/</a></td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">3</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#475569;text-align:right">3</td></tr></tbody></table>
+    <table><thead><tr><th>Path</th><th style="text-align:right">Views</th><th style="text-align:right">Sessions</th></tr></thead><tbody><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem"><a href="/" target="_blank">/</a></td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">65</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#475569;text-align:right">57</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem"><a href="/affiliate-disclosure/" target="_blank">/affiliate-disclosure/</a></td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">16</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#475569;text-align:right">20</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem"><a href="/privacy-policy/" target="_blank">/privacy-policy/</a></td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">11</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#475569;text-align:right">15</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem"><a href="/go/elevenlabs/" target="_blank">/go/elevenlabs/</a></td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">7</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#475569;text-align:right">3</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem"><a href="/review/" target="_blank">/review/</a></td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">6</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#475569;text-align:right">6</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem"><a href="/alternatives/murf-ai/" target="_blank">/alternatives/murf-ai/</a></td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">5</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#475569;text-align:right">3</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem"><a href="/go/julius-ai/" target="_blank">/go/julius-ai/</a></td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">5</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#475569;text-align:right">4</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem"><a href="/review/otter-ai/" target="_blank">/review/otter-ai/</a></td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">5</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#475569;text-align:right">5</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem"><a href="/review/gemini/" target="_blank">/review/gemini/</a></td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">4</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#475569;text-align:right">3</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem"><a href="/review/hubspot/" target="_blank">/review/hubspot/</a></td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">4</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#475569;text-align:right">4</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem"><a href="/best/" target="_blank">/best/</a></td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">3</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#475569;text-align:right">3</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem"><a href="/coupons/elevenlabs/" target="_blank">/coupons/elevenlabs/</a></td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">3</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#475569;text-align:right">1</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem"><a href="/deals/" target="_blank">/deals/</a></td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">3</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#475569;text-align:right">2</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem"><a href="/review/grammarly/" target="_blank">/review/grammarly/</a></td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">3</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#475569;text-align:right">2</td></tr><tr><td style="padding:0.55rem 0.75rem;font-size:0.8rem"><a href="/review/writesonic/" target="_blank">/review/writesonic/</a></td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#94a3b8;text-align:right">3</td><td style="padding:0.55rem 0.75rem;font-size:0.8rem;color:#475569;text-align:right">3</td></tr></tbody></table>
   </div>
 
   <div class="link-grid" style="margin-bottom:1.5rem">
