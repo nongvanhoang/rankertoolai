@@ -39,13 +39,14 @@
     "twelvelabs": {
       "name": "TwelveLabs",
       "first_seen": "2026-07-04",
-      "last_seen": "2026-07-08",
+      "last_seen": "2026-07-10",
       "tier_history": [
         {"date": "2026-07-04", "tier": "WATCH", "composite": 6.75},
         {"date": "2026-07-05", "tier": "WATCH", "composite": 6.75},
         {"date": "2026-07-06", "tier": "WATCH", "composite": 6.75},
         {"date": "2026-07-07", "tier": "WATCH", "composite": 6.75},
-        {"date": "2026-07-08", "tier": "WATCH", "composite": 6.75}
+        {"date": "2026-07-08", "tier": "WATCH", "composite": 6.75},
+        {"date": "2026-07-10", "tier": "WATCH", "composite": 6.0}
       ]
     },
     "mina-meeting-assistant": {
@@ -98,9 +99,10 @@
     "granola": {
       "name": "Granola",
       "first_seen": "2026-07-08",
-      "last_seen": "2026-07-08",
+      "last_seen": "2026-07-10",
       "tier_history": [
-        {"date": "2026-07-08", "tier": "WATCH", "composite": 7.25}
+        {"date": "2026-07-08", "tier": "WATCH", "composite": 7.25},
+        {"date": "2026-07-10", "tier": "WATCH", "composite": 7.25}
       ]
     },
     "gumloop": {
@@ -125,6 +127,30 @@
       "last_seen": "2026-07-08",
       "tier_history": [
         {"date": "2026-07-08", "tier": "WATCH", "composite": 5.5}
+      ]
+    },
+    "thesys": {
+      "name": "Thesys",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "tier_history": [
+        {"date": "2026-07-10", "tier": "WATCH", "composite": 7.25}
+      ]
+    },
+    "circlechat": {
+      "name": "CircleChat",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "tier_history": [
+        {"date": "2026-07-10", "tier": "WATCH", "composite": 5.25}
+      ]
+    },
+    "meev": {
+      "name": "Meev",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "tier_history": [
+        {"date": "2026-07-10", "tier": "WATCH", "composite": 6.5}
       ]
     }
   }
