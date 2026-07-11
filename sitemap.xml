@@ -1065,14 +1065,68 @@
 
   <!-- Blog Pages -->
   <url>
+    <loc>https://rankertoolai.com/blog/ai-tools-for-customer-support-teams/</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/blog/ai-tools-for-ecommerce-sellers/</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/blog/ai-tools-for-podcasters/</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/blog/ai-tools-for-real-estate-agents/</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+  <url>
     <loc>https://rankertoolai.com/blog/ai-tools-for-small-business/</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.72</priority>
   </url>
   <url>
+    <loc>https://rankertoolai.com/blog/ai-tools-for-teachers/</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/blog/ai-tools-for-youtubers-content-creators/</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+  <url>
     <loc>https://rankertoolai.com/blog/ai-tools-pricing-comparison-2026/</loc>
     <lastmod>2026-07-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/blog/best-ai-chatbots-2026/</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/blog/best-ai-coding-tools-2026/</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/blog/best-ai-marketing-tools-2026/</loc>
+    <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.72</priority>
   </url>
@@ -1109,6 +1163,18 @@
   <url>
     <loc>https://rankertoolai.com/blog/best-ai-tools-for-students/</loc>
     <lastmod>2026-07-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/blog/best-ai-video-editing-tools-2026/</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/blog/best-ai-voice-cloning-tools-2026/</loc>
+    <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.72</priority>
   </url>
@@ -1509,6 +1575,12 @@
     <priority>0.72</priority>
   </url>
   <url>
+    <loc>https://rankertoolai.com/blog/state-of-ai-tools-2026/</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+  <url>
     <loc>https://rankertoolai.com/blog/surfer-seo-vs-frase-content-optimization/</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
@@ -1578,7 +1650,7 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/coupons/mangools/</loc>
-    <lastmod>2026-07-06</lastmod>
+    <lastmod>2026-07-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
   </url>
@@ -1608,13 +1680,13 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/coupons/synthesia/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/coupons/wispr-flow/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
   </url>
@@ -1701,4 +1773,4 @@
     <priority>0.86</priority>
   </url>
 
-</urlset>
+</urlset>
