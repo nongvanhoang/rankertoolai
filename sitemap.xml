@@ -258,7 +258,7 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/review/notion/</loc>
-    <lastmod>2026-07-06</lastmod>
+    <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -300,7 +300,7 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/review/se-ranking/</loc>
-    <lastmod>2026-07-06</lastmod>
+    <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -1329,8 +1329,20 @@
     <priority>0.72</priority>
   </url>
   <url>
+    <loc>https://rankertoolai.com/blog/notion-ai-vs-chatgpt-for-productivity/</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+  <url>
     <loc>https://rankertoolai.com/blog/se-ranking-honest-review/</loc>
     <lastmod>2026-07-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/blog/se-ranking-vs-semrush-tested/</loc>
+    <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.72</priority>
   </url>
@@ -1342,6 +1354,12 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/blog/surfer-seo-vs-frase-content-optimization/</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/blog/writesonic-vs-copy-ai-for-content/</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.72</priority>
