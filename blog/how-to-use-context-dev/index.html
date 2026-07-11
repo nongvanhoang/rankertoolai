@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <title>How to Use Context.dev in 2026: Beginner Guide</title>
+  <meta name="description" content="Complete Context.dev tutorial for 2026. Learn web scraping, brand intelligence extraction, and structured JSON output with a real AI agent workflow.">
+  <link rel="canonical" href="https://rankertoolai.com/blog/how-to-use-context-dev/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="RankerToolAI">
+  <meta property="og:title" content="How to Use Context.dev in 2026: Beginner Guide">
+  <meta property="og:description" content="Step-by-step Context.dev tutorial: web scraping, brand intelligence extraction, and structured JSON with a real AI agent workflow.">
+  <meta property="og:url" content="https://rankertoolai.com/blog/how-to-use-context-dev/">
+  <meta property="og:image" content="https://rankertoolai.com/assets/images/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@rankertoolai">
+  <meta name="twitter:title" content="How to Use Context.dev: Beginner Guide (2026)">
+  <meta name="twitter:description" content="Context.dev tutorial: scraping, brand intelligence, JSON extraction. Full workflow for 2026.">
+  <meta name="twitter:image" content="https://rankertoolai.com/assets/images/og-image.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How to Use Context.dev in 2026: Beginner Guide",
+    "description": "Complete Context.dev tutorial for 2026. Learn web scraping, brand intelligence extraction, and structured JSON output.",
+    "datePublished": "2026-07-11",
+    "dateModified": "2026-07-11",
+    "author": {"@type": "Organization", "name": "RankerToolAI", "url": "https://rankertoolai.com"},
+    "publisher": {"@type": "Organization", "name": "RankerToolAI", "url": "https://rankertoolai.com"},
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://rankertoolai.com/blog/how-to-use-context-dev/"}
+  }
+  </script>
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <style>
+    #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid rgba(255,255,255,0.1);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;color:var(--color-text);}
+    @media(min-width:768px){#nav-toggle{display:none;}}
+    #nav-menu{display:none;}
+    #nav-menu.is-open{display:flex;flex-direction:column;position:absolute;top:64px;left:0;right:0;background:#080c18;border-bottom:1px solid rgba(255,255,255,0.08);padding:1rem;z-index:200;box-shadow:0 10px 40px rgba(0,0,0,0.6);}
+    @media(min-width:768px){#nav-menu{display:flex!important;flex-direction:row;position:static;border:none;padding:0;box-shadow:none;}}
+    .site-header{position:relative;}
+    .blog-hero{background:linear-gradient(160deg,#0a0a1e 0%,#12122e 100%);border-bottom:1px solid rgba(255,255,255,0.06);padding:3rem 0 2.5rem;}
+    .post-meta{display:flex;align-items:center;gap:1rem;flex-wrap:wrap;font-size:0.82rem;color:rgba(148,163,184,0.6);margin-bottom:1.25rem;}
+    .post-meta a{color:rgba(148,163,184,0.8);text-decoration:none;}
+    .post-tag{background:rgba(99,102,241,0.12);color:#a5b4fc;border:1px solid rgba(99,102,241,0.25);padding:0.2rem 0.65rem;border-radius:999px;font-size:0.72rem;font-weight:700;}
+    .blog-content{max-width:780px;margin:0 auto;padding:3rem 0 5rem;line-height:1.8;font-size:0.975rem;}
+    .blog-content h2{font-size:1.45rem;font-weight:800;margin:2.5rem 0 1rem;color:#f1f5f9;}
+    .blog-content h3{font-size:1.1rem;font-weight:700;margin:1.75rem 0 0.6rem;color:#f1f5f9;}
+    .blog-content p{color:rgba(148,163,184,0.9);margin-bottom:1.1rem;}
+    .blog-content ul,.blog-content ol{color:rgba(148,163,184,0.9);padding-left:1.5rem;margin-bottom:1.1rem;}
+    .blog-content li{margin-bottom:0.5rem;}
+    .blog-content strong{color:#f1f5f9;}
+    .blog-content a{color:#a5b4fc;text-decoration:none;}
+    .blog-content a:hover{text-decoration:underline;}
+    .step-box{background:linear-gradient(135deg,#131c2e,#151530);border:1px solid rgba(255,255,255,0.08);border-left:3px solid #6366f1;border-radius:0 10px 10px 0;padding:1.25rem 1.5rem;margin:1.5rem 0;}
+    .step-label{font-size:0.72rem;font-weight:800;color:#a5b4fc;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:0.4rem;}
+    .step-box h4{color:#f1f5f9;font-size:1rem;font-weight:700;margin-bottom:0.5rem;}
+    .step-box p{font-size:0.875rem;color:rgba(148,163,184,0.85);margin:0;}
+    .toc{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:1.25rem 1.5rem;margin-bottom:2.5rem;}
+    .toc h4{font-size:0.85rem;font-weight:700;color:rgba(148,163,184,0.6);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.75rem;}
+    .toc ol{padding-left:1.25rem;margin:0;}
+    .toc li{font-size:0.875rem;margin-bottom:0.3rem;}
+    .toc a{color:rgba(148,163,184,0.8);text-decoration:none;}
+    .toc a:hover{color:#a5b4fc;}
+    code{background:rgba(255,255,255,0.06);padding:0.15rem 0.4rem;border-radius:4px;font-size:0.85em;color:#a5b4fc;}
+  </style>
+  <script async src="/assets/js/pint.js"></script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-81KB8ECCVF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-81KB8ECCVF');
+    gtag('config', 'AW-17663925702');
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('a[href*="/go/"]').forEach(function(el) {
+        el.addEventListener('click', function() {
+          gtag('event', 'conversion', {'send_to': 'AW-17663925702/zc7PCJ-9nMscEMa76OZB', 'value': 1.0, 'currency': 'USD'});
+          gtag('event', 'affiliate_click', {'tool': el.href.split('/go/')[1]?.replace(/\//g,'') || 'unknown', 'page': window.location.pathname});
+        });
+      });
+      setTimeout(function() { gtag('event', 'conversion', {'send_to': 'AW-17663925702/DfXPCNLAucscEMa76OZB'}); }, 60000);
+    });
+  </script>
+
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window,document,"clarity","script","x97zf4vn2v");
+  </script>
+  </head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="/" class="site-logo" style="-webkit-text-fill-color:unset;background:none;display:flex;align-items:center;gap:0.5rem;text-decoration:none;">
+        <img src="/assets/images/logo-dark.webp" onerror="this.src='/assets/images/logo-dark.png'" alt="RankerToolAI" style="height:38px;width:38px;object-fit:contain;">
+        <span style="font-size:1.15rem;font-weight:900;background:linear-gradient(135deg,#f97316,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">RankerTool<span style="background:linear-gradient(135deg,#22c55e,#4ade80);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;"> AI</span></span>
+      </a>
+      <button id="nav-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
+      <ul class="nav-primary" id="nav-menu" role="list">
+        <li><a href="/review/">Reviews</a></li><li><a href="/compare/">Compare</a></li>
+        <li><a href="/alternatives/">Alternatives</a></li><li><a href="/best/">Best Tools</a></li>
+        <li><a href="/blog/">Blog</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="blog-hero">
+  <div class="container" style="max-width:780px;">
+    <nav class="breadcrumb" style="margin-bottom:1rem;">
+      <a href="/">Home</a><span class="breadcrumb-sep">›</span>
+      <a href="/blog/">Blog</a><span class="breadcrumb-sep">›</span>
+      <span>How to Use Context.dev</span>
+    </nav>
+    <div class="post-meta">
+      <span class="post-tag">Developer Tutorial</span>
+      <span>By RankerToolAI Team</span>
+      <span>July 11, 2026</span>
+      <span>9 min read</span>
+    </div>
+    <h1 style="font-size:clamp(1.6rem,4vw,2.3rem);font-weight:900;color:#f1f5f9;line-height:1.2;margin-bottom:0.75rem;">How to Use Context.dev in 2026: Beginner Guide</h1>
+    <p style="color:rgba(148,163,184,0.8);font-size:1rem;max-width:680px;">Context.dev pairs standard web scraping with a dedicated brand intelligence layer — a combination most scraping APIs don't offer. Here's how to use both, plus the credit system that governs cost.</p>
+  </div>
+</div>
+
+<main class="container">
+  <div class="blog-content">
+    <div class="toc">
+      <h4>Table of Contents</h4>
+      <ol>
+        <li><a href="#what">What Context.dev Actually Does</a></li>
+        <li><a href="#setup">Getting Started: Account Setup</a></li>
+        <li><a href="#scraping">Basic Web Scraping</a></li>
+        <li><a href="#brand">Brand Intelligence Extraction</a></li>
+        <li><a href="#structured">Structured JSON Extraction</a></li>
+        <li><a href="#credits">Understanding the Credit System</a></li>
+        <li><a href="#workflow">Full Workflow: Grounding an AI Agent</a></li>
+        <li><a href="#pricing">Context.dev Pricing 2026</a></li>
+        <li><a href="#mistakes">Common Beginner Mistakes</a></li>
+      </ol>
+    </div>
+
+    <h2 id="what">What Context.dev Actually Does</h2>
+    <p><a href="/go/context/" rel="nofollow sponsored" target="_blank">Context.dev</a> is a web scraping and data extraction API that converts any URL into structured markdown, HTML, or JSON, with JavaScript rendering and full-site crawling via sitemaps. Its second product line, brand intelligence, extracts logos, colors, fonts, and company metadata directly from a domain — an unusual pairing most scraping APIs don't offer in one product.</p>
+
+    <div class="step-box">
+      <div class="step-label">What Context.dev Does Best</div>
+      <h4>Combining raw scraping with brand intelligence in one API</h4>
+      <p>Most scraping tools stop at content extraction. Context.dev's brand intelligence layer — pulling logos, colors, and fonts from a domain — fills a genuinely separate need, useful for onboarding flows and AI agents that need visual brand context, not just text.</p>
+    </div>
+
+    <h2 id="setup">Getting Started: Account Setup</h2>
+    <p>Go to <a href="/go/context/" rel="nofollow sponsored" target="_blank">context.dev</a> and sign up with a work email to get 500 credits/month at 30 requests/minute — enough to prototype a real integration.</p>
+
+    <h2 id="scraping">Basic Web Scraping</h2>
+    <h3>How to Scrape a URL</h3>
+    <ol>
+      <li>Generate an API key from your dashboard</li>
+      <li>Send a request to the scraping endpoint with your target URL</li>
+      <li>Specify output format — markdown, HTML, or JSON — depending on what your downstream application needs</li>
+      <li>For JavaScript-rendered pages, enable rendering in the request — this costs more but is necessary for content that doesn't appear in the raw HTML</li>
+    </ol>
+    <p>Basic scraping costs 1 credit per call, making it cheap enough to prototype extensively on the free tier before committing to a paid plan.</p>
+
+    <h2 id="brand">Brand Intelligence Extraction</h2>
+    <h3>How to Extract Brand Data</h3>
+    <ol>
+      <li>Send a request to the brand intelligence endpoint with a target domain</li>
+      <li>Context.dev returns logo URLs, primary and secondary colors, font information, and company metadata</li>
+      <li>Use this in onboarding flows — auto-populating a new user's brand kit from their company website, rather than requiring manual upload</li>
+    </ol>
+
+    <div class="step-box">
+      <div class="step-label">Pro Tip</div>
+      <h4>Budget for brand extraction costing 10x a basic scrape</h4>
+      <p>Brand intelligence calls consume significantly more credits than plain content scraping — factor this into your usage estimates before scaling a feature that relies heavily on brand extraction.</p>
+    </div>
+
+    <h2 id="structured">Structured JSON Extraction</h2>
+    <h3>How to Extract Structured Data</h3>
+    <ol>
+      <li>Define a JSON schema describing the fields you want extracted (e.g., product name, price, description)</li>
+      <li>Send the schema along with your target URL to the extraction endpoint</li>
+      <li>Context.dev returns data matching your schema, ready to feed directly into a database or RAG pipeline without manual parsing</li>
+    </ol>
+    <p>This is a strong fit specifically for grounding RAG systems and AI agents that need consistent, predictable data structure rather than raw unstructured text.</p>
+
+    <h2 id="credits">Understanding the Credit System</h2>
+    <p>Context.dev bills by credits rather than a flat per-request fee, and different endpoints consume different amounts:</p>
+    <ul>
+      <li><strong>Basic scraping (markdown/HTML/JSON):</strong> 1 credit per call</li>
+      <li><strong>Brand retrieval and structured extraction:</strong> 10 credits per call</li>
+    </ul>
+    <p>Because costs scale differently by endpoint, forecasting spend gets harder as usage grows — track which endpoints your application calls most before assuming a flat cost per integration.</p>
+
+    <h2 id="workflow">Full Workflow: Grounding an AI Agent</h2>
+    <p>Here's a workflow for feeding live web data into an AI agent or RAG system:</p>
+
+    <div class="step-box">
+      <div class="step-label">Step 1</div>
+      <h4>Define your JSON schema for the data your agent needs</h4>
+      <p>Structure the schema around what the downstream AI application actually consumes, not just what's available on the page.</p>
+    </div>
+    <div class="step-box">
+      <div class="step-label">Step 2</div>
+      <h4>Call the structured extraction endpoint against your target URLs</h4>
+      <p>Test on a handful of representative pages before scaling to a full crawl.</p>
+    </div>
+    <div class="step-box">
+      <div class="step-label">Step 3</div>
+      <h4>Feed the returned structured data directly into your agent's context or RAG index</h4>
+      <p>Consistent schema output means no manual parsing step between extraction and use.</p>
+    </div>
+    <div class="step-box">
+      <div class="step-label">Step 4</div>
+      <h4>Monitor credit consumption as you scale</h4>
+      <p>Confirm actual usage matches your cost estimate before committing to a higher-volume paid tier.</p>
+    </div>
+
+    <h2 id="pricing">Context.dev Pricing 2026</h2>
+    <table style="width:100%;border-collapse:collapse;font-size:0.875rem;margin:1.5rem 0;">
+      <thead><tr style="background:rgba(99,102,241,0.1);"><th style="padding:0.75rem;text-align:left;color:#a5b4fc;border-bottom:2px solid rgba(99,102,241,0.3);">Plan</th><th style="padding:0.75rem;text-align:left;color:#a5b4fc;border-bottom:2px solid rgba(99,102,241,0.3);">Price</th><th style="padding:0.75rem;text-align:left;color:#a5b4fc;border-bottom:2px solid rgba(99,102,241,0.3);">Includes</th></tr></thead>
+      <tbody>
+        <tr><td style="padding:0.65rem 0.75rem;border-bottom:1px solid rgba(255,255,255,0.06);color:rgba(148,163,184,0.9);">Free</td><td style="padding:0.65rem 0.75rem;border-bottom:1px solid rgba(255,255,255,0.06);color:#f1f5f9;">$0</td><td style="padding:0.65rem 0.75rem;border-bottom:1px solid rgba(255,255,255,0.06);color:rgba(148,163,184,0.9);">500 credits/mo, 30 req/min</td></tr>
+        <tr><td style="padding:0.65rem 0.75rem;border-bottom:1px solid rgba(255,255,255,0.06);color:rgba(148,163,184,0.9);">Developer</td><td style="padding:0.65rem 0.75rem;border-bottom:1px solid rgba(255,255,255,0.06);color:#f1f5f9;">$25/mo</td><td style="padding:0.65rem 0.75rem;border-bottom:1px solid rgba(255,255,255,0.06);color:rgba(148,163,184,0.9);">60 req/min</td></tr>
+        <tr><td style="padding:0.65rem 0.75rem;border-bottom:1px solid rgba(255,255,255,0.06);color:rgba(148,163,184,0.9);">Pro</td><td style="padding:0.65rem 0.75rem;border-bottom:1px solid rgba(255,255,255,0.06);color:#f1f5f9;">$149/mo</td><td style="padding:0.65rem 0.75rem;border-bottom:1px solid rgba(255,255,255,0.06);color:rgba(148,163,184,0.9);">300 req/min</td></tr>
+      </tbody>
+    </table>
+    <p><a href="/go/context/" rel="nofollow sponsored" target="_blank">Start on the free tier</a> — 500 credits is enough to prototype a real integration before committing to a paid plan.</p>
+
+    <h2 id="mistakes">Common Beginner Mistakes</h2>
+    <ul>
+      <li><strong>Not accounting for brand extraction's 10x credit cost.</strong> A feature relying heavily on brand intelligence burns through credits far faster than pure content scraping.</li>
+      <li><strong>Skipping JavaScript rendering for dynamic pages.</strong> Content that only appears after client-side rendering won't show up in a basic scrape without enabling this option.</li>
+      <li><strong>Building an unstructured scraping pipeline when a JSON schema would work better.</strong> If your downstream application needs specific fields, structured extraction saves a manual parsing step entirely.</li>
+    </ul>
+
+    <hr style="border:none;border-top:1px solid rgba(255,255,255,0.08);margin:3rem 0;">
+    <div style="display:flex;gap:0.75rem;flex-wrap:wrap;font-size:0.85rem;">
+      <strong style="color:#f1f5f9;">Related:</strong>
+      <a href="/review/context/">Context.dev Full Review</a>
+      <a href="/blog/is-context-worth-it/">Is Context.dev Worth It?</a>
+      <a href="/blog/how-to-use-airops/">How to Use AirOps</a>
+    </div>
+  </div>
+
+  <div style="padding:0 0 2rem;">
+    <div style="border:1px solid rgba(99,102,241,0.25);border-radius:12px;padding:1.5rem;background:rgba(99,102,241,0.04);">
+      <h3 style="color:#f1f5f9;font-size:1rem;font-weight:800;margin:0 0 1rem;">Start Using Context.dev Today</h3>
+      <a href="/go/context/" rel="nofollow sponsored" target="_blank" style="display:block;padding:0.9rem;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:8px;text-decoration:none;max-width:280px;">
+        <div style="font-weight:700;color:#f1f5f9;font-size:0.9rem;margin-bottom:0.2rem;">Context.dev</div>
+        <div style="color:rgba(148,163,184,0.7);font-size:0.8rem;line-height:1.4;">Free — 500 credits/month</div>
+        <div style="color:#a5b4fc;font-size:0.8rem;font-weight:600;margin-top:0.35rem;">Try Free &rarr;</div>
+      </a>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" style="display:flex;align-items:center;gap:0.5rem;text-decoration:none;margin-bottom:0.75rem;">
+          <img src="/assets/images/logo-dark.webp" onerror="this.src='/assets/images/logo-dark.png'" alt="Dark logo" style="height:32px;width:32px;object-fit:contain;" loading="lazy">
+          <span style="font-size:1rem;font-weight:900;background:linear-gradient(135deg,#f97316,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">RankerTool AI</span>
+        </a>
+        <p class="footer-tagline">Independent reviews and comparisons of the best AI tools.</p>
+      </div>
+      <div class="footer-col"><h5>Developer Tools</h5><ul>
+        <li><a href="/review/context/">Context.dev Review</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>More</h5><ul>
+        <li><a href="/blog/is-context-worth-it/">Is Context.dev Worth It?</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Company</h5><ul>
+        <li><a href="/about/">About Us</a></li>
+        <li><a href="/affiliate-disclosure/">Disclosure</a></li>
+        <li><a href="/privacy-policy/">Privacy Policy</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 RankerToolAI. All rights reserved.</span>
+      <span><a href="/sitemap.xml" style="color:#64748b;">Sitemap</a></span>
+    </div>
+  </div>
+</footer>
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/cookie-consent.js" defer></script>
+</body>
+</html>

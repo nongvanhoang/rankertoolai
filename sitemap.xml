@@ -96,7 +96,7 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/review/anyword/</loc>
-    <lastmod>2026-07-06</lastmod>
+    <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -192,7 +192,7 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/review/grammarly/</loc>
-    <lastmod>2026-07-06</lastmod>
+    <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -1155,6 +1155,12 @@
     <priority>0.72</priority>
   </url>
   <url>
+    <loc>https://rankertoolai.com/blog/how-to-use-anyword/</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+  <url>
     <loc>https://rankertoolai.com/blog/how-to-use-beehiiv/</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
@@ -1169,6 +1175,12 @@
   <url>
     <loc>https://rankertoolai.com/blog/how-to-use-claude-ai/</loc>
     <lastmod>2026-07-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/blog/how-to-use-context-dev/</loc>
+    <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.72</priority>
   </url>
@@ -1192,6 +1204,12 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/blog/how-to-use-frase/</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/blog/how-to-use-grammarly/</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.72</priority>
@@ -1247,6 +1265,12 @@
   <url>
     <loc>https://rankertoolai.com/blog/how-to-use-perplexity-ai/</loc>
     <lastmod>2026-07-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/blog/how-to-use-pictory/</loc>
+    <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.72</priority>
   </url>
