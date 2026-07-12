@@ -70,25 +70,41 @@
     .toc a:hover{color:#f1f5f9;}
   </style>
   <script async src="/assets/js/pint.js"></script>
-
+  
+  <!-- ═══ ANALYTICS & ADS TRACKING ═══ -->
+  <!-- Google tag (gtag.js) — GA4 + Google Ads -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-81KB8ECCVF"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-81KB8ECCVF');
-    gtag('config', 'AW-17663925702');
+    gtag('config', 'AW-18300667802');
+
+    // Conversion: affiliate click (fires when user clicks /go/ link)
     document.addEventListener('DOMContentLoaded', function() {
       document.querySelectorAll('a[href*="/go/"]').forEach(function(el) {
         el.addEventListener('click', function() {
-          gtag('event', 'conversion', {'send_to': 'AW-17663925702/zc7PCJ-9nMscEMa76OZB', 'value': 1.0, 'currency': 'USD'});
-          gtag('event', 'affiliate_click', {'tool': el.href.split('/go/')[1]?.replace(/\//g,'') || 'unknown', 'page': window.location.pathname});
+          gtag('event', 'conversion', {
+            'send_to': 'AW-18300667802/J1N7CJ_73M4cEJqPuJZE',
+            'value': 1.0,
+            'currency': 'USD'
+          });
+          gtag('event', 'affiliate_click', {
+            'tool': el.href.split('/go/')[1]?.replace(/\//g,'') || 'unknown',
+            'page': window.location.pathname
+          });
         });
       });
-      setTimeout(function() { gtag('event', 'conversion', {'send_to': 'AW-17663925702/DfXPCNLAucscEMa76OZB'}); }, 60000);
+
+      // Conversion: 60-second engaged page view
+      setTimeout(function() {
+        gtag('event', 'conversion', {'send_to': 'AW-18300667802/J1N7CJ_73M4cEJqPuJZE'});
+      }, 60000);
     });
   </script>
 
+  <!-- Microsoft Clarity -->
   <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
       c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -96,6 +112,7 @@
       y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window,document,"clarity","script","x97zf4vn2v");
   </script>
+  <!-- ══════════════════════════════════ -->
   </head>
 <body>
 <header class="site-header">
