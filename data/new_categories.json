@@ -1,0 +1,75 @@
+{
+  "seo-tools": {
+    "name": "SEO",
+    "hub_url": "/category/seo-tools/",
+    "merchants": []
+  },
+  "hosting-domain": {
+    "name": "Hosting & Domain",
+    "hub_url": "/category/hosting-domain/",
+    "merchants": []
+  },
+  "vpn": {
+    "name": "VPN",
+    "hub_url": "/category/vpn/",
+    "merchants": []
+  },
+  "password-manager": {
+    "name": "Password Manager",
+    "hub_url": "/category/password-manager/",
+    "merchants": [
+      {
+        "slug": "nordpass",
+        "name": "NordPass",
+        "tagline": "Password manager and digital vault from the NordVPN team",
+        "price_label": "Free plan available",
+        "go_url": "/go/nordpass/",
+        "added": "2026-07-12"
+      }
+    ]
+  },
+  "antivirus-security": {
+    "name": "Antivirus & Security",
+    "hub_url": "/category/antivirus-security/",
+    "merchants": []
+  },
+  "privacy-compliance": {
+    "name": "Privacy & Compliance",
+    "hub_url": "/category/privacy-compliance/",
+    "merchants": [
+      {
+        "slug": "iubenda",
+        "name": "iubenda",
+        "tagline": "GDPR/CCPA-compliant Privacy & Cookie Policy generator and consent management",
+        "price_label": "Free policy generator",
+        "go_url": "/go/iubenda/",
+        "added": "2026-07-12"
+      }
+    ]
+  },
+  "backup-storage": {
+    "name": "Backup & File Storage",
+    "hub_url": "/category/backup-storage/",
+    "merchants": []
+  },
+  "productivity-tools": {
+    "name": "Productivity, PDF & System Tools",
+    "hub_url": "/category/productivity-tools/",
+    "merchants": []
+  },
+  "video-design": {
+    "name": "Video, Design & Creative",
+    "hub_url": "/category/video-design/",
+    "merchants": []
+  },
+  "email-marketing": {
+    "name": "Email Marketing & Webinars",
+    "hub_url": "/category/email-marketing/",
+    "merchants": []
+  },
+  "language-learning": {
+    "name": "Language Learning",
+    "hub_url": "/category/language-learning/",
+    "merchants": []
+  }
+}

@@ -63,6 +63,20 @@ CATEGORY_HUBS = {
     "AI Data":        "ai-data",
     "AI Design":      "ai-design",
     "AI Productivity": "ai-productivity",
+    # Non-AI categories (added 2026-07-12, see data/new_categories.json).
+    # These hub pages don't exist yet — created one at a time in Phase 1
+    # of the multi-category expansion, from templates/category_template.html.
+    "SEO":                             "seo-tools",
+    "Hosting & Domain":                "hosting-domain",
+    "VPN":                             "vpn",
+    "Password Manager":                "password-manager",
+    "Antivirus & Security":            "antivirus-security",
+    "Privacy & Compliance":            "privacy-compliance",
+    "Backup & File Storage":           "backup-storage",
+    "Productivity, PDF & System Tools": "productivity-tools",
+    "Video, Design & Creative":        "video-design",
+    "Email Marketing & Webinars":      "email-marketing",
+    "Language Learning":               "language-learning",
 }
 
 
