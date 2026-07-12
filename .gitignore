@@ -134,6 +134,7 @@ ecosystem-design.md
 download_logos.html
 ga4_config.json
 catalog.csv
+deploy_quarantine_list.txt
 
 # OS
 .DS_Store
