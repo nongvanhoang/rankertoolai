@@ -56,21 +56,23 @@
     .faq-item h3{margin:0 0 0.5rem;font-size:1rem;color:#f1f5f9;}
     .faq-item p{margin:0;color:var(--color-text-muted);font-size:0.9rem;line-height:1.7;}
   </style>
-
+  
   <!-- ═══ ANALYTICS & ADS TRACKING ═══ -->
+  <!-- Google tag (gtag.js) — GA4 + Google Ads -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-81KB8ECCVF"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-81KB8ECCVF');
-    gtag('config', 'AW-17663925702');
+    gtag('config', 'AW-18300667802');
 
+    // Conversion: affiliate click (fires when user clicks /go/ link)
     document.addEventListener('DOMContentLoaded', function() {
       document.querySelectorAll('a[href*="/go/"]').forEach(function(el) {
         el.addEventListener('click', function() {
           gtag('event', 'conversion', {
-            'send_to': 'AW-17663925702/zc7PCJ-9nMscEMa76OZB',
+            'send_to': 'AW-18300667802/J1N7CJ_73M4cEJqPuJZE',
             'value': 1.0,
             'currency': 'USD'
           });
@@ -81,8 +83,9 @@
         });
       });
 
+      // Conversion: 60-second engaged page view
       setTimeout(function() {
-        gtag('event', 'conversion', {'send_to': 'AW-17663925702/DfXPCNLAucscEMa76OZB'});
+        gtag('event', 'conversion', {'send_to': 'AW-18300667802/J1N7CJ_73M4cEJqPuJZE'});
       }, 60000);
     });
   </script>
