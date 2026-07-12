@@ -71,5 +71,19 @@
     "name": "Language Learning",
     "hub_url": "/category/language-learning/",
     "merchants": []
+  },
+  "gaming-network-tools": {
+    "name": "Gaming Network Tools",
+    "hub_url": "/category/gaming-network-tools/",
+    "merchants": [
+      {
+        "slug": "gearup-booster",
+        "name": "GearUP Booster",
+        "tagline": "Game network booster that routes traffic through optimized servers to cut ping and lag",
+        "price_label": "Free trial available",
+        "go_url": "/go/gearup-booster/",
+        "added": "2026-07-12"
+      }
+    ]
   }
 }
