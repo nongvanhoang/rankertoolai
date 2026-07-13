@@ -785,8 +785,32 @@
     gtag('config', 'G-81KB8ECCVF');
     gtag('config', 'AW-18300667802');
 
+    // Conversion: Free PDF Guide lead (exit-popup email signup)
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18300667802/y74CCIWjrM8cEJqPuJZE',
+        'value': 1.0,
+        'currency': 'VND',
+        'event_callback': callback
+      });
+      return false;
+    }
+
     // Conversion: affiliate click (fires when user clicks /go/ link)
     document.addEventListener('DOMContentLoaded', function() {
+      // The exit-popup form posts to formsubmit.co and redirects back here with
+      // ?subscribed=1 on success. Firing here (instead of onclick on the submit
+      // button) avoids cancelling the form's own navigation.
+      if (window.location.search.indexOf('subscribed=1') !== -1 && !localStorage.getItem('rtai_pdf_conv_fired')) {
+        localStorage.setItem('rtai_pdf_conv_fired', '1');
+        gtag_report_conversion();
+      }
+
       document.querySelectorAll('a[href*="/go/"]').forEach(function(el) {
         el.addEventListener('click', function() {
           gtag('event', 'conversion', {
