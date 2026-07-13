@@ -803,12 +803,25 @@
 
     // Conversion: affiliate click (fires when user clicks /go/ link)
     document.addEventListener('DOMContentLoaded', function() {
-      // The exit-popup form posts to formsubmit.co and redirects back here with
-      // ?subscribed=1 on success. Firing here (instead of onclick on the submit
-      // button) avoids cancelling the form's own navigation.
-      if (window.location.search.indexOf('subscribed=1') !== -1 && !localStorage.getItem('rtai_pdf_conv_fired')) {
-        localStorage.setItem('rtai_pdf_conv_fired', '1');
-        gtag_report_conversion();
+      // Newsletter/exit-popup forms post to formsubmit.co and redirect back here
+      // with ?subscribed=1 on success. Firing here (instead of onclick on the
+      // submit button) avoids cancelling the form's own navigation. The
+      // exit-popup form adds &src=pdf_guide so only that specific lead counts
+      // toward the PDF-guide conversion (plain newsletter signups do not).
+      if (window.location.search.indexOf('subscribed=1') !== -1) {
+        var isPdfGuide = window.location.search.indexOf('src=pdf_guide') !== -1;
+        var thanks = document.createElement('div');
+        thanks.textContent = isPdfGuide
+          ? '✓ Thanks! Check your email for the Top 10 AI Tools PDF guide.'
+          : '✓ Thanks for subscribing to RankerToolAI!';
+        thanks.style.cssText = 'position:fixed;top:16px;left:50%;transform:translateX(-50%);z-index:10000;background:linear-gradient(135deg,#f97316,#fbbf24);color:#000;font-weight:700;font-size:0.85rem;padding:0.65rem 1.15rem;border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,0.35);text-align:center;';
+        document.body.appendChild(thanks);
+        setTimeout(function() { thanks.remove(); }, 6000);
+
+        if (isPdfGuide && !localStorage.getItem('rtai_pdf_conv_fired')) {
+          localStorage.setItem('rtai_pdf_conv_fired', '1');
+          gtag_report_conversion();
+        }
       }
 
       document.querySelectorAll('a[href*="/go/"]').forEach(function(el) {
