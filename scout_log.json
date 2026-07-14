@@ -205,6 +205,46 @@
       "tier_history": [
         {"date": "2026-07-13", "tier": "WATCH", "composite": 7.0}
       ]
+    },
+    "sim-ai": {
+      "name": "Sim (sim.ai)",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "tier_history": [
+        {"date": "2026-07-14", "tier": "HOT", "composite": 7.5}
+      ]
+    },
+    "vioevo": {
+      "name": "VioEvo",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "tier_history": [
+        {"date": "2026-07-14", "tier": "WATCH", "composite": 6.5}
+      ]
+    },
+    "perfai-security": {
+      "name": "Perfai Security",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "tier_history": [
+        {"date": "2026-07-14", "tier": "WATCH", "composite": 6.625}
+      ]
+    },
+    "comik-ai": {
+      "name": "Comik AI",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "tier_history": [
+        {"date": "2026-07-14", "tier": "WATCH", "composite": 6.25}
+      ]
+    },
+    "plugthis": {
+      "name": "PlugThis",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "tier_history": [
+        {"date": "2026-07-14", "tier": "WATCH", "composite": 5.5}
+      ]
     }
   }
 }
