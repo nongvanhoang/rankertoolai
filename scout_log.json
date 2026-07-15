@@ -40,7 +40,7 @@
     "twelvelabs": {
       "name": "TwelveLabs",
       "first_seen": "2026-07-04",
-      "last_seen": "2026-07-13",
+      "last_seen": "2026-07-15",
       "tier_history": [
         {"date": "2026-07-04", "tier": "WATCH", "composite": 6.75},
         {"date": "2026-07-05", "tier": "WATCH", "composite": 6.75},
@@ -50,7 +50,8 @@
         {"date": "2026-07-10", "tier": "WATCH", "composite": 6.0},
         {"date": "2026-07-11", "tier": "WATCH", "composite": 6.0},
         {"date": "2026-07-12", "tier": "WATCH", "composite": 6.0},
-        {"date": "2026-07-13", "tier": "WATCH", "composite": 6.0}
+        {"date": "2026-07-13", "tier": "WATCH", "composite": 6.0},
+        {"date": "2026-07-15", "tier": "WATCH", "composite": 6.0}
       ]
     },
     "mina-meeting-assistant": {
@@ -182,14 +183,6 @@
         {"date": "2026-07-12", "tier": "HOT", "composite": 8.25}
       ]
     },
-    "chatcut": {
-      "name": "ChatCut",
-      "first_seen": "2026-07-12",
-      "last_seen": "2026-07-12",
-      "tier_history": [
-        {"date": "2026-07-12", "tier": "WATCH", "composite": 5.5}
-      ]
-    },
     "handoff-ai": {
       "name": "Handoff AI",
       "first_seen": "2026-07-12",
@@ -209,9 +202,10 @@
     "sim-ai": {
       "name": "Sim (sim.ai)",
       "first_seen": "2026-07-14",
-      "last_seen": "2026-07-14",
+      "last_seen": "2026-07-15",
       "tier_history": [
-        {"date": "2026-07-14", "tier": "HOT", "composite": 7.5}
+        {"date": "2026-07-14", "tier": "HOT", "composite": 7.5},
+        {"date": "2026-07-15", "tier": "HOT", "composite": 7.5}
       ]
     },
     "vioevo": {
@@ -241,9 +235,35 @@
     "plugthis": {
       "name": "PlugThis",
       "first_seen": "2026-07-14",
-      "last_seen": "2026-07-14",
+      "last_seen": "2026-07-15",
       "tier_history": [
-        {"date": "2026-07-14", "tier": "WATCH", "composite": 5.5}
+        {"date": "2026-07-14", "tier": "WATCH", "composite": 5.5},
+        {"date": "2026-07-15", "tier": "WATCH", "composite": 5.5}
+      ]
+    },
+    "chatcut": {
+      "name": "ChatCut",
+      "first_seen": "2026-07-12",
+      "last_seen": "2026-07-15",
+      "tier_history": [
+        {"date": "2026-07-12", "tier": "WATCH", "composite": 5.5},
+        {"date": "2026-07-15", "tier": "WATCH", "composite": 5.5}
+      ]
+    },
+    "n71": {
+      "name": "N71",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "tier_history": [
+        {"date": "2026-07-15", "tier": "WATCH", "composite": 5.5}
+      ]
+    },
+    "storychief": {
+      "name": "StoryChief",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "tier_history": [
+        {"date": "2026-07-15", "tier": "WATCH", "composite": 7.0}
       ]
     }
   }
