@@ -265,6 +265,22 @@
       "tier_history": [
         {"date": "2026-07-15", "tier": "WATCH", "composite": 7.0}
       ]
+    },
+    "kuberns": {
+      "name": "Kuberns",
+      "first_seen": "2026-07-16",
+      "last_seen": "2026-07-16",
+      "tier_history": [
+        {"date": "2026-07-16", "tier": "WATCH", "composite": 7.25}
+      ]
+    },
+    "ogment-ai": {
+      "name": "Ogment AI",
+      "first_seen": "2026-07-16",
+      "last_seen": "2026-07-16",
+      "tier_history": [
+        {"date": "2026-07-16", "tier": "WATCH", "composite": 5.0}
+      ]
     }
   }
 }
