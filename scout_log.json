@@ -269,9 +269,10 @@
     "kuberns": {
       "name": "Kuberns",
       "first_seen": "2026-07-16",
-      "last_seen": "2026-07-16",
+      "last_seen": "2026-07-17",
       "tier_history": [
-        {"date": "2026-07-16", "tier": "WATCH", "composite": 7.25}
+        {"date": "2026-07-16", "tier": "WATCH", "composite": 7.25},
+        {"date": "2026-07-17", "tier": "WATCH", "composite": 7.25}
       ]
     },
     "ogment-ai": {
@@ -280,6 +281,38 @@
       "last_seen": "2026-07-16",
       "tier_history": [
         {"date": "2026-07-16", "tier": "WATCH", "composite": 5.0}
+      ]
+    },
+    "emergent": {
+      "name": "Emergent",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "tier_history": [
+        {"date": "2026-07-17", "tier": "HOT", "composite": 9.0}
+      ]
+    },
+    "katalyst": {
+      "name": "Katalyst",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "tier_history": [
+        {"date": "2026-07-17", "tier": "WATCH", "composite": 5.5}
+      ]
+    },
+    "bono-ai": {
+      "name": "Bono AI",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "tier_history": [
+        {"date": "2026-07-17", "tier": "WATCH", "composite": 5.25}
+      ]
+    },
+    "cutrix": {
+      "name": "Cutrix",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "tier_history": [
+        {"date": "2026-07-17", "tier": "WATCH", "composite": 5.25}
       ]
     }
   }
