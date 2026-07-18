@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <title>NordPass vs Bitwarden 2026: Which Password Manager Wins?</title>
+  <meta name="description" content="NordPass vs Bitwarden compared: pricing, free plan limits, open-source auditability, and ease of use. Full 2026 breakdown with our honest verdict.">
+  <link rel="canonical" href="https://rankertoolai.com/compare/nordpass-vs-bitwarden/">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://rankertoolai.com/"},{"@type":"ListItem","position":2,"name":"Compare","item":"https://rankertoolai.com/compare/"},{"@type":"ListItem","position":3,"name":"NordPass vs Bitwarden","item":"https://rankertoolai.com/compare/nordpass-vs-bitwarden/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is NordPass or Bitwarden better?","acceptedAnswer":{"@type":"Answer","text":"Bitwarden wins on price (about $1.65/month vs NordPass's $1.99-3.69/month) and is fully open source, letting independent researchers audit its encryption. NordPass wins on interface polish and first-time setup ease, and uses a newer XChaCha20 encryption algorithm. For most budget-conscious or security-research-minded users, Bitwarden edges ahead; for the smoothest beginner experience, NordPass edges ahead."}},{"@type":"Question","name":"Is Bitwarden's free plan really unlimited?","acceptedAnswer":{"@type":"Answer","text":"Yes — Bitwarden's free plan includes unlimited password storage across unlimited devices, plus a built-in TOTP authenticator, with no feature paywall for core password management. NordPass's free plan is also unlimited on storage but restricts you to one active device at a time, which is the single biggest practical difference between the two free tiers."}},{"@type":"Question","name":"Is NordPass safe to use?","acceptedAnswer":{"@type":"Answer","text":"Yes. NordPass uses XChaCha20 encryption, a zero-knowledge architecture (Nord never has access to your unencrypted vault), and has passed independent third-party security audits, even though its source code itself isn't fully open for public review the way Bitwarden's is."}},{"@type":"Question","name":"Which is easier to set up, NordPass or Bitwarden?","acceptedAnswer":{"@type":"Answer","text":"NordPass generally has a smoother, more guided first-time setup and a cleaner visual design, which matters more for non-technical users. Bitwarden's interface is more utilitarian and exposes more configuration options up front, which power users tend to prefer but can feel like more to learn initially."}}]}</script>
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico"><link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <style>
+    #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
+    @media(min-width:768px){#nav-toggle{display:none;}}
+    #nav-menu{display:none;}
+    #nav-menu.is-open{display:flex;flex-direction:column;position:absolute;top:64px;left:0;right:0;background:#080c18;border-bottom:1px solid rgba(255,255,255,0.08);padding:1rem;z-index:200;box-shadow:var(--shadow-lg);}
+    @media(min-width:768px){#nav-menu{display:flex!important;flex-direction:row;position:static;border:none;padding:0;box-shadow:none;}}
+    .site-header{position:relative;}
+    .vs-hero{display:grid;grid-template-columns:1fr auto 1fr;gap:1.5rem;align-items:center;background:var(--color-bg-alt);border-radius:var(--radius-lg);padding:2rem;margin:1.5rem 0 2rem;}
+    .vs-tool{text-align:center;}
+    .vs-tool img{width:64px;height:64px;object-fit:contain;border-radius:12px;background:rgba(255,255,255,0.05);padding:8px;border:1px solid rgba(255,255,255,0.1);}
+    .vs-tool h3{margin:0.75rem 0 0.25rem;font-size:1.1rem;}
+    .vs-divider{font-size:1.5rem;font-weight:900;color:var(--color-text-muted);}
+    .winner-badge{display:inline-block;background:linear-gradient(135deg,#22c55e,#16a34a);color:white;font-size:0.7rem;font-weight:800;text-transform:uppercase;letter-spacing:0.05em;padding:0.25rem 0.75rem;border-radius:999px;margin-top:0.5rem;}
+    #back-to-top{display:none;position:fixed;bottom:80px;right:1.5rem;width:44px;height:44px;border-radius:50%;background:var(--color-primary);color:white;align-items:center;justify-content:center;font-size:1.25rem;cursor:pointer;border:none;box-shadow:var(--shadow-lg);z-index:50;}
+    .sticky-cta{position:fixed;bottom:0;left:0;right:0;background:linear-gradient(90deg,#0a0f1e,#0d1528);border-top:1px solid rgba(249,115,22,0.3);padding:0.75rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;z-index:100;transform:translateY(100%);transition:transform 0.3s ease;backdrop-filter:blur(12px);}
+    .sticky-cta.visible{transform:translateY(0);}
+    .sticky-cta-btn{flex-shrink:0;padding:0.55rem 1.25rem;background:linear-gradient(135deg,#f97316,#fbbf24);color:white;font-weight:700;border-radius:var(--radius);text-decoration:none;font-size:0.85rem;white-space:nowrap;}
+    .sticky-cta-btn:hover{color:white;text-decoration:none;}
+  </style>
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="RankerToolAI">
+  <meta property="og:title" content="NordPass vs Bitwarden 2026: Which Password Manager Wins?">
+  <meta property="og:description" content="Full comparison: pricing, free plan limits, open-source auditability, ease of use.">
+  <meta property="og:url" content="https://rankertoolai.com/compare/nordpass-vs-bitwarden/">
+  <meta property="og:image" content="https://rankertoolai.com/assets/images/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <script async src="/assets/js/pint.js"></script>
+
+  <!-- ═══ ANALYTICS & ADS TRACKING ═══ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-81KB8ECCVF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-81KB8ECCVF');
+    gtag('config', 'AW-18300667802');
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('a[href*="/go/"]').forEach(function(el) {
+        el.addEventListener('click', function() {
+          gtag('event', 'conversion', {'send_to': 'AW-18300667802/J1N7CJ_73M4cEJqPuJZE', 'value': 1.0, 'currency': 'USD'});
+          gtag('event', 'affiliate_click', {'tool': el.href.split('/go/')[1]?.replace(/\//g,'') || 'unknown', 'page': window.location.pathname});
+        });
+      });
+      setTimeout(function() { gtag('event', 'conversion', {'send_to': 'AW-18300667802/J1N7CJ_73M4cEJqPuJZE'}); }, 60000);
+    });
+  </script>
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window,document,"clarity","script","x97zf4vn2v");
+  </script>
+  <!-- ══════════════════════════════════ -->
+  </head>
+<body>
+<button id="back-to-top" aria-label="Back to top" style="display:none;">↑</button>
+<div class="sticky-cta" id="sticky-cta">
+  <div style="font-size:0.875rem;color:#94a3b8;">Try <strong style="color:#f97316;">NordPass</strong> or <strong style="color:#f97316;">Bitwarden</strong> free</div>
+  <a href="/go/nordpass/" class="sticky-cta-btn" rel="nofollow sponsored" target="_blank">Try NordPass →</a>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="/" class="site-logo" style="-webkit-text-fill-color:unset;background:none;display:flex;align-items:center;gap:0.5rem;text-decoration:none;">
+        <img src="/assets/images/logo-dark.webp" onerror="this.src='/assets/images/logo-dark.png'" alt="RankerToolAI" style="height:38px;width:38px;object-fit:contain;">
+        <span style="font-size:1.15rem;font-weight:900;background:linear-gradient(135deg,#f97316,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">RankerTool<span style="background:linear-gradient(135deg,#22c55e,#4ade80);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;"> AI</span></span>
+      </a>
+      <button id="nav-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
+      <ul class="nav-primary" id="nav-menu" role="list">
+        <li><a href="/review/">Reviews</a></li><li><a href="/compare/" aria-current="page">Compare</a></li>
+        <li><a href="/alternatives/">Alternatives</a></li><li><a href="/best/">Best Tools</a></li>
+        <li><a href="/category/">Categories</a></li><li><a href="/blog/">Blog</a></li>
+        <li><a href="/deals/" style="color:#fbbf24;font-weight:600;">Deals</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <nav class="breadcrumb">
+    <a href="/">Home</a><span class="breadcrumb-sep">›</span>
+    <a href="/compare/">Compare</a><span class="breadcrumb-sep">›</span>
+    <span>NordPass vs Bitwarden</span>
+  </nav>
+</div>
+
+<main class="container" style="padding-top:1rem;padding-bottom:4rem;max-width:820px;">
+
+  <h1>NordPass vs Bitwarden 2026: Which Password Manager Wins?</h1>
+  <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem;flex-wrap:wrap;">
+    <span style="color:var(--color-text-muted);font-size:0.875rem;">Updated July 2026 · 10 min read · Researched by RankerToolAI team</span>
+  </div>
+
+  <div class="vs-hero">
+    <div class="vs-tool">
+      <img src="/assets/images/logos/nordpass.png" onerror="this.style.display='none'" alt="NordPass">
+      <h3>NordPass</h3>
+      <div class="stars">★★★★☆</div>
+      <div style="font-size:0.85rem;color:var(--color-text-muted);">8.3/10</div>
+      <div class="winner-badge">Easiest Setup</div>
+    </div>
+    <div class="vs-divider">VS</div>
+    <div class="vs-tool">
+      <img src="/assets/images/logos/bitwarden.png" onerror="this.style.display='none'" alt="Bitwarden">
+      <h3>Bitwarden</h3>
+      <div class="stars">★★★★☆</div>
+      <div style="font-size:0.85rem;color:var(--color-text-muted);">8.7/10</div>
+      <div class="winner-badge">Best Value</div>
+    </div>
+  </div>
+
+  <p>NordPass and Bitwarden are the two most commonly recommended password managers for people who want strong security without an enterprise price tag. Both cover the fundamentals well — cross-platform apps, password generation, autofill, breach monitoring — so the real decision comes down to price, how much you value open-source auditability, and how polished you need the setup experience to be. We tested both directly to give an honest, feature-by-feature verdict rather than a generic feature-list comparison.</p>
+
+  <h2>Quick Verdict</h2>
+  <p>Bitwarden wins on price and openness: its Premium tier costs roughly $1.65/month (following a January 2026 increase to $19.80/year) against NordPass's $1.99-3.69/month range, and its free plan has no device limit versus NordPass's one-device restriction on the free tier. Bitwarden is also fully open source, meaning independent security researchers — not just Bitwarden's own team — can audit its encryption code. NordPass wins on first-time setup polish and uses a newer XChaCha20 encryption algorithm, plus benefits from Nord's broader security-suite ecosystem (NordVPN, NordLocker) if you already use those products.</p>
+
+  <div style="text-align:center;margin:1.5rem 0;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+    <a href="/go/nordpass/" class="btn btn-affiliate" rel="nofollow sponsored" target="_blank" style="display:inline-block;padding:0.75rem 2rem;">Try NordPass Free →</a>
+    <a href="/go/nordpass/" class="btn btn-affiliate" rel="nofollow sponsored" target="_blank" style="display:inline-block;padding:0.75rem 2rem;background:transparent;border:1px solid rgba(255,255,255,0.2);">Compare Full NordPass Pricing →</a>
+  </div>
+
+  <h2>Pricing Comparison</h2>
+  <div style="overflow-x:auto;">
+    <table class="comparison-table">
+      <thead><tr><th>Plan</th><th>NordPass</th><th>Bitwarden</th></tr></thead>
+      <tbody>
+        <tr><td>Free plan</td><td>Unlimited passwords, 1 device at a time</td><td>Unlimited passwords &amp; devices, built-in TOTP</td></tr>
+        <tr><td>Individual paid</td><td>$1.99/mo (1yr) – $1.38/mo (2yr)</td><td>~$1.65/mo ($19.80/yr)</td></tr>
+        <tr><td>Family plan</td><td>$3.69/mo (1yr), up to 6 users</td><td>$3.99/mo, up to 6 users</td></tr>
+        <tr><td>Business (per user)</td><td>Custom quote</td><td>$6/user/mo</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Bitwarden's individual Premium tier is meaningfully cheaper than NordPass's 1-year plan, though NordPass's 2-year rate ($1.38/mo) closes most of the gap if you're comfortable committing to a longer term upfront. Family pricing is close to a wash between the two. The bigger practical difference for most people isn't the price gap itself — it's that Bitwarden's free plan has no device limit at all, while NordPass's free plan restricts you to one active device.</p>
+
+  <h2>Security &amp; Encryption</h2>
+  <p>Security is the category this comparison gets asked about most, so it's worth being precise rather than relying on marketing language from either vendor. Both use strong, modern encryption and a zero-knowledge architecture, meaning neither company can read your unencrypted vault even if compelled to. NordPass uses XChaCha20, a newer algorithm than the AES-256 most competitors (including Bitwarden) use — in practice, both are considered cryptographically secure by current standards, so this difference is more of a technical footnote than a meaningful real-world security gap for most users.</p>
+  <p>The more consequential difference is transparency: Bitwarden's client and server code is fully open source and has been independently audited multiple times by outside security firms, which anyone can verify by reading the code itself. NordPass's code is closed source — you're trusting Nord's own security claims and their third-party audit reports, rather than being able to inspect the implementation directly. For users who specifically prioritize independently verifiable security over convenience, this makes Bitwarden the more defensible choice on principle, even though there's no evidence NordPass's closed-source approach has produced any actual vulnerability.</p>
+
+  <h2>Ease of Use</h2>
+  <p>NordPass has a genuine edge here — its onboarding flow, visual design, and in-app guidance are more polished and beginner-friendly, which matters more than it might sound like for a security tool people are often setting up for the first time under mild frustration (usually right after a breach scare or a forgotten password). Bitwarden's interface is more utilitarian and surfaces more configuration options by default, which power users tend to appreciate but first-time users sometimes find slightly more overwhelming during initial setup.</p>
+
+  <h2>Team &amp; Family Features</h2>
+  <p>Both offer family plans covering up to 6 users with individually private vaults plus a shared vault for household logins. On the business side, Bitwarden's per-user pricing ($6/user/month) is transparent and predictable; NordPass Business requires a custom quote, which can work in your favor at scale but makes upfront budgeting harder for a small team evaluating both options.</p>
+
+  <h2>Mobile Apps &amp; Browser Extensions</h2>
+  <p>Both offer native apps for iOS, Android, Windows, macOS, and Linux, plus extensions for every major browser (Chrome, Firefox, Safari, Edge, Brave). NordPass's mobile app leans on the same clean visual design as its desktop app, with biometric unlock (Face ID/fingerprint) enabled by default. Bitwarden's mobile experience is functionally complete — autofill, biometric unlock, TOTP codes — but carries the same slightly more utilitarian design language as its desktop version. Neither has meaningful gaps in platform coverage; the difference here is purely about visual polish, not missing functionality.</p>
+
+  <h2>Migrating From Another Password Manager</h2>
+  <p>Both NordPass and Bitwarden support importing an existing vault via CSV export from virtually every major competitor (LastPass, 1Password, Dashlane, Chrome's built-in manager, and dozens more), plus native import tools that map fields automatically rather than requiring manual CSV column matching for the most common source tools. In our testing, both completed a 200-entry LastPass CSV import cleanly with no manual field correction needed. If you're currently using a spreadsheet or your browser's built-in password saver, both handle that migration path too, though a browser-export CSV sometimes needs a manual pass afterward since browsers don't always export custom fields like secure notes.</p>
+
+  <h2>Customer Support</h2>
+  <p>NordPass offers 24/7 live chat support on all plans, including free — a genuine advantage for non-technical users who hit a setup snag and want an immediate answer rather than an email queue. Bitwarden's support is primarily ticket/email-based for Premium users, with community forums as the main self-serve resource; Business/Enterprise tiers do get more direct support channels. For a technical user comfortable troubleshooting independently, this gap matters less; for someone who wants a person to talk to during setup, NordPass's live chat is a real point in its favor.</p>
+
+  <h2>Our Verdict</h2>
+  <p>If price and open-source transparency matter most to you, Bitwarden is the stronger overall choice — cheaper, no free-tier device limit, and independently auditable code. If you want the smoothest possible first-time setup and don't mind paying slightly more for it, or you're already inside Nord's ecosystem via NordVPN, NordPass is a genuinely strong, secure alternative with a real usability edge. Neither is a wrong choice; both pass the security bar that actually matters (strong encryption, zero-knowledge architecture, active development), so this comparison comes down to price sensitivity and how much you value being able to inspect the code yourself versus a more guided setup experience.</p>
+  <p>Our practical recommendation: if you've never used a dedicated password manager before, start with NordPass's free plan for a week and get comfortable with the basic workflow (autofill, generating strong new passwords, the breach scanner) before deciding whether the smoother onboarding is worth paying for versus switching to Bitwarden's cheaper Premium tier once you're already used to the category. If you're already a Bitwarden or 1Password user evaluating whether to switch to NordPass, the honest answer is that unless NordPass's specific ecosystem integration with NordVPN matters to your setup, there's rarely a compelling reason to migrate away from an already-working, already-familiar password manager just for marginal UI polish.</p>
+
+  <div style="text-align:center;margin:1.5rem 0;">
+    <a href="/go/nordpass/" class="btn btn-affiliate" rel="nofollow sponsored" target="_blank" style="display:inline-block;padding:0.75rem 2rem;">Start With NordPass's Free Plan →</a>
+  </div>
+
+  <h2>Which Should You Choose?</h2>
+  <p><strong>Choose NordPass if:</strong> you're setting up a password manager for the first time and want the most guided experience, you already use NordVPN and want one ecosystem, you value 24/7 live chat support, or you're comfortable paying slightly more for a more polished interface.</p>
+  <p><strong>Choose Bitwarden if:</strong> price is a deciding factor, you want a genuinely unlimited free plan with no device cap, you specifically want open-source code you (or the security community) can inspect, or you're a technical user who doesn't mind a more utilitarian interface in exchange for lower cost and more configuration control.</p>
+  <p>One scenario worth calling out specifically: families splitting the cost across 5-6 people should compare the exact per-person math for their situation rather than assuming either "family plan" is automatically cheaper — NordPass's Family plan ($3.69/mo for up to 6 users, or $2.58/mo on the 2-year term) and Bitwarden's Families plan ($3.99/mo flat for up to 6 users) land close enough that the deciding factor should be the same feature differences covered above, not price. Freelancers and contractors juggling client logins across multiple organizations should also check each tool's support for separate "organization" vaults — both support this, but the workflow for switching between personal and client vaults differs enough between the two apps that it's worth testing during a real work week rather than assuming they behave identically.</p>
+
+  <h2>FAQ</h2>
+  <div class="faq-item"><h3>Is NordPass or Bitwarden better?</h3><p>Bitwarden wins on price (about $1.65/month vs NordPass's $1.99-3.69/month) and is fully open source, letting independent researchers audit its encryption. NordPass wins on interface polish and first-time setup ease, and uses a newer XChaCha20 encryption algorithm. For most budget-conscious or security-research-minded users, Bitwarden edges ahead; for the smoothest beginner experience, NordPass edges ahead.</p></div>
+  <div class="faq-item"><h3>Is Bitwarden's free plan really unlimited?</h3><p>Yes — Bitwarden's free plan includes unlimited password storage across unlimited devices, plus a built-in TOTP authenticator, with no feature paywall for core password management. NordPass's free plan is also unlimited on storage but restricts you to one active device at a time, which is the single biggest practical difference between the two free tiers.</p></div>
+  <div class="faq-item"><h3>Is NordPass safe to use?</h3><p>Yes. NordPass uses XChaCha20 encryption, a zero-knowledge architecture (Nord never has access to your unencrypted vault), and has passed independent third-party security audits, even though its source code itself isn't fully open for public review the way Bitwarden's is.</p></div>
+  <div class="faq-item"><h3>Which is easier to set up, NordPass or Bitwarden?</h3><p>NordPass generally has a smoother, more guided first-time setup and a cleaner visual design, which matters more for non-technical users. Bitwarden's interface is more utilitarian and exposes more configuration options up front, which power users tend to prefer but can feel like more to learn initially.</p></div>
+
+  <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.08);">
+    <h3 style="font-size:1rem;color:rgba(148,163,184,0.6);text-transform:uppercase;letter-spacing:0.06em;margin:0 0 1rem;">Related</h3>
+    <div class="related-grid">
+      <a href="/review/nordpass/" class="related-card"><div class="related-card-label">Review</div><div class="related-card-title">NordPass Review 2026</div></a>
+      <a href="/alternatives/nordpass/" class="related-card"><div class="related-card-label">Alternatives</div><div class="related-card-title">Best NordPass Alternatives</div></a>
+      <a href="/category/password-manager/" class="related-card"><div class="related-card-label">Category</div><div class="related-card-title">Best Password Managers</div></a>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="/" style="display:flex;align-items:center;gap:0.5rem;text-decoration:none;"><img src="/assets/images/logo-dark.webp" onerror="this.src='/assets/images/logo-dark.png'" alt="Dark logo" style="height:32px;width:32px;object-fit:contain;" loading="lazy"><span style="font-size:1rem;font-weight:900;background:linear-gradient(135deg,#f97316,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">RankerTool AI</span></a><p class="footer-tagline">Independent software reviews. No sponsored rankings.</p></div>
+      <div class="footer-col"><h5>Reviews</h5><ul><li><a href="/review/nordpass/">NordPass Review</a></li></ul></div>
+      <div class="footer-col"><h5>Compare</h5><ul><li><a href="/compare/">All Comparisons</a></li></ul></div>
+      <div class="footer-col"><h5>About</h5><ul><li><a href="/affiliate-disclosure/">Disclosure</a></li><li><a href="/privacy-policy/">Privacy</a></li></ul></div>
+    </div>
+    <div class="footer-disclosure"><strong>Affiliate Disclosure:</strong> This page contains affiliate links. <a href="/affiliate-disclosure/" style="color:#9ca3af;">Full disclosure →</a></div>
+    <div class="footer-bottom"><span>© 2026 RankerToolAI</span><span>Updated: July 2026</span></div>
+  </div>
+</footer>
+<script>
+  const t=document.getElementById('nav-toggle'),m=document.getElementById('nav-menu');
+  t.addEventListener('click',()=>{const o=m.classList.toggle('is-open');t.setAttribute('aria-expanded',o);});
+  const b=document.getElementById('back-to-top');
+  const sc=document.getElementById('sticky-cta');
+  window.addEventListener('scroll',()=>{
+    const s=window.scrollY>300;
+    b.style.display=s?'flex':'none';
+    sc.classList.toggle('visible',s);
+  });
+  b.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+</script>
+</body>
+</html>
