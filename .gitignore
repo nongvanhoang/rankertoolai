@@ -161,3 +161,6 @@ deploy_quarantine_list.txt
 .DS_Store
 Thumbs.db
 desktop.ini
+build_dashboard.py
+seo_audit.py
+fetch_external_reviews.py
