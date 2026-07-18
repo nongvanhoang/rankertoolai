@@ -7,6 +7,9 @@ __pycache__/
 .env
 .env.*
 
+# Claude Code local (personal, machine-specific) settings
+.claude/settings.local.json
+
 # Deploy-time quarantine holding area (see deploy_quarantine.py) — must
 # never contain anything except transiently, between quarantine and restore
 .deploy_quarantine_holding/
@@ -74,12 +77,13 @@ audit_results.csv
 # own operation, but they must never be tracked on the shared branch that
 # html/'s clone also pulls from, since wrangler pages deploy uploads
 # whatever's physically in html/'s working tree with no ignore mechanism
-# of its own. Untracked+gitignored here means a merge into html/'s clone
-# has nothing to add. Core site-management tools (update_links.py,
-# seo_audit.py, build_dashboard.py, generate_*.py, review_data.py,
-# fix_schema_blocks.py, deploy_quarantine.py, deploy_restore.py) are
-# deliberately NOT listed here — they never had html/ copies and pose no
-# deploy-exposure risk, so they stay git-tracked for version history.
+# of its own (.assetsignore's *.py rule is NOT honored by `wrangler pages
+# deploy html` — confirmed twice now: this exact list of "core tools" was
+# previously assumed safe to keep tracked because they "never had html/
+# copies," but a 2026-07-18 live-HTTP-check found all of them serving 200
+# on production. Corrected: these are now untracked here too, same as
+# everything else in this block. Re-verify this assumption never again —
+# always live-check before excluding new scripts from this list.
 agents/
 social_agent/
 google_ads/
@@ -87,6 +91,23 @@ infrastructure/
 dashboard/
 pages/
 templates/
+affiliate_toolkit/
+add_merchant.py
+build_dashboard.py
+deploy_quarantine.py
+deploy_restore.py
+fetch_external_reviews.py
+fix_schema_blocks.py
+generate_alternatives.py
+generate_alternatives2.py
+generate_alternatives3.py
+generate_compare_pages.py
+generate_go_pages.py
+generate_reviews.py
+generate_sitemap.py
+review_data.py
+seo_audit.py
+update_links.py
 add_og_image.py
 add_social_links.py
 after_deploy.py
