@@ -4,73 +4,73 @@
   <!-- Static Pages -->
   <url>
     <loc>https://rankertoolai.com/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/review/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/compare/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/alternatives/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/best/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/category/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/deals/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/blog/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/pricing/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.86</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/coupons/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/about/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.60</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/methodology/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.55</priority>
   </url>
@@ -78,7 +78,7 @@
   <!-- Review Pages -->
   <url>
     <loc>https://rankertoolai.com/review/adcreative-ai/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -90,19 +90,19 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/review/airops/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/review/anyword/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/review/beehiiv/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -138,13 +138,13 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/review/context/</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/review/copy-ai/</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -162,19 +162,25 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/review/descript/</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/review/elevenlabs/</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/review/frase/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/review/gearup-booster/</loc>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -192,7 +198,7 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/review/grammarly/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -204,31 +210,37 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/review/heygen/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/review/hubspot/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/review/iubenda/</loc>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/review/jasper/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/review/julius-ai/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/review/mangools/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -252,13 +264,19 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/review/murf-ai/</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/review/nordpass/</loc>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/review/notion/</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -276,7 +294,7 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/review/pictory/</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -294,25 +312,25 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/review/rytr/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/review/se-ranking/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/review/semrush/</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/review/speechify/</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -324,13 +342,13 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/review/surfer-seo/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/review/synthesia/</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -348,13 +366,13 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/review/wispr-flow/</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/review/writesonic/</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -518,7 +536,7 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/compare/mangools-vs-ahrefs/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
@@ -553,6 +571,12 @@
     <priority>0.82</priority>
   </url>
   <url>
+    <loc>https://rankertoolai.com/compare/nordpass-vs-bitwarden/</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+  </url>
+  <url>
     <loc>https://rankertoolai.com/compare/notion-vs-chatgpt/</loc>
     <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
@@ -578,7 +602,7 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/compare/se-ranking-vs-ahrefs/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
@@ -596,7 +620,7 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/compare/semrush-vs-se-ranking/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
@@ -688,7 +712,7 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/alternatives/copy-ai/</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -723,6 +747,12 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://rankertoolai.com/alternatives/gearup-booster/</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://rankertoolai.com/alternatives/gemini/</loc>
     <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
@@ -753,8 +783,14 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://rankertoolai.com/alternatives/iubenda/</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://rankertoolai.com/alternatives/jasper/</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -772,7 +808,7 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/alternatives/mangools/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -797,6 +833,12 @@
   <url>
     <loc>https://rankertoolai.com/alternatives/murf-ai/</loc>
     <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/alternatives/nordpass/</loc>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -838,7 +880,7 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/alternatives/se-ranking/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -862,7 +904,7 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/alternatives/surfer-seo/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -892,7 +934,7 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/alternatives/writesonic/</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -1064,19 +1106,19 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/category/gaming-network-tools/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/category/password-manager/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/category/privacy-compliance/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -1438,7 +1480,7 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/blog/how-to-use-se-ranking/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.72</priority>
   </url>
@@ -1539,6 +1581,12 @@
     <priority>0.72</priority>
   </url>
   <url>
+    <loc>https://rankertoolai.com/blog/is-gearup-booster-worth-it/</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+  <url>
     <loc>https://rankertoolai.com/blog/is-heygen-worth-it/</loc>
     <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
@@ -1547,6 +1595,12 @@
   <url>
     <loc>https://rankertoolai.com/blog/is-hubspot-ai-worth-it/</loc>
     <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/blog/is-iubenda-worth-it/</loc>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.72</priority>
   </url>
@@ -1576,7 +1630,7 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/blog/is-nordpass-worth-it/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.72</priority>
   </url>
@@ -1594,7 +1648,7 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/blog/is-se-ranking-worth-it/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.72</priority>
   </url>
@@ -1648,7 +1702,7 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/blog/mangools-review-kwfinder/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.72</priority>
   </url>
@@ -1684,13 +1738,13 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/blog/se-ranking-vs-semrush-tested/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.72</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/blog/seo-tools-comparison-2026/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.72</priority>
   </url>
@@ -1763,8 +1817,26 @@
     <priority>0.88</priority>
   </url>
   <url>
+    <loc>https://rankertoolai.com/coupons/gearup-booster/</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
     <loc>https://rankertoolai.com/coupons/grammarly/</loc>
     <lastmod>2026-07-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/coupons/humehealth/</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/coupons/iubenda/</loc>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
   </url>
@@ -1783,6 +1855,12 @@
   <url>
     <loc>https://rankertoolai.com/coupons/mangools/</loc>
     <lastmod>2026-07-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/coupons/nordpass/</loc>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
   </url>
@@ -1875,6 +1953,18 @@
     <priority>0.86</priority>
   </url>
   <url>
+    <loc>https://rankertoolai.com/pricing/gearup-booster/</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.86</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/pricing/iubenda/</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.86</priority>
+  </url>
+  <url>
     <loc>https://rankertoolai.com/pricing/julius-ai/</loc>
     <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -1882,7 +1972,13 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/pricing/mangools/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.86</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/pricing/nordpass/</loc>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.86</priority>
   </url>
@@ -1894,7 +1990,7 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/pricing/se-ranking/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.86</priority>
   </url>
