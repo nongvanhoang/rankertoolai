@@ -92,6 +92,7 @@ dashboard/
 pages/
 templates/
 affiliate_toolkit/
+digital_products/
 add_merchant.py
 build_dashboard.py
 deploy_quarantine.py
