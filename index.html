@@ -806,13 +806,13 @@
       // Newsletter/exit-popup forms post to formsubmit.co and redirect back here
       // with ?subscribed=1 on success. Firing here (instead of onclick on the
       // submit button) avoids cancelling the form's own navigation. The
-      // exit-popup form adds &src=pdf_guide so only that specific lead counts
+      // playbook lead form adds &src=pdf_guide so only that specific lead counts
       // toward the PDF-guide conversion (plain newsletter signups do not).
       if (window.location.search.indexOf('subscribed=1') !== -1) {
         var isPdfGuide = window.location.search.indexOf('src=pdf_guide') !== -1;
         var thanks = document.createElement('div');
         thanks.textContent = isPdfGuide
-          ? '✓ Thanks! Check your email for the Top 10 AI Tools PDF guide.'
+          ? '✓ Thanks! Check your email for the AI Tools Stack Playbook PDF.'
           : '✓ Thanks for subscribing to RankerToolAI!';
         thanks.style.cssText = 'position:fixed;top:16px;left:50%;transform:translateX(-50%);z-index:10000;background:linear-gradient(135deg,#f97316,#fbbf24);color:#000;font-weight:700;font-size:0.85rem;padding:0.65rem 1.15rem;border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,0.35);text-align:center;';
         document.body.appendChild(thanks);
@@ -1859,6 +1859,20 @@
     <div style="text-align:center; margin-top:2rem;">
       <a href="/methodology/" style="font-size:0.875rem; color:var(--color-primary);">Read our full review methodology →</a>
     </div>
+  </div>
+</section>
+
+<!-- ── FREE PLAYBOOK PROMO ──────────────────────────────────── -->
+<section style="padding:2.5rem 0 0.5rem;">
+  <div class="container" style="max-width:900px;">
+    <a href="/playbook/ai-tools-stack-playbook-2026/" style="display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap;justify-content:space-between;background:linear-gradient(135deg,#131c2e,#0f1829);border:1px solid rgba(249,115,22,0.3);border-radius:16px;padding:1.5rem 1.75rem;text-decoration:none;">
+      <div style="flex:1;min-width:260px;">
+        <div style="font-size:0.7rem;font-weight:800;text-transform:uppercase;letter-spacing:0.08em;color:#fbbf24;margin-bottom:0.4rem;">Free Download</div>
+        <div style="font-size:1.15rem;font-weight:800;color:#f1f5f9;margin-bottom:0.3rem;">The AI Tools Stack Playbook 2026</div>
+        <div style="font-size:0.85rem;color:rgba(148,163,184,0.85);">11 tools we've tested, organized into 4 ready-to-use stacks — plus exclusive discount codes. Free PDF.</div>
+      </div>
+      <span style="background:linear-gradient(135deg,#f97316,#fbbf24);color:#000;font-weight:800;font-size:0.85rem;padding:0.65rem 1.3rem;border-radius:8px;white-space:nowrap;">Get the Free Playbook →</span>
+    </a>
   </div>
 </section>
 
