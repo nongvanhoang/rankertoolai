@@ -108,6 +108,9 @@ generate_sitemap.py
 review_data.py
 seo_audit.py
 update_links.py
+epc_analysis.py
+data/epc_imports/
+data/epc_history.json
 add_og_image.py
 add_social_links.py
 after_deploy.py
