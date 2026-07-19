@@ -40,7 +40,7 @@
     "twelvelabs": {
       "name": "TwelveLabs",
       "first_seen": "2026-07-04",
-      "last_seen": "2026-07-15",
+      "last_seen": "2026-07-19",
       "tier_history": [
         {"date": "2026-07-04", "tier": "WATCH", "composite": 6.75},
         {"date": "2026-07-05", "tier": "WATCH", "composite": 6.75},
@@ -51,7 +51,8 @@
         {"date": "2026-07-11", "tier": "WATCH", "composite": 6.0},
         {"date": "2026-07-12", "tier": "WATCH", "composite": 6.0},
         {"date": "2026-07-13", "tier": "WATCH", "composite": 6.0},
-        {"date": "2026-07-15", "tier": "WATCH", "composite": 6.0}
+        {"date": "2026-07-15", "tier": "WATCH", "composite": 6.0},
+        {"date": "2026-07-19", "tier": "WATCH", "composite": 6.25}
       ]
     },
     "mina-meeting-assistant": {
@@ -278,10 +279,11 @@
     "emergent": {
       "name": "Emergent",
       "first_seen": "2026-07-17",
-      "last_seen": "2026-07-18",
+      "last_seen": "2026-07-19",
       "tier_history": [
         {"date": "2026-07-17", "tier": "HOT", "composite": 9.0},
-        {"date": "2026-07-18", "tier": "HOT", "composite": 9.0}
+        {"date": "2026-07-18", "tier": "HOT", "composite": 9.0},
+        {"date": "2026-07-19", "tier": "HOT", "composite": 9.0}
       ]
     },
     "katalyst": {
@@ -322,9 +324,10 @@
     "river-gtm": {
       "name": "River (rivergtm.com)",
       "first_seen": "2026-07-18",
-      "last_seen": "2026-07-18",
+      "last_seen": "2026-07-19",
       "tier_history": [
-        {"date": "2026-07-18", "tier": "WATCH", "composite": 7.25}
+        {"date": "2026-07-18", "tier": "WATCH", "composite": 7.25},
+        {"date": "2026-07-19", "tier": "WATCH", "composite": 7.25}
       ]
     },
     "answrr": {
@@ -342,6 +345,20 @@
       "tier_history": [
         {"date": "2026-07-18", "tier": "WATCH", "composite": 5.5}
       ]
+    },
+    "folk": {
+      "name": "folk",
+      "first_seen": "2026-07-19",
+      "last_seen": "2026-07-19",
+      "tier_history": [
+        {"date": "2026-07-19", "tier": "WATCH", "composite": 7.25}
+      ]
     }
+  },
+  "pending_reminders": {
+    "semrush": {"last_reminded": "2026-07-19"},
+    "canva-ai": {"last_reminded": "2026-07-19"},
+    "lovable": {"last_reminded": "2026-07-19"},
+    "gamma": {"last_reminded": "2026-07-19"}
   }
 }
