@@ -18,3 +18,4 @@ Backfilled from scout_log.json on 2026-07-18 -- entries before 2026-07-18 only h
 - 2026-07-17: 4 NEW, 1 re-detected -- HOT: Emergent
 - 2026-07-18: 3 NEW, 4 re-detected -- HOT: Emergent
 - 2026-07-19: 1 NEW, 0 UPGRADED, 3 REPEAT -- HOT: none
+- 2026-07-20: 2 NEW, 0 UPGRADED, 1 REPEAT -- HOT: Lyzr
