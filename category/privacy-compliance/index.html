@@ -50,7 +50,10 @@
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do I legally need a cookie consent banner?","acceptedAnswer":{"@type":"Answer","text":"If your site has visitors from the EU/UK (GDPR, ePrivacy Directive) or certain US states (like California's CCPA/CPRA), and you use any non-essential cookies or tracking scripts — analytics, ads, embedded video, chat widgets — you generally need to get informed consent before those scripts run, not just display a notice. A banner that only informs without blocking scripts until consent is given does not meet GDPR's standard."}},{"@type":"Question","name":"Is a free privacy policy generator good enough?","acceptedAnswer":{"@type":"Answer","text":"A free policy generator is a reasonable starting point for a small site with straightforward data practices, but it won't scan your site for the actual cookies/trackers you're running, won't block scripts pre-consent, and won't log proof of consent. For any site running ads, analytics, or collecting personal data at scale, a paid consent management platform is worth it for the automated scanning and audit trail alone."}},{"@type":"Question","name":"What's the difference between a privacy policy and a cookie consent banner?","acceptedAnswer":{"@type":"Answer","text":"A privacy policy is a static legal document describing what data you collect and why. A cookie consent banner (CMP) is an active piece of software that blocks non-essential scripts from running until a visitor explicitly consents, and records that consent with a timestamp. Most compliance tools bundle both, but they solve different problems — the policy is disclosure, the CMP is enforcement."}},{"@type":"Question","name":"Do compliance requirements differ by country?","acceptedAnswer":{"@type":"Answer","text":"Yes — GDPR (EU/UK) generally requires opt-in consent before non-essential cookies load, while CCPA/CPRA (California) is opt-out-based (a 'Do Not Sell or Share My Info' link is often sufficient). A good consent tool auto-detects visitor location and serves the correct consent flow per region rather than applying one blanket banner worldwide."}}]}</script>
   <script async src="/assets/js/pint.js"></script>
 
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7922606734780809" crossorigin="anonymous"></script>
+  
   <!-- ═══ ANALYTICS & ADS TRACKING ═══ -->
+  <!-- Google tag (gtag.js) — GA4 + Google Ads -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-81KB8ECCVF"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -59,6 +62,7 @@
     gtag('config', 'G-81KB8ECCVF');
     gtag('config', 'AW-18300667802');
 
+    // Conversion: affiliate click (fires when user clicks /go/ link)
     document.addEventListener('DOMContentLoaded', function() {
       document.querySelectorAll('a[href*="/go/"]').forEach(function(el) {
         el.addEventListener('click', function() {
@@ -73,8 +77,10 @@
           });
         });
       });
+
+      // Conversion: 60-second engaged page view
       setTimeout(function() {
-        gtag('event', 'conversion', {'send_to': 'AW-18300667802/J1N7CJ_73M4cEJqPuJZE'});
+        gtag('event', 'conversion', {'send_to': 'AW-18300667802/wIkFCNeXrtMcEJqPuJZE'});
       }, 60000);
     });
   </script>
@@ -88,8 +94,6 @@
     })(window,document,"clarity","script","x97zf4vn2v");
   </script>
   <!-- ══════════════════════════════════ -->
-
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7922606734780809" crossorigin="anonymous"></script>
   </head>
 <body>
 <header class="site-header">
