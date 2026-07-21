@@ -87,8 +87,22 @@
 
     // Conversion: affiliate click (fires when user clicks /go/ link)
     document.addEventListener('DOMContentLoaded', function() {
+      // Forward this page's own UTM/gclid params onto /go/ links so Ad
+      // campaign attribution survives the hop from landing page to the
+      // affiliate redirect (the /go/ pages already read+forward these,
+      // but nothing was putting them on the /go/ href before this).
+      var passKeys = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','gclid'];
+      var incoming = new URLSearchParams(window.location.search);
       document.querySelectorAll('a[href*="/go/"]').forEach(function(el) {
         el.addEventListener('click', function() {
+          try {
+            var dest = new URL(el.href, window.location.href);
+            passKeys.forEach(function(k) {
+              if (incoming.has(k) && !dest.searchParams.has(k)) dest.searchParams.set(k, incoming.get(k));
+            });
+            el.href = dest.toString();
+          } catch (e) {}
+
           gtag('event', 'conversion', {
             'send_to': 'AW-18300667802/J1N7CJ_73M4cEJqPuJZE',
             'value': 1.0,

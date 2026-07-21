@@ -18,6 +18,12 @@ __pycache__/
 .wrangler/
 html/.wrangler/
 
+# Legacy VPS/nginx mirror — its own nested git repo (embedded/submodule),
+# not the live site (Cloudflare Pages serves repo root). `git add -A`
+# without this stages it as a gitlink and breaks Pages builds — this
+# happened once already, fixed in ba906b0.
+html/
+
 # Chrome profile data (large, binary)
 social_agent/data/quora_chrome_profile/
 
