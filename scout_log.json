@@ -370,6 +370,38 @@
       "tier_history": [
         {"date": "2026-07-20", "tier": "WATCH", "composite": 5.25}
       ]
+    },
+    "pixverse": {
+      "name": "PixVerse",
+      "first_seen": "2026-07-21",
+      "last_seen": "2026-07-21",
+      "tier_history": [
+        {"date": "2026-07-21", "tier": "HOT", "composite": 8.25}
+      ]
+    },
+    "omniseo": {
+      "name": "OmniSEO",
+      "first_seen": "2026-07-21",
+      "last_seen": "2026-07-21",
+      "tier_history": [
+        {"date": "2026-07-21", "tier": "WATCH", "composite": 7.25}
+      ]
+    },
+    "nautis": {
+      "name": "Nautis",
+      "first_seen": "2026-07-21",
+      "last_seen": "2026-07-21",
+      "tier_history": [
+        {"date": "2026-07-21", "tier": "WATCH", "composite": 5.75}
+      ]
+    },
+    "skippr-ai": {
+      "name": "Skippr AI",
+      "first_seen": "2026-07-21",
+      "last_seen": "2026-07-21",
+      "tier_history": [
+        {"date": "2026-07-21", "tier": "WATCH", "composite": 5.0}
+      ]
     }
   },
   "pending_reminders": {
