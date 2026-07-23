@@ -40,7 +40,7 @@
     "twelvelabs": {
       "name": "TwelveLabs",
       "first_seen": "2026-07-04",
-      "last_seen": "2026-07-22",
+      "last_seen": "2026-07-23",
       "tier_history": [
         {"date": "2026-07-04", "tier": "WATCH", "composite": 6.75},
         {"date": "2026-07-05", "tier": "WATCH", "composite": 6.75},
@@ -53,7 +53,8 @@
         {"date": "2026-07-13", "tier": "WATCH", "composite": 6.0},
         {"date": "2026-07-15", "tier": "WATCH", "composite": 6.0},
         {"date": "2026-07-19", "tier": "WATCH", "composite": 6.25},
-        {"date": "2026-07-22", "tier": "WATCH", "composite": 6.25}
+        {"date": "2026-07-22", "tier": "WATCH", "composite": 6.25},
+        {"date": "2026-07-23", "tier": "WATCH", "composite": 6.25}
       ]
     },
     "mina-meeting-assistant": {
@@ -319,11 +320,12 @@
     "ogment-ai": {
       "name": "Ogment AI",
       "first_seen": "2026-07-16",
-      "last_seen": "2026-07-22",
+      "last_seen": "2026-07-23",
       "tier_history": [
         {"date": "2026-07-16", "tier": "WATCH", "composite": 5.0},
         {"date": "2026-07-18", "tier": "WATCH", "composite": 5.0},
-        {"date": "2026-07-22", "tier": "WATCH", "composite": 5.0}
+        {"date": "2026-07-22", "tier": "WATCH", "composite": 5.0},
+        {"date": "2026-07-23", "tier": "WATCH", "composite": 5.0}
       ]
     },
     "river-gtm": {
@@ -413,6 +415,22 @@
       "last_seen": "2026-07-22",
       "tier_history": [
         {"date": "2026-07-22", "tier": "WATCH", "composite": 6.0}
+      ]
+    },
+    "viktor": {
+      "name": "Viktor",
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "tier_history": [
+        {"date": "2026-07-23", "tier": "HOT", "composite": 8.25}
+      ]
+    },
+    "scarlett": {
+      "name": "Scarlett",
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "tier_history": [
+        {"date": "2026-07-23", "tier": "WATCH", "composite": 5.5}
       ]
     }
   },
