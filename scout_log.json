@@ -5,9 +5,21 @@
       "first_seen": "2026-07-03",
       "last_seen": "2026-07-11",
       "tier_history": [
-        {"date": "2026-07-03", "tier": "HOT", "composite": 8.0},
-        {"date": "2026-07-08", "tier": "HOT", "composite": 8.0},
-        {"date": "2026-07-11", "tier": "HOT", "composite": 8.0}
+        {
+          "date": "2026-07-03",
+          "tier": "HOT",
+          "composite": 8.0
+        },
+        {
+          "date": "2026-07-08",
+          "tier": "HOT",
+          "composite": 8.0
+        },
+        {
+          "date": "2026-07-11",
+          "tier": "HOT",
+          "composite": 8.0
+        }
       ]
     },
     "airops": {
@@ -15,8 +27,16 @@
       "first_seen": "2026-07-03",
       "last_seen": "2026-07-08",
       "tier_history": [
-        {"date": "2026-07-03", "tier": "WATCH", "composite": 6.75},
-        {"date": "2026-07-08", "tier": "WATCH", "composite": 6.75}
+        {
+          "date": "2026-07-03",
+          "tier": "WATCH",
+          "composite": 6.75
+        },
+        {
+          "date": "2026-07-08",
+          "tier": "WATCH",
+          "composite": 6.75
+        }
       ]
     },
     "scrunch-ai": {
@@ -24,8 +44,16 @@
       "first_seen": "2026-07-03",
       "last_seen": "2026-07-08",
       "tier_history": [
-        {"date": "2026-07-03", "tier": "WATCH", "composite": 6.0},
-        {"date": "2026-07-08", "tier": "WATCH", "composite": 6.0}
+        {
+          "date": "2026-07-03",
+          "tier": "WATCH",
+          "composite": 6.0
+        },
+        {
+          "date": "2026-07-08",
+          "tier": "WATCH",
+          "composite": 6.0
+        }
       ]
     },
     "context-dev": {
@@ -33,28 +61,93 @@
       "first_seen": "2026-07-04",
       "last_seen": "2026-07-08",
       "tier_history": [
-        {"date": "2026-07-04", "tier": "WATCH", "composite": 7.25},
-        {"date": "2026-07-08", "tier": "WATCH", "composite": 7.25}
+        {
+          "date": "2026-07-04",
+          "tier": "WATCH",
+          "composite": 7.25
+        },
+        {
+          "date": "2026-07-08",
+          "tier": "WATCH",
+          "composite": 7.25
+        }
       ]
     },
     "twelvelabs": {
       "name": "TwelveLabs",
       "first_seen": "2026-07-04",
-      "last_seen": "2026-07-23",
+      "last_seen": "2026-07-25",
       "tier_history": [
-        {"date": "2026-07-04", "tier": "WATCH", "composite": 6.75},
-        {"date": "2026-07-05", "tier": "WATCH", "composite": 6.75},
-        {"date": "2026-07-06", "tier": "WATCH", "composite": 6.75},
-        {"date": "2026-07-07", "tier": "WATCH", "composite": 6.75},
-        {"date": "2026-07-08", "tier": "WATCH", "composite": 6.75},
-        {"date": "2026-07-10", "tier": "WATCH", "composite": 6.0},
-        {"date": "2026-07-11", "tier": "WATCH", "composite": 6.0},
-        {"date": "2026-07-12", "tier": "WATCH", "composite": 6.0},
-        {"date": "2026-07-13", "tier": "WATCH", "composite": 6.0},
-        {"date": "2026-07-15", "tier": "WATCH", "composite": 6.0},
-        {"date": "2026-07-19", "tier": "WATCH", "composite": 6.25},
-        {"date": "2026-07-22", "tier": "WATCH", "composite": 6.25},
-        {"date": "2026-07-23", "tier": "WATCH", "composite": 6.25}
+        {
+          "date": "2026-07-04",
+          "tier": "WATCH",
+          "composite": 6.75
+        },
+        {
+          "date": "2026-07-05",
+          "tier": "WATCH",
+          "composite": 6.75
+        },
+        {
+          "date": "2026-07-06",
+          "tier": "WATCH",
+          "composite": 6.75
+        },
+        {
+          "date": "2026-07-07",
+          "tier": "WATCH",
+          "composite": 6.75
+        },
+        {
+          "date": "2026-07-08",
+          "tier": "WATCH",
+          "composite": 6.75
+        },
+        {
+          "date": "2026-07-10",
+          "tier": "WATCH",
+          "composite": 6.0
+        },
+        {
+          "date": "2026-07-11",
+          "tier": "WATCH",
+          "composite": 6.0
+        },
+        {
+          "date": "2026-07-12",
+          "tier": "WATCH",
+          "composite": 6.0
+        },
+        {
+          "date": "2026-07-13",
+          "tier": "WATCH",
+          "composite": 6.0
+        },
+        {
+          "date": "2026-07-15",
+          "tier": "WATCH",
+          "composite": 6.0
+        },
+        {
+          "date": "2026-07-19",
+          "tier": "WATCH",
+          "composite": 6.25
+        },
+        {
+          "date": "2026-07-22",
+          "tier": "WATCH",
+          "composite": 6.25
+        },
+        {
+          "date": "2026-07-23",
+          "tier": "WATCH",
+          "composite": 6.25
+        },
+        {
+          "date": "2026-07-25",
+          "tier": "WATCH",
+          "composite": 6.75
+        }
       ]
     },
     "mina-meeting-assistant": {
@@ -62,10 +155,26 @@
       "first_seen": "2026-07-04",
       "last_seen": "2026-07-08",
       "tier_history": [
-        {"date": "2026-07-04", "tier": "WATCH", "composite": 5.25},
-        {"date": "2026-07-05", "tier": "WATCH", "composite": 5.25},
-        {"date": "2026-07-06", "tier": "WATCH", "composite": 5.25},
-        {"date": "2026-07-08", "tier": "WATCH", "composite": 5.25}
+        {
+          "date": "2026-07-04",
+          "tier": "WATCH",
+          "composite": 5.25
+        },
+        {
+          "date": "2026-07-05",
+          "tier": "WATCH",
+          "composite": 5.25
+        },
+        {
+          "date": "2026-07-06",
+          "tier": "WATCH",
+          "composite": 5.25
+        },
+        {
+          "date": "2026-07-08",
+          "tier": "WATCH",
+          "composite": 5.25
+        }
       ]
     },
     "klariqo": {
@@ -73,8 +182,16 @@
       "first_seen": "2026-07-06",
       "last_seen": "2026-07-08",
       "tier_history": [
-        {"date": "2026-07-06", "tier": "HOT", "composite": 7.5},
-        {"date": "2026-07-08", "tier": "HOT", "composite": 7.5}
+        {
+          "date": "2026-07-06",
+          "tier": "HOT",
+          "composite": 7.5
+        },
+        {
+          "date": "2026-07-08",
+          "tier": "HOT",
+          "composite": 7.5
+        }
       ]
     },
     "profound": {
@@ -82,8 +199,16 @@
       "first_seen": "2026-07-06",
       "last_seen": "2026-07-08",
       "tier_history": [
-        {"date": "2026-07-06", "tier": "WATCH", "composite": 5.75},
-        {"date": "2026-07-08", "tier": "WATCH", "composite": 5.75}
+        {
+          "date": "2026-07-06",
+          "tier": "WATCH",
+          "composite": 5.75
+        },
+        {
+          "date": "2026-07-08",
+          "tier": "WATCH",
+          "composite": 5.75
+        }
       ]
     },
     "humantone": {
@@ -91,8 +216,16 @@
       "first_seen": "2026-07-07",
       "last_seen": "2026-07-08",
       "tier_history": [
-        {"date": "2026-07-07", "tier": "WATCH", "composite": 5.5},
-        {"date": "2026-07-08", "tier": "WATCH", "composite": 5.5}
+        {
+          "date": "2026-07-07",
+          "tier": "WATCH",
+          "composite": 5.5
+        },
+        {
+          "date": "2026-07-08",
+          "tier": "WATCH",
+          "composite": 5.5
+        }
       ]
     },
     "quarterzip": {
@@ -100,8 +233,16 @@
       "first_seen": "2026-07-07",
       "last_seen": "2026-07-08",
       "tier_history": [
-        {"date": "2026-07-07", "tier": "WATCH", "composite": 6.0},
-        {"date": "2026-07-08", "tier": "WATCH", "composite": 6.0}
+        {
+          "date": "2026-07-07",
+          "tier": "WATCH",
+          "composite": 6.0
+        },
+        {
+          "date": "2026-07-08",
+          "tier": "WATCH",
+          "composite": 6.0
+        }
       ]
     },
     "granola": {
@@ -109,8 +250,16 @@
       "first_seen": "2026-07-08",
       "last_seen": "2026-07-10",
       "tier_history": [
-        {"date": "2026-07-08", "tier": "WATCH", "composite": 7.25},
-        {"date": "2026-07-10", "tier": "WATCH", "composite": 7.25}
+        {
+          "date": "2026-07-08",
+          "tier": "WATCH",
+          "composite": 7.25
+        },
+        {
+          "date": "2026-07-10",
+          "tier": "WATCH",
+          "composite": 7.25
+        }
       ]
     },
     "gumloop": {
@@ -118,7 +267,11 @@
       "first_seen": "2026-07-08",
       "last_seen": "2026-07-08",
       "tier_history": [
-        {"date": "2026-07-08", "tier": "HOT", "composite": 7.5}
+        {
+          "date": "2026-07-08",
+          "tier": "HOT",
+          "composite": 7.5
+        }
       ]
     },
     "krater-ai": {
@@ -126,7 +279,11 @@
       "first_seen": "2026-07-08",
       "last_seen": "2026-07-08",
       "tier_history": [
-        {"date": "2026-07-08", "tier": "WATCH", "composite": 6.75}
+        {
+          "date": "2026-07-08",
+          "tier": "WATCH",
+          "composite": 6.75
+        }
       ]
     },
     "eesel-ai": {
@@ -134,7 +291,11 @@
       "first_seen": "2026-07-08",
       "last_seen": "2026-07-08",
       "tier_history": [
-        {"date": "2026-07-08", "tier": "WATCH", "composite": 5.5}
+        {
+          "date": "2026-07-08",
+          "tier": "WATCH",
+          "composite": 5.5
+        }
       ]
     },
     "thesys": {
@@ -142,7 +303,11 @@
       "first_seen": "2026-07-10",
       "last_seen": "2026-07-10",
       "tier_history": [
-        {"date": "2026-07-10", "tier": "WATCH", "composite": 7.25}
+        {
+          "date": "2026-07-10",
+          "tier": "WATCH",
+          "composite": 7.25
+        }
       ]
     },
     "circlechat": {
@@ -150,7 +315,11 @@
       "first_seen": "2026-07-10",
       "last_seen": "2026-07-10",
       "tier_history": [
-        {"date": "2026-07-10", "tier": "WATCH", "composite": 5.25}
+        {
+          "date": "2026-07-10",
+          "tier": "WATCH",
+          "composite": 5.25
+        }
       ]
     },
     "meev": {
@@ -158,7 +327,11 @@
       "first_seen": "2026-07-10",
       "last_seen": "2026-07-10",
       "tier_history": [
-        {"date": "2026-07-10", "tier": "WATCH", "composite": 6.5}
+        {
+          "date": "2026-07-10",
+          "tier": "WATCH",
+          "composite": 6.5
+        }
       ]
     },
     "synthflow": {
@@ -166,8 +339,16 @@
       "first_seen": "2026-07-11",
       "last_seen": "2026-07-12",
       "tier_history": [
-        {"date": "2026-07-11", "tier": "HOT", "composite": 7.75},
-        {"date": "2026-07-12", "tier": "HOT", "composite": 7.75}
+        {
+          "date": "2026-07-11",
+          "tier": "HOT",
+          "composite": 7.75
+        },
+        {
+          "date": "2026-07-12",
+          "tier": "HOT",
+          "composite": 7.75
+        }
       ]
     },
     "rankscale": {
@@ -175,7 +356,11 @@
       "first_seen": "2026-07-11",
       "last_seen": "2026-07-11",
       "tier_history": [
-        {"date": "2026-07-11", "tier": "WATCH", "composite": 7.25}
+        {
+          "date": "2026-07-11",
+          "tier": "WATCH",
+          "composite": 7.25
+        }
       ]
     },
     "retell-ai": {
@@ -183,7 +368,11 @@
       "first_seen": "2026-07-12",
       "last_seen": "2026-07-12",
       "tier_history": [
-        {"date": "2026-07-12", "tier": "HOT", "composite": 8.25}
+        {
+          "date": "2026-07-12",
+          "tier": "HOT",
+          "composite": 8.25
+        }
       ]
     },
     "handoff-ai": {
@@ -191,7 +380,11 @@
       "first_seen": "2026-07-12",
       "last_seen": "2026-07-12",
       "tier_history": [
-        {"date": "2026-07-12", "tier": "WATCH", "composite": 6.25}
+        {
+          "date": "2026-07-12",
+          "tier": "WATCH",
+          "composite": 6.25
+        }
       ]
     },
     "peec-ai": {
@@ -199,7 +392,11 @@
       "first_seen": "2026-07-13",
       "last_seen": "2026-07-13",
       "tier_history": [
-        {"date": "2026-07-13", "tier": "WATCH", "composite": 7.0}
+        {
+          "date": "2026-07-13",
+          "tier": "WATCH",
+          "composite": 7.0
+        }
       ]
     },
     "sim-ai": {
@@ -207,8 +404,16 @@
       "first_seen": "2026-07-14",
       "last_seen": "2026-07-15",
       "tier_history": [
-        {"date": "2026-07-14", "tier": "HOT", "composite": 7.5},
-        {"date": "2026-07-15", "tier": "HOT", "composite": 7.5}
+        {
+          "date": "2026-07-14",
+          "tier": "HOT",
+          "composite": 7.5
+        },
+        {
+          "date": "2026-07-15",
+          "tier": "HOT",
+          "composite": 7.5
+        }
       ]
     },
     "vioevo": {
@@ -216,7 +421,11 @@
       "first_seen": "2026-07-14",
       "last_seen": "2026-07-14",
       "tier_history": [
-        {"date": "2026-07-14", "tier": "WATCH", "composite": 6.5}
+        {
+          "date": "2026-07-14",
+          "tier": "WATCH",
+          "composite": 6.5
+        }
       ]
     },
     "perfai-security": {
@@ -224,7 +433,11 @@
       "first_seen": "2026-07-14",
       "last_seen": "2026-07-14",
       "tier_history": [
-        {"date": "2026-07-14", "tier": "WATCH", "composite": 6.625}
+        {
+          "date": "2026-07-14",
+          "tier": "WATCH",
+          "composite": 6.625
+        }
       ]
     },
     "comik-ai": {
@@ -232,7 +445,11 @@
       "first_seen": "2026-07-14",
       "last_seen": "2026-07-14",
       "tier_history": [
-        {"date": "2026-07-14", "tier": "WATCH", "composite": 6.25}
+        {
+          "date": "2026-07-14",
+          "tier": "WATCH",
+          "composite": 6.25
+        }
       ]
     },
     "plugthis": {
@@ -240,8 +457,16 @@
       "first_seen": "2026-07-14",
       "last_seen": "2026-07-15",
       "tier_history": [
-        {"date": "2026-07-14", "tier": "WATCH", "composite": 5.5},
-        {"date": "2026-07-15", "tier": "WATCH", "composite": 5.5}
+        {
+          "date": "2026-07-14",
+          "tier": "WATCH",
+          "composite": 5.5
+        },
+        {
+          "date": "2026-07-15",
+          "tier": "WATCH",
+          "composite": 5.5
+        }
       ]
     },
     "chatcut": {
@@ -249,8 +474,16 @@
       "first_seen": "2026-07-12",
       "last_seen": "2026-07-15",
       "tier_history": [
-        {"date": "2026-07-12", "tier": "WATCH", "composite": 5.5},
-        {"date": "2026-07-15", "tier": "WATCH", "composite": 5.5}
+        {
+          "date": "2026-07-12",
+          "tier": "WATCH",
+          "composite": 5.5
+        },
+        {
+          "date": "2026-07-15",
+          "tier": "WATCH",
+          "composite": 5.5
+        }
       ]
     },
     "n71": {
@@ -258,7 +491,11 @@
       "first_seen": "2026-07-15",
       "last_seen": "2026-07-15",
       "tier_history": [
-        {"date": "2026-07-15", "tier": "WATCH", "composite": 5.5}
+        {
+          "date": "2026-07-15",
+          "tier": "WATCH",
+          "composite": 5.5
+        }
       ]
     },
     "storychief": {
@@ -266,7 +503,11 @@
       "first_seen": "2026-07-15",
       "last_seen": "2026-07-15",
       "tier_history": [
-        {"date": "2026-07-15", "tier": "WATCH", "composite": 7.0}
+        {
+          "date": "2026-07-15",
+          "tier": "WATCH",
+          "composite": 7.0
+        }
       ]
     },
     "kuberns": {
@@ -274,8 +515,16 @@
       "first_seen": "2026-07-16",
       "last_seen": "2026-07-17",
       "tier_history": [
-        {"date": "2026-07-16", "tier": "WATCH", "composite": 7.25},
-        {"date": "2026-07-17", "tier": "WATCH", "composite": 7.25}
+        {
+          "date": "2026-07-16",
+          "tier": "WATCH",
+          "composite": 7.25
+        },
+        {
+          "date": "2026-07-17",
+          "tier": "WATCH",
+          "composite": 7.25
+        }
       ]
     },
     "emergent": {
@@ -283,10 +532,26 @@
       "first_seen": "2026-07-17",
       "last_seen": "2026-07-20",
       "tier_history": [
-        {"date": "2026-07-17", "tier": "HOT", "composite": 9.0},
-        {"date": "2026-07-18", "tier": "HOT", "composite": 9.0},
-        {"date": "2026-07-19", "tier": "HOT", "composite": 9.0},
-        {"date": "2026-07-20", "tier": "HOT", "composite": 9.0}
+        {
+          "date": "2026-07-17",
+          "tier": "HOT",
+          "composite": 9.0
+        },
+        {
+          "date": "2026-07-18",
+          "tier": "HOT",
+          "composite": 9.0
+        },
+        {
+          "date": "2026-07-19",
+          "tier": "HOT",
+          "composite": 9.0
+        },
+        {
+          "date": "2026-07-20",
+          "tier": "HOT",
+          "composite": 9.0
+        }
       ]
     },
     "katalyst": {
@@ -294,7 +559,11 @@
       "first_seen": "2026-07-17",
       "last_seen": "2026-07-17",
       "tier_history": [
-        {"date": "2026-07-17", "tier": "WATCH", "composite": 5.5}
+        {
+          "date": "2026-07-17",
+          "tier": "WATCH",
+          "composite": 5.5
+        }
       ]
     },
     "bono-ai": {
@@ -302,9 +571,21 @@
       "first_seen": "2026-07-17",
       "last_seen": "2026-07-22",
       "tier_history": [
-        {"date": "2026-07-17", "tier": "WATCH", "composite": 5.25},
-        {"date": "2026-07-18", "tier": "WATCH", "composite": 5.25},
-        {"date": "2026-07-22", "tier": "WATCH", "composite": 5.25}
+        {
+          "date": "2026-07-17",
+          "tier": "WATCH",
+          "composite": 5.25
+        },
+        {
+          "date": "2026-07-18",
+          "tier": "WATCH",
+          "composite": 5.25
+        },
+        {
+          "date": "2026-07-22",
+          "tier": "WATCH",
+          "composite": 5.25
+        }
       ]
     },
     "cutrix": {
@@ -312,9 +593,21 @@
       "first_seen": "2026-07-17",
       "last_seen": "2026-07-22",
       "tier_history": [
-        {"date": "2026-07-17", "tier": "WATCH", "composite": 5.25},
-        {"date": "2026-07-18", "tier": "WATCH", "composite": 5.25},
-        {"date": "2026-07-22", "tier": "WATCH", "composite": 5.25}
+        {
+          "date": "2026-07-17",
+          "tier": "WATCH",
+          "composite": 5.25
+        },
+        {
+          "date": "2026-07-18",
+          "tier": "WATCH",
+          "composite": 5.25
+        },
+        {
+          "date": "2026-07-22",
+          "tier": "WATCH",
+          "composite": 5.25
+        }
       ]
     },
     "ogment-ai": {
@@ -322,10 +615,26 @@
       "first_seen": "2026-07-16",
       "last_seen": "2026-07-23",
       "tier_history": [
-        {"date": "2026-07-16", "tier": "WATCH", "composite": 5.0},
-        {"date": "2026-07-18", "tier": "WATCH", "composite": 5.0},
-        {"date": "2026-07-22", "tier": "WATCH", "composite": 5.0},
-        {"date": "2026-07-23", "tier": "WATCH", "composite": 5.0}
+        {
+          "date": "2026-07-16",
+          "tier": "WATCH",
+          "composite": 5.0
+        },
+        {
+          "date": "2026-07-18",
+          "tier": "WATCH",
+          "composite": 5.0
+        },
+        {
+          "date": "2026-07-22",
+          "tier": "WATCH",
+          "composite": 5.0
+        },
+        {
+          "date": "2026-07-23",
+          "tier": "WATCH",
+          "composite": 5.0
+        }
       ]
     },
     "river-gtm": {
@@ -333,8 +642,16 @@
       "first_seen": "2026-07-18",
       "last_seen": "2026-07-19",
       "tier_history": [
-        {"date": "2026-07-18", "tier": "WATCH", "composite": 7.25},
-        {"date": "2026-07-19", "tier": "WATCH", "composite": 7.25}
+        {
+          "date": "2026-07-18",
+          "tier": "WATCH",
+          "composite": 7.25
+        },
+        {
+          "date": "2026-07-19",
+          "tier": "WATCH",
+          "composite": 7.25
+        }
       ]
     },
     "answrr": {
@@ -342,7 +659,11 @@
       "first_seen": "2026-07-18",
       "last_seen": "2026-07-18",
       "tier_history": [
-        {"date": "2026-07-18", "tier": "WATCH", "composite": 7.0}
+        {
+          "date": "2026-07-18",
+          "tier": "WATCH",
+          "composite": 7.0
+        }
       ]
     },
     "ai-emaily": {
@@ -350,7 +671,11 @@
       "first_seen": "2026-07-18",
       "last_seen": "2026-07-18",
       "tier_history": [
-        {"date": "2026-07-18", "tier": "WATCH", "composite": 5.5}
+        {
+          "date": "2026-07-18",
+          "tier": "WATCH",
+          "composite": 5.5
+        }
       ]
     },
     "folk": {
@@ -358,7 +683,11 @@
       "first_seen": "2026-07-19",
       "last_seen": "2026-07-19",
       "tier_history": [
-        {"date": "2026-07-19", "tier": "WATCH", "composite": 7.25}
+        {
+          "date": "2026-07-19",
+          "tier": "WATCH",
+          "composite": 7.25
+        }
       ]
     },
     "lyzr": {
@@ -366,7 +695,11 @@
       "first_seen": "2026-07-20",
       "last_seen": "2026-07-20",
       "tier_history": [
-        {"date": "2026-07-20", "tier": "HOT", "composite": 8.0}
+        {
+          "date": "2026-07-20",
+          "tier": "HOT",
+          "composite": 8.0
+        }
       ]
     },
     "mira-ai-moderator": {
@@ -374,7 +707,11 @@
       "first_seen": "2026-07-20",
       "last_seen": "2026-07-20",
       "tier_history": [
-        {"date": "2026-07-20", "tier": "WATCH", "composite": 5.25}
+        {
+          "date": "2026-07-20",
+          "tier": "WATCH",
+          "composite": 5.25
+        }
       ]
     },
     "pixverse": {
@@ -382,7 +719,11 @@
       "first_seen": "2026-07-21",
       "last_seen": "2026-07-21",
       "tier_history": [
-        {"date": "2026-07-21", "tier": "HOT", "composite": 8.25}
+        {
+          "date": "2026-07-21",
+          "tier": "HOT",
+          "composite": 8.25
+        }
       ]
     },
     "omniseo": {
@@ -390,7 +731,11 @@
       "first_seen": "2026-07-21",
       "last_seen": "2026-07-21",
       "tier_history": [
-        {"date": "2026-07-21", "tier": "WATCH", "composite": 7.25}
+        {
+          "date": "2026-07-21",
+          "tier": "WATCH",
+          "composite": 7.25
+        }
       ]
     },
     "nautis": {
@@ -398,7 +743,11 @@
       "first_seen": "2026-07-21",
       "last_seen": "2026-07-21",
       "tier_history": [
-        {"date": "2026-07-21", "tier": "WATCH", "composite": 5.75}
+        {
+          "date": "2026-07-21",
+          "tier": "WATCH",
+          "composite": 5.75
+        }
       ]
     },
     "skippr-ai": {
@@ -406,7 +755,11 @@
       "first_seen": "2026-07-21",
       "last_seen": "2026-07-21",
       "tier_history": [
-        {"date": "2026-07-21", "tier": "WATCH", "composite": 5.0}
+        {
+          "date": "2026-07-21",
+          "tier": "WATCH",
+          "composite": 5.0
+        }
       ]
     },
     "lemonlime": {
@@ -414,7 +767,11 @@
       "first_seen": "2026-07-22",
       "last_seen": "2026-07-22",
       "tier_history": [
-        {"date": "2026-07-22", "tier": "WATCH", "composite": 6.0}
+        {
+          "date": "2026-07-22",
+          "tier": "WATCH",
+          "composite": 6.0
+        }
       ]
     },
     "viktor": {
@@ -422,7 +779,11 @@
       "first_seen": "2026-07-23",
       "last_seen": "2026-07-23",
       "tier_history": [
-        {"date": "2026-07-23", "tier": "HOT", "composite": 8.25}
+        {
+          "date": "2026-07-23",
+          "tier": "HOT",
+          "composite": 8.25
+        }
       ]
     },
     "scarlett": {
@@ -430,14 +791,59 @@
       "first_seen": "2026-07-23",
       "last_seen": "2026-07-23",
       "tier_history": [
-        {"date": "2026-07-23", "tier": "WATCH", "composite": 5.5}
+        {
+          "date": "2026-07-23",
+          "tier": "WATCH",
+          "composite": 5.5
+        }
+      ]
+    },
+    "paper-design": {
+      "name": "Paper (paper.design)",
+      "first_seen": "2026-07-25",
+      "last_seen": "2026-07-25",
+      "tier_history": [
+        {
+          "date": "2026-07-25",
+          "tier": "WATCH",
+          "composite": 7.0
+        }
+      ]
+    },
+    "acme-bot": {
+      "name": "ACME.BOT",
+      "first_seen": "2026-07-25",
+      "last_seen": "2026-07-25",
+      "tier_history": [
+        {
+          "date": "2026-07-25",
+          "tier": "WATCH",
+          "composite": 6.25
+        }
+      ]
+    },
+    "routine": {
+      "name": "Routine (routine.co)",
+      "first_seen": "2026-07-25",
+      "last_seen": "2026-07-25",
+      "tier_history": [
+        {
+          "date": "2026-07-25",
+          "tier": "WATCH",
+          "composite": 5.0
+        }
       ]
     }
   },
   "pending_reminders": {
-    "semrush": {"last_reminded": "2026-07-19"},
-    "canva-ai": {"last_reminded": "2026-07-19"},
-    "lovable": {"last_reminded": "2026-07-19"},
-    "gamma": {"last_reminded": "2026-07-19"}
+    "canva-ai": {
+      "last_reminded": "2026-07-19"
+    },
+    "lovable": {
+      "last_reminded": "2026-07-19"
+    },
+    "gamma": {
+      "last_reminded": "2026-07-19"
+    }
   }
 }
