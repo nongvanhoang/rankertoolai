@@ -801,10 +801,15 @@
     "paper-design": {
       "name": "Paper (paper.design)",
       "first_seen": "2026-07-25",
-      "last_seen": "2026-07-25",
+      "last_seen": "2026-07-26",
       "tier_history": [
         {
           "date": "2026-07-25",
+          "tier": "WATCH",
+          "composite": 7.0
+        },
+        {
+          "date": "2026-07-26",
           "tier": "WATCH",
           "composite": 7.0
         }
@@ -833,17 +838,29 @@
           "composite": 5.0
         }
       ]
+    },
+    "openseo": {
+      "name": "OpenSEO",
+      "first_seen": "2026-07-26",
+      "last_seen": "2026-07-26",
+      "tier_history": [
+        {
+          "date": "2026-07-26",
+          "tier": "WATCH",
+          "composite": 5.75
+        }
+      ]
     }
   },
   "pending_reminders": {
     "canva-ai": {
-      "last_reminded": "2026-07-19"
+      "last_reminded": "2026-07-26"
     },
     "lovable": {
-      "last_reminded": "2026-07-19"
+      "last_reminded": "2026-07-26"
     },
     "gamma": {
-      "last_reminded": "2026-07-19"
+      "last_reminded": "2026-07-26"
     }
   }
 }
