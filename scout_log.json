@@ -850,6 +850,54 @@
           "composite": 5.75
         }
       ]
+    },
+    "glaze-raycast": {
+      "name": "Glaze by Raycast",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "tier_history": [
+        {
+          "date": "2026-07-28",
+          "tier": "HOT",
+          "composite": 7.875
+        }
+      ]
+    },
+    "creatify-ai": {
+      "name": "Creatify AI",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "tier_history": [
+        {
+          "date": "2026-07-28",
+          "tier": "WATCH",
+          "composite": 7.375
+        }
+      ]
+    },
+    "pebbles-ai": {
+      "name": "Pebbles AI",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "tier_history": [
+        {
+          "date": "2026-07-28",
+          "tier": "WATCH",
+          "composite": 5.25
+        }
+      ]
+    },
+    "velo-ai-video": {
+      "name": "Velo AI",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "tier_history": [
+        {
+          "date": "2026-07-28",
+          "tier": "WATCH",
+          "composite": 5.125
+        }
+      ]
     }
   },
   "pending_reminders": {

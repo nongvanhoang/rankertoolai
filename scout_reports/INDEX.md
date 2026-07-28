@@ -24,3 +24,4 @@ Backfilled from scout_log.json on 2026-07-18 -- entries before 2026-07-18 only h
 - 2026-07-23: 2 NEW, 0 UPGRADED, 2 REPEAT — HOT: Viktor
 - 2026-07-25: 3 NEW, 0 UPGRADED, 1 REPEAT — HOT: none
 - 2026-07-26: 1 NEW, 0 UPGRADED, 1 REPEAT — HOT: none
+- 2026-07-28: 4 NEW, 0 UPGRADED, 0 REPEAT — HOT: Glaze by Raycast
