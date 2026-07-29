@@ -530,7 +530,7 @@
     "emergent": {
       "name": "Emergent",
       "first_seen": "2026-07-17",
-      "last_seen": "2026-07-20",
+      "last_seen": "2026-07-29",
       "tier_history": [
         {
           "date": "2026-07-17",
@@ -549,6 +549,11 @@
         },
         {
           "date": "2026-07-20",
+          "tier": "HOT",
+          "composite": 9.0
+        },
+        {
+          "date": "2026-07-29",
           "tier": "HOT",
           "composite": 9.0
         }
@@ -896,6 +901,18 @@
           "date": "2026-07-28",
           "tier": "WATCH",
           "composite": 5.125
+        }
+      ]
+    },
+    "clawteams": {
+      "name": "ClawTeams",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "tier_history": [
+        {
+          "date": "2026-07-29",
+          "tier": "WATCH",
+          "composite": 5.75
         }
       ]
     }
