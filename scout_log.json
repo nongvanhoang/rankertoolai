@@ -915,6 +915,18 @@
           "composite": 5.75
         }
       ]
+    },
+    "higgsfield-ai": {
+      "name": "Higgsfield AI",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "tier_history": [
+        {
+          "date": "2026-07-30",
+          "tier": "HOT",
+          "composite": 8.25
+        }
+      ]
     }
   },
   "pending_reminders": {
