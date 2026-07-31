@@ -859,10 +859,15 @@
     "glaze-raycast": {
       "name": "Glaze by Raycast",
       "first_seen": "2026-07-28",
-      "last_seen": "2026-07-28",
+      "last_seen": "2026-07-31",
       "tier_history": [
         {
           "date": "2026-07-28",
+          "tier": "HOT",
+          "composite": 7.875
+        },
+        {
+          "date": "2026-07-31",
           "tier": "HOT",
           "composite": 7.875
         }
@@ -895,12 +900,17 @@
     "velo-ai-video": {
       "name": "Velo AI",
       "first_seen": "2026-07-28",
-      "last_seen": "2026-07-28",
+      "last_seen": "2026-07-31",
       "tier_history": [
         {
           "date": "2026-07-28",
           "tier": "WATCH",
           "composite": 5.125
+        },
+        {
+          "date": "2026-07-31",
+          "tier": "WATCH",
+          "composite": 5.25
         }
       ]
     },
