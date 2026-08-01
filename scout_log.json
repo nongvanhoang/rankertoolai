@@ -527,38 +527,6 @@
         }
       ]
     },
-    "emergent": {
-      "name": "Emergent",
-      "first_seen": "2026-07-17",
-      "last_seen": "2026-07-29",
-      "tier_history": [
-        {
-          "date": "2026-07-17",
-          "tier": "HOT",
-          "composite": 9.0
-        },
-        {
-          "date": "2026-07-18",
-          "tier": "HOT",
-          "composite": 9.0
-        },
-        {
-          "date": "2026-07-19",
-          "tier": "HOT",
-          "composite": 9.0
-        },
-        {
-          "date": "2026-07-20",
-          "tier": "HOT",
-          "composite": 9.0
-        },
-        {
-          "date": "2026-07-29",
-          "tier": "HOT",
-          "composite": 9.0
-        }
-      ]
-    },
     "katalyst": {
       "name": "Katalyst",
       "first_seen": "2026-07-17",
@@ -937,6 +905,67 @@
           "composite": 8.25
         }
       ]
+    },
+    "emergent": {
+      "name": "Emergent",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-08-01",
+      "tier_history": [
+        {
+          "date": "2026-07-17",
+          "tier": "HOT",
+          "composite": 9.0
+        },
+        {
+          "date": "2026-07-18",
+          "tier": "HOT",
+          "composite": 9.0
+        },
+        {
+          "date": "2026-07-19",
+          "tier": "HOT",
+          "composite": 9.0
+        },
+        {
+          "date": "2026-07-20",
+          "tier": "HOT",
+          "composite": 9.0
+        },
+        {
+          "date": "2026-07-29",
+          "tier": "HOT",
+          "composite": 9.0
+        },
+        {
+          "date": "2026-08-01",
+          "tier": "HOT",
+          "composite": 9.0
+        }
+      ]
+    },
+    "leaping-ai": {
+      "name": "Leaping AI",
+      "first_seen": "2026-08-01",
+      "last_seen": "2026-08-01",
+      "tier_history": [
+        {
+          "date": "2026-08-01",
+          "tier": "WATCH",
+          "composite": 6.0
+        }
+      ]
+    },
+    "prelint": {
+      "name": "Prelint",
+      "first_seen": "2026-08-01",
+      "last_seen": "2026-08-01",
+      "tier_history": [
+        {
+          "date": "2026-08-01",
+          "tier": "WATCH",
+          "composite": 5.25
+        }
+      ]
     }
   },
   "pending_reminders": {
@@ -948,6 +977,9 @@
     },
     "gamma": {
       "last_reminded": "2026-07-26"
+    },
+    "semrush": {
+      "last_reminded": "2026-08-01"
     }
   }
 }
