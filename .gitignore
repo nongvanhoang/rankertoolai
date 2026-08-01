@@ -18,10 +18,20 @@ __pycache__/
 .wrangler/
 html/.wrangler/
 
-# Legacy VPS/nginx mirror — its own nested git repo (embedded/submodule),
-# not the live site (Cloudflare Pages serves repo root). `git add -A`
-# without this stages it as a gitlink and breaks Pages builds — this
-# happened once already, fixed in ba906b0.
+# html/ is a SEPARATE LOCAL CLONE of this exact same repo (confirmed
+# 2026-08-02: root's origin is github.com/nongvanhoang/RankerToolAI.git,
+# html/'s origin is github.com/nongvanhoang/rankertoolai.git — GitHub
+# treats repo paths case-insensitively, so both URLs resolve to the one
+# real repo). It is NOT a different repo, a submodule, or a stale mirror
+# (an older comment here claiming that was wrong) — it's a nested checkout
+# that happens to live inside this working tree. It IS the folder
+# `wrangler pages deploy` actually publishes from (deploy.ps1 / the Cloudflare
+# Pages Git integration both target it). `git add -A` without this ignore
+# entry stages it as a gitlink and breaks Pages builds (happened once,
+# fixed in ba906b0) — that risk is real regardless of the clone relationship.
+# Treat it like any second clone: `git pull` in html/ before editing there,
+# and `git pull` here after pushing from html/ (or vice versa) — ordinary
+# multi-clone hygiene, nothing more exotic than that.
 html/
 
 # Chrome profile data (large, binary)
