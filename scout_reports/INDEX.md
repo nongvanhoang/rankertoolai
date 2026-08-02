@@ -29,3 +29,4 @@ Backfilled from scout_log.json on 2026-07-18 -- entries before 2026-07-18 only h
 - 2026-07-30: 1 NEW, 0 UPGRADED, 0 REPEAT — HOT: Higgsfield AI
 - 2026-07-31: 0 NEW, 0 UPGRADED, 2 REPEAT — HOT: none
 - 2026-08-01: 2 NEW, 0 UPGRADED, 1 REPEAT — HOT: none
+- 2026-08-02: 3 NEW, 0 UPGRADED, 0 REPEAT — HOT: none

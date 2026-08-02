@@ -966,11 +966,47 @@
           "composite": 5.25
         }
       ]
+    },
+    "clawsecure": {
+      "name": "ClawSecure",
+      "first_seen": "2026-08-02",
+      "last_seen": "2026-08-02",
+      "tier_history": [
+        {
+          "date": "2026-08-02",
+          "tier": "WATCH",
+          "composite": 5.75
+        }
+      ]
+    },
+    "metix-ai": {
+      "name": "Metix AI (formerly OpenJobs AI)",
+      "first_seen": "2026-08-02",
+      "last_seen": "2026-08-02",
+      "tier_history": [
+        {
+          "date": "2026-08-02",
+          "tier": "WATCH",
+          "composite": 6.0
+        }
+      ]
+    },
+    "graphbit-prflow": {
+      "name": "Graphbit PRFlow",
+      "first_seen": "2026-08-02",
+      "last_seen": "2026-08-02",
+      "tier_history": [
+        {
+          "date": "2026-08-02",
+          "tier": "WATCH",
+          "composite": 5.0
+        }
+      ]
     }
   },
   "pending_reminders": {
     "canva-ai": {
-      "last_reminded": "2026-07-26"
+      "last_reminded": "2026-08-02"
     },
     "lovable": {
       "last_reminded": "2026-07-26"
