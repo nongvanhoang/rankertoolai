@@ -100,7 +100,6 @@ audit_results.csv
 # on production. Corrected: these are now untracked here too, same as
 # everything else in this block. Re-verify this assumption never again —
 # always live-check before excluding new scripts from this list.
-agents/
 social_agent/
 google_ads/
 infrastructure/

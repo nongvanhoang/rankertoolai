@@ -2,7 +2,7 @@
 # These are git-tracked (source of truth lives in the root RankerToolAI repo)
 # but must never be uploaded to the public Cloudflare Pages deployment.
 
-agents/
+.claude/
 social_agent/
 google_ads/
 infrastructure/
