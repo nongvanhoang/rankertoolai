@@ -1002,6 +1002,66 @@
           "composite": 5.0
         }
       ]
+    },
+    "nudgeforme": {
+      "name": "NudgeForMe",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "tier_history": [
+        {
+          "date": "2026-08-03",
+          "tier": "WATCH",
+          "composite": 6.25
+        }
+      ]
+    },
+    "timeos": {
+      "name": "timeOS 2.0",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "tier_history": [
+        {
+          "date": "2026-08-03",
+          "tier": "WATCH",
+          "composite": 5.25
+        }
+      ]
+    },
+    "zinley": {
+      "name": "Zinley",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "tier_history": [
+        {
+          "date": "2026-08-03",
+          "tier": "WATCH",
+          "composite": 5.5
+        }
+      ]
+    },
+    "lindy": {
+      "name": "Lindy",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "tier_history": [
+        {
+          "date": "2026-08-03",
+          "tier": "WATCH",
+          "composite": 6.25
+        }
+      ]
+    },
+    "fish-audio": {
+      "name": "Fish Audio",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "tier_history": [
+        {
+          "date": "2026-08-03",
+          "tier": "WATCH",
+          "composite": 6.75
+        }
+      ]
     }
   },
   "pending_reminders": {
