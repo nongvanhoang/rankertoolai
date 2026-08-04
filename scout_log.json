@@ -946,10 +946,15 @@
     "leaping-ai": {
       "name": "Leaping AI",
       "first_seen": "2026-08-01",
-      "last_seen": "2026-08-01",
+      "last_seen": "2026-08-04",
       "tier_history": [
         {
           "date": "2026-08-01",
+          "tier": "WATCH",
+          "composite": 6.0
+        },
+        {
+          "date": "2026-08-04",
           "tier": "WATCH",
           "composite": 6.0
         }
@@ -1006,10 +1011,15 @@
     "nudgeforme": {
       "name": "NudgeForMe",
       "first_seen": "2026-08-03",
-      "last_seen": "2026-08-03",
+      "last_seen": "2026-08-04",
       "tier_history": [
         {
           "date": "2026-08-03",
+          "tier": "WATCH",
+          "composite": 6.25
+        },
+        {
+          "date": "2026-08-04",
           "tier": "WATCH",
           "composite": 6.25
         }
@@ -1018,10 +1028,15 @@
     "timeos": {
       "name": "timeOS 2.0",
       "first_seen": "2026-08-03",
-      "last_seen": "2026-08-03",
+      "last_seen": "2026-08-04",
       "tier_history": [
         {
           "date": "2026-08-03",
+          "tier": "WATCH",
+          "composite": 5.25
+        },
+        {
+          "date": "2026-08-04",
           "tier": "WATCH",
           "composite": 5.25
         }
@@ -1030,10 +1045,15 @@
     "zinley": {
       "name": "Zinley",
       "first_seen": "2026-08-03",
-      "last_seen": "2026-08-03",
+      "last_seen": "2026-08-04",
       "tier_history": [
         {
           "date": "2026-08-03",
+          "tier": "WATCH",
+          "composite": 5.5
+        },
+        {
+          "date": "2026-08-04",
           "tier": "WATCH",
           "composite": 5.5
         }
