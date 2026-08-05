@@ -153,7 +153,7 @@
     "mina-meeting-assistant": {
       "name": "Mina Meeting Assistant",
       "first_seen": "2026-07-04",
-      "last_seen": "2026-07-08",
+      "last_seen": "2026-08-05",
       "tier_history": [
         {
           "date": "2026-07-04",
@@ -172,6 +172,11 @@
         },
         {
           "date": "2026-07-08",
+          "tier": "WATCH",
+          "composite": 5.25
+        },
+        {
+          "date": "2026-08-05",
           "tier": "WATCH",
           "composite": 5.25
         }
@@ -654,10 +659,15 @@
     "folk": {
       "name": "folk",
       "first_seen": "2026-07-19",
-      "last_seen": "2026-07-19",
+      "last_seen": "2026-08-05",
       "tier_history": [
         {
           "date": "2026-07-19",
+          "tier": "WATCH",
+          "composite": 7.25
+        },
+        {
+          "date": "2026-08-05",
           "tier": "WATCH",
           "composite": 7.25
         }
@@ -946,7 +956,7 @@
     "leaping-ai": {
       "name": "Leaping AI",
       "first_seen": "2026-08-01",
-      "last_seen": "2026-08-04",
+      "last_seen": "2026-08-05",
       "tier_history": [
         {
           "date": "2026-08-01",
@@ -955,6 +965,11 @@
         },
         {
           "date": "2026-08-04",
+          "tier": "WATCH",
+          "composite": 6.0
+        },
+        {
+          "date": "2026-08-05",
           "tier": "WATCH",
           "composite": 6.0
         }
@@ -1011,7 +1026,7 @@
     "nudgeforme": {
       "name": "NudgeForMe",
       "first_seen": "2026-08-03",
-      "last_seen": "2026-08-04",
+      "last_seen": "2026-08-05",
       "tier_history": [
         {
           "date": "2026-08-03",
@@ -1020,6 +1035,11 @@
         },
         {
           "date": "2026-08-04",
+          "tier": "WATCH",
+          "composite": 6.25
+        },
+        {
+          "date": "2026-08-05",
           "tier": "WATCH",
           "composite": 6.25
         }
@@ -1045,7 +1065,7 @@
     "zinley": {
       "name": "Zinley",
       "first_seen": "2026-08-03",
-      "last_seen": "2026-08-04",
+      "last_seen": "2026-08-05",
       "tier_history": [
         {
           "date": "2026-08-03",
@@ -1054,6 +1074,11 @@
         },
         {
           "date": "2026-08-04",
+          "tier": "WATCH",
+          "composite": 5.5
+        },
+        {
+          "date": "2026-08-05",
           "tier": "WATCH",
           "composite": 5.5
         }
@@ -1080,6 +1105,30 @@
           "date": "2026-08-03",
           "tier": "WATCH",
           "composite": 6.75
+        }
+      ]
+    },
+    "agentsky": {
+      "name": "AgentSky",
+      "first_seen": "2026-08-05",
+      "last_seen": "2026-08-05",
+      "tier_history": [
+        {
+          "date": "2026-08-05",
+          "tier": "WATCH",
+          "composite": 6.0
+        }
+      ]
+    },
+    "ctruh-studio": {
+      "name": "Ctruh Studio",
+      "first_seen": "2026-08-05",
+      "last_seen": "2026-08-05",
+      "tier_history": [
+        {
+          "date": "2026-08-05",
+          "tier": "WATCH",
+          "composite": 5.5
         }
       ]
     }
