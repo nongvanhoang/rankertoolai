@@ -1131,6 +1131,54 @@
           "composite": 5.5
         }
       ]
+    },
+    "airtop": {
+      "name": "Airtop",
+      "first_seen": "2026-08-06",
+      "last_seen": "2026-08-06",
+      "tier_history": [
+        {
+          "date": "2026-08-06",
+          "tier": "WATCH",
+          "composite": 7.25
+        }
+      ]
+    },
+    "tweet-hunter": {
+      "name": "Tweet Hunter",
+      "first_seen": "2026-08-06",
+      "last_seen": "2026-08-06",
+      "tier_history": [
+        {
+          "date": "2026-08-06",
+          "tier": "WATCH",
+          "composite": 7.0
+        }
+      ]
+    },
+    "browse-ai": {
+      "name": "Browse AI",
+      "first_seen": "2026-08-06",
+      "last_seen": "2026-08-06",
+      "tier_history": [
+        {
+          "date": "2026-08-06",
+          "tier": "WATCH",
+          "composite": 7.0
+        }
+      ]
+    },
+    "blackmagic-so": {
+      "name": "BlackMagic.so",
+      "first_seen": "2026-08-06",
+      "last_seen": "2026-08-06",
+      "tier_history": [
+        {
+          "date": "2026-08-06",
+          "tier": "WATCH",
+          "composite": 6.25
+        }
+      ]
     }
   },
   "pending_reminders": {
