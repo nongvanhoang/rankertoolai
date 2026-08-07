@@ -1026,7 +1026,7 @@
     "nudgeforme": {
       "name": "NudgeForMe",
       "first_seen": "2026-08-03",
-      "last_seen": "2026-08-05",
+      "last_seen": "2026-08-07",
       "tier_history": [
         {
           "date": "2026-08-03",
@@ -1040,6 +1040,11 @@
         },
         {
           "date": "2026-08-05",
+          "tier": "WATCH",
+          "composite": 6.25
+        },
+        {
+          "date": "2026-08-07",
           "tier": "WATCH",
           "composite": 6.25
         }
@@ -1065,7 +1070,7 @@
     "zinley": {
       "name": "Zinley",
       "first_seen": "2026-08-03",
-      "last_seen": "2026-08-05",
+      "last_seen": "2026-08-07",
       "tier_history": [
         {
           "date": "2026-08-03",
@@ -1079,6 +1084,11 @@
         },
         {
           "date": "2026-08-05",
+          "tier": "WATCH",
+          "composite": 5.5
+        },
+        {
+          "date": "2026-08-07",
           "tier": "WATCH",
           "composite": 5.5
         }
@@ -1111,10 +1121,15 @@
     "agentsky": {
       "name": "AgentSky",
       "first_seen": "2026-08-05",
-      "last_seen": "2026-08-05",
+      "last_seen": "2026-08-07",
       "tier_history": [
         {
           "date": "2026-08-05",
+          "tier": "WATCH",
+          "composite": 6.0
+        },
+        {
+          "date": "2026-08-07",
           "tier": "WATCH",
           "composite": 6.0
         }
@@ -1123,10 +1138,15 @@
     "ctruh-studio": {
       "name": "Ctruh Studio",
       "first_seen": "2026-08-05",
-      "last_seen": "2026-08-05",
+      "last_seen": "2026-08-07",
       "tier_history": [
         {
           "date": "2026-08-05",
+          "tier": "WATCH",
+          "composite": 5.5
+        },
+        {
+          "date": "2026-08-07",
           "tier": "WATCH",
           "composite": 5.5
         }
@@ -1135,10 +1155,15 @@
     "airtop": {
       "name": "Airtop",
       "first_seen": "2026-08-06",
-      "last_seen": "2026-08-06",
+      "last_seen": "2026-08-07",
       "tier_history": [
         {
           "date": "2026-08-06",
+          "tier": "WATCH",
+          "composite": 7.25
+        },
+        {
+          "date": "2026-08-07",
           "tier": "WATCH",
           "composite": 7.25
         }
@@ -1177,6 +1202,18 @@
           "date": "2026-08-06",
           "tier": "WATCH",
           "composite": 6.25
+        }
+      ]
+    },
+    "seedream": {
+      "name": "Seedream",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "tier_history": [
+        {
+          "date": "2026-08-07",
+          "tier": "WATCH",
+          "composite": 6.0
         }
       ]
     }
