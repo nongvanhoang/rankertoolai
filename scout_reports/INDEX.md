@@ -35,3 +35,4 @@ Backfilled from scout_log.json on 2026-07-18 -- entries before 2026-07-18 only h
 - 2026-08-05: 2 NEW, 0 UPGRADED, 5 REPEAT — HOT: none
 - 2026-08-06: 4 NEW, 0 UPGRADED, 0 REPEAT — HOT: none
 - 2026-08-07: 1 NEW, 0 UPGRADED, 5 REPEAT — HOT: none
+- 2026-08-08: 1 NEW, 0 UPGRADED, 0 REPEAT — HOT: none

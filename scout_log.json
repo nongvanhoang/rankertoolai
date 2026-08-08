@@ -22,57 +22,6 @@
         }
       ]
     },
-    "airops": {
-      "name": "AirOps",
-      "first_seen": "2026-07-03",
-      "last_seen": "2026-07-08",
-      "tier_history": [
-        {
-          "date": "2026-07-03",
-          "tier": "WATCH",
-          "composite": 6.75
-        },
-        {
-          "date": "2026-07-08",
-          "tier": "WATCH",
-          "composite": 6.75
-        }
-      ]
-    },
-    "scrunch-ai": {
-      "name": "Scrunch AI",
-      "first_seen": "2026-07-03",
-      "last_seen": "2026-07-08",
-      "tier_history": [
-        {
-          "date": "2026-07-03",
-          "tier": "WATCH",
-          "composite": 6.0
-        },
-        {
-          "date": "2026-07-08",
-          "tier": "WATCH",
-          "composite": 6.0
-        }
-      ]
-    },
-    "context-dev": {
-      "name": "Context.dev",
-      "first_seen": "2026-07-04",
-      "last_seen": "2026-07-08",
-      "tier_history": [
-        {
-          "date": "2026-07-04",
-          "tier": "WATCH",
-          "composite": 7.25
-        },
-        {
-          "date": "2026-07-08",
-          "tier": "WATCH",
-          "composite": 7.25
-        }
-      ]
-    },
     "twelvelabs": {
       "name": "TwelveLabs",
       "first_seen": "2026-07-04",
@@ -182,74 +131,6 @@
         }
       ]
     },
-    "klariqo": {
-      "name": "Klariqo",
-      "first_seen": "2026-07-06",
-      "last_seen": "2026-07-08",
-      "tier_history": [
-        {
-          "date": "2026-07-06",
-          "tier": "HOT",
-          "composite": 7.5
-        },
-        {
-          "date": "2026-07-08",
-          "tier": "HOT",
-          "composite": 7.5
-        }
-      ]
-    },
-    "profound": {
-      "name": "Profound",
-      "first_seen": "2026-07-06",
-      "last_seen": "2026-07-08",
-      "tier_history": [
-        {
-          "date": "2026-07-06",
-          "tier": "WATCH",
-          "composite": 5.75
-        },
-        {
-          "date": "2026-07-08",
-          "tier": "WATCH",
-          "composite": 5.75
-        }
-      ]
-    },
-    "humantone": {
-      "name": "HumanTone",
-      "first_seen": "2026-07-07",
-      "last_seen": "2026-07-08",
-      "tier_history": [
-        {
-          "date": "2026-07-07",
-          "tier": "WATCH",
-          "composite": 5.5
-        },
-        {
-          "date": "2026-07-08",
-          "tier": "WATCH",
-          "composite": 5.5
-        }
-      ]
-    },
-    "quarterzip": {
-      "name": "Quarterzip",
-      "first_seen": "2026-07-07",
-      "last_seen": "2026-07-08",
-      "tier_history": [
-        {
-          "date": "2026-07-07",
-          "tier": "WATCH",
-          "composite": 6.0
-        },
-        {
-          "date": "2026-07-08",
-          "tier": "WATCH",
-          "composite": 6.0
-        }
-      ]
-    },
     "granola": {
       "name": "Granola",
       "first_seen": "2026-07-08",
@@ -264,42 +145,6 @@
           "date": "2026-07-10",
           "tier": "WATCH",
           "composite": 7.25
-        }
-      ]
-    },
-    "gumloop": {
-      "name": "Gumloop",
-      "first_seen": "2026-07-08",
-      "last_seen": "2026-07-08",
-      "tier_history": [
-        {
-          "date": "2026-07-08",
-          "tier": "HOT",
-          "composite": 7.5
-        }
-      ]
-    },
-    "krater-ai": {
-      "name": "Krater.ai",
-      "first_seen": "2026-07-08",
-      "last_seen": "2026-07-08",
-      "tier_history": [
-        {
-          "date": "2026-07-08",
-          "tier": "WATCH",
-          "composite": 6.75
-        }
-      ]
-    },
-    "eesel-ai": {
-      "name": "eesel AI",
-      "first_seen": "2026-07-08",
-      "last_seen": "2026-07-08",
-      "tier_history": [
-        {
-          "date": "2026-07-08",
-          "tier": "WATCH",
-          "composite": 5.5
         }
       ]
     },
@@ -1216,6 +1061,18 @@
           "composite": 6.0
         }
       ]
+    },
+    "murmell": {
+      "name": "Murmell",
+      "first_seen": "2026-08-08",
+      "last_seen": "2026-08-08",
+      "tier_history": [
+        {
+          "date": "2026-08-08",
+          "tier": "WATCH",
+          "composite": 5.5
+        }
+      ]
     }
   },
   "pending_reminders": {
@@ -1227,9 +1084,6 @@
     },
     "gamma": {
       "last_reminded": "2026-07-26"
-    },
-    "semrush": {
-      "last_reminded": "2026-08-01"
     }
   }
 }
