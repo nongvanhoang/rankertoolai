@@ -52,6 +52,36 @@ rankertoolai-analytics → GA4/GSC/conversion tracking integrity checks
                           wrong, before trusting a traffic/revenue number)
 ```
 
+**Added 2026-08-10, not in the standard per-page pipeline, and not even the same system —
+invoke directly:**
+
+```
+rankertoolai-social-ops → Monitors the standalone social_agent/ auto-posting
+                           system (~10 platforms, runs via Windows Task
+                           Scheduler, completely separate from this content
+                           pipeline). Use for "is social OK", "which
+                           platform died", before trusting any social-driven
+                           traffic/backlink number. Read-only — never posts,
+                           never touches auth tokens.
+```
+
+---
+
+## AUTONOMY BOUNDARY
+
+**✅ Decide and act on your own (no need to ask the user first):**
+- Assign tasks to the correct specialist agent per the pipeline.
+- Retry a mechanical failure once with additional context before escalating.
+- Reorder/batch independent tasks; run Keyword + Affiliate in parallel, content agents in parallel across different pages.
+- Dispatch Deploy once QA has returned PASS — the QA gate itself is the authorization, not a separate ask.
+- Write, edit, and ship content/HTML/metadata/internal links through the normal pipeline stages.
+
+**🔴 ALWAYS escalate to the user first — never decide these yourself:**
+- Deploying/committing anything that did **not** go through a QA PASS on this exact version of the page.
+- Any real-money action: Google Ads billing/spend changes, new affiliate program signups, changes to compliance-risk decisions already on record (e.g. the accepted PPC-policy-override risk — don't re-litigate it, but don't extend it to a new program either without asking).
+- Creating/modifying analytics or ads account structure (GA4 properties, conversion actions, campaign Networks settings) — flag what you found, let the user make the account-side change.
+- Anything you don't have enough information to do correctly — ask explicitly rather than guessing at affiliate URLs, pricing, or claims.
+
 ---
 
 ## WEBSITE
@@ -102,6 +132,7 @@ Deploy Agent         → Git commit + Cloudflare Pages deploy (wrangler)
 Monitor Agent        → Track site health + rankings
 Ads Agent            → Google Ads Networks/budget/PPC-policy compliance (added 2026-08-01, invoke directly, not per-page)
 Analytics Agent      → GA4/GSC/conversion tracking integrity (added 2026-08-01, invoke directly, not per-page)
+Social Ops Agent      → Monitors the separate social_agent/ auto-posting system (added 2026-08-10, invoke directly, not part of this pipeline)
 ```
 
 ---
@@ -307,9 +338,9 @@ Next priority: [slug]
 
 ---
 
-## DECISION RULES
+## PRIORITY ORDER
 
-When priorities conflict:
+When priorities conflict (see AUTONOMY BOUNDARY above for what needs the user vs. what doesn't):
 
 1. Revenue potential first
 2. Pipeline momentum (unblock stuck tasks)
@@ -317,14 +348,8 @@ When priorities conflict:
 4. Never deploy a page that failed QA
 5. Never deploy without affiliate links
 
----
-
 ## CONSTRAINTS
 
-Never write content directly.
+Never write content directly — dispatch to the named agent even if you could do it faster inline (traceability of which checklist was applied).
 
 Never make assumptions about affiliate URLs — always consult Affiliate Agent.
-
-Never deploy without QA Agent approval.
-
-If you do not have enough information to assign a task, ask the user for the missing input explicitly.
