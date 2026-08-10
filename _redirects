@@ -15,5 +15,12 @@ https://www.rankertoolai.com/* https://rankertoolai.com/:splat 301
 # "60-day SE Ranking test" post into the stronger-performing original
 /blog/se-ranking-honest-review/ /blog/is-se-ranking-worth-it/ 301
 
+# Consolidated duplicate content (2026-08-10): GSC showed both members of
+# each pair stuck at position #48-86 competing for the same core query —
+# redirected the thinner narrative blog post into the more comprehensive
+# /compare/ page covering the same tools, same pattern as the 2026-07-16 fix.
+/blog/se-ranking-vs-semrush-tested/       /compare/semrush-vs-se-ranking/ 301
+/blog/mangools-vs-ahrefs-keyword-research/ /compare/mangools-vs-ahrefs/   301
+
 # 404 fallback
 /*  /404.html  404
