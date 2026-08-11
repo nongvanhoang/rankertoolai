@@ -3,7 +3,7 @@
     "wispr-flow": {
       "name": "Wispr Flow",
       "first_seen": "2026-07-03",
-      "last_seen": "2026-07-11",
+      "last_seen": "2026-08-11",
       "tier_history": [
         {
           "date": "2026-07-03",
@@ -17,6 +17,11 @@
         },
         {
           "date": "2026-07-11",
+          "tier": "HOT",
+          "composite": 8.0
+        },
+        {
+          "date": "2026-08-11",
           "tier": "HOT",
           "composite": 8.0
         }
@@ -145,18 +150,6 @@
           "date": "2026-07-12",
           "tier": "HOT",
           "composite": 7.75
-        }
-      ]
-    },
-    "rankscale": {
-      "name": "Rankscale",
-      "first_seen": "2026-07-11",
-      "last_seen": "2026-07-11",
-      "tier_history": [
-        {
-          "date": "2026-07-11",
-          "tier": "WATCH",
-          "composite": 7.25
         }
       ]
     },
@@ -427,10 +420,15 @@
     "answrr": {
       "name": "Answrr",
       "first_seen": "2026-07-18",
-      "last_seen": "2026-07-18",
+      "last_seen": "2026-08-11",
       "tier_history": [
         {
           "date": "2026-07-18",
+          "tier": "WATCH",
+          "composite": 7.0
+        },
+        {
+          "date": "2026-08-11",
           "tier": "WATCH",
           "composite": 7.0
         }
@@ -923,7 +921,7 @@
     "agentsky": {
       "name": "AgentSky",
       "first_seen": "2026-08-05",
-      "last_seen": "2026-08-09",
+      "last_seen": "2026-08-11",
       "tier_history": [
         {
           "date": "2026-08-05",
@@ -937,6 +935,11 @@
         },
         {
           "date": "2026-08-09",
+          "tier": "WATCH",
+          "composite": 6.0
+        },
+        {
+          "date": "2026-08-11",
           "tier": "WATCH",
           "composite": 6.0
         }
@@ -1042,10 +1045,15 @@
     "murmell": {
       "name": "Murmell",
       "first_seen": "2026-08-08",
-      "last_seen": "2026-08-08",
+      "last_seen": "2026-08-11",
       "tier_history": [
         {
           "date": "2026-08-08",
+          "tier": "WATCH",
+          "composite": 5.5
+        },
+        {
+          "date": "2026-08-11",
           "tier": "WATCH",
           "composite": 5.5
         }
@@ -1054,10 +1062,15 @@
     "adant-ai": {
       "name": "AdAnt AI",
       "first_seen": "2026-08-10",
-      "last_seen": "2026-08-10",
+      "last_seen": "2026-08-11",
       "tier_history": [
         {
           "date": "2026-08-10",
+          "tier": "WATCH",
+          "composite": 5.25
+        },
+        {
+          "date": "2026-08-11",
           "tier": "WATCH",
           "composite": 5.25
         }
@@ -1066,10 +1079,15 @@
     "coldtea-ai": {
       "name": "Coldtea.ai",
       "first_seen": "2026-08-10",
-      "last_seen": "2026-08-10",
+      "last_seen": "2026-08-11",
       "tier_history": [
         {
           "date": "2026-08-10",
+          "tier": "WATCH",
+          "composite": 5.75
+        },
+        {
+          "date": "2026-08-11",
           "tier": "WATCH",
           "composite": 5.75
         }
