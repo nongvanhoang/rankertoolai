@@ -2,101 +2,175 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Redirecting to CapCut | RankerToolAI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CapCut — Try the Free AI Video Editor | RankerToolAI</title>
   <meta name="robots" content="noindex, nofollow">
   <link rel="canonical" href="https://rankertoolai.com/go/capcut/">
 
-  <!-- GA4 + Google Ads on redirect page -->
-  <script async src="/assets/js/pint.js"></script>
-  
-  
-  <!-- ═══ ANALYTICS & ADS TRACKING ═══ -->
-  <!-- Google tag (gtag.js) — GA4 + Google Ads -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-81KB8ECCVF"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-81KB8ECCVF');
-    gtag('config', 'AW-18300667802');
-
-    // Conversion: affiliate click (fires when user clicks /go/ link)
-    document.addEventListener('DOMContentLoaded', function() {
-      // Forward this page's own UTM/gclid params onto /go/ links so Ad
-      // campaign attribution survives the hop from landing page to the
-      // affiliate redirect (the /go/ pages already read+forward these,
-      // but nothing was putting them on the /go/ href before this).
-      var passKeys = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','gclid'];
-      var incoming = new URLSearchParams(window.location.search);
-      document.querySelectorAll('a[href*="/go/"]').forEach(function(el) {
-        el.addEventListener('click', function() {
-          try {
-            var dest = new URL(el.href, window.location.href);
-            passKeys.forEach(function(k) {
-              if (incoming.has(k) && !dest.searchParams.has(k)) dest.searchParams.set(k, incoming.get(k));
-            });
-            el.href = dest.toString();
-          } catch (e) {}
-
-          gtag('event', 'conversion', {
-            'send_to': 'AW-18300667802/J1N7CJ_73M4cEJqPuJZE',
-            'value': 1.0,
-            'currency': 'USD'
-          });
-          gtag('event', 'affiliate_click', {
-            'tool': el.href.split('/go/')[1]?.replace(/\//g,'') || 'unknown',
-            'page': window.location.pathname
-          });
-        });
-      });
-
-      // Conversion: 60-second engaged page view
-      setTimeout(function() {
-        gtag('event', 'conversion', {'send_to': 'AW-18300667802/wIkFCNeXrtMcEJqPuJZE'});
-      }, 60000);
-    });
   </script>
+  <script async src="/assets/js/pint.js"></script>
 
-  <!-- Microsoft Clarity -->
-  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window,document,"clarity","script","x97zf4vn2v");
-  </script>
-  <!-- ══════════════════════════════════ -->
-  </head>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0a0c14;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .card {
+      background: #0e1220;
+      border: 1px solid #1c2440;
+      border-radius: 16px;
+      max-width: 520px;
+      width: 100%;
+      padding: 40px 36px;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    }
+    .logo-row {
+      display: flex; align-items: center; justify-content: center;
+      gap: 12px; margin-bottom: 24px; font-size: 13px; color: #888;
+    }
+    .arrow { font-size: 18px; color: #555; }
+    .heading { font-size: 22px; font-weight: 700; color: #fff; margin-bottom: 8px; line-height: 1.3; }
+    .sub { color: #aaa; font-size: 14px; margin-bottom: 28px; line-height: 1.6; }
+
+    .badge {
+      background: linear-gradient(135deg, #ea580c, #f97316);
+      border-radius: 12px;
+      padding: 22px 24px;
+      margin-bottom: 28px;
+    }
+    .badge-num { font-size: 48px; font-weight: 900; color: #fff; line-height: 1; }
+    .badge-label { font-size: 17px; font-weight: 700; color: rgba(255,255,255,0.9); margin-top: 4px; }
+    .badge-note { font-size: 13px; color: rgba(255,255,255,0.75); margin-top: 8px; }
+
+    .benefits { text-align: left; margin-bottom: 28px; }
+    .benefit {
+      display: flex; align-items: flex-start; gap: 10px;
+      padding: 8px 0; border-bottom: 1px solid #1c2440;
+      color: #ccc; font-size: 14px; line-height: 1.5;
+    }
+    .benefit:last-child { border-bottom: none; }
+    .benefit .icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+
+    .cta-btn {
+      display: block; width: 100%;
+      background: linear-gradient(135deg, #f97316, #ea580c);
+      color: #fff; font-size: 16px; font-weight: 700;
+      padding: 16px 24px; border-radius: 10px; text-decoration: none;
+      border: none; cursor: pointer;
+      transition: opacity 0.2s, transform 0.15s;
+      margin-bottom: 12px;
+    }
+    .cta-btn:hover { opacity: 0.92; transform: translateY(-1px); }
+
+    .countdown-row { font-size: 13px; color: #666; }
+    .countdown-row span { color: #f97316; font-weight: 600; }
+    .skip-link {
+      color: #666; font-size: 12px; text-decoration: underline; cursor: pointer;
+      background: none; border: none; display: block; margin-top: 8px;
+    }
+    .skip-link:hover { color: #aaa; }
+    .footer-note { margin-top: 24px; font-size: 11px; color: #555; line-height: 1.6; }
+    .footer-note a { color: #f97316; text-decoration: none; }
+  </style>
+</head>
 <body>
-  <p>Redirecting you to <a href="https://www.capcut.com/" rel="nofollow">CapCut</a>...</p>
 
-    <script>
-    (function() {
-      var tool = document.title.match(/Redirecting to (.+?) \|/)?.[1] || '';
-      var ref  = document.referrer ? new URL(document.referrer).pathname : 'direct';
-      var params = new URLSearchParams(window.location.search);
-      var subid  = params.get('ref') || ref.replace(/\//g,'_').replace(/^_|_$/g,'') || 'direct';
+<div class="card">
+  <div class="logo-row">
+    <span>RankerToolAI</span>
+    <span class="arrow">&#8594;</span>
+    <span>CapCut</span>
+  </div>
 
-      if (typeof gtag !== 'undefined') {
-        gtag('event', 'affiliate_click', {
-          tool:        document.querySelector('[data-tool]')?.dataset.tool || subid,
-          source_path: ref,
-          sub_id:      subid,
-          utm_source:  params.get('utm_source') || '',
-          utm_medium:  params.get('utm_medium') || '',
-        });
-      }
+  <h1 class="heading">Try CapCut &mdash; free AI video editor</h1>
+  <p class="sub">CapCut's free tier covers editing, templates, and AI tools with no forced watermark, across mobile, desktop, and web. Note: independent Trustpilot reviews for CapCut are unusually low — see our <a href="/review/capcut/" style="color:#f97316;">full review</a> before subscribing to Pro.</p>
 
-      var destEl = document.querySelector('a[href]');
-      if (!destEl) return;
-      var dest = new URL(destEl.href);
-      ['utm_source','utm_medium','utm_campaign','utm_content','gclid'].forEach(function(k){
-        if (params.has(k)) dest.searchParams.set(k, params.get(k));
-      });
-      dest.searchParams.set('ref', subid);
+  <div class="badge">
+    <div class="badge-num">Free</div>
+    <div class="badge-label">Tier, No Watermark</div>
+    <div class="badge-note">Pro from ~$19.99/mo &middot; 7-day free trial &middot; 100GB cloud on Pro</div>
+  </div>
 
-      setTimeout(function(){ window.location.replace(dest.toString()); }, 280);
-    })();
-  </script>
+  <div class="benefits">
+    <div class="benefit">
+      <span class="icon">🎬</span>
+      <span><strong>Free, no watermark</strong> &mdash; Full editor across mobile, desktop, web, and iPad</span>
+    </div>
+    <div class="benefit">
+      <span class="icon">🤖</span>
+      <span><strong>Built-in AI tools</strong> &mdash; Dreamina, Seedance video/image models, Nano Banana Pro, AI captions</span>
+    </div>
+    <div class="benefit">
+      <span class="icon">🔄</span>
+      <span><strong>Cross-device sync</strong> &mdash; Start on mobile, finish on desktop or web</span>
+    </div>
+    <div class="benefit">
+      <span class="icon">📋</span>
+      <span><strong>Huge template library</strong> &mdash; Social-native templates updated on TikTok's trend cycle</span>
+    </div>
+  </div>
+
+  <a id="ctaBtn" href="https://www.tkqlhce.com/click-101813733-17272811" rel="nofollow sponsored" class="cta-btn">
+    Try CapCut Free &rarr;
+  </a>
+  <div class="countdown-row">Redirecting to CapCut in <span id="timer">5</span> seconds</div>
+  <button class="skip-link" onclick="goNow()">Skip countdown</button>
+
+  <div class="footer-note">
+    <a href="/review/capcut/">Full CapCut review</a> &middot; <a href="/best/video-editing-software/">Best Video Editing Software</a>
+  </div>
+</div>
+
+<script>
+(function() {
+  var DEST_BASE = 'https://www.tkqlhce.com/click-101813733-17272811';
+  var countdown = 5;
+  var redirected = false;
+
+  var params = new URLSearchParams(window.location.search);
+  var ref = document.referrer ? new URL(document.referrer).pathname : 'direct';
+  var subid = params.get('ref') || ref.replace(/\//g,'_').replace(/^_|_$/g,'') || 'direct';
+
+  var dest = new URL(DEST_BASE);
+  ['utm_source','utm_medium','utm_campaign','utm_content','gclid'].forEach(function(k){
+    if (params.has(k)) dest.searchParams.set(k, params.get(k));
+  });
+  dest.searchParams.set('ref', subid);
+  var finalUrl = dest.toString();
+
+  document.getElementById('ctaBtn').href = finalUrl;
+
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'affiliate_click', { tool: 'capcut', source_path: ref, sub_id: subid, page_type: 'bridge' });
+  }
+
+  var timerEl = document.getElementById('timer');
+  var interval = setInterval(function() {
+    countdown--;
+    timerEl.textContent = countdown;
+    if (countdown <= 0) { clearInterval(interval); goNow(); }
+  }, 1000);
+
+  window.goNow = function() {
+    if (redirected) return;
+    redirected = true;
+    clearInterval(interval);
+    window.location.replace(finalUrl);
+  };
+})();
+</script>
 </body>
 </html>
