@@ -136,47 +136,6 @@
         }
       ]
     },
-    "synthflow": {
-      "name": "Synthflow",
-      "first_seen": "2026-07-11",
-      "last_seen": "2026-07-12",
-      "tier_history": [
-        {
-          "date": "2026-07-11",
-          "tier": "HOT",
-          "composite": 7.75
-        },
-        {
-          "date": "2026-07-12",
-          "tier": "HOT",
-          "composite": 7.75
-        }
-      ]
-    },
-    "retell-ai": {
-      "name": "Retell AI",
-      "first_seen": "2026-07-12",
-      "last_seen": "2026-07-12",
-      "tier_history": [
-        {
-          "date": "2026-07-12",
-          "tier": "HOT",
-          "composite": 8.25
-        }
-      ]
-    },
-    "handoff-ai": {
-      "name": "Handoff AI",
-      "first_seen": "2026-07-12",
-      "last_seen": "2026-07-12",
-      "tier_history": [
-        {
-          "date": "2026-07-12",
-          "tier": "WATCH",
-          "composite": 6.25
-        }
-      ]
-    },
     "peec-ai": {
       "name": "Peec AI",
       "first_seen": "2026-07-13",
@@ -1092,6 +1051,30 @@
           "composite": 5.75
         }
       ]
+    },
+    "hey-noah": {
+      "name": "Hey Noah",
+      "first_seen": "2026-08-12",
+      "last_seen": "2026-08-12",
+      "tier_history": [
+        {
+          "date": "2026-08-12",
+          "tier": "WATCH",
+          "composite": 6.75
+        }
+      ]
+    },
+    "atlaso": {
+      "name": "Atlaso",
+      "first_seen": "2026-08-12",
+      "last_seen": "2026-08-12",
+      "tier_history": [
+        {
+          "date": "2026-08-12",
+          "tier": "WATCH",
+          "composite": 6.0
+        }
+      ]
     }
   },
   "pending_reminders": {
@@ -1103,6 +1086,9 @@
     },
     "gamma": {
       "last_reminded": "2026-07-26"
+    },
+    "semrush": {
+      "last_reminded": "2026-08-12"
     }
   }
 }
