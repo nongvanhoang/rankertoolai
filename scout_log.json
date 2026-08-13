@@ -136,18 +136,6 @@
         }
       ]
     },
-    "peec-ai": {
-      "name": "Peec AI",
-      "first_seen": "2026-07-13",
-      "last_seen": "2026-07-13",
-      "tier_history": [
-        {
-          "date": "2026-07-13",
-          "tier": "WATCH",
-          "composite": 7.0
-        }
-      ]
-    },
     "sim-ai": {
       "name": "Sim (sim.ai)",
       "first_seen": "2026-07-14",
@@ -1071,6 +1059,18 @@
       "tier_history": [
         {
           "date": "2026-08-12",
+          "tier": "WATCH",
+          "composite": 6.0
+        }
+      ]
+    },
+    "betterclaw": {
+      "name": "BetterClaw",
+      "first_seen": "2026-08-13",
+      "last_seen": "2026-08-13",
+      "tier_history": [
+        {
+          "date": "2026-08-13",
           "tier": "WATCH",
           "composite": 6.0
         }
