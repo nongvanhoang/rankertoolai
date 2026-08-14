@@ -153,42 +153,6 @@
         }
       ]
     },
-    "vioevo": {
-      "name": "VioEvo",
-      "first_seen": "2026-07-14",
-      "last_seen": "2026-07-14",
-      "tier_history": [
-        {
-          "date": "2026-07-14",
-          "tier": "WATCH",
-          "composite": 6.5
-        }
-      ]
-    },
-    "perfai-security": {
-      "name": "Perfai Security",
-      "first_seen": "2026-07-14",
-      "last_seen": "2026-07-14",
-      "tier_history": [
-        {
-          "date": "2026-07-14",
-          "tier": "WATCH",
-          "composite": 6.625
-        }
-      ]
-    },
-    "comik-ai": {
-      "name": "Comik AI",
-      "first_seen": "2026-07-14",
-      "last_seen": "2026-07-14",
-      "tier_history": [
-        {
-          "date": "2026-07-14",
-          "tier": "WATCH",
-          "composite": 6.25
-        }
-      ]
-    },
     "plugthis": {
       "name": "PlugThis",
       "first_seen": "2026-07-14",
@@ -1073,6 +1037,66 @@
           "date": "2026-08-13",
           "tier": "WATCH",
           "composite": 6.0
+        }
+      ]
+    },
+    "lovable": {
+      "name": "Lovable",
+      "first_seen": "2026-08-14",
+      "last_seen": "2026-08-14",
+      "tier_history": [
+        {
+          "date": "2026-08-14",
+          "tier": "HOT",
+          "composite": 8.75
+        }
+      ]
+    },
+    "coderabbit": {
+      "name": "CodeRabbit",
+      "first_seen": "2026-08-14",
+      "last_seen": "2026-08-14",
+      "tier_history": [
+        {
+          "date": "2026-08-14",
+          "tier": "WATCH",
+          "composite": 7.25
+        }
+      ]
+    },
+    "gamma": {
+      "name": "Gamma",
+      "first_seen": "2026-08-14",
+      "last_seen": "2026-08-14",
+      "tier_history": [
+        {
+          "date": "2026-08-14",
+          "tier": "WATCH",
+          "composite": 7.0
+        }
+      ]
+    },
+    "kilo-code": {
+      "name": "Kilo Code",
+      "first_seen": "2026-08-14",
+      "last_seen": "2026-08-14",
+      "tier_history": [
+        {
+          "date": "2026-08-14",
+          "tier": "WATCH",
+          "composite": 7.0
+        }
+      ]
+    },
+    "fathom": {
+      "name": "Fathom",
+      "first_seen": "2026-08-14",
+      "last_seen": "2026-08-14",
+      "tier_history": [
+        {
+          "date": "2026-08-14",
+          "tier": "WATCH",
+          "composite": 5.5
         }
       ]
     }
