@@ -3,7 +3,7 @@
     "wispr-flow": {
       "name": "Wispr Flow",
       "first_seen": "2026-07-03",
-      "last_seen": "2026-08-11",
+      "last_seen": "2026-08-15",
       "tier_history": [
         {
           "date": "2026-07-03",
@@ -22,6 +22,11 @@
         },
         {
           "date": "2026-08-11",
+          "tier": "HOT",
+          "composite": 8.0
+        },
+        {
+          "date": "2026-08-15",
           "tier": "HOT",
           "composite": 8.0
         }
@@ -133,81 +138,6 @@
           "date": "2026-08-05",
           "tier": "WATCH",
           "composite": 5.25
-        }
-      ]
-    },
-    "sim-ai": {
-      "name": "Sim (sim.ai)",
-      "first_seen": "2026-07-14",
-      "last_seen": "2026-07-15",
-      "tier_history": [
-        {
-          "date": "2026-07-14",
-          "tier": "HOT",
-          "composite": 7.5
-        },
-        {
-          "date": "2026-07-15",
-          "tier": "HOT",
-          "composite": 7.5
-        }
-      ]
-    },
-    "plugthis": {
-      "name": "PlugThis",
-      "first_seen": "2026-07-14",
-      "last_seen": "2026-07-15",
-      "tier_history": [
-        {
-          "date": "2026-07-14",
-          "tier": "WATCH",
-          "composite": 5.5
-        },
-        {
-          "date": "2026-07-15",
-          "tier": "WATCH",
-          "composite": 5.5
-        }
-      ]
-    },
-    "chatcut": {
-      "name": "ChatCut",
-      "first_seen": "2026-07-12",
-      "last_seen": "2026-07-15",
-      "tier_history": [
-        {
-          "date": "2026-07-12",
-          "tier": "WATCH",
-          "composite": 5.5
-        },
-        {
-          "date": "2026-07-15",
-          "tier": "WATCH",
-          "composite": 5.5
-        }
-      ]
-    },
-    "n71": {
-      "name": "N71",
-      "first_seen": "2026-07-15",
-      "last_seen": "2026-07-15",
-      "tier_history": [
-        {
-          "date": "2026-07-15",
-          "tier": "WATCH",
-          "composite": 5.5
-        }
-      ]
-    },
-    "storychief": {
-      "name": "StoryChief",
-      "first_seen": "2026-07-15",
-      "last_seen": "2026-07-15",
-      "tier_history": [
-        {
-          "date": "2026-07-15",
-          "tier": "WATCH",
-          "composite": 7.0
         }
       ]
     },
@@ -832,7 +762,7 @@
     "agentsky": {
       "name": "AgentSky",
       "first_seen": "2026-08-05",
-      "last_seen": "2026-08-11",
+      "last_seen": "2026-08-15",
       "tier_history": [
         {
           "date": "2026-08-05",
@@ -853,13 +783,18 @@
           "date": "2026-08-11",
           "tier": "WATCH",
           "composite": 6.0
+        },
+        {
+          "date": "2026-08-15",
+          "tier": "WATCH",
+          "composite": 6.0
         }
       ]
     },
     "ctruh-studio": {
       "name": "Ctruh Studio",
       "first_seen": "2026-08-05",
-      "last_seen": "2026-08-09",
+      "last_seen": "2026-08-15",
       "tier_history": [
         {
           "date": "2026-08-05",
@@ -873,6 +808,11 @@
         },
         {
           "date": "2026-08-09",
+          "tier": "WATCH",
+          "composite": 5.5
+        },
+        {
+          "date": "2026-08-15",
           "tier": "WATCH",
           "composite": 5.5
         }
@@ -956,7 +896,7 @@
     "murmell": {
       "name": "Murmell",
       "first_seen": "2026-08-08",
-      "last_seen": "2026-08-11",
+      "last_seen": "2026-08-15",
       "tier_history": [
         {
           "date": "2026-08-08",
@@ -967,13 +907,18 @@
           "date": "2026-08-11",
           "tier": "WATCH",
           "composite": 5.5
+        },
+        {
+          "date": "2026-08-15",
+          "tier": "WATCH",
+          "composite": 5.5
         }
       ]
     },
     "adant-ai": {
       "name": "AdAnt AI",
       "first_seen": "2026-08-10",
-      "last_seen": "2026-08-11",
+      "last_seen": "2026-08-15",
       "tier_history": [
         {
           "date": "2026-08-10",
@@ -982,6 +927,11 @@
         },
         {
           "date": "2026-08-11",
+          "tier": "WATCH",
+          "composite": 5.25
+        },
+        {
+          "date": "2026-08-15",
           "tier": "WATCH",
           "composite": 5.25
         }
@@ -990,7 +940,7 @@
     "coldtea-ai": {
       "name": "Coldtea.ai",
       "first_seen": "2026-08-10",
-      "last_seen": "2026-08-11",
+      "last_seen": "2026-08-15",
       "tier_history": [
         {
           "date": "2026-08-10",
@@ -1001,16 +951,26 @@
           "date": "2026-08-11",
           "tier": "WATCH",
           "composite": 5.75
+        },
+        {
+          "date": "2026-08-15",
+          "tier": "WATCH",
+          "composite": 5.75
         }
       ]
     },
     "hey-noah": {
       "name": "Hey Noah",
       "first_seen": "2026-08-12",
-      "last_seen": "2026-08-12",
+      "last_seen": "2026-08-15",
       "tier_history": [
         {
           "date": "2026-08-12",
+          "tier": "WATCH",
+          "composite": 6.75
+        },
+        {
+          "date": "2026-08-15",
           "tier": "WATCH",
           "composite": 6.75
         }
@@ -1099,6 +1059,18 @@
           "composite": 5.5
         }
       ]
+    },
+    "otterly-ai": {
+      "name": "Otterly AI",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "tier_history": [
+        {
+          "date": "2026-08-15",
+          "tier": "WATCH",
+          "composite": 6.75
+        }
+      ]
     }
   },
   "pending_reminders": {
@@ -1106,10 +1078,10 @@
       "last_reminded": "2026-08-09"
     },
     "lovable": {
-      "last_reminded": "2026-07-26"
+      "last_reminded": "2026-08-15"
     },
     "gamma": {
-      "last_reminded": "2026-07-26"
+      "last_reminded": "2026-08-15"
     },
     "semrush": {
       "last_reminded": "2026-08-12"
