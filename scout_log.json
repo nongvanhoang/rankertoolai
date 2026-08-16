@@ -1071,11 +1071,138 @@
           "composite": 6.75
         }
       ]
+    },
+    "adant-ai": {
+      "name": "AdAnt AI",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-16",
+      "tier_history": [
+        {
+          "date": "2026-08-10",
+          "tier": "WATCH",
+          "composite": 5.25
+        },
+        {
+          "date": "2026-08-11",
+          "tier": "WATCH",
+          "composite": 5.25
+        },
+        {
+          "date": "2026-08-15",
+          "tier": "WATCH",
+          "composite": 5.25
+        },
+        {
+          "date": "2026-08-16",
+          "tier": "WATCH",
+          "composite": 5.25
+        }
+      ]
+    },
+    "coldtea-ai": {
+      "name": "Coldtea.ai",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-16",
+      "tier_history": [
+        {
+          "date": "2026-08-10",
+          "tier": "WATCH",
+          "composite": 5.75
+        },
+        {
+          "date": "2026-08-11",
+          "tier": "WATCH",
+          "composite": 5.75
+        },
+        {
+          "date": "2026-08-15",
+          "tier": "WATCH",
+          "composite": 5.75
+        },
+        {
+          "date": "2026-08-16",
+          "tier": "WATCH",
+          "composite": 5.75
+        }
+      ]
+    },
+    "agentsky": {
+      "name": "AgentSky",
+      "first_seen": "2026-08-05",
+      "last_seen": "2026-08-16",
+      "tier_history": [
+        {
+          "date": "2026-08-05",
+          "tier": "WATCH",
+          "composite": 6.0
+        },
+        {
+          "date": "2026-08-07",
+          "tier": "WATCH",
+          "composite": 6.0
+        },
+        {
+          "date": "2026-08-09",
+          "tier": "WATCH",
+          "composite": 6.0
+        },
+        {
+          "date": "2026-08-11",
+          "tier": "WATCH",
+          "composite": 6.0
+        },
+        {
+          "date": "2026-08-15",
+          "tier": "WATCH",
+          "composite": 6.0
+        },
+        {
+          "date": "2026-08-16",
+          "tier": "WATCH",
+          "composite": 6.0
+        }
+      ]
+    },
+    "omniwork": {
+      "name": "Omniwork",
+      "first_seen": "2026-08-16",
+      "last_seen": "2026-08-16",
+      "tier_history": [
+        {
+          "date": "2026-08-16",
+          "tier": "WATCH",
+          "composite": 7.25
+        }
+      ]
+    },
+    "soloop": {
+      "name": "Soloop",
+      "first_seen": "2026-08-16",
+      "last_seen": "2026-08-16",
+      "tier_history": [
+        {
+          "date": "2026-08-16",
+          "tier": "WATCH",
+          "composite": 6.75
+        }
+      ]
+    },
+    "happyrobot": {
+      "name": "HappyRobot",
+      "first_seen": "2026-08-16",
+      "last_seen": "2026-08-16",
+      "tier_history": [
+        {
+          "date": "2026-08-16",
+          "tier": "WATCH",
+          "composite": 6.25
+        }
+      ]
     }
   },
   "pending_reminders": {
     "canva-ai": {
-      "last_reminded": "2026-08-09"
+      "last_reminded": "2026-08-16"
     },
     "lovable": {
       "last_reminded": "2026-08-15"
@@ -1085,6 +1212,15 @@
     },
     "semrush": {
       "last_reminded": "2026-08-12"
+    },
+    "runway": {
+      "last_reminded": "2026-08-16"
+    },
+    "marketmuse": {
+      "last_reminded": "2026-08-16"
+    },
+    "clearscope": {
+      "last_reminded": "2026-08-16"
     }
   }
 }
