@@ -1,23 +1,28 @@
 {
   "date": "2026-08-17",
-  "data_reliability_note": "Google Ads Transparency Center (adstransparency.google.com) was NOT accessible this run — WebFetch returned EGRESS_BLOCKED (domain blocked by network egress proxy), not even a JS shell. No ads_count could be verified for any domain. WebSearch was used as a fallback but only surfaces general directory/marketing content, not confirmed Google Search ads activity, so it cannot substitute for Transparency Center data either. All ads_count values below are null and data_reliable is false for every domain.",
+  "method": "websearch_only_no_direct_ad_verification",
+  "run_note": "This is the 3rd run today (prior runs ~02:59 UTC and ~05:59 UTC both found nothing new and already emailed the user). This run re-checked all 9 domains plus new-competitor discovery and found one materially new signal not present in the earlier runs today: the G2/Capterra/GetApp/SoftwareAdvice merger's explicit ads-business framing (see notable_changes_vs_previous). All ads_count/spend figures remain unverifiable — Google Ads Transparency Center and ad-intelligence tools (SpyFu, SEMrush, Similarweb) are EGRESS_BLOCKED in this environment; WebSearch snippets are the only available signal and are qualitative, not measured data.",
   "domains": [
-    {"domain": "g2.com", "ads_count": null, "data_reliable": false, "notable_patterns": ["Ads Transparency Center inaccessible this run (EGRESS_BLOCKED)"]},
-    {"domain": "capterra.com", "ads_count": null, "data_reliable": false, "notable_patterns": ["Not checked directly - Transparency Center inaccessible"]},
-    {"domain": "getapp.com", "ads_count": null, "data_reliable": false, "notable_patterns": ["Not checked directly - Transparency Center inaccessible"]},
-    {"domain": "softwareadvice.com", "ads_count": null, "data_reliable": false, "notable_patterns": ["Not checked directly - Transparency Center inaccessible"]},
-    {"domain": "toolify.ai", "ads_count": null, "data_reliable": false, "notable_patterns": ["Not checked directly - Transparency Center inaccessible"]},
-    {"domain": "financesonline.com", "ads_count": null, "data_reliable": false, "notable_patterns": ["Not checked directly - Transparency Center inaccessible"]},
-    {"domain": "theresanaiforthat.com", "ads_count": null, "data_reliable": false, "notable_patterns": ["Not checked directly - Transparency Center inaccessible", "WebSearch found TAAFT offers a $300 PPC bonus + first-launch exclusivity program for submitted tools, suggesting they actively use/promote paid acquisition, but this is indirect and unverified via Transparency Center"]},
-    {"domain": "futurepedia.io", "ads_count": null, "data_reliable": false, "notable_patterns": ["Not checked directly - Transparency Center inaccessible"]},
-    {"domain": "simplycodes.com", "ads_count": null, "data_reliable": false, "notable_patterns": ["Not checked directly - Transparency Center inaccessible"]}
+    {"domain": "g2.com", "signals_found": ["G2 formally acquired Capterra, Software Advice, and GetApp from Gartner (announced Jan 29 2026, deal closed Feb 5 2026, ~$110M). Press materials explicitly state the unified dataset will deliver '3x more Buyer Intent signals', enable a new pay-per-lead offering, and that 'a more mature digital advertising infrastructure will strengthen G2's Ads business.' Combined entity: ~6M reviews, 200M+ annual buyers, 10,000+ vendor customers."], "signal_strength": "notable"},
+    {"domain": "capterra.com", "signals_found": ["Now owned by G2 (deal closed Feb 5 2026) — folded into G2's unified Ads/buyer-intent/pay-per-lead strategy rather than operating independent ad campaigns."], "signal_strength": "notable"},
+    {"domain": "getapp.com", "signals_found": ["Same G2 acquisition — now part of the consolidated G2 Ads business."], "signal_strength": "notable"},
+    {"domain": "softwareadvice.com", "signals_found": ["Same G2 acquisition — now part of the consolidated G2 Ads business."], "signal_strength": "notable"},
+    {"domain": "toolify.ai", "signals_found": ["No PPC/ads-specific signal found. Described only as a large AI tools directory (30,300+ listed tools)."], "signal_strength": "none"},
+    {"domain": "financesonline.com", "signals_found": ["No PPC/hiring/ads signal found via WebSearch this run."], "signal_strength": "none"},
+    {"domain": "theresanaiforthat.com", "signals_found": ["Site has a dedicated 'PPC ads' tools category (32 listings) and previously-found $300 PPC bonus / first-launch exclusivity program for submitted tools, suggesting active paid-acquisition orientation — unchanged from prior snapshot, not new."], "signal_strength": "weak"},
+    {"domain": "futurepedia.io", "signals_found": ["Unfunded, ~4-person team per Tracxn/Crunchbase, ranked 3rd among 65 tracked competitors. No hiring or ad-spend signal found."], "signal_strength": "none"},
+    {"domain": "simplycodes.com", "signals_found": ["Unfunded per Tracxn, 51-200 employees per Similarweb. No specific ad-spend or PPC hiring signal found."], "signal_strength": "weak"}
   ],
-  "new_competitors_found": [],
+  "new_competitors_found": ["foxaitools.com (emerging AI tools directory covering productivity/marketing/content/coding/design/automation — surfaced in 'best AI tools directory 2026' search results, not previously logged)"],
   "new_competitor_candidates_unverified": [
-    "aiapps.com (2,192+ tool directory, has affiliate links) - found via WebSearch, NOT confirmed to run paid Google Search ads",
-    "best-ai.org (4,597+ tool directory, affiliate-monetized) - found via WebSearch, NOT confirmed to run paid Google Search ads",
-    "tooldirectory.ai (2,727 tool directory) - found via WebSearch, NOT confirmed to run paid Google Search ads"
+    "aiapps.com (carried over from previous snapshot, still unverified for paid ads)",
+    "best-ai.org (carried over from previous snapshot, still unverified for paid ads)",
+    "tooldirectory.ai (carried over from previous snapshot, still unverified for paid ads)"
   ],
-  "notable_changes_vs_previous": [],
-  "is_first_run": true
+  "notable_changes_vs_previous": [
+    "NEW (not in earlier runs today): G2's acquisition of Capterra/Software Advice/GetApp (closed Feb 5 2026) is explicitly marketed by G2 as strengthening its Ads business and launching a new pay-per-lead offering. This means 4 of our 9 tracked domains are now one consolidated company with a stated intent to grow paid/lead-gen monetization — worth watching for consolidated Google Ads activity going forward, even though the deal itself is ~6 months old and not 'breaking' news.",
+    "One new competitor directory name surfaced: foxaitools.com.",
+    "No change for the other 5 domains vs the baseline captured earlier today."
+  ],
+  "is_first_run": false
 }
