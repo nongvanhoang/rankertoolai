@@ -1,0 +1,23 @@
+{
+  "date": "2026-08-17",
+  "data_reliability_note": "Google Ads Transparency Center (adstransparency.google.com) was NOT accessible this run — WebFetch returned EGRESS_BLOCKED (domain blocked by network egress proxy), not even a JS shell. No ads_count could be verified for any domain. WebSearch was used as a fallback but only surfaces general directory/marketing content, not confirmed Google Search ads activity, so it cannot substitute for Transparency Center data either. All ads_count values below are null and data_reliable is false for every domain.",
+  "domains": [
+    {"domain": "g2.com", "ads_count": null, "data_reliable": false, "notable_patterns": ["Ads Transparency Center inaccessible this run (EGRESS_BLOCKED)"]},
+    {"domain": "capterra.com", "ads_count": null, "data_reliable": false, "notable_patterns": ["Not checked directly - Transparency Center inaccessible"]},
+    {"domain": "getapp.com", "ads_count": null, "data_reliable": false, "notable_patterns": ["Not checked directly - Transparency Center inaccessible"]},
+    {"domain": "softwareadvice.com", "ads_count": null, "data_reliable": false, "notable_patterns": ["Not checked directly - Transparency Center inaccessible"]},
+    {"domain": "toolify.ai", "ads_count": null, "data_reliable": false, "notable_patterns": ["Not checked directly - Transparency Center inaccessible"]},
+    {"domain": "financesonline.com", "ads_count": null, "data_reliable": false, "notable_patterns": ["Not checked directly - Transparency Center inaccessible"]},
+    {"domain": "theresanaiforthat.com", "ads_count": null, "data_reliable": false, "notable_patterns": ["Not checked directly - Transparency Center inaccessible", "WebSearch found TAAFT offers a $300 PPC bonus + first-launch exclusivity program for submitted tools, suggesting they actively use/promote paid acquisition, but this is indirect and unverified via Transparency Center"]},
+    {"domain": "futurepedia.io", "ads_count": null, "data_reliable": false, "notable_patterns": ["Not checked directly - Transparency Center inaccessible"]},
+    {"domain": "simplycodes.com", "ads_count": null, "data_reliable": false, "notable_patterns": ["Not checked directly - Transparency Center inaccessible"]}
+  ],
+  "new_competitors_found": [],
+  "new_competitor_candidates_unverified": [
+    "aiapps.com (2,192+ tool directory, has affiliate links) - found via WebSearch, NOT confirmed to run paid Google Search ads",
+    "best-ai.org (4,597+ tool directory, affiliate-monetized) - found via WebSearch, NOT confirmed to run paid Google Search ads",
+    "tooldirectory.ai (2,727 tool directory) - found via WebSearch, NOT confirmed to run paid Google Search ads"
+  ],
+  "notable_changes_vs_previous": [],
+  "is_first_run": true
+}
