@@ -3,7 +3,7 @@
     "wispr-flow": {
       "name": "Wispr Flow",
       "first_seen": "2026-07-03",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-08-17",
       "tier_history": [
         {
           "date": "2026-07-03",
@@ -27,6 +27,11 @@
         },
         {
           "date": "2026-08-15",
+          "tier": "HOT",
+          "composite": 8.0
+        },
+        {
+          "date": "2026-08-17",
           "tier": "HOT",
           "composite": 8.0
         }
@@ -138,35 +143,6 @@
           "date": "2026-08-05",
           "tier": "WATCH",
           "composite": 5.25
-        }
-      ]
-    },
-    "kuberns": {
-      "name": "Kuberns",
-      "first_seen": "2026-07-16",
-      "last_seen": "2026-07-17",
-      "tier_history": [
-        {
-          "date": "2026-07-16",
-          "tier": "WATCH",
-          "composite": 7.25
-        },
-        {
-          "date": "2026-07-17",
-          "tier": "WATCH",
-          "composite": 7.25
-        }
-      ]
-    },
-    "katalyst": {
-      "name": "Katalyst",
-      "first_seen": "2026-07-17",
-      "last_seen": "2026-07-17",
-      "tier_history": [
-        {
-          "date": "2026-07-17",
-          "tier": "WATCH",
-          "composite": 5.5
         }
       ]
     },
@@ -762,7 +738,7 @@
     "agentsky": {
       "name": "AgentSky",
       "first_seen": "2026-08-05",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-08-16",
       "tier_history": [
         {
           "date": "2026-08-05",
@@ -786,6 +762,11 @@
         },
         {
           "date": "2026-08-15",
+          "tier": "WATCH",
+          "composite": 6.0
+        },
+        {
+          "date": "2026-08-16",
           "tier": "WATCH",
           "composite": 6.0
         }
@@ -918,7 +899,7 @@
     "adant-ai": {
       "name": "AdAnt AI",
       "first_seen": "2026-08-10",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-08-17",
       "tier_history": [
         {
           "date": "2026-08-10",
@@ -932,6 +913,16 @@
         },
         {
           "date": "2026-08-15",
+          "tier": "WATCH",
+          "composite": 5.25
+        },
+        {
+          "date": "2026-08-16",
+          "tier": "WATCH",
+          "composite": 5.25
+        },
+        {
+          "date": "2026-08-17",
           "tier": "WATCH",
           "composite": 5.25
         }
@@ -940,7 +931,7 @@
     "coldtea-ai": {
       "name": "Coldtea.ai",
       "first_seen": "2026-08-10",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-08-16",
       "tier_history": [
         {
           "date": "2026-08-10",
@@ -956,13 +947,18 @@
           "date": "2026-08-15",
           "tier": "WATCH",
           "composite": 5.75
+        },
+        {
+          "date": "2026-08-16",
+          "tier": "WATCH",
+          "composite": 5.75
         }
       ]
     },
     "hey-noah": {
       "name": "Hey Noah",
       "first_seen": "2026-08-12",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-08-17",
       "tier_history": [
         {
           "date": "2026-08-12",
@@ -971,6 +967,11 @@
         },
         {
           "date": "2026-08-15",
+          "tier": "WATCH",
+          "composite": 6.75
+        },
+        {
+          "date": "2026-08-17",
           "tier": "WATCH",
           "composite": 6.75
         }
@@ -1072,97 +1073,6 @@
         }
       ]
     },
-    "adant-ai": {
-      "name": "AdAnt AI",
-      "first_seen": "2026-08-10",
-      "last_seen": "2026-08-16",
-      "tier_history": [
-        {
-          "date": "2026-08-10",
-          "tier": "WATCH",
-          "composite": 5.25
-        },
-        {
-          "date": "2026-08-11",
-          "tier": "WATCH",
-          "composite": 5.25
-        },
-        {
-          "date": "2026-08-15",
-          "tier": "WATCH",
-          "composite": 5.25
-        },
-        {
-          "date": "2026-08-16",
-          "tier": "WATCH",
-          "composite": 5.25
-        }
-      ]
-    },
-    "coldtea-ai": {
-      "name": "Coldtea.ai",
-      "first_seen": "2026-08-10",
-      "last_seen": "2026-08-16",
-      "tier_history": [
-        {
-          "date": "2026-08-10",
-          "tier": "WATCH",
-          "composite": 5.75
-        },
-        {
-          "date": "2026-08-11",
-          "tier": "WATCH",
-          "composite": 5.75
-        },
-        {
-          "date": "2026-08-15",
-          "tier": "WATCH",
-          "composite": 5.75
-        },
-        {
-          "date": "2026-08-16",
-          "tier": "WATCH",
-          "composite": 5.75
-        }
-      ]
-    },
-    "agentsky": {
-      "name": "AgentSky",
-      "first_seen": "2026-08-05",
-      "last_seen": "2026-08-16",
-      "tier_history": [
-        {
-          "date": "2026-08-05",
-          "tier": "WATCH",
-          "composite": 6.0
-        },
-        {
-          "date": "2026-08-07",
-          "tier": "WATCH",
-          "composite": 6.0
-        },
-        {
-          "date": "2026-08-09",
-          "tier": "WATCH",
-          "composite": 6.0
-        },
-        {
-          "date": "2026-08-11",
-          "tier": "WATCH",
-          "composite": 6.0
-        },
-        {
-          "date": "2026-08-15",
-          "tier": "WATCH",
-          "composite": 6.0
-        },
-        {
-          "date": "2026-08-16",
-          "tier": "WATCH",
-          "composite": 6.0
-        }
-      ]
-    },
     "omniwork": {
       "name": "Omniwork",
       "first_seen": "2026-08-16",
@@ -1196,6 +1106,54 @@
           "date": "2026-08-16",
           "tier": "WATCH",
           "composite": 6.25
+        }
+      ]
+    },
+    "naive": {
+      "name": "Na\u00efve",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "tier_history": [
+        {
+          "date": "2026-08-17",
+          "tier": "WATCH",
+          "composite": 7.25
+        }
+      ]
+    },
+    "suno": {
+      "name": "Suno",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "tier_history": [
+        {
+          "date": "2026-08-17",
+          "tier": "WATCH",
+          "composite": 6.5
+        }
+      ]
+    },
+    "vulx-watch": {
+      "name": "VulX Watch",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "tier_history": [
+        {
+          "date": "2026-08-17",
+          "tier": "WATCH",
+          "composite": 6.0
+        }
+      ]
+    },
+    "smallest-ai": {
+      "name": "Smallest.ai",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "tier_history": [
+        {
+          "date": "2026-08-17",
+          "tier": "WATCH",
+          "composite": 5.75
         }
       ]
     }
