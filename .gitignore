@@ -101,7 +101,8 @@ audit_results.csv
 # everything else in this block. Re-verify this assumption never again —
 # always live-check before excluding new scripts from this list.
 social_agent/
-google_ads/
+google_ads/*
+!google_ads/competitor_research
 infrastructure/
 dashboard/
 pages/
