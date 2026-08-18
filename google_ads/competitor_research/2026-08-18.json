@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-18",
+  "method": "websearch_only_no_direct_ad_verification",
+  "run_note": "WebSearch-only pass (WebFetch, Google Ads Transparency Center, and ad-intelligence tools like SpyFu/SEMrush/Similarweb are EGRESS_BLOCKED in this environment). Ran 13 WebSearch queries across all 9 tracked domains plus new-competitor discovery. No materially new signal found vs the 2026-08-17 snapshot: all results either restate the already-known G2/Capterra/GetApp/SoftwareAdvice merger and its Ads-business framing, or return generic industry PPC/marketing-budget content with no company-specific signal for the tracked domains.",
+  "domains": [
+    {"domain": "g2.com", "signals_found": ["No new ads-specific signal beyond the already-known Capterra/SoftwareAdvice/GetApp acquisition context. G2 platform pages reference an existing PPC-style 'Ads' offering for vendors; no new campaign, budget, or hiring signal found this run."], "signal_strength": "none"},
+    {"domain": "capterra.com", "signals_found": ["Confirms existing PPC model (vendors pay per click, sponsored profiles ranked above free listings, cross-posts to GetApp/SoftwareAdvice) — this is pre-existing, unchanged mechanics, not a new signal."], "signal_strength": "none"},
+    {"domain": "getapp.com", "signals_found": ["No new signal; still folded into G2's consolidated Ads business per the known 2026 acquisition."], "signal_strength": "none"},
+    {"domain": "softwareadvice.com", "signals_found": ["No new signal; still folded into G2's consolidated Ads business per the known 2026 acquisition."], "signal_strength": "none"},
+    {"domain": "toolify.ai", "signals_found": ["No PPC/ads/budget signal found via WebSearch this run."], "signal_strength": "none"},
+    {"domain": "financesonline.com", "signals_found": ["No PPC/hiring/ads signal found via WebSearch this run."], "signal_strength": "none"},
+    {"domain": "theresanaiforthat.com", "signals_found": ["No new signal found this run (searches returned only generic Google Ad Grants content, not TAAFT-specific)."], "signal_strength": "none"},
+    {"domain": "futurepedia.io", "signals_found": ["Still unfunded per Tracxn/Crunchbase, ~4-person team, relies on affiliate/sponsorship revenue rather than ad spend. No hiring or ad-spend signal found — unchanged from prior snapshot."], "signal_strength": "none"},
+    {"domain": "simplycodes.com", "signals_found": ["No specific ad-spend or PPC hiring signal found this run."], "signal_strength": "none"}
+  ],
+  "new_competitors_found": [],
+  "new_competitor_candidates_unverified": [
+    "aiapps.com (carried over, still unverified for paid ads)",
+    "best-ai.org (carried over, still unverified for paid ads)",
+    "tooldirectory.ai (carried over, still unverified for paid ads; resurfaced again in directory-listicle searches this run, still no ads/PPC-specific signal)"
+  ],
+  "known_events": [
+    {"event": "G2 acquired Capterra, Software Advice, and GetApp from Gartner (deal closed Feb 5 2026, ~$110M), explicitly marketed as strengthening G2's Ads business and enabling a new pay-per-lead offering.", "known_since": "2026-08-17", "still_relevant": true}
+  ],
+  "notable_changes_vs_previous": [
+    "No new signals vs 2026-08-17 snapshot. No domain showed stronger ads/PPC activity, no new competitor directories surfaced, and no update to the known G2/Capterra Ads/pay-per-lead story (a dedicated search for an August 2026 G2 pay-per-lead launch found only the existing pricing/PPC pages, no new announcement)."
+  ],
+  "is_first_run": false
+}
