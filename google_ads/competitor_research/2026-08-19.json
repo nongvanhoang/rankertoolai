@@ -1,0 +1,32 @@
+{
+  "date": "2026-08-19",
+  "method": "websearch_only_no_direct_ad_verification",
+  "run_note": "WebSearch-only pass (WebFetch, Google Ads Transparency Center, and ad-intelligence tools like SpyFu/SEMrush/Similarweb are EGRESS_BLOCKED in this environment). Ran 9 WebSearch queries across all 9 tracked domains plus new-competitor discovery. No materially new ads/PPC signal found vs the 2026-08-17/2026-08-18 snapshots for any tracked domain. One background detail surfaced (G2 unified Buyer Intent across G2/Capterra/Software Advice/GetApp into a single profile view as of June 3, 2026) but this predates our first snapshot (Aug 17) and is not a new development since tracking began, so it is not treated as a fresh highlight.",
+  "domains": [
+    {"domain": "g2.com", "signals_found": ["No new campaign/budget/hiring signal. Confirms existing 'Ads' PPC-style vendor offering. One background detail found: G2 unified Buyer Intent data across G2/Capterra/SoftwareAdvice/GetApp into a single profile view as of June 3 2026 — this predates our tracking start (Aug 17) and is part of the already-known acquisition/ads-consolidation story, not a new event."], "signal_strength": "none"},
+    {"domain": "capterra.com", "signals_found": ["Confirms pre-existing PPC mechanics ($2/click minimum, $500/month minimum budget, second-price auction) — unchanged, not new."], "signal_strength": "none"},
+    {"domain": "getapp.com", "signals_found": ["No new signal; still folded into G2's consolidated Ads business."], "signal_strength": "none"},
+    {"domain": "softwareadvice.com", "signals_found": ["No new signal; confirms pre-existing pay-per-lead (not pay-per-click) model — unchanged, not new."], "signal_strength": "none"},
+    {"domain": "toolify.ai", "signals_found": ["No PPC/ads/budget/hiring signal found via WebSearch this run."], "signal_strength": "none"},
+    {"domain": "financesonline.com", "signals_found": ["No PPC/hiring/ads signal found via WebSearch this run; searches returned only generic industry PPC content, no financesonline.com-specific results."], "signal_strength": "none"},
+    {"domain": "theresanaiforthat.com", "signals_found": ["No new signal found this run; searches returned only generic PPC agency/industry content, not TAAFT-specific."], "signal_strength": "none"},
+    {"domain": "futurepedia.io", "signals_found": ["Still unfunded (bootstrapped, ~4-person team per Tracxn), revenue via affiliate/sponsorship + $497 verification program. No hiring or ad-spend signal found — unchanged."], "signal_strength": "none"},
+    {"domain": "simplycodes.com", "signals_found": ["No specific ad-spend, PPC hiring, or campaign signal found this run."], "signal_strength": "none"}
+  ],
+  "new_competitors_found": [],
+  "new_competitor_candidates_unverified": [
+    "aiapps.com (carried over, still unverified for paid ads)",
+    "best-ai.org (carried over, still unverified for paid ads)",
+    "tooldirectory.ai (carried over, resurfaced again in directory searches this run — now a 2,727-tool curated directory — still no ads/PPC-specific signal)",
+    "OpenHunt (new AI-tools launch-curation site, surfaced in 'ai software reviews new competitor 2026' search — not previously logged, no ads/PPC signal found)",
+    "AI Parabellum (AI tools directory, ~1,000+ tools/50+ categories, surfaced in directory search — not previously logged, no ads/PPC signal found)",
+    "PoweredByAI (AI tools directory, surfaced in directory search — not previously logged, no ads/PPC signal found)"
+  ],
+  "known_events": [
+    {"event": "G2 acquired Capterra, Software Advice, and GetApp from Gartner (deal closed Feb 5 2026, ~$110M), explicitly marketed as strengthening G2's Ads business and enabling a new pay-per-lead offering.", "known_since": "2026-08-17", "still_relevant": true}
+  ],
+  "notable_changes_vs_previous": [
+    "No new signals vs the 2026-08-17/2026-08-18 snapshots. No domain showed stronger ads/PPC activity, no dated ads-consolidation news beyond what's already known. Three new directory names surfaced in general discovery (OpenHunt, AI Parabellum, PoweredByAI) but none carry any ads/PPC signal — logged as unverified candidates only, not treated as notable."
+  ],
+  "is_first_run": false
+}
