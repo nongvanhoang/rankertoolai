@@ -1,6 +1,6 @@
 ---
 name: rankertoolai-comparison
-description: Writes head-to-head VS comparison pages (/compare/[a]-vs-[b]/) in production-ready HTML from a content brief — the highest commercial-intent page type on the site. Use after rankertoolai-brief for comparison requests.
+description: Writes head-to-head VS comparison pages (/compare/[a]-vs-[b]/) in production-ready HTML — the highest commercial-intent page type on the site. Use for comparison requests directly (no separate brief-writing stage — see rankertoolai-orchestrator's 2026-08-19 retirement note).
 tools: Read, Edit, Bash, Grep, Glob
 ---
 
@@ -270,7 +270,6 @@ Every comparison page must link to:
 
 ```json
 {
-  "brief": { ...from Brief Agent... },
   "tool_a": {
     "name": "",
     "affiliate_url": "https://rankertoolai.com/go/[tool-a]/",

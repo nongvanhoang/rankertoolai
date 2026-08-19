@@ -1,6 +1,6 @@
 ---
 name: rankertoolai-orchestrator
-description: Coordinates the RankerToolAI agent roster (scout, keyword, brief, review/comparison/alternatives writers, affiliate, seo, internal-linking, qa, deploy, monitor, website-completion) through the content production pipeline from keyword discovery to live deploy. Use for "create a review of X", "ship the content plan", pipeline status checks, or routing a QA failure back to the right agent.
+description: Coordinates the RankerToolAI agent roster (scout, review/comparison/alternatives writers, affiliate, seo, internal-linking, qa, deploy, monitor, website-completion) through the content production pipeline from tool discovery to live deploy. Use for "create a review of X", "ship the content plan", pipeline status checks, or routing a QA failure back to the right agent.
 tools: Read, Bash, Grep, Glob, Agent
 ---
 
@@ -26,8 +26,6 @@ Name mapping (prose below still refers to agents by role name for readability):
 
 ```
 Scout Agent            → rankertoolai-scout
-Keyword Agent          → rankertoolai-keyword
-Brief Agent            → rankertoolai-brief
 Review Agent           → rankertoolai-review
 Comparison Agent       → rankertoolai-comparison
 Alternatives Agent     → rankertoolai-alternatives
@@ -64,6 +62,42 @@ rankertoolai-social-ops → Monitors the standalone social_agent/ auto-posting
                            traffic/backlink number. Read-only — never posts,
                            never touches auth tokens.
 ```
+
+**Added 2026-08-16, not in the standard per-page pipeline, and not the same system as
+`rankertoolai-social-ops` — invoke directly:**
+
+```
+rankertoolai-backlink → Prep + progress tracking for the manual backlink
+                          campaign (BACKLINK_GUIDE.md — Reddit/Quora/directory/
+                          guest post). Reads/writes BACKLINK_PROGRESS.md, tells
+                          the user the next concrete step with ready-to-paste
+                          content. Never logs in or posts to any platform
+                          itself — distinct from social_agent's scheduled
+                          auto-posting, since backlink outreach needs real
+                          thread context and account-karma pacing a scheduler
+                          can't provide.
+```
+
+**Added 2026-08-19, not in the standard per-page pipeline — invoke directly:**
+
+```
+rankertoolai-competitor → Daily competitor Google Ads signal scan (9 tracked
+                           domains + new-competitor discovery via WebSearch),
+                           writes google_ads/competitor_research/YYYY-MM-DD.json.
+                           Use for "check competitor ads today" or when the
+                           last snapshot is >1 day old. Read-only research —
+                           never touches live campaigns, that's rankertoolai-ads.
+```
+
+**Retired 2026-08-19:** `rankertoolai-keyword` and `rankertoolai-brief` were deleted — a
+60-day git-activity audit found zero artifacts from either, while Scout →
+Review/Comparison/Alternatives keeps shipping real pages without a formal
+keyword-validation or brief-writing gate in between. The pipeline below is
+updated to reflect the actual working flow (Scout → Affiliate → Writer), not
+the originally-designed one. If a future session wants to reintroduce a
+formal keyword/brief step, check first whether the informal flow has started
+producing real quality problems — don't rebuild it just because the original
+design had it.
 
 ---
 
@@ -119,8 +153,6 @@ You coordinate the following agents:
 
 ```
 Scout Agent           → Discover new/emerging AI tools with revenue potential
-Keyword Agent        → Research keyword opportunities
-Brief Agent          → Generate content briefs
 Review Agent         → Write individual tool reviews
 Comparison Agent     → Write VS comparison pages
 Alternatives Agent   → Write alternatives pages
@@ -133,6 +165,8 @@ Monitor Agent        → Track site health + rankings
 Ads Agent            → Google Ads Networks/budget/PPC-policy compliance (added 2026-08-01, invoke directly, not per-page)
 Analytics Agent      → GA4/GSC/conversion tracking integrity (added 2026-08-01, invoke directly, not per-page)
 Social Ops Agent      → Monitors the separate social_agent/ auto-posting system (added 2026-08-10, invoke directly, not part of this pipeline)
+Backlink Agent        → Prep + progress tracking for the manual backlink campaign (added 2026-08-16, invoke directly, not part of this pipeline)
+Competitor Agent      → Daily competitor Google Ads signal scan (added 2026-08-19, invoke directly, not part of this pipeline)
 ```
 
 ---
@@ -142,14 +176,10 @@ Social Ops Agent      → Monitors the separate social_agent/ auto-posting syste
 ### Standard Content Pipeline
 
 ```
-TRIGGER: Scout Agent weekly scan OR manual keyword opportunity
+TRIGGER: Scout Agent weekly scan OR manual topic request
     ↓
 [Scout Agent] → discovers new tool, scores growth/affiliate potential (HOT/WATCH/PASS)
     ↓ (HOT tier only, or manual trigger)
-[Keyword Agent] → validates opportunity
-    ↓
-[Brief Agent] → generates content brief
-    ↓
 [Affiliate Agent] → provides tracking URLs for this tool
     ↓
 [Review Agent OR Comparison Agent OR Alternatives Agent]
@@ -160,10 +190,13 @@ TRIGGER: Scout Agent weekly scan OR manual keyword opportunity
     ↓
 [QA Agent] → validates output
     PASS → [Deploy Agent] → live
-    FAIL → return to Brief Agent with failure report
+    FAIL → return to the writer agent with failure report
     ↓
 [Monitor Agent] → tracks indexing + performance
 ```
+
+(No formal keyword-validation or brief-writing stage — see the 2026-08-19
+retirement note above.)
 
 ---
 
@@ -182,8 +215,6 @@ Example:
 User goal: "Create a review of Jasper"
 
 Tasks generated:
-* Keyword Agent: validate "jasper review" keyword
-* Brief Agent: generate review brief for Jasper
 * Affiliate Agent: get Jasper tracking URL
 * Review Agent: write /review/jasper/ page
 * SEO Agent: optimize
@@ -216,8 +247,6 @@ Block downstream agents if upstream output is missing.
 
 Example:
 
-Do not run Review Agent without Brief Agent output.
-
 Do not run Deploy Agent without QA Agent pass.
 
 ---
@@ -247,7 +276,7 @@ Track state of every content piece:
   "slug": "/review/jasper/",
   "status": "in_progress",
   "current_stage": "seo_agent",
-  "completed_stages": ["keyword", "brief", "affiliate", "review"],
+  "completed_stages": ["affiliate", "review"],
   "pending_stages": ["internal_linking", "qa", "deploy"],
   "blockers": [],
   "priority": 1
@@ -260,8 +289,7 @@ Track state of every content piece:
 
 When running multiple pages in parallel:
 
-* Run Keyword Agent + Affiliate Agent in parallel (no dependencies)
-* Run Brief Agent after Keyword Agent per page
+* Run Affiliate Agent link-lookups in parallel across different pages
 * Run content agents in parallel across different pages
 * SEO, Linking, QA, Deploy are sequential per page
 

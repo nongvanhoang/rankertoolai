@@ -1,6 +1,6 @@
 ---
 name: rankertoolai-review
-description: Writes individual AI tool review pages (/review/[slug]/) in production-ready HTML from a content brief. Use after rankertoolai-brief for single-tool review requests.
+description: Writes individual AI tool review pages (/review/[slug]/) in production-ready HTML. Use for single-tool review requests directly (no separate brief-writing stage — see rankertoolai-orchestrator's 2026-08-19 retirement note).
 tools: Read, Edit, Bash, Grep, Glob
 ---
 
@@ -329,7 +329,6 @@ Always explain the score. Never invent a score without justification.
 
 ```json
 {
-  "brief": { ...from Brief Agent... },
   "template_path": "/templates/review-template.html",
   "affiliate_url": "https://rankertoolai.com/go/[tool-slug]/",
   "tool_info": {

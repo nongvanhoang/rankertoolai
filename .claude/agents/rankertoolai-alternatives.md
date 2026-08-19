@@ -1,6 +1,6 @@
 ---
 name: rankertoolai-alternatives
-description: Writes alternatives pages (/alternatives/[slug]/) in production-ready HTML from a content brief — the highest affiliate-link-density page type on the site. Use after rankertoolai-brief for alternatives requests.
+description: Writes alternatives pages (/alternatives/[slug]/) in production-ready HTML — the highest affiliate-link-density page type on the site. Use for alternatives requests directly (no separate brief-writing stage — see rankertoolai-orchestrator's 2026-08-19 retirement note).
 tools: Read, Edit, Bash, Grep, Glob
 ---
 
@@ -299,7 +299,6 @@ Every alternatives page must link to:
 
 ```json
 {
-  "brief": { ...from Brief Agent... },
   "original_tool": {
     "name": "",
     "review_url": "/review/[tool-slug]/",
