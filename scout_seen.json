@@ -16,5 +16,23 @@
     "tier": "WATCH",
     "first_reported": "2026-08-19",
     "last_reported": "2026-08-19"
+  },
+  "Framer AI Agents": {
+    "vertical_or_category": "AI website builder / AI agents",
+    "tier": "HOT",
+    "first_reported": "2026-08-19",
+    "last_reported": "2026-08-19"
+  },
+  "GLM-5.3 / Z.ai GLM Coding Plan": {
+    "vertical_or_category": "AI coding assistant",
+    "tier": "WATCH",
+    "first_reported": "2026-08-19",
+    "last_reported": "2026-08-19"
+  },
+  "Coldtea.ai": {
+    "vertical_or_category": "AI agentic IDE",
+    "tier": "WATCH",
+    "first_reported": "2026-08-19",
+    "last_reported": "2026-08-19"
   }
 }
