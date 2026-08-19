@@ -3,7 +3,7 @@
     "wispr-flow": {
       "name": "Wispr Flow",
       "first_seen": "2026-07-03",
-      "last_seen": "2026-08-18",
+      "last_seen": "2026-08-19",
       "tier_history": [
         {
           "date": "2026-07-03",
@@ -37,6 +37,11 @@
         },
         {
           "date": "2026-08-18",
+          "tier": "HOT",
+          "composite": 8.0
+        },
+        {
+          "date": "2026-08-19",
           "tier": "HOT",
           "composite": 8.0
         }
@@ -219,23 +224,6 @@
           "date": "2026-07-23",
           "tier": "WATCH",
           "composite": 5.0
-        }
-      ]
-    },
-    "river-gtm": {
-      "name": "River (rivergtm.com)",
-      "first_seen": "2026-07-18",
-      "last_seen": "2026-07-19",
-      "tier_history": [
-        {
-          "date": "2026-07-18",
-          "tier": "WATCH",
-          "composite": 7.25
-        },
-        {
-          "date": "2026-07-19",
-          "tier": "WATCH",
-          "composite": 7.25
         }
       ]
     },
@@ -897,7 +885,7 @@
     "adant-ai": {
       "name": "AdAnt AI",
       "first_seen": "2026-08-10",
-      "last_seen": "2026-08-18",
+      "last_seen": "2026-08-19",
       "tier_history": [
         {
           "date": "2026-08-10",
@@ -926,6 +914,11 @@
         },
         {
           "date": "2026-08-18",
+          "tier": "WATCH",
+          "composite": 5.25
+        },
+        {
+          "date": "2026-08-19",
           "tier": "WATCH",
           "composite": 5.25
         }
@@ -966,7 +959,7 @@
     "hey-noah": {
       "name": "Hey Noah",
       "first_seen": "2026-08-12",
-      "last_seen": "2026-08-18",
+      "last_seen": "2026-08-19",
       "tier_history": [
         {
           "date": "2026-08-12",
@@ -985,6 +978,11 @@
         },
         {
           "date": "2026-08-18",
+          "tier": "WATCH",
+          "composite": 6.75
+        },
+        {
+          "date": "2026-08-19",
           "tier": "WATCH",
           "composite": 6.75
         }
@@ -1123,7 +1121,7 @@
       ]
     },
     "naive": {
-      "name": "Naïve",
+      "name": "Na\u00efve",
       "first_seen": "2026-08-17",
       "last_seen": "2026-08-17",
       "tier_history": [
@@ -1174,6 +1172,30 @@
           "composite": 5.75
         }
       ]
+    },
+    "muse-code": {
+      "name": "Muse Code (Meta)",
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
+      "tier_history": [
+        {
+          "date": "2026-08-19",
+          "tier": "WATCH",
+          "composite": 5.5
+        }
+      ]
+    },
+    "phygital-plus": {
+      "name": "Phygital+",
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
+      "tier_history": [
+        {
+          "date": "2026-08-19",
+          "tier": "WATCH",
+          "composite": 6.25
+        }
+      ]
     }
   },
   "pending_reminders": {
@@ -1187,7 +1209,7 @@
       "last_reminded": "2026-08-15"
     },
     "semrush": {
-      "last_reminded": "2026-08-12"
+      "last_reminded": "2026-08-19"
     },
     "runway": {
       "last_reminded": "2026-08-16"
