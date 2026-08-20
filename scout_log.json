@@ -3,7 +3,7 @@
     "wispr-flow": {
       "name": "Wispr Flow",
       "first_seen": "2026-07-03",
-      "last_seen": "2026-08-19",
+      "last_seen": "2026-08-20",
       "tier_history": [
         {
           "date": "2026-07-03",
@@ -42,6 +42,11 @@
         },
         {
           "date": "2026-08-19",
+          "tier": "HOT",
+          "composite": 8.0
+        },
+        {
+          "date": "2026-08-20",
           "tier": "HOT",
           "composite": 8.0
         }
@@ -258,30 +263,6 @@
           "date": "2026-08-05",
           "tier": "WATCH",
           "composite": 7.25
-        }
-      ]
-    },
-    "lyzr": {
-      "name": "Lyzr",
-      "first_seen": "2026-07-20",
-      "last_seen": "2026-07-20",
-      "tier_history": [
-        {
-          "date": "2026-07-20",
-          "tier": "HOT",
-          "composite": 8.0
-        }
-      ]
-    },
-    "mira-ai-moderator": {
-      "name": "Mira (AI Moderator by Decode/Entropik)",
-      "first_seen": "2026-07-20",
-      "last_seen": "2026-07-20",
-      "tier_history": [
-        {
-          "date": "2026-07-20",
-          "tier": "WATCH",
-          "composite": 5.25
         }
       ]
     },
@@ -719,7 +700,7 @@
     "agentsky": {
       "name": "AgentSky",
       "first_seen": "2026-08-05",
-      "last_seen": "2026-08-18",
+      "last_seen": "2026-08-20",
       "tier_history": [
         {
           "date": "2026-08-05",
@@ -753,6 +734,11 @@
         },
         {
           "date": "2026-08-18",
+          "tier": "WATCH",
+          "composite": 6.0
+        },
+        {
+          "date": "2026-08-20",
           "tier": "WATCH",
           "composite": 6.0
         }
@@ -885,7 +871,7 @@
     "adant-ai": {
       "name": "AdAnt AI",
       "first_seen": "2026-08-10",
-      "last_seen": "2026-08-19",
+      "last_seen": "2026-08-20",
       "tier_history": [
         {
           "date": "2026-08-10",
@@ -921,13 +907,18 @@
           "date": "2026-08-19",
           "tier": "WATCH",
           "composite": 5.25
+        },
+        {
+          "date": "2026-08-20",
+          "tier": "WATCH",
+          "composite": 5.25
         }
       ]
     },
     "coldtea-ai": {
       "name": "Coldtea.ai",
       "first_seen": "2026-08-10",
-      "last_seen": "2026-08-18",
+      "last_seen": "2026-08-20",
       "tier_history": [
         {
           "date": "2026-08-10",
@@ -953,13 +944,18 @@
           "date": "2026-08-18",
           "tier": "WATCH",
           "composite": 5.75
+        },
+        {
+          "date": "2026-08-20",
+          "tier": "WATCH",
+          "composite": 5.75
         }
       ]
     },
     "hey-noah": {
       "name": "Hey Noah",
       "first_seen": "2026-08-12",
-      "last_seen": "2026-08-19",
+      "last_seen": "2026-08-20",
       "tier_history": [
         {
           "date": "2026-08-12",
@@ -983,6 +979,11 @@
         },
         {
           "date": "2026-08-19",
+          "tier": "WATCH",
+          "composite": 6.75
+        },
+        {
+          "date": "2026-08-20",
           "tier": "WATCH",
           "composite": 6.75
         }
@@ -1099,10 +1100,15 @@
     "soloop": {
       "name": "Soloop",
       "first_seen": "2026-08-16",
-      "last_seen": "2026-08-16",
+      "last_seen": "2026-08-20",
       "tier_history": [
         {
           "date": "2026-08-16",
+          "tier": "WATCH",
+          "composite": 6.75
+        },
+        {
+          "date": "2026-08-20",
           "tier": "WATCH",
           "composite": 6.75
         }
@@ -1192,6 +1198,30 @@
       "tier_history": [
         {
           "date": "2026-08-19",
+          "tier": "WATCH",
+          "composite": 6.25
+        }
+      ]
+    },
+    "framer": {
+      "name": "Framer (AI Agents)",
+      "first_seen": "2026-08-20",
+      "last_seen": "2026-08-20",
+      "tier_history": [
+        {
+          "date": "2026-08-20",
+          "tier": "HOT",
+          "composite": 7.625
+        }
+      ]
+    },
+    "glm-coding-plan": {
+      "name": "Z.ai GLM Coding Plan (GLM-5.3)",
+      "first_seen": "2026-08-20",
+      "last_seen": "2026-08-20",
+      "tier_history": [
+        {
+          "date": "2026-08-20",
           "tier": "WATCH",
           "composite": 6.25
         }
