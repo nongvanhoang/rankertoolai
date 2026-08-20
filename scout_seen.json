@@ -34,5 +34,29 @@
     "tier": "WATCH",
     "first_reported": "2026-08-19",
     "last_reported": "2026-08-19"
+  },
+  "Kilo Code": {
+    "vertical_or_category": "AI coding agent (IDE/CLI/cloud)",
+    "tier": "WATCH",
+    "first_reported": "2026-08-20",
+    "last_reported": "2026-08-20"
+  },
+  "Murmell": {
+    "vertical_or_category": "Shared cloud canvas for multi-agent coding",
+    "tier": "WATCH",
+    "first_reported": "2026-08-20",
+    "last_reported": "2026-08-20"
+  },
+  "Astute": {
+    "vertical_or_category": "AI agent for B2B creator/newsletter/podcast partnerships",
+    "tier": "WATCH",
+    "first_reported": "2026-08-20",
+    "last_reported": "2026-08-20"
+  },
+  "Soloop": {
+    "vertical_or_category": "AI Agent OS for solo founders",
+    "tier": "WATCH",
+    "first_reported": "2026-08-20",
+    "last_reported": "2026-08-20"
   }
 }
