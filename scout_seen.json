@@ -19,9 +19,9 @@
   },
   "Framer AI Agents": {
     "vertical_or_category": "AI website builder / AI agents",
-    "tier": "HOT",
+    "tier": "WATCH",
     "first_reported": "2026-08-19",
-    "last_reported": "2026-08-19"
+    "last_reported": "2026-08-22"
   },
   "GLM-5.3 / Z.ai GLM Coding Plan": {
     "vertical_or_category": "AI coding assistant",
@@ -58,5 +58,35 @@
     "tier": "WATCH",
     "first_reported": "2026-08-20",
     "last_reported": "2026-08-20"
+  },
+  "Naïve": {
+    "vertical_or_category": "AI business-automation infrastructure (API tự động hoá vận hành công ty)",
+    "tier": "WATCH",
+    "first_reported": "2026-08-22",
+    "last_reported": "2026-08-22"
+  },
+  "River AI": {
+    "vertical_or_category": "AI infrastructure / custom model training",
+    "tier": "WATCH",
+    "first_reported": "2026-08-22",
+    "last_reported": "2026-08-22"
+  },
+  "Smallest.ai": {
+    "vertical_or_category": "Voice AI (TTS/STT, voice agents)",
+    "tier": "WATCH",
+    "first_reported": "2026-08-22",
+    "last_reported": "2026-08-22"
+  },
+  "Cronloop": {
+    "vertical_or_category": "AI agent scheduling/automation (\"cron cho AI agent\")",
+    "tier": "WATCH",
+    "first_reported": "2026-08-22",
+    "last_reported": "2026-08-22"
+  },
+  "Fabricate v2.0": {
+    "vertical_or_category": "AI \"vibe coding\" / app builder full-stack",
+    "tier": "WATCH",
+    "first_reported": "2026-08-22",
+    "last_reported": "2026-08-22"
   }
 }
