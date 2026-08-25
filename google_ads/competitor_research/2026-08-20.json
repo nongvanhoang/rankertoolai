@@ -1,0 +1,32 @@
+{
+  "date": "2026-08-20",
+  "method": "websearch_only_no_direct_ad_verification",
+  "run_note": "WebSearch-only pass (WebFetch, Google Ads Transparency Center, and ad-intelligence tools like SpyFu/SEMrush/Similarweb are EGRESS_BLOCKED in this environment). Ran 12 WebSearch queries across all 9 tracked domains plus new-competitor discovery. No materially new ads/PPC signal found vs the 2026-08-17/18/19 snapshots for any tracked domain. A dedicated search for a G2 'pay-per-lead' product launch (the stated intent behind the Capterra/GetApp/SoftwareAdvice acquisition) still found only G2's existing 'G2 Ads'/'G2 Clicks' pricing pages — no announcement of the new pay-per-lead offering going live yet.",
+  "domains": [
+    {"domain": "g2.com", "signals_found": ["No new campaign/budget/hiring signal. Existing PPC-style 'G2 Ads'/'G2 Clicks' vendor offering confirmed via pricing pages, unchanged. Searched specifically for the pay-per-lead product G2 said the Capterra/GetApp/SoftwareAdvice deal would enable — no launch announcement found yet, still just the Feb 2026 acquisition messaging."], "signal_strength": "none"},
+    {"domain": "capterra.com", "signals_found": ["Confirms pre-existing PPC mechanics ($2/click minimum, $500/month minimum budget, second-price auction, typical advertiser starts at $1,000-2,000/month) and that G2 now owns it — unchanged, not new."], "signal_strength": "none"},
+    {"domain": "getapp.com", "signals_found": ["Confirms pre-existing sponsored-profile model (vendors pay for placement/traffic, free listings still shown) — unchanged, not new."], "signal_strength": "none"},
+    {"domain": "softwareadvice.com", "signals_found": ["No SoftwareAdvice-specific ad-spend/budget signal found; searches returned only generic industry marketing-budget content."], "signal_strength": "none"},
+    {"domain": "toolify.ai", "signals_found": ["No PPC/ads/budget/hiring signal found via WebSearch this run."], "signal_strength": "none"},
+    {"domain": "financesonline.com", "signals_found": ["No PPC/hiring/ads signal found via WebSearch this run; searches returned only generic industry PPC content, no financesonline.com-specific results."], "signal_strength": "none"},
+    {"domain": "theresanaiforthat.com", "signals_found": ["Confirms existing 'PPC ads' tools category (32 listings) — same as prior snapshots, not new."], "signal_strength": "none"},
+    {"domain": "futurepedia.io", "signals_found": ["Still unfunded (bootstrapped, ~4-person team per Tracxn/Crunchbase), revenue via affiliate/sponsorship + $497 verification program, ~5M users to date. No hiring or ad-spend signal found — unchanged."], "signal_strength": "none"},
+    {"domain": "simplycodes.com", "signals_found": ["No specific ad-spend, PPC hiring, or campaign signal found this run; SimplyCodes itself only surfaced as a coupon-aggregator listing Google Ads promo codes, not as an advertiser."], "signal_strength": "none"}
+  ],
+  "new_competitors_found": [],
+  "new_competitor_candidates_unverified": [
+    "AI Parabellum (carried over, resurfaced again this run described as a top-ranked 2026 AI tool directory, 1,000+ tools/50+ categories — still no ads/PPC-specific signal)",
+    "PoweredByAI.app (carried over, resurfaced again this run — still no ads/PPC-specific signal)",
+    "tooldirectory.ai (carried over, still ~2,728 tools/45 categories — still no ads/PPC-specific signal)",
+    "OpenResources (new AI tools directory, 280 tools/9 categories, launched Feb 12 2026 per search snippet — not previously logged, no ads/PPC signal found)",
+    "AIChief (AI discovery platform focused on comparisons/reviews, described as 'growing' in search snippet — not previously logged, no ads/PPC signal found)",
+    "efficient.app (AI tools ranking/review site surfaced in directory search — not previously logged, no ads/PPC signal found)"
+  ],
+  "known_events": [
+    {"event": "G2 acquired Capterra, Software Advice, and GetApp from Gartner (deal closed Feb 5 2026, ~$110M), explicitly marketed as strengthening G2's Ads business and enabling a new pay-per-lead offering.", "known_since": "2026-08-17", "still_relevant": true, "update_this_run": "None — searched specifically for a pay-per-lead launch announcement; still not live as of this run, only the original Feb 2026 acquisition/PPC pricing pages found."}
+  ],
+  "notable_changes_vs_previous": [
+    "No new signals vs the 2026-08-17/18/19 snapshots. No domain showed stronger ads/PPC activity, and G2's stated pay-per-lead product still has no public launch signal. Three new directory names surfaced in general discovery (OpenResources, AIChief, efficient.app) but none carry any ads/PPC signal — logged as unverified candidates only, not treated as notable."
+  ],
+  "is_first_run": false
+}
