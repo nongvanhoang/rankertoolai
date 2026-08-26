@@ -1,0 +1,34 @@
+{
+  "date": "2026-08-26",
+  "method": "websearch_only_no_direct_ad_verification",
+  "run_note": "WebSearch-only pass (WebFetch, Google Ads Transparency Center, and ad-intelligence tools like SpyFu/SEMrush/Similarweb are EGRESS_BLOCKED in this environment). Ran 11 WebSearch queries across all 9 tracked domains plus new-competitor discovery. Also checked Notion tracking database for domains marked 'Đã xử lý' (processed) by the user before deciding what counts as a fresh highlight — none found this run, all 12 tracked pages still 'Chưa xử lý'. No materially new ads/PPC signal found vs the 2026-08-17 through 2026-08-25 snapshots for any tracked domain. Re-checked specifically for the G2 pay-per-lead product launch — still no launch announcement, only existing G2 Ads/G2 Digital Markets PPC pricing and the original Feb 2026 acquisition messaging.",
+  "domains": [
+    {"domain": "g2.com", "signals_found": ["No new campaign/budget/hiring signal. Confirms existing G2 Ads / G2 Digital Markets PPC vendor offering via pricing pages, unchanged. Pay-per-lead product still has no public launch announcement."], "signal_strength": "none"},
+    {"domain": "capterra.com", "signals_found": ["Confirms pre-existing PPC mechanics (second-price auction, Sponsored Profile + G2 Digital Markets approval required) and G2 ownership — unchanged, not new."], "signal_strength": "none"},
+    {"domain": "getapp.com", "signals_found": ["No new signal; still folded into G2's consolidated Ads business, generates revenue via vendor PPC/pay-per-lead — unchanged."], "signal_strength": "none"},
+    {"domain": "softwareadvice.com", "signals_found": ["No SoftwareAdvice-specific ad-spend/budget signal found; searches returned only generic GetApp/funding-database content, no company-specific signal."], "signal_strength": "none"},
+    {"domain": "toolify.ai", "signals_found": ["No PPC/ads/budget/hiring signal found via WebSearch this run; searches returned only generic 'best AI marketing tools' content, not Toolify-specific."], "signal_strength": "none"},
+    {"domain": "financesonline.com", "signals_found": ["No PPC/hiring/ads signal found via WebSearch this run; searches returned only generic financial-services Google Ads content, no financesonline.com-specific results."], "signal_strength": "none"},
+    {"domain": "theresanaiforthat.com", "signals_found": ["No new signal found this run; only surfaced as a generic competitor reference to Futurepedia in Similarweb-style results, not ads/PPC-specific."], "signal_strength": "none"},
+    {"domain": "futurepedia.io", "signals_found": ["Still unfunded, ~4-person team, ~500K monthly visitors, 200K+ community — no hiring or ad-spend signal found, unchanged from prior snapshots."], "signal_strength": "none"},
+    {"domain": "simplycodes.com", "signals_found": ["No specific ad-spend, PPC hiring, or campaign signal found this run; SimplyCodes itself only surfaced again as a coupon-aggregator listing Google Ads promo codes (0 active codes tracked), not as an advertiser."], "signal_strength": "none"}
+  ],
+  "new_competitors_found": [],
+  "new_competitor_candidates_unverified": [
+    "launched.tools (new: 'the reviewed directory of AI tools', surfaced in general discovery this run — not previously logged, no ads/PPC signal found)",
+    "AIToolsHaven (new: AI tools discovery hub, surfaced in general discovery this run — not previously logged, no ads/PPC signal found)",
+    "AI Parabellum (carried over, again described as a leading 2026 AI tool directory — still no ads/PPC-specific signal)"
+  ],
+  "known_events": [
+    {"event": "G2 acquired Capterra, Software Advice, and GetApp from Gartner (deal closed Feb 5 2026, ~$110M), explicitly marketed as strengthening G2's Ads business and enabling a new pay-per-lead offering.", "known_since": "2026-08-17", "still_relevant": true, "update_this_run": "None — pay-per-lead product still has no public launch signal as of this run."}
+  ],
+  "notion_processed_exclusions_checked": {
+    "database_found": true,
+    "database_url": "https://app.notion.com/p/f7476332f31c4f06bc55f77efde0ca5e?pvs=204",
+    "domains_marked_da_xu_ly_for_rankertoolai": []
+  },
+  "notable_changes_vs_previous": [
+    "No new signals vs the 2026-08-17 through 2026-08-25 snapshots. No domain showed stronger ads/PPC activity, no new competitor carried a genuine ads/PPC signal, and G2's pay-per-lead product remains unlaunched as far as public search results show. Two new directory names surfaced in general discovery (launched.tools, AIToolsHaven) but neither carries any ads/PPC signal."
+  ],
+  "is_first_run": false
+}

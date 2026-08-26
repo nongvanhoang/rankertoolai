@@ -63,13 +63,13 @@
     "vertical_or_category": "AI business-automation infrastructure (API tự động hoá vận hành công ty)",
     "tier": "WATCH",
     "first_reported": "2026-08-22",
-    "last_reported": "2026-08-22"
+    "last_reported": "2026-08-25"
   },
   "River AI": {
     "vertical_or_category": "AI infrastructure / custom model training",
     "tier": "WATCH",
     "first_reported": "2026-08-22",
-    "last_reported": "2026-08-22"
+    "last_reported": "2026-08-25"
   },
   "Smallest.ai": {
     "vertical_or_category": "Voice AI (TTS/STT, voice agents)",
@@ -94,5 +94,11 @@
     "tier": "WATCH",
     "first_reported": "2026-08-24",
     "last_reported": "2026-08-24"
+  },
+  "MeetStream AI": {
+    "vertical_or_category": "AI meeting-agent infrastructure / API",
+    "tier": "WATCH",
+    "first_reported": "2026-08-25",
+    "last_reported": "2026-08-25"
   }
 }
