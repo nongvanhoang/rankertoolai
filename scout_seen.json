@@ -100,5 +100,29 @@
     "tier": "WATCH",
     "first_reported": "2026-08-25",
     "last_reported": "2026-08-25"
+  },
+  "Viktor (AI employee)": {
+    "vertical_or_category": "AI \"nhân viên ảo\" tự động hoá đa bước qua Slack/Teams",
+    "tier": "WATCH",
+    "first_reported": "2026-08-26",
+    "last_reported": "2026-08-26"
+  },
+  "OzBrain": {
+    "vertical_or_category": "Lớp bộ nhớ dùng chung cho AI (Claude + ChatGPT cùng đọc/ghi)",
+    "tier": "WATCH",
+    "first_reported": "2026-08-26",
+    "last_reported": "2026-08-26"
+  },
+  "Command Center (cc.dev)": {
+    "vertical_or_category": "Môi trường lập trình agentic trên desktop, bổ trợ Claude Code/Codex",
+    "tier": "WATCH",
+    "first_reported": "2026-08-26",
+    "last_reported": "2026-08-26"
+  },
+  "Aloud": {
+    "vertical_or_category": "Ghi âm giọng nói + màn hình để tạo prompt cho AI coding agent (macOS)",
+    "tier": "WATCH",
+    "first_reported": "2026-08-26",
+    "last_reported": "2026-08-26"
   }
 }
