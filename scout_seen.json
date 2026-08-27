@@ -69,7 +69,7 @@
     "vertical_or_category": "AI infrastructure / custom model training",
     "tier": "WATCH",
     "first_reported": "2026-08-22",
-    "last_reported": "2026-08-25"
+    "last_reported": "2026-08-28"
   },
   "Smallest.ai": {
     "vertical_or_category": "Voice AI (TTS/STT, voice agents)",
@@ -124,5 +124,11 @@
     "tier": "WATCH",
     "first_reported": "2026-08-26",
     "last_reported": "2026-08-26"
+  },
+  "Halo (Scam.ai)": {
+    "vertical_or_category": "AI bảo mật / phát hiện deepfake trên video call",
+    "tier": "WATCH",
+    "first_reported": "2026-08-28",
+    "last_reported": "2026-08-28"
   }
 }
