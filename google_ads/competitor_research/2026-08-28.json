@@ -1,0 +1,30 @@
+{
+  "date": "2026-08-28",
+  "method": "websearch_only_no_direct_ad_verification",
+  "run_note": "WebSearch-only pass (WebFetch, Google Ads Transparency Center, and ad-intelligence tools like SpyFu/SEMrush/Similarweb are EGRESS_BLOCKED in this environment). Ran 13 WebSearch queries across all 9 tracked domains plus new-competitor discovery. Checked Notion tracking database for RankerToolAI domains marked 'Đã xử lý' before deciding what counts as a fresh highlight — none found this run, all 14 tracked pages still 'Chưa xử lý'. Re-ran the standing check for a G2 pay-per-lead product launch (the stated intent behind the Capterra/GetApp/SoftwareAdvice acquisition) and this time found direct evidence: a live, dedicated 'Qualified Leads Program' product page at g2digitalmarkets.com/qualified-leads-program, plus a companion 'Engaged Buyers Program' page and a 'Marketing Solutions' hub describing combined PPC + lead-gen offerings across G2/Capterra/GetApp/SoftwareAdvice reaching 200M+ annual buyers and 10,000+ vendor customers. Prior snapshots (2026-08-17 through 2026-08-26) explicitly found no such launch evidence, only acquisition-intent messaging — this is the first run to surface the live product page.",
+  "domains": [
+    {"domain": "g2.com", "signals_found": ["NEW: G2 Digital Markets 'Qualified Leads Program' (pay-per-lead) confirmed live via dedicated page www.g2digitalmarkets.com/qualified-leads-program — leads qualified by phone/chat using BANT criteria, targeted by company size/industry/features. Companion 'Engaged Buyers Program' page also found. First direct evidence of the product actually launched, not just announced as acquisition intent."], "signal_strength": "notable"},
+    {"domain": "capterra.com", "signals_found": ["Named explicitly in G2 Digital Markets' combined 'Marketing Solutions' page as one of the brands PPC campaigns drive traffic to, alongside GetApp and Software Advice, as part of the now-confirmed-live combined offering (see g2.com signal). No standalone Capterra-specific new signal beyond this."], "signal_strength": "weak"},
+    {"domain": "getapp.com", "signals_found": ["Same as Capterra — named in the confirmed-live G2 Digital Markets combined PPC/lead-gen 'Marketing Solutions' offering. No standalone new signal."], "signal_strength": "weak"},
+    {"domain": "softwareadvice.com", "signals_found": ["Same as Capterra/GetApp — named in the confirmed-live G2 Digital Markets combined PPC/lead-gen 'Marketing Solutions' offering. No standalone new signal."], "signal_strength": "weak"},
+    {"domain": "toolify.ai", "signals_found": ["No PPC/ads/budget/hiring signal found via WebSearch this run. Traffic context only: ~1.52M visits in July 2026, +11.86% MoM — growth metric, not an ads signal, consistent with prior snapshots."], "signal_strength": "none"},
+    {"domain": "financesonline.com", "signals_found": ["No PPC/hiring/ads-spend signal found this run; confirms existing $300 free ad-credit offer for listed vendors — unchanged from prior context, not new."], "signal_strength": "none"},
+    {"domain": "theresanaiforthat.com", "signals_found": ["No PPC/hiring/funding signal found via WebSearch this run; only generic Trustpilot reviews surfaced."], "signal_strength": "none"},
+    {"domain": "futurepedia.io", "signals_found": ["Still unfunded, ~3-person team per Tracxn (previously reported ~4), revenue via affiliate/sponsorship — no hiring or ad-spend signal found, unchanged from prior snapshots."], "signal_strength": "none"},
+    {"domain": "simplycodes.com", "signals_found": ["No specific ad-spend, PPC hiring, or campaign signal found this run; SimplyCodes itself only surfaced again as a coupon-aggregator listing Google Ads promo codes, not as an advertiser."], "signal_strength": "none"}
+  ],
+  "new_competitors_found": [],
+  "new_competitor_candidates_unverified": [],
+  "known_events": [
+    {"event": "G2 acquired Capterra, Software Advice, and GetApp from Gartner (deal closed Feb 5 2026, ~$110M), explicitly marketed as strengthening G2's Ads business and enabling a new pay-per-lead offering.", "known_since": "2026-08-17", "still_relevant": true, "update_this_run": "NEW DEVELOPMENT: the pay-per-lead product is now confirmed live — 'Qualified Leads Program' has a dedicated page at g2digitalmarkets.com/qualified-leads-program, alongside an 'Engaged Buyers Program' and a combined 'Marketing Solutions' hub spanning G2/Capterra/GetApp/SoftwareAdvice (200M+ annual buyers, 10,000+ vendor customers). This is the first run (2026-08-17 through 2026-08-26 all found nothing) to surface direct launch evidence rather than just acquisition-intent messaging."}
+  ],
+  "notion_processed_exclusions_checked": {
+    "database_found": true,
+    "database_url": "https://app.notion.com/p/f7476332f31c4f06bc55f77efde0ca5e?pvs=204",
+    "domains_marked_da_xu_ly_for_rankertoolai": []
+  },
+  "notable_changes_vs_previous": [
+    "First materially new signal since 2026-08-17: G2's previously-announced-but-unlaunched pay-per-lead product is now confirmed live via a dedicated 'Qualified Leads Program' page, plus a combined PPC + lead-gen 'Marketing Solutions' offering spanning G2/Capterra/GetApp/SoftwareAdvice. Flagged as 'notable' for g2.com and 'weak' (derivative, no standalone action) for capterra.com/getapp.com/softwareadvice.com. All other tracked domains and new-competitor discovery unchanged — no new signal."
+  ],
+  "is_first_run": false
+}
