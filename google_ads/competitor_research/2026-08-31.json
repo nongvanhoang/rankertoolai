@@ -1,0 +1,31 @@
+{
+  "date": "2026-08-31",
+  "method": "websearch_only_no_direct_ad_verification",
+  "run_note": "WebSearch-only pass (WebFetch, Google Ads Transparency Center, and ad-intelligence tools like SpyFu/SEMrush/Similarweb are EGRESS_BLOCKED in this environment). Ran 12 WebSearch queries across all 9 tracked domains plus new-competitor discovery. This is an indirect-signal method only (hiring pages, funding news, press releases) — no direct ad-account or impression verification is possible. Re-checked the G2 Digital Markets 'Qualified Leads Program' / 'Marketing Solutions' pay-per-lead launch first surfaced 2026-08-28 (and confirmed unchanged on 2026-08-30): same live pages found again (g2digitalmarkets.com/qualified-leads-program, Engaged Buyers Program, Marketing Solutions hub), no expansion, no new press release. Also found a June 17, 2026 G2 'go-to-market innovations' press release (MCP integrations, Intent Studio, AI Blueprints, expanded Buyer Intent) and an August 25, 2026 G2 'Fall Reports' release — both are pre-existing/routine G2 product and research-report activity, not new ads/PPC/pay-per-lead developments, and not directly relevant to the 'Top N Tools' ad-lane watch. No evidence found of any tracked domain launching a 'Top N Tools' ad-to-comparison-page format, and no new AI-tool-niche peer showed an ads/PPC signal.",
+  "domains": [
+    {"domain": "g2.com", "signals_found": ["Re-confirms the 'Qualified Leads Program' / 'Engaged Buyers Program' / 'Marketing Solutions' pages at g2digitalmarkets.com are still live (first found 2026-08-28, unchanged on 2026-08-30) — no further development or expansion found since then. Surfaced a separate June 17 2026 G2 press release on MCP integrations/Intent Studio/AI Blueprints and an Aug 25 2026 'Fall Reports' release, both pre-existing routine product/research activity, not a new ads/PPC signal. No new signal this run."], "signal_strength": "weak"},
+    {"domain": "capterra.com", "signals_found": ["Still folded into the combined G2 Digital Markets 'Marketing Solutions' PPC/lead-gen offering named on 2026-08-28. Confirms pre-existing mechanics (Capterra runs pay-per-click, second-price auction, shared backend with GetApp/SoftwareAdvice under one PPC campaign). No standalone new signal."], "signal_strength": "none"},
+    {"domain": "getapp.com", "signals_found": ["Same as Capterra/Software Advice — no standalone new signal beyond the already-known combined offering."], "signal_strength": "none"},
+    {"domain": "softwareadvice.com", "signals_found": ["No SoftwareAdvice-specific ad-spend/budget signal found this run."], "signal_strength": "none"},
+    {"domain": "toolify.ai", "signals_found": ["No PPC/ads/budget/hiring signal found via WebSearch this run; searches returned only generic AI-advertising-tool content, not Toolify-specific."], "signal_strength": "none"},
+    {"domain": "financesonline.com", "signals_found": ["No PPC hiring/ad-spend announcement found this run; searches returned only generic PPC industry content, no financesonline.com-specific results."], "signal_strength": "none"},
+    {"domain": "theresanaiforthat.com", "signals_found": ["Confirms existing monetization via $49/$347 listing packages, newsletter sponsorships (2.5M-2.6M+ subscribers), and BuySellAds-brokered advertising — unchanged from prior context, not a new signal."], "signal_strength": "none"},
+    {"domain": "futurepedia.io", "signals_found": ["Confirms still unfunded (~3-person team per Tracxn), joined HubSpot Media in April 2026 (already-known context, not new this run), monetizes via sponsorships/affiliate partnerships and a YouTube-advertiser intake form — no new hiring or ad-spend signal found."], "signal_strength": "none"},
+    {"domain": "simplycodes.com", "signals_found": ["Confirmed still unfunded per Tracxn/Crunchbase. No ad-spend, PPC hiring, or campaign signal found this run."], "signal_strength": "none"}
+  ],
+  "new_competitors_found": [],
+  "new_competitor_candidates_unverified": [
+    "aitools-directory.com (new: '1,000+ AI Tools Compared & Ranked' free directory — surfaced in general discovery this run, not previously logged, no ads/PPC signal found)",
+    "aiapps.com (new: 'AIapps' directory of 2,199+ AI tools across 16 categories, hand-reviewed, weekly updates — surfaced in general discovery this run, not previously logged, no ads/PPC signal found)",
+    "tooldirectory.ai (carried over from 2026-08-30, still no ads/PPC signal)",
+    "aitrendytools.com (carried over from 2026-08-30, still no ads/PPC signal)"
+  ],
+  "known_events": [
+    {"event": "G2 acquired Capterra, Software Advice, and GetApp from Gartner (deal closed Feb 5 2026, ~$110M), explicitly marketed as strengthening G2's Ads business and enabling a new pay-per-lead offering.", "known_since": "2026-08-17", "still_relevant": true, "update_this_run": "None new — same acquisition context as all prior snapshots."},
+    {"event": "G2 Digital Markets' pay-per-lead product is confirmed live via a dedicated 'Qualified Leads Program' page (plus a companion 'Engaged Buyers Program' and combined 'Marketing Solutions' hub spanning G2/Capterra/GetApp/SoftwareAdvice, 200M+ annual buyers, 10,000+ vendor customers).", "known_since": "2026-08-28", "still_relevant": true, "update_this_run": "No further development found since first confirmed live on 2026-08-28 (also unchanged on 2026-08-30) — same pages, no expansion or new features observed. Adjacent G2 press activity found this run (June 17 MCP/Intent Studio release, Aug 25 Fall Reports) is pre-existing/routine and unrelated to the pay-per-lead product specifically."}
+  ],
+  "notable_changes_vs_previous": [
+    "No new signals vs the 2026-08-30 snapshot. The G2 pay-per-lead launch first confirmed on 2026-08-28 remains live but shows no further expansion. No tracked domain or newly discovered directory shows evidence of adopting the 'Top N Tools' ad-to-comparison-page format. Two new directory names surfaced in general discovery (aitools-directory.com, aiapps.com) alongside the two carried-over candidates (tooldirectory.ai, aitrendytools.com), but none carries any ads/PPC signal."
+  ],
+  "is_first_run": false
+}
