@@ -136,5 +136,17 @@
     "tier": "WATCH",
     "first_reported": "2026-09-01",
     "last_reported": "2026-09-01"
+  },
+  "Instinct": {
+    "vertical_or_category": "AI trợ lý cá nhân tự động hoá qua SMS/gọi điện (invite-only)",
+    "tier": "WATCH",
+    "first_reported": "2026-09-02",
+    "last_reported": "2026-09-02"
+  },
+  "AIR": {
+    "vertical_or_category": "AI bảo mật / kiểm tra quyền hạn agent AI doanh nghiệp",
+    "tier": "WATCH",
+    "first_reported": "2026-09-02",
+    "last_reported": "2026-09-02"
   }
 }
