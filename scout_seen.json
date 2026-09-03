@@ -69,7 +69,7 @@
     "vertical_or_category": "AI infrastructure / custom model training",
     "tier": "WATCH",
     "first_reported": "2026-08-22",
-    "last_reported": "2026-08-28"
+    "last_reported": "2026-09-04"
   },
   "Smallest.ai": {
     "vertical_or_category": "Voice AI (TTS/STT, voice agents)",
@@ -148,5 +148,23 @@
     "tier": "WATCH",
     "first_reported": "2026-09-02",
     "last_reported": "2026-09-02"
+  },
+  "Monid": {
+    "vertical_or_category": "AI agent tool router / thanh toán API cho AI agent",
+    "tier": "WATCH",
+    "first_reported": "2026-09-04",
+    "last_reported": "2026-09-04"
+  },
+  "Pangram": {
+    "vertical_or_category": "AI phát hiện nội dung do AI tạo",
+    "tier": "WATCH",
+    "first_reported": "2026-09-04",
+    "last_reported": "2026-09-04"
+  },
+  "Musyx AI": {
+    "vertical_or_category": "AI tạo nhạc/bài hát",
+    "tier": "WATCH",
+    "first_reported": "2026-09-04",
+    "last_reported": "2026-09-04"
   }
 }
