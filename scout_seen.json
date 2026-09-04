@@ -166,5 +166,11 @@
     "tier": "WATCH",
     "first_reported": "2026-09-04",
     "last_reported": "2026-09-04"
+  },
+  "Clipto (Clipto.AI)": {
+    "vertical_or_category": "AI tìm kiếm media cục bộ / AI agent tìm clip (video, audio, ảnh)",
+    "tier": "HOT",
+    "first_reported": "2026-09-05",
+    "last_reported": "2026-09-05"
   }
 }
