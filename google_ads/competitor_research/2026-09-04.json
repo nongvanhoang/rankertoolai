@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-04",
+  "method": "websearch_only_no_direct_ad_verification",
+  "run_note": "WebSearch-only pass (WebFetch, Google Ads Transparency Center, and ad-intelligence tools like SpyFu/SEMrush/Similarweb are EGRESS_BLOCKED in this environment). Ran 11 WebSearch queries across all 9 tracked domains plus new-competitor discovery, including a direct probe on 'G2 Clicks' (a PPC/pay-per-click product name that surfaced under g2.com/products/g2-clicks and sell.g2.com case studies). Confirmed G2 Clicks is an existing, subscription-free pay-per-click offering (referral links + sponsored listings across G2, cancel-anytime, used alongside 'Paid Promotions' under the broader G2 Ads umbrella) -- routine, pre-existing product terminology, not a new launch, and distinct from the already-tracked 'Qualified Leads Program' pay-per-lead product (known_since 2026-08-28). Re-checked both existing known_events: no expansion found on either. No evidence found of any tracked domain launching a 'Top N Tools' ad-to-comparison-page format, and no new AI-tool-niche peer showed an ads/PPC signal.",
+  "domains": [
+    {"domain": "g2.com", "signals_found": ["Surfaced 'G2 Clicks' (g2.com/products/g2-clicks/reviews, documentation.g2.com/docs/g2-clicks) -- a subscription-free pay-per-click ad product (referral links + sponsored listings, cancel-anytime), used by case-study customers (AiSDR, Product Fruits) alongside 'Paid Promotions' under the G2 Ads umbrella. Confirmed as existing/routine G2 ad-platform terminology, not a new launch this run, and separate from the pay-per-lead 'Qualified Leads Program' (known_since 2026-08-28). Re-confirms the pay-per-lead offering itself is still live and unchanged. No new signal."], "signal_strength": "weak"},
+    {"domain": "capterra.com", "signals_found": ["Re-confirms standard, already-known PPC mechanics (2,000+ advertisers, second-price auction across 300+ categories, $2 minimum bid, $500/month budget floor, $2-$10 typical CPC). No new development."], "signal_strength": "none"},
+    {"domain": "getapp.com", "signals_found": ["Confirms GetApp's existing sponsored-profile model (vendor pay-per-click and pay-per-lead advertising, link-out sponsored profiles) -- already-known context folded into the combined G2 Digital Markets offering, no standalone new signal."], "signal_strength": "none"},
+    {"domain": "softwareadvice.com", "signals_found": ["No standalone new signal beyond the already-known combined G2 Digital Markets offering."], "signal_strength": "none"},
+    {"domain": "toolify.ai", "signals_found": ["No PPC/ads/budget/hiring signal found via WebSearch this run; searches returned only generic industry-wide 2026 ad-spend trend content (e.g. AI-powered ad spend projections), not Toolify-specific."], "signal_strength": "none"},
+    {"domain": "financesonline.com", "signals_found": ["No PPC hiring/ad-spend announcement found this run; searches returned only generic PPC-manager job-market content, no financesonline.com-specific results."], "signal_strength": "none"},
+    {"domain": "theresanaiforthat.com", "signals_found": ["No funding/hiring/ad-spend signal found this run; searches returned no domain-specific results beyond already-known monetization context."], "signal_strength": "none"},
+    {"domain": "futurepedia.io", "signals_found": ["No new ad-spend/hiring signal found this run; a targeted 'Top N ad campaign' search returned only competitor-comparison/SimilarWeb pages, not evidence of futurepedia.io itself adopting a Top N Tools ad-to-comparison-page format. Confirmed still unfunded per Tracxn."], "signal_strength": "none"},
+    {"domain": "simplycodes.com", "signals_found": ["No ad-spend, PPC hiring, or campaign signal found this run."], "signal_strength": "none"}
+  ],
+  "new_competitors_found": [],
+  "new_competitor_candidates_unverified": [
+    "AIxploria (AI tools directory, UAE-based, 11-50 employees, ranked via RankMyAI aggregator -- surfaced in general discovery this run, not previously logged by this name, no ads/PPC signal found)",
+    "RankMyAI (AI-tools ranking/tracking aggregator site, 62,967+ tools tracked -- surfaced in general discovery this run, not previously logged, no ads/PPC signal found)"
+  ],
+  "known_events": [
+    {"event": "G2 acquired Capterra, Software Advice, and GetApp from Gartner (deal announced Jan 29 2026, closed Feb 5 2026, ~$110M), explicitly marketed as strengthening G2's Ads business and enabling a new pay-per-lead offering.", "known_since": "2026-08-17", "still_relevant": true, "update_this_run": "None new -- same acquisition context as all prior snapshots."},
+    {"event": "G2 Digital Markets' pay-per-lead product is confirmed live via a dedicated 'Qualified Leads Program' page (plus a companion 'Engaged Buyers Program' and combined 'Marketing Solutions' hub spanning G2/Capterra/GetApp/SoftwareAdvice, 200M+ annual buyers, 10,000+ vendor customers).", "known_since": "2026-08-28", "still_relevant": true, "update_this_run": "No further development -- same pages, no expansion. This run additionally clarified that 'G2 Clicks' is a separate, pre-existing pay-per-click (not pay-per-lead) product under the G2 Ads umbrella; it is routine/existing terminology, not a new launch, and does not change the pay-per-lead product's status."}
+  ],
+  "notable_changes_vs_previous": [
+    "No new signals vs the 2026-09-03 snapshot. Both known events (G2 acquisition, G2 pay-per-lead launch) remain unchanged with no further development. Clarified 'G2 Clicks' is an existing PPC product name, not a new launch. No tracked domain shows evidence of adopting the 'Top N Tools' ad-to-comparison-page format. Two new directory names surfaced in general discovery (AIxploria, RankMyAI), neither carrying any ads/PPC signal."
+  ],
+  "is_first_run": false
+}
