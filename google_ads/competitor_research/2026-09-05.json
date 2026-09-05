@@ -1,0 +1,33 @@
+{
+  "date": "2026-09-05",
+  "method": "websearch_only_no_direct_ad_verification",
+  "run_note": "WebSearch-only pass (WebFetch, Google Ads Transparency Center, and ad-intelligence tools like SpyFu/SEMrush/Similarweb are EGRESS_BLOCKED in this environment). Ran 11 WebSearch queries across all 9 tracked domains plus new-competitor discovery. Checked the Notion tracking database first: all 25 RankerToolAI-tagged domains are still 'Chưa xử lý' (none marked as processed), so no highlight exclusions applied this run. Re-checked both known_events (G2 acquisition, G2 Digital Markets pay-per-lead launch): both still live and unchanged. One incidental data point surfaced (a blastra.io pricing-comparison blog mentioning G2 unified 'Buyer Intent' across G2/Capterra/Software Advice/GetApp into a single profile view in June 2026, described as 'the first real merge of the two backends') -- this predates our 2026-08-17 tracking start and is a technical integration detail of the already-known G2 acquisition, not a new standalone development; folded into the existing known_event, not treated as a new highlight. No tracked domain showed a stronger ads/PPC signal than previous snapshots, and no evidence of any tracked domain adopting a 'Top N Tools' ad-to-comparison-page format.",
+  "domains": [
+    {"domain": "g2.com", "signals_found": ["Re-confirms the 'Qualified Leads Program' / 'Marketing Solutions' pay-per-lead offering (known_since 2026-08-28) and 'G2 Clicks' PPC product (known_since 2026-08-17 acquisition umbrella) are still live, unchanged. New incidental detail: a third-party blog (blastra.io) notes G2 unified 'Buyer Intent' data across G2/Capterra/Software Advice/GetApp into a single profile view as of June 2026, calling it the first real backend merge post-acquisition -- this is older context (predates this tracking's 2026-08-17 start) surfacing for the first time in our searches, not a new event; folded into the existing acquisition known_event."], "signal_strength": "weak"},
+    {"domain": "capterra.com", "signals_found": ["Re-confirms standard, already-known PPC mechanics (second-price auction, $2 minimum bid, $500/month budget floor, $2-$10 typical CPC) and the same G2 backend-integration context as g2.com. No new standalone development."], "signal_strength": "none"},
+    {"domain": "getapp.com", "signals_found": ["Re-confirms existing vendor pay-per-click/pay-per-lead sponsored-profile model, already-known context under G2 ownership. No new signal."], "signal_strength": "none"},
+    {"domain": "softwareadvice.com", "signals_found": ["No domain-specific PPC/ad-spend/hiring signal found this run; searches returned only generic industry ad-spend benchmark content."], "signal_strength": "none"},
+    {"domain": "toolify.ai", "signals_found": ["No PPC/ads/budget/hiring signal found via WebSearch this run; results were generic 'AI tools for Google Ads' listicles, not Toolify-specific."], "signal_strength": "none"},
+    {"domain": "financesonline.com", "signals_found": ["No domain-specific hiring/ad-spend signal found this run; searches returned only generic 2026 digital-ad-spend and marketing-hiring trend content."], "signal_strength": "none"},
+    {"domain": "theresanaiforthat.com", "signals_found": ["No funding/hiring/ad-spend signal found this run; searches returned only generic Similarweb traffic-analytics and unrelated marketing-startup funding lists."], "signal_strength": "none"},
+    {"domain": "futurepedia.io", "signals_found": ["Re-confirms already-known monetization mix (newsletter sponsorships to 50k+ subscribers, on-site ad placements, $497 verified-listing fee, affiliate partnerships). No new ad-spend/PPC signal."], "signal_strength": "none"},
+    {"domain": "simplycodes.com", "signals_found": ["No ad-spend, PPC hiring, or campaign signal found this run; only found that simplycodes.com itself tracks (unrelated) Google Ads promo codes as a coupon site."], "signal_strength": "none"}
+  ],
+  "new_competitors_found": [],
+  "new_competitor_candidates_unverified": [
+    "foxaitools.com (AI tools directory blog/site, surfaced via a 'best AI tools directory 2026' discovery search, not previously logged, no ads/PPC signal found)"
+  ],
+  "known_events": [
+    {"event": "G2 acquired Capterra, Software Advice, and GetApp from Gartner (deal announced Jan 29 2026, closed Feb 5 2026, ~$110M), explicitly marketed as strengthening G2's Ads business and enabling a new pay-per-lead offering.", "known_since": "2026-08-17", "still_relevant": true, "update_this_run": "No new press coverage. Additional (older, pre-dates our tracking) technical detail surfaced: G2 unified 'Buyer Intent' data across G2/Capterra/Software Advice/GetApp into one profile view as of June 2026 -- the first real backend merge of the acquired platforms. Context only, not a new development."},
+    {"event": "G2 Digital Markets' pay-per-lead product is confirmed live via a dedicated 'Qualified Leads Program' page (plus a companion 'Engaged Buyers Program' and combined 'Marketing Solutions' hub spanning G2/Capterra/GetApp/SoftwareAdvice, 200M+ annual buyers, 10,000+ vendor customers).", "known_since": "2026-08-28", "still_relevant": true, "update_this_run": "No further development -- same pages, no expansion."}
+  ],
+  "notion_processed_exclusions_checked": {
+    "database_found": true,
+    "database_url": "https://app.notion.com/p/f7476332f31c4f06bc55f77efde0ca5e?pvs=204",
+    "domains_marked_da_xu_ly_for_rankertoolai": []
+  },
+  "notable_changes_vs_previous": [
+    "No new signals vs the 2026-09-04 snapshot. Both known events (G2 acquisition, G2 pay-per-lead launch) remain unchanged with no further development beyond an incidental, dated (June 2026) backend-integration detail. No tracked domain shows evidence of adopting the 'Top N Tools' ad-to-comparison-page format. One new directory name surfaced in general discovery (foxaitools.com), carrying no ads/PPC signal."
+  ],
+  "is_first_run": false
+}
