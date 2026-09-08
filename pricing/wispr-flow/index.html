@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5Z86G265');</script>
+<!-- End Google Tag Manager -->
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow">
@@ -82,13 +90,7 @@
   
   <!-- ═══ ANALYTICS & ADS TRACKING ═══ -->
   <!-- Google tag (gtag.js) — GA4 + Google Ads -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-81KB8ECCVF"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-81KB8ECCVF');
-    gtag('config', 'AW-18300667802');
 
     // Conversion: affiliate click (fires when user clicks /go/ link)
     document.addEventListener('DOMContentLoaded', function() {
@@ -108,21 +110,19 @@
             el.href = dest.toString();
           } catch (e) {}
 
-          gtag('event', 'conversion', {
-            'send_to': 'AW-18300667802/J1N7CJ_73M4cEJqPuJZE',
-            'value': 1.0,
-            'currency': 'USD'
-          });
-          gtag('event', 'affiliate_click', {
-            'tool': el.href.split('/go/')[1]?.replace(/\//g,'') || 'unknown',
-            'page': window.location.pathname
+          dataLayer.push({
+            event: 'affiliate_click',
+            tool: el.href.split('/go/')[1]?.replace(/\//g,'') || 'unknown',
+            page: window.location.pathname,
+            value: 1.0,
+            currency: 'USD'
           });
         });
       });
 
       // Conversion: 60-second engaged page view
       setTimeout(function() {
-        gtag('event', 'conversion', {'send_to': 'AW-18300667802/wIkFCNeXrtMcEJqPuJZE'});
+        dataLayer.push({event: 'engaged_60s'});
       }, 60000);
     });
   </script>
@@ -138,6 +138,11 @@
   <!-- ══════════════════════════════════ -->
   </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Z86G265"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <button id="back-to-top" aria-label="Back to top">↑</button>
 <div class="sticky-cta" id="sticky-cta">
   <div class="sticky-cta-left"><strong>Wispr Flow</strong> — Free plan · 14-day Pro trial</div>
