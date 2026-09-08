@@ -178,5 +178,11 @@
     "tier": "WATCH",
     "first_reported": "2026-09-07",
     "last_reported": "2026-09-07"
+  },
+  "TrustedRouter": {
+    "vertical_or_category": "AI model router / dev infra API",
+    "tier": "WATCH",
+    "first_reported": "2026-09-08",
+    "last_reported": "2026-09-08"
   }
 }
