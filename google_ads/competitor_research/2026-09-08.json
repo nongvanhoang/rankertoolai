@@ -1,0 +1,39 @@
+{
+  "date": "2026-09-08",
+  "method": "websearch_only_no_direct_ad_verification",
+  "run_note": "WebSearch-only pass (WebFetch, Google Ads Transparency Center, and ad-intelligence tools like SpyFu/SEMrush/Similarweb are EGRESS_BLOCKED in this environment). Checked Notion tracking database first via SQL query: zero RankerToolAI-tagged domains are marked 'Đã xử lý', so no highlight exclusions applied this run. Ran WebSearch queries across all 9 tracked domains plus new-competitor discovery, plus 5 new queries estimating market-wide AI-tools-review PPC competition (new field this run). Re-checked both known_events (G2 acquisition, G2 Digital Markets pay-per-lead launch): both still live and unchanged, no new press coverage found. No tracked domain showed a stronger ads/PPC signal than previous snapshots. No genuinely new competitor candidates surfaced (AI Parabellum, Fox AI Tools, TheAIVex, aitoolboard.com, aitoolsdirectory.net were all already logged in prior snapshots/Notion).",
+  "domains": [
+    {"domain": "g2.com", "signals_found": ["Re-confirms known_event 1 (G2 acquisition of Capterra/GetApp/SoftwareAdvice) and known_event 2 (Qualified Leads Program / Marketing Solutions hub) still live, unchanged. 'G2 Clicks' PPC product and G2/Capterra ads playbook content reconfirmed via generic marketing-agency blogs, no new campaign or product-launch signal."], "signal_strength": "weak"},
+    {"domain": "capterra.com", "signals_found": ["No new standalone development. Re-confirms existing PPC/pay-per-lead mechanics ($2-15 typical CPC, competitive categories crossing $20, $500/month budget floor, $30-100+ per qualified lead) and shared backend across Capterra/GetApp/SoftwareAdvice under G2 Digital Markets ownership."], "signal_strength": "none"},
+    {"domain": "getapp.com", "signals_found": ["No domain-specific ad-spend/hiring/campaign signal found this run; searches returned only generic GetApp marketing-software category pages, not about GetApp's own marketing activity."], "signal_strength": "none"},
+    {"domain": "softwareadvice.com", "signals_found": ["No domain-specific PPC/ad-spend/hiring signal found this run; searches returned only generic product listing pages, not softwareadvice.com-specific."], "signal_strength": "none"},
+    {"domain": "toolify.ai", "signals_found": ["Re-confirms existing sponsored-listing/Sponsor-Featured ad-slot model (monthly fee, homepage placement, newsletter mention). No new PPC/hiring/Google-Ads-specific signal found."], "signal_strength": "none"},
+    {"domain": "financesonline.com", "signals_found": ["Re-confirms unfunded, ~26-employee team size (Tracxn, as of June 2026). No domain-specific PPC/ad-spend/hiring signal found this run."], "signal_strength": "none"},
+    {"domain": "theresanaiforthat.com", "signals_found": ["No funding/hiring/ad-spend signal found this run; only generic competitor-similarity content noting it is Futurepedia's second-most-similar site."], "signal_strength": "none"},
+    {"domain": "futurepedia.io", "signals_found": ["Re-confirms already-known sponsorship model (50k+ newsletter subscribers, premium sponsorship rates, 5,000+ tools listed, ~500K monthly visitors). No new PPC/Google-Ads campaign evidence."], "signal_strength": "none"},
+    {"domain": "simplycodes.com", "signals_found": ["Re-confirms unfunded/bootstrapped status (Tracxn, founded 2014). No PPC campaign or growth-hiring signal found this run."], "signal_strength": "none"}
+  ],
+  "new_competitors_found": [],
+  "new_competitor_candidates_unverified": [],
+  "known_events": [
+    {"event": "G2 acquired Capterra, Software Advice, and GetApp from Gartner (deal announced Jan 29 2026, closed Feb 5 2026, ~$110M), explicitly marketed as strengthening G2's Ads business and enabling a new pay-per-lead offering.", "known_since": "2026-08-17", "still_relevant": true, "update_this_run": "No new press coverage or development."},
+    {"event": "G2 Digital Markets' pay-per-lead product is confirmed live via a dedicated 'Qualified Leads Program' page (plus a companion 'Engaged Buyers Program' and combined 'Marketing Solutions' hub spanning G2/Capterra/GetApp/SoftwareAdvice, 200M+ annual buyers, 10,000+ vendor customers).", "known_since": "2026-08-28", "still_relevant": true, "update_this_run": "No further development -- same pages, no expansion."}
+  ],
+  "notion_processed_exclusions_checked": {
+    "database_found": true,
+    "database_url": "https://app.notion.com/p/f7476332f31c4f06bc55f77efde0ca5e?pvs=204",
+    "domains_marked_da_xu_ly_for_rankertoolai": []
+  },
+  "notable_changes_vs_previous": [
+    "No new signals vs the 2026-09-07 snapshot. Both known events (G2 acquisition, G2 pay-per-lead launch) remain unchanged with no further development. No tracked domain shows evidence of adopting a stronger ads/PPC posture. No new competitor names surfaced beyond those already logged in prior snapshots/Notion."
+  ],
+  "market_competition": {
+    "niche": "AI tools review/comparison",
+    "competition_level": "Cao",
+    "estimated_advertiser_count_range": "~15-30+ (ước lượng gián tiếp qua WebSearch, không chính xác)",
+    "basis": "G2/Capterra CPC trong ngành review phần mềm đã ở mức $2-15, vượt $20 ở các category đông đúc; liên tục xuất hiện directory AI tools mới (7-8 cái phát hiện qua các đợt scan gần đây: AI Parabellum, Fox AI Tools, TheAIVex, AIToolboard, AIToolsDirectory.net...) cho thấy ngách đang thu hút nhiều người chơi. Không có bằng chứng trực tiếp CPC riêng cho từ khóa 'ai tools' qua Keyword Planner/Ads Transparency Center thật.",
+    "changed_vs_previous": false,
+    "as_of": "2026-09-08"
+  },
+  "is_first_run": false
+}
