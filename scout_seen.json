@@ -184,5 +184,17 @@
     "tier": "WATCH",
     "first_reported": "2026-09-08",
     "last_reported": "2026-09-08"
+  },
+  "Keiki": {
+    "vertical_or_category": "AI agent tự động hoá đa kênh (customer-facing)",
+    "tier": "WATCH",
+    "first_reported": "2026-09-09",
+    "last_reported": "2026-09-09"
+  },
+  "Sider Code": {
+    "vertical_or_category": "Tiện ích Chrome dùng AI để tuỳ biến website",
+    "tier": "WATCH",
+    "first_reported": "2026-09-09",
+    "last_reported": "2026-09-09"
   }
 }
