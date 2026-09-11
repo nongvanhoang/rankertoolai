@@ -1,0 +1,147 @@
+{
+  "date": "2026-09-09",
+  "site": "https://rankertoolai.com",
+  "period_days": 7,
+  "date_range": {
+    "start": "2026-09-03",
+    "end": "2026-09-09"
+  },
+  "summary": {
+    "total_clicks": 0,
+    "total_impressions": 29,
+    "avg_ctr_pct": 0.0,
+    "avg_position": 14.2,
+    "indexed_pages_with_traffic": 18
+  },
+  "top_pages": [
+    {
+      "url": "/",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr_pct": 0,
+      "position": 48
+    },
+    {
+      "url": "/about/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 3
+    },
+    {
+      "url": "/alternatives/iubenda/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 28
+    },
+    {
+      "url": "/alternatives/se-ranking/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 38
+    },
+    {
+      "url": "/alternatives/semrush/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 32
+    },
+    {
+      "url": "/author/sara-lin/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 4
+    },
+    {
+      "url": "/best/ai-productivity-tools/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 5
+    },
+    {
+      "url": "/best/ai-writing-tools/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 6
+    },
+    {
+      "url": "/blog/free-semrush-alternative-small-blogs/",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr_pct": 0,
+      "position": 35.7
+    },
+    {
+      "url": "/blog/is-gearup-booster-worth-it/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr_pct": 0,
+      "position": 1.5
+    },
+    {
+      "url": "/category/ai-coding/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 10
+    },
+    {
+      "url": "/compare/codeium-vs-github-copilot/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 2
+    },
+    {
+      "url": "/coupons/grammarly/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 8
+    },
+    {
+      "url": "/methodology/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 7
+    },
+    {
+      "url": "/review/gearup-booster/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 11
+    },
+    {
+      "url": "/review/heygen/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr_pct": 0,
+      "position": 4
+    },
+    {
+      "url": "/review/otter-ai/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 10
+    },
+    {
+      "url": "/tools/seo-tool-selector/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 3
+    }
+  ],
+  "near_miss_pages": [],
+  "generated_at": "2026-09-11T23:00:23.385506+00:00",
+  "note": "No credentials in this file — safe to commit. Generated locally where the real GSC OAuth token lives; the cloud ads-signal routine reads only this JSON."
+}
