@@ -196,5 +196,11 @@
     "tier": "WATCH",
     "first_reported": "2026-09-09",
     "last_reported": "2026-09-09"
+  },
+  "Tovel AI": {
+    "vertical_or_category": "AI recorder cho cuộc gọi/họp, tự động soạn email follow-up",
+    "tier": "WATCH",
+    "first_reported": "2026-09-11",
+    "last_reported": "2026-09-11"
   }
 }
