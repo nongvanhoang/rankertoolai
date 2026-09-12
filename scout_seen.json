@@ -202,5 +202,11 @@
     "tier": "WATCH",
     "first_reported": "2026-09-11",
     "last_reported": "2026-09-11"
+  },
+  "Notchling": {
+    "vertical_or_category": "AI/novelty app cho macOS (đồng hành hoạt hình trong notch MacBook)",
+    "tier": "WATCH",
+    "first_reported": "2026-09-12",
+    "last_reported": "2026-09-12"
   }
 }
