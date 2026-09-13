@@ -159,7 +159,7 @@
     "vertical_or_category": "AI phát hiện nội dung do AI tạo",
     "tier": "WATCH",
     "first_reported": "2026-09-04",
-    "last_reported": "2026-09-04"
+    "last_reported": "2026-09-13"
   },
   "Musyx AI": {
     "vertical_or_category": "AI tạo nhạc/bài hát",
@@ -171,7 +171,7 @@
     "vertical_or_category": "AI tìm kiếm media cục bộ / AI agent tìm clip (video, audio, ảnh)",
     "tier": "HOT",
     "first_reported": "2026-09-05",
-    "last_reported": "2026-09-05"
+    "last_reported": "2026-09-13"
   },
   "ThunderPhone": {
     "vertical_or_category": "AI phone/voice agent platform (API cho developer)",
@@ -208,5 +208,11 @@
     "tier": "WATCH",
     "first_reported": "2026-09-12",
     "last_reported": "2026-09-12"
+  },
+  "Hermes Agent (Nous Research)": {
+    "vertical_or_category": "AI agent tự cải thiện, mã nguồn mở (self-improving open-source agent)",
+    "tier": "WATCH",
+    "first_reported": "2026-09-13",
+    "last_reported": "2026-09-13"
   }
 }
