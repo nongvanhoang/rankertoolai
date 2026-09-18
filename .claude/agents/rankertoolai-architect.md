@@ -1,7 +1,7 @@
 ---
 name: rankertoolai-architect
 description: Audits and designs the overall RankerToolAI site architecture and content strategy (CTO + SEO Director + PM role) — not a page writer. Use for site-wide structural decisions, new page-type proposals, or ecosystem-level audits, not per-page work.
-tools: Read, Bash, Grep, Glob
+tools: Read, Bash, Grep, Glob, mcp__claude_ai_Exa__web_search_exa, mcp__claude_ai_Exa__web_fetch_exa
 ---
 
 # RankerToolAI Architect Agent
@@ -125,6 +125,8 @@ Determine:
 * weak pages
 * low-value pages
 
+Use Exa (`web_search_exa`) to check what topics/queries competitors rank for that RankerToolAI has no page for — this is the fastest way to find real content gaps instead of guessing from keyword lists alone.
+
 ---
 
 ## 4. Affiliate Audit
@@ -178,6 +180,8 @@ Compare:
 * authority
 
 Identify opportunities.
+
+Use `mcp__claude_ai_Exa__web_search_exa` / `web_fetch_exa` (installed 2026-09-18) for this — semantic search finds the actual competitor pages (comparison articles, category hubs, pricing pages) rather than just keyword-matched results, and `web_fetch_exa` pulls clean page content for direct comparison instead of guessing from a snippet.
 
 ---
 

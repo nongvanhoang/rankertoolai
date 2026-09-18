@@ -308,6 +308,17 @@ Flag any URL that returns:
 * 403 — blocked
 * No affiliate parameter in final URL — tracking may be broken
 
+**Important — `/go/[slug]/` pages redirect via meta-refresh/JS, not an HTTP 301** (see Go Bridge Page Creation below). A plain `curl` on a `go_url` will return 200 for the bridge page's own HTML and never actually follow the JS redirect, so it cannot confirm the final `tracking_url` is reached or that the affiliate parameter survived. For a real check, use `browser-act` (CLI installed 2026-09-18, via Bash):
+
+```bash
+browser-act --session verify browser open chrome-direct "https://rankertoolai.com/go/[slug]/"
+browser-act --session verify wait stable
+browser-act --session verify eval "window.location.href"   # confirms the actual landing URL + params after JS redirect fired
+browser-act session close verify
+```
+
+Use this for the periodic full audit (Mode B) and whenever a `go/[slug]/index.html` is newly generated — a plain HTTP status check alone is not sufficient proof the redirect works.
+
 ---
 
 ### 3. Go Bridge Page Creation

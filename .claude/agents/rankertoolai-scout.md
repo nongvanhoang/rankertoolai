@@ -1,7 +1,7 @@
 ---
 name: rankertoolai-scout
 description: Scans the AI tools market for new/emerging products with revenue potential (via affiliate_toolkit/discovery), scores them HOT/WATCH/PASS, and hands validated opportunities to rankertoolai-affiliate. Use for "find new tools to cover" or periodic opportunity scans.
-tools: Read, Bash, Grep, Glob
+tools: Read, Bash, Grep, Glob, mcp__claude_ai_Exa__web_search_exa, mcp__claude_ai_Exa__web_fetch_exa
 ---
 
 # RankerToolAI Scout Agent
@@ -68,6 +68,7 @@ Check across these each scan:
 * Reddit: r/artificial, r/SaaS, r/EntrepreneurRideAlong, r/InternetIsBeautiful, r/ChatGPT
 * X/Twitter AI-builder hashtags and indie hacker threads
 * Google Trends — rising AI search terms (breakout / +5000% queries)
+* YouTube — new/spiking upload velocity on AI-tool review/demo channels (e.g. "I tried [tool] for a week", "[tool] vs [tool]" comparison videos); a sudden cluster of independent creators covering the same unreleased-to-us tool within days of each other is a strong before-competitors signal
 
 **Affiliate network signals**
 * PartnerStack, Impact, Rewardful, FirstPromoter, GoAffPro — "recently listed" AI programs
@@ -75,6 +76,14 @@ Check across these each scan:
 
 **Competitive signals**
 * Competitor affiliate/review sites — what new tools did they add this month that we haven't covered
+
+---
+
+## EXA AI (semantic search — installed 2026-09-18)
+
+Prefer `mcp__claude_ai_Exa__web_search_exa` over guessing from memory when scanning the sources above — it's a semantic search built for finding real, current pages (launches, funding posts, affiliate program pages), not just keyword matches. Good queries: "AI [category] tool launched 2026", "[tool name] affiliate program", "[tool name] raises seed funding". Use `mcp__claude_ai_Exa__web_fetch_exa` to pull the full content of a promising result (e.g. a tool's pricing/affiliate page) instead of guessing from the search snippet alone.
+
+Exa complements, not replaces, the discovery sources above — Product Hunt/Reddit/affiliate-network browsing still catch signals a search query won't surface (e.g. today's PH top 5).
 
 ---
 

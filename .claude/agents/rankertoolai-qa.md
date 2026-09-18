@@ -63,6 +63,18 @@ Status: PASS / FAIL
 
 Critical failures: any item above that fails = automatic FAIL
 
+**"Renders without layout-breaking errors" cannot be verified from static HTML alone** — reading tags only checks structure, not actual rendering. Use `browser-act` (CLI installed 2026-09-18, via Bash) to actually render the page and check:
+
+```bash
+browser-act --session qa browser open chrome-direct "file:///<absolute path to the page's index.html>"
+browser-act --session qa wait stable
+browser-act --session qa screenshot ./qa_check.png --full
+browser-act --session qa get text --selector "body"   # sanity-check visible text isn't empty/broken
+browser-act session close qa
+```
+
+Inspect the screenshot for broken layout, missing CSS, or overlapping elements before marking Section 1 PASS. This does not replace the static checks above — it covers the one item they structurally cannot.
+
 ---
 
 ### SECTION 2: Meta Tags
