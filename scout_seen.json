@@ -153,7 +153,7 @@
     "vertical_or_category": "AI agent tool router / thanh toán API cho AI agent",
     "tier": "WATCH",
     "first_reported": "2026-09-04",
-    "last_reported": "2026-09-04"
+    "last_reported": "2026-09-20"
   },
   "Pangram": {
     "vertical_or_category": "AI phát hiện nội dung do AI tạo",
@@ -177,13 +177,13 @@
     "vertical_or_category": "AI phone/voice agent platform (API cho developer)",
     "tier": "WATCH",
     "first_reported": "2026-09-07",
-    "last_reported": "2026-09-07"
+    "last_reported": "2026-09-20"
   },
   "TrustedRouter": {
-    "vertical_or_category": "AI model router / dev infra API",
+    "vertical_or_category": "AI model router / dev infra API (privacy-first, gọi vốn hạt giống $1.25M)",
     "tier": "WATCH",
     "first_reported": "2026-09-08",
-    "last_reported": "2026-09-08"
+    "last_reported": "2026-09-20"
   },
   "Keiki": {
     "vertical_or_category": "AI agent tự động hoá đa kênh (customer-facing)",
@@ -195,7 +195,7 @@
     "vertical_or_category": "Tiện ích Chrome dùng AI để tuỳ biến website",
     "tier": "WATCH",
     "first_reported": "2026-09-09",
-    "last_reported": "2026-09-09"
+    "last_reported": "2026-09-20"
   },
   "Tovel AI": {
     "vertical_or_category": "AI recorder cho cuộc gọi/họp, tự động soạn email follow-up",
@@ -225,7 +225,7 @@
     "vertical_or_category": "AI research/productivity tool (Chrome extension cho Gemini Notebook/NotebookLM)",
     "tier": "HOT",
     "first_reported": "2026-09-16",
-    "last_reported": "2026-09-19"
+    "last_reported": "2026-09-20"
   },
   "SkySnail": {
     "vertical_or_category": "AI tạo thumbnail YouTube/social",
@@ -250,5 +250,11 @@
     "tier": "WATCH",
     "first_reported": "2026-09-19",
     "last_reported": "2026-09-19"
+  },
+  "Loqua": {
+    "vertical_or_category": "AI gõ chữ bằng giọng nói (voice dictation, Mac/Windows)",
+    "tier": "WATCH",
+    "first_reported": "2026-09-20",
+    "last_reported": "2026-09-20"
   }
 }
