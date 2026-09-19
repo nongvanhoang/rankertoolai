@@ -774,7 +774,7 @@
     "airtop": {
       "name": "Airtop",
       "first_seen": "2026-08-06",
-      "last_seen": "2026-08-09",
+      "last_seen": "2026-09-19",
       "tier_history": [
         {
           "date": "2026-08-06",
@@ -788,6 +788,11 @@
         },
         {
           "date": "2026-08-09",
+          "tier": "WATCH",
+          "composite": 7.25
+        },
+        {
+          "date": "2026-09-19",
           "tier": "WATCH",
           "composite": 7.25
         }
