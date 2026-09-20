@@ -167,24 +167,17 @@
     "first_reported": "2026-09-04",
     "last_reported": "2026-09-04"
   },
-  "Clipto (Clipto.AI)": {
-    "vertical_or_category": "AI local media search / AI agent that finds clips (video, audio, image)",
-    "tier": "HOT",
-    "first_reported": "2026-09-05",
-    "last_reported": "2026-09-18",
-    "note": "Now live in RankerToolAI content (review/clipto, build_dashboard.py AFFILIATE_DB) - pipeline confirmed working end-to-end as of this scan"
-  },
   "ThunderPhone": {
     "vertical_or_category": "AI phone/voice agent platform (developer API)",
     "tier": "WATCH",
     "first_reported": "2026-09-07",
-    "last_reported": "2026-09-07"
+    "last_reported": "2026-09-20"
   },
   "TrustedRouter": {
-    "vertical_or_category": "AI model router / dev infra API",
+    "vertical_or_category": "AI model router / dev infra API (privacy-first, gọi vốn hạt giống $1.25M)",
     "tier": "WATCH",
     "first_reported": "2026-09-08",
-    "last_reported": "2026-09-08"
+    "last_reported": "2026-09-20"
   },
   "Keiki": {
     "vertical_or_category": "AI agent for multi-channel customer-facing automation",
@@ -227,7 +220,7 @@
     "vertical_or_category": "AI research/productivity Chrome extension for Gemini Notebook/NotebookLM",
     "tier": "HOT",
     "first_reported": "2026-09-16",
-    "last_reported": "2026-09-18"
+    "last_reported": "2026-09-20"
   },
   "SkySnail": {
     "vertical_or_category": "AI YouTube/social thumbnail generation",
@@ -271,5 +264,23 @@
     "first_reported": "2026-09-20",
     "last_reported": "2026-09-20",
     "note": "Affiliate program (Marquorum, 30% recurring lifetime) confirmed via press release, but the actual product homepage could not be confidently identified (revenuescout.io appears to be an unrelated lead-gen agency) - verify real domain before any action"
+  },
+  "Wisry": {
+    "vertical_or_category": "AI ad creative / cloning quang cao ecommerce",
+    "tier": "WATCH",
+    "first_reported": "2026-09-19",
+    "last_reported": "2026-09-19"
+  },
+  "Fraime": {
+    "vertical_or_category": "AI media generation platform (open-source, self-hosted)",
+    "tier": "WATCH",
+    "first_reported": "2026-09-19",
+    "last_reported": "2026-09-19"
+  },
+  "Loqua": {
+    "vertical_or_category": "AI gõ chữ bằng giọng nói (voice dictation, Mac/Windows)",
+    "tier": "WATCH",
+    "first_reported": "2026-09-20",
+    "last_reported": "2026-09-20"
   }
 }
