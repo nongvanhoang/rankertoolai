@@ -228,6 +228,38 @@ Maintain this database. Update it when programs change.
 ]
 ```
 
+### Pending Manual Signup — Flagged HOT by Scout 2026-09-18
+
+```json
+[
+  {
+    "tool": "Siift",
+    "slug": "siift",
+    "program_name": "Siift Affiliate Program",
+    "platform": "Reditus",
+    "commission": "30% of total value of eligible Lead purchases (recurring; Commission Period = Indefinite per Annex 1)",
+    "cookie_days": null,
+    "payout_schedule": "Payment Period: up to 30 days; Payment Threshold: $100; Payment method: PayPal",
+    "tracking_url": null,
+    "go_url": null,
+    "status": "pending_join",
+    "notes": "Re-verified 2026-09-18 directly against https://siift.ai/affiliateterms (live, 200 OK) — page is titled 'Affiliate Program Terms' and its Annex 1 table confirms scout's numbers exactly: Commission Rate 30%, Payment Period up to 30 days, Payment Threshold $100, Payment method PayPal, Commission Period Indefinite. Reditus tracking script (script.getreditus.com/v2.js) is embedded site-wide, confirming the integration is live. HOWEVER: no self-serve public tracking-link format exists — Reditus requires the affiliate to hold a Reditus account. Crawled siift.ai's static HTML (home, /partners, /affiliateterms, sitemap.xml, robots.txt) and found no direct 'apply now' link or public referral-link generator; app.getreditus.com/marketplace is a JS-only SPA that needs login to browse/apply. MANUAL STEP NEEDED FROM USER: (1) create a free account at https://app.getreditus.com, (2) search the Reditus marketplace for 'Siift' and apply to join their program (or use the 'Contact us by email' button on https://siift.ai/affiliateterms to request an invite if not listed in marketplace), (3) once approved, copy the unique referral link Reditus generates in the affiliate dashboard and send it to this agent so tracking_url/go_url can be filled in and a go/siift/ bridge page generated. Do not fabricate a link in the meantime."
+  },
+  {
+    "tool": "Reception by ElevenLabs",
+    "slug": "reception",
+    "program_name": "Uses existing ElevenLabs Impact program? UNCONFIRMED",
+    "platform": "Impact (shared with ElevenLabs Tier-1 entry, IF coverage confirmed)",
+    "commission": "UNCONFIRMED for this product — do not assume ElevenLabs' 22%/12mo rate applies",
+    "cookie_days": null,
+    "tracking_url": null,
+    "go_url": null,
+    "status": "pending_join",
+    "notes": "Checked 2026-09-18. Reception is a real, live ElevenLabs product (elevenlabs.io/reception, 200 OK, title 'Reception by ElevenLabs. AI Receptionists to answer any call'), grouped under the 'Agents' family in ElevenLabs' own site nav alongside Customer support / Lead qualification / Outbound. BUT: Reception's actual signup, app, and pricing all live on a fully separate domain — CTAs on elevenlabs.io/reception point to https://app.reception.ai and https://reception.ai/pricing, not app.elevenlabs.io. ElevenLabs' own affiliate page (elevenlabs.io/affiliate) explicitly scopes commission to 'ElevenAgents, ElevenCreative, and ElevenAPI' (products billed on elevenlabs.io) and does not name Reception/reception.ai anywhere in its body copy — the only 'reception.ai' hits on that page are generic site-nav links, not affiliate-scope language. Because Reception's checkout is on a separate domain (app.reception.ai) with its own billing, the existing Impact tracking_url (https://try.elevenlabs.io/b8nlr9g6cuq0) cannot be assumed to fire on that domain's checkout unless ElevenLabs has explicitly extended Impact's tracking pixel/cross-domain cookie to reception.ai — no public documentation confirms this either way. MANUAL STEP NEEDED FROM USER: log into the existing ElevenLabs Impact partner dashboard and either check the program's listed 'covered domains'/terms, or message the ElevenLabs affiliate/partner manager directly asking: does the current tracking link cover purchases completed on reception.ai / app.reception.ai, or is a separate program/link required for Reception? Do not link Reception content to the existing ElevenLabs go_url until this is confirmed — doing so risks unattributed (unpaid) conversions if tracking doesn't actually span the domain."
+  }
+]
+```
+
 ### Tier 2 — Join Month 2
 
 ```json

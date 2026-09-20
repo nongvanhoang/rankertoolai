@@ -103,6 +103,7 @@ audit_results.csv
 social_agent/
 google_ads/*
 !google_ads/competitor_research
+!google_ads/gsc_snapshot
 infrastructure/
 dashboard/
 pages/
@@ -150,6 +151,8 @@ get_twitter_token.py
 google_oauth.py
 gsc_setup.py
 gsc_tracker.py
+gsc_export_snapshot.py
+gsc_export_snapshot.ps1
 inject_compare_widget.py
 inject_cta.py
 inject_pint_tag.py
