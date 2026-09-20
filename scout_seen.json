@@ -166,5 +166,110 @@
     "tier": "WATCH",
     "first_reported": "2026-09-04",
     "last_reported": "2026-09-04"
+  },
+  "Clipto (Clipto.AI)": {
+    "vertical_or_category": "AI local media search / AI agent that finds clips (video, audio, image)",
+    "tier": "HOT",
+    "first_reported": "2026-09-05",
+    "last_reported": "2026-09-18",
+    "note": "Now live in RankerToolAI content (review/clipto, build_dashboard.py AFFILIATE_DB) - pipeline confirmed working end-to-end as of this scan"
+  },
+  "ThunderPhone": {
+    "vertical_or_category": "AI phone/voice agent platform (developer API)",
+    "tier": "WATCH",
+    "first_reported": "2026-09-07",
+    "last_reported": "2026-09-07"
+  },
+  "TrustedRouter": {
+    "vertical_or_category": "AI model router / dev infra API",
+    "tier": "WATCH",
+    "first_reported": "2026-09-08",
+    "last_reported": "2026-09-08"
+  },
+  "Keiki": {
+    "vertical_or_category": "AI agent for multi-channel customer-facing automation",
+    "tier": "WATCH",
+    "first_reported": "2026-09-09",
+    "last_reported": "2026-09-09"
+  },
+  "Sider Code": {
+    "vertical_or_category": "Chrome extension using AI to customize websites",
+    "tier": "WATCH",
+    "first_reported": "2026-09-09",
+    "last_reported": "2026-09-20",
+    "note": "Part of the wider Sider AI ecosystem (10M+ WAU, confirmed affiliate program via Trackdesk) - see new sibling entry Sider Omni Sidebar"
+  },
+  "Tovel AI": {
+    "vertical_or_category": "AI recorder for calls/meetings, auto-drafts follow-up emails",
+    "tier": "WATCH",
+    "first_reported": "2026-09-11",
+    "last_reported": "2026-09-11"
+  },
+  "Notchling": {
+    "vertical_or_category": "AI novelty macOS app (animated companion in MacBook notch)",
+    "tier": "WATCH",
+    "first_reported": "2026-09-12",
+    "last_reported": "2026-09-12"
+  },
+  "Hermes Agent (Nous Research)": {
+    "vertical_or_category": "Self-improving open-source AI agent",
+    "tier": "WATCH",
+    "first_reported": "2026-09-13",
+    "last_reported": "2026-09-13"
+  },
+  "Almanac (YC S26)": {
+    "vertical_or_category": "AI agent with internal company-context (company-context agent)",
+    "tier": "WATCH",
+    "first_reported": "2026-09-15",
+    "last_reported": "2026-09-15"
+  },
+  "Sourclip 2.0": {
+    "vertical_or_category": "AI research/productivity Chrome extension for Gemini Notebook/NotebookLM",
+    "tier": "HOT",
+    "first_reported": "2026-09-16",
+    "last_reported": "2026-09-18"
+  },
+  "SkySnail": {
+    "vertical_or_category": "AI YouTube/social thumbnail generation",
+    "tier": "WATCH",
+    "first_reported": "2026-09-16",
+    "last_reported": "2026-09-16"
+  },
+  "Superpose": {
+    "vertical_or_category": "AI photo/camera app (personal pose coaching)",
+    "tier": "WATCH",
+    "first_reported": "2026-09-18",
+    "last_reported": "2026-09-18"
+  },
+  "Sider Omni Sidebar": {
+    "vertical_or_category": "AI agent sidebar for every Mac app (screen-aware assistant)",
+    "tier": "HOT",
+    "first_reported": "2026-09-20",
+    "last_reported": "2026-09-20"
+  },
+  "Aristotle (AI Tutor)": {
+    "vertical_or_category": "Voice-first AI tutoring platform for teens (heyaristotle.com)",
+    "tier": "WATCH",
+    "first_reported": "2026-09-20",
+    "last_reported": "2026-09-20"
+  },
+  "Jev / TypeSafe AI": {
+    "vertical_or_category": "Non-LLM 'System One' decision model / dev infra API",
+    "tier": "WATCH",
+    "first_reported": "2026-09-20",
+    "last_reported": "2026-09-20"
+  },
+  "AINA": {
+    "vertical_or_category": "AI career coach (candidate-facing, free) / AI recruiting ATS SaaS (B2B, paid)",
+    "tier": "WATCH",
+    "first_reported": "2026-09-20",
+    "last_reported": "2026-09-20"
+  },
+  "Revenue Scout (via Marquorum)": {
+    "vertical_or_category": "AI sales-intent discovery across social platforms (Reddit/LinkedIn/X/etc)",
+    "tier": "WATCH",
+    "first_reported": "2026-09-20",
+    "last_reported": "2026-09-20",
+    "note": "Affiliate program (Marquorum, 30% recurring lifetime) confirmed via press release, but the actual product homepage could not be confidently identified (revenuescout.io appears to be an unrelated lead-gen agency) - verify real domain before any action"
   }
 }
