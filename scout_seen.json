@@ -60,10 +60,10 @@
     "last_reported": "2026-08-20"
   },
   "Naive": {
-    "vertical_or_category": "AI business-automation infrastructure",
+    "vertical_or_category": "AI business-automation infrastructure (Series A $28.5M, 30k+ dev signups)",
     "tier": "WATCH",
     "first_reported": "2026-08-22",
-    "last_reported": "2026-08-25"
+    "last_reported": "2026-09-21"
   },
   "River AI": {
     "vertical_or_category": "AI infrastructure / custom model training",
@@ -282,5 +282,29 @@
     "tier": "WATCH",
     "first_reported": "2026-09-20",
     "last_reported": "2026-09-20"
+  },
+  "Tabbit AI (Tabbit Browser)": {
+    "vertical_or_category": "AI-native browser / browser agent (Meituan GN06)",
+    "tier": "WATCH",
+    "first_reported": "2026-09-21",
+    "last_reported": "2026-09-21"
+  },
+  "Ansvisor": {
+    "vertical_or_category": "AEO/GEO answer-engine brand tracking",
+    "tier": "WATCH",
+    "first_reported": "2026-09-21",
+    "last_reported": "2026-09-21"
+  },
+  "Jottoo": {
+    "vertical_or_category": "AI meeting notes to task tracking",
+    "tier": "WATCH",
+    "first_reported": "2026-09-21",
+    "last_reported": "2026-09-21"
+  },
+  "Freescan.app": {
+    "vertical_or_category": "Free website audit tool (SEO/security/accessibility)",
+    "tier": "WATCH",
+    "first_reported": "2026-09-21",
+    "last_reported": "2026-09-21"
   }
 }
