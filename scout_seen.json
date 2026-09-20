@@ -171,7 +171,7 @@
     "vertical_or_category": "AI tìm kiếm media cục bộ / AI agent tìm clip (video, audio, ảnh)",
     "tier": "HOT",
     "first_reported": "2026-09-05",
-    "last_reported": "2026-09-15"
+    "last_reported": "2026-09-18"
   },
   "ThunderPhone": {
     "vertical_or_category": "AI phone/voice agent platform (API cho developer)",
@@ -225,12 +225,18 @@
     "vertical_or_category": "AI research/productivity tool (Chrome extension cho Gemini Notebook/NotebookLM)",
     "tier": "HOT",
     "first_reported": "2026-09-16",
-    "last_reported": "2026-09-16"
+    "last_reported": "2026-09-18"
   },
   "SkySnail": {
     "vertical_or_category": "AI tạo thumbnail YouTube/social",
     "tier": "WATCH",
     "first_reported": "2026-09-16",
     "last_reported": "2026-09-16"
+  },
+  "Superpose": {
+    "vertical_or_category": "AI photo/camera app (pose coaching tieu dung ca nhan)",
+    "tier": "WATCH",
+    "first_reported": "2026-09-18",
+    "last_reported": "2026-09-18"
   }
 }
