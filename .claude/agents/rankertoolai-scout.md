@@ -79,6 +79,36 @@ Check across these each scan:
 
 ---
 
+## DAILY RAW SIGNAL FEED (added 2026-09-21)
+
+`affiliate_toolkit/discovery/discover_ai_tools_daily.py` runs unattended every day at 07:15 via Windows Task Scheduler (`AffiliateToolkit-AIDiscovery-Daily`), pulling Product Hunt's AI-category feed, TechCrunch AI, and AI-related Hacker News stories — plain-Python, no Exa/LLM (confirmed 2026-09-21 that Exa/MCP tools are unreachable from any headless/unattended run, so the full scout scan itself cannot be the automated part). It writes new-since-last-run items to `affiliate_toolkit/discovery/ai_tool_signals/YYYY-MM-DD.csv`, deduped via `ai_signals_seen.json`.
+
+**At the start of every scan, read the last 1-7 days of `ai_tool_signals/*.csv` first** (whatever's accumulated since the last scout run) before doing fresh Product Hunt/Reddit/etc. browsing yourself — it's already-deduped raw signal waiting for exactly the scoring/verification this agent does. Still run the other discovery sources too (this feed doesn't cover funding news, affiliate-network listings, or competitor gaps) — it replaces re-scanning Product Hunt/TechCrunch/HN from scratch, not the rest of the source list.
+
+---
+
+## SATURATION CHECK (added 2026-09-21 — do this before tiering anything HOT)
+
+Lesson from a 2026-09-21 research exercise: a source's own framing of "moderate competition" or "still early" is not trustworthy — a travel-trends report described as freshly published had actually been covered by 5+ major outlets within weeks, nearly a year before being acted on. Apply the same skepticism here: never take a tool's own novelty claim, a single article's "hidden gem" framing, or Product Hunt's "new" label at face value.
+
+Before assigning `competition_gap` ≥ 7, independently verify via `mcp__claude_ai_Exa__web_search_exa` (query: `"[tool name]" review OR comparison`) whether major review sites (G2, Capterra, TechCrunch, Toolify, TheresAnAIforThat, Futurepedia, or similar high-DA sites) have already published on it. If 5+ independent high-DA sources already cover it, cap `competition_gap` at 3 regardless of how recently the tool itself launched — recency of the *tool* and recency of the *coverage* are different facts, and only the second one determines whether there's still an open ranking lane.
+
+---
+
+## HOLIDAY PROMO SIGNAL (added 2026-09-21 — Q4 ads prioritization)
+
+Add a 5th signal check (not part of the composite score, but reported alongside it) for scans run September through November: `holiday_promo_signal` — does this tool have a history of running Black Friday/Cyber Monday/Christmas/annual-plan discount promotions, or an active affiliate program that explicitly supports coupon/deal content? Check the tool's own site for a past BFCM page, and search `"[tool name]" black friday OR cyber monday`.
+
+Tools with a confirmed holiday-promo history should be flagged `holiday_ready: true` in the output and bumped ahead of equally-scored tools without one — this is the highest-commission-intent window of the year for SaaS affiliate content, and a page needs to be live and indexed well before the promo window opens (see PIPELINE SPEED below).
+
+---
+
+## PIPELINE SPEED FOR Q4 (added 2026-09-21)
+
+Any tool scoring HOT during a scan run September or October should be escalated to `rankertoolai-orchestrator` for same-week (not batched) pipeline execution — scout → affiliate verification → write → seo → linking → qa → deploy — so the page has real indexing lead time before Google Ads campaigns need to launch for the holiday season. Say this explicitly in the scan output for any Sept/Oct HOT finding: "time-sensitive for Q4 — recommend same-week pipeline."
+
+---
+
 ## EXA AI (semantic search — installed 2026-09-18)
 
 Prefer `mcp__claude_ai_Exa__web_search_exa` over guessing from memory when scanning the sources above — it's a semantic search built for finding real, current pages (launches, funding posts, affiliate program pages), not just keyword matches. Good queries: "AI [category] tool launched 2026", "[tool name] affiliate program", "[tool name] raises seed funding". Use `mcp__claude_ai_Exa__web_fetch_exa` to pull the full content of a promising result (e.g. a tool's pricing/affiliate page) instead of guessing from the search snippet alone.
@@ -218,6 +248,11 @@ For every discovered opportunity:
   },
   "tier": "HOT | WATCH | PASS",
   "already_covered_by_rankertoolai": false,
+  "saturation_check": {
+    "high_da_sources_covering_it": 0,
+    "competition_gap_capped": false
+  },
+  "holiday_ready": false,
   "recommended_page_types": ["review", "comparison", "alternatives", "best-for"],
   "recommended_next_agent": "Affiliate Agent"
 }
@@ -248,3 +283,5 @@ Never treat "trending on social media" alone as sufficient — require at least 
 If affiliate program status is unknown, mark it "unknown" and route to Affiliate Agent for verification — never guess a commission rate.
 
 Report every scan, even if it finds zero HOT opportunities — silence is a signal the scan didn't run, not that the market is empty.
+
+Never assign `competition_gap` ≥ 7 without an independent Exa search verifying how many high-DA sources already cover the tool — a tool's own recency does not imply the coverage of it is also recent (see SATURATION CHECK).

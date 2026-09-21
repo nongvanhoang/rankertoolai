@@ -237,6 +237,8 @@ Priority order:
 5. Category hubs (traffic capture)
 6. Best-for pages (long-tail)
 
+**Q4 override (added 2026-09-21):** any Scout Agent finding flagged `"time-sensitive for Q4 — recommend same-week pipeline"` or `holiday_ready: true` jumps to the front of the queue ahead of the above ordering, September through November — it needs to clear Affiliate → Writer → SEO → Linking → QA → Deploy the same week it's discovered so the page has indexing lead time before Google Ads campaigns launch for Black Friday/Christmas. Don't batch it with the normal weekly cadence.
+
 ---
 
 ### 3. Dependency Resolution
