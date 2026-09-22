@@ -1,4 +1,16 @@
 {
+  "Sai (Simular AI)": {
+    "vertical_or_category": "AI computer-use agent / robosecretary",
+    "tier": "WATCH",
+    "first_reported": "2026-09-23",
+    "last_reported": "2026-09-23"
+  },
+  "ProductBridge": {
+    "vertical_or_category": "AI customer support / feedback agent",
+    "tier": "WATCH",
+    "first_reported": "2026-09-23",
+    "last_reported": "2026-09-23"
+  },
   "Hey Noah": {
     "vertical_or_category": "AI executive assistant (autonomous, email/SMS/WhatsApp)",
     "tier": "WATCH",
