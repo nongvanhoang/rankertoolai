@@ -318,5 +318,23 @@
     "tier": "WATCH",
     "first_reported": "2026-09-21",
     "last_reported": "2026-09-21"
+  },
+  "Switch (by SandboxAQ)": {
+    "vertical_or_category": "AI agent-into-team-chat coordination layer / dev infra",
+    "tier": "WATCH",
+    "first_reported": "2026-09-24",
+    "last_reported": "2026-09-24"
+  },
+  "Toone": {
+    "vertical_or_category": "AI agent team / workflow builder (no-code)",
+    "tier": "WATCH",
+    "first_reported": "2026-09-24",
+    "last_reported": "2026-09-24"
+  },
+  "Arcjet (Agent Runtime Security)": {
+    "vertical_or_category": "AI agent runtime security/observability (dev infra, B2B)",
+    "tier": "WATCH",
+    "first_reported": "2026-09-24",
+    "last_reported": "2026-09-24"
   }
 }
