@@ -336,5 +336,11 @@
     "tier": "WATCH",
     "first_reported": "2026-09-24",
     "last_reported": "2026-09-24"
+  },
+  "Ami AI": {
+    "vertical_or_category": "AI outbound sales/campaign agent",
+    "tier": "WATCH",
+    "first_reported": "2026-09-25",
+    "last_reported": "2026-09-25"
   }
 }
