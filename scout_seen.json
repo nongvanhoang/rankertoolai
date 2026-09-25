@@ -342,5 +342,17 @@
     "tier": "WATCH",
     "first_reported": "2026-09-25",
     "last_reported": "2026-09-25"
+  },
+  "PixVerse R2": {
+    "vertical_or_category": "AI video generation (real-time world model)",
+    "tier": "HOT",
+    "first_reported": "2026-09-26",
+    "last_reported": "2026-09-26"
+  },
+  "Makersclaw 2.0": {
+    "vertical_or_category": "AI agent operating system",
+    "tier": "WATCH",
+    "first_reported": "2026-09-26",
+    "last_reported": "2026-09-26"
   }
 }
