@@ -153,13 +153,13 @@
     "vertical_or_category": "AI personal assistant via SMS/calls (invite-only)",
     "tier": "WATCH",
     "first_reported": "2026-09-02",
-    "last_reported": "2026-09-10"
+    "last_reported": "2026-09-26"
   },
   "AIR": {
     "vertical_or_category": "AI security / enterprise agent permission auditing",
     "tier": "WATCH",
     "first_reported": "2026-09-02",
-    "last_reported": "2026-09-02"
+    "last_reported": "2026-09-26"
   },
   "Monid": {
     "vertical_or_category": "AI agent tool router / payments API for AI agents",
@@ -351,6 +351,18 @@
   },
   "Makersclaw 2.0": {
     "vertical_or_category": "AI agent operating system",
+    "tier": "WATCH",
+    "first_reported": "2026-09-26",
+    "last_reported": "2026-09-26"
+  },
+  "Bullet (YC S26 coding agent)": {
+    "vertical_or_category": "AI coding agent / dev tools",
+    "tier": "WATCH",
+    "first_reported": "2026-09-26",
+    "last_reported": "2026-09-26"
+  },
+  "Raft (multi-agent workspace)": {
+    "vertical_or_category": "AI agent orchestration / multi-model workspace",
     "tier": "WATCH",
     "first_reported": "2026-09-26",
     "last_reported": "2026-09-26"
