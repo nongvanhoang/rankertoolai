@@ -366,5 +366,11 @@
     "tier": "WATCH",
     "first_reported": "2026-09-26",
     "last_reported": "2026-09-26"
+  },
+  "Clipnote": {
+    "vertical_or_category": "AI notepad / persistent AI conversation memory",
+    "tier": "WATCH",
+    "first_reported": "2026-09-28",
+    "last_reported": "2026-09-28"
   }
 }
