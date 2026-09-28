@@ -1,4 +1,16 @@
 {
+  "Cuey": {
+    "vertical_or_category": "AI tools (browser extension / model comparison)",
+    "tier": "WATCH",
+    "first_reported": "2026-09-29",
+    "last_reported": "2026-09-29"
+  },
+  "Harmony": {
+    "vertical_or_category": "AI agent (IT/HR/ESM automation cho doanh nghiệp)",
+    "tier": "WATCH",
+    "first_reported": "2026-09-29",
+    "last_reported": "2026-09-29"
+  },
   "Sai (Simular AI)": {
     "vertical_or_category": "AI computer-use agent / robosecretary",
     "tier": "WATCH",
