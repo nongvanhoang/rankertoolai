@@ -244,7 +244,7 @@
     "vertical_or_category": "AI research/productivity Chrome extension for Gemini Notebook/NotebookLM",
     "tier": "HOT",
     "first_reported": "2026-09-16",
-    "last_reported": "2026-09-20"
+    "last_reported": "2026-09-30"
   },
   "SkySnail": {
     "vertical_or_category": "AI YouTube/social thumbnail generation",
@@ -262,7 +262,7 @@
     "vertical_or_category": "AI agent sidebar for every Mac app (screen-aware assistant)",
     "tier": "HOT",
     "first_reported": "2026-09-20",
-    "last_reported": "2026-09-20"
+    "last_reported": "2026-09-30"
   },
   "Aristotle (AI Tutor)": {
     "vertical_or_category": "Voice-first AI tutoring platform for teens (heyaristotle.com)",
@@ -359,7 +359,7 @@
     "vertical_or_category": "AI video generation (real-time world model)",
     "tier": "HOT",
     "first_reported": "2026-09-26",
-    "last_reported": "2026-09-26"
+    "last_reported": "2026-09-30"
   },
   "Makersclaw 2.0": {
     "vertical_or_category": "AI agent operating system",
@@ -384,5 +384,34 @@
     "tier": "WATCH",
     "first_reported": "2026-09-28",
     "last_reported": "2026-09-28"
+  },
+  "HappyShrimp (Alibaba AI music generator)": {
+    "vertical_or_category": "AI music generation (Suno competitor)",
+    "tier": "WATCH",
+    "first_reported": "2026-09-30",
+    "last_reported": "2026-09-30"
+  },
+  "_pending_reminders": {
+    "siift": {
+      "last_reminded": "2026-09-30"
+    },
+    "reception": {
+      "last_reminded": "2026-09-30"
+    },
+    "runway": {
+      "last_reminded": "2026-09-30"
+    },
+    "marketmuse": {
+      "last_reminded": "2026-09-30"
+    },
+    "clearscope": {
+      "last_reminded": "2026-09-30"
+    },
+    "canva-ai": {
+      "last_reminded": "2026-09-30"
+    },
+    "semrush": {
+      "last_reminded": "2026-09-30"
+    }
   }
 }
