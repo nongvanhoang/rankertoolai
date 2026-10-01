@@ -104,12 +104,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             el.href = dest.toString();
           } catch (e) {}
 
+          var _tool = (el.href.split('/go/')[1] || '').split(/[?#]/)[0].replace(/\//g,'') || 'unknown';
+          var _comm = (window.AFFILIATE_COMMISSIONS && window.AFFILIATE_COMMISSIONS[_tool]) || {value:1.0,currency:'USD'};
           dataLayer.push({
             event: 'affiliate_click',
-            tool: el.href.split('/go/')[1]?.replace(/\//g,'') || 'unknown',
+            tool: _tool,
             page: window.location.pathname,
-            value: 1.0,
-            currency: 'USD'
+            value: _comm.value,
+            currency: _comm.currency
           });
         });
       });

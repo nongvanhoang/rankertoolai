@@ -70,12 +70,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             el.href = dest.toString();
           } catch (e) {}
 
+          var _tool = (el.href.split('/go/')[1] || '').split(/[?#]/)[0].replace(/\//g,'') || 'unknown';
+          var _comm = (window.AFFILIATE_COMMISSIONS && window.AFFILIATE_COMMISSIONS[_tool]) || {value:1.0,currency:'USD'};
           dataLayer.push({
             event: 'affiliate_click',
-            tool: el.href.split('/go/')[1]?.replace(/\//g,'') || 'unknown',
+            tool: _tool,
             page: window.location.pathname,
-            value: 1.0,
-            currency: 'USD'
+            value: _comm.value,
+            currency: _comm.currency
           });
         });
       });
@@ -303,6 +305,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
     </section>
+
+    <div style="background:rgba(148,163,184,0.06);border:1px solid rgba(148,163,184,0.15);border-radius:var(--radius-lg);padding:1.5rem;margin:2rem 0;">
+      <h3 style="margin:0 0 0.5rem;color:#f1f5f9;font-size:1.05rem;">Need to resize a partition instead of recovering a file?</h3>
+      <p style="color:var(--color-text-muted);line-height:1.8;margin:0 0 1rem;">Backup and recovery tools don't help if the problem is a partition that's the wrong size or a drive you need to manage across multiple operating systems. <a href="/go/paragon/" style="color:#22d3ee;" rel="nofollow sponsored" target="_blank">Paragon Partition Manager</a> handles that separately — resizing, merging, and redistributing free space without reformatting, plus support for managing several OS installations on one PC.</p>
+      <a href="/go/paragon/" class="btn btn-affiliate" rel="nofollow sponsored" target="_blank">See Paragon Partition Manager →</a>
+    </div>
 
     <div style="background:linear-gradient(135deg,rgba(251,146,60,0.12),rgba(245,158,11,0.08));border:1px solid rgba(251,146,60,0.3);border-radius:var(--radius-lg);padding:1.5rem;margin:2rem 0;text-align:center;">
       <p style="margin:0 0 0.25rem;font-weight:700;font-size:1.1rem;color:#f1f5f9;">Set up backup before you need recovery</p>

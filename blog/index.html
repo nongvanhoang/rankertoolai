@@ -70,12 +70,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             el.href = dest.toString();
           } catch (e) {}
 
+          var _tool = (el.href.split('/go/')[1] || '').split(/[?#]/)[0].replace(/\//g,'') || 'unknown';
+          var _comm = (window.AFFILIATE_COMMISSIONS && window.AFFILIATE_COMMISSIONS[_tool]) || {value:1.0,currency:'USD'};
           dataLayer.push({
             event: 'affiliate_click',
-            tool: el.href.split('/go/')[1]?.replace(/\//g,'') || 'unknown',
+            tool: _tool,
             page: window.location.pathname,
-            value: 1.0,
-            currency: 'USD'
+            value: _comm.value,
+            currency: _comm.currency
           });
         });
       });
@@ -797,9 +799,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </a>
     <a href="/blog/best-ai-tools-for-solopreneurs/" class="blog-card">
       <span class="blog-tag">Guide</span>
-      <div class="blog-title">9 Best AI Tools for Solopreneurs in 2026 (That Actually Replace a Team)</div>
-      <div class="blog-desc">Running a business solo means wearing every hat. These 9 AI tools handle writing, design, video, customer support, and automation — without hiring anyone.</div>
-      <div class="blog-meta"><span>By Sara Lin</span><span>June 18, 2026</span></div>
+      <div class="blog-title">10 Best AI Tools for Solopreneurs in 2026 (That Actually Replace a Team)</div>
+      <div class="blog-desc">Running a business solo means wearing every hat. These 10 AI tools handle writing, design, video, scheduling, customer support, and automation — without hiring anyone.</div>
+      <div class="blog-meta"><span>By Sara Lin</span><span>September 17, 2026</span></div>
     </a>
     <a href="/blog/how-to-use-ai-for-seo/" class="blog-card">
       <span class="blog-tag">SEO Guide</span>

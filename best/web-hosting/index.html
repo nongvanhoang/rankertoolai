@@ -70,12 +70,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             el.href = dest.toString();
           } catch (e) {}
 
+          var _tool = (el.href.split('/go/')[1] || '').split(/[?#]/)[0].replace(/\//g,'') || 'unknown';
+          var _comm = (window.AFFILIATE_COMMISSIONS && window.AFFILIATE_COMMISSIONS[_tool]) || {value:1.0,currency:'USD'};
           dataLayer.push({
             event: 'affiliate_click',
-            tool: el.href.split('/go/')[1]?.replace(/\//g,'') || 'unknown',
+            tool: _tool,
             page: window.location.pathname,
-            value: 1.0,
-            currency: 'USD'
+            value: _comm.value,
+            currency: _comm.currency
           });
         });
       });
@@ -244,6 +246,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p style="color:rgba(148,163,184,0.85);line-height:1.8;">The most common and costly mistake is signing up for an attractive introductory rate without checking the renewal price. Turbify's $0.99/month rate looks compelling next to Contabo's €5.50/month VPS entry tier, but that comparison only holds for the first year — after renewal, Turbify's regular rate (roughly $11.25-$17.99/month) is actually higher than Contabo's entry VPS. Before committing to any hosting plan, find the renewal price explicitly and calculate your real 2-3 year cost, not just the headline number on the pricing page.</p>
       <p style="color:rgba(148,163,184,0.85);line-height:1.8;">A second mistake is underestimating your own technical comfort level when choosing between managed and self-managed hosting. A VPS like Contabo's gives you root access and far more raw performance per dollar, but that access comes with responsibility: you're on the hook for OS updates, security patches, firewall configuration, and backups unless you set those up yourself or pay extra for a managed layer on top. If you don't have the time or interest to maintain a Linux server, a managed host like Turbify — where the provider handles all of that — will likely save you more in time and risk than the raw specs comparison suggests.</p>
       <p style="color:rgba(148,163,184,0.85);line-height:1.8;">A third mistake is ignoring what happens if a site outgrows shared hosting. A WooCommerce store that starts small on Turbify's shared plan can hit real performance limits as traffic and order volume grow — the sharing-resources-with-other-tenants model has a ceiling that a VPS doesn't. If you expect meaningful growth within the first year or two, it's worth weighing whether starting on a VPS (or at least confirming your shared host's upgrade path and cost to move to a higher tier) will save you a disruptive migration later.</p>
+    </div>
+
+    <div style="background:rgba(148,163,184,0.06);border:1px solid rgba(148,163,184,0.15);border-radius:var(--radius-lg);padding:1.5rem;margin:2rem 0;">
+      <h3 style="margin:0 0 0.5rem;color:#f1f5f9;font-size:1.05rem;">Need a domain to go with your hosting?</h3>
+      <p style="color:rgba(148,163,184,0.85);line-height:1.8;margin:0 0 1rem;">Neither Contabo nor Turbify's base plans include a domain long-term (Turbify's free domain is a first-term perk). <a href="/go/dynadot/" style="color:#84cc16;" rel="nofollow sponsored" target="_blank">Dynadot</a> registers across 450+ extensions at industry-low prices, with free WHOIS privacy protection included on every domain — not sold as an add-on the way some registrars handle it. It also bundles a free basic website builder with every domain, so you can get something live before your hosting plan is even fully configured, and transfers in without the hidden fees or forced add-ons that make switching registrars annoying elsewhere.</p>
+      <a href="/go/dynadot/" class="btn btn-affiliate" rel="nofollow sponsored" target="_blank">Search Domains at Dynadot →</a>
     </div>
 
     <div style="background:linear-gradient(135deg,rgba(251,146,60,0.12),rgba(245,158,11,0.08));border:1px solid rgba(251,146,60,0.3);border-radius:var(--radius-lg);padding:1.5rem;margin:2rem 0;text-align:center;">
