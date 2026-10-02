@@ -397,6 +397,12 @@
     "first_reported": "2026-10-02",
     "last_reported": "2026-10-02"
   },
+  "Fabraix (Nyx)": {
+    "vertical_or_category": "AI agent security / red-teaming (dev infra, B2B)",
+    "tier": "WATCH",
+    "first_reported": "2026-10-03",
+    "last_reported": "2026-10-03"
+  },
   "_pending_reminders": {
     "siift": {
       "last_reminded": "2026-09-30"
