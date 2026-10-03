@@ -403,6 +403,18 @@
     "first_reported": "2026-10-03",
     "last_reported": "2026-10-03"
   },
+  "Yeta AI": {
+    "vertical_or_category": "AI tools (real-time YouTube video dubbing)",
+    "tier": "WATCH",
+    "first_reported": "2026-10-04",
+    "last_reported": "2026-10-04"
+  },
+  "OpenJobs AI": {
+    "vertical_or_category": "AI agent (tuyen dung tu dong end-to-end)",
+    "tier": "WATCH",
+    "first_reported": "2026-10-04",
+    "last_reported": "2026-10-04"
+  },
   "_pending_reminders": {
     "siift": {
       "last_reminded": "2026-09-30"
