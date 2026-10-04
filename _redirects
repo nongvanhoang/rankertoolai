@@ -22,5 +22,8 @@ https://www.rankertoolai.com/* https://rankertoolai.com/:splat 301
 /blog/se-ranking-vs-semrush-tested/       /compare/semrush-vs-se-ranking/ 301
 /blog/mangools-vs-ahrefs-keyword-research/ /compare/mangools-vs-ahrefs/   301
 
+# Removed invented author personas (2026-10-04): bylines now credit the editorial team
+/author/*  /about/  301
+
 # 404 fallback
 /*  /404.html  404
