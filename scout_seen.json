@@ -415,6 +415,12 @@
     "first_reported": "2026-10-04",
     "last_reported": "2026-10-04"
   },
+  "LLM Pulse": {
+    "vertical_or_category": "AI visibility / GEO-AEO tracking (theo doi thuong hieu tren ChatGPT, Perplexity, Google AI Mode)",
+    "tier": "HOT",
+    "first_reported": "2026-10-05",
+    "last_reported": "2026-10-05"
+  },
   "_pending_reminders": {
     "siift": {
       "last_reminded": "2026-09-30"
