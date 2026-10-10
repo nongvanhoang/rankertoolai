@@ -1,0 +1,119 @@
+{
+  "date": "2026-09-19",
+  "site": "https://rankertoolai.com",
+  "period_days": 7,
+  "date_range": {
+    "start": "2026-09-13",
+    "end": "2026-09-19"
+  },
+  "summary": {
+    "total_clicks": 0,
+    "total_impressions": 17,
+    "avg_ctr_pct": 0.0,
+    "avg_position": 12.7,
+    "indexed_pages_with_traffic": 14
+  },
+  "top_pages": [
+    {
+      "url": "/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr_pct": 0,
+      "position": 52
+    },
+    {
+      "url": "/about/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 1
+    },
+    {
+      "url": "/alternatives/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 6
+    },
+    {
+      "url": "/alternatives/pictory/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 8
+    },
+    {
+      "url": "/alternatives/tabnine/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 2
+    },
+    {
+      "url": "/best/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 5
+    },
+    {
+      "url": "/best/ai-writing-tools/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 7
+    },
+    {
+      "url": "/category/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 3
+    },
+    {
+      "url": "/compare/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 7
+    },
+    {
+      "url": "/compare/context-dev-vs-firecrawl/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 8
+    },
+    {
+      "url": "/compare/wispr-flow-vs-superwhisper/",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr_pct": 0,
+      "position": 61.3
+    },
+    {
+      "url": "/coupons/grammarly/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 9
+    },
+    {
+      "url": "/deals/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 4
+    },
+    {
+      "url": "/review/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 4
+    }
+  ],
+  "near_miss_pages": [],
+  "generated_at": "2026-09-21T23:00:30.894161+00:00",
+  "note": "No credentials in this file — safe to commit. Generated locally where the real GSC OAuth token lives; the cloud ads-signal routine reads only this JSON."
+}

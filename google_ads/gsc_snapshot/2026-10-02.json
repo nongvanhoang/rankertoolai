@@ -1,0 +1,91 @@
+{
+  "date": "2026-10-02",
+  "site": "https://rankertoolai.com",
+  "period_days": 7,
+  "date_range": {
+    "start": "2026-09-26",
+    "end": "2026-10-02"
+  },
+  "summary": {
+    "total_clicks": 1,
+    "total_impressions": 14,
+    "avg_ctr_pct": 7.14,
+    "avg_position": 6.8,
+    "indexed_pages_with_traffic": 10
+  },
+  "top_pages": [
+    {
+      "url": "/compare/pictory-vs-invideo/",
+      "clicks": 1,
+      "impressions": 1,
+      "ctr_pct": 100,
+      "position": 1
+    },
+    {
+      "url": "/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 3
+    },
+    {
+      "url": "/alternatives/speechify/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr_pct": 0,
+      "position": 18.5
+    },
+    {
+      "url": "/blog/is-nordpass-worth-it/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 9
+    },
+    {
+      "url": "/compare/chatgpt-vs-gemini/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr_pct": 0,
+      "position": 10
+    },
+    {
+      "url": "/compare/context-dev-vs-firecrawl/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr_pct": 0,
+      "position": 8.5
+    },
+    {
+      "url": "/coupons/se-ranking/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 7
+    },
+    {
+      "url": "/pricing/gearup-booster/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr_pct": 0,
+      "position": 3.5
+    },
+    {
+      "url": "/review/elevenlabs/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 7
+    },
+    {
+      "url": "/review/se-ranking/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 1
+    }
+  ],
+  "near_miss_pages": [],
+  "generated_at": "2026-10-04T23:00:18.925446+00:00",
+  "note": "No credentials in this file — safe to commit. Generated locally where the real GSC OAuth token lives; the cloud ads-signal routine reads only this JSON."
+}

@@ -1,0 +1,105 @@
+{
+  "date": "2026-09-17",
+  "site": "https://rankertoolai.com",
+  "period_days": 7,
+  "date_range": {
+    "start": "2026-09-11",
+    "end": "2026-09-17"
+  },
+  "summary": {
+    "total_clicks": 0,
+    "total_impressions": 19,
+    "avg_ctr_pct": 0.0,
+    "avg_position": 16.7,
+    "indexed_pages_with_traffic": 12
+  },
+  "top_pages": [
+    {
+      "url": "/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr_pct": 0,
+      "position": 48
+    },
+    {
+      "url": "/alternatives/gearup-booster/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 4
+    },
+    {
+      "url": "/compare/wispr-flow-vs-superwhisper/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 63
+    },
+    {
+      "url": "/coupons/gearup-booster/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 1
+    },
+    {
+      "url": "/pricing/gearup-booster/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 2
+    },
+    {
+      "url": "/review/copy-ai/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr_pct": 0,
+      "position": 4
+    },
+    {
+      "url": "/review/grammarly/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr_pct": 0,
+      "position": 1
+    },
+    {
+      "url": "/review/iubenda/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 61
+    },
+    {
+      "url": "/review/jasper/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr_pct": 0,
+      "position": 2
+    },
+    {
+      "url": "/review/mangools/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr_pct": 0,
+      "position": 4.5
+    },
+    {
+      "url": "/review/surfer-seo/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr_pct": 0,
+      "position": 3.5
+    },
+    {
+      "url": "/review/writesonic/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr_pct": 0,
+      "position": 6
+    }
+  ],
+  "near_miss_pages": [],
+  "generated_at": "2026-09-19T23:00:20.870607+00:00",
+  "note": "No credentials in this file — safe to commit. Generated locally where the real GSC OAuth token lives; the cloud ads-signal routine reads only this JSON."
+}

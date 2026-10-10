@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-08",
+  "site": "https://rankertoolai.com",
+  "period_days": 7,
+  "date_range": {
+    "start": "2026-10-02",
+    "end": "2026-10-08"
+  },
+  "summary": {
+    "total_clicks": 0,
+    "total_impressions": 18,
+    "avg_ctr_pct": 0.0,
+    "avg_position": 11.5,
+    "indexed_pages_with_traffic": 13
+  },
+  "top_pages": [
+    {
+      "url": "/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 2
+    },
+    {
+      "url": "/about/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 3
+    },
+    {
+      "url": "/alternatives/gearup-booster/",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr_pct": 0,
+      "position": 22.3
+    },
+    {
+      "url": "/alternatives/iubenda/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 49
+    },
+    {
+      "url": "/blog/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 7
+    },
+    {
+      "url": "/blog/elevenlabs-review-voice-cloning/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 7
+    },
+    {
+      "url": "/compare/wispr-flow-vs-superwhisper/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr_pct": 0,
+      "position": 14.5
+    },
+    {
+      "url": "/coupons/grammarly/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 7
+    },
+    {
+      "url": "/methodology/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 5
+    },
+    {
+      "url": "/pricing/gearup-booster/",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr_pct": 0,
+      "position": 17.3
+    },
+    {
+      "url": "/review/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 7
+    },
+    {
+      "url": "/review/gemini/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 7
+    },
+    {
+      "url": "/review/se-ranking/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 1
+    }
+  ],
+  "near_miss_pages": [],
+  "generated_at": "2026-10-10T23:01:09.655157+00:00",
+  "note": "No credentials in this file — safe to commit. Generated locally where the real GSC OAuth token lives; the cloud ads-signal routine reads only this JSON."
+}

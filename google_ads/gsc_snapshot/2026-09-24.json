@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-24",
+  "site": "https://rankertoolai.com",
+  "period_days": 7,
+  "date_range": {
+    "start": "2026-09-18",
+    "end": "2026-09-24"
+  },
+  "summary": {
+    "total_clicks": 0,
+    "total_impressions": 8,
+    "avg_ctr_pct": 0.0,
+    "avg_position": 25.4,
+    "indexed_pages_with_traffic": 7
+  },
+  "top_pages": [
+    {
+      "url": "/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 94
+    },
+    {
+      "url": "/blog/how-to-use-stable-diffusion/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 2
+    },
+    {
+      "url": "/blog/writesonic-vs-copy-ai-for-content/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 5
+    },
+    {
+      "url": "/compare/context-dev-vs-firecrawl/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 9
+    },
+    {
+      "url": "/compare/wispr-flow-vs-superwhisper/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr_pct": 0,
+      "position": 61.5
+    },
+    {
+      "url": "/deals/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 4
+    },
+    {
+      "url": "/pricing/gearup-booster/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 2
+    }
+  ],
+  "near_miss_pages": [],
+  "generated_at": "2026-09-26T23:05:21.609102+00:00",
+  "note": "No credentials in this file — safe to commit. Generated locally where the real GSC OAuth token lives; the cloud ads-signal routine reads only this JSON."
+}

@@ -1,0 +1,98 @@
+{
+  "date": "2026-09-26",
+  "site": "https://rankertoolai.com",
+  "period_days": 7,
+  "date_range": {
+    "start": "2026-09-20",
+    "end": "2026-09-26"
+  },
+  "summary": {
+    "total_clicks": 1,
+    "total_impressions": 13,
+    "avg_ctr_pct": 7.69,
+    "avg_position": 14.7,
+    "indexed_pages_with_traffic": 11
+  },
+  "top_pages": [
+    {
+      "url": "/compare/pictory-vs-invideo/",
+      "clicks": 1,
+      "impressions": 1,
+      "ctr_pct": 100,
+      "position": 1
+    },
+    {
+      "url": "/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr_pct": 0,
+      "position": 89
+    },
+    {
+      "url": "/blog/how-to-use-stable-diffusion/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 2
+    },
+    {
+      "url": "/blog/is-gearup-booster-worth-it/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 5
+    },
+    {
+      "url": "/blog/is-nordpass-worth-it/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 9
+    },
+    {
+      "url": "/blog/writesonic-vs-copy-ai-for-content/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 5
+    },
+    {
+      "url": "/compare/chatgpt-vs-gemini/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr_pct": 0,
+      "position": 10
+    },
+    {
+      "url": "/compare/context-dev-vs-firecrawl/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 9
+    },
+    {
+      "url": "/pricing/gearup-booster/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 2
+    },
+    {
+      "url": "/review/elevenlabs/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 7
+    },
+    {
+      "url": "/review/otter-ai/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 23
+    }
+  ],
+  "near_miss_pages": [],
+  "generated_at": "2026-09-28T23:00:32.271952+00:00",
+  "note": "No credentials in this file — safe to commit. Generated locally where the real GSC OAuth token lives; the cloud ads-signal routine reads only this JSON."
+}

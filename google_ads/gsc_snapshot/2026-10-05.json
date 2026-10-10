@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-05",
+  "site": "https://rankertoolai.com",
+  "period_days": 7,
+  "date_range": {
+    "start": "2026-09-29",
+    "end": "2026-10-05"
+  },
+  "summary": {
+    "total_clicks": 0,
+    "total_impressions": 10,
+    "avg_ctr_pct": 0.0,
+    "avg_position": 13.5,
+    "indexed_pages_with_traffic": 6
+  },
+  "top_pages": [
+    {
+      "url": "/alternatives/gearup-booster/",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr_pct": 0,
+      "position": 22.3
+    },
+    {
+      "url": "/alternatives/speechify/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr_pct": 0,
+      "position": 18.5
+    },
+    {
+      "url": "/compare/context-dev-vs-firecrawl/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr_pct": 0,
+      "position": 8.5
+    },
+    {
+      "url": "/compare/wispr-flow-vs-superwhisper/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 20
+    },
+    {
+      "url": "/pricing/gearup-booster/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 11
+    },
+    {
+      "url": "/review/se-ranking/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 1
+    }
+  ],
+  "near_miss_pages": [],
+  "generated_at": "2026-10-07T23:00:16.880972+00:00",
+  "note": "No credentials in this file — safe to commit. Generated locally where the real GSC OAuth token lives; the cloud ads-signal routine reads only this JSON."
+}
