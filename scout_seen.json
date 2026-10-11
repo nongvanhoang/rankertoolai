@@ -433,6 +433,12 @@
     "first_reported": "2026-10-11",
     "last_reported": "2026-10-11"
   },
+  "Robofy": {
+    "vertical_or_category": "AI chatbot builder (no-code, cho SMB)",
+    "tier": "WATCH",
+    "first_reported": "2026-10-12",
+    "last_reported": "2026-10-12"
+  },
   "_pending_reminders": {
     "siift": {
       "last_reminded": "2026-09-30"
