@@ -1,0 +1,48 @@
+# Renders social reels (HyperFrames HTML -> MP4) in the cloud, because the
+# owner's PC is too weak to run headless Chrome + FFmpeg locally.
+# Only runs on video-* branches, so it never touches the live site on main.
+name: Render reel
+
+on:
+  push:
+    branches: ["video-*"]
+    paths: ["social_videos/**", ".github/workflows/render-reel.yml"]
+  workflow_dispatch:
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install FFmpeg and fonts
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-noto-color-emoji
+
+      - name: Render every reel folder that has an index.html
+        run: |
+          mkdir -p out
+          for dir in social_videos/*/; do
+            name=$(basename "$dir")
+            [ -f "$dir/index.html" ] || continue
+            echo "::group::$name"
+            (cd "$dir" && npx -y hyperframes@0.8.145 lint) || echo "lint reported issues for $name"
+            start=$(date +%s)
+            (cd "$dir" && npx -y hyperframes@0.8.145 render --fps 30 --quality high -o "$GITHUB_WORKSPACE/out/$name.mp4")
+            echo "$name render seconds: $(( $(date +%s) - start ))" | tee -a out/render_log.txt
+            for t in 2 8 11.8 14; do
+              ffmpeg -loglevel error -y -ss "$t" -i "out/$name.mp4" -frames:v 1 "out/${name}_still_${t}s.png"
+            done
+            ffprobe -v error -show_entries format=duration,size:stream=width,height,codec_name -of default=nw=1 "out/$name.mp4" | tee -a out/render_log.txt
+            echo "::endgroup::"
+          done
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: reels
+          path: out/
+          retention-days: 30
