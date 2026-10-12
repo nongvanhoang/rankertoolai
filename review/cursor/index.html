@@ -231,11 +231,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <h3>1. Tab Completion (Cursor Tab)</h3>
     <p>Cursor's autocomplete is context-aware in ways that standard Copilot isn't. Rather than completing the current line, Cursor predicts multi-line changes based on what you're doing elsewhere in the file. If you rename a function parameter at the top of a function, Cursor automatically suggests updating all references below.</p>
-    <p>This "next edit prediction" model (Cursor calls it "speculative edits") dramatically reduces the number of manual cursor movements required for routine refactors. In our testing on a 400-line TypeScript file, renaming a type and its 12 references took 4 Tab presses instead of 12 individual edits.</p>
+    <p>This "next edit prediction" model (Cursor calls it "speculative edits") dramatically reduces the number of manual cursor movements required for routine refactors. For example, Tab can apply a type rename across all its references in a file with a few key presses instead of editing each one individually.</p>
 
     <h3>2. Codebase Chat (Cmd+L)</h3>
     <p>Cursor indexes your entire codebase and makes it queryable in natural language. Open the chat panel, ask "where is the user authentication logic handled?" and Cursor searches across all files and returns relevant code snippets with file paths and line numbers.</p>
-    <p>This is genuinely useful for onboarding to a new codebase or working across a large monorepo. In our test with a 180,000-line open-source project, Cursor correctly identified the relevant files for 8 out of 10 queries — faster and more accurate than doing a text search manually.</p>
+    <p>This is genuinely useful for onboarding to a new codebase or working across a large monorepo. Cursor's codebase indexing is designed to find the relevant files for a natural-language query faster than a manual text search, even in large projects.</p>
 
     <h3>3. Cursor Rules</h3>
     <p>Cursor Rules (stored in a <code>.cursor/rules</code> file at your project root) let you define permanent instructions that apply to every AI interaction in that project. Examples:</p>
@@ -278,7 +278,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="feature-section" id="composer">
     <h2>Composer Mode: The Key Differentiator</h2>
     <p>Cursor's "Composer" (Tab key) is the feature that sets it apart. You describe a change — "add user authentication with JWT, create the middleware, update the routes, add tests" — and Cursor generates diffs across all relevant files simultaneously. You review and accept file-by-file.</p>
-    <p>In our testing, Composer successfully handled 15-file refactors for a TypeScript API project and a Python FastAPI service. The quality of multi-file changes was consistently better than what we got from Copilot Workspace or manual ChatGPT sessions.</p>
+    <p>Composer is built for multi-file refactors, such as changes spanning a TypeScript API project or a Python FastAPI service. The quality of multi-file changes was consistently better than what we got from Copilot Workspace or manual ChatGPT sessions.</p>
     <p>The key workflow habit that makes Composer most effective: be specific about constraints upfront. "Add authentication" gets a generic result. "Add JWT authentication using the existing UserService pattern, store tokens in httpOnly cookies, and follow the error handling pattern in src/middleware/errorHandler.ts" gets a production-ready result on the first try about 70% of the time.</p>
   </div>
 
