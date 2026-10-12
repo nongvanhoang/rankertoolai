@@ -1,0 +1,126 @@
+{
+  "date": "2026-10-10",
+  "site": "https://rankertoolai.com",
+  "period_days": 7,
+  "date_range": {
+    "start": "2026-10-04",
+    "end": "2026-10-10"
+  },
+  "summary": {
+    "total_clicks": 0,
+    "total_impressions": 24,
+    "avg_ctr_pct": 0.0,
+    "avg_position": 12.0,
+    "indexed_pages_with_traffic": 15
+  },
+  "top_pages": [
+    {
+      "url": "/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 2
+    },
+    {
+      "url": "/about/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 3
+    },
+    {
+      "url": "/alternatives/gearup-booster/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 22
+    },
+    {
+      "url": "/alternatives/iubenda/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 49
+    },
+    {
+      "url": "/best/ai-tools-for-agencies/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr_pct": 0,
+      "position": 9
+    },
+    {
+      "url": "/blog/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 7
+    },
+    {
+      "url": "/blog/ai-tools-for-small-business/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 2
+    },
+    {
+      "url": "/blog/elevenlabs-review-voice-cloning/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 7
+    },
+    {
+      "url": "/blog/is-rytr-worth-it/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 7
+    },
+    {
+      "url": "/compare/wispr-flow-vs-superwhisper/",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr_pct": 0,
+      "position": 31.6
+    },
+    {
+      "url": "/coupons/grammarly/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 7
+    },
+    {
+      "url": "/methodology/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 5
+    },
+    {
+      "url": "/pricing/gearup-booster/",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr_pct": 0,
+      "position": 13.8
+    },
+    {
+      "url": "/review/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 7
+    },
+    {
+      "url": "/review/gemini/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 7
+    }
+  ],
+  "near_miss_pages": [],
+  "generated_at": "2026-10-12T23:00:15.269854+00:00",
+  "note": "No credentials in this file — safe to commit. Generated locally where the real GSC OAuth token lives; the cloud ads-signal routine reads only this JSON."
+}
