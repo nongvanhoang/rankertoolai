@@ -1,3 +1,6 @@
+# Play.ht shut down Dec 31, 2025 - send old affiliate clicks to the alternatives page
+/go/playht /alternatives/playht/ 302
+/go/playht/ /alternatives/playht/ 302
 # WWW to apex redirect
 https://www.rankertoolai.com/* https://rankertoolai.com/:splat 301
 
