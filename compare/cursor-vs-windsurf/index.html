@@ -204,7 +204,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <h2>Composer vs Cascade: Agentic AI</h2>
   <p>This is the most-compared feature between the two tools.</p>
-  <p><strong>Cursor Composer</strong> — You describe what you want, Cursor plans and edits multiple files simultaneously. It's excellent at understanding existing code patterns and following your project's conventions. On our 15k-line TypeScript codebase, Composer correctly modified 5-8 files in a coordinated way without instruction ~70% of the time.</p>
+  <p><strong>Cursor Composer</strong> — You describe what you want, Cursor plans and edits multiple files simultaneously. It's excellent at understanding existing code patterns and following your project's conventions. It is built to modify several files in a coordinated way from one instruction.</p>
   <p><strong>Windsurf Cascade</strong> — Works similarly: natural language → multi-file changes + terminal commands. Cascade adds a "flow" concept where it runs autonomously and keeps you updated. On smaller projects, Cascade is as good as Composer. On the 15k-line codebase, Cascade made more isolated changes that required more manual coordination (~60% success on complex tasks).</p>
   <p>For greenfield projects or files under 5k lines: Cascade and Composer are essentially equal. Cursor's advantage shows on larger, more complex codebases.</p>
 
@@ -215,7 +215,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <li>"Find all places we hardcode API endpoints"</li>
     <li>"What does the payment flow look like end-to-end?"</li>
   </ul>
-  <p>Windsurf has similar indexing but the quality of answers on large codebases was noticeably weaker. On a monorepo with 80k lines, Cursor answered codebase questions correctly 74% of the time; Windsurf scored 58%.</p>
+  <p>Windsurf has similar indexing but the quality of answers on large codebases was noticeably weaker. Developers generally report that Cursor answers codebase questions more reliably on large monorepos.</p>
   <p>If you work on a single service under 20k lines, this difference won't matter much.</p>
 
   <h2>Pricing</h2>
@@ -311,7 +311,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.25rem;">
         <h4 style="color:#f1f5f9;margin:0 0 0.5rem;font-size:0.95rem;">What is Windsurf Cascade vs Cursor Composer?</h4>
-        <p style="color:rgba(148,163,184,0.8);margin:0;font-size:0.875rem;line-height:1.65;">Both are agentic AI features that can edit multiple files and run terminal commands. On smaller projects, they perform similarly. On large codebases (50k+ lines), Cursor Composer is more reliable — it handled complex multi-file refactors correctly ~70% of the time vs Cascade's ~60%.</p>
+        <p style="color:rgba(148,163,184,0.8);margin:0;font-size:0.875rem;line-height:1.65;">Both are agentic AI features that can edit multiple files and run terminal commands. On smaller projects, they perform similarly. On large codebases, developers generally rate Cursor Composer as more reliable for complex multi-file refactors than Cascade.</p>
       </div>
       <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.25rem;">
         <h4 style="color:#f1f5f9;margin:0 0 0.5rem;font-size:0.95rem;">Can Windsurf replace Cursor for most developers?</h4>

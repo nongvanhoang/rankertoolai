@@ -1202,5 +1202,52 @@
     <changefreq>weekly</changefreq>
     <priority>0.86</priority>
   </url>
-
+  <url>
+    <loc>https://rankertoolai.com/blog/chatgpt-vs-claude-for-writing/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/blog/deepseek-vs-chatgpt/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/blog/chatgpt-vs-claude-vs-gemini/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/compare/jasper-vs-writesonic/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/compare/surfer-seo-vs-clearscope/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/compare/midjourney-vs-stable-diffusion/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/compare/elevenlabs-vs-murf-ai/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/blog/best-ai-voice-cloning-tools-2026/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
 </urlset>
