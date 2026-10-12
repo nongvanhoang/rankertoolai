@@ -1,0 +1,77 @@
+# Renders social reels (HyperFrames HTML -> MP4) in the cloud, because the
+# owner's PC is too weak to run headless Chrome + FFmpeg locally, then sends
+# each new MP4 + caption to the owner's Telegram so it can be posted from the phone.
+# Only runs on video-* branches, so it never touches the live site on main.
+name: Render reel + Telegram
+
+on:
+  push:
+    branches: ["video-*"]
+    paths: ["social_videos/**"]
+  workflow_dispatch:
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install FFmpeg and fonts
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-noto-color-emoji
+
+      - name: Render reel folders changed in this push
+        run: |
+          mkdir -p out
+          changed=$(git diff --name-only HEAD~1 HEAD -- social_videos | cut -d/ -f2 | sort -u)
+          # Manual runs (or a first commit) render everything
+          if [ -z "$changed" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            changed=$(ls social_videos)
+          fi
+          for name in $changed; do
+            dir="social_videos/$name"
+            [ -f "$dir/index.html" ] || continue
+            echo "::group::$name"
+            (cd "$dir" && npx -y hyperframes@0.8.145 lint) || echo "lint reported issues for $name"
+            start=$(date +%s)
+            (cd "$dir" && npx -y hyperframes@0.8.145 render --fps 30 --quality high -o "$GITHUB_WORKSPACE/out/$name.mp4")
+            echo "$name render seconds: $(( $(date +%s) - start ))" | tee -a out/render_log.txt
+            dur=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "out/$name.mp4")
+            for f in 0.15 0.4 0.65 0.9; do
+              t=$(awk "BEGIN{print $dur*$f}")
+              ffmpeg -loglevel error -y -ss "$t" -i "out/$name.mp4" -frames:v 1 "out/${name}_still_${f}.png"
+            done
+            [ -f "$dir/caption.txt" ] && cp "$dir/caption.txt" "out/${name}_caption.txt"
+            ffprobe -v error -show_entries format=duration,size:stream=width,height,codec_name -of default=nw=1 "out/$name.mp4" | tee -a out/render_log.txt
+            echo "::endgroup::"
+          done
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: reels
+          path: out/
+          retention-days: 30
+
+      - name: Send to Telegram
+        env:
+          TG_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TG_CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          if [ -z "$TG_TOKEN" ] || [ -z "$TG_CHAT" ]; then echo "Telegram secrets not set, skipping"; exit 0; fi
+          for mp4 in out/*.mp4; do
+            name=$(basename "$mp4" .mp4)
+            curl -sS -f "https://api.telegram.org/bot${TG_TOKEN}/sendVideo" \
+              -F chat_id="$TG_CHAT" -F supports_streaming=true \
+              -F video=@"$mp4" -F caption="🎬 $name" > /dev/null && echo "sent $name"
+            # Caption as its own message: long-press to copy on the phone
+            if [ -f "out/${name}_caption.txt" ]; then
+              curl -sS -f "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
+                -d chat_id="$TG_CHAT" --data-urlencode "text@out/${name}_caption.txt" > /dev/null
+            fi
+          done
