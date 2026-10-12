@@ -1,0 +1,15 @@
+{
+  "hook": {"html": "A <span class=\"coral\">full-size</span> keyboard that folds into your bag", "photo": "01.jpg", "photoClass": "mediumh contain"},
+  "photos": [
+    {"photo": "05.jpg", "html": "ProtoArc XK01: <span class=\"teal\">105 keys</span>, number pad included"},
+    {"photo": "06.jpg", "html": "Switch between <span class=\"yellow\">3 devices</span> over Bluetooth 5.1"},
+    {"photo": "08.jpg", "html": "USB-C · up to 150 days <span class=\"teal\">standby</span>", "note": "(standby, not typing time)"}
+  ],
+  "cards": {"kicker": "Folded", "items": [
+    {"v": "8.46 × 4.68 in", "l": "0.78 in thick"},
+    {"v": "10.5 oz", "l": "quiet scissor switches"}
+  ], "note": "Bluetooth only, no USB receiver."},
+  "offer": {"kicker": "Price (Sep 29)", "rows": ["Sale <b>$39.99</b> <span style=\"color:var(--muted);font-weight:600\">(reg. $53.99)</span>", "Extra 10% with <b>GFPHOANGNONGVAN</b>"], "note": "Check at checkout whether the code stacks with the sale."},
+  "url": "rankernest.com/review/<br />protoarc-xk01",
+  "disclose": "#ad · affiliate code, supports us at no extra cost"
+}

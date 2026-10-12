@@ -1,0 +1,15 @@
+{
+  "hook": {"html": "Back sore after <span class=\"coral\">8 hours</span> at the desk?", "photo": "04.jpg", "photoClass": "mediumh"},
+  "photos": [
+    {"photo": "03.jpg", "photoClass": "tall contain", "html": "ProtoArc EC200: <span class=\"teal\">8 adjustment points</span> to fit your body"},
+    {"photo": "07.jpg", "html": "Lumbar moves 2.36\" up/down, 0.8\" in/out · <span class=\"yellow\">sliding seat depth</span>"},
+    {"photo": "08.jpg", "html": "3D headrest, adjustable armrests, <span class=\"teal\">recline + tilt</span>"}
+  ],
+  "cards": {"kicker": "Built for long days", "items": [
+    {"v": "Mesh back", "l": "air moves through, less heat"},
+    {"v": "55D foam seat", "l": "mid-firm, made to hold its shape"}
+  ]},
+  "offer": {"kicker": "Price", "rows": ["List price <b>$179.99</b>", "Extra 10% with <b>GFPHOANGNONGVAN</b>", "About <b>$18 off</b>"], "note": "Specs-based pick, not hands-on tested."},
+  "url": "rankernest.com/review/<br />protoarc-ec200",
+  "disclose": "#ad · affiliate code, supports us at no extra cost"
+}
