@@ -1,0 +1,11 @@
+{
+  "hook": {"html": "Touch your lamp.<br /><span class=\"coral\">Theirs lights up</span>, miles away.", "photo": "01.jpg", "photoClass": "mediumh contain"},
+  "photos": [
+    {"photo": "04.jpg", "html": "Each lamp uses its <span class=\"teal\">own home Wi-Fi</span>, so distance doesn't matter"},
+    {"photo": "06.jpg", "html": "<span class=\"yellow\">256 colors</span> + scheduling in the app"},
+    {"photo": "03.jpg", "html": "Several designs, one touch-to-glow idea"}
+  ],
+  "offer": {"kicker": "Prices at time of writing", "rows": ["Lumi from <b>$70</b> <span style=\"color:var(--muted);font-weight:600\">(reg. $109)</span>", "Classic &amp; Modern from <b>$99</b>", "Mid-Century from <b>$118</b>"], "note": "Heads-up: both homes need 2.4GHz Wi-Fi."},
+  "url": "rankernest.com/review/<br />friendshiplamps",
+  "disclose": "#ad · affiliate link, supports us at no extra cost"
+}

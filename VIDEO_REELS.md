@@ -38,3 +38,16 @@ owner usually works from a phone.
 - Text stays inside the safe zone: 260px from the top, 420px from the bottom.
 - Changing anything under `.github/workflows/` needs the owner to commit it via
   the GitHub web page (the local gh token has no `workflow` scope).
+
+## RankerNest photo reels (generator)
+
+RankerNest reels live here too, in folders named `social_videos/rankernest_<slug>_vN/`.
+Only use products whose status is `ok` in RankerNest's `social/asset_permissions.json`
+(merchant photos). Amazon product images are not allowed.
+
+1. Copy 4 cleared photos into the new folder as `.jpg` + `logo.svg` (RankerNest white mark).
+   Skip merchant photos that make health, before/after or "vs other brands" claims.
+2. Write a spec like `reel_tools/specs/switchbot.json` (hook, 3 photo scenes, optional
+   fact cards, offer/price, url, disclose). Every number must be on the review page.
+3. `node reel_tools/make_rn_reel.js reel_tools/specs/<name>.json social_videos/rankernest_<slug>_v1`
+4. Add `caption.txt` (ends with `#ad — affiliate link…`), commit, push. Telegram gets it ~4 min later.

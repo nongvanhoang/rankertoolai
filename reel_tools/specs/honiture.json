@@ -1,0 +1,15 @@
+{
+  "hook": {"html": "Same vacuum,<br /><span class=\"coral\">$80 apart.</span> Which one?", "photo": "01.jpg", "photoClass": "mediumh contain"},
+  "photos": [
+    {"photo": "03.jpg", "html": "Honiture X7: <span class=\"teal\">45kPa</span> suction, 7-layer HEPA filter"},
+    {"photo": "06.jpg", "html": "Up to <span class=\"yellow\">60 min</span> rated runtime · 1.5L dust cup"},
+    {"photo": "05.jpg", "html": "Self-standing, 5.84 lbs"}
+  ],
+  "cards": {"kicker": "X7 vs X7 Pet", "items": [
+    {"v": "X7 · $179.99", "l": "the core vacuum"},
+    {"v": "X7 Pet · $259.99", "l": "same core + pet grooming tool + anti-mite brush"}
+  ], "note": "Same suction, runtime and filter on both."},
+  "offer": {"kicker": "Our take", "rows": ["Pet hair mostly on <b>floors</b>? The <b>$179.99 X7</b> is enough.", "Grooming pets + mattresses? <b>X7 Pet</b>."], "note": "Specs-based pick, not hands-on tested."},
+  "url": "rankernest.com/review/<br />honiture-x7-pet",
+  "disclose": "#ad · affiliate link, supports us at no extra cost"
+}

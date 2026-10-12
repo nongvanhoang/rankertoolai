@@ -1,0 +1,11 @@
+{
+  "hook": {"html": "Tired of <span class=\"coral\">washing the mop</span> yourself?", "photo": "01.jpg", "photoClass": "mediumh contain"},
+  "photos": [
+    {"photo": "05.jpg", "html": "SwitchBot S20 washes &amp; dries its mop, <span class=\"teal\">refills and drains water</span> on its own"},
+    {"photo": "06.jpg", "html": "<span class=\"yellow\">LiDAR + AI camera</span> navigation for mapping and obstacles"},
+    {"photo": "04.jpg", "html": "<span class=\"teal\">10,000Pa</span> suction, anti-tangle system"}
+  ],
+  "offer": {"kicker": "Price", "rows": ["SwitchBot S20: <b>$799.99</b>", "Vacuum + mop, fully automated"], "note": "Premium price. Check the live price for site-wide promos. Specs-based pick, not hands-on tested."},
+  "url": "rankernest.com/review/<br />switchbot-s20-vacuum",
+  "disclose": "#ad · affiliate link, supports us at no extra cost"
+}
