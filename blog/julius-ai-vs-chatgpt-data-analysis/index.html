@@ -279,47 +279,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 
   <div class="callout">
-    <p><strong style="color:#fbbf24;">Quick Verdict:</strong> I ran 20 identical data tasks through both Julius AI and ChatGPT's Code Interpreter. The results surprised me. Julius AI was consistently faster to a useful answer for non-technical users — no prompt engineering, automatic chart generation, persistent data context. ChatGPT wins on flexibility and handling edge cases. The right choice depends entirely on who is doing the analysis.</p>
+    <p><strong style="color:#fbbf24;">Quick Verdict:</strong> Julius AI gets non-technical users to a useful answer faster — no prompt engineering, automatic charts, and persistent data context. ChatGPT's Code Interpreter wins on flexibility, statistical depth and edge cases. The right choice depends on who is doing the analysis.</p>
   </div>
 
   <div class="article-body">
-    <p>I ran 20 identical data tasks through both Julius AI and ChatGPT's Code Interpreter. The results surprised me — not because one tool dominated, but because they're genuinely solving different problems for different users.</p>
-
-    <p>Context: I'm not a data scientist. I'm a marketing analyst who works with spreadsheets daily. I regularly hand off data questions to colleagues who can code, purely because the friction of getting ChatGPT to produce exactly what I need was higher than just asking someone. Julius AI's pitch is that it eliminates that friction. Let's see if it actually does.</p>
+    <p>Both tools can analyze an uploaded spreadsheet, but they are solving different problems for different users: Julius AI is built only for data work, while ChatGPT is a general assistant whose data analysis is one feature among many.</p>
+    <p>This comparison is based on both products' documentation, current pricing and what users report — not an in-house benchmark.</p>
   </div>
 
-  <h2>Test Methodology: 20 Tasks Across 4 Categories</h2>
-
-  <div class="article-body">
-    <p>I used a real dataset: 18 months of e-commerce sales data, approximately 14,000 rows across 8 columns (date, product, category, revenue, units, region, customer type, campaign source). This is a realistic dataset that marketing and operations teams deal with regularly.</p>
-
-    <p>I ran the same 20 prompts through both tools, scored each on:</p>
-    <ul>
-      <li><strong>Accuracy</strong> — did it get the right answer?</li>
-      <li><strong>Time to useful output</strong> — how many prompts to get what I actually needed?</li>
-      <li><strong>Prompt engineering required</strong> — how specific did I need to be?</li>
-      <li><strong>Chart quality</strong> — if a chart was produced, was it readable and useful?</li>
-    </ul>
-
-    <p>The 20 tasks were split across four categories:</p>
-  </div>
+  <h2>How They Compare by Type of Task</h2>
 
   <table class="vs-table">
     <thead>
-      <tr><th>Category</th><th>Tasks</th><th>Julius AI Wins</th><th>ChatGPT Wins</th><th>Tie</th></tr>
+      <tr><th>Task type</th><th>Usually better</th><th>Why</th></tr>
     </thead>
     <tbody>
-      <tr><td><strong style="color:#f1f5f9;">Descriptive Statistics</strong></td><td>5</td><td class="win-julius">3</td><td class="win-gpt">1</td><td class="tie-col">1</td></tr>
-      <tr><td><strong style="color:#f1f5f9;">Correlation Analysis</strong></td><td>5</td><td class="win-julius">4</td><td class="win-gpt">0</td><td class="tie-col">1</td></tr>
-      <tr><td><strong style="color:#f1f5f9;">Trend Visualization</strong></td><td>5</td><td class="win-julius">4</td><td class="win-gpt">1</td><td class="tie-col">0</td></tr>
-      <tr><td><strong style="color:#f1f5f9;">Regression &amp; Prediction</strong></td><td>5</td><td class="win-julius">1</td><td class="win-gpt">3</td><td class="tie-col">1</td></tr>
-      <tr><td><strong style="color:#f1f5f9;">TOTAL</strong></td><td><strong>20</strong></td><td class="win-julius">12</td><td class="win-gpt">5</td><td class="tie-col">3</td></tr>
+      <tr><td><strong>Descriptive statistics</strong></td><td class="win-julius">Julius AI</td><td>Tables plus a chart by default, no follow-up prompts</td></tr>
+      <tr><td><strong>Correlation analysis</strong></td><td class="win-julius">Julius AI</td><td>Heatmaps and plain-English explanations by default</td></tr>
+      <tr><td><strong>Trend charts</strong></td><td class="win-julius">Julius AI</td><td>Labeled, presentation-ready charts without detailed instructions</td></tr>
+      <tr><td><strong>Forecasting &amp; regression</strong></td><td class="win-gpt">ChatGPT</td><td>Builds real statistical models with diagnostics in Python</td></tr>
+      <tr><td><strong>Custom calculations</strong></td><td class="win-gpt">ChatGPT</td><td>Full Python flexibility for unusual logic</td></tr>
     </tbody>
   </table>
-
-  <div class="article-body">
-    <p>Julius AI won 12 of 20 tasks overall. But before you take that as the final word, the <em>why</em> matters significantly — and ChatGPT's 5 wins were in the most technically demanding category.</p>
-  </div>
 
   <!-- First Julius AI CTA -->
   <div class="cta-box">
@@ -329,71 +310,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p style="font-size:0.8rem;color:var(--color-text-muted);margin:0.5rem 0 0;">Use code <span class="coupon-badge">25RQK3UL</span> for 25% off Pro</p>
   </div>
 
-  <h2>Category Deep-Dives</h2>
+  <h2>Where Each Tool Pulls Ahead</h2>
 
-  <h3>1. Descriptive Statistics: Julius AI Wins 3-1-1</h3>
-
+  <h3>1. Descriptive Statistics: Julius AI</h3>
   <div class="article-body">
-    <p>Tasks in this category: summary statistics by product category, top/bottom performers, month-over-month change, average order value by customer segment, distribution of revenue by region.</p>
-
-    <p><strong>Julius AI approach:</strong> Upload CSV, type "show me summary statistics by product category." Result: a clean formatted table plus an automatically generated bar chart, all within 15-20 seconds. Zero additional prompting required on 4 of 5 tasks.</p>
-
-    <p><strong>ChatGPT approach:</strong> Upload CSV, type the same prompt. Result: usually correct numbers, but typically returned as plain text or a code block. To get a visualization, I had to follow up with "now make a chart." For non-technical users, reading a Python table output is not the same as reading a visual.</p>
-
-    <p>Where ChatGPT won: when I asked for a very specific custom calculation — revenue per unit sold, adjusted by a promotional discount flag in the data. ChatGPT's Code Interpreter correctly constructed the custom formula. Julius AI got the calculation right on the second try after I clarified the logic.</p>
+    <p>Ask Julius AI for "summary statistics by product category" and it returns a formatted table plus a bar chart. ChatGPT usually gets the numbers right too, but tends to return plain text or a code block, so getting a visual takes a follow-up prompt. ChatGPT is the better pick when the calculation itself is unusual — say, revenue per unit adjusted by a promotion flag.</p>
   </div>
 
-  <div class="test-result-grid">
-    <div class="test-card" style="border-color:rgba(34,197,94,0.25);">
-      <div class="tool-name" style="color:#4ade80;">Julius AI</div>
-      <div class="tool-score" style="color:#4ade80;">Wins 3</div>
-      <div class="tool-desc">Instant tables + charts. No follow-up prompts needed for standard summary stats. Non-technical friendly output by default.</div>
-    </div>
-    <div class="test-card" style="border-color:rgba(96,165,250,0.2);">
-      <div class="tool-name" style="color:#60a5fa;">ChatGPT CI</div>
-      <div class="tool-score" style="color:#60a5fa;">Wins 1</div>
-      <div class="tool-desc">Better at custom calculations and edge-case logic. Output requires additional prompting to get visuals.</div>
-    </div>
+  <h3>2. Correlation Analysis: Julius AI</h3>
+  <div class="article-body">
+    <p>This is where the difference shows most. Asking "what correlates with high-revenue orders?" in Julius AI typically gives a heatmap and a plain-English summary. ChatGPT computes the same correlations accurately, but you usually have to ask for the heatmap, the colors and the highlighting separately.</p>
   </div>
 
-  <h3>2. Correlation Analysis: Julius AI Wins 4-0-1</h3>
-
+  <h3>3. Trend Visualization: Julius AI (except forecasting)</h3>
   <div class="article-body">
-    <p>Tasks: correlation between campaign source and revenue, relationship between day-of-week and conversion rate, seasonal patterns in product categories, regional performance clustering.</p>
-
-    <p>This is where Julius AI's biggest advantage showed up most clearly. When I asked "what correlates with high revenue orders in this dataset?", Julius AI produced a correlation heatmap automatically, highlighted the strongest relationships in its response text, and suggested three follow-up questions I hadn't thought to ask.</p>
-
-    <p>ChatGPT produced accurate correlation calculations, but the output was a table of numbers. I had to specifically request a heatmap, then specify the color scheme, then request that it highlight values above 0.7. By the time I got something visually useful, I'd spent 4-5 additional prompts.</p>
-
-    <p>For a non-technical stakeholder who needs to present findings to a team, the Julius AI output is presentation-ready within one prompt. The ChatGPT output requires a technically-minded user to interpret and then reformat for a broader audience.</p>
-  </div>
-
-  <h3>3. Trend Visualization: Julius AI Wins 4-1-0</h3>
-
-  <div class="article-body">
-    <p>Tasks: revenue trend over 18 months, product category performance over time, weekly seasonality pattern, revenue forecast for next 3 months (simple linear), campaign ROI trend by quarter.</p>
-
-    <p>Julius AI's chart auto-generation is its most impressive single feature. For trend visualization, it consistently produced clean, labeled, properly-scaled time series charts without any prompting about chart type, axis labels, or color. The charts looked like something from a professional BI dashboard.</p>
-
-    <p>ChatGPT can produce equivalent charts, but it requires explicit instruction: "plot this as a time series line chart, label the X axis by month and year, use different colors per category, add a legend." If you know enough to write that prompt, you'll get a great result. If you don't, you'll get a matplotlib default that's technically correct but hard to read.</p>
-
-    <p>ChatGPT won one trend visualization task: forecasting. When I asked for a revenue forecast with confidence intervals, ChatGPT's Code Interpreter built a proper ARIMA model and correctly explained the statistical assumptions. Julius AI's forecast was simpler (linear trend only) and didn't surface the uncertainty in the prediction.</p>
+    <p>Julius AI's automatic charts are its most impressive single feature for trends over time. ChatGPT can produce equivalent charts if you spell out the chart type, axes, colors and legend; if you don't, you get a technically correct but plain default plot. For forecasts with confidence intervals, ChatGPT's Code Interpreter can build proper time-series models, while Julius AI leans toward simpler trend lines.</p>
   </div>
 
   <div class="callout-blue">
-    <p><strong style="color:#60a5fa;">ChatGPT advantage:</strong> Statistical rigor. For tasks that require genuine statistical modeling — ARIMA forecasting, multivariate regression with diagnostics, hypothesis testing — ChatGPT's Code Interpreter is substantially more powerful. Julius AI handles the common 80% of analysis tasks; ChatGPT handles the advanced 20%.</p>
+    <p><strong>ChatGPT advantage:</strong> Statistical rigor. For forecasting, multivariate regression and model diagnostics, a code-based approach is more flexible and more transparent about its assumptions.</p>
   </div>
 
-  <h3>4. Regression &amp; Prediction: ChatGPT Wins 3-1-1</h3>
-
+  <h3>4. Regression &amp; Prediction: ChatGPT</h3>
   <div class="article-body">
-    <p>Tasks: predict revenue from marketing spend, identify key drivers of high-value orders, linear regression of price vs units sold, simple customer lifetime value estimate, feature importance ranking.</p>
-
-    <p>This is ChatGPT's territory. The Code Interpreter builds actual scikit-learn models, produces diagnostic plots (residuals, Q-Q plots), reports R-squared and p-values, and can explain what the coefficients actually mean. For anyone who needs genuine predictive modeling, this is a meaningful capability gap.</p>
-
-    <p>Julius AI produced reasonable regression results for the simpler tasks — it gave me slope, intercept, and R-squared for basic linear regression. But it couldn't match ChatGPT on multivariate regression with diagnostics, and it didn't surface model quality concerns the way a code-based approach does.</p>
-
-    <p>Julius AI won one regression task: explaining the output to a non-technical user. When I asked "what does this mean in plain English?", Julius AI's explanation was substantially clearer than ChatGPT's. Julius AI is optimized for communication, not just computation.</p>
+    <p>This is ChatGPT's territory: Code Interpreter can build real models (for example with scikit-learn), produce diagnostic plots and report fit statistics. Julius AI handles basic linear regression and is better at explaining results in plain English, but doesn't match ChatGPT on multivariate models or model-quality checks.</p>
   </div>
 
   <!-- Second Julius AI CTA -->
@@ -412,7 +352,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </thead>
     <tbody>
       <tr><td>Accuracy (standard tasks)</td><td>High</td><td>High</td><td class="tie-col">Tie</td></tr>
-      <tr><td>Prompts to useful output</td><td class="win-julius">1.2 avg</td><td>2.8 avg</td><td class="win-julius">Julius AI</td></tr>
+      <tr><td>Prompts to useful output</td><td class="win-julius">Fewer (charts by default)</td><td>More (needs specific prompts)</td><td class="win-julius">Julius AI</td></tr>
       <tr><td>Chart quality (auto)</td><td class="win-julius">Excellent</td><td>Requires prompting</td><td class="win-julius">Julius AI</td></tr>
       <tr><td>Statistical rigor (advanced)</td><td>Basic</td><td class="win-gpt">Full (ARIMA, ML)</td><td class="win-gpt">ChatGPT</td></tr>
       <tr><td>Data context retention</td><td class="win-julius">Full session</td><td>Good (resets)</td><td class="win-julius">Julius AI</td></tr>
@@ -464,13 +404,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <h2>What Julius AI Does That ChatGPT Can't Replicate Easily</h2>
 
   <div class="article-body">
-    <p>After 20 tasks, three things stood out as genuine differentiators — not just "slightly better," but meaningfully different:</p>
+    <p>Three things stand out as genuine differentiators — not just "slightly better," but meaningfully different:</p>
 
     <p><strong>1. Data context persistence.</strong> In Julius AI, your entire conversation happens in the context of the data you uploaded. Every question builds on the previous ones. ChatGPT's Code Interpreter does maintain context within a session, but it can lose track of data in long conversations in a way Julius AI doesn't.</p>
 
     <p><strong>2. Zero-friction chart generation.</strong> Every analysis in Julius AI produces a chart by default, without asking. The charts are clean enough to drop directly into a slide deck. This sounds minor until you're in a meeting that started 3 minutes ago and you need a visual right now.</p>
 
-    <p><strong>3. Proactive insight suggestions.</strong> Julius AI regularly surfaced "you might also want to look at..." suggestions after answering my question. On three occasions, those suggestions led me to findings I hadn't thought to look for. This felt more like working with a smart colleague than using a tool.</p>
+    <p><strong>3. Proactive insight suggestions.</strong> After each answer, Julius AI suggests related questions ("you might also want to look at..."), which helps users who don't know what to ask next — it feels more like working with a colleague than using a tool.</p>
   </div>
 
   <h2>What ChatGPT Code Interpreter Does Better</h2>
@@ -494,7 +434,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <h2>Verdict: Different Tools for Different Users</h2>
 
   <div class="article-body">
-    <p>Julius AI wins for non-technical users — and by a wider margin than I expected going in. The 12-5 task score understates the qualitative difference in experience: Julius AI felt like having a data analyst sitting next to me, while ChatGPT felt like having a very smart developer who needed me to be specific about what I wanted.</p>
+    <p>Julius AI wins for non-technical users. It feels closer to having a data analyst who answers in charts and plain English, while ChatGPT feels like a very capable developer who needs you to be specific about what you want.</p>
 
     <p>ChatGPT Code Interpreter wins for developers, data scientists, and power users who need statistical rigor, custom code, or complex data transformations. If you're comfortable with Python and you need full flexibility, ChatGPT's Code Interpreter remains the more powerful tool.</p>
 
