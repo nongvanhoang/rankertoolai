@@ -1,6 +1,6 @@
 // Pinterest Tag — base pixel + conversion events
-// Replace REPLACE_TAG_ID with your actual Pinterest Tag ID from:
-// Pinterest Ads Manager -> Tools -> Conversions -> Pinterest Tag
+// Tag ID from Pinterest Ads Manager -> Conversions -> Tag manager (ad account 549770530822).
+// Don't put the ad account ID here: Pinterest warns "configured with an advertiser ID".
 !function(e){if(!window.pintrk){window.pintrk=function(){
   window.pintrk.queue.push(Array.prototype.slice.call(arguments))};
   var n=window.pintrk;n.queue=[],n.version="3.0";
@@ -9,7 +9,7 @@
   r.parentNode.insertBefore(t,r)
 }}("https://s.pinimg.com/ct/core.js");
 
-pintrk('load','549770530822');
+pintrk('load','2612617794940');
 pintrk('page');
 
 // Fire Lead event on affiliate redirect pages (/go/*)
