@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@500;700;800&display=block" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      /* RankerNest brand: near-black surface, warm off-white text, coral / yellow / teal accents */
+      :root {
+        --bg: #080b0d;
+        --panel: #12181b;
+        --text: #eef1ee;
+        --muted: #9aa3a0;
+        --coral: #ff4d6d;
+        --yellow: #ffc93c;
+        --teal: #06d6c4;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        width: 1080px; height: 1920px; overflow: hidden;
+        background: var(--bg); color: var(--text);
+        font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+      }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; }
+      #bg { position: absolute; inset: 0; }
+      .glow { position: absolute; width: 900px; height: 900px; border-radius: 50%; filter: blur(140px); }
+      #glow1 { background: var(--coral); opacity: 0.22; left: -320px; top: 120px; }
+      #glow2 { background: var(--teal); opacity: 0.16; right: -360px; bottom: 260px; }
+
+      /* Safe zone for Reels/TikTok UI: 260px top, 420px bottom */
+      .scene { position: absolute; left: 80px; right: 80px; top: 260px; bottom: 420px; display: flex; flex-direction: column; gap: 40px; }
+      .center { justify-content: center; }
+      .big { font-family: Fraunces, Georgia, serif; font-size: 96px; font-weight: 700; line-height: 1.05; letter-spacing: -0.02em; }
+      .mid { font-family: Fraunces, Georgia, serif; font-size: 60px; font-weight: 700; line-height: 1.14; }
+      .small { font-size: 38px; font-weight: 500; line-height: 1.35; color: var(--muted); }
+      .kicker { font-size: 36px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--yellow); }
+      .coral { color: var(--coral); }
+      .teal { color: var(--teal); }
+      .yellow { color: var(--yellow); }
+
+      .photo { width: 100%; border-radius: 36px; overflow: hidden; box-shadow: 0 30px 90px rgba(0, 0, 0, 0.6); background: #fff; }
+      .photo img { width: 100%; display: block; }
+      .tall { height: 960px; }
+      .tall img { height: 100%; object-fit: cover; object-position: center top; transform-origin: center bottom; }
+      .mediumh { height: 720px; }
+      .mediumh img { height: 100%; object-fit: cover; object-position: center 30%; }
+
+      .stat { display: flex; flex-direction: column; gap: 6px; padding: 30px 36px; border-radius: 28px; background: var(--panel); border: 2px solid rgba(6, 214, 196, 0.35); }
+      .stat .v { font-family: Fraunces, Georgia, serif; font-size: 80px; font-weight: 700; line-height: 1; }
+      .stat .l { font-size: 36px; font-weight: 600; color: var(--muted); }
+
+      .deal { border: 4px dashed var(--yellow); border-radius: 28px; padding: 34px 40px; background: rgba(255, 201, 60, 0.08); display: flex; flex-direction: column; gap: 18px; }
+      .deal .row { font-size: 50px; font-weight: 800; line-height: 1.2; }
+      .deal .row b { color: var(--yellow); }
+      .ends { display: inline-block; align-self: flex-start; font-size: 38px; font-weight: 800; color: #1a0a0e; background: var(--coral); border-radius: 999px; padding: 14px 30px; }
+
+      .brand { display: flex; align-items: center; gap: 24px; }
+      .brand img { width: 120px; height: 120px; }
+      .brand span { font-family: Fraunces, Georgia, serif; font-size: 72px; font-weight: 700; }
+      .cta { font-size: 56px; font-weight: 800; line-height: 1.2; color: #1a0a0e; background: linear-gradient(90deg, var(--coral), var(--yellow)); border-radius: 30px; padding: 38px 46px; }
+      .url { font-size: 50px; font-weight: 800; }
+      .disclose { font-size: 34px; color: var(--muted); }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="21" data-width="1080" data-height="1920">
+      <div id="bg" class="clip" data-start="0" data-duration="21" data-track-index="0">
+        <div id="glow1" class="glow"></div>
+        <div id="glow2" class="glow"></div>
+      </div>
+
+      <!-- 1. Hook (merchant lifestyle photo) -->
+      <div id="s1" class="scene clip" data-start="0" data-duration="3.5" data-track-index="1">
+        <div class="big">Mulberry silk pillowcase<br /><span class="coral">from ~<div id="s1" class="scene clip" data-start="0" data-duration="3.5" data-track-index="1">
+        <div class="big">9</span></div>
+        <div class="photo mediumh"><img src="02.jpg" alt="" /></div>
+      </div>
+
+      <!-- 2. What it is (merchant photo: colours + momme) -->
+      <div id="s2" class="scene clip" data-start="3.5" data-duration="3.5" data-track-index="1">
+        <div class="photo tall"><img src="01.jpg" alt="" /></div>
+        <div class="mid">100% Grade 6A <span class="teal">mulberry silk</span> · 19 to 30 momme</div>
+      </div>
+
+      <!-- 3. Price (merchant photo: pillowcases) -->
+      <div id="s3" class="scene clip" data-start="7" data-duration="3.5" data-track-index="1">
+        <div class="photo tall"><img src="04.jpg" alt="" /></div>
+        <div class="mid">Pillowcases from <span class="yellow">~$19</span> (19 momme), <span class="yellow">~$25</span> (22 momme)</div>
+      </div>
+
+      <!-- 4. Trust + honest caveat -->
+      <div id="s4" class="scene clip center" data-start="10.5" data-duration="4" data-track-index="1">
+        <div class="kicker">Why we picked it</div>
+        <div class="stat"><span class="v">4.2/5</span><span class="l">on Trustpilot · 10,246 reviews</span></div>
+        <div class="stat"><span class="v">OEKO-TEX + GOTS</span><span class="l">certified silk</span></div>
+        <div class="small">Heads-up: ships from China, buyers report 2–3 weeks.</div>
+      </div>
+
+      <!-- 5. Dated offer -->
+      <div id="s5" class="scene clip center" data-start="14.5" data-duration="4" data-track-index="1">
+        <div class="kicker">6th Anniversary Sale</div>
+        <div class="ends">Ends Oct 22</div>
+        <div class="deal">
+          <div class="row">Free scrunchie on <b>$99+</b></div>
+          <div class="row">Free silk eye mask on <b>$159+</b></div>
+        </div>
+        <div class="small">Free shipping over $59 · no code needed</div>
+      </div>
+
+      <!-- 6. CTA -->
+      <div id="s6" class="scene clip center" data-start="18.5" data-duration="2.5" data-track-index="1">
+        <div class="brand"><img src="logo.svg" alt="" /><span>RankerNest</span></div>
+        <div class="cta">Full review → link in bio</div>
+        <div class="url">rankernest.com/<span class="yellow" style="color:var(--yellow)">silk</span></div>
+        <div class="disclose">#ad · affiliate link, supports us at no extra cost</div>
+      </div>
+    </div>
+
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#glow1", { x: 0, y: 0 }, { x: 240, y: 560, duration: 21, ease: "none" }, 0);
+      tl.fromTo("#glow2", { x: 0, y: 0 }, { x: -200, y: -520, duration: 21, ease: "none" }, 0);
+
+      const inUp = { opacity: 0, y: 70 };
+      const shown = { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" };
+      const photoIn = (sel, t, dur) => {
+        tl.fromTo(sel, { opacity: 0, scale: 0.94 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, t);
+        tl.fromTo(sel + " img", { scale: 1 }, { scale: 1.06, duration: dur, ease: "none" }, t); // slow push-in
+      };
+
+      // 1. Hook
+      tl.fromTo("#s1 .big", inUp, shown, 0.1);
+      photoIn("#s1 .photo", 0.6, 2.9);
+
+      // 2-3. Photo scenes
+      photoIn("#s2 .photo", 3.55, 3.45);
+      tl.fromTo("#s2 .mid", inUp, shown, 4.0);
+      photoIn("#s3 .photo", 7.05, 3.45);
+      tl.fromTo("#s3 .mid", inUp, shown, 7.5);
+
+      // 4. Trust
+      tl.fromTo("#s4 .kicker", inUp, shown, 10.55);
+      tl.fromTo("#s4 .stat", { opacity: 0, x: -100 }, { opacity: 1, x: 0, duration: 0.45, ease: "power3.out", stagger: 0.45 }, 10.8);
+      tl.fromTo("#s4 .small", inUp, shown, 12.0);
+
+      // 5. Offer
+      tl.fromTo("#s5 .kicker", inUp, shown, 14.55);
+      tl.fromTo("#s5 .ends", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(2)" }, 14.8);
+      tl.fromTo("#s5 .deal", { opacity: 0, scale: 0.88 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, 15.2);
+      tl.fromTo("#s5 .small", inUp, shown, 16.0);
+
+      // 6. CTA
+      tl.fromTo("#s6 .brand", inUp, shown, 18.55);
+      tl.fromTo("#s6 .cta", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.8)" }, 18.8);
+      tl.fromTo("#s6 .url", inUp, shown, 19.1);
+      tl.fromTo("#s6 .disclose", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 19.4);
+
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

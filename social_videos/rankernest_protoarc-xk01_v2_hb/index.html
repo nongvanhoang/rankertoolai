@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@500;700;800&display=block" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      /* RankerNest brand: near-black surface, warm off-white text, coral / yellow / teal accents */
+      :root {
+        --bg: #080b0d;
+        --panel: #12181b;
+        --text: #eef1ee;
+        --muted: #9aa3a0;
+        --coral: #ff4d6d;
+        --yellow: #ffc93c;
+        --teal: #06d6c4;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        width: 1080px; height: 1920px; overflow: hidden;
+        background: var(--bg); color: var(--text);
+        font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+      }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; }
+      #bg { position: absolute; inset: 0; }
+      .glow { position: absolute; width: 900px; height: 900px; border-radius: 50%; filter: blur(140px); }
+      #glow1 { background: var(--coral); opacity: 0.22; left: -320px; top: 120px; }
+      #glow2 { background: var(--teal); opacity: 0.16; right: -360px; bottom: 260px; }
+
+      /* Safe zone for Reels/TikTok UI: 260px top, 420px bottom */
+      .scene { position: absolute; left: 80px; right: 80px; top: 260px; bottom: 420px; display: flex; flex-direction: column; gap: 40px; }
+      .center { justify-content: center; }
+      .big { font-family: Fraunces, Georgia, serif; font-size: 96px; font-weight: 700; line-height: 1.05; letter-spacing: -0.02em; }
+      .mid { font-family: Fraunces, Georgia, serif; font-size: 60px; font-weight: 700; line-height: 1.14; }
+      .small { font-size: 38px; font-weight: 500; line-height: 1.35; color: var(--muted); }
+      .kicker { font-size: 36px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--yellow); }
+      .coral { color: var(--coral); }
+      .teal { color: var(--teal); }
+      .yellow { color: var(--yellow); }
+
+      .photo { width: 100%; border-radius: 36px; overflow: hidden; box-shadow: 0 30px 90px rgba(0, 0, 0, 0.6); background: #fff; }
+      .photo img { width: 100%; display: block; }
+      .tall { height: 920px; }
+      .tall img { height: 100%; object-fit: cover; object-position: center top; transform-origin: center bottom; }
+      .contain img { object-fit: contain; object-position: center; }
+      .mediumh { height: 720px; }
+      .mediumh img { height: 100%; object-fit: cover; object-position: center 30%; }
+
+      .stat { display: flex; flex-direction: column; gap: 6px; padding: 30px 36px; border-radius: 28px; background: var(--panel); border: 2px solid rgba(6, 214, 196, 0.35); }
+      .stat .v { font-family: Fraunces, Georgia, serif; font-size: 76px; font-weight: 700; line-height: 1.05; }
+      .stat .l { font-size: 36px; font-weight: 600; color: var(--muted); }
+
+      .deal { border: 4px dashed var(--yellow); border-radius: 28px; padding: 34px 40px; background: rgba(255, 201, 60, 0.08); display: flex; flex-direction: column; gap: 18px; }
+      .deal .row { font-size: 50px; font-weight: 800; line-height: 1.2; }
+      .deal .row b { color: var(--yellow); }
+      .ends { display: inline-block; align-self: flex-start; font-size: 38px; font-weight: 800; color: #1a0a0e; background: var(--coral); border-radius: 999px; padding: 14px 30px; }
+
+      .brand { display: flex; align-items: center; gap: 24px; }
+      .brand img { width: 120px; height: 120px; }
+      .brand span { font-family: Fraunces, Georgia, serif; font-size: 72px; font-weight: 700; }
+      .cta { font-size: 56px; font-weight: 800; line-height: 1.2; color: #1a0a0e; background: linear-gradient(90deg, var(--coral), var(--yellow)); border-radius: 30px; padding: 38px 46px; }
+      .url { font-size: 50px; font-weight: 800; }
+      .disclose { font-size: 34px; color: var(--muted); }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="24.5" data-width="1080" data-height="1920">
+      <div id="bg" class="clip" data-start="0" data-duration="24.5" data-track-index="0">
+        <div id="glow1" class="glow"></div>
+        <div id="glow2" class="glow"></div>
+      </div>
+
+      <div id="s0" class="scene clip" data-start="0" data-duration="3.5" data-track-index="1">
+        <div class="big">Laptop keyboard<br /><span class="coral">too cramped</span> on the road?</div>
+        <div class="photo mediumh contain"><img src="01.jpg" alt="" /></div>
+      </div>
+
+      <div id="p0" class="scene clip" data-start="3.5" data-duration="3.5" data-track-index="1">
+        <div class="photo tall"><img src="05.jpg" alt="" /></div>
+        <div class="mid">ProtoArc XK01: <span class="teal">105 keys</span>, number pad included</div>
+      </div>
+
+      <div id="p1" class="scene clip" data-start="7" data-duration="3.5" data-track-index="1">
+        <div class="photo tall"><img src="06.jpg" alt="" /></div>
+        <div class="mid">Switch between <span class="yellow">3 devices</span> over Bluetooth 5.1</div>
+      </div>
+
+      <div id="p2" class="scene clip" data-start="10.5" data-duration="3.5" data-track-index="1">
+        <div class="photo tall"><img src="08.jpg" alt="" /></div>
+        <div class="mid">USB-C · up to 150 days <span class="teal">standby</span></div>
+        <div class="small">(standby, not typing time)</div>
+      </div>
+
+      <div id="cards" class="scene clip center" data-start="14" data-duration="4" data-track-index="1">
+        <div class="kicker">Folded</div>
+        <div class="stat"><span class="v">8.46 × 4.68 in</span><span class="l">0.78 in thick</span></div>
+        <div class="stat"><span class="v">10.5 oz</span><span class="l">quiet scissor switches</span></div>
+        <div class="small">Bluetooth only, no USB receiver.</div>
+      </div>
+
+      <div id="offer" class="scene clip center" data-start="18" data-duration="4" data-track-index="1">
+        <div class="kicker">Price (Sep 29)</div>
+        <div class="deal">
+          <div class="row">Sale <b>$39.99</b> <span style="color:var(--muted);font-weight:600">(reg. $53.99)</span></div>
+          <div class="row">Extra 10% with <b>GFPHOANGNONGVAN</b></div>
+        </div>
+        <div class="small">Check at checkout whether the code stacks with the sale.</div>
+      </div>
+
+      <div id="cta" class="scene clip center" data-start="22" data-duration="2.5" data-track-index="1">
+        <div class="brand"><img src="logo.svg" alt="" /><span>RankerNest</span></div>
+        <div class="cta">Full review → link in bio</div>
+        <div class="url">rankernest.com/<span class="yellow" style="color:var(--yellow)">keyboard</span></div>
+        <div class="disclose">#ad · affiliate code, supports us at no extra cost</div>
+      </div>
+    </div>
+
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#glow1", { x: 0, y: 0 }, { x: 240, y: 560, duration: 24.5, ease: "none" }, 0);
+      tl.fromTo("#glow2", { x: 0, y: 0 }, { x: -200, y: -520, duration: 24.5, ease: "none" }, 0);
+
+      const inUp = { opacity: 0, y: 70 };
+      const shown = { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" };
+      const photoIn = (sel, t, dur) => {
+        tl.fromTo(sel, { opacity: 0, scale: 0.94 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, t);
+        tl.fromTo(sel + " img", { scale: 1 }, { scale: 1.06, duration: dur, ease: "none" }, t); // slow push-in
+      };
+
+      tl.fromTo("#s0 .big", inUp, shown, 0.1);
+      photoIn("#s0 .photo", 0.6, 2.9);
+      photoIn("#p0 .photo", 3.55, 3.45);
+      tl.fromTo("#p0 .mid", inUp, shown, 4);
+      photoIn("#p1 .photo", 7.05, 3.45);
+      tl.fromTo("#p1 .mid", inUp, shown, 7.5);
+      photoIn("#p2 .photo", 10.55, 3.45);
+      tl.fromTo("#p2 .mid", inUp, shown, 11);
+      tl.fromTo("#p2 .small", inUp, shown, 11.5);
+      tl.fromTo("#cards .kicker", inUp, shown, 14.05);
+      tl.fromTo("#cards .stat", { opacity: 0, x: -100 }, { opacity: 1, x: 0, duration: 0.45, ease: "power3.out", stagger: 0.4 }, 14.3);
+      tl.fromTo("#cards .small", inUp, shown, 15.6);
+      tl.fromTo("#offer .kicker", inUp, shown, 18.05);
+      tl.fromTo("#offer .deal", { opacity: 0, scale: 0.88 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, 18.7);
+      tl.fromTo("#offer .small", inUp, shown, 19.5);
+      tl.fromTo("#cta .brand", inUp, shown, 22.05);
+      tl.fromTo("#cta .cta", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.8)" }, 22.3);
+      tl.fromTo("#cta .url", inUp, shown, 22.6);
+      tl.fromTo("#cta .disclose", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 22.9);
+
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
