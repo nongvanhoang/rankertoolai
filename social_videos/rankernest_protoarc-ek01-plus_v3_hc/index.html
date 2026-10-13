@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@500;700;800&display=block" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      /* RankerNest brand: near-black surface, warm off-white text, coral / yellow / teal accents */
+      :root {
+        --bg: #080b0d;
+        --panel: #12181b;
+        --text: #eef1ee;
+        --muted: #9aa3a0;
+        --coral: #ff4d6d;
+        --yellow: #ffc93c;
+        --teal: #06d6c4;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        width: 1080px; height: 1920px; overflow: hidden;
+        background: var(--bg); color: var(--text);
+        font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+      }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; }
+      #bg { position: absolute; inset: 0; }
+      .glow { position: absolute; width: 900px; height: 900px; border-radius: 50%; filter: blur(140px); }
+      #glow1 { background: var(--coral); opacity: 0.22; left: -320px; top: 120px; }
+      #glow2 { background: var(--teal); opacity: 0.16; right: -360px; bottom: 260px; }
+
+      /* Safe zone for Reels/TikTok UI: 260px top, 420px bottom */
+      .scene { position: absolute; left: 80px; right: 80px; top: 260px; bottom: 420px; display: flex; flex-direction: column; gap: 40px; }
+      .center { justify-content: center; }
+      .serif { font-family: Fraunces, Georgia, serif; }
+      .big { font-family: Fraunces, Georgia, serif; font-size: 104px; font-weight: 700; line-height: 1.04; letter-spacing: -0.02em; }
+      .mid { font-family: Fraunces, Georgia, serif; font-size: 62px; font-weight: 700; line-height: 1.12; }
+      .small { font-size: 40px; font-weight: 500; line-height: 1.35; color: var(--muted); }
+      .kicker { font-size: 36px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--yellow); }
+      .coral { color: var(--coral); }
+      .teal { color: var(--teal); }
+
+      .photo { width: 100%; border-radius: 36px; overflow: hidden; box-shadow: 0 30px 90px rgba(0, 0, 0, 0.6); background: #fff; }
+      .photo img { width: 100%; display: block; }
+      .tall { height: 1000px; }
+      .tall img { height: 100%; object-fit: cover; object-position: center top; transform-origin: center bottom; }
+      .wide { height: 560px; }
+      .wide img { height: 100%; object-fit: cover; object-position: center 45%; }
+
+      .price { display: flex; align-items: baseline; gap: 22px; }
+      .price .num { font-family: Fraunces, Georgia, serif; font-size: 170px; font-weight: 700; line-height: 1; }
+      .codebox {
+        border: 4px dashed var(--yellow); border-radius: 28px; padding: 34px 40px;
+        background: rgba(255, 201, 60, 0.08);
+      }
+      .codebox .label { font-size: 34px; font-weight: 700; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; }
+      .codebox .code { font-size: 62px; font-weight: 800; letter-spacing: 0.02em; color: var(--yellow); margin-top: 6px; }
+      .codebox .note { font-size: 38px; font-weight: 500; color: var(--text); margin-top: 8px; }
+
+      .brand { display: flex; align-items: center; gap: 24px; }
+      .brand img { width: 120px; height: 120px; }
+      .brand span { font-family: Fraunces, Georgia, serif; font-size: 72px; font-weight: 700; }
+      .cta { font-size: 56px; font-weight: 800; line-height: 1.2; color: #1a0a0e; background: linear-gradient(90deg, var(--coral), var(--yellow)); border-radius: 30px; padding: 38px 46px; }
+      .url { font-size: 46px; font-weight: 800; }
+      .disclose { font-size: 34px; color: var(--muted); }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="20" data-width="1080" data-height="1920">
+      <div id="bg" class="clip" data-start="0" data-duration="20" data-track-index="0">
+        <div id="glow1" class="glow"></div>
+        <div id="glow2" class="glow"></div>
+      </div>
+
+      <!-- 1. Hook -->
+      <div id="s1" class="scene clip" data-start="0" data-duration="3.5" data-track-index="1">
+        <div class="big">Still typing on a<br /><span class="coral">flat keyboard</span> all day?</div>
+        <div class="photo wide"><img src="01.jpg" alt="" /></div>
+        <div class="small">ProtoArc EK01 Plus · split ergonomic keyboard</div>
+      </div>
+
+      <!-- 2. Mechanism (merchant photo: palm rest) -->
+      <div id="s2" class="scene clip" data-start="3.5" data-duration="3.5" data-track-index="1">
+        <div class="photo tall"><img src="03.jpg" alt="" /></div>
+        <div class="mid">Split, curved layout: <span class="teal">wrists at a more natural angle</span></div>
+      </div>
+
+      <!-- 3. Connectivity (merchant photo: 3 devices) -->
+      <div id="s3" class="scene clip" data-start="7" data-duration="3.5" data-track-index="1">
+        <div class="photo tall"><img src="05.jpg" alt="" /></div>
+        <div class="mid">Up to <span class="yellow" style="color: var(--yellow)">3 devices</span> · Bluetooth + 2.4G USB</div>
+      </div>
+
+      <!-- 4. Battery, with the honest caveat from our review -->
+      <div id="s4" class="scene clip" data-start="10.5" data-duration="3.5" data-track-index="1">
+        <div class="photo tall"><img src="04.jpg" alt="" /></div>
+        <div class="mid">2000mAh · ~200 days <span class="teal">standby</span></div>
+        <div class="small">(standby, not typing time)</div>
+      </div>
+
+      <!-- 5. Price + code -->
+      <div id="s5" class="scene clip center" data-start="14" data-duration="3.5" data-track-index="1">
+        <div class="kicker">List price</div>
+        <div class="price"><span class="num">$79.99</span></div>
+        <div class="codebox">
+          <div class="label">Extra 10% off at ProtoArc.com</div>
+          <div class="code">GFPHOANGNONGVAN</div>
+          <div class="note">About $8 off the list price</div>
+        </div>
+      </div>
+
+      <!-- 6. CTA -->
+      <div id="s6" class="scene clip center" data-start="17.5" data-duration="2.5" data-track-index="1">
+        <div class="brand"><img src="logo.svg" alt="" /><span>RankerNest</span></div>
+        <div class="cta">Full review → link in bio</div>
+        <div class="url">rankernest.com/<span class="yellow" style="color:var(--yellow)">desk</span></div>
+        <div class="disclose">#ad · affiliate code, supports us at no extra cost</div>
+      </div>
+    </div>
+
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#glow1", { x: 0, y: 0 }, { x: 240, y: 560, duration: 20, ease: "none" }, 0);
+      tl.fromTo("#glow2", { x: 0, y: 0 }, { x: -200, y: -520, duration: 20, ease: "none" }, 0);
+
+      const inUp = { opacity: 0, y: 70 };
+      const shown = { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" };
+      const photoIn = (sel, t, dur) => {
+        tl.fromTo(sel, { opacity: 0, scale: 0.94 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, t);
+        tl.fromTo(sel + " img", { scale: 1 }, { scale: 1.07, duration: dur, ease: "none" }, t); // slow push-in
+      };
+
+      // 1. Hook
+      tl.fromTo("#s1 .big", inUp, shown, 0.1);
+      photoIn("#s1 .photo", 0.6, 2.9);
+      tl.fromTo("#s1 .small", inUp, shown, 1.2);
+
+      // 2-4. Photo scenes
+      photoIn("#s2 .photo", 3.55, 3.45);
+      tl.fromTo("#s2 .mid", inUp, shown, 4.0);
+      photoIn("#s3 .photo", 7.05, 3.45);
+      tl.fromTo("#s3 .mid", inUp, shown, 7.5);
+      photoIn("#s4 .photo", 10.55, 3.45);
+      tl.fromTo("#s4 .mid", inUp, shown, 11.0);
+      tl.fromTo("#s4 .small", inUp, shown, 11.5);
+
+      // 5. Price + code
+      tl.fromTo("#s5 .kicker", inUp, shown, 14.05);
+      tl.fromTo("#s5 .price", inUp, shown, 14.2);
+      tl.fromTo("#s5 .codebox", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.8)" }, 14.9);
+
+      // 6. CTA
+      tl.fromTo("#s6 .brand", inUp, shown, 17.55);
+      tl.fromTo("#s6 .cta", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.8)" }, 17.8);
+      tl.fromTo("#s6 .url", inUp, shown, 18.1);
+      tl.fromTo("#s6 .disclose", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 18.4);
+
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
