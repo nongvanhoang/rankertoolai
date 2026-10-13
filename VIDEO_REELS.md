@@ -62,3 +62,22 @@ Optional tool, kept for later: `node reel_tools/add_music.js social_videos/<fold
 bakes a beat-synced Mixkit free-license track into a reel (moods in
 reel_tools/music/tracks.json). The *_v5 / *_v3 / ek01-plus_v4 folders from 2026-10-13 are
 the music versions; the previous version numbers are the original-sound ones to post.
+
+## Multi-platform posting kit (every reel gets one)
+
+Since 2026-10-13 every reel also gets a posting kit for Pinterest, YouTube Shorts,
+(LinkedIn), Facebook Reels, Threads, X, TikTok and the email newsletter, in the format
+of the Synthesia v3 kit the owner approved. Instagram keeps using caption.txt.
+
+1. Write `reel_tools/posts/<slug>.json` (copy a similar one). `site` is `rn` or `rta`,
+   `reel` is the social_videos folder to post, `kw` is the keyword landing page the video
+   shows (rankernest.com/<kw>, rankertoolai.com/<kw>). Facts ONLY from the review page /
+   caption.txt. Add `linkedin` only for work/B2B products. Add `expires` for sale-dated videos.
+2. `node reel_tools/make_posts.js reel_tools/posts/<slug>.json` → `social_posts/<reel>/`
+   (DANG_DA_KENH.txt + tg/*.html). It fails if any platform length limit is exceeded.
+3. Commit and push together with (or after) the reel. `.github/workflows/send-posts-tg.yml`
+   waits for the render to finish, then sends one Telegram message per channel (copy text in
+   tap-to-copy blocks) + the .txt file. Resend one: Actions → "Send posting kit" → Run workflow.
+
+Links: every channel has its own utm_source; utm_campaign=reel_video, utm_content=reel-<slug>
+(RankerNest's social/winners_report.py reads utm_content).
