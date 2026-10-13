@@ -51,3 +51,28 @@ Only use products whose status is `ok` in RankerNest's `social/asset_permissions
    fact cards, offer/price, url, disclose). Every number must be on the review page.
 3. `node reel_tools/make_rn_reel.js reel_tools/specs/<name>.json social_videos/rankernest_<slug>_v1`
 4. Add `caption.txt` (ends with `#ad — affiliate link…`), commit, push. Telegram gets it ~4 min later.
+
+## Background music (every reel gets it)
+
+Since 2026-10-13 every reel ships with a music bed baked in. Owner's choice: music
+pre-mixed into the MP4, NOT trending hit songs. Hit songs are copyrighted (muted or
+removed on IG/TikTok, and IG Business accounts may only use Meta's commercial library),
+so only free-license tracks go into the file.
+
+1. Build the reel folder as usual (index.html etc.).
+2. `node reel_tools/add_music.js social_videos/<folder> <mood>`
+   - moods (reel_tools/music/tracks.json): `tech` (AI tools / Synthesia), `home`
+     (vacuums, appliances, chairs), `fashion` (silk, beauty), `gadget` (keyboards,
+     desk gear), `warm` (gifts, lamps).
+   - Needs ffmpeg + internet the first time (downloads the Mixkit mp3 into
+     `reel_tools/music/cache/`, which is gitignored).
+3. Commit `music.m4a` together with the folder and push.
+
+What the script does: stretches the track to exactly 120 BPM and starts it on a beat
+at the track's drop, so every scene cut (all on 0.5s steps) lands on a beat. Keep scene
+starts/durations on 0.5s steps or the sync is lost. Loudness -14 LUFS; under any clip
+with `data-has-audio="true"` (the Synthesia avatar) the music drops ~15 dB.
+
+Adding a track: Mixkit only (license: social media + online ads OK, no attribution;
+not for TV/radio/games). Measure bpm and an on-beat `start` at the drop before adding
+it to tracks.json; a wrong bpm drifts off the cuts.
