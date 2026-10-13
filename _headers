@@ -7,16 +7,16 @@
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 
 /assets/css/*
-  Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=86400
 
 /assets/js/*
-  Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=86400
 
 /assets/logos/*
-  Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=86400
 
 /assets/images/logos/*
-  Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=86400
 
 /assets/images/favicon*
   Cache-Control: public, max-age=31536000, immutable
