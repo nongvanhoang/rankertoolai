@@ -19,8 +19,8 @@ const SITES = {
   rta: { domain: "rankertoolai.com", brand: "RankerToolAI", tag: "RankerToolAI", email: "bản tin RankerToolAI (Brevo, list #5)" },
 };
 const site = SITES[s.site];
-const link = (source, medium) =>
-  `https://${site.domain}/${s.kw}/?utm_source=${source}&utm_medium=${medium}&utm_campaign=reel_video&utm_content=reel-${s.slug}`;
+const link = (source, medium, content = s.slug) =>
+  `https://${site.domain}/${s.kw}/?utm_source=${source}&utm_medium=${medium}&utm_campaign=reel_video&utm_content=reel-${content}`;
 const short = `${site.domain}/${s.kw}`;
 const what = s.disclose === "code" ? "affiliate code" : "affiliate link";
 const disclosure = `#ad — ${what}. We may earn a commission at no extra cost to you.`;
@@ -162,3 +162,35 @@ channels.forEach((c, i) => {
   fs.writeFileSync(path.join(outDir, "tg", `${String(i + 1).padStart(2, "0")}_${c.key}.html`), m);
 });
 console.log(`${s.reel}: ${channels.length} channels, X ${xLen}/280, Pinterest desc ${pinDesc.length}/500 → social_posts/${s.reel}/`);
+
+// ---- hook-test variants (built by make_hook_variants.js): short kit for IG, YouTube Shorts, TikTok ----
+// Hooks are tested where the algorithm shows videos to strangers; the other channels keep hook A.
+for (const [k, v] of Object.entries(s.variants || {})) {
+  const reel = `${s.reel}_h${k}`, content = `${s.slug}-h${k}`;
+  const ig = fs.readFileSync(path.join(ROOT, "social_videos", reel, "caption.txt"), "utf8").trim();
+  const yt = [v.hook, s.summary, bullets, s.offer, s.caveat,
+    `Full review + current price:\n${link("youtube", "shorts", content)}`, disclosure, tags(allTags.slice(0, 5))]
+    .filter(Boolean).join("\n\n");
+  const tt = `#ad ${v.hook} ${s.tiktokLine || ""} Link in bio → ${s.kw.toUpperCase()}\n${tags(s.tiktokTags || allTags)}`.replace(/  +/g, " ");
+  const ytTitle = v.hook.replace(/[\s\p{Extended_Pictographic}‍️]+$/u, "") + ` | ${s.brandName} #shorts`;
+  if (ytTitle.length > 100) { console.error(`${reel}: YouTube title ${ytTitle.length}/100`); process.exit(1); }
+  const fields = [["INSTAGRAM caption", ig], ["YOUTUBE tiêu đề", ytTitle], ["YOUTUBE mô tả", yt], ["TIKTOK caption", tt]];
+
+  const vDir = path.join(ROOT, "social_posts", reel);
+  fs.rmSync(vDir, { recursive: true, force: true });
+  fs.mkdirSync(path.join(vDir, "tg"), { recursive: true });
+  let t = `VIDEO: ${reel}.mp4  |  THỬ KIỂU MỞ ĐẦU ${k.toUpperCase()} cho ${s.brandName} (bản gốc ${s.reel} = kiểu A)\n`;
+  t += `Chỉ đăng lên Instagram, YouTube Shorts, TikTok (nơi người lạ thấy video). Các kênh khác dùng bản A.\n`;
+  t += `Cài đặt YouTube/TikTok giống bản A. Link riêng utm_content=reel-${content} để so kiểu nào thắng.\n`;
+  if (s.expires) t += `⚠️ KHÔNG đăng sau ${s.expires} (${s.expiresNote}).\n`;
+  for (const [l, x] of fields) t += `\n${l}:\n${x}\n`;
+  fs.writeFileSync(path.join(vDir, "DANG_DA_KENH.txt"), t);
+
+  let m = `<b>🧪 ${esc(reel)}</b> · kiểu mở đầu ${k.toUpperCase()}\n<i>Chỉ đăng IG + YouTube Shorts + TikTok; cài đặt giống bản A.</i>`;
+  if (s.expires) m += `\n⚠️ <b>Không đăng sau ${esc(s.expires)}</b>`;
+  for (const [l, x] of fields) m += `\n\n<b>${esc(l)}:</b>\n<pre>${esc(x)}</pre>`;
+  if (m.length > 4000) { console.error(`${reel}: Telegram message too long (${m.length})`); process.exit(1); }
+  fs.writeFileSync(path.join(vDir, "tg", "01_hooktest.html"), m);
+  console.log(`  + ${reel} (hook ${k.toUpperCase()})`);
+}
+

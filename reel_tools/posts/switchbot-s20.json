@@ -1,17 +1,56 @@
 {
-  "site": "rn", "slug": "switchbot-s20", "reel": "rankernest_switchbot-s20_v2", "kw": "robot", "brandName": "SwitchBot",
-  "disclose": "link", "category": "Science & Technology", "pinterestCsv": true,
+  "site": "rn",
+  "slug": "switchbot-s20",
+  "reel": "rankernest_switchbot-s20_v2",
+  "kw": "robot",
+  "brandName": "SwitchBot",
+  "disclose": "link",
+  "category": "Science & Technology",
+  "pinterestCsv": true,
   "hook": "A robot vacuum that washes its own mop 🧽🤖",
   "summary": "SwitchBot S20 handles the mop chores for you.",
-  "points": ["10,000Pa suction", "LiDAR + AI camera navigation", "Auto mop washing/drying", "Auto water refill/drain"],
+  "points": [
+    "10,000Pa suction",
+    "LiDAR + AI camera navigation",
+    "Auto mop washing/drying",
+    "Auto water refill/drain"
+  ],
   "offer": "$799.99 list price, a premium pick; check the live price for promos.",
   "caveat": "Specs-based pick, not hands-on tested.",
-  "pinterest": {"title": "A Robot Vacuum That Washes Its Own Mop: SwitchBot S20", "board": "Cordless & Robot Vacuums", "alt": "SwitchBot S20 robot vacuum and mop with its base station", "keywords": "robot vacuum, robot mop, smart home gadgets, cleaning routine, home tech"},
+  "pinterest": {
+    "title": "A Robot Vacuum That Washes Its Own Mop: SwitchBot S20",
+    "board": "Cordless & Robot Vacuums",
+    "alt": "SwitchBot S20 robot vacuum and mop with its base station",
+    "keywords": "robot vacuum, robot mop, smart home gadgets, cleaning routine, home tech"
+  },
   "youtubeTitle": "A robot vacuum that washes its own mop: SwitchBot S20 in 20 seconds",
   "x": "A robot vacuum that washes its own mop: SwitchBot S20.\n\n10,000Pa suction, LiDAR + AI camera, auto mop wash/dry and water refill/drain. $799.99 list. Specs-based pick.",
-  "xTags": ["smarthome"],
+  "xTags": [
+    "smarthome"
+  ],
   "tiktokLine": "Auto mop washing, auto water refill, 10,000Pa.",
-  "tiktokTags": ["robotvacuum", "smarthome", "cleaningroutine", "homegadgets", "RankerNest"],
-  "hashtags": ["robotvacuum", "smarthome", "homegadgets", "cleaningroutine"],
-  "emailTitle": "Robot vacuum that washes its own mop: SwitchBot S20"
+  "tiktokTags": [
+    "robotvacuum",
+    "smarthome",
+    "cleaningroutine",
+    "homegadgets",
+    "RankerNest"
+  ],
+  "hashtags": [
+    "robotvacuum",
+    "smarthome",
+    "homegadgets",
+    "cleaningroutine"
+  ],
+  "emailTitle": "Robot vacuum that washes its own mop: SwitchBot S20",
+  "variants": {
+    "b": {
+      "html": "What does a<br /><span class=\"coral\">$799.99</span> robot vacuum do?",
+      "hook": "What does a $799.99 robot vacuum actually do? 🤖"
+    },
+    "c": {
+      "html": "A robot vacuum that<br /><span class=\"coral\">washes its own mop</span>",
+      "hook": "A robot vacuum that washes its own mop 🧽"
+    }
+  }
 }

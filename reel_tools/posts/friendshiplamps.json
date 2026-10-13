@@ -1,16 +1,54 @@
 {
-  "site": "rn", "slug": "friendshiplamps", "reel": "rankernest_friendshiplamps_v2", "kw": "lamp", "brandName": "Friendship Lamps",
-  "disclose": "link", "category": "Howto & Style", "pinterestCsv": true,
+  "site": "rn",
+  "slug": "friendshiplamps",
+  "reel": "rankernest_friendshiplamps_v2",
+  "kw": "lamp",
+  "brandName": "Friendship Lamps",
+  "disclose": "link",
+  "category": "Howto & Style",
+  "pinterestCsv": true,
   "hook": "Touch your lamp, theirs lights up, miles away 💡❤️",
   "summary": "Friendship Lamps pair over each home's own Wi-Fi, so distance doesn't matter.",
-  "points": ["256 colors and app scheduling", "Lumi from $70 (reg. $109)", "Classic & Modern from $99, Mid-Century from $118 (prices at time of writing)"],
+  "points": [
+    "256 colors and app scheduling",
+    "Lumi from $70 (reg. $109)",
+    "Classic & Modern from $99, Mid-Century from $118 (prices at time of writing)"
+  ],
   "caveat": "Heads-up: both homes need 2.4GHz Wi-Fi.",
-  "pinterest": {"title": "Touch Your Lamp, Theirs Lights Up: Friendship Lamps Explained", "board": "Long Distance Relationship Gifts", "alt": "Pair of Friendship Lamps glowing in two homes", "keywords": "long distance relationship gifts, friendship lamp, ldr gift, gifts for grandparents, christmas gift ideas"},
+  "pinterest": {
+    "title": "Touch Your Lamp, Theirs Lights Up: Friendship Lamps Explained",
+    "board": "Long Distance Relationship Gifts",
+    "alt": "Pair of Friendship Lamps glowing in two homes",
+    "keywords": "long distance relationship gifts, friendship lamp, ldr gift, gifts for grandparents, christmas gift ideas"
+  },
   "youtubeTitle": "Touch your lamp, theirs lights up: Friendship Lamps for long-distance love",
   "x": "Touch your lamp, theirs lights up, miles away 💡\n\nFriendship Lamps pair over each home's Wi-Fi. 256 colors, Lumi from $70. Both homes need 2.4GHz Wi-Fi.",
-  "xTags": ["giftideas"],
+  "xTags": [
+    "giftideas"
+  ],
   "tiktokLine": "A sweet gift for long-distance family and couples.",
-  "tiktokTags": ["longdistancerelationship", "giftideas", "friendshiplamp", "christmasgifts", "RankerNest"],
-  "hashtags": ["longdistancerelationship", "giftideas", "friendshiplamp", "christmasgifts"],
-  "emailTitle": "Gift idea: lamps that light up across the miles"
+  "tiktokTags": [
+    "longdistancerelationship",
+    "giftideas",
+    "friendshiplamp",
+    "christmasgifts",
+    "RankerNest"
+  ],
+  "hashtags": [
+    "longdistancerelationship",
+    "giftideas",
+    "friendshiplamp",
+    "christmasgifts"
+  ],
+  "emailTitle": "Gift idea: lamps that light up across the miles",
+  "variants": {
+    "b": {
+      "html": "A long-distance gift<br /><span class=\"coral\">from $70</span>",
+      "hook": "A long-distance gift from $70 💡"
+    },
+    "c": {
+      "html": "Gifting a friendship lamp?<br /><span class=\"coral\">Check their Wi-Fi first</span>",
+      "hook": "Gifting a friendship lamp? Check their Wi-Fi first 💡"
+    }
+  }
 }

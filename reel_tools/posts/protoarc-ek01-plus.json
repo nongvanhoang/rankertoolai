@@ -1,18 +1,61 @@
 {
-  "site": "rn", "slug": "protoarc-ek01-plus", "reel": "rankernest_protoarc-ek01-plus_v3", "kw": "desk", "brandName": "ProtoArc",
-  "disclose": "code", "category": "Science & Technology", "pinterestCsv": true,
+  "site": "rn",
+  "slug": "protoarc-ek01-plus",
+  "reel": "rankernest_protoarc-ek01-plus_v3",
+  "kw": "desk",
+  "brandName": "ProtoArc",
+  "disclose": "code",
+  "category": "Science & Technology",
+  "pinterestCsv": true,
   "hook": "Long days at the keyboard? ⌨️",
   "summary": "The ProtoArc EK01 Plus splits and curves the layout so your wrists sit at a more natural angle.",
-  "points": ["Pairs with up to 3 devices (Bluetooth + 2.4G USB)", "2000mAh battery, about 200 days standby (not typing time)", "$79.99 list price"],
+  "points": [
+    "Pairs with up to 3 devices (Bluetooth + 2.4G USB)",
+    "2000mAh battery, about 200 days standby (not typing time)",
+    "$79.99 list price"
+  ],
   "offer": "Extra 10% off at ProtoArc.com with code GFPHOANGNONGVAN.",
-  "pinterest": {"title": "Split Ergonomic Keyboard for Long Typing Days: ProtoArc EK01 Plus", "board": "WFH Desk Setup Ideas", "alt": "ProtoArc EK01 Plus split ergonomic keyboard on a desk", "keywords": "ergonomic keyboard, desk setup, home office ideas, wfh setup, split keyboard"},
+  "pinterest": {
+    "title": "Split Ergonomic Keyboard for Long Typing Days: ProtoArc EK01 Plus",
+    "board": "WFH Desk Setup Ideas",
+    "alt": "ProtoArc EK01 Plus split ergonomic keyboard on a desk",
+    "keywords": "ergonomic keyboard, desk setup, home office ideas, wfh setup, split keyboard"
+  },
   "youtubeTitle": "Split ergonomic keyboard for long typing days: ProtoArc EK01 Plus",
   "x": "Long days at the keyboard? ProtoArc EK01 Plus splits and curves the layout for a more natural wrist angle.\n\n3 devices, $79.99 list, extra 10% with code GFPHOANGNONGVAN.",
-  "xTags": ["desksetup"],
+  "xTags": [
+    "desksetup"
+  ],
   "tiktokLine": "Split, curved layout + extra 10% with our code.",
-  "tiktokTags": ["ergonomickeyboard", "desksetup", "wfh", "homeoffice", "RankerNest"],
+  "tiktokTags": [
+    "ergonomickeyboard",
+    "desksetup",
+    "wfh",
+    "homeoffice",
+    "RankerNest"
+  ],
   "linkedin": "If you type all day, the keyboard is the one tool you touch more than anything else.\n\nThe ProtoArc EK01 Plus splits and curves the layout so your wrists sit at a more natural angle. It pairs with up to 3 devices (Bluetooth + 2.4G USB), so one keyboard covers a laptop, a desktop and a tablet.\n\n$79.99 list price; code GFPHOANGNONGVAN takes an extra 10% off at ProtoArc.com. Our full write-up is in the first comment.",
-  "linkedinTags": ["desksetup", "homeoffice", "productivity", "ergonomics"],
-  "hashtags": ["ergonomickeyboard", "desksetup", "wfh", "homeoffice"],
-  "emailTitle": "Desk upgrade: ProtoArc EK01 Plus split keyboard (extra 10% code)"
+  "linkedinTags": [
+    "desksetup",
+    "homeoffice",
+    "productivity",
+    "ergonomics"
+  ],
+  "hashtags": [
+    "ergonomickeyboard",
+    "desksetup",
+    "wfh",
+    "homeoffice"
+  ],
+  "emailTitle": "Desk upgrade: ProtoArc EK01 Plus split keyboard (extra 10% code)",
+  "variants": {
+    "b": {
+      "html": "Split ergonomic keyboard,<br /><span class=\"coral\">$79.99 + extra 10% off</span>",
+      "hook": "Split ergonomic keyboard, $79.99 + extra 10% off ⌨️"
+    },
+    "c": {
+      "html": "Still typing on a<br /><span class=\"coral\">flat keyboard</span> all day?",
+      "hook": "Still typing on a flat keyboard all day? ⌨️"
+    }
+  }
 }
