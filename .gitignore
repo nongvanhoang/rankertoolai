@@ -187,3 +187,4 @@ desktop.ini
 build_dashboard.py
 seo_audit.py
 fetch_external_reviews.py
+reel_tools/music/cache/

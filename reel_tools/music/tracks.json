@@ -1,0 +1,11 @@
+{
+  "_license": "Mixkit Stock Music Free License: allowed in social media videos and online ads, commercial use OK, no attribution required. Not allowed: CDs/DVDs, video games, TV/radio broadcast. https://mixkit.co/license/",
+  "_fields": "bpm/start measured by beat analysis (start = an on-beat point right at the track's drop, in seconds of the original mp3)",
+  "tracks": {
+    "tech":    {"id": 130, "title": "Tech House vibes",  "bpm": 122,   "start": 16.343, "use": "AI tools, software, RankerToolAI"},
+    "home":    {"id": 132, "title": "Hazy After Hours",  "bpm": 121.1, "start": 16.016, "use": "home appliances, robot vacuums, chairs"},
+    "fashion": {"id": 371, "title": "Cat Walk",          "bpm": 130,   "start": 29.605, "use": "fashion, silk, beauty, skincare"},
+    "gadget":  {"id": 623, "title": "Deep Urban",        "bpm": 124,   "start": 15.074, "use": "keyboards, desk gear, tech accessories"},
+    "warm":    {"id": 837, "title": "Life is a Dream",   "bpm": 120,   "start": 8.605,  "use": "gifts, lamps, family, feel-good"}
+  }
+}
