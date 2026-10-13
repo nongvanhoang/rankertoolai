@@ -17,7 +17,10 @@ for (const [k, v] of Object.entries(s.variants || {})) {
   // the hook is the first .big inside the scene that starts at 0 on track 1
   const re = /(<div id="\w+" class="scene clip[^"]*" data-start="0" [^>]*data-track-index="1">[\s\S]*?<div class="big">)([\s\S]*?)(<\/div>)/;
   if (!re.test(html)) { console.error(`${s.reel}: hook not found`); process.exit(1); }
-  fs.writeFileSync(f, html.replace(re, (m, a, _old, c) => a + v.html + c)); // function form: "$1" in prices must stay literal
+  let out = html.replace(re, (m, a, _old, c) => a + v.html + c); // function form: "$1" in prices must stay literal
+  // optional: the small line under the hook in the same scene (Synthesia: "Is that really possible?")
+  if (v.sub) out = out.replace(/(data-start="0" [^>]*data-track-index="1">(?:(?!<\/div>\s*<\/div>)[\s\S])*?<div class="small">)([^<]*)(<\/div>)/, (m, a, _o, c) => a + v.sub + c);
+  fs.writeFileSync(f, out);
   const cap = path.join(dst, "caption.txt");
   const lines = fs.readFileSync(cap, "utf8").split("\n");
   lines[0] = v.hook;

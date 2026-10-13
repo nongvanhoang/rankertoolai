@@ -51,11 +51,13 @@
   "variants": {
     "b": {
       "html": "AI presenter videos.<br /><span class=\"hl\">Free plan to test.</span>",
-      "hook": "AI presenter videos, free plan to test 🎬"
+      "hook": "AI presenter videos, free plan to test 🎬",
+      "sub": "We typed one sentence. Here is the result."
     },
     "c": {
       "html": "Still filming<br /><span class=\"hl\">every SOP update?</span>",
-      "hook": "Still filming every SOP update? 🎥"
+      "hook": "Still filming every SOP update? 🎥",
+      "sub": "Type the script instead."
     }
   }
 }
