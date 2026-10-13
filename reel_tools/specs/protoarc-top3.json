@@ -1,0 +1,11 @@
+{
+  "hook": {"html": "3 desk upgrades,<br /><span class=\"coral\">one 10% code</span>", "photo": "hook.jpg", "photoClass": "mediumh"},
+  "photos": [
+    {"photo": "chair.jpg", "photoClass": "tall contain", "html": "<span class=\"teal\">Back:</span> EC200 chair, 8 adjustment points"},
+    {"photo": "split.jpg", "html": "<span class=\"yellow\">Wrists:</span> EK01 Plus split, curved keyboard"},
+    {"photo": "fold.jpg", "html": "<span class=\"teal\">On the go:</span> XK01, full-size keys that fold"}
+  ],
+  "offer": {"kicker": "One code for all three", "rows": ["Extra 10% with <b>GFPHOANGNONGVAN</b>", "EC200 <b>$179.99</b> · EK01 Plus <b>$79.99</b>", "XK01 <b>$53.99</b> reg."], "note": "List prices at time of writing. Check the live price. Specs-based picks, not hands-on tested."},
+  "url": "rankernest.com/<span class=\"yellow\" style=\"color:var(--yellow)\">setup</span>",
+  "disclose": "#ad · affiliate code, supports us at no extra cost"
+}
