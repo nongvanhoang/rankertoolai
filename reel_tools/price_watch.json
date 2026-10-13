@@ -1,0 +1,17 @@
+{
+  "_doc": "Prices our videos/kits state, checked weekly against the merchant's Shopify product JSON (/products/<handle>.js). 'expect' = prices that must exist among the variants; 'min' = the lowest variant price we quote as 'from'. Update here AND in the video/kit when a price changes.",
+  "items": [
+    {"name": "ProtoArc EC200", "url": "https://www.protoarc.com/products/ec200-ergonomic-mesh-office-chair.js", "expect": [179.99], "videos": "protoarc-ec200 (A/B/C), protoarc-top3"},
+    {"name": "ProtoArc EK01 Plus", "url": "https://www.protoarc.com/products/ek01-plus-ergonomic-split-keyboard.js", "expect": [79.99], "videos": "protoarc-ek01-plus (A/B/C), protoarc-top3"},
+    {"name": "ProtoArc XK01", "url": "https://www.protoarc.com/products/xk01-tri-fold-bluetooth-keyboard.js", "expect": [43.99], "compareAt": 53.99, "videos": "protoarc-xk01 (A/B/C), protoarc-top3"},
+    {"name": "Honiture X7", "url": "https://honiture.com/products/x7.js", "expect": [179.99], "videos": "honiture-x7 (A/B/C)"},
+    {"name": "Honiture X7 Pet", "url": "https://honiture.com/products/pet-version-cordless-vacuum-x7.js", "expect": [259.99], "videos": "honiture-x7 (A/B/C)"},
+    {"name": "SwitchBot S20", "url": "https://us.switch-bot.com/products/switchbot-floor-cleaning-robot-s20.js", "expect": [799.99], "videos": "switchbot-s20 (A/B/C)"},
+    {"name": "Friendship Lamps Lumi", "url": "https://friendshiplamps.com/products/lumi-friendship-lamps-new.js", "min": 70, "videos": "friendshiplamps (A/B/C)"},
+    {"name": "Friendship Lamps Classic", "url": "https://friendshiplamps.com/products/classic-design-friendship-lamps.js", "min": 99, "videos": "friendshiplamps (A/B/C)"},
+    {"name": "Friendship Lamps Modern", "url": "https://friendshiplamps.com/products/modern-design-friendship-lamps.js", "min": 99, "videos": "friendshiplamps (A/B/C)"},
+    {"name": "Friendship Lamps Mid-Century", "url": "https://friendshiplamps.com/products/mid-century-design-friendship-lamps-white-black.js", "min": 118, "videos": "friendshiplamps (A/B/C)"},
+    {"name": "SilkSilky pillowcase", "url": "https://silksilky.com/products/silk-pillowcase-19-22-30momme.js", "min": 21.95, "videos": "silksilky (A/B/C)"}
+  ],
+  "manual": ["Synthesia: Starter $29/mo ($18/mo yearly) — trang giá dùng JavaScript, kiểm tay mỗi tháng tại synthesia.io/pricing"]
+}
