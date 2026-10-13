@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5Z86G265');</script>
+<!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Short landing page for the Dropmagic Instagram/TikTok reel. Thin by design:
+       noindex so it never competes with /review/dropmagic/ in search. -->
+  <meta name="robots" content="noindex, follow">
+  <title>Dropmagic in 30 seconds: one link to a Shopify store page | RankerToolAI</title>
+  <meta name="description" content="Dropmagic: the key facts from our review, and where to try the free plan.">
+  <link rel="canonical" href="https://rankertoolai.com/review/dropmagic/">
+  <link rel="icon" href="/assets/images/favicon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <style>
+    .sp-wrap{max-width:560px;margin:0 auto;padding:1.5rem 1rem 3rem;}
+    .sp-eyebrow{font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:#f97316;font-weight:700;margin-bottom:.4rem;}
+    .sp-wrap h1{font-size:clamp(1.6rem,6vw,2.2rem);margin:0 0 .5rem;}
+    .sp-lede{color:#94a3b8;margin:0 0 1.25rem;}
+    .sp-card{border:1px solid rgba(148,163,184,.2);border-radius:16px;background:#0d1630;padding:1.1rem;margin-bottom:1.25rem;}
+    .sp-card img{display:block;width:160px;height:auto;margin:.5rem auto 1rem;}
+    .sp-facts{list-style:none;padding:0;margin:0 0 1rem;}
+    .sp-facts li{padding:.5rem 0 .5rem 1.6rem;position:relative;border-bottom:1px solid rgba(148,163,184,.15);}
+    .sp-facts li:last-child{border-bottom:0;}
+    .sp-facts li::before{content:"";position:absolute;left:.2rem;top:1rem;width:.6rem;height:.6rem;border-radius:50%;background:#f97316;}
+    .sp-actions{display:flex;flex-direction:column;gap:.6rem;}
+    .sp-btn{display:block;text-align:center;padding:.9rem 1rem;border-radius:12px;font-weight:700;text-decoration:none;}
+    .sp-btn.primary{background:linear-gradient(90deg,#f97316,#fbbf24);color:#1a0d02;}
+    .sp-btn.outline{border:1px solid rgba(249,115,22,.6);color:#f8fafc;}
+    .sp-note{font-size:.85rem;color:#94a3b8;margin-top:.75rem;}
+  </style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Z86G265" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<main id="main-content" class="sp-wrap">
+  <p class="sp-eyebrow">From our Dropmagic reel</p>
+  <h1>Dropmagic</h1>
+  <p class="sp-lede">The key facts in 30 seconds. The full review covers pricing, limits and who should skip it.</p>
+  <section class="sp-card">
+    <img src="/assets/images/logos/dropmagic.png" alt="Dropmagic" width="160" height="40">
+    <ul class="sp-facts">
+      <li>Paste one product link (AliExpress, Amazon, Etsy, another Shopify store) and AI builds the product page</li>
+      <li>Writes the headline, benefits and objection-handling copy, and turns supplier photos into lifestyle shots</li>
+      <li>4.9/5 from 49 reviews on the Shopify App Store</li>
+      <li>Free plan builds and previews; publishing needs Pro at $79/month. Shopify only</li>
+    </ul>
+    <div class="sp-actions">
+      <a href="/go/dropmagic/" class="sp-btn primary" rel="sponsored nofollow">Build a free preview</a>
+      <a href="/review/dropmagic/" class="sp-btn outline">Read the full review</a>
+    </div>
+    <p class="sp-note">Affiliate link: we may earn a commission at no extra cost to you. Prices from our review page; check the live price before you buy.</p>
+  </section>
+  <p class="sp-note"><a href="/links/">All our links</a> · <a href="/affiliate-disclosure/">Affiliate disclosure</a></p>
+</main>
+<script>
+  // Same affiliate_click event as the review pages, and forward any utm_* on the
+  // way to /go/ so a reel visit stays attributed through the redirect.
+  document.addEventListener('DOMContentLoaded', function() {
+    var passKeys = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'];
+    var incoming = new URLSearchParams(window.location.search);
+    document.querySelectorAll('a[href*="/go/"]').forEach(function(el) {
+      el.addEventListener('click', function() {
+        try {
+          var dest = new URL(el.href, window.location.href);
+          passKeys.forEach(function(k) {
+            if (incoming.has(k) && !dest.searchParams.has(k)) dest.searchParams.set(k, incoming.get(k));
+          });
+          el.href = dest.toString();
+        } catch (e) {}
+        var _tool = (el.href.split('/go/')[1] || '').split(/[?#]/)[0].replace(/\//g,'') || 'unknown';
+        window.dataLayer = window.dataLayer || [];
+        dataLayer.push({event: 'affiliate_click', tool: _tool, page: window.location.pathname, value: 1.0, currency: 'USD'});
+      });
+    });
+  });
+</script>
+</body>
+</html>
