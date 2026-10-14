@@ -1,0 +1,65 @@
+# Sends the multi-platform posting kit of each reel (social_posts/<reel>/, built by
+# reel_tools/make_posts.js) to the owner's Telegram: one message per channel, copy text
+# in tap-to-copy blocks, plus the full DANG_DA_KENH.txt as a file.
+# Waits for any running reel render first, so the texts arrive after the video.
+name: Send posting kit to Telegram
+
+on:
+  push:
+    branches: ["video-*"]
+    paths: ["social_posts/**"]
+  workflow_dispatch:
+    inputs:
+      reel:
+        description: "Folder name in social_posts/ (empty = all)"
+        required: false
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Wait for reel renders on this branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for i in $(seq 1 70); do
+            busy=$(gh run list -R "$GITHUB_REPOSITORY" -b "$GITHUB_REF_NAME" -w "Render reel + Telegram" --json status -q '[.[] | select(.status != "completed")] | length')
+            [ "${busy:-0}" = "0" ] && exit 0
+            echo "render still running ($busy), waiting..."; sleep 30
+          done
+
+      - name: Send to Telegram
+        env:
+          TG_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TG_CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
+          ONE: ${{ github.event.inputs.reel }}
+        run: |
+          if [ -z "$TG_TOKEN" ] || [ -z "$TG_CHAT" ]; then echo "Telegram secrets not set"; exit 0; fi
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            if [ -n "$ONE" ]; then names="$ONE"; else names=$(ls social_posts); fi
+          else
+            names=$(git diff --name-only HEAD~1 HEAD -- social_posts | cut -d/ -f2 | sort -u)
+          fi
+          api="https://api.telegram.org/bot${TG_TOKEN}"
+          for name in $names; do
+            dir="social_posts/$name"
+            [ -d "$dir/tg" ] || continue
+            for f in "$dir"/tg/*.html; do
+              curl -sS -f "$api/sendMessage" -d chat_id="$TG_CHAT" -d parse_mode=HTML \
+                -d disable_web_page_preview=true -d disable_notification=true \
+                --data-urlencode "text@$f" > /dev/null || echo "FAILED $f"
+              sleep 1
+            done
+            [ -f "$dir/DANG_DA_KENH.txt" ] && curl -sS -f "$api/sendDocument" -F chat_id="$TG_CHAT" \
+              -F disable_notification=true -F document=@"$dir/DANG_DA_KENH.txt;filename=${name}_DANG_DA_KENH.txt" > /dev/null
+            echo "sent kit for $name"
+          done
