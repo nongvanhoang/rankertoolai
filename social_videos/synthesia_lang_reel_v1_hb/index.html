@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800;900&display=block" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      :root {
+        --bg: #050a18;
+        --panel: #0d1630;
+        --text: #f8fafc;
+        --muted: #94a3b8;
+        --orange: #f97316;
+        --amber: #fbbf24;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        width: 1080px; height: 1920px; overflow: hidden;
+        background: var(--bg);
+        font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+        color: var(--text);
+      }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; }
+
+      /* Background: slow-moving glow + grid, lives the whole video */
+      #bg { position: absolute; inset: 0; }
+      .glow {
+        position: absolute; width: 900px; height: 900px; border-radius: 50%;
+        filter: blur(120px); opacity: 0.35;
+      }
+      #glow1 { background: var(--orange); left: -300px; top: 200px; }
+      #glow2 { background: #1d4ed8; right: -350px; bottom: 300px; opacity: 0.3; }
+      #grid {
+        position: absolute; inset: 0; opacity: 0.08;
+        background-image:
+          linear-gradient(var(--muted) 1px, transparent 1px),
+          linear-gradient(90deg, var(--muted) 1px, transparent 1px);
+        background-size: 90px 90px;
+      }
+
+      /* Scenes: text kept inside the safe zone (top 220px, bottom 380px clear) */
+      .scene {
+        position: absolute; left: 80px; right: 80px; top: 260px; bottom: 420px;
+        display: flex; flex-direction: column; justify-content: center; gap: 44px;
+      }
+      .kicker {
+        font-size: 40px; font-weight: 700; letter-spacing: 0.12em;
+        text-transform: uppercase; color: var(--orange);
+      }
+      .big { font-size: 112px; font-weight: 900; line-height: 1.02; letter-spacing: -0.035em; }
+      .mid { font-size: 64px; font-weight: 800; line-height: 1.12; letter-spacing: -0.02em; }
+      .small { font-size: 44px; font-weight: 500; line-height: 1.35; color: var(--muted); }
+      .hl { color: var(--amber); }
+      .bar { width: 160px; height: 12px; border-radius: 6px; background: linear-gradient(90deg, var(--orange), var(--amber)); }
+
+      .card {
+        background: var(--panel); border: 2px solid rgba(249, 115, 22, 0.35);
+        border-radius: 36px; padding: 44px 52px;
+      }
+      .card .label { font-size: 38px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+      .card .value { font-size: 88px; font-weight: 900; letter-spacing: -0.03em; margin-top: 8px; }
+      .card .note { font-size: 40px; font-weight: 500; color: var(--muted); margin-top: 10px; }
+
+      .chips { display: flex; flex-wrap: wrap; gap: 22px; }
+      .chip {
+        font-size: 50px; font-weight: 800; padding: 22px 38px; border-radius: 999px;
+        background: rgba(249, 115, 22, 0.14); border: 2px solid rgba(249, 115, 22, 0.5);
+      }
+      .score { display: flex; align-items: baseline; gap: 18px; }
+      .score .num { font-size: 230px; font-weight: 900; letter-spacing: -0.05em; color: var(--amber); line-height: 1; }
+      .score .of { font-size: 80px; font-weight: 800; color: var(--muted); }
+
+      .frame {
+        width: 100%; border-radius: 28px; overflow: hidden; background: #000;
+        border: 3px solid rgba(249, 115, 22, 0.6);
+        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.55);
+      }
+      .frame video { width: 100%; display: block; }
+      .cta {
+        font-size: 58px; font-weight: 800; line-height: 1.2;
+        background: linear-gradient(90deg, var(--orange), var(--amber));
+        color: #1a0d02; border-radius: 32px; padding: 40px 48px;
+      }
+      .url { font-size: 50px; font-weight: 800; color: var(--text); word-break: break-word; }
+      .disclose { font-size: 34px; font-weight: 500; color: var(--muted); }
+      .frame.white { background: #fff; }
+      .frame.narrow { width: 55%; align-self: center; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="24.5" data-width="1080" data-height="1920">
+      <div id="bg" class="clip" data-start="0" data-duration="24.5" data-track-index="0">
+        <div id="grid"></div>
+        <div id="glow1" class="glow"></div>
+        <div id="glow2" class="glow"></div>
+      </div>
+
+      <!-- 1. Hook -->
+      <div id="s1" class="scene clip" data-start="0" data-duration="2.8" data-track-index="1">
+        <div class="bar"></div>
+        <div class="big">Your onboarding video,<br /><span class="hl">now in Spanish.</span></div>
+        <div class="small">One paste and one click.</div>
+      </div>
+
+      <!-- 2. Original avatar video, English (owner's Synthesia free-plan video, own audio) -->
+      <div id="s2" class="scene clip" data-start="2.8" data-duration="4" data-track-index="1">
+        <div class="kicker">The original · English</div>
+        <div class="frame"><video class="clip" data-start="2.8" data-duration="4" data-media-start="0" data-has-audio="true" data-fade-out="0.3" src="clip_en.mp4" playsinline></video></div>
+        <div class="small">AI presenter made from a typed script</div>
+      </div>
+
+      <!-- 3. Owner's screen recording: English line selected, Spanish pasted in -->
+      <div id="s3" class="scene clip" data-start="6.8" data-duration="4.5" data-track-index="1">
+        <div class="kicker">Step 1 · paste the translation</div>
+        <div class="frame white"><video class="clip" data-start="6.8" data-duration="4.5" data-media-start="0" src="clip_swap.mp4" muted playsinline></video></div>
+        <div class="small">Same scene, same avatar. Only the text changes.</div>
+      </div>
+
+      <!-- 4. Owner's screen recording: Generate -> "Generate in 9 minutes" -->
+      <div id="s4" class="scene clip" data-start="11.3" data-duration="3" data-track-index="1">
+        <div class="kicker">Step 2 · Generate</div>
+        <div class="frame narrow white"><video class="clip" data-start="11.3" data-duration="3" data-media-start="1.3" src="clip_gen.mp4" muted playsinline></video></div>
+        <div class="small">Synthesia's estimate here: about 9 minutes</div>
+      </div>
+
+      <!-- 5. The generated Spanish version (own audio) -->
+      <div id="s5" class="scene clip" data-start="14.3" data-duration="5.6" data-track-index="1">
+        <div class="kicker">Same presenter · <span class="hl">Español</span></div>
+        <div class="frame"><video class="clip" data-start="14.3" data-duration="5.6" data-media-start="0" data-has-audio="true" data-fade-out="0.4" src="clip_es.mp4" playsinline></video></div>
+        <div class="small">No camera, no voice actor. Free plan adds a watermark.</div>
+      </div>
+
+      <!-- 6. Facts (all from review/synthesia) -->
+      <div id="s6" class="scene clip" data-start="19.9" data-duration="2.7" data-track-index="1">
+        <div class="kicker">Synthesia</div>
+        <div class="chips">
+          <div class="chip"><span class="hl">140+</span> languages</div>
+          <div class="chip">Free plan to test</div>
+        </div>
+        <div class="card">
+          <div class="label">Starter</div>
+          <div class="value">$29<span class="small"> /mo</span></div>
+          <div class="note"><span class="hl">$18/mo</span> billed yearly</div>
+        </div>
+      </div>
+
+      <!-- 7. CTA -->
+      <div id="s7" class="scene clip" data-start="22.6" data-duration="1.9" data-track-index="1">
+        <div class="cta">Read the full review →</div>
+        <div class="url">rankertoolai.com/<span class="hl">avatar</span></div>
+        <div class="disclose">Contains affiliate links</div>
+      </div>
+    </div>
+
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#glow1", { x: 0, y: 0 }, { x: 260, y: 520, duration: 24.5, ease: "none" }, 0);
+      tl.fromTo("#glow2", { x: 0, y: 0 }, { x: -220, y: -480, duration: 24.5, ease: "none" }, 0);
+
+      const inUp = { opacity: 0, y: 70 };
+      const shown = { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" };
+      const pop = { opacity: 1, scale: 1, duration: 0.45, ease: "power3.out" };
+
+      tl.fromTo("#s1 .bar", { scaleX: 0, transformOrigin: "left" }, { scaleX: 1, duration: 0.4, ease: "power2.out" }, 0.1);
+      tl.fromTo("#s1 .big", inUp, shown, 0.2);
+      tl.fromTo("#s1 .hl", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(2)" }, 0.8);
+      tl.fromTo("#s1 .small", inUp, shown, 1.3);
+
+      for (const [id, t] of [["#s2", 2.8], ["#s3", 6.8], ["#s4", 11.3], ["#s5", 14.3]]) {
+        tl.fromTo(id + " .kicker", inUp, shown, t + 0.05);
+        tl.fromTo(id + " .frame", { opacity: 0, scale: 0.92 }, pop, t + 0.1);
+        tl.fromTo(id + " .small", inUp, shown, t + 0.7);
+      }
+
+      tl.fromTo("#s6 .kicker", inUp, shown, 19.95);
+      tl.fromTo("#s6 .chip", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2)", stagger: 0.2 }, 20.15);
+      tl.fromTo("#s6 .card", { opacity: 0, x: 120 }, { opacity: 1, x: 0, duration: 0.5, ease: "power3.out" }, 20.7);
+
+      tl.fromTo("#s7 .cta", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.8)" }, 22.65);
+      tl.fromTo("#s7 .url", inUp, shown, 22.95);
+      tl.fromTo("#s7 .disclose", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 23.3);
+
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
