@@ -77,6 +77,12 @@
     "site": "rn",
     "reel": "rankernest_honiture-x7_v2",
     "title": "Honiture X7 · kiểu mở đầu A"
+   },
+   {
+    "type": "reel",
+    "site": "rta",
+    "reel": "synthesia_lang_reel_v1",
+    "title": "Synthesia nhiều ngôn ngữ · kiểu mở đầu A"
    }
   ]
  },
@@ -121,6 +127,12 @@
     "type": "note",
     "site": "both",
     "text": "Kiểm giá + mã giảm giá trước khi đăng lại video cũ · Trang review"
+   },
+   {
+    "type": "reel",
+    "site": "rta",
+    "reel": "synthesia_lang_reel_v1_hb",
+    "title": "Synthesia nhiều ngôn ngữ · kiểu mở đầu B"
    }
   ]
  },
@@ -174,6 +186,12 @@
     "type": "note",
     "site": "rn",
     "text": "Bản tin: Friendship Lamps (quà tặng) · Email Brevo (list #3)"
+   },
+   {
+    "type": "reel",
+    "site": "rta",
+    "reel": "synthesia_lang_reel_v1_hc",
+    "title": "Synthesia nhiều ngôn ngữ · kiểu mở đầu C"
    }
   ]
  },
@@ -185,11 +203,6 @@
     "site": "rn",
     "reel": "rankernest_friendshiplamps_v2_hb",
     "title": "Friendship Lamps · kiểu mở đầu B"
-   },
-   {
-    "type": "note",
-    "site": "rta",
-    "text": "Synthesia video 2: một video, nhiều thứ tiếng · Instagram · YouTube Shorts · TikTok · Chờ anh quay màn hình (xem KICH_BAN_QUAY_3_VIDEO_RTA.txt), Claude dựng xong mới đăng."
    }
   ]
  },
@@ -318,11 +331,6 @@
     "site": "rn",
     "reel": "rankernest_switchbot-s20_v2_hc",
     "title": "SwitchBot S20 · kiểu mở đầu C"
-   },
-   {
-    "type": "note",
-    "site": "rta",
-    "text": "Synthesia video 2 · kiểu mở đầu B · Instagram · YouTube Shorts · TikTok · Chờ anh quay màn hình, Claude dựng xong mới đăng."
    }
   ]
  },

@@ -120,14 +120,15 @@ function reelMessages(site, reel, channels) {
     for (const f of files) msgs.push(kitText(reel, f));
     return msgs;
   }
-  if (channels.includes('instagram')) {
+  const igKit = files.some((f) => /^\d+_instagram\.html$/.test(f));   // newer kits carry their own IG message
+  if (channels.includes('instagram') && !igKit) {
     const cap = path.join(ROOT, 'social_videos', reel, 'caption.txt');
     if (fs.existsSync(cap)) {
       const how = site === 'rn' ? 'Bật “Chia sẻ lên Facebook” → chọn Trang RankerNest' : 'Tải video lên → dán caption';
       msgs.push(`<b>INSTAGRAM REELS</b>  <i>${how}</i>\n<pre>${esc(fs.readFileSync(cap, 'utf8').trim())}</pre>`);
     }
   }
-  for (const ch of channels.filter((c) => c !== 'instagram')) {
+  for (const ch of channels.filter((c) => c !== 'instagram' || igKit)) {
     const f = files.find((x) => new RegExp(`^\\d+_${ch}\\.html$`).test(x));
     if (!f) continue;
     let t = kitText(reel, f).replace(/^<b>\d+\/\d+ · /, '<b>')    // drop the kit's "3/7" numbering
