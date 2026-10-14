@@ -1,10 +1,30 @@
 VIDEO: rankernest_protoarc-ek01-plus_v3.mp4  |  SẢN PHẨM: ProtoArc  |  TRANG ĐÍCH: rankernest.com/desk
 Mỗi kênh 1 link riêng (utm_source khác nhau) để sau 1 tuần biết kênh nào ra khách.
 Trước khi đăng: thêm nhạc trend trong CapCut (giữ âm thanh gốc), xuất 1080p 30fps, tắt đoạn đuôi CapCut.
-Instagram: dùng tin caption bot đã gửi kèm video (link bio = rankernest.com/links).
 
 =====================================================================
-1) PINTEREST  (Tạo Pin → tải video lên → điền các ô dưới)
+1) INSTAGRAM REELS  (Tài khoản @ranker.nest → + → Reel)
+=====================================================================
+Caption:
+Long days at the keyboard? ⌨️
+The ProtoArc EK01 Plus splits and curves the layout so your wrists sit at a more natural angle. Pairs with up to 3 devices (Bluetooth + 2.4G USB), $79.99 list price.
+
+Extra 10% off at ProtoArc.com with code GFPHOANGNONGVAN 🏷️
+Link in bio → DESK (rankernest.com/desk)
+
+#ad — affiliate code, supports RankerNest at no extra cost to you
+
+#ergonomickeyboard #desksetup #wfh #homeoffice #wristpain #productivity #RankerNest
+
+Cài đặt:
+- Ảnh bìa: covers/rankernest_protoarc-ek01-plus_v3_cover.jpg (trong thư mục Videos\RankerToolAI_reels)
+- Nhạc trend: chọn trong thư viện của Instagram, giữ âm thanh gốc
+- Không cần nhãn AI
+- Dòng #ad trong caption là đủ công khai; chỉ dùng nhãn "Paid partnership" khi ProtoArc đồng ý
+- Link bio: https://rankernest.com/links (người xem chọn từ khoá DESK)
+
+=====================================================================
+2) PINTEREST  (Tạo Pin → tải video lên → điền các ô dưới)
 =====================================================================
 Video này ĐÃ có trong file CSV Pinterest (lên lịch sẵn). Nếu đã tải CSV lên thì BỎ QUA mục này.
 
@@ -25,7 +45,7 @@ Cài đặt:
 - Từ khoá gợi ý: ergonomic keyboard, desk setup, home office ideas, wfh setup, split keyboard
 
 =====================================================================
-2) YOUTUBE SHORTS  (YouTube Studio → Tạo → Tải video lên)
+3) YOUTUBE SHORTS  (YouTube Studio → Tạo → Tải video lên)
 =====================================================================
 Tiêu đề (tối đa 100 ký tự):
 Split ergonomic keyboard for long typing days: ProtoArc EK01 Plus #shorts
@@ -58,7 +78,7 @@ Cài đặt:
 - Trang kênh → Tuỳ chỉnh → Links: thêm https://rankernest.com/links
 
 =====================================================================
-3) LINKEDIN  (Đăng từ trang cá nhân; tải video trực tiếp, KHÔNG dán link YouTube)
+4) LINKEDIN  (Đăng từ trang RankerNest (Company Page); tải video trực tiếp, KHÔNG dán link YouTube)
 =====================================================================
 Nội dung bài:
 If you type all day, the keyboard is the one tool you touch more than anything else.
@@ -77,7 +97,7 @@ Cài đặt:
 - Giờ đẹp: thứ 3–thứ 5, 20h–22h giờ VN (sáng giờ Mỹ)
 
 =====================================================================
-4) FACEBOOK REELS  (Fanpage → Reel → tải video)
+5) FACEBOOK REELS  (Fanpage → Reel → tải video)
 =====================================================================
 Caption:
 #ad Long days at the keyboard? ⌨️
@@ -97,7 +117,7 @@ Cài đặt:
 - Dòng #ad ở đầu caption là đủ công khai; chỉ bật "Branded content" nếu có tag được trang của ProtoArc
 
 =====================================================================
-5) THREADS  (Bài mới → đính kèm video)
+6) THREADS  (Bài mới → đính kèm video)
 =====================================================================
 Nội dung:
 Long days at the keyboard? ⌨️
@@ -112,7 +132,7 @@ Full review: https://rankernest.com/desk/?utm_source=threads&utm_medium=social&u
 
 
 =====================================================================
-6) X / TWITTER  (Bài mới → đính kèm video (209/280 ký tự))
+7) X / TWITTER  (Bài mới → đính kèm video (209/280 ký tự))
 =====================================================================
 Nội dung:
 Long days at the keyboard? ProtoArc EK01 Plus splits and curves the layout for a more natural wrist angle.
@@ -125,7 +145,7 @@ https://rankernest.com/desk/?utm_source=x&utm_medium=social&utm_campaign=reel_vi
 
 
 =====================================================================
-7) TIKTOK  (Chỉ đăng nếu đã có tài khoản)
+8) TIKTOK  (Chỉ đăng nếu đã có tài khoản)
 =====================================================================
 Caption:
 #ad Long days at the keyboard? ⌨️ Split, curved layout + extra 10% with our code. Link in bio → DESK
@@ -140,7 +160,7 @@ Cài đặt:
 - Nhạc trend: chọn trong thư viện "Commercial" của TikTok/CapCut (tài khoản Business)
 
 =====================================================================
-8) EMAIL  (Thêm 1 mục vào bản tin RankerNest (Brevo, list #3), không gửi email riêng chỉ để quảng cáo)
+9) EMAIL  (Thêm 1 mục vào bản tin RankerNest (Brevo, list #3), không gửi email riêng chỉ để quảng cáo)
 =====================================================================
 Tiêu đề mục:
 Desk upgrade: ProtoArc EK01 Plus split keyboard (extra 10% code)

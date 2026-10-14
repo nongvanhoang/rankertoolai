@@ -1,10 +1,29 @@
 VIDEO: rankernest_honiture-x7_v2.mp4  |  SẢN PHẨM: Honiture  |  TRANG ĐÍCH: rankernest.com/vacuum
 Mỗi kênh 1 link riêng (utm_source khác nhau) để sau 1 tuần biết kênh nào ra khách.
 Trước khi đăng: thêm nhạc trend trong CapCut (giữ âm thanh gốc), xuất 1080p 30fps, tắt đoạn đuôi CapCut.
-Instagram: dùng tin caption bot đã gửi kèm video (link bio = rankernest.com/links).
 
 =====================================================================
-1) PINTEREST  (Tạo Pin → tải video lên → điền các ô dưới)
+1) INSTAGRAM REELS  (Tài khoản @ranker.nest → + → Reel)
+=====================================================================
+Caption:
+Same vacuum, $80 apart 🤔
+The Honiture X7 ($179.99) and X7 Pet ($259.99) share the same core: 45kPa suction, up to 60 min rated runtime, 1.5L dust cup, 7-layer HEPA filter. The Pet version adds a pet grooming tool and an anti-mite brush.
+
+Pet hair mostly on floors? The standard X7 is enough.
+Link in bio → VACUUM (rankernest.com/vacuum)
+
+#ad — affiliate link, supports RankerNest at no extra cost to you
+#cordlessvacuum #pethair #cleaninghacks #homecleaning #stickvacuum #RankerNest
+
+Cài đặt:
+- Ảnh bìa: covers/rankernest_honiture-x7_v2_cover.jpg (trong thư mục Videos\RankerToolAI_reels)
+- Nhạc trend: chọn trong thư viện của Instagram, giữ âm thanh gốc
+- Không cần nhãn AI
+- Dòng #ad trong caption là đủ công khai; chỉ dùng nhãn "Paid partnership" khi Honiture đồng ý
+- Link bio: https://rankernest.com/links (người xem chọn từ khoá VACUUM)
+
+=====================================================================
+2) PINTEREST  (Tạo Pin → tải video lên → điền các ô dưới)
 =====================================================================
 Video này ĐÃ có trong file CSV Pinterest (lên lịch sẵn). Nếu đã tải CSV lên thì BỎ QUA mục này.
 
@@ -25,7 +44,7 @@ Cài đặt:
 - Từ khoá gợi ý: cordless vacuum, stick vacuum, pet hair vacuum, cleaning tips, home cleaning
 
 =====================================================================
-2) YOUTUBE SHORTS  (YouTube Studio → Tạo → Tải video lên)
+3) YOUTUBE SHORTS  (YouTube Studio → Tạo → Tải video lên)
 =====================================================================
 Tiêu đề (tối đa 100 ký tự):
 Honiture X7 vs X7 Pet: same vacuum, $80 apart. Which one do you need? #shorts
@@ -59,7 +78,26 @@ Cài đặt:
 - Trang kênh → Tuỳ chỉnh → Links: thêm https://rankernest.com/links
 
 =====================================================================
-3) FACEBOOK REELS  (Fanpage → Reel → tải video)
+4) LINKEDIN  (Đăng từ trang RankerNest (Company Page); tải video trực tiếp, KHÔNG dán link YouTube)
+=====================================================================
+Nội dung bài:
+A buying lesson that applies well beyond vacuums: check what the premium version actually adds.
+
+The Honiture X7 ($179.99) and X7 Pet ($259.99) share the same core: 45kPa suction, up to 60 minutes rated runtime, a 1.5L dust cup and a 7-layer HEPA filter. The extra $80 buys a pet grooming tool and an anti-mite brush.
+
+If pet hair is mostly on your floors, the standard X7 does the job. Our side-by-side breakdown is in the first comment.
+
+#ad #smartbuying #homeoffice #productivity
+
+Bình luận đầu tiên (đăng ngay sau bài):
+Full review and pricing: https://rankernest.com/vacuum/?utm_source=linkedin&utm_medium=social&utm_campaign=reel_video&utm_content=reel-honiture-x7
+(affiliate link, we may earn a commission)
+
+Cài đặt:
+- Giờ đẹp: thứ 3–thứ 5, 20h–22h giờ VN (sáng giờ Mỹ)
+
+=====================================================================
+5) FACEBOOK REELS  (Fanpage → Reel → tải video)
 =====================================================================
 Caption:
 #ad Same vacuum, $80 apart 🤔
@@ -80,7 +118,7 @@ Cài đặt:
 - Dòng #ad ở đầu caption là đủ công khai; chỉ bật "Branded content" nếu có tag được trang của Honiture
 
 =====================================================================
-4) THREADS  (Bài mới → đính kèm video)
+6) THREADS  (Bài mới → đính kèm video)
 =====================================================================
 Nội dung:
 Same vacuum, $80 apart 🤔
@@ -93,7 +131,7 @@ Full review: https://rankernest.com/vacuum/?utm_source=threads&utm_medium=social
 
 
 =====================================================================
-5) X / TWITTER  (Bài mới → đính kèm video (238/280 ký tự))
+7) X / TWITTER  (Bài mới → đính kèm video (238/280 ký tự))
 =====================================================================
 Nội dung:
 Honiture X7 ($179.99) vs X7 Pet ($259.99): same 45kPa suction, 60 min rated runtime, 7-layer HEPA.
@@ -106,7 +144,7 @@ https://rankernest.com/vacuum/?utm_source=x&utm_medium=social&utm_campaign=reel_
 
 
 =====================================================================
-6) TIKTOK  (Chỉ đăng nếu đã có tài khoản)
+8) TIKTOK  (Chỉ đăng nếu đã có tài khoản)
 =====================================================================
 Caption:
 #ad Same vacuum, $80 apart 🤔 Pet hair mostly on floors? You may not need the Pet version. Link in bio → VACUUM
@@ -121,7 +159,7 @@ Cài đặt:
 - Nhạc trend: chọn trong thư viện "Commercial" của TikTok/CapCut (tài khoản Business)
 
 =====================================================================
-7) EMAIL  (Thêm 1 mục vào bản tin RankerNest (Brevo, list #3), không gửi email riêng chỉ để quảng cáo)
+9) EMAIL  (Thêm 1 mục vào bản tin RankerNest (Brevo, list #3), không gửi email riêng chỉ để quảng cáo)
 =====================================================================
 Tiêu đề mục:
 Honiture X7 vs X7 Pet: which one to buy
@@ -142,7 +180,7 @@ Cài đặt:
 LỊCH ĐĂNG GỢI Ý (không đăng tất cả 1 lúc)
 =====================================================================
 Ngày 1: Pinterest + YouTube Shorts
-Ngày 2: Threads + X
+Ngày 2: LinkedIn (20h–22h) + Threads + X
 Ngày 3: Facebook Reels (+ TikTok nếu có)
 Bản tin email tiếp theo: thêm mục "Honiture X7 vs X7 Pet: which one to buy"
 Sau ~7 ngày: nhờ Claude xem GA4 theo utm_source / utm_content=reel-honiture-x7.

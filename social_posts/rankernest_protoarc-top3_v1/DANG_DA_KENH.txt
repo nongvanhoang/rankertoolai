@@ -1,10 +1,32 @@
 VIDEO: rankernest_protoarc-top3_v1.mp4  |  SẢN PHẨM: ProtoArc  |  TRANG ĐÍCH: rankernest.com/setup
 Mỗi kênh 1 link riêng (utm_source khác nhau) để sau 1 tuần biết kênh nào ra khách.
 Trước khi đăng: thêm nhạc trend trong CapCut (giữ âm thanh gốc), xuất 1080p 30fps, tắt đoạn đuôi CapCut.
-Instagram: dùng tin caption bot đã gửi kèm video (link bio = rankernest.com/links).
 
 =====================================================================
-1) PINTEREST  (Tạo Pin → tải video lên → điền các ô dưới)
+1) INSTAGRAM REELS  (Tài khoản @ranker.nest → + → Reel)
+=====================================================================
+Caption:
+3 desk upgrades, one 10% code 🪑⌨️
+Back: ProtoArc EC200 chair, 8 adjustment points ($179.99).
+Wrists: EK01 Plus split, curved keyboard ($79.99).
+On the go: XK01 full-size folding keyboard ($53.99 reg.).
+
+Code GFPHOANGNONGVAN = extra 10% off any of them at ProtoArc.com 🏷️
+List prices at time of writing. Specs-based picks, not hands-on tested.
+Link in bio → SETUP (rankernest.com/setup)
+
+#ad — affiliate code, supports RankerNest at no extra cost to you
+#desksetup #homeoffice #wfh #ergonomicchair #ergonomickeyboard #RankerNest
+
+Cài đặt:
+- Ảnh bìa: covers/rankernest_protoarc-top3_v1_cover.jpg (trong thư mục Videos\RankerToolAI_reels)
+- Nhạc trend: chọn trong thư viện của Instagram, giữ âm thanh gốc
+- Không cần nhãn AI
+- Dòng #ad trong caption là đủ công khai; chỉ dùng nhãn "Paid partnership" khi ProtoArc đồng ý
+- Link bio: https://rankernest.com/links (người xem chọn từ khoá SETUP)
+
+=====================================================================
+2) PINTEREST  (Tạo Pin → tải video lên → điền các ô dưới)
 =====================================================================
 Tiêu đề:
 3 Desk Upgrades, One 10% Code: ProtoArc Chair + 2 Keyboards
@@ -23,7 +45,7 @@ Cài đặt:
 - Từ khoá gợi ý: desk setup ideas, home office, wfh setup, ergonomic chair, ergonomic keyboard
 
 =====================================================================
-2) YOUTUBE SHORTS  (YouTube Studio → Tạo → Tải video lên)
+3) YOUTUBE SHORTS  (YouTube Studio → Tạo → Tải video lên)
 =====================================================================
 Tiêu đề (tối đa 100 ký tự):
 3 desk upgrades, one 10% code: ProtoArc chair + 2 keyboards #shorts
@@ -58,7 +80,7 @@ Cài đặt:
 - Trang kênh → Tuỳ chỉnh → Links: thêm https://rankernest.com/links
 
 =====================================================================
-3) LINKEDIN  (Đăng từ trang cá nhân; tải video trực tiếp, KHÔNG dán link YouTube)
+4) LINKEDIN  (Đăng từ trang RankerNest (Company Page); tải video trực tiếp, KHÔNG dán link YouTube)
 =====================================================================
 Nội dung bài:
 Three desk upgrades for people who work at a desk all day, one fix each:
@@ -79,7 +101,7 @@ Cài đặt:
 - Giờ đẹp: thứ 3–thứ 5, 20h–22h giờ VN (sáng giờ Mỹ)
 
 =====================================================================
-4) FACEBOOK REELS  (Fanpage → Reel → tải video)
+5) FACEBOOK REELS  (Fanpage → Reel → tải video)
 =====================================================================
 Caption:
 #ad 3 desk upgrades, one 10% code 🪑⌨️
@@ -100,7 +122,7 @@ Cài đặt:
 - Dòng #ad ở đầu caption là đủ công khai; chỉ bật "Branded content" nếu có tag được trang của ProtoArc
 
 =====================================================================
-5) THREADS  (Bài mới → đính kèm video)
+6) THREADS  (Bài mới → đính kèm video)
 =====================================================================
 Nội dung:
 3 desk upgrades, one 10% code 🪑⌨️
@@ -115,7 +137,7 @@ Full review: https://rankernest.com/setup/?utm_source=threads&utm_medium=social&
 
 
 =====================================================================
-6) X / TWITTER  (Bài mới → đính kèm video (233/280 ký tự))
+7) X / TWITTER  (Bài mới → đính kèm video (233/280 ký tự))
 =====================================================================
 Nội dung:
 3 desk upgrades, one fix each:
@@ -131,7 +153,7 @@ https://rankernest.com/setup/?utm_source=x&utm_medium=social&utm_campaign=reel_v
 
 
 =====================================================================
-7) TIKTOK  (Chỉ đăng nếu đã có tài khoản)
+8) TIKTOK  (Chỉ đăng nếu đã có tài khoản)
 =====================================================================
 Caption:
 #ad 3 desk upgrades, one 10% code 🪑⌨️ Back, wrists, bag: one pick each. Link in bio → SETUP
@@ -146,7 +168,7 @@ Cài đặt:
 - Nhạc trend: chọn trong thư viện "Commercial" của TikTok/CapCut (tài khoản Business)
 
 =====================================================================
-8) EMAIL  (Thêm 1 mục vào bản tin RankerNest (Brevo, list #3), không gửi email riêng chỉ để quảng cáo)
+9) EMAIL  (Thêm 1 mục vào bản tin RankerNest (Brevo, list #3), không gửi email riêng chỉ để quảng cáo)
 =====================================================================
 Tiêu đề mục:
 3 desk upgrades, one 10% code (ProtoArc)

@@ -81,6 +81,18 @@ if (problems.length) { console.error(specPath + ": " + problems.join("; ")); pro
 // ---- channel blocks: {key, title, how, fields:[[label, text]], settings:[...]} ----
 const ai = s.aiAvatar;
 const channels = [];
+const igCaption = fs.readFileSync(path.join(ROOT, "social_videos", s.reel, "caption.txt"), "utf8").trim();
+channels.push({
+  key: "instagram", title: "INSTAGRAM REELS", how: `Tài khoản @${s.site === "rn" ? "ranker.nest" : "ranker.toolai"} → + → Reel`,
+  fields: [["Caption", igCaption]],
+  settings: [
+    `Ảnh bìa: covers/${s.reel}_cover.jpg (trong thư mục Videos\\RankerToolAI_reels)`,
+    `Nhạc trend: chọn trong thư viện của Instagram, giữ âm thanh gốc${ai ? " (nhạc nhỏ dưới giọng avatar)" : ""}`,
+    ai ? `Bật nhãn "AI info" (video có người dẫn AI)` : `Không cần nhãn AI`,
+    `Dòng #ad trong caption là đủ công khai; chỉ dùng nhãn "Paid partnership" khi ${s.brandName} đồng ý`,
+    `Link bio: https://${site.domain}/links (người xem chọn từ khoá ${s.kw.toUpperCase()})`,
+  ],
+});
 channels.push({
   key: "pinterest", title: "PINTEREST", how: "Tạo Pin → tải video lên → điền các ô dưới",
   note: s.pinterestCsv ? "Video này ĐÃ có trong file CSV Pinterest (lên lịch sẵn). Nếu đã tải CSV lên thì BỎ QUA mục này." : "",
@@ -102,7 +114,8 @@ channels.push({
   ],
 });
 if (s.linkedin) channels.push({
-  key: "linkedin", title: "LINKEDIN", how: "Đăng từ trang cá nhân; tải video trực tiếp, KHÔNG dán link YouTube",
+  key: "linkedin", title: "LINKEDIN",
+  how: `Đăng từ trang ${site.brand} (Company Page); tải video trực tiếp, KHÔNG dán link YouTube`,
   fields: [["Nội dung bài", s.linkedin + `\n\n#ad ${tags(s.linkedinTags || [])}`],
     ["Bình luận đầu tiên (đăng ngay sau bài)", `Full review and pricing: ${link("linkedin", "social")}\n(${what}, we may earn a commission)`]],
   settings: ["Giờ đẹp: thứ 3–thứ 5, 20h–22h giờ VN (sáng giờ Mỹ)"],
@@ -135,7 +148,6 @@ const bar = "=".repeat(69);
 let txt = `VIDEO: ${s.reel}.mp4  |  SẢN PHẨM: ${s.brandName}  |  TRANG ĐÍCH: ${short}\n`;
 txt += `Mỗi kênh 1 link riêng (utm_source khác nhau) để sau 1 tuần biết kênh nào ra khách.\n`;
 txt += `Trước khi đăng: thêm nhạc trend trong CapCut (giữ âm thanh gốc${ai ? ", nhạc nhỏ 15–25% dưới giọng avatar" : ""}), xuất 1080p 30fps, tắt đoạn đuôi CapCut.\n`;
-txt += `Instagram: dùng tin caption bot đã gửi kèm video (link bio = ${site.domain}/links).\n`;
 if (s.expires) txt += `⚠️ HẠN: KHÔNG đăng sau ${s.expires} (${s.expiresNote}).\n`;
 channels.forEach((c, i) => {
   txt += `\n${bar}\n${i + 1}) ${c.title}  (${c.how})\n${bar}\n`;

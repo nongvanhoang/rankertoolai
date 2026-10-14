@@ -1,10 +1,29 @@
 VIDEO: rankernest_protoarc-ec200_v2.mp4  |  SẢN PHẨM: ProtoArc  |  TRANG ĐÍCH: rankernest.com/chair
 Mỗi kênh 1 link riêng (utm_source khác nhau) để sau 1 tuần biết kênh nào ra khách.
 Trước khi đăng: thêm nhạc trend trong CapCut (giữ âm thanh gốc), xuất 1080p 30fps, tắt đoạn đuôi CapCut.
-Instagram: dùng tin caption bot đã gửi kèm video (link bio = rankernest.com/links).
 
 =====================================================================
-1) PINTEREST  (Tạo Pin → tải video lên → điền các ô dưới)
+1) INSTAGRAM REELS  (Tài khoản @ranker.nest → + → Reel)
+=====================================================================
+Caption:
+Back sore after a long day at the desk? 🪑
+ProtoArc EC200: 8 adjustment points (lumbar 2.36" up/down and 0.8" in/out, 3D headrest, sliding seat depth, adjustable armrests, recline + tilt), breathable mesh back, 55D foam seat.
+
+$179.99 list price, extra 10% (about $18) with code GFPHOANGNONGVAN at ProtoArc.com 🏷️
+Specs-based pick, not hands-on tested. Link in bio → CHAIR (rankernest.com/chair)
+
+#ad — affiliate code, supports RankerNest at no extra cost to you
+#ergonomicchair #homeoffice #wfh #desksetup #officechair #RankerNest
+
+Cài đặt:
+- Ảnh bìa: covers/rankernest_protoarc-ec200_v2_cover.jpg (trong thư mục Videos\RankerToolAI_reels)
+- Nhạc trend: chọn trong thư viện của Instagram, giữ âm thanh gốc
+- Không cần nhãn AI
+- Dòng #ad trong caption là đủ công khai; chỉ dùng nhãn "Paid partnership" khi ProtoArc đồng ý
+- Link bio: https://rankernest.com/links (người xem chọn từ khoá CHAIR)
+
+=====================================================================
+2) PINTEREST  (Tạo Pin → tải video lên → điền các ô dưới)
 =====================================================================
 Video này ĐÃ có trong file CSV Pinterest (lên lịch sẵn). Nếu đã tải CSV lên thì BỎ QUA mục này.
 
@@ -25,7 +44,7 @@ Cài đặt:
 - Từ khoá gợi ý: ergonomic chair, office chair, home office, desk setup ideas, wfh setup
 
 =====================================================================
-2) YOUTUBE SHORTS  (YouTube Studio → Tạo → Tải video lên)
+3) YOUTUBE SHORTS  (YouTube Studio → Tạo → Tải video lên)
 =====================================================================
 Tiêu đề (tối đa 100 ký tự):
 8 adjustment points under $180: ProtoArc EC200 ergonomic chair #shorts
@@ -60,7 +79,7 @@ Cài đặt:
 - Trang kênh → Tuỳ chỉnh → Links: thêm https://rankernest.com/links
 
 =====================================================================
-3) LINKEDIN  (Đăng từ trang cá nhân; tải video trực tiếp, KHÔNG dán link YouTube)
+4) LINKEDIN  (Đăng từ trang RankerNest (Company Page); tải video trực tiếp, KHÔNG dán link YouTube)
 =====================================================================
 Nội dung bài:
 Most home-office chairs were never meant for 8-hour days.
@@ -79,7 +98,7 @@ Cài đặt:
 - Giờ đẹp: thứ 3–thứ 5, 20h–22h giờ VN (sáng giờ Mỹ)
 
 =====================================================================
-4) FACEBOOK REELS  (Fanpage → Reel → tải video)
+5) FACEBOOK REELS  (Fanpage → Reel → tải video)
 =====================================================================
 Caption:
 #ad Back sore after a long day at the desk? 🪑
@@ -100,7 +119,7 @@ Cài đặt:
 - Dòng #ad ở đầu caption là đủ công khai; chỉ bật "Branded content" nếu có tag được trang của ProtoArc
 
 =====================================================================
-5) THREADS  (Bài mới → đính kèm video)
+6) THREADS  (Bài mới → đính kèm video)
 =====================================================================
 Nội dung:
 Back sore after a long day at the desk? 🪑
@@ -115,7 +134,7 @@ Full review: https://rankernest.com/chair/?utm_source=threads&utm_medium=social&
 
 
 =====================================================================
-6) X / TWITTER  (Bài mới → đính kèm video (220/280 ký tự))
+7) X / TWITTER  (Bài mới → đính kèm video (220/280 ký tự))
 =====================================================================
 Nội dung:
 Long days at the desk? ProtoArc EC200: 8 adjustment points (adjustable lumbar, 3D headrest, seat depth, recline + tilt), mesh back.
@@ -128,7 +147,7 @@ https://rankernest.com/chair/?utm_source=x&utm_medium=social&utm_campaign=reel_v
 
 
 =====================================================================
-7) TIKTOK  (Chỉ đăng nếu đã có tài khoản)
+8) TIKTOK  (Chỉ đăng nếu đã có tài khoản)
 =====================================================================
 Caption:
 #ad Back sore after a long day at the desk? 🪑 8 adjustment points, mesh back, extra 10% with our code. Link in bio → CHAIR
@@ -143,7 +162,7 @@ Cài đặt:
 - Nhạc trend: chọn trong thư viện "Commercial" của TikTok/CapCut (tài khoản Business)
 
 =====================================================================
-8) EMAIL  (Thêm 1 mục vào bản tin RankerNest (Brevo, list #3), không gửi email riêng chỉ để quảng cáo)
+9) EMAIL  (Thêm 1 mục vào bản tin RankerNest (Brevo, list #3), không gửi email riêng chỉ để quảng cáo)
 =====================================================================
 Tiêu đề mục:
 Home office: ProtoArc EC200 chair (extra 10% code)

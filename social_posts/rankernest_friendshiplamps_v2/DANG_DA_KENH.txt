@@ -1,10 +1,29 @@
 VIDEO: rankernest_friendshiplamps_v2.mp4  |  SẢN PHẨM: Friendship Lamps  |  TRANG ĐÍCH: rankernest.com/lamp
 Mỗi kênh 1 link riêng (utm_source khác nhau) để sau 1 tuần biết kênh nào ra khách.
 Trước khi đăng: thêm nhạc trend trong CapCut (giữ âm thanh gốc), xuất 1080p 30fps, tắt đoạn đuôi CapCut.
-Instagram: dùng tin caption bot đã gửi kèm video (link bio = rankernest.com/links).
 
 =====================================================================
-1) PINTEREST  (Tạo Pin → tải video lên → điền các ô dưới)
+1) INSTAGRAM REELS  (Tài khoản @ranker.nest → + → Reel)
+=====================================================================
+Caption:
+Touch your lamp, theirs lights up, miles away 💡❤️
+Friendship Lamps pair over each home's own Wi-Fi, with 256 colors and app scheduling. Lumi from $70 (reg. $109), Classic & Modern from $99, Mid-Century from $118 (prices at time of writing).
+
+Heads-up: both homes need 2.4GHz Wi-Fi.
+A sweet gift for long-distance family and couples. Link in bio → LAMP (rankernest.com/lamp)
+
+#ad — affiliate link, supports RankerNest at no extra cost to you
+#longdistancerelationship #giftideas #friendshiplamp #christmasgifts #ldr #RankerNest
+
+Cài đặt:
+- Ảnh bìa: covers/rankernest_friendshiplamps_v2_cover.jpg (trong thư mục Videos\RankerToolAI_reels)
+- Nhạc trend: chọn trong thư viện của Instagram, giữ âm thanh gốc
+- Không cần nhãn AI
+- Dòng #ad trong caption là đủ công khai; chỉ dùng nhãn "Paid partnership" khi Friendship Lamps đồng ý
+- Link bio: https://rankernest.com/links (người xem chọn từ khoá LAMP)
+
+=====================================================================
+2) PINTEREST  (Tạo Pin → tải video lên → điền các ô dưới)
 =====================================================================
 Video này ĐÃ có trong file CSV Pinterest (lên lịch sẵn). Nếu đã tải CSV lên thì BỎ QUA mục này.
 
@@ -25,7 +44,7 @@ Cài đặt:
 - Từ khoá gợi ý: long distance relationship gifts, friendship lamp, ldr gift, gifts for grandparents, christmas gift ideas
 
 =====================================================================
-2) YOUTUBE SHORTS  (YouTube Studio → Tạo → Tải video lên)
+3) YOUTUBE SHORTS  (YouTube Studio → Tạo → Tải video lên)
 =====================================================================
 Tiêu đề (tối đa 100 ký tự):
 Touch your lamp, theirs lights up: Friendship Lamps for long-distance love #shorts
@@ -58,7 +77,28 @@ Cài đặt:
 - Trang kênh → Tuỳ chỉnh → Links: thêm https://rankernest.com/links
 
 =====================================================================
-3) FACEBOOK REELS  (Fanpage → Reel → tải video)
+4) LINKEDIN  (Đăng từ trang RankerNest (Company Page); tải video trực tiếp, KHÔNG dán link YouTube)
+=====================================================================
+Nội dung bài:
+Remote teams and families spread across time zones have the same problem: staying in touch without another notification.
+
+Friendship Lamps are a simple answer. Touch your lamp and the paired lamp lights up in someone else's home, over each home's own Wi-Fi, so distance doesn't matter. 256 colors and app scheduling.
+
+Lumi starts at $70 (reg. $109), Classic and Modern from $99, Mid-Century from $118 (prices at time of writing). One thing to check first: both homes need 2.4GHz Wi-Fi.
+
+A thoughtful gift for a distributed team or family. Details in the first comment.
+
+#ad #remotework #giftideas #distributedteams
+
+Bình luận đầu tiên (đăng ngay sau bài):
+Full review and pricing: https://rankernest.com/lamp/?utm_source=linkedin&utm_medium=social&utm_campaign=reel_video&utm_content=reel-friendshiplamps
+(affiliate link, we may earn a commission)
+
+Cài đặt:
+- Giờ đẹp: thứ 3–thứ 5, 20h–22h giờ VN (sáng giờ Mỹ)
+
+=====================================================================
+5) FACEBOOK REELS  (Fanpage → Reel → tải video)
 =====================================================================
 Caption:
 #ad Touch your lamp, theirs lights up, miles away 💡❤️
@@ -78,7 +118,7 @@ Cài đặt:
 - Dòng #ad ở đầu caption là đủ công khai; chỉ bật "Branded content" nếu có tag được trang của Friendship Lamps
 
 =====================================================================
-4) THREADS  (Bài mới → đính kèm video)
+6) THREADS  (Bài mới → đính kèm video)
 =====================================================================
 Nội dung:
 Touch your lamp, theirs lights up, miles away 💡❤️
@@ -91,7 +131,7 @@ Full review: https://rankernest.com/lamp/?utm_source=threads&utm_medium=social&u
 
 
 =====================================================================
-5) X / TWITTER  (Bài mới → đính kèm video (193/280 ký tự))
+7) X / TWITTER  (Bài mới → đính kèm video (193/280 ký tự))
 =====================================================================
 Nội dung:
 Touch your lamp, theirs lights up, miles away 💡
@@ -104,7 +144,7 @@ https://rankernest.com/lamp/?utm_source=x&utm_medium=social&utm_campaign=reel_vi
 
 
 =====================================================================
-6) TIKTOK  (Chỉ đăng nếu đã có tài khoản)
+8) TIKTOK  (Chỉ đăng nếu đã có tài khoản)
 =====================================================================
 Caption:
 #ad Touch your lamp, theirs lights up, miles away 💡❤️ A sweet gift for long-distance family and couples. Link in bio → LAMP
@@ -119,7 +159,7 @@ Cài đặt:
 - Nhạc trend: chọn trong thư viện "Commercial" của TikTok/CapCut (tài khoản Business)
 
 =====================================================================
-7) EMAIL  (Thêm 1 mục vào bản tin RankerNest (Brevo, list #3), không gửi email riêng chỉ để quảng cáo)
+9) EMAIL  (Thêm 1 mục vào bản tin RankerNest (Brevo, list #3), không gửi email riêng chỉ để quảng cáo)
 =====================================================================
 Tiêu đề mục:
 Gift idea: lamps that light up across the miles
@@ -140,7 +180,7 @@ Cài đặt:
 LỊCH ĐĂNG GỢI Ý (không đăng tất cả 1 lúc)
 =====================================================================
 Ngày 1: Pinterest + YouTube Shorts
-Ngày 2: Threads + X
+Ngày 2: LinkedIn (20h–22h) + Threads + X
 Ngày 3: Facebook Reels (+ TikTok nếu có)
 Bản tin email tiếp theo: thêm mục "Gift idea: lamps that light up across the miles"
 Sau ~7 ngày: nhờ Claude xem GA4 theo utm_source / utm_content=reel-friendshiplamps.

@@ -52,5 +52,11 @@
       "html": "A robot vacuum that<br /><span class=\"coral\">washes its own mop</span>",
       "hook": "A robot vacuum that washes its own mop 🧽"
     }
-  }
+  },
+  "linkedin": "The household chore most robot vacuums still leave to you is the mop.\n\nThe SwitchBot S20 handles that part too: it washes and dries its own mop and refills and drains its water automatically, with 10,000Pa suction and LiDAR + AI camera navigation.\n\nIt lists at $799.99, so it's a premium pick for people who would rather spend money than weekend hours. This is a specs-based pick, not a hands-on test. Full breakdown in the first comment.",
+  "linkedinTags": [
+    "smarthome",
+    "productivity",
+    "worklifebalance"
+  ]
 }

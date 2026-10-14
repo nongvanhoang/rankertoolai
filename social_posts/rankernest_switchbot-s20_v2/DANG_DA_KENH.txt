@@ -1,10 +1,28 @@
 VIDEO: rankernest_switchbot-s20_v2.mp4  |  SẢN PHẨM: SwitchBot  |  TRANG ĐÍCH: rankernest.com/robot
 Mỗi kênh 1 link riêng (utm_source khác nhau) để sau 1 tuần biết kênh nào ra khách.
 Trước khi đăng: thêm nhạc trend trong CapCut (giữ âm thanh gốc), xuất 1080p 30fps, tắt đoạn đuôi CapCut.
-Instagram: dùng tin caption bot đã gửi kèm video (link bio = rankernest.com/links).
 
 =====================================================================
-1) PINTEREST  (Tạo Pin → tải video lên → điền các ô dưới)
+1) INSTAGRAM REELS  (Tài khoản @ranker.nest → + → Reel)
+=====================================================================
+Caption:
+A robot vacuum that washes its own mop 🧽🤖
+SwitchBot S20: 10,000Pa suction, LiDAR + AI camera navigation, auto mop washing/drying and auto water refill/drain. $799.99 list price, so it's a premium pick; check the live price for promos.
+
+Specs-based pick, not hands-on tested. Link in bio → ROBOT (rankernest.com/robot)
+
+#ad — affiliate link, supports RankerNest at no extra cost to you
+#robotvacuum #smarthome #cleaningroutine #homegadgets #mopping #RankerNest
+
+Cài đặt:
+- Ảnh bìa: covers/rankernest_switchbot-s20_v2_cover.jpg (trong thư mục Videos\RankerToolAI_reels)
+- Nhạc trend: chọn trong thư viện của Instagram, giữ âm thanh gốc
+- Không cần nhãn AI
+- Dòng #ad trong caption là đủ công khai; chỉ dùng nhãn "Paid partnership" khi SwitchBot đồng ý
+- Link bio: https://rankernest.com/links (người xem chọn từ khoá ROBOT)
+
+=====================================================================
+2) PINTEREST  (Tạo Pin → tải video lên → điền các ô dưới)
 =====================================================================
 Video này ĐÃ có trong file CSV Pinterest (lên lịch sẵn). Nếu đã tải CSV lên thì BỎ QUA mục này.
 
@@ -25,7 +43,7 @@ Cài đặt:
 - Từ khoá gợi ý: robot vacuum, robot mop, smart home gadgets, cleaning routine, home tech
 
 =====================================================================
-2) YOUTUBE SHORTS  (YouTube Studio → Tạo → Tải video lên)
+3) YOUTUBE SHORTS  (YouTube Studio → Tạo → Tải video lên)
 =====================================================================
 Tiêu đề (tối đa 100 ký tự):
 A robot vacuum that washes its own mop: SwitchBot S20 in 20 seconds #shorts
@@ -61,7 +79,26 @@ Cài đặt:
 - Trang kênh → Tuỳ chỉnh → Links: thêm https://rankernest.com/links
 
 =====================================================================
-3) FACEBOOK REELS  (Fanpage → Reel → tải video)
+4) LINKEDIN  (Đăng từ trang RankerNest (Company Page); tải video trực tiếp, KHÔNG dán link YouTube)
+=====================================================================
+Nội dung bài:
+The household chore most robot vacuums still leave to you is the mop.
+
+The SwitchBot S20 handles that part too: it washes and dries its own mop and refills and drains its water automatically, with 10,000Pa suction and LiDAR + AI camera navigation.
+
+It lists at $799.99, so it's a premium pick for people who would rather spend money than weekend hours. This is a specs-based pick, not a hands-on test. Full breakdown in the first comment.
+
+#ad #smarthome #productivity #worklifebalance
+
+Bình luận đầu tiên (đăng ngay sau bài):
+Full review and pricing: https://rankernest.com/robot/?utm_source=linkedin&utm_medium=social&utm_campaign=reel_video&utm_content=reel-switchbot-s20
+(affiliate link, we may earn a commission)
+
+Cài đặt:
+- Giờ đẹp: thứ 3–thứ 5, 20h–22h giờ VN (sáng giờ Mỹ)
+
+=====================================================================
+5) FACEBOOK REELS  (Fanpage → Reel → tải video)
 =====================================================================
 Caption:
 #ad A robot vacuum that washes its own mop 🧽🤖
@@ -83,7 +120,7 @@ Cài đặt:
 - Dòng #ad ở đầu caption là đủ công khai; chỉ bật "Branded content" nếu có tag được trang của SwitchBot
 
 =====================================================================
-4) THREADS  (Bài mới → đính kèm video)
+6) THREADS  (Bài mới → đính kèm video)
 =====================================================================
 Nội dung:
 A robot vacuum that washes its own mop 🧽🤖
@@ -98,7 +135,7 @@ Full review: https://rankernest.com/robot/?utm_source=threads&utm_medium=social&
 
 
 =====================================================================
-5) X / TWITTER  (Bài mới → đính kèm video (207/280 ký tự))
+7) X / TWITTER  (Bài mới → đính kèm video (207/280 ký tự))
 =====================================================================
 Nội dung:
 A robot vacuum that washes its own mop: SwitchBot S20.
@@ -111,7 +148,7 @@ https://rankernest.com/robot/?utm_source=x&utm_medium=social&utm_campaign=reel_v
 
 
 =====================================================================
-6) TIKTOK  (Chỉ đăng nếu đã có tài khoản)
+8) TIKTOK  (Chỉ đăng nếu đã có tài khoản)
 =====================================================================
 Caption:
 #ad A robot vacuum that washes its own mop 🧽🤖 Auto mop washing, auto water refill, 10,000Pa. Link in bio → ROBOT
@@ -126,7 +163,7 @@ Cài đặt:
 - Nhạc trend: chọn trong thư viện "Commercial" của TikTok/CapCut (tài khoản Business)
 
 =====================================================================
-7) EMAIL  (Thêm 1 mục vào bản tin RankerNest (Brevo, list #3), không gửi email riêng chỉ để quảng cáo)
+9) EMAIL  (Thêm 1 mục vào bản tin RankerNest (Brevo, list #3), không gửi email riêng chỉ để quảng cáo)
 =====================================================================
 Tiêu đề mục:
 Robot vacuum that washes its own mop: SwitchBot S20
@@ -147,7 +184,7 @@ Cài đặt:
 LỊCH ĐĂNG GỢI Ý (không đăng tất cả 1 lúc)
 =====================================================================
 Ngày 1: Pinterest + YouTube Shorts
-Ngày 2: Threads + X
+Ngày 2: LinkedIn (20h–22h) + Threads + X
 Ngày 3: Facebook Reels (+ TikTok nếu có)
 Bản tin email tiếp theo: thêm mục "Robot vacuum that washes its own mop: SwitchBot S20"
 Sau ~7 ngày: nhờ Claude xem GA4 theo utm_source / utm_content=reel-switchbot-s20.

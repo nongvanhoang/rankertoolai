@@ -1,10 +1,29 @@
 VIDEO: rankernest_protoarc-xk01_v2.mp4  |  SẢN PHẨM: ProtoArc  |  TRANG ĐÍCH: rankernest.com/keyboard
 Mỗi kênh 1 link riêng (utm_source khác nhau) để sau 1 tuần biết kênh nào ra khách.
 Trước khi đăng: thêm nhạc trend trong CapCut (giữ âm thanh gốc), xuất 1080p 30fps, tắt đoạn đuôi CapCut.
-Instagram: dùng tin caption bot đã gửi kèm video (link bio = rankernest.com/links).
 
 =====================================================================
-1) PINTEREST  (Tạo Pin → tải video lên → điền các ô dưới)
+1) INSTAGRAM REELS  (Tài khoản @ranker.nest → + → Reel)
+=====================================================================
+Caption:
+A full-size keyboard that folds into your bag 🎒⌨️
+ProtoArc XK01: 105 keys with a number pad, tri-folds to 8.46 x 4.68 in and 10.5 oz, switches between 3 devices over Bluetooth 5.1, quiet scissor keys. USB-C, up to 150 days standby (standby, not typing time).
+
+$43.99 sale (reg. $53.99, as of Oct 13) + extra 10% with code GFPHOANGNONGVAN at ProtoArc.com 🏷️
+Link in bio → KEYBOARD (rankernest.com/keyboard)
+
+#ad — affiliate code, supports RankerNest at no extra cost to you
+#travelgadgets #foldablekeyboard #ipadsetup #digitalnomad #remotework #RankerNest
+
+Cài đặt:
+- Ảnh bìa: covers/rankernest_protoarc-xk01_v2_cover.jpg (trong thư mục Videos\RankerToolAI_reels)
+- Nhạc trend: chọn trong thư viện của Instagram, giữ âm thanh gốc
+- Không cần nhãn AI
+- Dòng #ad trong caption là đủ công khai; chỉ dùng nhãn "Paid partnership" khi ProtoArc đồng ý
+- Link bio: https://rankernest.com/links (người xem chọn từ khoá KEYBOARD)
+
+=====================================================================
+2) PINTEREST  (Tạo Pin → tải video lên → điền các ô dưới)
 =====================================================================
 Video này ĐÃ có trong file CSV Pinterest (lên lịch sẵn). Nếu đã tải CSV lên thì BỎ QUA mục này.
 
@@ -25,7 +44,7 @@ Cài đặt:
 - Từ khoá gợi ý: foldable keyboard, travel gadgets, ipad setup, digital nomad, portable keyboard
 
 =====================================================================
-2) YOUTUBE SHORTS  (YouTube Studio → Tạo → Tải video lên)
+3) YOUTUBE SHORTS  (YouTube Studio → Tạo → Tải video lên)
 =====================================================================
 Tiêu đề (tối đa 100 ký tự):
 Full-size keyboard that folds into your bag: ProtoArc XK01 #shorts
@@ -58,7 +77,7 @@ Cài đặt:
 - Trang kênh → Tuỳ chỉnh → Links: thêm https://rankernest.com/links
 
 =====================================================================
-3) LINKEDIN  (Đăng từ trang cá nhân; tải video trực tiếp, KHÔNG dán link YouTube)
+4) LINKEDIN  (Đăng từ trang RankerNest (Company Page); tải video trực tiếp, KHÔNG dán link YouTube)
 =====================================================================
 Nội dung bài:
 For people who work from cafés, coworking spaces and hotel desks: a full-size keyboard you can actually carry.
@@ -77,7 +96,7 @@ Cài đặt:
 - Giờ đẹp: thứ 3–thứ 5, 20h–22h giờ VN (sáng giờ Mỹ)
 
 =====================================================================
-4) FACEBOOK REELS  (Fanpage → Reel → tải video)
+5) FACEBOOK REELS  (Fanpage → Reel → tải video)
 =====================================================================
 Caption:
 #ad A full-size keyboard that folds into your bag 🎒⌨️
@@ -97,7 +116,7 @@ Cài đặt:
 - Dòng #ad ở đầu caption là đủ công khai; chỉ bật "Branded content" nếu có tag được trang của ProtoArc
 
 =====================================================================
-5) THREADS  (Bài mới → đính kèm video)
+6) THREADS  (Bài mới → đính kèm video)
 =====================================================================
 Nội dung:
 A full-size keyboard that folds into your bag 🎒⌨️
@@ -112,7 +131,7 @@ Full review: https://rankernest.com/keyboard/?utm_source=threads&utm_medium=soci
 
 
 =====================================================================
-6) X / TWITTER  (Bài mới → đính kèm video (224/280 ký tự))
+7) X / TWITTER  (Bài mới → đính kèm video (224/280 ký tự))
 =====================================================================
 Nội dung:
 A full-size keyboard (105 keys + numpad) that tri-folds to 8.46 x 4.68 in: ProtoArc XK01.
@@ -125,7 +144,7 @@ https://rankernest.com/keyboard/?utm_source=x&utm_medium=social&utm_campaign=ree
 
 
 =====================================================================
-7) TIKTOK  (Chỉ đăng nếu đã có tài khoản)
+8) TIKTOK  (Chỉ đăng nếu đã có tài khoản)
 =====================================================================
 Caption:
 #ad A full-size keyboard that folds into your bag 🎒⌨️ 105 keys + numpad, folds small enough for your bag. Link in bio → KEYBOARD
@@ -140,7 +159,7 @@ Cài đặt:
 - Nhạc trend: chọn trong thư viện "Commercial" của TikTok/CapCut (tài khoản Business)
 
 =====================================================================
-8) EMAIL  (Thêm 1 mục vào bản tin RankerNest (Brevo, list #3), không gửi email riêng chỉ để quảng cáo)
+9) EMAIL  (Thêm 1 mục vào bản tin RankerNest (Brevo, list #3), không gửi email riêng chỉ để quảng cáo)
 =====================================================================
 Tiêu đề mục:
 Travel gear: a full-size keyboard that folds (ProtoArc XK01)

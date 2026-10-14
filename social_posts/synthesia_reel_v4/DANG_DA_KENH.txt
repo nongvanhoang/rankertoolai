@@ -1,10 +1,28 @@
 VIDEO: synthesia_reel_v4.mp4  |  SẢN PHẨM: Synthesia  |  TRANG ĐÍCH: rankertoolai.com/avatar
 Mỗi kênh 1 link riêng (utm_source khác nhau) để sau 1 tuần biết kênh nào ra khách.
 Trước khi đăng: thêm nhạc trend trong CapCut (giữ âm thanh gốc, nhạc nhỏ 15–25% dưới giọng avatar), xuất 1080p 30fps, tắt đoạn đuôi CapCut.
-Instagram: dùng tin caption bot đã gửi kèm video (link bio = rankertoolai.com/links).
 
 =====================================================================
-1) PINTEREST  (Tạo Pin → tải video lên → điền các ô dưới)
+1) INSTAGRAM REELS  (Tài khoản @ranker.toolai → + → Reel)
+=====================================================================
+Caption:
+Training videos without a camera? 🎬
+Synthesia turns your script into an AI avatar video, in 140+ languages. Free plan to test, Starter from $29/mo ($18/mo billed yearly).
+Our score: 8.7/10. Link in bio → Synthesia (rankertoolai.com/avatar)
+
+#ad — contains affiliate links
+
+#Synthesia #AIVideo #AItools #ElearningTools #CorporateTraining #VideoMarketing #RankerToolAI
+
+Cài đặt:
+- Ảnh bìa: covers/synthesia_reel_v4_cover.jpg (trong thư mục Videos\RankerToolAI_reels)
+- Nhạc trend: chọn trong thư viện của Instagram, giữ âm thanh gốc (nhạc nhỏ dưới giọng avatar)
+- Bật nhãn "AI info" (video có người dẫn AI)
+- Dòng #ad trong caption là đủ công khai; chỉ dùng nhãn "Paid partnership" khi Synthesia đồng ý
+- Link bio: https://rankertoolai.com/links (người xem chọn từ khoá AVATAR)
+
+=====================================================================
+2) PINTEREST  (Tạo Pin → tải video lên → điền các ô dưới)
 =====================================================================
 Tiêu đề:
 AI Training Video Maker: Script to Presenter Video (Synthesia Free Plan)
@@ -23,7 +41,7 @@ Cài đặt:
 - Từ khoá gợi ý: ai video generator, ai avatar, training video, corporate training, ai tools
 
 =====================================================================
-2) YOUTUBE SHORTS  (YouTube Studio → Tạo → Tải video lên)
+3) YOUTUBE SHORTS  (YouTube Studio → Tạo → Tải video lên)
 =====================================================================
 Tiêu đề (tối đa 100 ký tự):
 Training videos without a camera? Synthesia AI free plan test #shorts
@@ -55,7 +73,7 @@ Cài đặt:
 - Trang kênh → Tuỳ chỉnh → Links: thêm https://rankertoolai.com/links
 
 =====================================================================
-3) LINKEDIN  (Đăng từ trang cá nhân; tải video trực tiếp, KHÔNG dán link YouTube)
+4) LINKEDIN  (Đăng từ trang RankerToolAI (Company Page); tải video trực tiếp, KHÔNG dán link YouTube)
 =====================================================================
 Nội dung bài:
 Training teams are quietly replacing filmed videos with AI presenters.
@@ -81,7 +99,7 @@ Cài đặt:
 - Giờ đẹp: thứ 3–thứ 5, 20h–22h giờ VN (sáng giờ Mỹ)
 
 =====================================================================
-4) FACEBOOK REELS  (Fanpage → Reel → tải video)
+5) FACEBOOK REELS  (Fanpage → Reel → tải video)
 =====================================================================
 Caption:
 #ad Training videos without a camera? 🎬
@@ -101,7 +119,7 @@ Cài đặt:
 - Dòng #ad ở đầu caption là đủ công khai; chỉ bật "Branded content" nếu có tag được trang của Synthesia
 
 =====================================================================
-5) THREADS  (Bài mới → đính kèm video)
+6) THREADS  (Bài mới → đính kèm video)
 =====================================================================
 Nội dung:
 Training videos without a camera? 🎬
@@ -114,7 +132,7 @@ Full review: https://rankertoolai.com/avatar/?utm_source=threads&utm_medium=soci
 
 
 =====================================================================
-6) X / TWITTER  (Bài mới → đính kèm video (213/280 ký tự))
+7) X / TWITTER  (Bài mới → đính kèm video (213/280 ký tự))
 =====================================================================
 Nội dung:
 Training videos without a camera: typed one sentence into Synthesia's free plan → AI presenter video.
@@ -127,7 +145,7 @@ https://rankertoolai.com/avatar/?utm_source=x&utm_medium=social&utm_campaign=ree
 
 
 =====================================================================
-7) TIKTOK  (Chỉ đăng nếu đã có tài khoản)
+8) TIKTOK  (Chỉ đăng nếu đã có tài khoản)
 =====================================================================
 Caption:
 #ad Training videos without a camera? 🎬 Typed 1 sentence into the free plan 👀 Link in bio → AVATAR
@@ -142,7 +160,7 @@ Cài đặt:
 - Nhạc trend: chọn trong thư viện "Commercial" của TikTok/CapCut (tài khoản Business)
 
 =====================================================================
-8) EMAIL  (Thêm 1 mục vào bản tin RankerToolAI (Brevo, list #5), không gửi email riêng chỉ để quảng cáo)
+9) EMAIL  (Thêm 1 mục vào bản tin RankerToolAI (Brevo, list #5), không gửi email riêng chỉ để quảng cáo)
 =====================================================================
 Tiêu đề mục:
 Tool of the week: Synthesia

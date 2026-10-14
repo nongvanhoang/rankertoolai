@@ -1,11 +1,32 @@
 VIDEO: rankernest_silksilky_v2.mp4  |  SẢN PHẨM: SilkSilky  |  TRANG ĐÍCH: rankernest.com/silk
 Mỗi kênh 1 link riêng (utm_source khác nhau) để sau 1 tuần biết kênh nào ra khách.
 Trước khi đăng: thêm nhạc trend trong CapCut (giữ âm thanh gốc), xuất 1080p 30fps, tắt đoạn đuôi CapCut.
-Instagram: dùng tin caption bot đã gửi kèm video (link bio = rankernest.com/links).
 ⚠️ HẠN: KHÔNG đăng sau 2026-10-22 (video nhắc đợt 6th Anniversary Sale kết thúc 22/10).
 
 =====================================================================
-1) PINTEREST  (Tạo Pin → tải video lên → điền các ô dưới)
+1) INSTAGRAM REELS  (Tài khoản @ranker.nest → + → Reel)
+=====================================================================
+Caption:
+Silk pillowcase without the boutique price tag? 🌙
+SilkSilky makes 100% Grade 6A mulberry silk pillowcases from ~$22 (19 momme), OEKO-TEX + GOTS certified, 4.2/5 from 10,246 Trustpilot reviews.
+
+🎉 6th Anniversary Sale, ends Oct 22: free scrunchie on $99+, free silk eye mask on $159+. Free shipping over $59.
+Heads-up: it ships from China, so allow 2–3 weeks.
+
+Link in bio → SILK (rankernest.com/silk)
+#ad — affiliate link, supports RankerNest at no extra cost to you
+
+#silkpillowcase #mulberrysilk #beautysleep #selfcare #giftideas #sleepbetter #RankerNest
+
+Cài đặt:
+- Ảnh bìa: covers/rankernest_silksilky_v2_cover.jpg (trong thư mục Videos\RankerToolAI_reels)
+- Nhạc trend: chọn trong thư viện của Instagram, giữ âm thanh gốc
+- Không cần nhãn AI
+- Dòng #ad trong caption là đủ công khai; chỉ dùng nhãn "Paid partnership" khi SilkSilky đồng ý
+- Link bio: https://rankernest.com/links (người xem chọn từ khoá SILK)
+
+=====================================================================
+2) PINTEREST  (Tạo Pin → tải video lên → điền các ô dưới)
 =====================================================================
 Video này ĐÃ có trong file CSV Pinterest (lên lịch sẵn). Nếu đã tải CSV lên thì BỎ QUA mục này.
 
@@ -26,7 +47,7 @@ Cài đặt:
 - Từ khoá gợi ý: silk pillowcase, mulberry silk, beauty sleep, sleep routine, self care gift
 
 =====================================================================
-2) YOUTUBE SHORTS  (YouTube Studio → Tạo → Tải video lên)
+3) YOUTUBE SHORTS  (YouTube Studio → Tạo → Tải video lên)
 =====================================================================
 Tiêu đề (tối đa 100 ký tự):
 Mulberry silk pillowcase from ~$22? SilkSilky in 20 seconds #shorts
@@ -61,7 +82,28 @@ Cài đặt:
 - Trang kênh → Tuỳ chỉnh → Links: thêm https://rankernest.com/links
 
 =====================================================================
-3) FACEBOOK REELS  (Fanpage → Reel → tải video)
+4) LINKEDIN  (Đăng từ trang RankerNest (Company Page); tải video trực tiếp, KHÔNG dán link YouTube)
+=====================================================================
+Nội dung bài:
+A small upgrade for people who travel or work long days: the pillowcase.
+
+SilkSilky makes 100% Grade 6A mulberry silk pillowcases, OEKO-TEX + GOTS certified, rated 4.2/5 from 10,246 Trustpilot reviews. They start around $22 (19 momme), with free shipping over $59.
+
+Its 6th Anniversary Sale runs until Oct 22: a free scrunchie on $99+ and a free silk eye mask on $159+, which also makes it an easy client or team gift. It ships from China, so allow 2–3 weeks.
+
+Our full breakdown is in the first comment.
+
+#ad #giftideas #selfcare #wellbeing
+
+Bình luận đầu tiên (đăng ngay sau bài):
+Full review and pricing: https://rankernest.com/silk/?utm_source=linkedin&utm_medium=social&utm_campaign=reel_video&utm_content=reel-silksilky
+(affiliate link, we may earn a commission)
+
+Cài đặt:
+- Giờ đẹp: thứ 3–thứ 5, 20h–22h giờ VN (sáng giờ Mỹ)
+
+=====================================================================
+5) FACEBOOK REELS  (Fanpage → Reel → tải video)
 =====================================================================
 Caption:
 #ad Silk pillowcase without the boutique price tag? 🌙
@@ -82,7 +124,7 @@ Cài đặt:
 - Dòng #ad ở đầu caption là đủ công khai; chỉ bật "Branded content" nếu có tag được trang của SilkSilky
 
 =====================================================================
-4) THREADS  (Bài mới → đính kèm video)
+6) THREADS  (Bài mới → đính kèm video)
 =====================================================================
 Nội dung:
 Silk pillowcase without the boutique price tag? 🌙
@@ -97,7 +139,7 @@ Full review: https://rankernest.com/silk/?utm_source=threads&utm_medium=social&u
 
 
 =====================================================================
-5) X / TWITTER  (Bài mới → đính kèm video (247/280 ký tự))
+7) X / TWITTER  (Bài mới → đính kèm video (247/280 ký tự))
 =====================================================================
 Nội dung:
 Silk pillowcase without the boutique price: SilkSilky, 100% Grade 6A mulberry silk from ~$22, OEKO-TEX + GOTS.
@@ -110,7 +152,7 @@ https://rankernest.com/silk/?utm_source=x&utm_medium=social&utm_campaign=reel_vi
 
 
 =====================================================================
-6) TIKTOK  (Chỉ đăng nếu đã có tài khoản)
+8) TIKTOK  (Chỉ đăng nếu đã có tài khoản)
 =====================================================================
 Caption:
 #ad Silk pillowcase without the boutique price tag? 🌙 Grade 6A mulberry silk from ~$22, sale ends Oct 22. Link in bio → SILK
@@ -125,7 +167,7 @@ Cài đặt:
 - Nhạc trend: chọn trong thư viện "Commercial" của TikTok/CapCut (tài khoản Business)
 
 =====================================================================
-7) EMAIL  (Thêm 1 mục vào bản tin RankerNest (Brevo, list #3), không gửi email riêng chỉ để quảng cáo)
+9) EMAIL  (Thêm 1 mục vào bản tin RankerNest (Brevo, list #3), không gửi email riêng chỉ để quảng cáo)
 =====================================================================
 Tiêu đề mục:
 Pick of the week: SilkSilky silk pillowcases (sale ends Oct 22)
@@ -146,7 +188,7 @@ Cài đặt:
 LỊCH ĐĂNG GỢI Ý (không đăng tất cả 1 lúc)
 =====================================================================
 Ngày 1: Pinterest + YouTube Shorts
-Ngày 2: Threads + X
+Ngày 2: LinkedIn (20h–22h) + Threads + X
 Ngày 3: Facebook Reels (+ TikTok nếu có)
 Bản tin email tiếp theo: thêm mục "Pick of the week: SilkSilky silk pillowcases (sale ends Oct 22)"
 Sau ~7 ngày: nhờ Claude xem GA4 theo utm_source / utm_content=reel-silksilky.
