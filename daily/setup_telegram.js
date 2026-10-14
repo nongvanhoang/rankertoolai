@@ -37,7 +37,8 @@ const api = async (m, body) => {
   const chatId = group.chat.id;
   const threads = { ...(cfg.threads || {}) };
   for (const m of msgs.filter((x) => x.chat.id === chatId && x.text)) {
-    const t = m.text.trim().toLowerCase();
+    // "rta" / "rn", or "/rta" "/rn@bot": a bot that isn't admin only receives the slash forms
+    const t = m.text.trim().toLowerCase().replace(/^\//, '').replace(/@.*$/, '');
     if ((t === 'rta' || t === 'rn') && m.message_thread_id) threads[t] = m.message_thread_id;
   }
   const out = { ...cfg, chat_id: chatId, chat_title: group.chat.title, threads };

@@ -1,6 +1,13 @@
 {
  "videos_dir": "C:\\Users\\Admin\\Videos\\RankerToolAI_reels",
- "hold": ["protoarc-ec200", "protoarc-top3"],
- "chat_id": null,
- "threads": {}
+ "hold": [
+  "protoarc-ec200",
+  "protoarc-top3"
+ ],
+ "chat_id": -1004384456936,
+ "threads": {
+  "rta": 2,
+  "rn": 4
+ },
+ "chat_title": "Đăng bài hàng ngày"
 }

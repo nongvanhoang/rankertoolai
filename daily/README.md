@@ -2,13 +2,13 @@
 
 Mỗi sáng 6:30, máy tính gửi vào nhóm Telegram **"Đăng bài hàng ngày"** (2 mục: RankerToolAI, RankerNest):
 video của hôm nay, rồi mỗi kênh 1 tin nhắn (caption trong khung, chạm để copy), cuối cùng là danh sách việc.
-Tác vụ Windows: **Ranker_DangBaiHangNgay** (máy tắt lúc 6:30 thì gửi khi bật máy). Nhật ký: `daily/send_daily.log`.
+Tác vụ Windows: **Ranker_DangBaiHangNgay** chạy `daily/run_daily.ps1` (máy tắt lúc 6:30 thì gửi khi bật máy). Nhật ký: `daily/send_daily.log`.
 
 ## Cài đặt lần đầu (chủ tài khoản)
 1. Lưu khoá bot (lấy trong @BotFather → /mybots → bot → API Token), chạy trong PowerShell:
    `[Environment]::SetEnvironmentVariable('TELEGRAM_BOT_TOKEN','<khoá>','User')`
 2. Telegram: tạo nhóm, bật **Chủ đề (Topics)**, thêm `@rankernest_reels_bot` làm **quản trị viên**,
-   tạo 2 chủ đề **RankerToolAI** và **RankerNest**, gõ `rta` trong chủ đề đầu, `rn` trong chủ đề sau.
+   tạo 2 chủ đề **RankerToolAI** và **RankerNest**, gõ `/rta` trong chủ đề đầu, `/rn` trong chủ đề sau (có dấu /, vì bot không phải quản trị viên chỉ đọc được lệnh).
 3. `node daily/setup_telegram.js` rồi `node daily/setup_telegram.js --test`
 
 ## Lệnh hay dùng
