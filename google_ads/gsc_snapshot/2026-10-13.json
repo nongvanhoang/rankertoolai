@@ -8,18 +8,32 @@
   },
   "summary": {
     "total_clicks": 0,
-    "total_impressions": 11,
+    "total_impressions": 21,
     "avg_ctr_pct": 0.0,
-    "avg_position": 25.9,
-    "indexed_pages_with_traffic": 6
+    "avg_position": 13.2,
+    "indexed_pages_with_traffic": 15
   },
   "top_pages": [
     {
       "url": "/",
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 2,
       "ctr_pct": 0,
       "position": 85
+    },
+    {
+      "url": "/about/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 3
+    },
+    {
+      "url": "/alternatives/beehiiv/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 10
     },
     {
       "url": "/best/ai-tools-for-agencies/",
@@ -36,11 +50,25 @@
       "position": 2
     },
     {
+      "url": "/blog/best-ai-tools-for-solopreneurs/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 6
+    },
+    {
       "url": "/blog/is-rytr-worth-it/",
       "clicks": 0,
       "impressions": 1,
       "ctr_pct": 0,
       "position": 7
+    },
+    {
+      "url": "/compare/heygen-vs-synthesia/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 6
     },
     {
       "url": "/compare/wispr-flow-vs-superwhisper/",
@@ -50,14 +78,49 @@
       "position": 43
     },
     {
+      "url": "/methodology/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 2
+    },
+    {
       "url": "/pricing/gearup-booster/",
       "clicks": 0,
       "impressions": 3,
       "ctr_pct": 0,
       "position": 9.3
+    },
+    {
+      "url": "/review/beehiiv/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 9
+    },
+    {
+      "url": "/review/claude/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 2
+    },
+    {
+      "url": "/review/gearup-booster/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 1
+    },
+    {
+      "url": "/review/hubspot/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr_pct": 0,
+      "position": 4
     }
   ],
   "near_miss_pages": [],
-  "generated_at": "2026-10-15T00:50:09.707396+00:00",
+  "generated_at": "2026-10-15T23:17:49.252228+00:00",
   "note": "No credentials in this file — safe to commit. Generated locally where the real GSC OAuth token lives; the cloud ads-signal routine reads only this JSON."
 }
