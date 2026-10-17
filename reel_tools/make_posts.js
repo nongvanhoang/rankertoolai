@@ -58,6 +58,11 @@ const threads = [s.hook, s.summary, s.offer, `Full review: ${link("threads", "so
 const xText = `${s.x}\n\n${link("x", "social")}\n\n#ad ${tags(s.xTags || [])}`.trim();
 const xLen = xText.replace(/https?:\/\/\S+/g, "x".repeat(23)).length; // X counts any URL as 23
 
+// First comments: links in IG/TikTok/Shorts captions aren't clickable, so the comment points to the bio page.
+const igComment = () => `Full review + current price 👉 link in bio, tap ${s.kw.toUpperCase()}\n(${short} · #ad ${what})`;
+const ttComment = () => `Link in bio → ${s.kw.toUpperCase()} 👆 (${short}) · #ad ${what}`;
+const xReply = () => `Full review: ${link("x", "social")}\n(${what}: we may earn a commission)`;
+
 const tiktok = `#ad ${s.hook} ${s.tiktokLine || ""} Link in bio → ${s.kw.toUpperCase()}\n${tags(s.tiktokTags || allTags)}`.replace(/  +/g, " ");
 
 const email = {
@@ -84,7 +89,7 @@ const channels = [];
 const igCaption = fs.readFileSync(path.join(ROOT, "social_videos", s.reel, "caption.txt"), "utf8").trim();
 channels.push({
   key: "instagram", title: "INSTAGRAM REELS", how: `Tài khoản @${s.site === "rn" ? "ranker.nest" : "ranker.toolai"} → + → Reel`,
-  fields: [["Caption", igCaption]],
+  fields: [["Caption", igCaption], ["Bình luận đầu tiên (đăng xong thì ghim)", igComment()]],
   settings: [
     `Ảnh bìa: covers/${s.reel}_cover.jpg (trong thư mục Videos\\RankerToolAI_reels)`,
     `Nhạc trend: chọn trong thư viện của Instagram, giữ âm thanh gốc${ai ? " (nhạc nhỏ dưới giọng avatar)" : ""}`,
@@ -126,10 +131,10 @@ channels.push({
   settings: [`Dòng #ad ở đầu caption là đủ công khai; chỉ bật "Branded content" nếu có tag được trang của ${s.brandName}`],
 });
 channels.push({ key: "threads", title: "THREADS", how: "Bài mới → đính kèm video", fields: [["Nội dung", threads]], settings: [] });
-channels.push({ key: "x", title: "X / TWITTER", how: `Bài mới → đính kèm video (${xLen}/280 ký tự)`, fields: [["Nội dung", xText]], settings: [] });
+channels.push({ key: "x", title: "X / TWITTER", how: `Bài mới → đính kèm video (${xLen}/280 ký tự)`, fields: [["Nội dung", xText], ["Trả lời ngay dưới bài (link)", xReply()]], settings: ["Nếu bài có link bị ít người xem: xoá link khỏi bài, chỉ để link trong phần trả lời"] });
 channels.push({
-  key: "tiktok", title: "TIKTOK", how: "Chỉ đăng nếu đã có tài khoản",
-  fields: [["Caption", tiktok], ["Link bio (nếu tài khoản cho thêm link)", link("tiktok", "bio")]],
+  key: "tiktok", title: "TIKTOK", how: "+ → Tải lên → chọn video → dán caption",
+  fields: [["Caption", tiktok], ["Bình luận ghim (đăng xong thì ghim)", ttComment()], ["Link bio (nếu tài khoản cho thêm link)", link("tiktok", "bio")]],
   settings: [`Bật "Content disclosure" → "Branded content"`, ai ? `Bật nhãn "AI-generated content"` : `Không cần nhãn AI (ảnh sản phẩm thật)`,
     `Nhạc trend: chọn trong thư viện "Commercial" của TikTok/CapCut (tài khoản Business)`],
 });
@@ -187,6 +192,16 @@ for (const [k, v] of Object.entries(s.variants || {})) {
   const ytTitle = v.hook.replace(/[\s\p{Extended_Pictographic}‍️]+$/u, "") + ` | ${s.brandName} #shorts`;
   if (ytTitle.length > 100) { console.error(`${reel}: YouTube title ${ytTitle.length}/100`); process.exit(1); }
   const fields = [["INSTAGRAM caption", ig], ["YOUTUBE tiêu đề", ytTitle], ["YOUTUBE mô tả", yt], ["TIKTOK caption", tt]];
+  // Same per-channel layout as hook A (caption + first comment + settings), with this hook's own utm_content
+  const byKey = Object.fromEntries(channels.map((c) => [c.key, c]));
+  const fbV = [`#ad ${v.hook}`, s.summary, s.points.map((p) => "✅ " + p).join("\n"), s.offer ? "🏷️ " + s.offer : "",
+    s.caveat ? "ℹ️ " + s.caveat : "", "👇 Full review + link in the first comment", tags(allTags.slice(0, 5))].filter(Boolean).join("\n");
+  const vChannels = [
+    { ...byKey.instagram, fields: [["Caption", ig], ["Bình luận đầu tiên (đăng xong thì ghim)", igComment()]] },
+    { ...byKey.youtube, fields: [["Tiêu đề (tối đa 100 ký tự)", ytTitle], ["Mô tả", yt], ["Bình luận ghim", `Full review + current price 👉 ${short} (link on our channel page)`]] },
+    { ...byKey.tiktok, fields: [["Caption", tt], ["Bình luận ghim (đăng xong thì ghim)", ttComment()]] },
+    { ...byKey.facebook, fields: [["Caption", fbV], ["Bình luận đầu tiên", `Full review: ${link("facebook", "reel", content)}\n(${what}: we may earn a commission at no extra cost to you)`]] },
+  ];
 
   const vDir = path.join(ROOT, "social_posts", reel);
   fs.rmSync(vDir, { recursive: true, force: true });
@@ -198,11 +213,15 @@ for (const [k, v] of Object.entries(s.variants || {})) {
   for (const [l, x] of fields) t += `\n${l}:\n${x}\n`;
   fs.writeFileSync(path.join(vDir, "DANG_DA_KENH.txt"), t);
 
-  let m = `<b>🧪 ${esc(reel)}</b> · kiểu mở đầu ${k.toUpperCase()}\n<i>Chỉ đăng IG + YouTube Shorts + TikTok; cài đặt giống bản A.</i>`;
-  if (s.expires) m += `\n⚠️ <b>Không đăng sau ${esc(s.expires)}</b>`;
-  for (const [l, x] of fields) m += `\n\n<b>${esc(l)}:</b>\n<pre>${esc(x)}</pre>`;
-  if (m.length > 4000) { console.error(`${reel}: Telegram message too long (${m.length})`); process.exit(1); }
-  fs.writeFileSync(path.join(vDir, "tg", "01_hooktest.html"), m);
+  fs.writeFileSync(path.join(vDir, "tg", "00_head.html"), `<b>🧪 ${esc(reel)}</b> · kiểu mở đầu ${k.toUpperCase()} (cùng video, chỉ khác câu đầu)` +
+    (s.expires ? `\n⚠️ <b>Không đăng sau ${esc(s.expires)}</b> (${esc(s.expiresNote)}).` : ""));
+  vChannels.forEach((c, i) => {
+    let m = `<b>${c.title}</b>  <i>${esc(c.how)}</i>\n`;
+    for (const [label, text] of c.fields) m += `\n<b>${esc(label)}:</b>\n<pre>${esc(text)}</pre>`;
+    if (c.settings.length) m += `\n\n<b>Cài đặt:</b>\n` + c.settings.map((x) => "• " + esc(x)).join("\n");
+    if (m.length > 4000) { console.error(`${reel}: Telegram message ${c.key} too long (${m.length})`); process.exit(1); }
+    fs.writeFileSync(path.join(vDir, "tg", `${String(i + 1).padStart(2, "0")}_${c.key}.html`), m);
+  });
   console.log(`  + ${reel} (hook ${k.toUpperCase()})`);
 }
 

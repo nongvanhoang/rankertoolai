@@ -35,10 +35,12 @@ const DATE = opt('--date', vnDate());
 const ONLY = opt('--only', null);
 
 // Channels per brand for a calendar reel (owner decisions 2026-10-13).
+// Order = posting order. Every message carries caption + first/pinned comment + settings.
 const REEL_CHANNELS = {
-  rn: ['instagram', 'youtube', 'tiktok', 'facebook'],   // Pinterest reels are scheduled by CSV
-  rta: ['instagram', 'youtube', 'tiktok'],
+  rn: ['instagram', 'facebook', 'youtube', 'tiktok', 'pinterest'],
+  rta: ['instagram', 'youtube', 'tiktok', 'pinterest', 'linkedin', 'x'],
 };
+const COVERS = (config.videos_dir || 'C:\\Users\\Admin\\Videos\\RankerToolAI_reels') + '\\covers';
 const BRAND = { rn: 'RankerNest', rta: 'RankerToolAI' };
 const WD = ['Chủ nhật', 'Thứ 2', 'Thứ 3', 'Thứ 4', 'Thứ 5', 'Thứ 6', 'Thứ 7'];
 const esc = (s) => String(s).replace(/[&<>]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
@@ -76,6 +78,15 @@ function splitHtml(html) {
   }
   if (cur) parts.push(cur);
   return parts;
+}
+async function sendPhoto(site, file, caption) {
+  if (!fs.existsSync(file)) return;
+  if (DRY) { console.log(`  [cover] ${path.basename(file)}`); return; }
+  const fd = new FormData();
+  for (const [k, v] of Object.entries(where(site))) fd.append(k, String(v));
+  fd.append('caption', caption);
+  fd.append('photo', new Blob([fs.readFileSync(file)], { type: 'image/jpeg' }), path.basename(file));
+  await tg('sendPhoto', fd, true);
 }
 async function sendVideo(site, file, caption) {
   const mb = (fs.statSync(file).size / 1048576).toFixed(1);
@@ -116,9 +127,15 @@ function reelProblem(reel) {
 function reelMessages(site, reel, channels) {
   const files = kitFiles(reel);
   const msgs = [];
-  if (files.some((f) => /hooktest/.test(f))) {                // A/B/C hook variant: one combined kit
+  if (files.some((f) => /hooktest/.test(f))) {                // old-style combined variant kit
     for (const f of files) msgs.push(kitText(reel, f));
     return msgs;
+  }
+  // Warnings from the kit head ("Không đăng sau…", hook letter) go right under the video
+  const headFile = files.find((f) => /^00_head\.html$/.test(f));
+  if (headFile) {
+    const notes = kitText(reel, headFile).split('\n').filter((l) => /⚠️|🧪/.test(l));
+    if (notes.length) msgs.push(notes.join('\n'));
   }
   const igKit = files.some((f) => /^\d+_instagram\.html$/.test(f));   // newer kits carry their own IG message
   if (channels.includes('instagram') && !igKit) {
@@ -171,9 +188,9 @@ async function main() {
       if (e.type === 'note') { checklist.push(e.text); continue; }
       const problem = reelProblem(e.reel);
       if (problem) { checklist.push(`⏸ Bỏ qua ${e.title}: ${problem}`); continue; }
-      posts.push(e.type === 'reel'
-        ? { title: e.title, file: path.join(VIDEOS, e.reel + '.mp4'), msgs: reelMessages(site, e.reel, REEL_CHANNELS[site]) }
-        : { title: e.title, file: path.join(VIDEOS, e.reel + '.mp4'), msgs: reelMessages(site, e.reel, e.channels) });
+      if (e.type !== 'reel') continue;   // every reel now carries all channels; old per-channel "extra" days are redundant
+      posts.push({ title: e.title, file: path.join(VIDEOS, e.reel + '.mp4'), cover: path.join(COVERS, e.reel + '_cover.jpg'),
+        msgs: reelMessages(site, e.reel, REEL_CHANNELS[site]) });
     }
     if (site === 'rn' && !day.entries.some((e) => e.site === 'rn' && e.type === 'reel' && !reelProblem(e.reel))) {
       const q = queuePost();
@@ -181,7 +198,7 @@ async function main() {
       if (q.item) {
         const m = q.item.messages;
         posts.push({ title: `${q.item.title} (bài ${q.index + 1}/${rnQueue.length} hàng đợi)`, file: q.item.video,
-          msgs: ['instagram', 'youtube', 'tiktok', 'facebook', 'dm'].filter((k) => m[k]).map((k) => m[k]) });
+          msgs: ['instagram', 'facebook', 'youtube', 'tiktok', 'dm'].filter((k) => m[k]).map((k) => m[k]) });
         if (q.item.promo) checklist.push('Bài giới thiệu sản phẩm: bật Branded content trên TikTok');
         queueUsed = q.index + 1;
       } else checklist.push('Hàng đợi RankerNest đã hết: nhắn Claude thêm bài mới');
@@ -189,12 +206,13 @@ async function main() {
 
     if (!posts.length && !checklist.length) { log(`${site}: nothing today`); continue; }
     const head = `📅 <b>${label} · ${BRAND[site]}</b>\n` + (posts.length
-      ? `${posts.length} video hôm nay. Lưu video → (tuỳ chọn) thêm nhạc trong CapCut → đăng từng kênh theo thứ tự bên dưới. Đăng xong kênh nào thì trả lời “xong” dưới tin của kênh đó.`
+      ? `${posts.length} video hôm nay.\n1️⃣ Lưu video + ảnh bìa → thêm nhạc trong CapCut (giữ âm thanh gốc), xuất 1080p.\n2️⃣ Mỗi kênh 1 tin bên dưới: dán <b>Caption</b> → đăng → dán <b>Bình luận</b> rồi ghim → làm theo <b>Cài đặt</b>.\n3️⃣ Đăng xong kênh nào thì trả lời “xong” dưới tin của kênh đó.`
       : 'Hôm nay không có video để đăng.');
     log(`${site}: ${posts.length} posts, ${checklist.length} notes`);
     await sendText(site, head);
     for (const p of posts) {
-      await sendVideo(site, p.file, `🎬 <b>${esc(p.title)}</b>`);
+      await sendVideo(site, p.file, `🎬 <b>${esc(p.title)}</b>\nNhấn giữ → Lưu video (bản gốc, chưa có nhạc).`);
+      if (p.cover) await sendPhoto(site, p.cover, '🖼 Ảnh bìa: lưu lại, chọn làm ảnh bìa khi đăng IG / TikTok / YouTube.');
       for (const m of p.msgs) await sendText(site, m);
     }
     const always = posts.length ? ['Đăng IG · TikTok · YouTube khoảng 6h30–8h sáng (buổi tối ở Mỹ)', 'Chỉ dán link rankernest.com / rankertoolai.com, không dán link affiliate trực tiếp'] : [];
