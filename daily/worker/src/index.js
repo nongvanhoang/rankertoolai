@@ -238,6 +238,7 @@ async function onApi(env, req, url) {
     await refreshCard(env, full);            // draw the real buttons (and any "already posted" ticks)
     return json({ ok: true });
   }
+  if (url.pathname === "/api/remind" && req.method === "POST") { await remind(env); return json({ ok: true }); }   // manual test of the 21h reminder
   if (url.pathname === "/api/posted") {      // channels a reel was already posted on (any card)
     const reel = url.searchParams.get("reel");
     return json(await postedElsewhere(env, reel, ""));
@@ -254,7 +255,56 @@ async function onApi(env, req, url) {
   return json({ error: "not found" }, 404);
 }
 
+// ---------- 21:00 Vietnam reminder (cron "0 14 * * *" UTC) ----------
+// Lists today's and earlier (14 days) videos not fully posted, per brand topic. Source of truth:
+// the Notion board when NOTION_TOKEN is set, otherwise the button marks in D1.
+async function pendingFromNotion(env, site) {
+  const body = { filter: { and: [
+    { property: "Site", select: { equals: BRAND[site] } },
+    { property: "Ngày", date: { on_or_before: vnDate() } },
+    { property: "Ngày", date: { on_or_after: vnDate(Date.now() - 14 * 864e5) } },
+    { property: "Trạng thái", formula: { string: { does_not_equal: "✅ Xong" } } },
+    { property: "Trạng thái", formula: { string: { does_not_equal: "⏭ Bỏ qua" } } },
+  ] }, sorts: [{ property: "Ngày", direction: "ascending" }], page_size: 20 };
+  const r = await fetch("https://api.notion.com/v1/databases/61da72d0d5354100a4e3c3e463c916fc/query", {
+    method: "POST",
+    headers: { Authorization: `Bearer ${sec(env.NOTION_TOKEN)}`, "Notion-Version": "2022-06-28", "Content-Type": "application/json" },
+    body: JSON.stringify(body),
+  });
+  if (!r.ok) throw new Error("notion " + r.status);
+  const j = await r.json();
+  return j.results.map((p) => ({
+    title: (p.properties.Video.title[0] || {}).plain_text || "",
+    date: p.properties["Ngày"].date.start, url: p.url,
+    left: (p.properties["Còn"] && p.properties["Còn"].formula && p.properties["Còn"].formula.number) || 0,
+  }));
+}
+async function remind(env) {
+  const threads = JSON.parse(env.THREADS || "{}");
+  for (const site of Object.keys(threads)) {
+    let rows = [];
+    try {
+      if (env.NOTION_TOKEN) rows = await pendingFromNotion(env, site);
+      else {
+        const from = vnDate(Date.now() - 14 * 864e5);
+        rows = (await listItems(env, "date >= ? AND date <= ? AND skipped = 0 AND site = ?", [from, vnDate(), site]))
+          .filter((it) => pendingCh(it).length)
+          .map((it) => ({ title: it.title, date: it.date, url: link(it), left: pendingCh(it).length }));
+      }
+    } catch (e) { console.log("remind", site, e.message); continue; }
+    if (!rows.length) continue;                    // nothing owed: stay quiet
+    const today = vnDate();
+    const text = `🌙 <b>Nhắc việc 21h · ${BRAND[site]}</b>\nCòn ${rows.length} video chưa đăng xong:\n` +
+      rows.map((r) => `• <a href="${r.url}">${esc(r.title)}</a>${r.date === today ? " (hôm nay)" : ` (${dm(r.date)})`}${r.left ? `: còn ${r.left} kênh` : ""}`).join("\n") +
+      "\n\nĐăng xong thì bấm ✅ (hoặc tích trong Notion). Không đăng nữa: bấm ⏭ trên thẻ hoặc tích “Bỏ qua” trong Notion.";
+    await tg(env, "sendMessage", { chat_id: env.CHAT_ID, message_thread_id: threads[site], text, parse_mode: "HTML", disable_web_page_preview: true });
+  }
+}
+
 export default {
+  async scheduled(event, env, ctx) {
+    ctx.waitUntil(remind(env));
+  },
   async fetch(req, env) {
     const url = new URL(req.url);
     if (url.pathname.startsWith("/api/")) return onApi(env, req, url);

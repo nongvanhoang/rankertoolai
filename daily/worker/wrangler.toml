@@ -17,3 +17,6 @@ database_id = "eb3960ce-d143-4d6a-b21d-8368958c494a"
 
 [observability]
 enabled = true
+
+[triggers]
+crons = ["0 14 * * *"]   # 21:00 Vietnam: reminder of unfinished posts
