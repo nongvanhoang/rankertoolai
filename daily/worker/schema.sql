@@ -1,4 +1,4 @@
--- One row per card (one video for one brand on one day).
+﻿-- One row per card (one video for one brand on one day).
 CREATE TABLE IF NOT EXISTS items (
   id TEXT PRIMARY KEY,          -- e.g. 20261018rn1
   site TEXT NOT NULL,           -- rn | rta
@@ -11,6 +11,8 @@ CREATE TABLE IF NOT EXISTS items (
   card_msg INTEGER NOT NULL,    -- Telegram message id of the card
   card_is_caption INTEGER DEFAULT 0,
   kit TEXT,                     -- JSON {channel: {caption, comment}} (Telegram HTML)
+  notion_page TEXT,             -- Notion row id (slim cards)
+  notion_url TEXT,
   skipped INTEGER DEFAULT 0,
   created TEXT
 );

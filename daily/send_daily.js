@@ -38,7 +38,8 @@ const HOLD = config.hold || [];           // reel slugs paused (e.g. out of stoc
 const DRY = flag('--dry-run');
 const TOKEN = require('./token')();
 const API_KEY = require('./token').userEnv('RANKER_BOT_API_KEY');
-const BOARD = config.board_url || '';     // posting-board Worker, e.g. https://ranker-posting.<sub>.workers.dev
+const BOARD = config.board_url || '';
+const notion = require('./notion');       // Notion board (captions + per-channel ticks) when NOTION_TOKEN is set     // posting-board Worker, e.g. https://ranker-posting.<sub>.workers.dev
 const vnDate = (ms = Date.now()) => new Date(ms + 7 * 3600e3).toISOString().slice(0, 10);
 const TODAY = opt('--date', vnDate());
 const ONLY = opt('--only', null);
@@ -268,16 +269,26 @@ async function sendCard(site, date, n, p) {
   const id = `${date.replace(/-/g, '')}${site}${n}`;
   const already = boardOk && !DRY ? await board(`/api/posted?reel=${encodeURIComponent(p.reel)}`).catch(() => ({})) : {};
   if (p.channels.length && p.channels.every((c) => already[c])) return `↩︎ ${p.title}: đã đăng đủ kênh từ trước, không gửi lại`;
-  const temp = `🎬 <b>${esc(p.title)}</b>\n<i>${BRAND[site]} · ${date.slice(8)}/${date.slice(5, 7)}</i>` + (boardOk ? '\n(đang tải nút bấm…)' : '');
+  // Notion mode (slim card): make sure the Notion row exists first, the card links to it.
+  let page = null;
+  if (notion.enabled() && !DRY) {
+    try { page = await notion.ensurePage({ id, site, date, title: p.title, channels: p.channels, kit: p.kit, fileName: path.basename(p.file) }); }
+    catch (e) { log('notion page failed, using button card:', e.message); }
+  }
+  const dd = `${date.slice(8)}/${date.slice(5, 7)}`;
+  const temp = `🎬 <b>${esc(p.title)}</b>\n<i>${BRAND[site]} · ${dd}</i>` +
+    (page ? `\n📝 <a href="${page.url}">Caption &amp; đánh dấu từng kênh (Notion)</a>` : boardOk ? '\n(đang tải nút bấm…)' : '');
   const msgId = await sendVideoFile(site, p.file, p.reel, temp);
-  if (DRY) { console.log(`  [card ${id}] ${p.title} · ${p.channels.join(', ')} · caption cho: ${Object.keys(p.kit).join(', ')}`); return null; }
+  if (DRY) { console.log(`  [card ${id}] ${p.title} · ${p.channels.join(', ')} · caption cho: ${Object.keys(p.kit).join(', ')}${notion.enabled() ? ' · Notion' : ''}`); return null; }
   if (boardOk) {
     try {
       await board('/api/register', { id, site, date, title: p.title, reel: p.reel, channels: p.channels,
-        chat_id: config.chat_id, thread_id: config.threads[site], card_msg: msgId, card_is_caption: true, kit: p.kit });
+        chat_id: config.chat_id, thread_id: config.threads[site], card_msg: msgId, card_is_caption: true, kit: p.kit,
+        ...(page ? { notion_page: page.id, notion_url: page.url } : {}) });
       return null;
     } catch (e) { boardOk = false; log('board register failed, falling back:', e.message); }
   }
+  if (page) return null;                         // captions are in Notion; no need for per-channel messages
   await sendOldStyle(site, p);
   return null;
 }
@@ -300,7 +311,11 @@ async function main() {
 
     // Carried-over cards (sent earlier, not fully posted): one message with links.
     let carry = [];
-    if (boardOk && !DRY) {
+    if (notion.enabled() && !DRY) {                // Notion is the source of truth when connected
+      try {
+        carry = (await notion.pending(site, dates[0])).map((r) => ({ title: r.title, date: r.date, link: r.url, pending: { length: r.left } }));
+      } catch (e) { log('notion pending failed:', e.message); }
+    } else if (boardOk && !DRY) {
       try { carry = await board(`/api/pending?site=${site}&before=${dates[0]}`); }
       catch (e) { boardOk = false; log('board pending failed:', e.message); }
     }
@@ -316,7 +331,8 @@ async function main() {
       log(`${site} ${date}: ${posts.length} cards, ${notes.length} notes, ${date === TODAY ? carry.length : 0} carried`);
       await sendText(site, head);
       if (date === TODAY && carry.length) {
-        await sendText(site, `📌 <b>Còn nợ từ hôm trước</b> (bấm tên để tới thẻ)\n` +
+        await sendText(site, `📌 <b>Còn nợ từ hôm trước</b> (bấm tên để mở)` +
+          (notion.enabled() ? ` · <a href="${notion.VIEW_PENDING}">xem hết trong Notion</a>` : '') + '\n' +
           carry.map((c) => `• <a href="${c.link}">${esc(c.title)}</a> (${+c.date.slice(8)}/${+c.date.slice(5, 7)}): còn ${c.pending.length} kênh`).join('\n'));
       }
       const extra = [];

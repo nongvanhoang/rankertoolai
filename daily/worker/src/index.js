@@ -50,6 +50,33 @@ async function postedElsewhere(env, reel, excludeId) {
   return Object.fromEntries(results.map((r) => [r.ch, r.at]));
 }
 
+// Slim cards (Notion mode, owner 2026-10-17): one message per video, captions + per-channel ticks
+// live in the Notion row; Telegram keeps the file and ONE button "✅ Đã đăng xong".
+function slimText(it) {
+  const allDone = it.channels.every((c) => it.done[c]);
+  return `🎬 <b>${esc(it.title)}</b>\n<i>${esc(BRAND[it.site])} · ${dm(it.date)}</i>\n` +
+    `📝 <a href="${it.notion_url}">Caption &amp; đánh dấu từng kênh (Notion)</a>` +
+    (it.skipped ? "\n⏭ <b>Đã bỏ qua</b>" : allDone ? "\n✅ <b>Đã đăng xong</b>" : "");
+}
+function slimKeyboard(it) {
+  const allDone = it.channels.every((c) => it.done[c]);
+  if (it.skipped || allDone) return { inline_keyboard: [[{ text: "↩️ Hoàn tác", callback_data: `z:${it.id}` }]] };
+  return { inline_keyboard: [[{ text: "✅ Đã đăng xong", callback_data: `d:${it.id}` }]] };
+}
+// Tick (or untick) every channel checkbox on the Notion row.
+async function notionTick(env, it, value) {
+  if (!env.NOTION_TOKEN || !it.notion_page) return;
+  const NP = { instagram: "IG", facebook: "FB", youtube: "YouTube", tiktok: "TikTok", pinterest: "Pinterest", x: "X", linkedin: "LinkedIn" };
+  const properties = {};
+  for (const c of it.channels) if (NP[c]) properties[NP[c]] = { checkbox: value };
+  const r = await fetch(`https://api.notion.com/v1/pages/${it.notion_page}`, {
+    method: "PATCH",
+    headers: { Authorization: `Bearer ${sec(env.NOTION_TOKEN)}`, "Notion-Version": "2022-06-28", "Content-Type": "application/json" },
+    body: JSON.stringify({ properties }),
+  });
+  if (!r.ok) console.log("notion tick", r.status, await r.text());
+}
+
 function cardText(it, before) {
   const total = it.channels.length;
   const n = it.channels.filter((c) => it.done[c] || before[c]).length;
@@ -75,6 +102,9 @@ function cardKeyboard(it, before) {
   return { inline_keyboard: rows };
 }
 async function refreshCard(env, it) {
+  if (it.notion_url) {
+    return tg(env, "editMessageCaption", { chat_id: it.chat_id, message_id: it.card_msg, parse_mode: "HTML", caption: slimText(it), reply_markup: slimKeyboard(it) });
+  }
   const before = await postedElsewhere(env, it.reel, it.id);
   const body = { chat_id: it.chat_id, message_id: it.card_msg, parse_mode: "HTML", reply_markup: cardKeyboard(it, before) };
   // The card is the video document's caption when the PC sent the video as a file.
@@ -90,6 +120,23 @@ async function onCallback(env, q) {
   const it = await getItem(env, id);
   if (!it) return tg(env, "answerCallbackQuery", { callback_query_id: q.id, text: "Không tìm thấy bài này (đã quá cũ?)" });
   let toast = "";
+  if (op === "d" || op === "z") {                 // slim card: all channels done / undo
+    const value = op === "d";
+    if (value) {
+      const at = new Date().toISOString();
+      for (const c of it.channels) {
+        await env.DB.prepare("INSERT OR IGNORE INTO marks (item_id, ch, at) VALUES (?, ?, ?)").bind(id, c, at).run();
+        it.done[c] = it.done[c] || at;
+      }
+    } else {
+      await env.DB.prepare("DELETE FROM marks WHERE item_id = ?").bind(id).run();
+      await env.DB.prepare("UPDATE items SET skipped = 0 WHERE id = ?").bind(id).run();
+      it.done = {}; it.skipped = 0;
+    }
+    await notionTick(env, it, value);
+    await refreshCard(env, it);
+    return tg(env, "answerCallbackQuery", { callback_query_id: q.id, text: value ? "✅ Đã ghi: đăng xong (Notion cũng đã tích)" : "Đã hoàn tác" });
+  }
   if (op === "t") {
     if (it.done[ch]) { await env.DB.prepare("DELETE FROM marks WHERE item_id = ? AND ch = ?").bind(id, ch).run(); delete it.done[ch]; toast = `Bỏ đánh dấu ${CH[ch] || ch}`; }
     else {
@@ -183,10 +230,10 @@ async function onApi(env, req, url) {
   if (url.pathname === "/api/register" && req.method === "POST") {
     const it = await req.json();
     await env.DB.prepare(
-      `INSERT OR REPLACE INTO items (id, site, date, title, reel, channels, chat_id, thread_id, card_msg, card_is_caption, kit, skipped, created)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, COALESCE((SELECT skipped FROM items WHERE id = ?), 0), ?)`
+      `INSERT OR REPLACE INTO items (id, site, date, title, reel, channels, chat_id, thread_id, card_msg, card_is_caption, kit, notion_page, notion_url, skipped, created)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, COALESCE((SELECT skipped FROM items WHERE id = ?), 0), ?)`
     ).bind(it.id, it.site, it.date, it.title, it.reel, JSON.stringify(it.channels), it.chat_id, it.thread_id || null,
-      it.card_msg, it.card_is_caption ? 1 : 0, JSON.stringify(it.kit || {}), it.id, new Date().toISOString()).run();
+      it.card_msg, it.card_is_caption ? 1 : 0, JSON.stringify(it.kit || {}), it.notion_page || null, it.notion_url || null, it.id, new Date().toISOString()).run();
     const full = await getItem(env, it.id);
     await refreshCard(env, full);            // draw the real buttons (and any "already posted" ticks)
     return json({ ok: true });
