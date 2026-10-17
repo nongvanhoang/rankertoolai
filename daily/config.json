@@ -2,7 +2,8 @@
  "videos_dir": "C:\\Users\\Admin\\Videos\\RankerToolAI_reels",
  "hold": [
   "protoarc-ec200",
-  "protoarc-top3"
+  "protoarc-top3",
+  "synthesia_lang"
  ],
  "chat_id": -1004384456936,
  "threads": {
