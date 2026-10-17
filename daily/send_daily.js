@@ -254,7 +254,7 @@ async function sendCard(site, date, n, p) {
   const id = `${date.replace(/-/g, '')}${site}${n}`;
   const already = boardOk && !DRY ? await board(`/api/posted?reel=${encodeURIComponent(p.reel)}`).catch(() => ({})) : {};
   if (p.channels.length && p.channels.every((c) => already[c])) return `↩︎ ${p.title}: đã đăng đủ kênh từ trước, không gửi lại`;
-  const temp = `🎬 <b>${esc(p.title)}</b>\n<i>${BRAND[site]} · ${date.slice(8)}/${date.slice(5, 7)}</i>\n(đang tải nút bấm…)`;
+  const temp = `🎬 <b>${esc(p.title)}</b>\n<i>${BRAND[site]} · ${date.slice(8)}/${date.slice(5, 7)}</i>` + (boardOk ? '\n(đang tải nút bấm…)' : '');
   const msgId = await sendVideoFile(site, p.file, p.reel, temp);
   if (DRY) { console.log(`  [card ${id}] ${p.title} · ${p.channels.join(', ')} · caption cho: ${Object.keys(p.kit).join(', ')}`); return null; }
   if (boardOk) {
@@ -296,7 +296,8 @@ async function main() {
       const late = date !== TODAY;
       if (!posts.length && !notes.length && !(date === TODAY && carry.length)) { log(`${site} ${date}: nothing`); continue; }
       const head = `📅 <b>${dayLabel(date)} · ${BRAND[site]}</b>${late ? ' <i>(gửi bù, máy tắt hôm đó)</i>' : ''}\n` + (posts.length
-        ? `${posts.length} video. Mỗi video là 1 thẻ: lưu file → (tuỳ chọn) thêm nhạc trong CapCut → đăng → bấm tên kênh để ✅.`
+        ? `${posts.length} video. Lưu file video → (tuỳ chọn) thêm nhạc trong CapCut → đăng.` +
+          (boardOk ? ' Đăng xong kênh nào bấm tên kênh đó để ✅.' : ' Caption từng kênh ở các tin ngay dưới video.')
         : 'Không có video mới.');
       log(`${site} ${date}: ${posts.length} cards, ${notes.length} notes, ${date === TODAY ? carry.length : 0} carried`);
       await sendText(site, head);
