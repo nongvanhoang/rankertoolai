@@ -90,8 +90,8 @@
     </style>
   </head>
   <body>
-    <div id="root" data-composition-id="main" data-start="0" data-duration="24.5" data-width="1080" data-height="1920">
-      <div id="bg" class="clip" data-start="0" data-duration="24.5" data-track-index="0">
+    <div id="root" data-composition-id="main" data-start="0" data-duration="23.2" data-width="1080" data-height="1920">
+      <div id="bg" class="clip" data-start="0" data-duration="23.2" data-track-index="0">
         <div id="grid"></div>
         <div id="glow1" class="glow"></div>
         <div id="glow2" class="glow"></div>
@@ -104,36 +104,29 @@
         <div class="small">One paste and one click.</div>
       </div>
 
-      <!-- 2. Original avatar video, English (owner's Synthesia free-plan video, own audio) -->
-      <div id="s2" class="scene clip" data-start="2.8" data-duration="4" data-track-index="1">
-        <div class="kicker">The original · English</div>
-        <div class="frame"><video class="clip" data-start="2.8" data-duration="4" data-media-start="0" data-has-audio="true" data-fade-out="0.3" src="clip_en.mp4" playsinline></video></div>
-        <div class="small">AI presenter made from a typed script</div>
-      </div>
-
       <!-- 3. Owner's screen recording: English line selected, Spanish pasted in -->
-      <div id="s3" class="scene clip" data-start="6.8" data-duration="4.5" data-track-index="1">
+      <div id="s3" class="scene clip" data-start="2.8" data-duration="4.5" data-track-index="1">
         <div class="kicker">Step 1 · paste the translation</div>
-        <div class="frame white"><video class="clip" data-start="6.8" data-duration="4.5" data-media-start="0" src="clip_swap.mp4" muted playsinline></video></div>
+        <div class="frame white"><video class="clip" data-start="2.8" data-duration="4.5" data-media-start="0" src="clip_swap.mp4" muted playsinline></video></div>
         <div class="small">Same scene, same avatar. Only the text changes.</div>
       </div>
 
       <!-- 4. Owner's screen recording: Generate -> "Generate in 9 minutes" -->
-      <div id="s4" class="scene clip" data-start="11.3" data-duration="3" data-track-index="1">
+      <div id="s4" class="scene clip" data-start="7.3" data-duration="3" data-track-index="1">
         <div class="kicker">Step 2 · Generate</div>
-        <div class="frame narrow white"><video class="clip" data-start="11.3" data-duration="3" data-media-start="1.3" src="clip_gen.mp4" muted playsinline></video></div>
+        <div class="frame narrow white"><video class="clip" data-start="7.3" data-duration="3" data-media-start="1.3" src="clip_gen.mp4" muted playsinline></video></div>
         <div class="small">Synthesia's estimate here: about 9 minutes</div>
       </div>
 
       <!-- 5. The generated Spanish version (own audio) -->
-      <div id="s5" class="scene clip" data-start="14.3" data-duration="5.6" data-track-index="1">
-        <div class="kicker">Same presenter · <span class="hl">Español</span></div>
-        <div class="frame"><video class="clip" data-start="14.3" data-duration="5.6" data-media-start="0" data-has-audio="true" data-fade-out="0.4" src="clip_es.mp4" playsinline></video></div>
+      <div id="s5" class="scene clip" data-start="10.3" data-duration="8.4" data-track-index="1">
+        <div class="kicker">The result · now in <span class="hl">Español</span></div>
+        <div class="frame"><video class="clip" data-start="10.3" data-duration="8.4" data-media-start="0" data-has-audio="true" data-fade-out="0.4" src="clip_es.mp4" playsinline></video></div>
         <div class="small">No camera, no voice actor. Free plan adds a watermark.</div>
       </div>
 
       <!-- 6. Facts (all from review/synthesia) -->
-      <div id="s6" class="scene clip" data-start="19.9" data-duration="2.7" data-track-index="1">
+      <div id="s6" class="scene clip" data-start="18.7" data-duration="2.5" data-track-index="1">
         <div class="kicker">Synthesia</div>
         <div class="chips">
           <div class="chip"><span class="hl">140+</span> languages</div>
@@ -147,7 +140,7 @@
       </div>
 
       <!-- 7. CTA -->
-      <div id="s7" class="scene clip" data-start="22.6" data-duration="1.9" data-track-index="1">
+      <div id="s7" class="scene clip" data-start="21.2" data-duration="2" data-track-index="1">
         <div class="cta">Read the full review →</div>
         <div class="url">rankertoolai.com/<span class="hl">avatar</span></div>
         <div class="disclose">Contains affiliate links</div>
@@ -156,8 +149,8 @@
 
     <script>
       const tl = gsap.timeline({ paused: true });
-      tl.fromTo("#glow1", { x: 0, y: 0 }, { x: 260, y: 520, duration: 24.5, ease: "none" }, 0);
-      tl.fromTo("#glow2", { x: 0, y: 0 }, { x: -220, y: -480, duration: 24.5, ease: "none" }, 0);
+      tl.fromTo("#glow1", { x: 0, y: 0 }, { x: 260, y: 520, duration: 23.2, ease: "none" }, 0);
+      tl.fromTo("#glow2", { x: 0, y: 0 }, { x: -220, y: -480, duration: 23.2, ease: "none" }, 0);
 
       const inUp = { opacity: 0, y: 70 };
       const shown = { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" };
@@ -168,19 +161,19 @@
       tl.fromTo("#s1 .hl", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(2)" }, 0.8);
       tl.fromTo("#s1 .small", inUp, shown, 1.3);
 
-      for (const [id, t] of [["#s2", 2.8], ["#s3", 6.8], ["#s4", 11.3], ["#s5", 14.3]]) {
+      for (const [id, t] of [["#s3", 2.8], ["#s4", 7.3], ["#s5", 10.3]]) {
         tl.fromTo(id + " .kicker", inUp, shown, t + 0.05);
         tl.fromTo(id + " .frame", { opacity: 0, scale: 0.92 }, pop, t + 0.1);
         tl.fromTo(id + " .small", inUp, shown, t + 0.7);
       }
 
-      tl.fromTo("#s6 .kicker", inUp, shown, 19.95);
-      tl.fromTo("#s6 .chip", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2)", stagger: 0.2 }, 20.15);
-      tl.fromTo("#s6 .card", { opacity: 0, x: 120 }, { opacity: 1, x: 0, duration: 0.5, ease: "power3.out" }, 20.7);
+      tl.fromTo("#s6 .kicker", inUp, shown, 18.75);
+      tl.fromTo("#s6 .chip", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2)", stagger: 0.2 }, 18.95);
+      tl.fromTo("#s6 .card", { opacity: 0, x: 120 }, { opacity: 1, x: 0, duration: 0.5, ease: "power3.out" }, 19.4);
 
-      tl.fromTo("#s7 .cta", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.8)" }, 22.65);
-      tl.fromTo("#s7 .url", inUp, shown, 22.95);
-      tl.fromTo("#s7 .disclose", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 23.3);
+      tl.fromTo("#s7 .cta", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.8)" }, 21.25);
+      tl.fromTo("#s7 .url", inUp, shown, 21.55);
+      tl.fromTo("#s7 .disclose", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 21.9);
 
       window.__timelines = window.__timelines || {};
       window.__timelines["main"] = tl;
