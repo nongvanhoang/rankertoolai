@@ -362,6 +362,12 @@
     "type": "note",
     "site": "rta",
     "text": "Bản tin: Tool of the week (video mới) · Email Brevo (list #5)"
+   },
+   {
+    "type": "reel",
+    "site": "rn",
+    "reel": "rankernest_gifts-budget_v1",
+    "title": "Quà theo ngân sách $22 → $800"
    }
   ]
  },
@@ -402,6 +408,12 @@
     "type": "note",
     "site": "rn",
     "text": "Honiture X7 · đăng lại kiểu thắng · Pinterest · Facebook Reels"
+   },
+   {
+    "type": "reel",
+    "site": "rn",
+    "reel": "rankernest_gifts-under100_v1",
+    "title": "3 món quà dưới $100"
    }
   ]
  },
@@ -442,6 +454,12 @@
     "type": "note",
     "site": "rn",
     "text": "ProtoArc XK01 · đăng lại kiểu thắng · Pinterest · Facebook Reels"
+   },
+   {
+    "type": "reel",
+    "site": "rn",
+    "reel": "rankernest_gifts-wfh_v1",
+    "title": "Quà cho người làm việc ở nhà"
    }
   ]
  },
@@ -482,6 +500,12 @@
     "type": "note",
     "site": "rn",
     "text": "Bản tin: Kiểu mở đầu thắng của tháng · Email Brevo (list #3)"
+   },
+   {
+    "type": "reel",
+    "site": "rn",
+    "reel": "rankernest_gifts-cleaning_v1",
+    "title": "Quà cho người ghét dọn nhà"
    }
   ]
  }
