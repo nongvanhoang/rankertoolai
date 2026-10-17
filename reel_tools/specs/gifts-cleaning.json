@@ -1,0 +1,14 @@
+{
+  "hook": {"html": "Gift for someone who<br /><span class=\"coral\">hates cleaning</span>", "photo": "hook.jpg", "photoClass": "mediumh"},
+  "photos": [
+    {"photo": "vac.jpg", "photoClass": "tall contain", "html": "<span class=\"yellow\">Honiture X7:</span> 45kPa cordless stick, up to 60 min rated runtime"},
+    {"photo": "robot.jpg", "photoClass": "tall contain", "html": "<span class=\"teal\">SwitchBot S20:</span> robot vacuum that washes and dries its own mop"}
+  ],
+  "cards": {"kicker": "Pick by budget", "items": [
+    {"v": "$179.99", "l": "Honiture X7: cordless stick, 1.5L dust cup"},
+    {"v": "$799.99", "l": "SwitchBot S20: refills and drains water itself"}
+  ]},
+  "offer": {"kicker": "Prices at time of writing", "rows": ["Honiture X7 <b>$179.99</b>", "SwitchBot S20 <b>$799.99</b>"], "note": "S20 is a specs-based pick, not hands-on tested. Check the live price."},
+  "url": "rankernest.com/<span class=\"yellow\" style=\"color:var(--yellow)\">gifts</span>",
+  "disclose": "#ad · affiliate links, support us at no extra cost"
+}

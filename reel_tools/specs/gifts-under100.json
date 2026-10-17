@@ -1,0 +1,11 @@
+{
+  "hook": {"html": "3 gifts <span class=\"coral\">under $100</span><br />that don't feel cheap", "photo": "hook.jpg", "photoClass": "mediumh contain"},
+  "photos": [
+    {"photo": "lamp.jpg", "photoClass": "tall contain", "html": "<span class=\"teal\">Lumi friendship lamp</span>, from $70 (reg. $109)", "note": "Touch yours, theirs lights up. Both homes need 2.4GHz Wi-Fi."},
+    {"photo": "kb.jpg", "html": "<span class=\"yellow\">ProtoArc EK01 Plus</span> split keyboard, $79.99"},
+    {"photo": "silk.jpg", "html": "<span class=\"teal\">Mulberry silk pillowcase</span> from ~$22"}
+  ],
+  "offer": {"kicker": "Under $100", "rows": ["Lumi lamp from <b>$70</b>", "EK01 Plus <b>$79.99</b>, extra 10% with <b>GFPHOANGNONGVAN</b>", "SilkSilky pillowcase from <b>~$22</b>"], "note": "Prices at time of writing. Check the live price."},
+  "url": "rankernest.com/<span class=\"yellow\" style=\"color:var(--yellow)\">gifts</span>",
+  "disclose": "#ad · affiliate links &amp; code, support us at no extra cost"
+}

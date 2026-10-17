@@ -1,0 +1,12 @@
+{
+  "hook": {"html": "Gift ideas from<br /><span class=\"coral\">$22 to $800</span>", "photo": "hook.jpg", "photoClass": "mediumh contain"},
+  "photos": [
+    {"photo": "silk.jpg", "html": "<span class=\"yellow\">~$22:</span> SilkSilky mulberry silk pillowcase (19 momme)"},
+    {"photo": "lamp.jpg", "photoClass": "tall contain", "html": "<span class=\"teal\">from $70:</span> Friendship Lamps. Touch yours, theirs lights up", "note": "Both homes need 2.4GHz Wi-Fi."},
+    {"photo": "vac.jpg", "photoClass": "tall contain", "html": "<span class=\"yellow\">$179.99:</span> Honiture X7 cordless vacuum, 45kPa"},
+    {"photo": "robot.jpg", "photoClass": "tall contain", "html": "<span class=\"teal\">$799.99:</span> SwitchBot S20, washes its own mop"}
+  ],
+  "offer": {"kicker": "Prices at time of writing", "rows": ["Silk pillowcase from <b>~$22</b>", "Lumi lamp from <b>$70</b>", "X7 <b>$179.99</b> · S20 <b>$799.99</b>"], "note": "November prices move fast: check the live price. S20 is a specs-based pick."},
+  "url": "rankernest.com/<span class=\"yellow\" style=\"color:var(--yellow)\">gifts</span>",
+  "disclose": "#ad · affiliate links, support us at no extra cost"
+}

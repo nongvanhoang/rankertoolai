@@ -1,0 +1,11 @@
+{
+  "hook": {"html": "Gift for someone who<br /><span class=\"coral\">works from home</span>", "photo": "hook.jpg", "photoClass": "wide"},
+  "photos": [
+    {"photo": "split.jpg", "html": "<span class=\"teal\">Long typing days:</span> EK01 Plus split, curved keyboard, $79.99"},
+    {"photo": "fold.jpg", "html": "<span class=\"yellow\">Works from cafés:</span> XK01 folds, full-size with a numpad, $43.99 sale"},
+    {"photo": "lamp.jpg", "photoClass": "tall contain", "html": "<span class=\"teal\">Remote team?</span> Friendship Lamps from $70", "note": "Touch yours, theirs lights up. Needs 2.4GHz Wi-Fi."}
+  ],
+  "offer": {"kicker": "One code, both keyboards", "rows": ["Extra 10% with <b>GFPHOANGNONGVAN</b>", "EK01 Plus <b>$79.99</b> · XK01 <b>$43.99</b> (reg. $53.99)"], "note": "Prices at time of writing (Oct 17). Check the live price."},
+  "url": "rankernest.com/<span class=\"yellow\" style=\"color:var(--yellow)\">gifts</span>",
+  "disclose": "#ad · affiliate links &amp; code, support us at no extra cost"
+}
