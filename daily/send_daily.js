@@ -44,12 +44,10 @@ const TODAY = opt('--date', vnDate());
 const ONLY = opt('--only', null);
 const CATCH_UP_DAYS = 3;
 
-// Channels per brand (owner 2026-10-14: RankerNest now also has X + LinkedIn).
-// Pinterest stays on its own calendar rows (RankerNest reels go through the Pinterest CSV).
-const REEL_CHANNELS = {
-  rn: ['instagram', 'facebook', 'youtube', 'tiktok', 'x', 'linkedin'],
-  rta: ['instagram', 'youtube', 'tiktok', 'x', 'linkedin'],
-};
+// Channels per brand (owner 2026-10-14: RankerNest also has X + LinkedIn; owner 2026-10-17: both
+// brands post every video to ALL channels, Pinterest included).
+const ALL_CHANNELS = ['instagram', 'facebook', 'youtube', 'tiktok', 'pinterest', 'x', 'linkedin'];
+const REEL_CHANNELS = { rn: ALL_CHANNELS, rta: ALL_CHANNELS };
 const BRAND = { rn: 'RankerNest', rta: 'RankerToolAI' };
 const WD = ['Chủ nhật', 'Thứ 2', 'Thứ 3', 'Thứ 4', 'Thứ 5', 'Thứ 6', 'Thứ 7'];
 const esc = (s) => String(s).replace(/[&<>]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
@@ -185,7 +183,13 @@ function reelKit(reel) {
     const cap = path.join(ROOT, 'social_videos', reel, 'caption.txt');
     if (fs.existsSync(cap)) kit.instagram = { caption: `<b>INSTAGRAM REELS</b>\n<pre>${esc(fs.readFileSync(cap, 'utf8').trim())}</pre>`, comment: '' };
   }
-  if (kit.facebook && kit.instagram) kit.facebook.caption = '↪️ <i>Nếu đã bật “Chia sẻ lên Facebook” khi đăng Instagram: chỉ cần dán bình luận đầu tiên (nút 💬).</i>\n' + kit.facebook.caption;
+  // Hook B/C kits only carry IG/YouTube/TikTok/Facebook; the other channels reuse hook A's texts.
+  const base = reel.replace(/_h[a-z]$/, '');
+  if (base !== reel) {
+    const a = reelKit(base);
+    for (const ch of Object.keys(a)) if (!kit[ch]) kit[ch] = a[ch];
+  }
+  if (kit.facebook && kit.instagram && !/Nếu đã bật/.test(kit.facebook.caption)) kit.facebook.caption = '↪️ <i>Nếu đã bật “Chia sẻ lên Facebook” khi đăng Instagram: chỉ cần dán bình luận đầu tiên (nút 💬).</i>\n' + kit.facebook.caption;
   return kit;
 }
 function queueKit(item) {
