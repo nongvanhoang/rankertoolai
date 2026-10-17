@@ -19,10 +19,12 @@ const BRAND = { rn: "RankerNest", rta: "RankerToolAI" };
 const esc = (s) => String(s).replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
 const vnDate = (ms = Date.now()) => new Date(ms + 7 * 3600e3).toISOString().slice(0, 10);
 const dm = (d) => `${+d.slice(8, 10)}/${+d.slice(5, 7)}`;
+// Secrets were piped in from PowerShell and may carry a trailing CR/LF.
+const sec = (v) => String(v || "").trim();
 const json = (o, status = 200) => new Response(JSON.stringify(o), { status, headers: { "content-type": "application/json" } });
 
 async function tg(env, method, body) {
-  const r = await fetch(`https://api.telegram.org/bot${env.BOT_TOKEN}/${method}`, {
+  const r = await fetch(`https://api.telegram.org/bot${sec(env.BOT_TOKEN)}/${method}`, {
     method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(body),
   });
   const j = await r.json().catch(() => ({}));
@@ -177,7 +179,7 @@ async function onCommand(env, msg) {
 
 // ---------- PC API ----------
 async function onApi(env, req, url) {
-  if (req.headers.get("x-api-key") !== env.API_KEY) return json({ error: "unauthorized" }, 401);
+  if (req.headers.get("x-api-key") !== sec(env.API_KEY)) return json({ error: "unauthorized" }, 401);
   if (url.pathname === "/api/register" && req.method === "POST") {
     const it = await req.json();
     await env.DB.prepare(
@@ -210,7 +212,7 @@ export default {
     const url = new URL(req.url);
     if (url.pathname.startsWith("/api/")) return onApi(env, req, url);
     if (url.pathname === "/tg" && req.method === "POST") {
-      if (req.headers.get("x-telegram-bot-api-secret-token") !== env.WEBHOOK_SECRET) return new Response("forbidden", { status: 403 });
+      if (req.headers.get("x-telegram-bot-api-secret-token") !== sec(env.WEBHOOK_SECRET)) return new Response("forbidden", { status: 403 });
       const u = await req.json();
       try {
         if (u.callback_query) await onCallback(env, u.callback_query);

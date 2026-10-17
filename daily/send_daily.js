@@ -117,11 +117,21 @@ async function sendVideoFile(site, file, reel, captionHtml) {
 // ---------- posting board (Worker) ----------
 async function board(pathname, body) {
   if (!BOARD || !API_KEY) throw new Error('chưa cấu hình board_url / RANKER_BOT_API_KEY');
-  const res = await fetch(BOARD + pathname, body
-    ? { method: 'POST', headers: { 'content-type': 'application/json', 'x-api-key': API_KEY }, body: JSON.stringify(body) }
-    : { headers: { 'x-api-key': API_KEY } });
-  if (!res.ok) throw new Error(`board ${pathname}: HTTP ${res.status}`);
-  return res.json();
+  let last;
+  for (const wait of [0, 3000, 10000, 30000]) {      // the PC's connection drops briefly after big uploads
+    if (wait) await new Promise((r) => setTimeout(r, wait));
+    try {
+      const res = await fetch(BOARD + pathname, {
+        ...(body ? { method: 'POST', headers: { 'content-type': 'application/json', 'x-api-key': API_KEY }, body: JSON.stringify(body) }
+          : { headers: { 'x-api-key': API_KEY } }),
+        signal: AbortSignal.timeout(30000),
+      });
+      if (res.status === 401) throw Object.assign(new Error('board: sai RANKER_BOT_API_KEY'), { fatal: true });
+      if (!res.ok) throw new Error(`board ${pathname}: HTTP ${res.status}`);
+      return res.json();
+    } catch (e) { last = e; if (e.fatal) break; }
+  }
+  throw last;
 }
 let boardOk = !!(BOARD && API_KEY);
 

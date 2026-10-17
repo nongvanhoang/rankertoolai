@@ -1,4 +1,4 @@
-# Posting-board bot for the Telegram group "Đăng bài hàng ngày". See daily/README.md.
+﻿# Posting-board bot for the Telegram group "Đăng bài hàng ngày". See daily/README.md.
 # Deploy (owner's wrangler login, NOT the Pages-only CLOUDFLARE_API_TOKEN):
 #   cd daily/worker && npx wrangler deploy
 name = "ranker-posting"
@@ -13,7 +13,7 @@ THREADS = '{"rta":2,"rn":4}'
 [[d1_databases]]
 binding = "DB"
 database_name = "ranker-posting"
-database_id = "REPLACE_AFTER_CREATE"
+database_id = "eb3960ce-d143-4d6a-b21d-8368958c494a"
 
 [observability]
 enabled = true

@@ -1,5 +1,12 @@
 # Gói bài đăng hàng ngày → Telegram
 
+## Bảng việc (từ 17/10/2026)
+Mỗi video là 1 thẻ = file MP4 gốc (không nén) + nút bấm: ☐/✅ từng kênh (bấm khi đăng xong, bấm lại để bỏ), 📋 Caption (chọn kênh → caption chạm-để-copy), 💬 Bình luận (bình luận ghim / đầu tiên), ⏭ Bỏ qua.
+Lệnh trong nhóm: /homnay · /chuadang (bài còn nợ 14 ngày) · /tuan · /help. Gõ trong chủ đề nào thì chỉ xem thương hiệu đó.
+Nút bấm do Cloudflare Worker `ranker-posting` xử lý (daily/worker, D1 `ranker-posting`), chạy cả khi máy tắt. Máy tính gửi thẻ lúc 6:30 rồi đăng ký với Worker (`config.json` board_url + biến môi trường RANKER_BOT_API_KEY). Worker lỗi → gói tự gửi kiểu cũ (caption từng tin).
+Sửa Worker: `cd daily/worker && npx wrangler deploy` (đăng nhập `npx wrangler login`, BỎ biến CLOUDFLARE_API_TOKEN vì khoá đó chỉ dùng cho web).
+Video đăng rồi trên kênh nào thì thẻ sau có cùng video hiện sẵn ✅ và không cho đánh dấu lại (chống trùng). Ngày máy tắt được gửi bù (tối đa 3 ngày); bài chưa xong hiện ở mục “📌 Còn nợ” mỗi sáng.
+
 Mỗi sáng 6:30, máy tính gửi vào nhóm Telegram **"Đăng bài hàng ngày"** (2 mục: RankerToolAI, RankerNest):
 video của hôm nay, rồi mỗi kênh 1 tin nhắn (caption trong khung, chạm để copy), cuối cùng là danh sách việc.
 Tác vụ Windows: **Ranker_DangBaiHangNgay** chạy `daily/run_daily.ps1` (máy tắt lúc 6:30 thì gửi khi bật máy). Nhật ký: `daily/send_daily.log`.
