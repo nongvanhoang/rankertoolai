@@ -77,12 +77,6 @@
     "site": "rn",
     "reel": "rankernest_honiture-x7_v2",
     "title": "Honiture X7 · kiểu mở đầu A"
-   },
-   {
-    "type": "reel",
-    "site": "rta",
-    "reel": "synthesia_lang_reel_v1",
-    "title": "Synthesia nhiều ngôn ngữ · kiểu mở đầu A"
    }
   ]
  },
@@ -111,6 +105,12 @@
     "site": "rn",
     "reel": "rankernest_protoarc-ek01-plus_v3",
     "title": "ProtoArc EK01 Plus · kiểu mở đầu A"
+   },
+   {
+    "type": "reel",
+    "site": "rta",
+    "reel": "synthesia_lang_reel_v1",
+    "title": "Synthesia nhiều ngôn ngữ · kiểu mở đầu A"
    }
   ]
  },
@@ -127,12 +127,6 @@
     "type": "note",
     "site": "both",
     "text": "Kiểm giá + mã giảm giá trước khi đăng lại video cũ · Trang review"
-   },
-   {
-    "type": "reel",
-    "site": "rta",
-    "reel": "synthesia_lang_reel_v1_hb",
-    "title": "Synthesia nhiều ngôn ngữ · kiểu mở đầu B"
    }
   ]
  },
@@ -171,6 +165,12 @@
     "site": "rn",
     "reel": "rankernest_protoarc-xk01_v2",
     "title": "ProtoArc XK01 · kiểu mở đầu A"
+   },
+   {
+    "type": "reel",
+    "site": "rta",
+    "reel": "synthesia_lang_reel_v1_hb",
+    "title": "Synthesia nhiều ngôn ngữ · kiểu mở đầu B"
    }
   ]
  },
@@ -186,12 +186,6 @@
     "type": "note",
     "site": "rn",
     "text": "Bản tin: Friendship Lamps (quà tặng) · Email Brevo (list #3)"
-   },
-   {
-    "type": "reel",
-    "site": "rta",
-    "reel": "synthesia_lang_reel_v1_hc",
-    "title": "Synthesia nhiều ngôn ngữ · kiểu mở đầu C"
    }
   ]
  },
@@ -214,6 +208,12 @@
     "site": "rn",
     "reel": "rankernest_honiture-x7_v2_hb",
     "title": "Honiture X7 · kiểu mở đầu B"
+   },
+   {
+    "type": "reel",
+    "site": "rta",
+    "reel": "synthesia_lang_reel_v1_hc",
+    "title": "Synthesia nhiều ngôn ngữ · kiểu mở đầu C"
    }
   ]
  },
