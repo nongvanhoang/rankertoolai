@@ -90,8 +90,8 @@
     </style>
   </head>
   <body>
-    <div id="root" data-composition-id="main" data-start="0" data-duration="23.2" data-width="1080" data-height="1920">
-      <div id="bg" class="clip" data-start="0" data-duration="23.2" data-track-index="0">
+    <div id="root" data-composition-id="main" data-start="0" data-duration="25.2" data-width="1080" data-height="1920">
+      <div id="bg" class="clip" data-start="0" data-duration="25.2" data-track-index="0">
         <div id="grid"></div>
         <div id="glow1" class="glow"></div>
         <div id="glow2" class="glow"></div>
@@ -119,14 +119,14 @@
       </div>
 
       <!-- 5. The generated Spanish version (own audio) -->
-      <div id="s5" class="scene clip" data-start="10.3" data-duration="8.4" data-track-index="1">
+      <div id="s5" class="scene clip" data-start="10.3" data-duration="10.4" data-track-index="1">
         <div class="kicker">The result · now in <span class="hl">Español</span></div>
-        <div class="frame"><video class="clip" data-start="10.3" data-duration="8.4" data-media-start="0" data-has-audio="true" data-fade-out="0.4" src="clip_es.mp4" playsinline></video></div>
+        <div class="frame"><video class="clip" data-start="10.3" data-duration="10.4" data-media-start="0" data-has-audio="true" data-fade-out="0.4" src="clip_es.mp4" playsinline></video></div>
         <div class="small">No camera, no voice actor. Free plan adds a watermark.</div>
       </div>
 
       <!-- 6. Facts (all from review/synthesia) -->
-      <div id="s6" class="scene clip" data-start="18.7" data-duration="2.5" data-track-index="1">
+      <div id="s6" class="scene clip" data-start="20.7" data-duration="2.5" data-track-index="1">
         <div class="kicker">Synthesia</div>
         <div class="chips">
           <div class="chip"><span class="hl">140+</span> languages</div>
@@ -140,7 +140,7 @@
       </div>
 
       <!-- 7. CTA -->
-      <div id="s7" class="scene clip" data-start="21.2" data-duration="2" data-track-index="1">
+      <div id="s7" class="scene clip" data-start="23.2" data-duration="2" data-track-index="1">
         <div class="cta">Read the full review →</div>
         <div class="url">rankertoolai.com/<span class="hl">avatar</span></div>
         <div class="disclose">Contains affiliate links</div>
@@ -149,8 +149,8 @@
 
     <script>
       const tl = gsap.timeline({ paused: true });
-      tl.fromTo("#glow1", { x: 0, y: 0 }, { x: 260, y: 520, duration: 23.2, ease: "none" }, 0);
-      tl.fromTo("#glow2", { x: 0, y: 0 }, { x: -220, y: -480, duration: 23.2, ease: "none" }, 0);
+      tl.fromTo("#glow1", { x: 0, y: 0 }, { x: 260, y: 520, duration: 25.2, ease: "none" }, 0);
+      tl.fromTo("#glow2", { x: 0, y: 0 }, { x: -220, y: -480, duration: 25.2, ease: "none" }, 0);
 
       const inUp = { opacity: 0, y: 70 };
       const shown = { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" };
@@ -167,13 +167,13 @@
         tl.fromTo(id + " .small", inUp, shown, t + 0.7);
       }
 
-      tl.fromTo("#s6 .kicker", inUp, shown, 18.75);
-      tl.fromTo("#s6 .chip", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2)", stagger: 0.2 }, 18.95);
-      tl.fromTo("#s6 .card", { opacity: 0, x: 120 }, { opacity: 1, x: 0, duration: 0.5, ease: "power3.out" }, 19.4);
+      tl.fromTo("#s6 .kicker", inUp, shown, 20.75);
+      tl.fromTo("#s6 .chip", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2)", stagger: 0.2 }, 20.95);
+      tl.fromTo("#s6 .card", { opacity: 0, x: 120 }, { opacity: 1, x: 0, duration: 0.5, ease: "power3.out" }, 21.4);
 
-      tl.fromTo("#s7 .cta", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.8)" }, 21.25);
-      tl.fromTo("#s7 .url", inUp, shown, 21.55);
-      tl.fromTo("#s7 .disclose", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 21.9);
+      tl.fromTo("#s7 .cta", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.8)" }, 23.25);
+      tl.fromTo("#s7 .url", inUp, shown, 23.55);
+      tl.fromTo("#s7 .disclose", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 23.9);
 
       window.__timelines = window.__timelines || {};
       window.__timelines["main"] = tl;
