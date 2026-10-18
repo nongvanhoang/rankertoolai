@@ -23,7 +23,11 @@ const TO = opt('--to', '9999-12-31');
 (async () => {
   if (!notion.enabled()) throw new Error('Thiếu biến môi trường NOTION_TOKEN');
   let made = 0;
-  for (const date of calendar.map((d) => d.date).filter((d) => d >= FROM && d <= TO).sort()) {
+  // Every day in the range (queue days have no calendar entry but still get a RankerNest video).
+  const last = TO !== '9999-12-31' ? TO : calendar.map((d) => d.date).sort().pop();
+  const days = [];
+  for (let t = Date.parse(FROM + 'T00:00:00Z'); t <= Date.parse(last + 'T00:00:00Z'); t += 864e5) days.push(new Date(t).toISOString().slice(0, 10));
+  for (const date of days) {
     for (const site of ['rta', 'rn']) {
       const { posts, queueUsed } = buildDay(site, date);
       if (queueUsed) state.rn_queue_next = queueUsed;      // in memory only: send_daily owns state.json

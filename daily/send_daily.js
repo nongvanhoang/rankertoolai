@@ -215,7 +215,8 @@ function queuePost(date) {
   const skipped = [];
   while (i < rnQueue.length) {
     const it = rnQueue[i];
-    const why = it.skip ? 'ảnh chưa được phép dùng' : it.expires && it.expires < date ? `hết mùa ${it.expires}` : !fs.existsSync(it.video) ? 'thiếu file video' : null;
+    const why = it.skip ? 'ảnh chưa được phép dùng' : it.expires && it.expires < date ? `hết mùa ${it.expires}`
+      : HOLD.some((h) => it.topic.startsWith(h)) ? 'tạm hoãn (hết hàng)' : !fs.existsSync(it.video) ? 'thiếu file video' : null;
     if (!why) return { item: it, index: i, skipped };
     skipped.push(`${it.topic} (${why})`);
     i++;

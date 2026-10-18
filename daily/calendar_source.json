@@ -649,5 +649,264 @@
     "file": "rankernest_gifts-cleaning_v1"
    }
   ]
+ },
+ {
+  "date": "2026-11-14",
+  "items": [
+   {
+    "site": "rn",
+    "kind": "video",
+    "title": "Quà thiết thực (Rexing) · kiểu A",
+    "ch": "Tất cả kênh",
+    "file": "rankernest_gifts-practical_v1"
+   }
+  ]
+ },
+ {
+  "date": "2026-11-15",
+  "items": [
+   {
+    "site": "rta",
+    "kind": "todo",
+    "title": "Video RankerToolAI mới",
+    "ch": "",
+    "note": "Chờ anh quay màn hình MentionAgent/Dropmagic (KICH_BAN_QUAY_3_VIDEO_RTA.txt)."
+   }
+  ]
+ },
+ {
+  "date": "2026-11-17",
+  "items": [
+   {
+    "site": "rn",
+    "kind": "video",
+    "title": "Black Friday: 3 điều cần kiểm tra · kiểu A",
+    "ch": "Tất cả kênh",
+    "file": "rankernest_bf-checks_v1"
+   }
+  ]
+ },
+ {
+  "date": "2026-11-20",
+  "items": [
+   {
+    "site": "rn",
+    "kind": "video",
+    "title": "Quà theo ngân sách · kiểu B",
+    "ch": "Tất cả kênh",
+    "file": "rankernest_gifts-budget_v1_hb"
+   }
+  ]
+ },
+ {
+  "date": "2026-11-21",
+  "items": [
+   {
+    "site": "rta",
+    "kind": "todo",
+    "title": "Video RankerToolAI mới",
+    "ch": "",
+    "note": "Chờ anh quay màn hình MentionAgent/Dropmagic (KICH_BAN_QUAY_3_VIDEO_RTA.txt)."
+   }
+  ]
+ },
+ {
+  "date": "2026-11-22",
+  "items": [
+   {
+    "site": "rn",
+    "kind": "video",
+    "title": "Black Friday: 3 điều cần kiểm tra · kiểu B",
+    "ch": "Tất cả kênh",
+    "file": "rankernest_bf-checks_v1_hb"
+   }
+  ]
+ },
+ {
+  "date": "2026-11-23",
+  "items": [
+   {
+    "site": "rn",
+    "kind": "todo",
+    "title": "Tuần Black Friday: kiểm giá trước khi đăng mỗi ngày",
+    "ch": "",
+    "note": "Giá đổi liên tục trong tuần này. Bot kiểm giá thứ Hai; nếu thấy hãng giảm sâu hơn giá trong video, nhắn Claude làm video giá mới."
+   }
+  ]
+ },
+ {
+  "date": "2026-11-24",
+  "items": [
+   {
+    "site": "rn",
+    "kind": "video",
+    "title": "Quà thiết thực (Rexing) · kiểu B",
+    "ch": "Tất cả kênh",
+    "file": "rankernest_gifts-practical_v1_hb"
+   }
+  ]
+ },
+ {
+  "date": "2026-11-26",
+  "items": [
+   {
+    "site": "rn",
+    "kind": "video",
+    "title": "3 món quà dưới $100 · kiểu B",
+    "ch": "Tất cả kênh",
+    "file": "rankernest_gifts-under100_v1_hb"
+   }
+  ]
+ },
+ {
+  "date": "2026-11-27",
+  "items": [
+   {
+    "site": "rn",
+    "kind": "video",
+    "title": "Black Friday: 3 điều cần kiểm tra · kiểu C",
+    "ch": "Tất cả kênh",
+    "file": "rankernest_bf-checks_v1_hc"
+   }
+  ]
+ },
+ {
+  "date": "2026-11-28",
+  "items": [
+   {
+    "site": "rta",
+    "kind": "todo",
+    "title": "Video RankerToolAI mới",
+    "ch": "",
+    "note": "Chờ anh quay màn hình MentionAgent/Dropmagic (KICH_BAN_QUAY_3_VIDEO_RTA.txt)."
+   }
+  ]
+ },
+ {
+  "date": "2026-11-29",
+  "items": [
+   {
+    "site": "rn",
+    "kind": "video",
+    "title": "Quà cho người làm việc ở nhà · kiểu B",
+    "ch": "Tất cả kênh",
+    "file": "rankernest_gifts-wfh_v1_hb"
+   }
+  ]
+ },
+ {
+  "date": "2026-12-01",
+  "items": [
+   {
+    "site": "rn",
+    "kind": "video",
+    "title": "Quà cho người ghét dọn nhà · kiểu B",
+    "ch": "Tất cả kênh",
+    "file": "rankernest_gifts-cleaning_v1_hb"
+   }
+  ]
+ },
+ {
+  "date": "2026-12-03",
+  "items": [
+   {
+    "site": "rn",
+    "kind": "video",
+    "title": "Quà theo ngân sách · kiểu C",
+    "ch": "Tất cả kênh",
+    "file": "rankernest_gifts-budget_v1_hc"
+   }
+  ]
+ },
+ {
+  "date": "2026-12-05",
+  "items": [
+   {
+    "site": "rta",
+    "kind": "todo",
+    "title": "Video RankerToolAI mới",
+    "ch": "",
+    "note": "Chờ anh quay màn hình MentionAgent/Dropmagic (KICH_BAN_QUAY_3_VIDEO_RTA.txt)."
+   }
+  ]
+ },
+ {
+  "date": "2026-12-06",
+  "items": [
+   {
+    "site": "rn",
+    "kind": "video",
+    "title": "Quà thiết thực (Rexing) · kiểu C",
+    "ch": "Tất cả kênh",
+    "file": "rankernest_gifts-practical_v1_hc"
+   }
+  ]
+ },
+ {
+  "date": "2026-12-09",
+  "items": [
+   {
+    "site": "rn",
+    "kind": "video",
+    "title": "3 món quà dưới $100 · kiểu C",
+    "ch": "Tất cả kênh",
+    "file": "rankernest_gifts-under100_v1_hc"
+   }
+  ]
+ },
+ {
+  "date": "2026-12-12",
+  "items": [
+   {
+    "site": "rn",
+    "kind": "video",
+    "title": "Quà cho người làm việc ở nhà · kiểu C",
+    "ch": "Tất cả kênh",
+    "file": "rankernest_gifts-wfh_v1_hc"
+   },
+   {
+    "site": "rta",
+    "kind": "todo",
+    "title": "Video RankerToolAI mới",
+    "ch": "",
+    "note": "Chờ anh quay màn hình MentionAgent/Dropmagic (KICH_BAN_QUAY_3_VIDEO_RTA.txt)."
+   }
+  ]
+ },
+ {
+  "date": "2026-12-14",
+  "items": [
+   {
+    "site": "rn",
+    "kind": "todo",
+    "title": "Từ tuần này: hỏi hạn giao Giáng sinh của từng hãng",
+    "ch": "",
+    "note": "Không hứa \"giao kịp Giáng sinh\" khi chưa xem hạn giao trên web hãng."
+   }
+  ]
+ },
+ {
+  "date": "2026-12-15",
+  "items": [
+   {
+    "site": "rn",
+    "kind": "video",
+    "title": "Quà cho người ghét dọn nhà · kiểu C",
+    "ch": "Tất cả kênh",
+    "file": "rankernest_gifts-cleaning_v1_hc"
+   }
+  ]
+ },
+ {
+  "date": "2026-12-19",
+  "items": [
+   {
+    "site": "rta",
+    "kind": "todo",
+    "title": "Video RankerToolAI mới",
+    "ch": "",
+    "note": "Chờ anh quay màn hình MentionAgent/Dropmagic (KICH_BAN_QUAY_3_VIDEO_RTA.txt)."
+   }
+  ]
  }
 ]
