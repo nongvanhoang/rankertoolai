@@ -28,5 +28,51 @@ https://www.rankertoolai.com/* https://rankertoolai.com/:splat 301
 # Removed invented author personas (2026-10-04): bylines now credit the editorial team
 /author/*  /about/  301
 
+# Legacy URLs from older site versions that GSC still reports as 404 (export 2026-10-18).
+# Only URLs with a genuinely equivalent live, indexable page are redirected; the rest stay 404 on purpose.
+/about /about/ 301
+/reviews /review/ 301
+/comparisons /compare/ 301
+/comparisons/ /compare/ 301
+/best-ai-tools/seo /best/ai-seo-tools/ 301
+/best-ai-tools/writing /best/ai-writing-tools/ 301
+/blog/ai-tools-for-students.html /best/ai-tools-for-students/ 301
+/blog/best-ai-tools-2026.html /blog/best-ai-tools-2026/ 301
+/blog/best-ai-tools-for-bloggers.html /best/ai-tools-for-bloggers/ 301
+/blog/best-ai-video-tools.html /best/ai-video-tools/ 301
+/blog/best-ai-writing-tools.html /best/ai-writing-tools/ 301
+/blog/best-ai-tools-for-seo.html /best/ai-seo-tools/ 301
+/blog/best-ai-for-small-business.html /blog/ai-tools-for-small-business/ 301
+/blog/ai-tools-for-content-creators.html /blog/ai-tools-for-youtubers-content-creators/ 301
+/guides/best-ai-tools-for-marketers /best/ai-tools-for-marketers/ 301
+/compare/synthesia-vs-heygen /compare/heygen-vs-synthesia/ 301
+/blog/synthesia-vs-heygen /compare/heygen-vs-synthesia/ 301
+/comparisons/chatgpt-vs-gemini.html /compare/chatgpt-vs-gemini/ 301
+/comparisons/chatgpt-vs-claude.html /blog/chatgpt-vs-claude-for-writing/ 301
+/blog/chatgpt-vs-claude /blog/chatgpt-vs-claude-for-writing/ 301
+/comparisons/claude-vs-gemini.html /blog/chatgpt-vs-claude-vs-gemini/ 301
+/review/notion-ai/ /review/notion/ 301
+/reviews/notion-ai-review.html /review/notion/ 301
+/review/surfer-ai/ /review/surfer-seo/ 301
+/reviews/surfer-seo-review /review/surfer-seo/ 301
+/reviews/jasper-ai-review /review/jasper/ 301
+/reviews/synthesia-review /review/synthesia/ 301
+/review/murf/ /review/murf-ai/ 301
+/review/play-ht/ /alternatives/playht/ 301
+/tool/clearscope /alternatives/clearscope/ 301
+/tool/elevenlabs /review/elevenlabs/ 301
+/tool/writesonic /review/writesonic/ 301
+/writesonic-alternatives.html /alternatives/writesonic/ 301
+/writesonic-best-features.html /review/writesonic/ 301
+/writesonic-lifetime-deal.html /coupons/writesonic/ 301
+/mangools-alternatives.html /alternatives/mangools/ 301
+/mangools-discount.html /pricing/mangools/ 301
+/notion-alternatives /alternatives/notion/ 301
+/se-ranking-alternatives.html /alternatives/se-ranking/ 301
+/se-ranking-discount.html /coupons/se-ranking/ 301
+/surferseo-alternatives.html /alternatives/surfer-seo/ 301
+/getresponse-coupon.html /review/getresponse/ 301
+/getresponse-discount.html /review/getresponse/ 301
+
 # 404 fallback
 /*  /404.html  404
