@@ -48,7 +48,10 @@ const CATCH_UP_DAYS = 3;
 // Channels per brand (owner 2026-10-14: RankerNest also has X + LinkedIn; owner 2026-10-17: both
 // brands post every video to ALL channels, Pinterest included).
 const ALL_CHANNELS = ['instagram', 'facebook', 'youtube', 'tiktok', 'pinterest', 'x', 'linkedin'];
-const REEL_CHANNELS = { rn: ALL_CHANNELS, rta: ALL_CHANNELS };
+// 2026-10-18: Pinterest refused the appeal and keeps rankertoolai.com blocked as spam, so RTA never
+// gets Pinterest cards (pins to a blocked domain fail; re-routing them would count as evasion).
+const BLOCKED = { rta: ['pinterest'] };
+const REEL_CHANNELS = { rn: ALL_CHANNELS, rta: ALL_CHANNELS.filter((c) => !BLOCKED.rta.includes(c)) };
 const BRAND = { rn: 'RankerNest', rta: 'RankerToolAI' };
 const WD = ['Chủ nhật', 'Thứ 2', 'Thứ 3', 'Thứ 4', 'Thứ 5', 'Thứ 6', 'Thứ 7'];
 const esc = (s) => String(s).replace(/[&<>]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
@@ -238,7 +241,7 @@ function buildDay(site, date) {
       posts.push({ title: e.title, reel: e.reel, file: path.join(VIDEOS, e.reel + '.mp4'), channels: REEL_CHANNELS[site], kit: reelKit(e.reel) });
     } else {
       // Extra rows: drop channels the main card already covers (cards now include X/LinkedIn).
-      const chans = (e.channels || []).filter((c) => !REEL_CHANNELS[site].includes(c));
+      const chans = (e.channels || []).filter((c) => !REEL_CHANNELS[site].includes(c) && !(BLOCKED[site] || []).includes(c));
       if (!chans.length) continue;
       const main = posts.find((p) => p.reel === e.reel);
       if (main && reelsToday.has(e.reel)) { main.channels = [...main.channels, ...chans]; continue; }
