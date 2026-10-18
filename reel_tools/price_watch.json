@@ -95,6 +95,22 @@
         49.99
       ],
       "videos": "gifts-practical, bf-checks"
+    },
+    {
+      "name": "Rexing V1P MAX (đang hết hàng — gỡ thông báo trên review khi có hàng)",
+      "url": "https://rexing.com/products/rexing-v1p-max-4k-uhd-dual-channel-dash-cam.js",
+      "expect": [
+        179.99
+      ],
+      "videos": "không có video; review rexing-v1p-max + quảng cáo Rexing Non-brand"
+    },
+    {
+      "name": "Rexing B1 (đang hết hàng — gỡ thông báo trên review khi có hàng)",
+      "url": "https://rexing.com/products/rexing-b1-black-night-vision-goggles-binoculars.js",
+      "expect": [
+        99.99
+      ],
+      "videos": "không có video; review rexing-b1-night-vision-binoculars"
     }
   ],
   "manual": [
