@@ -1,18 +1,58 @@
 {
-  "site": "rn", "slug": "gifts-under100", "reel": "rankernest_gifts-under100_v1", "kw": "gifts", "brandName": "các thương hiệu trong video",
-  "disclose": "link", "category": "Howto & Style",
+  "site": "rn",
+  "slug": "gifts-under100",
+  "reel": "rankernest_gifts-under100_v1",
+  "kw": "gifts",
+  "brandName": "các thương hiệu trong video",
+  "disclose": "link",
+  "category": "Howto & Style",
   "hook": "3 gifts under $100 that don't feel cheap 🎁",
   "summary": "Three gift picks under $100 from our reviews.",
-  "points": ["Lumi friendship lamp from $70 (reg. $109): touch yours, theirs lights up. Both homes need 2.4GHz Wi-Fi", "ProtoArc EK01 Plus split keyboard, $79.99, extra 10% with code GFPHOANGNONGVAN", "SilkSilky mulberry silk pillowcase from ~$22"],
+  "points": [
+    "Lumi friendship lamp from $70 (reg. $109): touch yours, theirs lights up. Both homes need 2.4GHz Wi-Fi",
+    "ProtoArc EK01 Plus split keyboard, $79.99, extra 10% with code GFPHOANGNONGVAN",
+    "SilkSilky mulberry silk pillowcase from ~$22"
+  ],
   "caveat": "Prices at time of writing; check the live price.",
-  "pinterest": {"title": "3 Gifts Under $100 That Don't Feel Cheap", "board": "Gift Ideas", "alt": "Friendship lamp, split ergonomic keyboard and silk pillowcase gift ideas under 100 dollars", "keywords": "gifts under 100, gift ideas, christmas gift ideas, gifts for her, gifts for him"},
+  "pinterest": {
+    "title": "3 Gifts Under $100 That Don't Feel Cheap",
+    "board": "Gift Ideas",
+    "alt": "Friendship lamp, split ergonomic keyboard and silk pillowcase gift ideas under 100 dollars",
+    "keywords": "gifts under 100, gift ideas, christmas gift ideas, gifts for her, gifts for him"
+  },
   "youtubeTitle": "3 gifts under $100 that don't feel cheap",
   "x": "3 gifts under $100:\nLumi friendship lamp from $70\nProtoArc EK01 Plus keyboard $79.99 (+10% with GFPHOANGNONGVAN)\nSilk pillowcase from ~$22\n\nPrices at time of writing.",
-  "xTags": ["giftideas"],
+  "xTags": [
+    "giftideas"
+  ],
   "tiktokLine": "Lamp, keyboard, silk pillowcase.",
-  "tiktokTags": ["giftsunder100", "giftideas", "christmasgifts", "giftguide", "RankerNest"],
+  "tiktokTags": [
+    "giftsunder100",
+    "giftideas",
+    "christmasgifts",
+    "giftguide",
+    "RankerNest"
+  ],
   "linkedin": "Three gifts under $100 that people actually use:\n\n→ Lumi friendship lamp, from $70 (reg. $109). Touch yours and theirs lights up; both homes need 2.4GHz Wi-Fi\n→ ProtoArc EK01 Plus split keyboard, $79.99, with an extra 10% off using code GFPHOANGNONGVAN\n→ SilkSilky mulberry silk pillowcase, from about $22\n\nPrices at time of writing. Details in the first comment.",
-  "linkedinTags": ["giftideas", "holidaygifts"],
-  "hashtags": ["giftsunder100", "giftideas", "christmasgifts", "giftguide"],
-  "emailTitle": "3 gifts under $100 that don't feel cheap"
+  "linkedinTags": [
+    "giftideas",
+    "holidaygifts"
+  ],
+  "hashtags": [
+    "giftsunder100",
+    "giftideas",
+    "christmasgifts",
+    "giftguide"
+  ],
+  "emailTitle": "3 gifts under $100 that don't feel cheap",
+  "variants": {
+    "b": {
+      "html": "Gifts under $100<br />they'll <span class=\"coral\">actually use</span>",
+      "hook": "Gifts under $100 they'll actually use 🎁"
+    },
+    "c": {
+      "html": "Under $100 and<br /><span class=\"coral\">not a gift card</span>",
+      "hook": "Under $100 and not a gift card 🎁"
+    }
+  }
 }

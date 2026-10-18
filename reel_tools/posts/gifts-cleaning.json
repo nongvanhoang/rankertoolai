@@ -1,18 +1,58 @@
 {
-  "site": "rn", "slug": "gifts-cleaning", "reel": "rankernest_gifts-cleaning_v1", "kw": "gifts", "brandName": "Honiture / SwitchBot",
-  "disclose": "link", "category": "Howto & Style",
+  "site": "rn",
+  "slug": "gifts-cleaning",
+  "reel": "rankernest_gifts-cleaning_v1",
+  "kw": "gifts",
+  "brandName": "Honiture / SwitchBot",
+  "disclose": "link",
+  "category": "Howto & Style",
   "hook": "Gift for someone who hates cleaning 🧹🎁",
   "summary": "Two cleaning gifts from our reviews, at two very different budgets.",
-  "points": ["$179.99: Honiture X7 cordless stick, 45kPa, up to 60 min rated runtime, 1.5L dust cup", "$799.99: SwitchBot S20 robot vacuum that washes and dries its own mop and refills and drains its water"],
+  "points": [
+    "$179.99: Honiture X7 cordless stick, 45kPa, up to 60 min rated runtime, 1.5L dust cup",
+    "$799.99: SwitchBot S20 robot vacuum that washes and dries its own mop and refills and drains its water"
+  ],
   "caveat": "S20 is a specs-based pick, not hands-on tested. Prices at time of writing.",
-  "pinterest": {"title": "Gift Ideas for Someone Who Hates Cleaning", "board": "Cordless & Robot Vacuums", "alt": "Honiture X7 cordless vacuum and SwitchBot S20 robot vacuum as gift ideas", "keywords": "cleaning gifts, home gadget gifts, robot vacuum gift, cordless vacuum, christmas gift ideas"},
+  "pinterest": {
+    "title": "Gift Ideas for Someone Who Hates Cleaning",
+    "board": "Cordless & Robot Vacuums",
+    "alt": "Honiture X7 cordless vacuum and SwitchBot S20 robot vacuum as gift ideas",
+    "keywords": "cleaning gifts, home gadget gifts, robot vacuum gift, cordless vacuum, christmas gift ideas"
+  },
   "youtubeTitle": "Gift for someone who hates cleaning: $179.99 vs $799.99",
   "x": "Gift for someone who hates cleaning:\n$179.99 Honiture X7 cordless stick, 45kPa\n$799.99 SwitchBot S20 robot that washes its own mop\n\nS20 = specs-based pick. Prices at time of writing.",
-  "xTags": ["giftideas"],
+  "xTags": [
+    "giftideas"
+  ],
   "tiktokLine": "Budget pick vs the robot that mops for you.",
-  "tiktokTags": ["giftideas", "homegadgets", "cleaninghacks", "christmasgifts", "RankerNest"],
+  "tiktokTags": [
+    "giftideas",
+    "homegadgets",
+    "cleaninghacks",
+    "christmasgifts",
+    "RankerNest"
+  ],
   "linkedin": "A gift that gives people their weekend back: two picks at very different budgets.\n\n→ $179.99: Honiture X7 cordless stick vacuum, 45kPa, up to 60 minutes rated runtime, 1.5L dust cup\n→ $799.99: SwitchBot S20 robot vacuum that washes and dries its own mop and refills and drains its own water\n\nThe S20 is a specs-based pick, not hands-on tested. Prices at time of writing. Details in the first comment.",
-  "linkedinTags": ["giftideas", "smarthome", "worklifebalance"],
-  "hashtags": ["giftideas", "homegadgets", "cleaninghacks", "christmasgifts"],
-  "emailTitle": "Gifts for someone who hates cleaning"
+  "linkedinTags": [
+    "giftideas",
+    "smarthome",
+    "worklifebalance"
+  ],
+  "hashtags": [
+    "giftideas",
+    "homegadgets",
+    "cleaninghacks",
+    "christmasgifts"
+  ],
+  "emailTitle": "Gifts for someone who hates cleaning",
+  "variants": {
+    "b": {
+      "html": "Give them their<br /><span class=\"coral\">weekend back</span>",
+      "hook": "Give them their weekend back 🧹🎁"
+    },
+    "c": {
+      "html": "$179.99 or $799.99:<br /><span class=\"coral\">which cleaning gift?</span>",
+      "hook": "$179.99 or $799.99: which cleaning gift? 🧹🎁"
+    }
+  }
 }

@@ -1,19 +1,58 @@
 {
-  "site": "rn", "slug": "gifts-practical", "reel": "rankernest_gifts-practical_v1", "kw": "gifts", "brandName": "Rexing",
-  "disclose": "code", "category": "Science & Technology",
+  "site": "rn",
+  "slug": "gifts-practical",
+  "reel": "rankernest_gifts-practical_v1",
+  "kw": "gifts",
+  "brandName": "Rexing",
+  "disclose": "code",
+  "category": "Science & Technology",
   "hook": "Practical gifts that aren't boring 🎁🚗",
   "summary": "Two practical gift picks from Rexing, under $130.",
-  "points": ["Rexing 3000A jump starter, $129.99: 3000A peak, 20,000mAh, doubles as a 65W USB-C power bank", "Rexing SDB1 1080p wireless video doorbell, $49.99 (reg. $129.99), 2-year warranty"],
+  "points": [
+    "Rexing 3000A jump starter, $129.99: 3000A peak, 20,000mAh, doubles as a 65W USB-C power bank",
+    "Rexing SDB1 1080p wireless video doorbell, $49.99 (reg. $129.99), 2-year warranty"
+  ],
   "offer": "Extra 10% at Rexing with code RANKERNEST10.",
   "caveat": "Check peak amps against your engine's CCA and the doorbell's cloud storage plan. Specs-based picks, not hands-on tested; prices at time of writing.",
-  "pinterest": {"title": "Practical Gifts That Aren't Boring: Jump Starter + Video Doorbell", "board": "Gift Ideas", "alt": "Rexing 3000A jump starter and Rexing SDB1 video doorbell as practical gift ideas", "keywords": "practical gifts, gifts for him, car gadgets, smart home gifts, christmas gift ideas"},
+  "pinterest": {
+    "title": "Practical Gifts That Aren't Boring: Jump Starter + Video Doorbell",
+    "board": "Gift Ideas",
+    "alt": "Rexing 3000A jump starter and Rexing SDB1 video doorbell as practical gift ideas",
+    "keywords": "practical gifts, gifts for him, car gadgets, smart home gifts, christmas gift ideas"
+  },
   "youtubeTitle": "Practical gifts that aren't boring: jump starter + video doorbell",
   "x": "Practical gifts that aren't boring:\nRexing 3000A jump starter $129.99 (also a 65W USB-C power bank)\nRexing SDB1 1080p video doorbell $49.99, 2-yr warranty\n\nExtra 10% with RANKERNEST10.",
-  "xTags": ["giftideas"],
+  "xTags": [
+    "giftideas"
+  ],
   "tiktokLine": "Jump starter + doorbell, extra 10% with our code.",
-  "tiktokTags": ["giftsforhim", "giftideas", "cargadgets", "smarthome", "RankerNest"],
+  "tiktokTags": [
+    "giftsforhim",
+    "giftideas",
+    "cargadgets",
+    "smarthome",
+    "RankerNest"
+  ],
   "linkedin": "Gift ideas that get used all year, not just unwrapped:\n\n→ Rexing 3000A jump starter ($129.99): 3000A peak, 20,000mAh, and it doubles as a 65W USB-C power bank. Check its peak amps against the engine's cold cranking amps first.\n→ Rexing SDB1 1080p video doorbell ($49.99, reg. $129.99) with a 2-year warranty. Check the cloud storage plan before buying.\n\nCode RANKERNEST10 takes an extra 10% off at Rexing. Specs-based picks, not hands-on tested; prices at time of writing.",
-  "linkedinTags": ["giftideas", "holidaygifts"],
-  "hashtags": ["giftsforhim", "giftideas", "cargadgets", "smarthome"],
-  "emailTitle": "Practical gifts: a jump starter and a $49.99 video doorbell"
+  "linkedinTags": [
+    "giftideas",
+    "holidaygifts"
+  ],
+  "hashtags": [
+    "giftsforhim",
+    "giftideas",
+    "cargadgets",
+    "smarthome"
+  ],
+  "emailTitle": "Practical gifts: a jump starter and a $49.99 video doorbell",
+  "variants": {
+    "b": {
+      "html": "Gifts they'll use<br /><span class=\"coral\">all year</span>",
+      "hook": "Gifts they'll use all year 🎁🚗"
+    },
+    "c": {
+      "html": "A gift for the <span class=\"coral\">car</span><br />and the <span class=\"coral\">front door</span>",
+      "hook": "A gift for the car and the front door 🎁🚗"
+    }
+  }
 }
