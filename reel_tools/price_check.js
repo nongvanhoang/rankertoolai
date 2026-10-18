@@ -15,7 +15,8 @@ const esc = (t) => String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;").replac
   const bad = [], ok = [];
   for (const it of cfg.items) {
     try {
-      const r = await fetch(it.url, { headers: { "User-Agent": UA }, redirect: "follow" });
+      // Cookie: Shopify stores geo-convert prices to VND for a Vietnam IP; ask for US/USD like a US shopper.
+      const r = await fetch(it.url, { headers: { "User-Agent": UA, Cookie: "cart_currency=USD; localization=US" }, redirect: "follow" });
       if (!r.ok) throw new Error("HTTP " + r.status);
       const j = await r.json();
       const prices = j.variants.filter((v) => v.available !== false).map((v) => v.price / 100);

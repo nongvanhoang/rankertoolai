@@ -1,0 +1,11 @@
+{
+  "hook": {"html": "Practical gifts<br />that <span class=\"coral\">aren't boring</span>", "photo": "hook.jpg", "photoClass": "mediumh contain"},
+  "photos": [
+    {"photo": "jump.jpg", "photoClass": "tall contain", "html": "<span class=\"yellow\">Rexing 3000A:</span> jump starter that doubles as a 65W USB-C power bank", "note": "Check peak amps against your engine's CCA."},
+    {"photo": "door.jpg", "photoClass": "tall contain", "html": "<span class=\"teal\">Rexing SDB1:</span> 1080p wireless video doorbell"},
+    {"photo": "warranty.jpg", "photoClass": "tall contain", "html": "<span class=\"yellow\">2-year warranty</span> on the doorbell", "note": "Check the cloud storage plan before buying."}
+  ],
+  "offer": {"kicker": "Prices at time of writing", "rows": ["Jump starter <b>$129.99</b>", "Doorbell <b>$49.99</b> (reg. $129.99)", "Extra 10% with <b>RANKERNEST10</b>"], "note": "Specs-based picks, not hands-on tested. Check the live price."},
+  "url": "rankernest.com/<span class=\"yellow\" style=\"color:var(--yellow)\">gifts</span>",
+  "disclose": "#ad · affiliate links &amp; code, support us at no extra cost"
+}

@@ -1,0 +1,11 @@
+{
+  "hook": {"html": "Black Friday:<br /><span class=\"coral\">3 checks</span> before you buy", "photo": "hook.jpg", "photoClass": "mediumh contain"},
+  "photos": [
+    {"photo": "jump.jpg", "photoClass": "tall contain", "html": "<span class=\"yellow\">Jump starter:</span> match peak amps to your engine's cold cranking amps", "note": "Rexing 3000A: 3000A peak, $129.99"},
+    {"photo": "door.jpg", "photoClass": "tall contain", "html": "<span class=\"teal\">Video doorbell:</span> check what the cloud storage plan costs", "note": "Rexing SDB1: 1080p, 2-year warranty, $49.99"},
+    {"photo": "robot.jpg", "photoClass": "tall contain", "html": "<span class=\"yellow\">Robot vacuum:</span> does the base wash the mop and refill water?", "note": "SwitchBot S20 does both, $799.99 (specs-based pick)"}
+  ],
+  "offer": {"kicker": "Prices at time of writing", "rows": ["Rexing 3000A <b>$129.99</b> · SDB1 <b>$49.99</b>", "Extra 10% at Rexing: <b>RANKERNEST10</b>", "SwitchBot S20 <b>$799.99</b>"], "note": "Deals change daily in November. Check the live price."},
+  "url": "rankernest.com/<span class=\"yellow\" style=\"color:var(--yellow)\">gifts</span>",
+  "disclose": "#ad · affiliate links &amp; code, support us at no extra cost"
+}
