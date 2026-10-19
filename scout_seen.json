@@ -439,6 +439,12 @@
     "first_reported": "2026-10-12",
     "last_reported": "2026-10-12"
   },
+  "CodeRabbit": {
+    "vertical_or_category": "AI code review / AI coding tool",
+    "tier": "WATCH",
+    "first_reported": "2026-10-20",
+    "last_reported": "2026-10-20"
+  },
   "_pending_reminders": {
     "siift": {
       "last_reminded": "2026-09-30"
