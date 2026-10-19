@@ -50,7 +50,7 @@ const CATCH_UP_DAYS = 3;
 const ALL_CHANNELS = ['instagram', 'facebook', 'youtube', 'tiktok', 'pinterest', 'x', 'linkedin'];
 // 2026-10-18: Pinterest refused the appeal and keeps rankertoolai.com blocked as spam, so RTA never
 // gets Pinterest cards (pins to a blocked domain fail; re-routing them would count as evasion).
-const BLOCKED = { rta: ['pinterest'] };
+const BLOCKED = { rta: [] };   // 2026-10-19: owner posts RTA pins by hand again, LINK-FREE (kit says leave Destination link empty)
 const REEL_CHANNELS = { rn: ALL_CHANNELS, rta: ALL_CHANNELS.filter((c) => !BLOCKED.rta.includes(c)) };
 const BRAND = { rn: 'RankerNest', rta: 'RankerToolAI' };
 const WD = ['Chủ nhật', 'Thứ 2', 'Thứ 3', 'Thứ 4', 'Thứ 5', 'Thứ 6', 'Thứ 7'];

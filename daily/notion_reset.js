@@ -5,6 +5,7 @@ const { userEnv } = require('./token');
 const args = process.argv.slice(2);
 const FROM = args[args.indexOf('--from') + 1];
 const DRY = args.includes('--dry-run');
+const SITE = args.includes('--site') ? { rn: 'RankerNest', rta: 'RankerToolAI' }[args[args.indexOf('--site') + 1]] : null;
 const TOKEN = userEnv('NOTION_TOKEN');
 const DB = '61da72d0d5354100a4e3c3e463c916fc';
 const H = { Authorization: `Bearer ${TOKEN}`, 'Notion-Version': '2022-06-28', 'Content-Type': 'application/json' };
@@ -15,7 +16,7 @@ const TICKS = ['IG', 'FB', 'YouTube', 'TikTok', 'Pinterest', 'X', 'LinkedIn'];
   let cursor, n = 0;
   do {
     const r = await fetch(`https://api.notion.com/v1/databases/${DB}/query`, { method: 'POST', headers: H,
-      body: JSON.stringify({ filter: { property: 'Ngày', date: { on_or_after: FROM } }, page_size: 100, ...(cursor ? { start_cursor: cursor } : {}) }) });
+      body: JSON.stringify({ filter: SITE ? { and: [{ property: 'Ngày', date: { on_or_after: FROM } }, { property: 'Site', select: { equals: SITE } }] } : { property: 'Ngày', date: { on_or_after: FROM } }, page_size: 100, ...(cursor ? { start_cursor: cursor } : {}) }) });
     const j = await r.json();
     for (const p of j.results) {
       if (TICKS.some((t) => p.properties[t] && p.properties[t].checkbox)) continue;   // keep rows with real progress

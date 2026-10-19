@@ -101,9 +101,17 @@ channels.push({
 channels.push({
   key: "pinterest", title: "PINTEREST", how: "Tạo Pin → tải video lên → điền các ô dưới",
   note: s.pinterestCsv ? "Video này ĐÃ có trong file CSV Pinterest (lên lịch sẵn). Nếu đã tải CSV lên thì BỎ QUA mục này." : "",
-  fields: [["Tiêu đề", s.pinterest.title], ["Mô tả", pinDesc], ["Link (ô Destination link)", link("pinterest", "video_pin")],
-    ["Alt text", s.pinterest.alt]],
-  settings: [`Board: ${s.pinterest.board}`, `Từ khoá gợi ý: ${s.pinterest.keywords}`],
+  // RankerToolAI: Pinterest blocks rankertoolai.com as spam (appeal rejected 2026-10-18). Pins go up
+  // with NO link at all; any other domain, shortener or redirect would count as block evasion.
+  fields: s.site === "rta"
+    ? [["Tiêu đề", s.pinterest.title], ["Mô tả", pinDesc.replace(/\s*#ad [^.]*\.?\s*$/, "") + " Find RankerToolAI on YouTube and Instagram for more AI tool breakdowns."],
+      ["Alt text", s.pinterest.alt]]
+    : [["Tiêu đề", s.pinterest.title], ["Mô tả", pinDesc], ["Link (ô Destination link)", link("pinterest", "video_pin")],
+      ["Alt text", s.pinterest.alt]],
+  settings: s.site === "rta"
+    ? [`ĐỂ TRỐNG ô Destination link. KHÔNG dán rankertoolai.com, link rút gọn hay link qua RankerNest (Pinterest chặn rankertoolai.com; gắn link khác = lách luật, có thể khoá cả tài khoản)`,
+      `Board: ${s.pinterest.board}`, `Từ khoá gợi ý: ${s.pinterest.keywords}`]
+    : [`Board: ${s.pinterest.board}`, `Từ khoá gợi ý: ${s.pinterest.keywords}`],
 });
 channels.push({
   key: "youtube", title: "YOUTUBE SHORTS", how: "YouTube Studio → Tạo → Tải video lên",
