@@ -186,6 +186,12 @@
     "type": "note",
     "site": "rn",
     "text": "Bản tin: Friendship Lamps (quà tặng) · Email Brevo (list #3)"
+   },
+   {
+    "type": "reel",
+    "site": "rta",
+    "reel": "mentionagent_reel_v1",
+    "title": "MentionAgent · tìm backlink, viết sẵn thư mời"
    }
   ]
  },
@@ -197,6 +203,12 @@
     "site": "rn",
     "reel": "rankernest_friendshiplamps_v2_hb",
     "title": "Friendship Lamps · kiểu mở đầu B"
+   },
+   {
+    "type": "reel",
+    "site": "rta",
+    "reel": "dropmagic_reel_v1",
+    "title": "Dropmagic · 1 link thành trang Shopify"
    }
   ]
  },
@@ -236,11 +248,6 @@
     "site": "rn",
     "reel": "rankernest_switchbot-s20_v2_hb",
     "title": "SwitchBot S20 · kiểu mở đầu B"
-   },
-   {
-    "type": "note",
-    "site": "rta",
-    "text": "MentionAgent: tìm backlink, viết sẵn thư mời · Instagram · YouTube Shorts · TikTok · Chờ anh quay màn hình (xem KICH_BAN_QUAY_3_VIDEO_RTA.txt), Claude dựng xong mới đăng."
    },
    {
     "type": "note",
@@ -293,11 +300,6 @@
     "type": "note",
     "site": "rn",
     "text": "⏸ Bản tin: Góc bàn làm việc: EK01 Plus, XK01, EC200 · Email Brevo (list #3) · ⏸ Tạm hoãn: EC200 hết hàng."
-   },
-   {
-    "type": "note",
-    "site": "rta",
-    "text": "Dropmagic: 1 link sản phẩm thành trang Shopify · Instagram · YouTube Shorts · TikTok · Chờ anh quay màn hình (xem KICH_BAN_QUAY_3_VIDEO_RTA.txt), Claude dựng xong mới đăng."
    }
   ]
  },
@@ -376,11 +378,6 @@
   "entries": [
    {
     "type": "note",
-    "site": "rta",
-    "text": "MentionAgent · kiểu mở đầu B · Instagram · YouTube Shorts · TikTok · Chờ anh quay màn hình, Claude dựng xong mới đăng."
-   },
-   {
-    "type": "note",
     "site": "both",
     "text": "Chốt kiểu mở đầu thắng của từng sản phẩm · GA4 + lượt xem"
    }
@@ -420,11 +417,6 @@
  {
   "date": "2026-11-07",
   "entries": [
-   {
-    "type": "note",
-    "site": "rta",
-    "text": "Dropmagic · kiểu mở đầu B · Instagram · YouTube Shorts · TikTok · Chờ anh quay màn hình, Claude dựng xong mới đăng."
-   },
    {
     "type": "note",
     "site": "rn",
