@@ -445,6 +445,18 @@
     "first_reported": "2026-10-20",
     "last_reported": "2026-10-20"
   },
+  "Lindy AI": {
+    "vertical_or_category": "No-code AI agent / workflow automation builder",
+    "tier": "WATCH",
+    "first_reported": "2026-10-22",
+    "last_reported": "2026-10-22"
+  },
+  "Higgsfield AI": {
+    "vertical_or_category": "AI video/image generation (UGC ads, viral social video effects)",
+    "tier": "WATCH",
+    "first_reported": "2026-10-22",
+    "last_reported": "2026-10-22"
+  },
   "_pending_reminders": {
     "siift": {
       "last_reminded": "2026-09-30"
