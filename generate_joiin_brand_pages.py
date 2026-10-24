@@ -243,7 +243,7 @@ SG_SECTIONS = [
                "Map every account to one group chart of accounts with a lookup column.",
                "Add an eliminations column that reverses intercompany sales, recharges, loans and balances.",
                "Sum the mapped columns plus eliminations to get the consolidated trial balance, then build the P&amp;L and balance sheet from it."]),
-        "It breaks down with more companies, foreign subsidiaries or monthly board packs: every new account breaks the mapping and eliminations are re-entered by hand each month.",
+        "Our <a href=\"/free/consolidation-excel-template/\">free consolidation Excel template</a> sets this up for you, with eliminations and balance checks built in. It breaks down with more companies, foreign subsidiaries or monthly board packs: every new account breaks the mapping and eliminations are re-entered by hand each month.",
     ]),
     prose("Using Joiin With Sage", "joiin", [
         "Joiin connects directly to <strong>Sage Accounting</strong> in the US, UK, Canada and Ireland. Per Joiin's Sage page, data is kept in sync automatically, budgets can be imported from Sage, and multiple Sage companies can be consolidated with intercompany eliminations and multi-currency options. Sage 50, Sage 200 Professional and Sage X3 aren't directly connected; Joiin's help centre points them to its Manual Company Import feature instead.",
@@ -294,7 +294,7 @@ MY_SECTIONS = [
                "Map accounts to a group chart of accounts.",
                "Add an eliminations column for intercompany transactions and balances.",
                "Sum to a consolidated trial balance and build the group P&amp;L and balance sheet."]),
-        "Fine for two simple companies; slow and error-prone beyond that.",
+        "Our <a href=\"/free/consolidation-excel-template/\">free consolidation Excel template</a> sets this up for you, with eliminations and balance checks built in. Fine for two simple companies; slow and error-prone beyond that.",
     ]),
     prose("Option C: A Consolidation App", "app", [
         "Reporting apps connect to each MYOB company and refresh automatically, so the mapping and eliminations are set once. Options that connect to MYOB include Joiin, Fathom (MYOB AccountRight cloud and desktop) and Calxa. Joiin is usually the cheapest for small groups, and it also connects to Xero, QuickBooks, Sage and others if part of the group runs a different ledger, which is common in Australia and New Zealand where Xero and MYOB sit side by side.",

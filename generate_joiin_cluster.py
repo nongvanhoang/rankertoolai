@@ -497,7 +497,7 @@ P3_SECTIONS = [
         "        <li>Sum the mapped columns plus eliminations to produce the consolidated trial balance.</li>\n"
         "        <li>Build the consolidated P&amp;L and balance sheet from that trial balance, and check that the balance sheet still balances.</li>\n"
         "      </ol>",
-        "The problem is maintenance. Every new account breaks the mapping, every month needs a fresh export, and eliminations are manual. Once you have three or more entities, a foreign subsidiary, or a board that wants a pack every month, the spreadsheet usually costs more in time than an app costs in fees.",
+        "Our <a href=\"/free/consolidation-excel-template/\">free consolidation Excel template</a> sets this up for you, with eliminations and balance checks built in. The problem is maintenance. Every new account breaks the mapping, every month needs a fresh export, and eliminations are manual. Once you have three or more entities, a foreign subsidiary, or a board that wants a pack every month, the spreadsheet usually costs more in time than an app costs in fees.",
     ]),
     prose("Option B: Use a Consolidation App", "app", [
         "Apps in the Xero App Store connect to each organisation through Xero's API and refresh automatically. You do the mapping and elimination setup once, then each month's consolidated reports are ready when the books are. Users on Xero's own forum most often name Fathom and Joiin for this, and Spotlight Reporting and Syft Analytics (which Xero agreed to buy in 2024) also consolidate Xero data.",

@@ -4,6 +4,8 @@ const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 // the Notion leads database. Each destination is optional: it only runs when
 // its env vars are set, and one failing doesn't block the other.
 //   Brevo:  BREVO_API_KEY, BREVO_LIST_ID
+//           BREVO_LIST_ID_CONSOLIDATION (optional): extra list for the
+//           consolidation-template lead magnet, so its own email sequence runs
 //   Notion: NOTION_TOKEN, NOTION_DATABASE_ID
 export async function onRequestPost(context) {
   const { request, env } = context;
@@ -29,7 +31,7 @@ export async function onRequestPost(context) {
   }
 
   const tasks = [];
-  if (env.BREVO_API_KEY && env.BREVO_LIST_ID) tasks.push(addToBrevo(env, email));
+  if (env.BREVO_API_KEY && env.BREVO_LIST_ID) tasks.push(addToBrevo(env, email, source));
   if (env.NOTION_TOKEN && env.NOTION_DATABASE_ID) tasks.push(addToNotion(env, email, source, page));
   if (!tasks.length) {
     return json({ ok: false, error: 'not_configured' }, 500);
@@ -40,7 +42,11 @@ export async function onRequestPost(context) {
   return json({ ok, results }, ok ? 200 : 502);
 }
 
-async function addToBrevo(env, email) {
+async function addToBrevo(env, email, source) {
+  const listIds = [Number(env.BREVO_LIST_ID)];
+  if (source === 'consolidation-template' && env.BREVO_LIST_ID_CONSOLIDATION) {
+    listIds.push(Number(env.BREVO_LIST_ID_CONSOLIDATION));
+  }
   // updateEnabled: an existing contact is just added to the list instead of
   // returning a "duplicate" error.
   const res = await fetch('https://api.brevo.com/v3/contacts', {
@@ -52,7 +58,7 @@ async function addToBrevo(env, email) {
     },
     body: JSON.stringify({
       email,
-      listIds: [Number(env.BREVO_LIST_ID)],
+      listIds,
       updateEnabled: true,
     }),
   });
