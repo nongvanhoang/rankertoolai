@@ -1,4 +1,4 @@
-VIDEO: joiin_template_reel_v1.mp4  |  SẢN PHẨM: Joiin  |  TRANG ĐÍCH: rankertoolai.com/consolidation
+VIDEO: joiin_template_reel_v2.mp4  |  SẢN PHẨM: Joiin  |  TRANG ĐÍCH: rankertoolai.com/consolidation
 Mỗi kênh 1 link riêng (utm_source khác nhau) để sau 1 tuần biết kênh nào ra khách.
 Trước khi đăng: thêm nhạc trend trong CapCut (giữ âm thanh gốc), xuất 1080p 30fps, tắt đoạn đuôi CapCut.
 
@@ -27,7 +27,7 @@ Full review + current price 👉 link in bio, tap CONSOLIDATION
 (rankertoolai.com/consolidation · #ad affiliate link)
 
 Cài đặt:
-- Ảnh bìa: covers/joiin_template_reel_v1_cover.jpg (trong thư mục Videos\RankerToolAI_reels)
+- Ảnh bìa: covers/joiin_template_reel_v2_cover.jpg (trong thư mục Videos\RankerToolAI_reels)
 - Nhạc trend: chọn trong thư viện của Instagram, giữ âm thanh gốc
 - Không cần nhãn AI
 - Dòng #ad trong caption là đủ công khai; chỉ dùng nhãn "Paid partnership" khi Joiin đồng ý
