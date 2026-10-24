@@ -451,7 +451,7 @@ P2_SECTIONS = [
     ]),
     cta_box("Switching from Fathom for group reporting?", "Try Joiin's full Max plan for 14 days, no credit card, and rebuild one month's consolidated pack to compare."),
     faq_html(P2_FAQ),
-    related([("/best/consolidation-software/", "Best Of", "Best Consolidation Software 2026"), ("/review/joiin/", "Review", "Joiin Review"),
+    related([("/best/consolidation-software/", "Best Of", "Best Consolidation Software 2026"), ("/tools/consolidation-software-cost-calculator/", "Tool", "Consolidation Cost Calculator"), ("/review/joiin/", "Review", "Joiin Review"),
              ("/best/management-reporting-software-for-accountants/", "Best Of", "Management Reporting Software for Accountants")]),
 ]
 P2_TITLE = "4 Best Fathom Alternatives 2026: Cheaper Consolidation Tools"
@@ -528,7 +528,7 @@ P3_SECTIONS = [
     </section>
 ''',
     faq_html(P3_FAQ),
-    related([("/best/consolidation-software/", "Best Of", "Best Consolidation Software 2026"), ("/review/joiin/", "Review", "Joiin Review"),
+    related([("/best/consolidation-software/", "Best Of", "Best Consolidation Software 2026"), ("/tools/consolidation-software-cost-calculator/", "Tool", "Consolidation Cost Calculator"), ("/review/joiin/", "Review", "Joiin Review"),
              ("/alternatives/fathom/", "Alternatives", "Fathom Alternatives")]),
 ]
 P3_TITLE = "How to Consolidate Multiple Xero Organisations (2026 Guide)"
@@ -603,7 +603,7 @@ P4_SECTIONS = [
     ]),
     cta_box("Have clients with more than one company?", "Joiin includes consolidation, report packs and unlimited users on every plan. Try the Max plan free for 14 days."),
     faq_html(P4_FAQ),
-    related([("/best/consolidation-software/", "Best Of", "Best Consolidation Software 2026"), ("/review/joiin/", "Review", "Joiin Review"),
+    related([("/best/consolidation-software/", "Best Of", "Best Consolidation Software 2026"), ("/tools/consolidation-software-cost-calculator/", "Tool", "Consolidation Cost Calculator"), ("/review/joiin/", "Review", "Joiin Review"),
              ("/alternatives/fathom/", "Alternatives", "Fathom Alternatives"), ("/best/ai-data-tools/", "Best Of", "Best AI Data Tools")]),
 ]
 P4_TITLE = "5 Best Management Reporting Software for Accountants (2026)"
