@@ -237,6 +237,12 @@
     "site": "rn",
     "reel": "rankernest_protoarc-ek01-plus_v3_hb",
     "title": "ProtoArc EK01 Plus · kiểu mở đầu B"
+   },
+   {
+    "type": "reel",
+    "site": "rta",
+    "reel": "joiin_calc_reel_v1",
+    "title": "Joiin · công cụ tính chi phí gộp báo cáo"
    }
   ]
  },

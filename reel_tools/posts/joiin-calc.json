@@ -1,0 +1,33 @@
+{
+  "site": "rta",
+  "slug": "joiin-calc",
+  "reel": "joiin_calc_reel_v1",
+  "kw": "consolidation",
+  "brandName": "Joiin",
+  "aiAvatar": false,
+  "disclose": "link",
+  "category": "Education",
+  "hook": "What does it cost to consolidate 10 companies? 📊",
+  "summary": "Our free calculator compares Joiin, Fathom and Spotlight Reporting by company count, using each vendor's published list prices (checked October 2026).",
+  "points": [
+    "Pick 1 to 300 companies",
+    "See monthly cost, cost per company and the plan that applies",
+    "Free Excel consolidation template on the same page"
+  ],
+  "caveat": "Prices change: confirm with each vendor before you buy.",
+  "pinterest": {
+    "title": "Consolidation Software Cost Calculator: Joiin vs Fathom vs Spotlight",
+    "board": "Accounting & finance tools",
+    "alt": "Screen recording of a cost calculator comparing Joiin, Fathom and Spotlight Reporting monthly prices for 2, 10 and 50 companies",
+    "keywords": "consolidation software, accounting tools, xero consolidation, multi-entity reporting, accountants"
+  },
+  "youtubeTitle": "What Does Consolidation Software Cost? Joiin vs Fathom vs Spotlight",
+  "x": "What does it cost to consolidate 10 companies?\n\nOur free calculator compares Joiin, Fathom and Spotlight by company count, from each vendor's list prices (Oct 2026).\n\nMonthly cost, cost per company, plan used.",
+  "xTags": ["accounting", "Xero"],
+  "tiktokLine": "Free cost calculator for accountants 🧮",
+  "tiktokTags": ["accounting", "accountant", "xero", "bookkeeping", "cfo"],
+  "linkedin": "Consolidation software is priced very differently from vendor to vendor: some charge per company, some by tier, some by number of organisations.\n\nWe built a free calculator that compares Joiin, Fathom and Spotlight Reporting for any number of companies (1 to 300), using each vendor's published list prices as of October 2026.\n\nIt shows:\n→ Monthly cost for each tool\n→ Cost per company\n→ Which plan or tier applies\n\nThere is also a free Excel template for consolidating up to three companies, with eliminations and balance checks.\n\nList prices only: confirm with each vendor before you buy. Link in the first comment.",
+  "linkedinTags": ["Accounting", "Xero", "FinancialReporting", "CFO"],
+  "hashtags": ["accounting", "consolidation", "xero", "bookkeeping"],
+  "emailTitle": "Free tool: what does consolidation software cost for your group?"
+}
