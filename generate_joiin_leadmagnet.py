@@ -62,6 +62,8 @@ PREVIEW_CSS = """    <style>
       .xp-table td.num{text-align:right;}
       .xp-table td.ok{color:#22c55e;font-weight:800;}
       .xp-table tr.total td{font-weight:700;background:rgba(34,197,94,.08);}
+      .xp-table td:first-child{white-space:normal;min-width:7rem;}
+      @media(max-width:640px){.xp-table{font-size:.78rem;}.xp-table th,.xp-table td{padding:.35rem .45rem;}}
     </style>
 """
 
