@@ -1364,4 +1364,28 @@
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
+  <url>
+    <loc>https://rankertoolai.com/compare/joiin-vs-fathom/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/compare/joiin-vs-spotlight-reporting/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/blog/how-to-consolidate-sage-companies/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/blog/how-to-consolidate-myob-companies/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+  </url>
 </urlset>
