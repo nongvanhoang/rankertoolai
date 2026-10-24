@@ -105,7 +105,7 @@ SYFT = dict(id="syft", name="Syft Analytics", featured=False, aff=False,
 LIVEFLOW = dict(id="liveflow", name="LiveFlow", featured=False, aff=False,
                 cta=("https://www.liveflow.com/", "Visit LiveFlow →"), more=None)
 IES = dict(id="intuit-enterprise-suite", name="Intuit Enterprise Suite", featured=False, aff=False,
-           cta=("https://quickbooks.intuit.com/enterprise-suite/", "Visit Intuit →"), more=None)
+           cta=("https://quickbooks.intuit.com/see-all-product/", "Visit Intuit →"), more=None)
 
 
 def card(t, i, badge, tagline, meta, tags, body, pros, cons):
