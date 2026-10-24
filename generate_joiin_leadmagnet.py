@@ -10,6 +10,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from generate_joiin_cluster import GO, build, prose, ul, faq_html, faq_schema, related, cta_box, article_ld
+from xlsx_preview import Book, render
 
 P = "free/consolidation-excel-template"
 FILE = "/assets/downloads/multi-entity-consolidation-template.xlsx"
@@ -50,6 +51,54 @@ BOX = '''    <div class="tool-card featured" style="padding:1.5rem;margin:1.5rem
 '''
 
 
+PREVIEW_CSS = """    <style>
+      .xp-tabs{display:flex;flex-wrap:wrap;gap:.4rem;margin:.75rem 0;}
+      .xp-tab{background:rgba(255,255,255,.05);border:1px solid rgba(148,163,184,.25);color:var(--color-text-muted);padding:.4rem .8rem;border-radius:999px;font-size:.85rem;font-weight:600;cursor:pointer;}
+      .xp-tab[aria-selected="true"]{background:#16a34a;border-color:#16a34a;color:#fff;}
+      .xp-scroll{overflow-x:auto;border:1px solid rgba(148,163,184,.2);border-radius:10px;}
+      .xp-table{width:100%;border-collapse:collapse;font-size:.85rem;font-variant-numeric:tabular-nums;}
+      .xp-table th{background:#14532d;color:#f0fdf4;text-align:left;padding:.45rem .6rem;white-space:nowrap;}
+      .xp-table td{padding:.4rem .6rem;border-top:1px solid rgba(148,163,184,.15);white-space:nowrap;}
+      .xp-table td.num{text-align:right;}
+      .xp-table td.ok{color:#22c55e;font-weight:800;}
+      .xp-table tr.total td{font-weight:700;background:rgba(34,197,94,.08);}
+    </style>
+"""
+
+
+def preview_html():
+    """Tabbed preview of the real template values (computed from the .xlsx itself)."""
+    b = Book(os.path.join(os.path.dirname(os.path.abspath(__file__)), FILE.lstrip("/").replace("/", os.sep)))
+    pl = b.table("P&L", 3, "ABCDEF", 4, 8)
+    bs = b.table("Balance Sheet", 3, "ABCDEF", 4, 13)
+    ca = b.table("Company A", 4, "BCDEF", 5, 66)
+    el = b.table("Eliminations", 4, "ABCDE", 5, 34)
+    el[1].append(["Total net (should be 0)", "", "", "", b.val("Eliminations", "E36")])
+    el[1].append(["Check", "", "", "", b.val("Eliminations", "E37")])
+    tb = b.table("Consolidated TB", 3, "ADEFGH", 4, 42)
+    tabs = [("pl", "P&amp;L", render(*pl, check_rows=("Net profit",))),
+            ("bs", "Balance Sheet", render(*bs, check_rows=("Total equity", "Check (net assets = equity)"))),
+            ("tb", "Consolidated TB", render(*tb, check_rows=("Total (should be 0)", "Check"))),
+            ("ca", "Company A", render(*ca, check_rows=("Totals", "Check: balances?"))),
+            ("el", "Eliminations", render(*el, check_rows=("Total net (should be 0)", "Check")))]
+    buttons = "".join(f'<button type="button" class="xp-tab" role="tab" aria-selected="{str(i == 0).lower()}" data-xp="{k}">{t}</button>'
+                      for i, (k, t, _) in enumerate(tabs))
+    panels = "".join(f'<div class="xp-panel" data-xp="{k}"{"" if i == 0 else " hidden"}>{tbl}</div>' for i, (k, _, tbl) in enumerate(tabs))
+    return f"""{PREVIEW_CSS}    <section id="preview" style="margin:2rem 0;">
+      <h2 style="font-size:1.3rem;color:#f1f5f9;margin-bottom:.5rem;">Preview the Template</h2>
+      <p style="color:var(--color-text-muted);">These are the example figures that come in the file, calculated by its own formulas: Company A charges Company B a 10,000 management fee, and the eliminations remove it from the group totals. Every check reads OK. Figures in brackets are credits.</p>
+      <div class="xp-tabs" role="tablist">{buttons}</div>
+      {panels}
+    </section>
+    <script>
+      document.querySelectorAll('.xp-tab').forEach(function(t){{t.addEventListener('click',function(){{
+        document.querySelectorAll('.xp-tab').forEach(function(x){{x.setAttribute('aria-selected',x===t?'true':'false');}});
+        document.querySelectorAll('.xp-panel').forEach(function(p){{p.hidden=p.getAttribute('data-xp')!==t.getAttribute('data-xp');}});
+      }});}});
+    </script>
+"""
+
+
 def main_html():
     sections = [
         BOX.format(h="Get the Free Excel Template", p="Combine up to three companies' trial balances into a consolidated P&amp;L and balance sheet, with an eliminations sheet and built-in balance checks.", form=form("top")),
@@ -62,6 +111,7 @@ def main_html():
                 "<strong>P&amp;L and Balance Sheet</strong>: consolidated statements by company, eliminations and group total, with a net assets = equity check."]),
             "Companies A and B come with example figures (A charges B a 10,000 management fee that B hasn't paid yet), so you can see the eliminations working before you paste your own numbers.",
         ]),
+        preview_html(),
         prose("How to Use It", "how", [
             '      <ol style="color:var(--color-text-muted);line-height:2;padding-left:1.5rem;">\n'
             "        <li>Export each company's trial balance for the same period end from Xero, QuickBooks, Sage, MYOB or your ledger.</li>\n"
