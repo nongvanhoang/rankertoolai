@@ -9,7 +9,8 @@ lands on a page that matches its keywords instead of all 58 keywords hitting
 Shell copied from /best/web-hosting/ (same pattern as generate_dropmagic_extra.py).
 Research-based, no hands-on test claims. Facts (checked 2026-10-24):
   Joiin: our /review/joiin/ (joiin.co/pricing 2026-10-01).
-  Fathom: fathomhq.com/pricing (Pro $450/mo for 25 companies, $17/extra; Portfolio $67/mo for 100, no consolidation).
+  Fathom: fathomhq.com/pricing page script, USD excl. tax (Pro tiers: Starter $59 for 1 +$59 each, Silver $315 for 10 +$31,
+  Gold $450 for 25 +$17, Platinum $805 for 50 +$13, cheapest tier applies; Portfolio $67/100, $189/300, $405 -- no consolidation).
   Spotlight: spotlightreporting.com/pricing (NZD excl GST: Basic $329 up to 10 orgs, Super VCFO 25 $495, 75 $995) + /multi.
   Syft: Xero acquisition announced Sept 2024 (FNN/AAP); vendor pricing not visible, third-party trackers disagree -> no price quoted.
   LiveFlow: liveflow.com (QuickBooks Online, Google Sheets/Excel, consolidation; demo-based pricing).
@@ -239,8 +240,9 @@ JOIIN_CONS = ["Multi-currency needs Pro; Core reports in one currency",
               "White labelling is still marked coming soon"]
 
 FATHOM_BODY = ("<p>Fathom is a long-established management reporting and forecasting tool used heavily by accounting firms. "
-               "On its pricing page, <strong>Fathom Pro</strong> is $450/month including 25 companies, plus $17 per extra company "
-               "(about $18 per company), and includes multi-currency consolidations with eliminations; consolidated groups are free to create. "
+               "On its pricing page, <strong>Fathom Pro</strong> is priced in tiers by company count (USD, excluding sales tax): $59/month for one company "
+               "(+$59 per extra), $315 for 10 (+$31 each extra), $450 for 25 (+$17) and $805 for 50 (+$13), and the cheapest tier for your count applies. "
+               "Pro includes multi-currency consolidations with eliminations; consolidated groups are free to create. "
                "<strong>Fathom Portfolio</strong> is $67/month for 100 companies (about $0.67 each), but it doesn't include consolidations: "
                "you upgrade a company to Pro for that. Enterprise is custom-priced. Integrations listed include Xero, QuickBooks Online and "
                "Desktop, MYOB, FreeAgent and Excel. There's a 14-day free trial.</p>")
@@ -271,7 +273,7 @@ P1_FAQ = [
     ("Do I need multi-currency consolidation?",
      "Only if a subsidiary keeps its books in a different currency. On Joiin, multi-currency starts on the Pro plan and Max adds your own FX rates. Fathom Pro and Spotlight Multi both include multi-currency."),
     ("How is consolidation software priced?",
-     "Mostly by company count. Joiin charges per connected company with unlimited users. Fathom Pro bundles 25 companies for $450/month, plus $17 per extra company. Spotlight's advisor plans are priced by number of organisations (from NZ$329/month for up to 10). Compare the price for your exact entity count, not the headline figure."),
+     "Mostly by company count. Joiin charges per connected company with unlimited users. Fathom Pro is tiered: $59/month for one company, $315 for 10, $450 for 25 and $805 for 50, plus a fee per extra company. Spotlight's advisor plans are priced by number of organisations (from NZ$329/month for up to 10). Compare the price for your exact entity count, not the headline figure."),
     ("What does intercompany elimination mean?",
      "When companies in the same group trade with each other, those sales, costs, loans and balances would be double-counted if you simply added the ledgers together. Eliminations remove them so the consolidated figures only show the group's dealings with the outside world."),
 ]
@@ -283,11 +285,11 @@ P1_SECTIONS = [
          ("multi-currency", "Multi-Currency and Group Reporting"), ("choose", "How to Choose"), ("faq", "FAQ")]),
     card(JOIIN, 0, "Best Overall", "Consolidated reporting across ten accounting systems", "From $23/mo",
          ["Per-company pricing", "Unlimited users", "10 ledgers", "14-day Max trial"], JOIIN_BODY, JOIIN_PROS, JOIIN_CONS),
-    card(FATHOM, 1, "Best for Large Accounting Firms", "Management reporting, KPIs and forecasting for advisors", "Pro $450/mo (25 cos.)",
+    card(FATHOM, 1, "Best for Large Accounting Firms", "Management reporting, KPIs and forecasting for advisors", "Pro from $59/mo",
          ["Pro includes consolidation", "Multi-currency", "Xero · QBO · MYOB · FreeAgent"], FATHOM_BODY,
          ["Mature reporting and forecasting, widely used by advisors", "Pro includes multi-currency consolidations with eliminations",
           "Good value per company once you have 25+ clients on Pro"],
-         ["$450/month entry for Pro is steep for a single group", "The cheaper Portfolio plan has no consolidation",
+         ["Costs climb quickly for small groups: $295/month for 5 companies on Pro", "The cheaper Portfolio plan has no consolidation",
           "No Sage connection listed"]),
     card(SPOTLIGHT, 2, "Best Advisory Suite", "Reporting, forecasting, dashboards and Spotlight Multi", "From NZ$329/mo",
          ["Up to 10 orgs on Basic", "Multi-currency (Multi)", "Xero · QuickBooks"], SPOTLIGHT_BODY,
@@ -315,7 +317,7 @@ P1_SECTIONS = [
       <h2>Comparison Table</h2>
 {table(["Tool", "Ledgers named", "Consolidation", "Multi-currency", "Published entry price"], [
         ["<strong>Joiin</strong>", "Xero, QuickBooks, Intuit Enterprise Suite, Sage, MYOB, FreeAgent, Puzzle, Pennylane, Zoho Books, Fortnox", "Every plan", "Pro and Max", "$23/mo, 1 company (annual)"],
-        ["<strong>Fathom</strong>", "Xero, QuickBooks, MYOB, FreeAgent, Excel", "Pro and Enterprise", "Pro", "Pro $450/mo for 25 companies"],
+        ["<strong>Fathom</strong>", "Xero, QuickBooks, MYOB, FreeAgent, Excel", "Pro and Enterprise", "Pro", "Pro $59/mo (1 company)"],
         ["<strong>Spotlight</strong>", "Xero, QuickBooks", "Yes (Spotlight Multi)", "Multi", "NZ$329/mo, up to 10 orgs"],
         ["<strong>Syft</strong>", "Check with vendor", "Yes", "Check with vendor", "Not published"],
         ["<strong>LiveFlow</strong>", "QuickBooks Online", "Yes", "Not stated", "Demo / quote"],
@@ -338,7 +340,7 @@ P1_SECTIONS = [
         ul(["<strong>Does it connect to every ledger in the group?</strong> A tool that misses one entity's system sends you back to spreadsheets for that entity.",
             "<strong>Which plan includes eliminations and multi-currency?</strong> The headline price is often for a plan that doesn't include them.",
             "<strong>What does the price depend on?</strong> Per company (Joiin), a bundle of companies (Fathom Pro, Spotlight) or a quote (Syft, LiveFlow, Intuit). Price your actual entity count."]),
-        "For a business group with a handful of entities, Joiin's per-company pricing with consolidation on every plan is usually the cheapest way to get real consolidated reports. For an accounting firm already reporting on dozens of clients, Fathom or Spotlight's bundles can work out cheaper per company, and their advisory features go further.",
+        "For a business group with a handful of entities, Joiin's per-company pricing with consolidation on every plan is usually the cheapest way to get real consolidated reports. For an accounting firm already reporting on dozens of clients, Fathom Portfolio is very cheap for single-company clients ($67/month for 100, without consolidation), and Fathom's and Spotlight's advisory features go further.",
     ]),
     faq_html(P1_FAQ),
     related([("/review/joiin/", "Review", "Joiin Review 2026"), ("/alternatives/fathom/", "Alternatives", "Fathom Alternatives"),
@@ -353,24 +355,24 @@ P1_DESC = ("Joiin, Fathom, Spotlight, Syft, LiveFlow and Intuit Enterprise Suite
 P2 = "alternatives/fathom"
 P2_FAQ = [
     ("What is the best alternative to Fathom?",
-     "For consolidation, Joiin is the closest alternative at a lower entry price: consolidation is on every plan from $23/mo for one company (annual), compared with $450/month for Fathom Pro, which bundles 25 companies. For a full advisory suite similar to Fathom, look at Spotlight Reporting."),
+     "For consolidation, Joiin is the closest alternative at a lower entry price: consolidation is on every plan from $23/mo for one company (annual), compared with Fathom Pro's $59/month for one company and $295/month for five. For a full advisory suite similar to Fathom, look at Spotlight Reporting."),
     ("Is there a cheaper alternative to Fathom?",
-     "For a single group with a few entities, yes. Fathom Pro starts at $450/month for 25 companies. Joiin charges by company count, from $23/mo for one company or $29/mo for two (annual), with eliminations and unlimited users included. Fathom becomes better value per company once you report on many clients."),
+     "For a single group with a few entities, yes. Fathom Pro costs $118/month for two companies and $295/month for five. Joiin charges by company count, from $23/mo for one company or $29/mo for two (annual), with eliminations and unlimited users included. Joiin stays cheaper at every company count we checked, so Fathom's case rests on its reporting and forecasting features rather than price."),
     ("Does Fathom Portfolio include consolidation?",
      "No. Fathom's pricing page says Portfolio ($67/month for 100 companies) doesn't include consolidations. You need to upgrade a company to Fathom Pro to consolidate it."),
     ("Which Fathom alternative works with Sage?",
      "Joiin lists Sage among its ten accounting connections. Fathom's own pricing page names Xero, QuickBooks, MYOB, FreeAgent and Excel, but not Sage."),
     ("Is Spotlight Reporting cheaper than Fathom?",
-     "It depends on your client count and currency. Spotlight's advisor plans are priced in NZD excluding GST: Basic is NZ$329/month for up to 10 organisations, Super VCFO 25 is NZ$495/month and Super VCFO 75 is NZ$995/month. Fathom Pro is $450/month for 25 companies and Portfolio $67/month for 100. Convert to your currency and compare at your real number of organisations."),
+     "It depends on your client count and currency. Spotlight's advisor plans are priced in NZD excluding GST: Basic is NZ$329/month for up to 10 organisations, Super VCFO 25 is NZ$495/month and Super VCFO 75 is NZ$995/month. Fathom Pro is $315/month for 10 companies and $450 for 25, and Portfolio is $67/month for 100 (without consolidation). Convert to your currency and compare at your real number of organisations."),
     ("Can I keep Fathom and add a consolidation tool alongside it?",
-     "Yes. Some firms keep Fathom Portfolio for single-company clients, because it's very cheap per company, and use a per-company consolidation tool such as Joiin only for the clients that run groups. That avoids paying for Fathom Pro's 25-company bundle when only a few clients need consolidation."),
+     "Yes. Some firms keep Fathom Portfolio for single-company clients, because it's very cheap per company, and use a per-company consolidation tool such as Joiin only for the clients that run groups. That avoids moving every client onto Fathom Pro when only a few need consolidation."),
     ("Is there a Fathom alternative for QuickBooks users who prefer spreadsheets?",
      "LiveFlow syncs QuickBooks Online data into Google Sheets and Excel in real time and can consolidate multiple QuickBooks companies, so you keep your own spreadsheet models."),
 ]
 P2_SECTIONS = [
     prose("Why People Look for Fathom Alternatives", "why", [
         "Fathom is a well-regarded management reporting and forecasting tool, so most people searching for an alternative aren't unhappy with the reports. The reasons are usually structural:",
-        ul(["<strong>Entry price for consolidation.</strong> Fathom Pro, which includes consolidations, is $450/month including 25 companies. That's good value for a firm with 25 clients, but a lot for one business group with three entities.",
+        ul(["<strong>Price for small groups.</strong> Fathom Pro, which includes consolidations, costs $59/month for one company and adds $59 for each extra company up to its 10-company tier ($315). A group with three entities pays $177/month.",
             "<strong>Portfolio has no consolidation.</strong> The $67/month Portfolio plan covers 100 companies but excludes consolidations, so it doesn't solve group reporting.",
             "<strong>Ledger coverage.</strong> Fathom lists Xero, QuickBooks, MYOB, FreeAgent and Excel. Groups with an entity on Sage, Zoho Books or another system need a tool that connects to it.",
             "<strong>Spreadsheet workflows.</strong> Some finance teams want live data in their own Excel or Google Sheets models rather than a separate report builder."]),
@@ -395,7 +397,7 @@ P2_SECTIONS = [
     f'''    <section id="compare">
       <h2>Fathom vs Alternatives Table</h2>
 {table(["", "Consolidation from", "Pricing basis", "Ledgers named", "Free trial"], [
-        ["<strong>Fathom</strong>", "Pro: $450/mo (25 companies)", "Bundle + $17 per extra company", "Xero, QuickBooks, MYOB, FreeAgent, Excel", "14 days"],
+        ["<strong>Fathom</strong>", "Pro: $59/mo (1 company)", "Tiers by company count", "Xero, QuickBooks, MYOB, FreeAgent, Excel", "14 days"],
         ['<strong><a href="/go/joiin/" rel="nofollow sponsored" target="_blank">Joiin</a></strong>', "$23/mo (1 company, annual)", "Per company, unlimited users", "10 incl. Sage, MYOB, Xero, QuickBooks", "14 days, no card"],
         ["<strong>Spotlight</strong>", "Basic: NZ$329/mo (up to 10 orgs)", "Plan by organisation count", "Xero, QuickBooks", "14 days"],
         ["<strong>Syft</strong>", "Not published", "Check with vendor", "Check with vendor", "Check with vendor"],
@@ -405,11 +407,19 @@ P2_SECTIONS = [
 ''',
     prose("Cost Examples: Fathom vs Joiin", "cost", [
         "Headline prices hide how each tool scales, so here's how the published numbers play out. All figures are before sales tax; Joiin prices are billed annually.",
-        ul(["<strong>A group with 2 companies.</strong> Fathom Pro is $450/month, because that's the entry point for consolidation even though it includes 25 companies. Joiin is $29/mo for two companies (annual), with eliminations and unlimited users. If one subsidiary reports in another currency, Joiin Pro is needed; check the calculator for the two-company Pro price.",
+        ul(["<strong>A group with 2 companies.</strong> Fathom Pro is $118/month (two companies on its $59 Starter tier). Joiin is $36/mo billed monthly or $29/mo billed annually, with eliminations and unlimited users. If a subsidiary reports in another currency you need Joiin's Pro plan, so confirm that plan's price.",
+            "<strong>A group with 5 companies.</strong> Fathom Pro is $295/month. Joiin is $70/mo monthly or $57/mo annually.",
             "<strong>A firm with 25 single-company clients that don't need consolidation.</strong> Fathom Portfolio is $67/month for up to 100 companies, which is hard to beat. This is the case where staying on Fathom usually makes sense.",
-            "<strong>A firm with 25 clients, several of them groups.</strong> Fathom Pro's $450/month covers 25 companies (about $18 each), and each extra company is $17. Joiin's <a href=\"/go/joiin/\" rel=\"nofollow sponsored\" target=\"_blank\">price table</a> lists $139/mo for 20 companies and $174/mo for 50 (annual), so 25 companies falls between the two; confirm the exact figure before deciding.",
+            "<strong>A firm with 25 clients, several of them groups.</strong> Fathom Pro's Gold tier is $450/month for 25 companies (about $18 each), plus $17 per extra company. Joiin's <a href=\"/go/joiin/\" rel=\"nofollow sponsored\" target=\"_blank\">price table</a> lists $139/mo for 20 companies and $174/mo for 50 (annual), so 25 companies falls between the two; confirm the exact figure before deciding.",
             "<strong>A group with an entity on Sage.</strong> Fathom doesn't list a Sage connection, so that entity would be handled outside the tool. Joiin lists Sage, which removes the manual step."]),
-        "The pattern: Joiin is far cheaper when you need consolidation for a small number of companies, and Fathom's bundles become competitive as the company count grows, especially for single-entity clients on Portfolio.",
+        table(["Companies", "Fathom Pro (monthly)", "Joiin (monthly)", "Joiin (annual, per month)"], [
+            ["1", "$59", "$28", "$23"], ["2", "$118", "$36", "$29"], ["5", "$295", "$70", "$57"],
+            ["10", "$315", "$111", "$92"], ["20", "$450", "$167", "$139"], ["50", "$805", "$217", "$174"],
+            ["100", "$1,455", "$336", "$252"],
+        ], "USD before sales tax, from each vendor's pricing page on October 24, 2026. Fathom figures use the cheapest Pro tier for each count "
+           "(Starter $59 +$59 per company, Silver $315 for 10 +$31, Gold $450 for 25 +$17, Platinum $805 for 50 +$13). Joiin's page shows one price "
+           "table by company count and no separate prices per plan, so confirm the price of the plan you need."),
+        "The pattern: on the published prices Joiin is cheaper than Fathom Pro at every company count we checked, from 2 companies to 100. Fathom only wins on price with Portfolio, for single-company clients that don't need consolidation.",
     ]),
     prose("Where Fathom Is Still Strong", "strengths", [
         "To be fair to Fathom, there are good reasons it's so widely used. Its management reporting, KPI analysis and forecasting have been developed over many years for advisors, and the Portfolio plan makes it very cheap to roll out to a large book of single-company clients. Pro includes multi-currency consolidations with eliminations, and consolidated groups don't cost extra once the companies are on Pro. Fathom also lists QuickBooks Desktop and MYOB AccountRight desktop connections, which matters for clients who haven't moved to the cloud.",
@@ -435,8 +445,8 @@ P2_SECTIONS = [
         "Two weeks is enough to see whether the numbers agree and whether the workflow is faster. If they don't, you've lost nothing, because the trial needs no card.",
     ]),
     prose("Which Should You Pick?", "verdict", [
-        "If you're a <strong>business group</strong> that needs consolidated reports for a few entities, <a href=\"/go/joiin/\" rel=\"nofollow sponsored\" target=\"_blank\">Joiin</a> is the most cost-effective switch from Fathom: consolidation and eliminations are on its cheapest plan, and you pay per company rather than for a 25-company bundle.",
-        "If you're an <strong>accounting firm</strong> that wants a full advisory toolkit across many clients, Spotlight Reporting is the closest like-for-like alternative, and Fathom itself may still be the right answer once your client count fills the Pro bundle.",
+        "If you're a <strong>business group</strong> that needs consolidated reports for a few entities, <a href=\"/go/joiin/\" rel=\"nofollow sponsored\" target=\"_blank\">Joiin</a> is the most cost-effective switch from Fathom: consolidation and eliminations are on its cheapest plan, and it costs less than Fathom Pro at every company count we checked.",
+        "If you're an <strong>accounting firm</strong> that wants a full advisory toolkit across many clients, Spotlight Reporting is the closest like-for-like alternative, and Fathom itself may still be the right answer if its forecasting and advisory tools are what you rely on.",
         "If your team <strong>lives in spreadsheets on QuickBooks</strong>, LiveFlow keeps your models and refreshes the data for you.",
     ]),
     cta_box("Switching from Fathom for group reporting?", "Try Joiin's full Max plan for 14 days, no credit card, and rebuild one month's consolidated pack to compare."),
@@ -458,7 +468,7 @@ P3_FAQ = [
     ("How do I remove intercompany transactions when consolidating Xero?",
      "Code intercompany sales, costs, loans and recharges to dedicated accounts in each organisation, then reverse them in the consolidation. A spreadsheet needs manual elimination entries every month; consolidation apps such as Joiin let you set elimination rules once."),
     ("What does it cost to consolidate Xero organisations with an app?",
-     "Joiin starts at $23/mo for one company or $29/mo for two (billed annually), with eliminations included. Fathom Pro is $450/month for 25 companies. Spotlight Reporting starts at NZ$329/month for up to 10 organisations."),
+     "Joiin starts at $23/mo for one company or $29/mo for two (billed annually), with eliminations included. Fathom Pro starts at $59/month for one company and $315 for 10. Spotlight Reporting starts at NZ$329/month for up to 10 organisations."),
     ("Can I consolidate Xero organisations in different currencies?",
      "Yes, with a tool that supports multi-currency consolidation. In Joiin that starts on the Pro plan, and Max lets you apply your own exchange rates. Fathom Pro and Spotlight Multi also handle multiple currencies."),
 ]
@@ -511,7 +521,7 @@ P3_SECTIONS = [
       <h2 style="font-size:1.3rem;color:#f1f5f9;margin-bottom:1rem;">Xero Consolidation Apps Compared</h2>
 {table(["App", "Consolidation from", "Other ledgers", "Best for"], [
         ['<strong><a href="/review/joiin/">Joiin</a></strong>', "$23/mo, 1 company (annual)", "QuickBooks, Sage, MYOB, FreeAgent + more", "Business groups, mixed ledgers"],
-        ["<strong>Fathom</strong>", "Pro $450/mo (25 companies)", "QuickBooks, MYOB, FreeAgent", "Accounting firms with many clients"],
+        ["<strong>Fathom</strong>", "Pro from $59/mo (1 company)", "QuickBooks, MYOB, FreeAgent", "Accounting firms with many clients"],
         ["<strong>Spotlight Reporting</strong>", "NZ$329/mo (up to 10 orgs)", "QuickBooks", "Advisory firms, franchise networks"],
         ["<strong>Syft Analytics</strong>", "Not published", "Check with vendor", "Xero-centric firms"],
     ], "Vendor pricing pages, October 2026. See our full <a href='/best/consolidation-software/'>consolidation software comparison</a>.")}
@@ -533,7 +543,7 @@ P4_FAQ = [
     ("Which tools include budget vs actual reporting?",
      "All of the tools here offer budgets. On Joiin, budgets, dashboards and report packs are on every plan, with forecasting from Pro. Fathom and Spotlight both include forecasting in their advisor offerings."),
     ("How do accounting firms pay for management reporting software?",
-     "Fathom Portfolio is $67/month for 100 companies (no consolidation) and Fathom Pro $450/month for 25 companies. Spotlight's advisor plans start at NZ$329/month for up to 10 organisations. Joiin charges by connected company with unlimited users and clients. Compare on your actual number of client entities."),
+     "Fathom Portfolio is $67/month for 100 companies (no consolidation), and Fathom Pro is tiered from $59/month for one company to $450 for 25. Spotlight's advisor plans start at NZ$329/month for up to 10 organisations. Joiin charges by connected company with unlimited users and clients. Compare on your actual number of client entities."),
     ("Can I send clients a monthly board pack automatically?",
      "Most tools let you save a report pack and refresh it each month. Joiin includes report packs and custom layouts on every plan, with PDF, Excel and CSV export; Max adds report-pack templates."),
 ]
@@ -549,7 +559,7 @@ P4_SECTIONS = [
     card(FATHOM, 1, "Best for Large Client Books", "Management reporting, KPIs and forecasting", "From $67/mo (Portfolio)",
          ["Portfolio: 100 companies", "Pro: consolidation", "14-day trial"], FATHOM_BODY,
          ["Portfolio's $67/month for 100 companies is very low per client", "Mature KPI, reporting and forecasting tooling"],
-         ["Consolidation needs Pro ($450/month for 25)", "No Sage connection listed"]),
+         ["Consolidation needs Pro (from $59/month per company, $450 for 25)", "No Sage connection listed"]),
     card(SPOTLIGHT, 2, "Best Advisory Bundle", "Reporting, forecasting and dashboards for advisors", "From NZ$329/mo",
          ["Up to 10 orgs on Basic", "Training included", "Xero · QuickBooks"], SPOTLIGHT_BODY,
          ["Reporting, forecasting and dashboards in one advisor plan", "Account management and training on Super VCFO plans"],
@@ -564,7 +574,7 @@ P4_SECTIONS = [
       <h2>Comparison Table</h2>
 {table(["Tool", "Pricing basis", "Entry price", "Consolidation", "Forecasting"], [
         ["<strong>Joiin</strong>", "Per company, unlimited clients &amp; users", "$23/mo, 1 company (annual)", "Every plan", "Pro and Max"],
-        ["<strong>Fathom</strong>", "Bundles of companies", "Portfolio $67/mo (100)", "Pro ($450/mo, 25)", "Yes"],
+        ["<strong>Fathom</strong>", "Bundles of companies", "Portfolio $67/mo (100)", "Pro (from $59/mo)", "Yes"],
         ["<strong>Spotlight</strong>", "Plans by organisation count", "NZ$329/mo (up to 10)", "Spotlight Multi", "Yes"],
         ["<strong>LiveFlow</strong>", "Quote", "Demo", "QuickBooks companies", "In your spreadsheet"],
         ["<strong>Syft</strong>", "Not published", "Not published", "Yes", "Yes"],
@@ -619,7 +629,7 @@ if __name__ == "__main__":
           [("Home", "/"), ("Alternatives", "/alternatives/"), ("Fathom Alternatives", f"/{P2}/")],
           [item_list("Fathom Alternatives 2026", P2, [JOIIN, SPOTLIGHT, SYFT, LIVEFLOW]), faq_schema(P2_FAQ)],
           page("4 Best Fathom Alternatives in 2026", BYLINE,
-               "Fathom Pro costs $450/month for 25 companies, and the cheaper Portfolio plan has no consolidation. For group consolidation at a lower entry price, "
+               "Fathom Pro costs $59/month for one company and $295 for five, and the cheaper Portfolio plan has no consolidation. For group consolidation at a lower price, "
                "<strong><a href=\"/go/joiin/\" rel=\"nofollow sponsored\" target=\"_blank\" style=\"color:#4ade80;\">Joiin</a></strong> includes eliminations on every plan from $23/mo for one company. For a similar advisory suite, try <strong>Spotlight Reporting</strong>.",
                P2_SECTIONS))
     build(P3, P3_TITLE, P3_DESC,
