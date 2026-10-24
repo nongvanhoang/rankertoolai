@@ -259,6 +259,12 @@
     "type": "note",
     "site": "both",
     "text": "Kiểm giá + mã giảm giá trước khi đăng lại video cũ · Trang review"
+   },
+   {
+    "type": "reel",
+    "site": "rta",
+    "reel": "joiin_template_reel_v1",
+    "title": "Joiin · file Excel gộp báo cáo miễn phí"
    }
   ]
  },

@@ -351,6 +351,13 @@
     "kind": "check",
     "title": "Kiểm giá + mã giảm giá trước khi đăng lại video cũ",
     "ch": "Trang review"
+   },
+   {
+    "site": "rta",
+    "kind": "video",
+    "title": "Joiin · file Excel gộp báo cáo miễn phí",
+    "ch": "Instagram · YouTube Shorts · TikTok",
+    "file": "joiin_template_reel_v1"
    }
   ]
  },
