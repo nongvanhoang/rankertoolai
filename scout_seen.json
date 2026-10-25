@@ -23,65 +23,11 @@
     "first_reported": "2026-09-23",
     "last_reported": "2026-09-23"
   },
-  "Hey Noah": {
-    "vertical_or_category": "AI executive assistant (autonomous, email/SMS/WhatsApp)",
-    "tier": "WATCH",
-    "first_reported": "2026-08-19",
-    "last_reported": "2026-08-19"
-  },
-  "AdAnt AI": {
-    "vertical_or_category": "AI social ad creative generation",
-    "tier": "WATCH",
-    "first_reported": "2026-08-19",
-    "last_reported": "2026-08-19"
-  },
-  "Zetik": {
-    "vertical_or_category": "AI chief-of-staff / cross-source research briefing",
-    "tier": "WATCH",
-    "first_reported": "2026-08-19",
-    "last_reported": "2026-08-19"
-  },
-  "Framer AI Agents": {
-    "vertical_or_category": "AI website builder / AI agents",
-    "tier": "WATCH",
-    "first_reported": "2026-08-19",
-    "last_reported": "2026-08-22"
-  },
-  "GLM-5.3 / Z.ai GLM Coding Plan": {
-    "vertical_or_category": "AI coding assistant",
-    "tier": "WATCH",
-    "first_reported": "2026-08-19",
-    "last_reported": "2026-08-19"
-  },
-  "Coldtea.ai": {
-    "vertical_or_category": "AI agentic IDE",
-    "tier": "WATCH",
-    "first_reported": "2026-08-19",
-    "last_reported": "2026-08-19"
-  },
   "Kilo Code": {
     "vertical_or_category": "AI coding agent (IDE/CLI/cloud)",
     "tier": "WATCH",
     "first_reported": "2026-08-20",
     "last_reported": "2026-09-20"
-  },
-  "Murmell": {
-    "vertical_or_category": "Shared cloud canvas for multi-agent coding",
-    "tier": "WATCH",
-    "first_reported": "2026-08-20",
-    "last_reported": "2026-08-20"
-  },
-  "Astute": {
-    "vertical_or_category": "AI agent for B2B creator/newsletter/podcast partnerships",
-    "tier": "WATCH",
-    "first_reported": "2026-08-20",
-    "last_reported": "2026-08-20"
-  },
-  "Soloop": {
-    "vertical_or_category": "AI Agent OS for solo founders",
-    "tier": "WATCH",
-    "first_reported": "2026-08-20",
-    "last_reported": "2026-08-20"
   },
   "Naive": {
     "vertical_or_category": "AI business-automation infrastructure (Series A $28.5M, 30k+ dev signups)",
@@ -94,60 +40,6 @@
     "tier": "WATCH",
     "first_reported": "2026-08-22",
     "last_reported": "2026-09-04"
-  },
-  "Smallest.ai": {
-    "vertical_or_category": "Voice AI (TTS/STT, voice agents)",
-    "tier": "WATCH",
-    "first_reported": "2026-08-22",
-    "last_reported": "2026-08-22"
-  },
-  "Cronloop": {
-    "vertical_or_category": "AI agent scheduling/automation",
-    "tier": "WATCH",
-    "first_reported": "2026-08-22",
-    "last_reported": "2026-08-22"
-  },
-  "Fabricate v2.0": {
-    "vertical_or_category": "AI vibe coding / app builder full-stack",
-    "tier": "WATCH",
-    "first_reported": "2026-08-22",
-    "last_reported": "2026-08-22"
-  },
-  "Checksum AI": {
-    "vertical_or_category": "AI QA/testing agent for AI-generated code",
-    "tier": "WATCH",
-    "first_reported": "2026-08-24",
-    "last_reported": "2026-08-24"
-  },
-  "MeetStream AI": {
-    "vertical_or_category": "AI meeting-agent infrastructure / API",
-    "tier": "WATCH",
-    "first_reported": "2026-08-25",
-    "last_reported": "2026-08-25"
-  },
-  "Viktor (AI employee)": {
-    "vertical_or_category": "AI virtual employee automation via Slack/Teams",
-    "tier": "WATCH",
-    "first_reported": "2026-08-26",
-    "last_reported": "2026-08-26"
-  },
-  "OzBrain": {
-    "vertical_or_category": "Shared memory layer for AI (Claude + ChatGPT read/write)",
-    "tier": "WATCH",
-    "first_reported": "2026-08-26",
-    "last_reported": "2026-08-26"
-  },
-  "Command Center (cc.dev)": {
-    "vertical_or_category": "Agentic desktop coding environment, complements Claude Code/Codex",
-    "tier": "WATCH",
-    "first_reported": "2026-08-26",
-    "last_reported": "2026-08-26"
-  },
-  "Aloud": {
-    "vertical_or_category": "Voice+screen recorder to build prompts for AI coding agents (macOS)",
-    "tier": "WATCH",
-    "first_reported": "2026-08-26",
-    "last_reported": "2026-08-26"
   },
   "Halo (Scam.ai)": {
     "vertical_or_category": "AI security / deepfake detection on video calls",
