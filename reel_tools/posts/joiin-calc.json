@@ -29,5 +29,9 @@
   "linkedin": "Consolidation software is priced very differently from vendor to vendor: some charge per company, some by tier, some by number of organisations.\n\nWe built a free calculator that compares Joiin, Fathom and Spotlight Reporting for any number of companies (1 to 300), using each vendor's published list prices as of October 2026.\n\nIt shows:\n→ Monthly cost for each tool\n→ Cost per company\n→ Which plan or tier applies\n\nThere is also a free Excel template for consolidating up to three companies, with eliminations and balance checks.\n\nList prices only: confirm with each vendor before you buy. Link in the first comment.",
   "linkedinTags": ["Accounting", "Xero", "FinancialReporting", "CFO"],
   "hashtags": ["accounting", "consolidation", "xero", "bookkeeping"],
-  "emailTitle": "Free tool: what does consolidation software cost for your group?"
+  "emailTitle": "Free tool: what does consolidation software cost for your group?",
+  "variants": {
+    "b": { "hook": "Consolidating 2, 10 or 50 companies: what does it cost? 📊" },
+    "c": { "hook": "Pricing consolidation software? Free calculator 📊" }
+  }
 }

@@ -382,6 +382,13 @@
     "kind": "check",
     "title": "Nhờ Claude xem kết quả kiểu mở đầu (tuần 1–2)",
     "ch": "GA4 theo utm_content"
+   },
+   {
+    "site": "rta",
+    "kind": "video",
+    "title": "Dropmagic · kiểu mở đầu B",
+    "ch": "Instagram · YouTube Shorts · TikTok",
+    "file": "dropmagic_reel_v1_hb"
    }
   ]
  },
@@ -422,6 +429,13 @@
     "title": "Bản tin: Góc bàn làm việc: EK01 Plus, XK01, EC200",
     "ch": "Email Brevo (list #3)",
     "note": "⏸ Tạm hoãn: EC200 hết hàng."
+   },
+   {
+    "site": "rta",
+    "kind": "video",
+    "title": "MentionAgent · kiểu mở đầu B",
+    "ch": "Instagram · YouTube Shorts · TikTok",
+    "file": "mentionagent_reel_v1_hb"
    }
   ]
  },
@@ -454,6 +468,13 @@
     "title": "ProtoArc EK01 Plus · kiểu mở đầu C",
     "ch": "Instagram · YouTube Shorts · TikTok",
     "file": "rankernest_protoarc-ek01-plus_v3_hc"
+   },
+   {
+    "site": "rta",
+    "kind": "video",
+    "title": "Joiin · công cụ tính chi phí · kiểu mở đầu B",
+    "ch": "Instagram · YouTube Shorts · TikTok",
+    "file": "joiin_calc_reel_v1_hb"
    }
   ]
  },
@@ -492,6 +513,13 @@
     "kind": "check",
     "title": "Kiểm giá + mã giảm giá trước khi đăng lại video cũ",
     "ch": "Trang review"
+   },
+   {
+    "site": "rta",
+    "kind": "video",
+    "title": "Joiin · file Excel miễn phí · kiểu mở đầu B",
+    "ch": "Instagram · YouTube Shorts · TikTok",
+    "file": "joiin_template_reel_v2_hb"
    }
   ]
  },
@@ -518,6 +546,13 @@
     "title": "Quà theo ngân sách $22 → $800",
     "ch": "Tất cả kênh",
     "file": "rankernest_gifts-budget_v1"
+   },
+   {
+    "site": "rta",
+    "kind": "video",
+    "title": "Dropmagic · kiểu mở đầu C",
+    "ch": "Instagram · YouTube Shorts · TikTok",
+    "file": "dropmagic_reel_v1_hc"
    }
   ]
  },
@@ -529,6 +564,13 @@
     "kind": "check",
     "title": "Chốt kiểu mở đầu thắng của từng sản phẩm",
     "ch": "GA4 + lượt xem"
+   },
+   {
+    "site": "rta",
+    "kind": "video",
+    "title": "MentionAgent · kiểu mở đầu C",
+    "ch": "Instagram · YouTube Shorts · TikTok",
+    "file": "mentionagent_reel_v1_hc"
    }
   ]
  },
@@ -547,6 +589,13 @@
     "title": "Friendship Lamps · đăng lại kiểu thắng",
     "ch": "Pinterest · Facebook Reels",
     "file": "rankernest_friendshiplamps_v2 (bản thắng)"
+   },
+   {
+    "site": "rta",
+    "kind": "video",
+    "title": "Joiin · công cụ tính chi phí · kiểu mở đầu C",
+    "ch": "Instagram · YouTube Shorts · TikTok",
+    "file": "joiin_calc_reel_v1_hc"
    }
   ]
  },
@@ -566,6 +615,13 @@
     "title": "3 món quà dưới $100",
     "ch": "Tất cả kênh",
     "file": "rankernest_gifts-under100_v1"
+   },
+   {
+    "site": "rta",
+    "kind": "video",
+    "title": "Joiin · file Excel miễn phí · kiểu mở đầu C",
+    "ch": "Instagram · YouTube Shorts · TikTok",
+    "file": "joiin_template_reel_v2_hc"
    }
   ]
  },

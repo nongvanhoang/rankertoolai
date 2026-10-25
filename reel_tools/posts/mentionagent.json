@@ -28,5 +28,9 @@
   "linkedin": "Link building is mostly finding the right blogs, finding who runs them, and writing an email that doesn't sound like a template.\n\nWe tested the AI route with MentionAgent: typed in our site, it listed blogs already writing about our topic, then an agent found contacts and drafted a personal pitch for each one. 6 drafts in about 5 minutes.\n\nWhat we liked:\n→ You see real drafts for your own site free, no card\n→ Every email is editable before it goes out\n→ It references the actual post on each blog\n\nWhat it doesn't replace: your judgement. Read every pitch and only send what you'd send yourself.\n\nFrom $99/mo with a 14-day money-back guarantee. Full breakdown in the first comment.",
   "linkedinTags": ["SEO", "LinkBuilding", "AItools", "ContentMarketing"],
   "hashtags": ["MentionAgent", "SEO", "Backlinks", "AItools"],
-  "emailTitle": "Tool of the week: MentionAgent writes your outreach emails"
+  "emailTitle": "Tool of the week: MentionAgent writes your outreach emails",
+  "variants": {
+    "b": { "hook": "6 backlink outreach emails in about 5 minutes ✉️" },
+    "c": { "hook": "Hate writing cold outreach emails? ✉️" }
+  }
 }

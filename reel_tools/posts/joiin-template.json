@@ -29,5 +29,9 @@
   "linkedin": "Small groups often consolidate in a spreadsheet, and the same three things go wrong: accounts that don't map, intercompany items counted twice, and a balance sheet that doesn't balance.\n\nWe built a free Excel template for up to three companies:\n→ Paste each company's trial balance (Xero, QuickBooks, Sage or MYOB export)\n→ Map every account to one group chart of accounts\n→ Eliminate intercompany sales, fees and balances\n→ Get a consolidated P&L and balance sheet, with checks that flag anything that doesn't add up\n\nYou can preview the example figures on the page before downloading. It doesn't handle foreign currency, so translate overseas subsidiaries first.\n\nLink in the first comment.",
   "linkedinTags": ["Accounting", "Excel", "FinancialReporting", "Bookkeeping"],
   "hashtags": ["accounting", "excel", "consolidation", "bookkeeping"],
-  "emailTitle": "Free template: consolidate up to three companies in Excel"
+  "emailTitle": "Free template: consolidate up to three companies in Excel",
+  "variants": {
+    "b": { "hook": "Free Excel consolidation template (up to 3 companies) 📊" },
+    "c": { "hook": "Month-end consolidation in Excel? Free template 📊" }
+  }
 }

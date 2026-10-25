@@ -286,6 +286,12 @@
     "type": "note",
     "site": "both",
     "text": "Nhờ Claude xem kết quả kiểu mở đầu (tuần 1–2) · GA4 theo utm_content"
+   },
+   {
+    "type": "reel",
+    "site": "rta",
+    "reel": "dropmagic_reel_v1_hb",
+    "title": "Dropmagic · kiểu mở đầu B"
    }
   ]
  },
@@ -318,6 +324,12 @@
     "type": "note",
     "site": "rn",
     "text": "⏸ Bản tin: Góc bàn làm việc: EK01 Plus, XK01, EC200 · Email Brevo (list #3) · ⏸ Tạm hoãn: EC200 hết hàng."
+   },
+   {
+    "type": "reel",
+    "site": "rta",
+    "reel": "mentionagent_reel_v1_hb",
+    "title": "MentionAgent · kiểu mở đầu B"
    }
   ]
  },
@@ -346,6 +358,12 @@
     "site": "rn",
     "reel": "rankernest_protoarc-ek01-plus_v3_hc",
     "title": "ProtoArc EK01 Plus · kiểu mở đầu C"
+   },
+   {
+    "type": "reel",
+    "site": "rta",
+    "reel": "joiin_calc_reel_v1_hb",
+    "title": "Joiin · công cụ tính chi phí · kiểu mở đầu B"
    }
   ]
  },
@@ -379,6 +397,12 @@
     "type": "note",
     "site": "both",
     "text": "Kiểm giá + mã giảm giá trước khi đăng lại video cũ · Trang review"
+   },
+   {
+    "type": "reel",
+    "site": "rta",
+    "reel": "joiin_template_reel_v2_hb",
+    "title": "Joiin · file Excel miễn phí · kiểu mở đầu B"
    }
   ]
  },
@@ -400,6 +424,12 @@
     "site": "rn",
     "reel": "rankernest_gifts-budget_v1",
     "title": "Quà theo ngân sách $22 → $800"
+   },
+   {
+    "type": "reel",
+    "site": "rta",
+    "reel": "dropmagic_reel_v1_hc",
+    "title": "Dropmagic · kiểu mở đầu C"
    }
   ]
  },
@@ -410,6 +440,12 @@
     "type": "note",
     "site": "both",
     "text": "Chốt kiểu mở đầu thắng của từng sản phẩm · GA4 + lượt xem"
+   },
+   {
+    "type": "reel",
+    "site": "rta",
+    "reel": "mentionagent_reel_v1_hc",
+    "title": "MentionAgent · kiểu mở đầu C"
    }
   ]
  },
@@ -425,6 +461,12 @@
     "type": "note",
     "site": "rn",
     "text": "Friendship Lamps · đăng lại kiểu thắng · Pinterest · Facebook Reels"
+   },
+   {
+    "type": "reel",
+    "site": "rta",
+    "reel": "joiin_calc_reel_v1_hc",
+    "title": "Joiin · công cụ tính chi phí · kiểu mở đầu C"
    }
   ]
  },
@@ -441,6 +483,12 @@
     "site": "rn",
     "reel": "rankernest_gifts-under100_v1",
     "title": "3 món quà dưới $100"
+   },
+   {
+    "type": "reel",
+    "site": "rta",
+    "reel": "joiin_template_reel_v2_hc",
+    "title": "Joiin · file Excel miễn phí · kiểu mở đầu C"
    }
   ]
  },

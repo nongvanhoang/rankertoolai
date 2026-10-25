@@ -29,5 +29,9 @@
   "linkedin": "Building a product page is usually the slowest part of testing a new product: photos, copy, offers, FAQ.\n\nWe tried Dropmagic: pasted one AliExpress link (a 3D moon lamp), answered 5 quick questions (language, style, shop name, who it's for, why they buy), and it built the full page with bundles and an FAQ.\n\nUseful for:\n→ Testing a product idea before investing in design\n→ A first draft you then edit, not a final page\n\nWatch out: the AI writes social proof and claims. Check every line before you publish.\n\nFree plan builds and previews. Publishing to Shopify needs Pro at $79/mo. Full review in the first comment.",
   "linkedinTags": ["Ecommerce", "Shopify", "AItools", "Dropshipping"],
   "hashtags": ["Dropmagic", "Shopify", "Ecommerce", "AItools"],
-  "emailTitle": "Tool of the week: Dropmagic builds a Shopify page from one link"
+  "emailTitle": "Tool of the week: Dropmagic builds a Shopify page from one link",
+  "variants": {
+    "b": { "hook": "One AliExpress link → a full Shopify product page 🛒" },
+    "c": { "hook": "Still writing Shopify product pages by hand? 🛒" }
+  }
 }
