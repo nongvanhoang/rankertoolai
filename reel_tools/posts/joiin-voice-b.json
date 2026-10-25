@@ -1,0 +1,52 @@
+{
+  "site": "rta",
+  "slug": "joiin-voice-b",
+  "reel": "joiin_voice_reel_b_v1",
+  "kw": "consolidation",
+  "brandName": "Joiin",
+  "aiAvatar": false,
+  "disclose": "link",
+  "category": "Education",
+  "hook": "POV: it's month-end and intercompany won't cancel out 😩",
+  "summary": "A free Excel template that consolidates 2 or 3 companies' trial balances: one group chart of accounts, an eliminations sheet and built-in checks (eliminations net to zero, net assets = equity).",
+  "points": [
+    "Paste each company's trial balance",
+    "Map accounts once to one group chart",
+    "Eliminations net to zero, every check says OK"
+  ],
+  "caveat": "Example figures. No foreign currency: translate overseas subsidiaries first. Voiceover is AI-generated.",
+  "pinterest": {
+    "title": "Free Excel Template to Consolidate 3 Companies (P&L + Balance Sheet)",
+    "board": "Accounting & finance tools",
+    "alt": "Screen recording of a free consolidation Excel template preview showing P&L, balance sheet, eliminations and consolidated trial balance tabs",
+    "keywords": "consolidation template, excel template, group accounts, intercompany eliminations, accountants"
+  },
+  "youtubeTitle": "POV: Month-End and Intercompany Won't Balance (Free Excel Template)",
+  "x": "POV: it's month-end and the intercompany balances won't cancel out.\n\nFree Excel template for 2-3 companies: paste trial balances, map once, eliminations net to zero, built-in checks.",
+  "xTags": [
+    "accounting",
+    "Excel"
+  ],
+  "tiktokLine": "Month-end intercompany pain? 😩",
+  "tiktokTags": [
+    "accounting",
+    "excel",
+    "accountant",
+    "bookkeeping",
+    "xero"
+  ],
+  "linkedin": "Small groups often consolidate in a spreadsheet, and the same three things go wrong: accounts that don't map, intercompany items counted twice, and a balance sheet that doesn't balance.\n\nWe built a free Excel template for up to three companies:\n→ Paste each company's trial balance (Xero, QuickBooks, Sage or MYOB export)\n→ Map every account to one group chart of accounts\n→ Eliminate intercompany sales, fees and balances\n→ Get a consolidated P&L and balance sheet, with checks that flag anything that doesn't add up\n\nYou can preview the example figures on the page before downloading. It doesn't handle foreign currency, so translate overseas subsidiaries first.\n\nLink in the first comment.",
+  "linkedinTags": [
+    "Accounting",
+    "Excel",
+    "FinancialReporting",
+    "Bookkeeping"
+  ],
+  "hashtags": [
+    "accounting",
+    "excel",
+    "consolidation",
+    "bookkeeping"
+  ],
+  "emailTitle": "Free Excel template: intercompany eliminations that net to zero"
+}

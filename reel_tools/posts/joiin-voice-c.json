@@ -1,0 +1,52 @@
+{
+  "site": "rta",
+  "slug": "joiin-voice-c",
+  "reel": "joiin_voice_reel_c_v1",
+  "kw": "consolidation",
+  "brandName": "Joiin",
+  "aiAvatar": false,
+  "disclose": "link",
+  "category": "Education",
+  "hook": "3 mistakes accountants make when they consolidate in Excel 📊",
+  "summary": "1) Leaving in intercompany fees, 2) mapping the same account differently every month, 3) never checking that net assets equal equity. Our free Excel template helps with all three.",
+  "points": [
+    "Leaving in fees one company charges another",
+    "Mapping the same account differently each month",
+    "No net assets = equity check"
+  ],
+  "caveat": "Template covers 2 or 3 companies, no foreign currency. Voiceover is AI-generated.",
+  "pinterest": {
+    "title": "Free Excel Template to Consolidate 3 Companies (P&L + Balance Sheet)",
+    "board": "Accounting & finance tools",
+    "alt": "Screen recording of a free consolidation Excel template preview showing P&L, balance sheet, eliminations and consolidated trial balance tabs",
+    "keywords": "consolidation template, excel template, group accounts, intercompany eliminations, accountants"
+  },
+  "youtubeTitle": "3 Mistakes When You Consolidate in Excel (Free Template)",
+  "x": "3 mistakes when you consolidate in Excel:\n\n1. Leaving in intercompany fees\n2. Mapping the same account differently every month\n3. Never checking net assets = equity\n\nFree template that helps with all three:",
+  "xTags": [
+    "accounting",
+    "Excel"
+  ],
+  "tiktokLine": "Save this for month-end 📌",
+  "tiktokTags": [
+    "accounting",
+    "excel",
+    "accountant",
+    "bookkeeping",
+    "xero"
+  ],
+  "linkedin": "Small groups often consolidate in a spreadsheet, and the same three things go wrong: accounts that don't map, intercompany items counted twice, and a balance sheet that doesn't balance.\n\nWe built a free Excel template for up to three companies:\n→ Paste each company's trial balance (Xero, QuickBooks, Sage or MYOB export)\n→ Map every account to one group chart of accounts\n→ Eliminate intercompany sales, fees and balances\n→ Get a consolidated P&L and balance sheet, with checks that flag anything that doesn't add up\n\nYou can preview the example figures on the page before downloading. It doesn't handle foreign currency, so translate overseas subsidiaries first.\n\nLink in the first comment.",
+  "linkedinTags": [
+    "Accounting",
+    "Excel",
+    "FinancialReporting",
+    "Bookkeeping"
+  ],
+  "hashtags": [
+    "accounting",
+    "excel",
+    "consolidation",
+    "bookkeeping"
+  ],
+  "emailTitle": "3 Excel consolidation mistakes (and a free template that catches them)"
+}

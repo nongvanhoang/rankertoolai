@@ -1,0 +1,16 @@
+POV: it's month-end and the intercompany balances won't cancel out. 😩📊
+
+A free Excel template for consolidating 2 or 3 companies:
+✅ Paste each company's trial balance (Xero, QuickBooks, Sage, MYOB exports)
+✅ Map accounts once to one group chart of accounts
+✅ Eliminate intercompany fees and balances
+✅ Built-in checks: eliminations net to zero, net assets = equity
+
+Figures in the video are the template's example data.
+No foreign currency: translate overseas subsidiaries first.
+
+Link in bio → CONSOLIDATION (rankertoolai.com/consolidation)
+
+#ad Some links on the page are affiliate links: we may earn a commission at no extra cost to you. Voiceover is AI-generated.
+
+#accounting #excel #consolidation #bookkeeping #monthend #accountants #cfo

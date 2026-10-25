@@ -329,6 +329,12 @@
     "site": "rn",
     "reel": "rankernest_honiture-x7_v2_hc",
     "title": "Honiture X7 · kiểu mở đầu C"
+   },
+   {
+    "type": "reel",
+    "site": "rta",
+    "reel": "joiin_voice_reel_b_v1",
+    "title": "Joiin · POV cuối tháng (giọng AI)"
    }
   ]
  },
@@ -351,6 +357,12 @@
     "site": "rn",
     "reel": "rankernest_switchbot-s20_v2_hc",
     "title": "SwitchBot S20 · kiểu mở đầu C"
+   },
+   {
+    "type": "reel",
+    "site": "rta",
+    "reel": "joiin_voice_reel_c_v1",
+    "title": "Joiin · 3 lỗi gộp báo cáo Excel (giọng AI)"
    }
   ]
  },
