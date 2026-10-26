@@ -59,7 +59,7 @@ def hook_winner(hooks):
         return ""
     if min(v["s"] for v in hooks.values()) < MIN_VISITS:
         return f"  (chưa đủ số liệu, cần ≥{MIN_VISITS} lượt vào mỗi kiểu)"
-    score = lambda v: (v["c"] / v["s"], v["s"])
+    score = lambda v: v["c"] / v["s"]  # click rate; raw visits depend on how often each hook was posted
     (best, bv), (_, rv) = sorted(hooks.items(), key=lambda kv: score(kv[1]), reverse=True)[:2]
     return f"  👑 {best}" if score(bv) > score(rv) else "  (hòa)"
 
