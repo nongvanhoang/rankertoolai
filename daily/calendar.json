@@ -265,6 +265,12 @@
     "site": "rta",
     "reel": "joiin_template_reel_v2",
     "title": "Joiin · file Excel gộp báo cáo miễn phí"
+   },
+   {
+    "type": "reel",
+    "site": "rta",
+    "reel": "joiin_voice_reel_b_v1",
+    "title": "Joiin · POV cuối tháng (giọng AI)"
    }
   ]
  },
@@ -290,8 +296,8 @@
    {
     "type": "reel",
     "site": "rta",
-    "reel": "dropmagic_reel_v1_hb",
-    "title": "Dropmagic · kiểu mở đầu B"
+    "reel": "joiin_voice_reel_c_v1",
+    "title": "Joiin · 3 lỗi gộp báo cáo Excel (giọng AI)"
    }
   ]
  },
@@ -306,8 +312,8 @@
    {
     "type": "reel",
     "site": "rta",
-    "reel": "joiin_voice_reel_a_v1",
-    "title": "Joiin · $805 vs $174 (giọng AI)"
+    "reel": "dropmagic_reel_v1_hb",
+    "title": "Dropmagic · kiểu mở đầu B"
    }
   ]
  },
@@ -328,8 +334,8 @@
    {
     "type": "reel",
     "site": "rta",
-    "reel": "mentionagent_reel_v1_hb",
-    "title": "MentionAgent · kiểu mở đầu B"
+    "reel": "joiin_voice_reel_a_v1",
+    "title": "Joiin · $805 vs $174 (giọng AI)"
    }
   ]
  },
@@ -345,8 +351,8 @@
    {
     "type": "reel",
     "site": "rta",
-    "reel": "joiin_voice_reel_b_v1",
-    "title": "Joiin · POV cuối tháng (giọng AI)"
+    "reel": "mentionagent_reel_v1_hb",
+    "title": "MentionAgent · kiểu mở đầu B"
    }
   ]
  },
@@ -379,8 +385,8 @@
    {
     "type": "reel",
     "site": "rta",
-    "reel": "joiin_voice_reel_c_v1",
-    "title": "Joiin · 3 lỗi gộp báo cáo Excel (giọng AI)"
+    "reel": "joiin_template_reel_v2_hb",
+    "title": "Joiin · file Excel miễn phí · kiểu mở đầu B"
    }
   ]
  },
@@ -401,8 +407,8 @@
    {
     "type": "reel",
     "site": "rta",
-    "reel": "joiin_template_reel_v2_hb",
-    "title": "Joiin · file Excel miễn phí · kiểu mở đầu B"
+    "reel": "dropmagic_reel_v1_hc",
+    "title": "Dropmagic · kiểu mở đầu C"
    }
   ]
  },
@@ -428,8 +434,8 @@
    {
     "type": "reel",
     "site": "rta",
-    "reel": "dropmagic_reel_v1_hc",
-    "title": "Dropmagic · kiểu mở đầu C"
+    "reel": "mentionagent_reel_v1_hc",
+    "title": "MentionAgent · kiểu mở đầu C"
    }
   ]
  },
@@ -444,8 +450,8 @@
    {
     "type": "reel",
     "site": "rta",
-    "reel": "mentionagent_reel_v1_hc",
-    "title": "MentionAgent · kiểu mở đầu C"
+    "reel": "joiin_calc_reel_v1_hc",
+    "title": "Joiin · công cụ tính chi phí · kiểu mở đầu C"
    }
   ]
  },
@@ -465,8 +471,8 @@
    {
     "type": "reel",
     "site": "rta",
-    "reel": "joiin_calc_reel_v1_hc",
-    "title": "Joiin · công cụ tính chi phí · kiểu mở đầu C"
+    "reel": "joiin_template_reel_v2_hc",
+    "title": "Joiin · file Excel miễn phí · kiểu mở đầu C"
    }
   ]
  },
@@ -483,12 +489,6 @@
     "site": "rn",
     "reel": "rankernest_gifts-under100_v1",
     "title": "3 món quà dưới $100"
-   },
-   {
-    "type": "reel",
-    "site": "rta",
-    "reel": "joiin_template_reel_v2_hc",
-    "title": "Joiin · file Excel miễn phí · kiểu mở đầu C"
    }
   ]
  },

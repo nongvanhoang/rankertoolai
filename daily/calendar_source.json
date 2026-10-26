@@ -358,6 +358,14 @@
     "title": "Joiin · file Excel gộp báo cáo miễn phí",
     "ch": "Instagram · YouTube Shorts · TikTok",
     "file": "joiin_template_reel_v2"
+   },
+   {
+    "site": "rta",
+    "kind": "video",
+    "title": "Joiin · POV cuối tháng (giọng AI)",
+    "ch": "Instagram · YouTube Shorts · TikTok",
+    "file": "joiin_voice_reel_b_v1",
+    "note": "TikTok/YouTube: bật nhãn nội dung AI (giọng đọc AI)."
    }
   ]
  },
@@ -386,9 +394,10 @@
    {
     "site": "rta",
     "kind": "video",
-    "title": "Dropmagic · kiểu mở đầu B",
+    "title": "Joiin · 3 lỗi gộp báo cáo Excel (giọng AI)",
     "ch": "Instagram · YouTube Shorts · TikTok",
-    "file": "dropmagic_reel_v1_hb"
+    "file": "joiin_voice_reel_c_v1",
+    "note": "TikTok/YouTube: bật nhãn nội dung AI (giọng đọc AI)."
    }
   ]
  },
@@ -406,10 +415,9 @@
    {
     "site": "rta",
     "kind": "video",
-    "title": "Joiin · $805 vs $174 (giọng AI)",
+    "title": "Dropmagic · kiểu mở đầu B",
     "ch": "Instagram · YouTube Shorts · TikTok",
-    "file": "joiin_voice_reel_a_v1",
-    "note": "TikTok/YouTube: bật nhãn nội dung AI (giọng đọc AI)."
+    "file": "dropmagic_reel_v1_hb"
    }
   ]
  },
@@ -433,9 +441,10 @@
    {
     "site": "rta",
     "kind": "video",
-    "title": "MentionAgent · kiểu mở đầu B",
+    "title": "Joiin · $805 vs $174 (giọng AI)",
     "ch": "Instagram · YouTube Shorts · TikTok",
-    "file": "mentionagent_reel_v1_hb"
+    "file": "joiin_voice_reel_a_v1",
+    "note": "TikTok/YouTube: bật nhãn nội dung AI (giọng đọc AI)."
    }
   ]
  },
@@ -452,10 +461,9 @@
    {
     "site": "rta",
     "kind": "video",
-    "title": "Joiin · POV cuối tháng (giọng AI)",
+    "title": "MentionAgent · kiểu mở đầu B",
     "ch": "Instagram · YouTube Shorts · TikTok",
-    "file": "joiin_voice_reel_b_v1",
-    "note": "TikTok/YouTube: bật nhãn nội dung AI (giọng đọc AI)."
+    "file": "mentionagent_reel_v1_hb"
    }
   ]
  },
@@ -491,10 +499,9 @@
    {
     "site": "rta",
     "kind": "video",
-    "title": "Joiin · 3 lỗi gộp báo cáo Excel (giọng AI)",
+    "title": "Joiin · file Excel miễn phí · kiểu mở đầu B",
     "ch": "Instagram · YouTube Shorts · TikTok",
-    "file": "joiin_voice_reel_c_v1",
-    "note": "TikTok/YouTube: bật nhãn nội dung AI (giọng đọc AI)."
+    "file": "joiin_template_reel_v2_hb"
    }
   ]
  },
@@ -517,9 +524,9 @@
    {
     "site": "rta",
     "kind": "video",
-    "title": "Joiin · file Excel miễn phí · kiểu mở đầu B",
+    "title": "Dropmagic · kiểu mở đầu C",
     "ch": "Instagram · YouTube Shorts · TikTok",
-    "file": "joiin_template_reel_v2_hb"
+    "file": "dropmagic_reel_v1_hc"
    }
   ]
  },
@@ -550,9 +557,9 @@
    {
     "site": "rta",
     "kind": "video",
-    "title": "Dropmagic · kiểu mở đầu C",
+    "title": "MentionAgent · kiểu mở đầu C",
     "ch": "Instagram · YouTube Shorts · TikTok",
-    "file": "dropmagic_reel_v1_hc"
+    "file": "mentionagent_reel_v1_hc"
    }
   ]
  },
@@ -568,9 +575,9 @@
    {
     "site": "rta",
     "kind": "video",
-    "title": "MentionAgent · kiểu mở đầu C",
+    "title": "Joiin · công cụ tính chi phí · kiểu mở đầu C",
     "ch": "Instagram · YouTube Shorts · TikTok",
-    "file": "mentionagent_reel_v1_hc"
+    "file": "joiin_calc_reel_v1_hc"
    }
   ]
  },
@@ -593,9 +600,9 @@
    {
     "site": "rta",
     "kind": "video",
-    "title": "Joiin · công cụ tính chi phí · kiểu mở đầu C",
+    "title": "Joiin · file Excel miễn phí · kiểu mở đầu C",
     "ch": "Instagram · YouTube Shorts · TikTok",
-    "file": "joiin_calc_reel_v1_hc"
+    "file": "joiin_template_reel_v2_hc"
    }
   ]
  },
@@ -615,13 +622,6 @@
     "title": "3 món quà dưới $100",
     "ch": "Tất cả kênh",
     "file": "rankernest_gifts-under100_v1"
-   },
-   {
-    "site": "rta",
-    "kind": "video",
-    "title": "Joiin · file Excel miễn phí · kiểu mở đầu C",
-    "ch": "Instagram · YouTube Shorts · TikTok",
-    "file": "joiin_template_reel_v2_hc"
    }
   ]
  },
