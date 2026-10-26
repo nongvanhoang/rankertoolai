@@ -26,6 +26,7 @@ sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 HERE = Path(__file__).resolve().parent.parent
 KEY = Path(r"C:\Users\Admin\RankerToolAI\ga4_service_account.json")
 SITES = {"RankerToolAI": "542190396", "RankerNest": "548066278"}
+MIN_VISITS = 20
 VID = re.compile(r"^reel-(?P<slug>.+?)(?:-h(?P<hook>[a-z]))?$")
 
 
@@ -49,6 +50,18 @@ def query(svc, prop, days, event=None):
             content = "reel-synthesia"  # v3 links had no utm_content; count them as Synthesia hook A
         out.append((content, source, float(x["metricValues"][0]["value"])))
     return out
+
+
+def hook_winner(hooks):
+    # Crown a hook only when every hook has MIN_VISITS visits and the leader strictly beats the
+    # runner-up; 2/0 vs 2/0 used to get a 👑 by dict order.
+    if len(hooks) < 2:
+        return ""
+    if min(v["s"] for v in hooks.values()) < MIN_VISITS:
+        return f"  (chưa đủ số liệu, cần ≥{MIN_VISITS} lượt vào mỗi kiểu)"
+    score = lambda v: (v["c"] / v["s"], v["s"])
+    (best, bv), (_, rv) = sorted(hooks.items(), key=lambda kv: score(kv[1]), reverse=True)[:2]
+    return f"  👑 {best}" if score(bv) > score(rv) else "  (hòa)"
 
 
 def main():
@@ -89,8 +102,7 @@ def main():
         lines.append("\n<b>Kiểu mở đầu (A/B/C) theo sản phẩm</b>")
         for slug, hooks in sorted(by_hook.items()):
             parts = " · ".join(f"{h}: {v['s']:.0f}/{v['c']:.0f}" for h, v in sorted(hooks.items()))
-            best = max(hooks.items(), key=lambda kv: (kv[1]["c"], kv[1]["s"]))[0] if len(hooks) > 1 else ""
-            lines.append(f"• {esc(slug)} → {parts}" + (f"  👑 {best}" if best else ""))
+            lines.append(f"• {esc(slug)} → {parts}" + hook_winner(hooks))
         lines.append("<i>(số đầu = lượt vào, số sau = click)</i>")
         lines.append("\n<b>Top 5 video</b>")
         lines += [f"• {esc(k)}: {v['s']:.0f} lượt vào · {v['c']:.0f} click" for k, v in rank(by_vid)[:5]]
