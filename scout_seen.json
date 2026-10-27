@@ -41,12 +41,6 @@
     "first_reported": "2026-08-22",
     "last_reported": "2026-09-04"
   },
-  "Halo (Scam.ai)": {
-    "vertical_or_category": "AI security / deepfake detection on video calls",
-    "tier": "WATCH",
-    "first_reported": "2026-08-28",
-    "last_reported": "2026-08-28"
-  },
   "Fotor Video Agent (AI)": {
     "vertical_or_category": "AI video generation/editing (new Fotor suite feature)",
     "tier": "WATCH",
@@ -371,5 +365,11 @@
     "semrush": {
       "last_reminded": "2026-09-30"
     }
+  },
+  "Viktor (AI coworker / Dub affiliate)": {
+    "vertical_or_category": "AI \"nhan vien ao\" workflow automation qua Slack/Teams",
+    "tier": "HOA_HONG_CAO",
+    "first_reported": "2026-10-28",
+    "last_reported": "2026-10-28"
   }
 }
