@@ -7,9 +7,9 @@ const { userEnv } = require('./token');
 const DB = '61da72d0d5354100a4e3c3e463c916fc';
 const VIEW_PENDING = 'https://www.notion.so/61da72d0d5354100a4e3c3e463c916fc?v=3fca464ec06a81329d56000ce6846af4';
 const TOKEN = userEnv('NOTION_TOKEN');
-const PROP = { instagram: 'IG', facebook: 'FB', youtube: 'YouTube', tiktok: 'TikTok', pinterest: 'Pinterest', x: 'X', linkedin: 'LinkedIn' };
-const ORDER = ['instagram', 'facebook', 'youtube', 'tiktok', 'pinterest', 'x', 'linkedin'];
-const NAME = { instagram: 'Instagram', facebook: 'Facebook', youtube: 'YouTube Shorts', tiktok: 'TikTok', pinterest: 'Pinterest', x: 'X', linkedin: 'LinkedIn' };
+const PROP = { instagram: 'IG', facebook: 'FB', youtube: 'YouTube', tiktok: 'TikTok', pinterest: 'Pinterest', x: 'X', linkedin: 'LinkedIn', reddit: 'Reddit', quora: 'Quora' };
+const ORDER = ['instagram', 'facebook', 'youtube', 'tiktok', 'pinterest', 'x', 'linkedin', 'reddit', 'quora'];
+const NAME = { instagram: 'Instagram', facebook: 'Facebook', youtube: 'YouTube Shorts', tiktok: 'TikTok', pinterest: 'Pinterest', x: 'X', linkedin: 'LinkedIn', reddit: 'Reddit', quora: 'Quora' };
 const SITE = { rn: 'RankerNest', rta: 'RankerToolAI' };
 
 async function api(method, path, body) {

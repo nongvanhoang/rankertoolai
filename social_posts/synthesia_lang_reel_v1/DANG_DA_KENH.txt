@@ -189,6 +189,52 @@ Cài đặt:
 - Ảnh: chụp 1 khung đẹp trong video (hoặc ảnh still bot đã tạo)
 
 =====================================================================
+10) REDDIT  (Bật app 1.1.1.1 (WARP) trước, Reddit bị chặn ở VN → tài khoản Reddit của RankerToolAI → Create post → chọn "Your profile" → đính kèm video)
+=====================================================================
+Tiêu đề (tối đa 300 ký tự):
+Same AI presenter, now in Spanish: translating a training video in Synthesia
+
+Nội dung (body text):
+We pasted a Spanish translation into an existing Synthesia scene and hit Generate: same AI presenter, now speaking Spanish, no reshoot.
+
+• 140+ languages
+• Free plan to test (watermarked)
+• Starter from $29/mo ($18/mo billed yearly)
+
+Full write-up with prices: https://rankertoolai.com/avatar/?utm_source=reddit&utm_medium=social&utm_campaign=reel_video&utm_content=reel-synthesia-lang
+
+Disclosure: I run RankerToolAI. The review page has affiliate links; we may earn a commission at no extra cost to you.
+
+Cài đặt:
+- Đăng lên TRANG CÁ NHÂN của tài khoản (u/...), đó là chỗ duy nhất tự quảng bá thoải mái
+- Muốn đăng vào cộng đồng (r/...): đọc luật cộng đồng trước; chỉ nơi cho phép tự quảng bá, tối đa 1 cộng đồng/tuần, XOÁ dòng link và giữ dòng Disclosure
+- KHÔNG nhờ người khác hay tài khoản phụ upvote, KHÔNG đăng cùng 1 bài vào nhiều cộng đồng (Reddit khoá cả tài khoản lẫn tên miền)
+
+=====================================================================
+11) QUORA  (Tài khoản Quora của RankerToolAI → vào Space của RankerToolAI → Post → đính kèm video (hoặc ảnh bìa))
+=====================================================================
+Câu hỏi để tìm (gõ vào ô tìm kiếm Quora, chọn câu hỏi gần nhất):
+Same AI presenter, now in Spanish: translating a training video in Synthesia
+
+Bài đăng / câu trả lời:
+One training video. Any language.
+
+We pasted a Spanish translation into an existing Synthesia scene and hit Generate: same AI presenter, now speaking Spanish, no reshoot.
+
+• 140+ languages
+• Free plan to test (watermarked)
+• Starter from $29/mo ($18/mo billed yearly)
+
+I keep the full comparison and current prices here: https://rankertoolai.com/avatar/?utm_source=quora&utm_medium=answer&utm_campaign=reel_video&utm_content=reel-synthesia-lang
+
+Disclosure: I run RankerToolAI. The review page has affiliate links; we may earn a commission at no extra cost to you.
+
+Cài đặt:
+- Cách 1 (chắc chắn): đăng vào Space của chính RankerToolAI
+- Cách 2: trả lời 1 câu hỏi đúng chủ đề tìm được ở ô trên; sửa câu đầu cho khớp câu hỏi
+- Giữ dòng Disclosure (Quora bắt buộc công khai mình làm trang review). Chỉ 1 link. KHÔNG dán cùng 1 câu trả lời vào nhiều câu hỏi
+
+=====================================================================
 LỊCH ĐĂNG GỢI Ý (không đăng tất cả 1 lúc)
 =====================================================================
 Ngày 1: Pinterest + YouTube Shorts

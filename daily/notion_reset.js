@@ -9,7 +9,7 @@ const SITE = args.includes('--site') ? { rn: 'RankerNest', rta: 'RankerToolAI' }
 const TOKEN = userEnv('NOTION_TOKEN');
 const DB = '61da72d0d5354100a4e3c3e463c916fc';
 const H = { Authorization: `Bearer ${TOKEN}`, 'Notion-Version': '2022-06-28', 'Content-Type': 'application/json' };
-const TICKS = ['IG', 'FB', 'YouTube', 'TikTok', 'Pinterest', 'X', 'LinkedIn'];
+const TICKS = ['IG', 'FB', 'YouTube', 'TikTok', 'Pinterest', 'X', 'LinkedIn', 'Reddit', 'Quora'];
 
 (async () => {
   if (!FROM || !TOKEN) throw new Error('usage: --from YYYY-MM-DD (needs NOTION_TOKEN)');

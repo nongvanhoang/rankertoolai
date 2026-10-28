@@ -197,6 +197,56 @@ Cài đặt:
 - Ảnh: chụp 1 khung đẹp trong video (hoặc ảnh still bot đã tạo)
 
 =====================================================================
+10) REDDIT  (Bật app 1.1.1.1 (WARP) trước, Reddit bị chặn ở VN → tài khoản Reddit của RankerToolAI → Create post → chọn "Your profile" → đính kèm video)
+=====================================================================
+Tiêu đề (tối đa 300 ký tự):
+Free Excel Template to Consolidate 3 Companies (with Eliminations)
+
+Nội dung (body text):
+A free Excel template that combines up to three companies' trial balances into a consolidated P&L and balance sheet, with an eliminations sheet and built-in balance checks.
+
+• Works with trial balance exports from Xero, QuickBooks, Sage or MYOB
+• Eliminations sheet removes intercompany sales, fees and balances
+• Every check cell reads OK on the example figures
+
+No foreign currency: translate overseas subsidiaries before you paste them.
+
+Full write-up with prices: https://rankertoolai.com/consolidation/?utm_source=reddit&utm_medium=social&utm_campaign=reel_video&utm_content=reel-joiin-template
+
+Disclosure: I run RankerToolAI. The review page has affiliate links; we may earn a commission at no extra cost to you.
+
+Cài đặt:
+- Đăng lên TRANG CÁ NHÂN của tài khoản (u/...), đó là chỗ duy nhất tự quảng bá thoải mái
+- Muốn đăng vào cộng đồng (r/...): đọc luật cộng đồng trước; chỉ nơi cho phép tự quảng bá, tối đa 1 cộng đồng/tuần, XOÁ dòng link và giữ dòng Disclosure
+- KHÔNG nhờ người khác hay tài khoản phụ upvote, KHÔNG đăng cùng 1 bài vào nhiều cộng đồng (Reddit khoá cả tài khoản lẫn tên miền)
+
+=====================================================================
+11) QUORA  (Tài khoản Quora của RankerToolAI → vào Space của RankerToolAI → Post → đính kèm video (hoặc ảnh bìa))
+=====================================================================
+Câu hỏi để tìm (gõ vào ô tìm kiếm Quora, chọn câu hỏi gần nhất):
+Free Excel Template to Consolidate 3 Companies (with Eliminations)
+
+Bài đăng / câu trả lời:
+Consolidate 3 companies in Excel, free
+
+A free Excel template that combines up to three companies' trial balances into a consolidated P&L and balance sheet, with an eliminations sheet and built-in balance checks.
+
+• Works with trial balance exports from Xero, QuickBooks, Sage or MYOB
+• Eliminations sheet removes intercompany sales, fees and balances
+• Every check cell reads OK on the example figures
+
+No foreign currency: translate overseas subsidiaries before you paste them.
+
+I keep the full comparison and current prices here: https://rankertoolai.com/consolidation/?utm_source=quora&utm_medium=answer&utm_campaign=reel_video&utm_content=reel-joiin-template
+
+Disclosure: I run RankerToolAI. The review page has affiliate links; we may earn a commission at no extra cost to you.
+
+Cài đặt:
+- Cách 1 (chắc chắn): đăng vào Space của chính RankerToolAI
+- Cách 2: trả lời 1 câu hỏi đúng chủ đề tìm được ở ô trên; sửa câu đầu cho khớp câu hỏi
+- Giữ dòng Disclosure (Quora bắt buộc công khai mình làm trang review). Chỉ 1 link. KHÔNG dán cùng 1 câu trả lời vào nhiều câu hỏi
+
+=====================================================================
 LỊCH ĐĂNG GỢI Ý (không đăng tất cả 1 lúc)
 =====================================================================
 Ngày 1: Pinterest + YouTube Shorts

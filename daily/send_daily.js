@@ -46,8 +46,8 @@ const ONLY = opt('--only', null);
 const CATCH_UP_DAYS = 3;
 
 // Channels per brand (owner 2026-10-14: RankerNest also has X + LinkedIn; owner 2026-10-17: both
-// brands post every video to ALL channels, Pinterest included).
-const ALL_CHANNELS = ['instagram', 'facebook', 'youtube', 'tiktok', 'pinterest', 'x', 'linkedin'];
+// brands post every video to ALL channels, Pinterest included; owner 2026-10-28: + Reddit, Quora = 9).
+const ALL_CHANNELS = ['instagram', 'facebook', 'youtube', 'tiktok', 'pinterest', 'x', 'linkedin', 'reddit', 'quora'];
 // 2026-10-18: Pinterest refused the appeal and keeps rankertoolai.com blocked as spam, so RTA never
 // gets Pinterest cards (pins to a blocked domain fail; re-routing them would count as evasion).
 const BLOCKED = { rta: [] };   // 2026-10-19: owner posts RTA pins by hand again, LINK-FREE (kit says leave Destination link empty)

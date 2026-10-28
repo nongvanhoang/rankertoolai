@@ -12,7 +12,7 @@
 
 const CH = {
   instagram: "IG", facebook: "FB", youtube: "YT", tiktok: "TT", x: "X",
-  linkedin: "LinkedIn", pinterest: "Pin", threads: "Threads", email: "Email",
+  linkedin: "LinkedIn", pinterest: "Pin", threads: "Threads", email: "Email", reddit: "Reddit", quora: "Quora",
 };
 const BRAND = { rn: "RankerNest", rta: "RankerToolAI" };
 
@@ -66,7 +66,7 @@ function slimKeyboard(it) {
 // Tick (or untick) every channel checkbox on the Notion row.
 async function notionTick(env, it, value) {
   if (!env.NOTION_TOKEN || !it.notion_page) return;
-  const NP = { instagram: "IG", facebook: "FB", youtube: "YouTube", tiktok: "TikTok", pinterest: "Pinterest", x: "X", linkedin: "LinkedIn" };
+  const NP = { instagram: "IG", facebook: "FB", youtube: "YouTube", tiktok: "TikTok", pinterest: "Pinterest", x: "X", linkedin: "LinkedIn", reddit: "Reddit", quora: "Quora" };
   const properties = {};
   for (const c of it.channels) if (NP[c]) properties[NP[c]] = { checkbox: value };
   const r = await fetch(`https://api.notion.com/v1/pages/${it.notion_page}`, {

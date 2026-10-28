@@ -151,6 +151,37 @@ channels.push({
   fields: [["Tiêu đề mục", email.title], ["Nội dung", email.body], ["Link (gắn vào ảnh bìa + nút)", email.link], ["Chữ nhỏ cuối mục", email.small]],
   settings: [`Ảnh: chụp 1 khung đẹp trong video (hoặc ảnh still bot đã tạo)`],
 });
+// Reddit + Quora (owner 2026-10-28). Both ban drive-by self-promotion, so the copy is value-first,
+// posted to the brand's OWN profile / Space, and says plainly that the brand runs the review site.
+const ownDisclosure = `Disclosure: I run ${site.brand}. The review page has affiliate links; we may earn a commission at no extra cost to you.`;
+const valueBody = [s.summary, bullets, s.offer, s.caveat].filter(Boolean).join("\n\n");
+const redditTitle = (s.reddit && s.reddit.title) || s.youtubeTitle;
+const redditBody = [valueBody, `Full write-up with prices: ${link("reddit", "social")}`, ownDisclosure].join("\n\n");
+const quoraQuestion = (s.quora && s.quora.question) || s.youtubeTitle.replace(/\s*[|#].*$/, "");
+const quoraAnswer = [(s.quora && s.quora.intro) || s.hook.replace(/\s*\p{Extended_Pictographic}+\s*$/u, ""), valueBody,
+  `I keep the full comparison and current prices here: ${link("quora", "answer")}`, ownDisclosure].join("\n\n");
+if (redditTitle.length > 300) problems.push(`Reddit title ${redditTitle.length}/300`);
+channels.push({
+  key: "reddit", title: "REDDIT",
+  how: `Bật app 1.1.1.1 (WARP) trước, Reddit bị chặn ở VN → tài khoản Reddit của ${site.brand} → Create post → chọn "Your profile" → đính kèm video`,
+  fields: [["Tiêu đề (tối đa 300 ký tự)", redditTitle], ["Nội dung (body text)", redditBody]],
+  settings: [
+    `Đăng lên TRANG CÁ NHÂN của tài khoản (u/...), đó là chỗ duy nhất tự quảng bá thoải mái`,
+    `Muốn đăng vào cộng đồng (r/...): đọc luật cộng đồng trước; chỉ nơi cho phép tự quảng bá, tối đa 1 cộng đồng/tuần, XOÁ dòng link và giữ dòng Disclosure${s.reddit && s.reddit.subs ? `. Gợi ý: ${s.reddit.subs.join(", ")}` : ""}`,
+    `KHÔNG nhờ người khác hay tài khoản phụ upvote, KHÔNG đăng cùng 1 bài vào nhiều cộng đồng (Reddit khoá cả tài khoản lẫn tên miền)`,
+  ],
+});
+channels.push({
+  key: "quora", title: "QUORA",
+  how: `Tài khoản Quora của ${site.brand} → vào Space của ${site.brand} → Post → đính kèm video (hoặc ảnh bìa)`,
+  fields: [["Câu hỏi để tìm (gõ vào ô tìm kiếm Quora, chọn câu hỏi gần nhất)", quoraQuestion], ["Bài đăng / câu trả lời", quoraAnswer]],
+  settings: [
+    `Cách 1 (chắc chắn): đăng vào Space của chính ${site.brand}`,
+    `Cách 2: trả lời 1 câu hỏi đúng chủ đề tìm được ở ô trên; sửa câu đầu cho khớp câu hỏi`,
+    `Giữ dòng Disclosure (Quora bắt buộc công khai mình làm trang review). Chỉ 1 link. KHÔNG dán cùng 1 câu trả lời vào nhiều câu hỏi`,
+  ],
+});
+if (problems.length) { console.error(specPath + ": " + problems.join("; ")); process.exit(1); }
 
 // ---- outputs ----
 const outDir = path.join(ROOT, "social_posts", s.reel);
