@@ -464,6 +464,14 @@
     "title": "MentionAgent · kiểu mở đầu B",
     "ch": "Instagram · YouTube Shorts · TikTok",
     "file": "mentionagent_reel_v1_hb"
+   },
+   {
+    "site": "rta",
+    "kind": "video",
+    "title": "LLM Pulse · ChatGPT có nhắc web mình không? (giọng AI)",
+    "ch": "Instagram · YouTube Shorts · TikTok",
+    "file": "llmpulse_reel_1_v1",
+    "note": "TikTok/YouTube: bật nhãn nội dung AI (giọng đọc AI). LLM Pulse CẤM quảng cáo trả phí: KHÔNG bấm Quảng bá/Boost."
    }
   ]
  },

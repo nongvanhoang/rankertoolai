@@ -353,6 +353,12 @@
     "site": "rta",
     "reel": "mentionagent_reel_v1_hb",
     "title": "MentionAgent · kiểu mở đầu B"
+   },
+   {
+    "type": "reel",
+    "site": "rta",
+    "reel": "llmpulse_reel_1_v1",
+    "title": "LLM Pulse · ChatGPT có nhắc web mình không? (giọng AI)"
    }
   ]
  },
