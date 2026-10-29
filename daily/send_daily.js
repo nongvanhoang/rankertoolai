@@ -5,6 +5,7 @@
 //   node daily/send_daily.js                 # today (Vietnam time), both brands
 //   node daily/send_daily.js --dry-run       # print what would be sent, send nothing
 //   node daily/send_daily.js --date 2026-10-20 --only rn --force
+//   node daily/send_daily.js --captions-only [--date D] [--only rn]   # just the per-channel caption messages
 //
 // Each video becomes ONE card: the original MP4 as a file (not re-compressed by Telegram,
 // ready for CapCut) whose caption holds the buttons, drawn by the posting-board Worker
@@ -270,6 +271,10 @@ async function sendOldStyle(site, p) {
   }
 }
 
+// Owner 2026-10-29: Notion has no one-tap copy on the phone, Telegram <pre> blocks do. With
+// config tg_captions, every card is followed by one message per channel (caption + comment).
+const sendCaptions = (site, p) => sendOldStyle(site, p);
+
 async function sendCard(site, date, n, p) {
   const id = `${date.replace(/-/g, '')}${site}${n}`;
   const already = boardOk && !DRY ? await board(`/api/posted?reel=${encodeURIComponent(p.reel)}`).catch(() => ({})) : {};
@@ -294,10 +299,11 @@ async function sendCard(site, date, n, p) {
       await board('/api/register', { id, site, date, title: p.title, reel: p.reel, channels: p.channels,
         chat_id: config.chat_id, thread_id: config.threads[site], card_msg: msgId, card_is_caption: true, kit: p.kit,
         ...(page ? { notion_page: page.id, notion_url: page.url } : {}) });
+      if (page && config.tg_captions) await sendCaptions(site, p);
       return null;
     } catch (e) { boardOk = false; log('board register failed, falling back:', e.message); }
   }
-  if (page) return null;                         // captions are in Notion; no need for per-channel messages
+  if (page) { if (config.tg_captions) await sendCaptions(site, p); return null; }   // captions also in Notion
   await sendOldStyle(site, p);
   return null;
 }
@@ -309,6 +315,11 @@ async function main() {
 
   for (const site of ['rta', 'rn']) {
     if (ONLY && ONLY !== site) continue;
+    if (flag('--captions-only')) {
+      const { posts } = buildDay(site, TODAY);
+      for (const p of posts) { await sendText(site, `📋 <b>Caption · ${esc(p.title)}</b> (${dayLabel(TODAY)}): chạm vào khung chữ để copy`); await sendCaptions(site, p); }
+      continue;
+    }
     // Today plus any of the last CATCH_UP_DAYS days the PC missed (was off at 06:30).
     const dates = [];
     for (let k = CATCH_UP_DAYS; k >= 1; k--) {

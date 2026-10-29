@@ -11,5 +11,6 @@
  },
  "chat_title": "Đăng bài hàng ngày",
  "board_url": "https://ranker-posting.wingmanexport.workers.dev",
- "rn_queue": false
+ "rn_queue": false,
+ "tg_captions": true
 }
