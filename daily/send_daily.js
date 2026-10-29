@@ -273,7 +273,17 @@ async function sendOldStyle(site, p) {
 
 // Owner 2026-10-29: Notion has no one-tap copy on the phone, Telegram <pre> blocks do. With
 // config tg_captions, every card is followed by one message per channel (caption + comment).
-const sendCaptions = (site, p) => sendOldStyle(site, p);
+// Channels the owner already scheduled for the week (Notion "Hẹn giờ tuần") are skipped here.
+const sendCaptions = (site, p) => sendOldStyle(site, p.scheduled ? { ...p, channels: p.channels.filter((c) => !p.scheduled.includes(c)) } : p);
+// Weekly scheduling: ticks this card's already-scheduled channels on its Notion row, returns them.
+async function markScheduled(site, date, p, page) {
+  if (!notion.enabled() || DRY) return [];
+  try {
+    const sch = (await notion.scheduledChannels(site, date)).filter((c) => p.channels.includes(c));
+    if (page && sch.length) await notion.tick(page.id, sch);
+    return sch;
+  } catch (e) { log('weekly schedule check failed:', e.message); return []; }
+}
 
 async function sendCard(site, date, n, p) {
   const id = `${date.replace(/-/g, '')}${site}${n}`;
@@ -285,6 +295,7 @@ async function sendCard(site, date, n, p) {
     try { page = await notion.ensurePage({ id, site, date, title: p.title, channels: p.channels, kit: p.kit, fileName: path.basename(p.file) }); }
     catch (e) { log('notion page failed, using button card:', e.message); }
   }
+  p = { ...p, scheduled: await markScheduled(site, date, p, page) };
   const dd = `${date.slice(8)}/${date.slice(5, 7)}`;
   const temp = `🎬 <b>${esc(p.title)}</b>\n<i>${BRAND[site]} · ${dd}</i>` +
     (page ? `\n📝 <a href="${page.url}">Caption &amp; đánh dấu từng kênh (Notion)</a>` : boardOk ? '\n(đang tải nút bấm…)' : '');
@@ -317,7 +328,10 @@ async function main() {
     if (ONLY && ONLY !== site) continue;
     if (flag('--captions-only')) {
       const { posts } = buildDay(site, TODAY);
-      for (const p of posts) { await sendText(site, `📋 <b>Caption · ${esc(p.title)}</b> (${dayLabel(TODAY)}): chạm vào khung chữ để copy`); await sendCaptions(site, p); }
+      for (const p0 of posts) {
+        const p = { ...p0, scheduled: notion.enabled() && !DRY ? await notion.scheduledChannels(site, TODAY).catch(() => []) : [] };
+        await sendText(site, `📋 <b>Caption · ${esc(p.title)}</b> (${dayLabel(TODAY)}): chạm vào khung chữ để copy`); await sendCaptions(site, p);
+      }
       continue;
     }
     // Today plus any of the last CATCH_UP_DAYS days the PC missed (was off at 06:30).

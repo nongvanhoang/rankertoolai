@@ -158,4 +158,24 @@ async function setVideoLink(pageId, fileName, threadId, msgId) {
   return url;
 }
 
-module.exports = { enabled: () => !!TOKEN, ensurePage, pending, setVideoLink, PROP, VIEW_PENDING };
+// Weekly scheduling (weekly_schedule.js): rows in "Hẹn giờ tuần" the owner ticked "Đã hẹn giờ".
+// Returns the channel keys already scheduled for this site on this date.
+const WEEK_DB = '2516b65bc95c48b09fed61bfd2a9933e';
+const WEEKLY_CHANNELS = { instagram: 'Instagram', facebook: 'Facebook', youtube: 'YouTube', tiktok: 'TikTok', pinterest: 'Pinterest', x: 'X', linkedin: 'LinkedIn' };
+async function scheduledChannels(site, date) {
+  const q = await api('POST', `/databases/${WEEK_DB}/query`, { filter: { and: [
+    { property: 'Site', select: { equals: SITE[site] } },
+    { property: 'Đã hẹn giờ', checkbox: { equals: true } },
+    { property: 'Tuần', date: { on_or_before: date } },
+  ] }, page_size: 50 });
+  const byName = Object.fromEntries(Object.entries(WEEKLY_CHANNELS).map(([k, v]) => [v, k]));
+  return q.results.filter((p) => { const w = p.properties['Tuần'].date; return w && (w.end || w.start) >= date; })
+    .map((p) => byName[(p.properties['Kênh'].select || {}).name]).filter(Boolean);
+}
+async function tick(pageId, channels) {
+  const properties = {};
+  for (const c of channels) if (PROP[c]) properties[PROP[c]] = { checkbox: true };
+  if (Object.keys(properties).length) await api('PATCH', `/pages/${pageId}`, { properties });
+}
+
+module.exports = { enabled: () => !!TOKEN, ensurePage, pending, setVideoLink, scheduledChannels, tick, PROP, VIEW_PENDING, WEEK_DB, WEEKLY_CHANNELS, api, rt, unesc };
