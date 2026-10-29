@@ -284,6 +284,10 @@ async function sendCard(site, date, n, p) {
   const temp = `🎬 <b>${esc(p.title)}</b>\n<i>${BRAND[site]} · ${dd}</i>` +
     (page ? `\n📝 <a href="${page.url}">Caption &amp; đánh dấu từng kênh (Notion)</a>` : boardOk ? '\n(đang tải nút bấm…)' : '');
   const msgId = await sendVideoFile(site, p.file, p.reel, temp);
+  if (page && !DRY) {                            // video name in Notion -> this Telegram message (download, add music in CapCut)
+    try { await notion.setVideoLink(page.id, path.basename(p.file), config.threads && config.threads[site], msgId); }
+    catch (e) { log('notion video link failed:', e.message); }
+  }
   if (DRY) { console.log(`  [card ${id}] ${p.title} · ${p.channels.join(', ')} · caption cho: ${Object.keys(p.kit).join(', ')}${notion.enabled() ? ' · Notion' : ''}`); return null; }
   if (boardOk) {
     try {

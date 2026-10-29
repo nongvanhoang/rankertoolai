@@ -2,6 +2,7 @@
 // "🗓 Lịch" view shows the whole plan. Safe to re-run: rows are matched by "Mã" and skipped.
 //   node daily/notion_sync.js                    # from today to the end of the calendar
 //   node daily/notion_sync.js --from 2026-10-18 --to 2026-11-12
+//   node daily/notion_sync.js --from 2026-10-29 --refresh   # rebuild existing rows' bodies in place
 // Uses the same day-building logic as send_daily.js (queue order included).
 const fs = require('fs');
 const path = require('path');
@@ -19,6 +20,7 @@ const notion = require('./notion');
 const vnToday = new Date(Date.now() + 7 * 3600e3).toISOString().slice(0, 10);
 const FROM = opt('--from', vnToday);
 const TO = opt('--to', '9999-12-31');
+const REFRESH = args.includes('--refresh');
 
 (async () => {
   if (!notion.enabled()) throw new Error('Thiếu biến môi trường NOTION_TOKEN');
@@ -34,7 +36,7 @@ const TO = opt('--to', '9999-12-31');
       for (let n = 0; n < posts.length; n++) {
         const p = posts[n];
         const id = `${date.replace(/-/g, '')}${site}${n + 1}`;
-        const page = await notion.ensurePage({ id, site, date, title: p.title, channels: p.channels, kit: p.kit, fileName: path.basename(p.file) });
+        const page = await notion.ensurePage({ id, site, date, title: p.title, channels: p.channels, kit: p.kit, fileName: path.basename(p.file) }, { refresh: REFRESH });
         console.log(`${id}  ${p.title}  ${page.url}`);
         made++;
       }

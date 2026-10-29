@@ -26,3 +26,11 @@ CREATE TABLE IF NOT EXISTS marks (
   at TEXT NOT NULL,
   PRIMARY KEY (item_id, ch)
 );
+
+-- Copy pages: one row per caption/comment text. Notion links to /c/<id>, a page with one big Copy
+-- button (Notion's own code-block Copy is hard to hit on the phone). id = sha256(text), 16 hex.
+CREATE TABLE IF NOT EXISTS snips (
+  id TEXT PRIMARY KEY,
+  label TEXT,
+  text TEXT NOT NULL
+);

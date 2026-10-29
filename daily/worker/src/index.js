@@ -224,6 +224,29 @@ async function onCommand(env, msg) {
   }
 }
 
+// ---------- copy page (linked from Notion) ----------
+// One text, one big button. Opened from the Notion app on the phone: tap Copy, go back, paste.
+async function copyPage(env, id) {
+  const row = await env.DB.prepare("SELECT label, text FROM snips WHERE id = ?").bind(id).first();
+  if (!row) return new Response("Không tìm thấy đoạn chữ này", { status: 404, headers: { "content-type": "text/plain; charset=utf-8" } });
+  const html = `<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Copy · ${esc(row.label)}</title><style>
+body{margin:0;font:16px/1.5 system-ui,sans-serif;background:#f6f6f4;color:#222}
+main{max-width:640px;margin:0 auto;padding:16px}
+h1{font-size:15px;color:#666;font-weight:600;margin:4px 0 12px}
+button{position:sticky;top:8px;width:100%;padding:18px;font-size:20px;font-weight:700;border:0;border-radius:14px;background:#2563eb;color:#fff}
+button.ok{background:#16a34a}
+pre{white-space:pre-wrap;word-break:break-word;background:#fff;border:1px solid #ddd;border-radius:12px;padding:14px;margin-top:14px;font:15px/1.5 system-ui,sans-serif}
+@media (prefers-color-scheme:dark){body{background:#161616;color:#eee}pre{background:#222;border-color:#333}h1{color:#aaa}}
+</style></head><body><main><h1>${esc(row.label)}</h1><button id="b">📋 Copy</button><pre id="t">${esc(row.text)}</pre></main>
+<script>
+const b=document.getElementById('b'),t=document.getElementById('t').textContent;
+b.onclick=async()=>{try{await navigator.clipboard.writeText(t)}catch(e){const a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();document.execCommand('copy');a.remove()}
+b.textContent='✓ Đã copy, quay lại để dán';b.className='ok'};
+</script></body></html>`;
+  return new Response(html, { headers: { "content-type": "text/html; charset=utf-8", "cache-control": "no-store" } });
+}
+
 // ---------- PC API ----------
 async function onApi(env, req, url) {
   if (req.headers.get("x-api-key") !== sec(env.API_KEY)) return json({ error: "unauthorized" }, 401);
@@ -237,6 +260,12 @@ async function onApi(env, req, url) {
     const full = await getItem(env, it.id);
     await refreshCard(env, full);            // draw the real buttons (and any "already posted" ticks)
     return json({ ok: true });
+  }
+  if (url.pathname === "/api/snips" && req.method === "POST") {   // texts behind the Notion "📋 Copy" links
+    const { snips } = await req.json();
+    const st = env.DB.prepare("INSERT OR REPLACE INTO snips (id, label, text) VALUES (?, ?, ?)");
+    for (let i = 0; i < snips.length; i += 50) await env.DB.batch(snips.slice(i, i + 50).map((x) => st.bind(x.id, x.label || "", x.text)));
+    return json({ ok: true, n: snips.length });
   }
   if (url.pathname === "/api/remind" && req.method === "POST") { await remind(env); return json({ ok: true }); }   // manual test of the 21h reminder
   if (url.pathname === "/api/posted") {      // channels a reel was already posted on (any card)
@@ -308,6 +337,7 @@ export default {
   async fetch(req, env) {
     const url = new URL(req.url);
     if (url.pathname.startsWith("/api/")) return onApi(env, req, url);
+    if (/^\/c\/[0-9a-f]{16}$/.test(url.pathname)) return copyPage(env, url.pathname.slice(3));
     if (url.pathname === "/tg" && req.method === "POST") {
       if (req.headers.get("x-telegram-bot-api-secret-token") !== sec(env.WEBHOOK_SECRET)) return new Response("forbidden", { status: 403 });
       const u = await req.json();
