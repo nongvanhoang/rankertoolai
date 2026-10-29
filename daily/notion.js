@@ -18,6 +18,7 @@ const SITE = { rn: 'RankerNest', rta: 'RankerToolAI' };
 const CONFIG = (() => { try { return require(path.join(__dirname, 'config.json')); } catch (_) { return {}; } })();
 const BOARD = CONFIG.board_url || '';
 const BOARD_KEY = userEnv('RANKER_BOT_API_KEY');
+const COPY_PAGES = false;
 const snipId = (text) => crypto.createHash('sha256').update(text).digest('hex').slice(0, 16);
 async function uploadSnips(snips) {
   if (!snips.length) return;
@@ -58,7 +59,8 @@ function kitBlocks(html, snips, where) {
     const rest = unesc(b.replace(/^<b>[^<]*<\/b>/, '').replace(/<pre>[\s\S]*?<\/pre>/, '').replace(/<\/?[a-z]+[^>]*>/g, '')).trim();
     if (pre) {
       const text = unesc(pre[1]);
-      const copy = snips && BOARD && BOARD_KEY;
+      // Off 2026-10-29: owner found the extra page annoying; Notion's own Copy on the code block is used instead.
+      const copy = COPY_PAGES && snips && BOARD && BOARD_KEY;
       const sid = snipId(`${where}
 ${label}
 ${text}`);     // same text under two labels (Reddit title = Quora question) gets two pages
@@ -78,8 +80,8 @@ ${text}`);     // same text under two labels (Reddit title = Quora question) get
 // Page body: one toggle heading per channel (tap to open, caption inside).
 function videoCallout(fileName, tgUrl) {
   return { icon: { type: 'emoji', emoji: '🎬' }, rich_text: tgUrl
-    ? [...rt('Video: '), link(`${fileName} ↗ (mở Telegram để tải)`, tgUrl), ...rt('. Tải về → thêm nhạc trong CapCut. Mở từng kênh bên dưới → bấm 📋 Copy → đăng → tích ô kênh ở đầu trang.')]
-    : rt(`Video: ${fileName} (file gốc ở Telegram, link hiện ở đây khi gói bài được gửi). Mở từng kênh bên dưới → bấm 📋 Copy → đăng → tích ô kênh ở đầu trang.`) };
+    ? [...rt('Video: '), link(`${fileName} ↗ (mở Telegram để tải)`, tgUrl), ...rt('. Tải về → thêm nhạc trong CapCut. Mở từng kênh bên dưới → bấm Copy trên khung chữ xám → đăng → tích ô kênh ở đầu trang.')]
+    : rt(`Video: ${fileName} (file gốc ở Telegram, link hiện ở đây khi gói bài được gửi). Mở từng kênh bên dưới → bấm Copy trên khung chữ xám → đăng → tích ô kênh ở đầu trang.`) };
 }
 function pageChildren(post, snips) {
   const kids = [{ type: 'callout', callout: videoCallout(post.fileName, post.tgUrl) }];
