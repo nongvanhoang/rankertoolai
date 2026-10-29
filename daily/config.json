@@ -10,5 +10,6 @@
   "rn": 4
  },
  "chat_title": "Đăng bài hàng ngày",
- "board_url": "https://ranker-posting.wingmanexport.workers.dev"
+ "board_url": "https://ranker-posting.wingmanexport.workers.dev",
+ "rn_queue": false
 }

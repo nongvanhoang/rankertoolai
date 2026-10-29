@@ -248,7 +248,8 @@ function buildDay(site, date) {
       posts.push({ title: e.title, reel: e.reel, file: path.join(VIDEOS, e.reel + '.mp4'), channels: chans, kit: reelKit(e.reel) });
     }
   }
-  if (site === 'rn' && !entries.some((e) => e.type === 'reel' && !reelProblem(e.reel, date))) {
+  // Owner 2026-10-29: queue items only had IG/FB/YT/TikTok captions; config rn_queue:false turns them off.
+  if (site === 'rn' && config.rn_queue !== false && !entries.some((e) => e.type === 'reel' && !reelProblem(e.reel, date))) {
     const q = queuePost(date);
     if (q.skipped.length) notes.push('Hàng đợi bỏ qua: ' + q.skipped.join(', '));
     if (q.item) {
