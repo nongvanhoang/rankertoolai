@@ -173,10 +173,11 @@ channels.push({
 });
 channels.push({
   key: "quora", title: "QUORA",
-  how: `Tài khoản Quora của ${site.brand} → vào Space của ${site.brand} → Post → đính kèm video (hoặc ảnh bìa)`,
+  // Quora requires real-name personal accounts: the owner posts from their own profile into the brand's Space.
+  how: `Tài khoản Quora cá nhân (tên thật) → vào Space "${site.brand}" → Post → đính kèm video (hoặc ảnh bìa)`,
   fields: [["Câu hỏi để tìm (gõ vào ô tìm kiếm Quora, chọn câu hỏi gần nhất)", quoraQuestion], ["Bài đăng / câu trả lời", quoraAnswer]],
   settings: [
-    `Cách 1 (chắc chắn): đăng vào Space của chính ${site.brand}`,
+    `Cách 1 (chắc chắn): đăng vào Space "${site.brand}" của bạn`,
     `Cách 2: trả lời 1 câu hỏi đúng chủ đề tìm được ở ô trên; sửa câu đầu cho khớp câu hỏi`,
     `Giữ dòng Disclosure (Quora bắt buộc công khai mình làm trang review). Chỉ 1 link. KHÔNG dán cùng 1 câu trả lời vào nhiều câu hỏi`,
   ],
