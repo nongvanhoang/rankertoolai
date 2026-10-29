@@ -24,8 +24,9 @@ async function uploadSnips(snips) {
   const res = await fetch(BOARD + '/api/snips', { method: 'POST', headers: { 'content-type': 'application/json', 'x-api-key': BOARD_KEY }, body: JSON.stringify({ snips }) });
   if (!res.ok) throw new Error('snips upload: HTTP ' + res.status);
 }
-// Telegram link to the video card, e.g. https://t.me/c/4384456936/2/345 (chat id without -100, topic, message).
-const tgLink = (threadId, msgId) => `https://t.me/c/${String(CONFIG.chat_id).replace(/^-100/, '')}/${threadId ? threadId + '/' : ''}${msgId}`;
+// Telegram link to the video card, e.g. https://t.me/c/4384456936/345?thread=2 (chat id without -100, message, topic).
+// The /<topic>/<msg> form opened the wrong message on the owner's phone (2026-10-29).
+const tgLink = (threadId, msgId) => `https://t.me/c/${String(CONFIG.chat_id).replace(/^-100/, '')}/${msgId}${threadId ? '?thread=' + threadId : ''}`;
 
 async function api(method, path, body) {
   for (let attempt = 0; attempt < 4; attempt++) {
