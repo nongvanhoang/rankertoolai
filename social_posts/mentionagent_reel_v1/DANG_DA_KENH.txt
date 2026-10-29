@@ -213,26 +213,22 @@ Cài đặt:
 =====================================================================
 11) QUORA  (Tài khoản Quora cá nhân (tên thật) → vào Space "RankerToolAI" → Post → đính kèm video (hoặc ảnh bìa))
 =====================================================================
-Câu hỏi để tìm (gõ vào ô tìm kiếm Quora, chọn câu hỏi gần nhất):
-An AI agent wrote 6 backlink outreach emails for my site (MentionAgent)
-
-Bài đăng / câu trả lời:
+Bài đăng (dán vào Space "RankerToolAI"):
 Backlinks without doing the outreach yourself ✉️
-
 We typed our site into MentionAgent. It found blogs in our niche, then an AI agent found who to contact and drafted a personal pitch for each: 6 drafts in about 5 minutes.
-
 • See real outreach drafts free (no card)
 • Edit every email before it goes out
 • From $99/mo, 14-day money-back guarantee
-
 I keep the full comparison and current prices here: https://rankertoolai.com/outreach/?utm_source=quora&utm_medium=answer&utm_campaign=reel_video&utm_content=reel-mentionagent
-
 Disclosure: I run RankerToolAI. The review page has affiliate links; we may earn a commission at no extra cost to you.
 
+(Không bắt buộc) Câu hỏi để tìm trên Quora:
+An AI agent wrote 6 backlink outreach emails for my site (MentionAgent)
+
 Cài đặt:
-- Cách 1 (chắc chắn): đăng vào Space "RankerToolAI" của bạn
-- Cách 2: trả lời 1 câu hỏi đúng chủ đề tìm được ở ô trên; sửa câu đầu cho khớp câu hỏi
-- Giữ dòng Disclosure (Quora bắt buộc công khai mình làm trang review). Chỉ 1 link. KHÔNG dán cùng 1 câu trả lời vào nhiều câu hỏi
+- Việc chính: đăng bài trên vào Space "RankerToolAI" kèm video. Vậy là ĐỦ, tích ô Quora
+- Câu hỏi: chỉ trả lời khi tìm thấy câu hỏi GẦN GIỐNG thật sự (sửa câu đầu cho khớp). Không thấy → bỏ qua. KHÔNG gắn bài vào câu hỏi khác chủ đề, KHÔNG tự đặt câu hỏi rồi tự trả lời (Quora coi là spam)
+- Giữ dòng Disclosure. Chỉ 1 link. KHÔNG dán cùng 1 bài vào nhiều câu hỏi
 
 =====================================================================
 LỊCH ĐĂNG GỢI Ý (không đăng tất cả 1 lúc)

@@ -159,7 +159,8 @@ const redditTitle = (s.reddit && s.reddit.title) || s.youtubeTitle;
 const redditBody = [valueBody, `Full write-up with prices: ${link("reddit", "social")}`, ownDisclosure].join("\n\n");
 const quoraQuestion = (s.quora && s.quora.question) || s.youtubeTitle.replace(/\s*[|#].*$/, "");
 const quoraAnswer = [(s.quora && s.quora.intro) || s.hook.replace(/\s*\p{Extended_Pictographic}+\s*$/u, ""), valueBody,
-  `I keep the full comparison and current prices here: ${link("quora", "answer")}`, ownDisclosure].join("\n\n");
+  `I keep the full comparison and current prices here: ${link("quora", "answer")}`, ownDisclosure].join("\n").replace(/\n{2,}/g, "\n");
+// ^ single newlines: Quora's editor turns every pasted line into its own paragraph, so blank lines double up.
 if (redditTitle.length > 300) problems.push(`Reddit title ${redditTitle.length}/300`);
 channels.push({
   key: "reddit", title: "REDDIT",
@@ -175,11 +176,12 @@ channels.push({
   key: "quora", title: "QUORA",
   // Quora requires real-name personal accounts: the owner posts from their own profile into the brand's Space.
   how: `Tài khoản Quora cá nhân (tên thật) → vào Space "${site.brand}" → Post → đính kèm video (hoặc ảnh bìa)`,
-  fields: [["Câu hỏi để tìm (gõ vào ô tìm kiếm Quora, chọn câu hỏi gần nhất)", quoraQuestion], ["Bài đăng / câu trả lời", quoraAnswer]],
+  // Owner 2026-10-29: the Space post is the job; answering a question is optional, only when a truly matching one exists.
+  fields: [[`Bài đăng (dán vào Space "${site.brand}")`, quoraAnswer], ["(Không bắt buộc) Câu hỏi để tìm trên Quora", quoraQuestion]],
   settings: [
-    `Cách 1 (chắc chắn): đăng vào Space "${site.brand}" của bạn`,
-    `Cách 2: trả lời 1 câu hỏi đúng chủ đề tìm được ở ô trên; sửa câu đầu cho khớp câu hỏi`,
-    `Giữ dòng Disclosure (Quora bắt buộc công khai mình làm trang review). Chỉ 1 link. KHÔNG dán cùng 1 câu trả lời vào nhiều câu hỏi`,
+    `Việc chính: đăng bài trên vào Space "${site.brand}" kèm video. Vậy là ĐỦ, tích ô Quora`,
+    `Câu hỏi: chỉ trả lời khi tìm thấy câu hỏi GẦN GIỐNG thật sự (sửa câu đầu cho khớp). Không thấy → bỏ qua. KHÔNG gắn bài vào câu hỏi khác chủ đề, KHÔNG tự đặt câu hỏi rồi tự trả lời (Quora coi là spam)`,
+    `Giữ dòng Disclosure. Chỉ 1 link. KHÔNG dán cùng 1 bài vào nhiều câu hỏi`,
   ],
 });
 if (problems.length) { console.error(specPath + ": " + problems.join("; ")); process.exit(1); }

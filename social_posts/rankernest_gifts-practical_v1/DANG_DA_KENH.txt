@@ -221,29 +221,23 @@ Cài đặt:
 =====================================================================
 11) QUORA  (Tài khoản Quora cá nhân (tên thật) → vào Space "RankerNest" → Post → đính kèm video (hoặc ảnh bìa))
 =====================================================================
-Câu hỏi để tìm (gõ vào ô tìm kiếm Quora, chọn câu hỏi gần nhất):
-Practical gifts that aren't boring: jump starter + video doorbell
-
-Bài đăng / câu trả lời:
+Bài đăng (dán vào Space "RankerNest"):
 Practical gifts that aren't boring
-
 Two practical gift picks from Rexing, under $130.
-
 • Rexing 3000A jump starter, $129.99: 3000A peak, 20,000mAh, doubles as a 65W USB-C power bank
 • Rexing SDB1 1080p wireless video doorbell, $49.99 (reg. $129.99), 2-year warranty
-
 Extra 10% at Rexing with code RANKERNEST10.
-
 Check peak amps against your engine's CCA and the doorbell's cloud storage plan. Specs-based picks, not hands-on tested; prices at time of writing.
-
 I keep the full comparison and current prices here: https://rankernest.com/gifts/?utm_source=quora&utm_medium=answer&utm_campaign=reel_video&utm_content=reel-gifts-practical
-
 Disclosure: I run RankerNest. The review page has affiliate links; we may earn a commission at no extra cost to you.
 
+(Không bắt buộc) Câu hỏi để tìm trên Quora:
+Practical gifts that aren't boring: jump starter + video doorbell
+
 Cài đặt:
-- Cách 1 (chắc chắn): đăng vào Space "RankerNest" của bạn
-- Cách 2: trả lời 1 câu hỏi đúng chủ đề tìm được ở ô trên; sửa câu đầu cho khớp câu hỏi
-- Giữ dòng Disclosure (Quora bắt buộc công khai mình làm trang review). Chỉ 1 link. KHÔNG dán cùng 1 câu trả lời vào nhiều câu hỏi
+- Việc chính: đăng bài trên vào Space "RankerNest" kèm video. Vậy là ĐỦ, tích ô Quora
+- Câu hỏi: chỉ trả lời khi tìm thấy câu hỏi GẦN GIỐNG thật sự (sửa câu đầu cho khớp). Không thấy → bỏ qua. KHÔNG gắn bài vào câu hỏi khác chủ đề, KHÔNG tự đặt câu hỏi rồi tự trả lời (Quora coi là spam)
+- Giữ dòng Disclosure. Chỉ 1 link. KHÔNG dán cùng 1 bài vào nhiều câu hỏi
 
 =====================================================================
 LỊCH ĐĂNG GỢI Ý (không đăng tất cả 1 lúc)
