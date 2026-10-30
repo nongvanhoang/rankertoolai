@@ -377,5 +377,11 @@
     "tier": "HOA_HONG_CAO",
     "first_reported": "2026-10-29",
     "last_reported": "2026-10-29"
+  },
+  "CustomGPT.ai": {
+    "vertical_or_category": "AI chatbot builder tren du lieu rieng (RAG)",
+    "tier": "HOA_HONG_CAO",
+    "first_reported": "2026-10-31",
+    "last_reported": "2026-10-31"
   }
 }
