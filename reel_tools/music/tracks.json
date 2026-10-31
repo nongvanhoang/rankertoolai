@@ -7,5 +7,60 @@
     "fashion": {"id": 371, "title": "Cat Walk",          "bpm": 130,   "start": 29.605, "use": "fashion, silk, beauty, skincare"},
     "gadget":  {"id": 623, "title": "Deep Urban",        "bpm": 124,   "start": 15.074, "use": "keyboards, desk gear, tech accessories"},
     "warm":    {"id": 837, "title": "Life is a Dream",   "bpm": 120,   "start": 8.605,  "use": "gifts, lamps, family, feel-good"}
+  },
+  "_beds": "Music beds mixed UNDER the AI voice by add_music_bed.js (owner 2026-10-31: more and better Mixkit tracks). start = where the track reaches full energy (s), lvl = its 75th-percentile RMS (dBFS), used to level every bed the same. Each reel gets a fixed track from its mood list (hash of the reel name), so A/B/C variants and different weeks don't all sound alike.",
+  "beds": {
+    "tech": [
+      {"id": 130, "title": "Tech House vibes", "start": 14.5, "lvl": -9.3},
+      {"id": 175, "title": "Digital Clouds", "start": 29, "lvl": -12.4},
+      {"id": 729, "title": "Pop Track 03", "start": 4, "lvl": -10.6},
+      {"id": 726, "title": "Uplifting Bass", "start": 14, "lvl": -11.6},
+      {"id": 634, "title": "Your Breath", "start": 28, "lvl": -10.9},
+      {"id": 480, "title": "Curiosity", "start": 47, "lvl": -10.9},
+      {"id": 77, "title": "Running Out of Time", "start": 2, "lvl": -12.1},
+      {"id": 33, "title": "Motivating Mornings", "start": 12, "lvl": -11.0}
+    ],
+    "home": [
+      {"id": 132, "title": "Hazy After Hours", "start": 15, "lvl": -8.6},
+      {"id": 674, "title": "House", "start": 39.5, "lvl": -8.6},
+      {"id": 474, "title": "What About Action?", "start": 0, "lvl": -14.0},
+      {"id": 610, "title": "Peenzee O'Traak", "start": 0.5, "lvl": -12.4},
+      {"id": 729, "title": "Pop Track 03", "start": 4, "lvl": -10.6}
+    ],
+    "gadget": [
+      {"id": 623, "title": "Deep Urban", "start": 14.5, "lvl": -10.6},
+      {"id": 473, "title": "Talent in the Air", "start": 0, "lvl": -13.7},
+      {"id": 106, "title": "Deep Techno", "start": 2, "lvl": -8.2},
+      {"id": 720, "title": "New Bass 01", "start": 23, "lvl": -18.5},
+      {"id": 175, "title": "Digital Clouds", "start": 29, "lvl": -12.4}
+    ],
+    "fashion": [
+      {"id": 371, "title": "Cat Walk", "start": 29, "lvl": -11.6},
+      {"id": 228, "title": "Fashion", "start": 17.5, "lvl": -17.7},
+      {"id": 186, "title": "Savana", "start": 0, "lvl": -13.2},
+      {"id": 327, "title": "Aerobic Fashion", "start": 17, "lvl": -17.7}
+    ],
+    "warm": [
+      {"id": 837, "title": "Life is a Dream", "start": 7.5, "lvl": -12.7},
+      {"id": 158, "title": "Happy Times", "start": 0, "lvl": -11.7},
+      {"id": 94, "title": "Traveling Along", "start": 3, "lvl": -15.0},
+      {"id": 635, "title": "Adone", "start": 0, "lvl": -12.7},
+      {"id": 696, "title": "Pop 04", "start": 6, "lvl": -14.5},
+      {"id": 288, "title": "One More Dance", "start": 15, "lvl": -15.1},
+      {"id": 200, "title": "Oh Lord", "start": 18.5, "lvl": -13.5},
+      {"id": 14, "title": "Swings and Slides", "start": 8.5, "lvl": -17.4}
+    ],
+    "chill": [
+      {"id": 282, "title": "Sweet September", "start": 37.5, "lvl": -12.5},
+      {"id": 738, "title": "Hip Hop 02", "start": 6.5, "lvl": -14.1}
+    ]
+  },
+  "slug_mood": {
+    "bf-checks": "gadget", "dropmagic": "tech", "friendshiplamps": "warm", "gifts-budget": "warm",
+    "gifts-cleaning": "home", "gifts-practical": "warm", "gifts-under100": "warm", "gifts-wfh": "warm",
+    "honiture-x7": "home", "joiin-calc": "chill", "joiin-template": "chill", "joiin-voice-a": "chill",
+    "joiin-voice-b": "chill", "joiin-voice-c": "chill", "llmpulse-1": "tech", "mentionagent": "tech",
+    "protoarc-ek01-plus": "gadget", "protoarc-xk01": "gadget", "switchbot-s20": "home",
+    "synthesia": "tech", "synthesia-lang": "tech", "silksilky": "fashion"
   }
 }
