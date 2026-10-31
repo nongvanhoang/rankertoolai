@@ -31,7 +31,7 @@ A free Excel template that combines up to three companies' trial balances into a
 • Eliminations sheet removes intercompany sales, fees and balances
 • Every check cell reads OK on the example figures
 
-No foreign currency: translate overseas subsidiaries before you paste them.
+No foreign currency: translate overseas subsidiaries before you paste them. Voiceover is AI-generated.
 
 Full review + current price:
 https://rankertoolai.com/consolidation/?utm_source=youtube&utm_medium=shorts&utm_campaign=reel_video&utm_content=reel-joiin-template-hb

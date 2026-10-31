@@ -1,0 +1,162 @@
+{
+  "_note": "AI voiceover lines (Kokoro af_heart) per reel spec. a/b/c = spoken hook for the base reel and its _hb/_hc variants, body = shared lines. Facts only from the spec; prices written the way people say them; promo codes are never read out (they're in the caption). Build: node reel_tools/add_voice.js [slug ...]",
+  "bf-checks": {
+    "a": "Black Friday. Three checks before you buy.",
+    "b": "Before you check out on Black Friday, do these three checks.",
+    "c": "The spec that matters more than the discount.",
+    "body": [
+      "Jump starter: match the peak amps to your engine's cold cranking amps.",
+      "Video doorbell: check what the cloud storage plan costs.",
+      "Robot vacuum: make sure the base washes the mop and refills the water.",
+      "Picks and live prices: link in bio."
+    ]
+  },
+  "dropmagic": {
+    "a": "Paste one product link. Get a whole Shopify product page.",
+    "b": "One AliExpress link, turned into a full Shopify product page.",
+    "c": "Still writing Shopify product pages by hand?",
+    "body": [
+      "We pasted an AliExpress moon lamp link into Dropmagic and answered five quick questions.",
+      "It built the whole page: the copy, the images, bundles and an FAQ.",
+      "You can build and preview on the free plan, no card needed.",
+      "Publishing to Shopify needs the Pro plan, at seventy-nine dollars a month.",
+      "Check every claim on the AI-written page before it goes live. Full review, link in bio."
+    ]
+  },
+  "friendshiplamps": {
+    "a": "Touch your lamp, and theirs lights up, miles away.",
+    "b": "A long-distance gift, from seventy dollars.",
+    "c": "Gifting a friendship lamp? Check their Wi-Fi first.",
+    "body": [
+      "Friendship Lamps pair over each home's own Wi-Fi, so distance doesn't matter.",
+      "Two hundred fifty-six colors, plus scheduling in the app.",
+      "The Lumi starts at seventy dollars. Both homes need two point four gigahertz Wi-Fi.",
+      "Link in bio."
+    ]
+  },
+  "gifts-budget": {
+    "a": "Gift ideas from twenty-two to eight hundred dollars.",
+    "b": "One gift idea for every budget.",
+    "c": "Stuck on a gift? Start with the budget.",
+    "body": [
+      "About twenty-two dollars: a mulberry silk pillowcase.",
+      "From seventy: a friendship lamp. Touch yours, and theirs lights up.",
+      "One seventy-nine ninety-nine: the Honiture X7 cordless vacuum.",
+      "And just under eight hundred: a robot vacuum that washes its own mop.",
+      "Prices move fast in November. Link in bio."
+    ]
+  },
+  "gifts-cleaning": {
+    "a": "A gift for someone who hates cleaning.",
+    "b": "Give them their weekend back.",
+    "c": "One seventy-nine, or seven ninety-nine: which cleaning gift?",
+    "body": [
+      "On a budget: the Honiture X7 cordless stick, with up to sixty minutes of rated runtime.",
+      "Going big: the SwitchBot S20 robot, which washes and dries its own mop.",
+      "Both are in our gift guide. Link in bio."
+    ]
+  },
+  "gifts-practical": {
+    "a": "Practical gifts that aren't boring.",
+    "b": "Gifts they'll use all year.",
+    "c": "A gift for the car, and one for the front door.",
+    "body": [
+      "The Rexing jump starter, one twenty-nine ninety-nine, doubles as a USB-C power bank.",
+      "The Rexing video doorbell is forty-nine ninety-nine, with a two-year warranty.",
+      "Check the peak amps and the cloud plan before you buy. Link in bio."
+    ]
+  },
+  "gifts-under100": {
+    "a": "Three gifts under a hundred dollars that don't feel cheap.",
+    "b": "Gifts under a hundred dollars they'll actually use.",
+    "c": "Under a hundred dollars, and not a gift card.",
+    "body": [
+      "A friendship lamp from seventy dollars: touch yours, and theirs lights up.",
+      "A split ergonomic keyboard for seventy-nine ninety-nine.",
+      "And a mulberry silk pillowcase from about twenty-two. Link in bio."
+    ]
+  },
+  "gifts-wfh": {
+    "a": "A gift for someone who works from home.",
+    "b": "A gift for a remote coworker.",
+    "c": "Upgrade their home office this year.",
+    "body": [
+      "For long typing days: a split, curved keyboard.",
+      "For working from cafés: a full-size keyboard that folds, number pad included.",
+      "And for a team that's far apart: friendship lamps. Link in bio."
+    ]
+  },
+  "honiture-x7": {
+    "a": "Same vacuum, eighty dollars apart.",
+    "b": "Do you really need the Pet version?",
+    "c": "Don't pay eighty dollars extra for the same suction.",
+    "body": [
+      "The Honiture X7 and the X7 Pet share the same core.",
+      "Same forty-five kilopascal suction, same rated runtime of up to sixty minutes, same HEPA filter.",
+      "The Pet version adds a grooming tool and an anti-mite brush.",
+      "If the pet hair is mostly on your floors, the standard X7 is enough. Link in bio."
+    ]
+  },
+  "joiin-calc": {
+    "a": "What does it cost to consolidate ten companies?",
+    "b": "Consolidating two, ten or fifty companies: what does it cost?",
+    "c": "Pricing consolidation software? Here's a free calculator.",
+    "body": [
+      "Our free calculator compares Joiin, Fathom and Spotlight Reporting by company count.",
+      "Pick anywhere from one to three hundred companies, and see the monthly cost and the cost per company.",
+      "It uses each vendor's published list prices, so confirm before you buy. Link in bio."
+    ]
+  },
+  "joiin-template": {
+    "a": "Consolidate three companies in Excel, for free.",
+    "b": "A free Excel consolidation template, for up to three companies.",
+    "c": "Month-end consolidation in Excel? Here's a free template.",
+    "body": [
+      "Paste in up to three trial balances from Xero, QuickBooks, Sage or MYOB.",
+      "You get a consolidated P and L and balance sheet.",
+      "The eliminations sheet removes intercompany sales, fees and balances, and every check cell shows if it ties out.",
+      "One limit: no foreign currency, so translate overseas subsidiaries first. Link in bio."
+    ]
+  },
+  "mentionagent": {
+    "a": "Backlinks, without doing the outreach yourself.",
+    "b": "Six backlink outreach emails in about five minutes.",
+    "c": "Hate writing cold outreach emails?",
+    "body": [
+      "We typed our site into MentionAgent, and it found blogs in our niche.",
+      "Then an AI agent found who to contact and drafted a personal pitch for each one.",
+      "Six drafts in about five minutes, and you edit every email before it goes out.",
+      "You can see real drafts free. Paid plans start at ninety-nine dollars a month. Link in bio."
+    ]
+  },
+  "protoarc-ek01-plus": {
+    "a": "Long days at the keyboard?",
+    "b": "A split ergonomic keyboard for seventy-nine ninety-nine.",
+    "c": "Still typing on a flat keyboard all day?",
+    "body": [
+      "The ProtoArc EK01 Plus splits and curves the layout, so your wrists sit at a more natural angle.",
+      "It pairs with up to three devices, over Bluetooth or the USB receiver.",
+      "Seventy-nine ninety-nine, plus an extra ten percent off with the code in the caption."
+    ]
+  },
+  "protoarc-xk01": {
+    "a": "A full-size keyboard that folds into your bag.",
+    "b": "Laptop keyboard too cramped on the road?",
+    "c": "Need a number pad on the road?",
+    "body": [
+      "The ProtoArc XK01 has a hundred and five keys, number pad included, and weighs ten and a half ounces.",
+      "It switches between three devices over Bluetooth, with quiet scissor keys and USB-C charging.",
+      "Sale price and an extra ten percent code are in the caption. Link in bio."
+    ]
+  },
+  "switchbot-s20": {
+    "a": "A robot vacuum that washes its own mop.",
+    "b": "What does a nearly eight-hundred-dollar robot vacuum actually do?",
+    "c": "This robot vacuum washes and dries its own mop.",
+    "body": [
+      "The SwitchBot S20 has ten thousand pascals of suction, with LiDAR and camera navigation.",
+      "The base washes and dries the mop, and refills and drains the water for you.",
+      "It's a premium pick at seven ninety-nine ninety-nine. Link in bio."
+    ]
+  }
+}

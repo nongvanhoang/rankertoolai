@@ -13,6 +13,9 @@ const path = require("path");
 const specPath = process.argv[2];
 const s = JSON.parse(fs.readFileSync(specPath, "utf8"));
 const ROOT = path.join(__dirname, "..");
+// Reels voiced by add_voice.js (AI voice): say so in the copy, like the Joiin voice reels' caveat.
+const aiVoice = !!JSON.parse(fs.readFileSync(path.join(__dirname, "voice_scripts.json"), "utf8"))[s.slug];
+if (aiVoice && !/AI-generated/.test(s.caveat || "")) s.caveat = [s.caveat, "Voiceover is AI-generated."].filter(Boolean).join(" ");
 
 const SITES = {
   rn: { domain: "rankernest.com", brand: "RankerNest", tag: "RankerNest", email: "bản tin RankerNest (Brevo, list #3)" },
@@ -120,7 +123,7 @@ channels.push({
   settings: [
     `Made for kids: chọn "No, it's not made for kids"`,
     `Paid promotion: TÍCH "My video contains paid promotion"`,
-    ai ? `Altered or synthetic content: TÍCH Yes (video có người dẫn AI)` : `Altered or synthetic content: No (ảnh sản phẩm thật)`,
+    ai ? `Altered or synthetic content: TÍCH Yes (video có người dẫn AI)` : aiVoice ? `Altered or synthetic content: TÍCH Yes (giọng đọc AI)` : `Altered or synthetic content: No (ảnh sản phẩm thật)`,
     `Danh mục: ${s.category}`,
     `Đăng xong: dán "Bình luận ghim" rồi GHIM lên đầu (link trong Shorts không bấm được, nên ghi tên trang ngắn)`,
     `Trang kênh → Tuỳ chỉnh → Links: thêm https://${site.domain}/links`,
@@ -143,7 +146,7 @@ channels.push({ key: "x", title: "X / TWITTER", how: `Bài mới → đính kèm
 channels.push({
   key: "tiktok", title: "TIKTOK", how: "+ → Tải lên → chọn video → dán caption",
   fields: [["Caption", tiktok], ["Bình luận ghim (đăng xong thì ghim)", ttComment()], ["Link bio (nếu tài khoản cho thêm link)", link("tiktok", "bio")]],
-  settings: [`Bật "Content disclosure" → "Branded content"`, ai ? `Bật nhãn "AI-generated content"` : `Không cần nhãn AI (ảnh sản phẩm thật)`,
+  settings: [`Bật "Content disclosure" → "Branded content"`, ai ? `Bật nhãn "AI-generated content"` : aiVoice ? `Bật nhãn "AI-generated content" (giọng đọc AI)` : `Không cần nhãn AI (ảnh sản phẩm thật)`,
     `Nhạc trend: chọn trong thư viện "Commercial" của TikTok/CapCut (tài khoản Business)`],
 });
 channels.push({
