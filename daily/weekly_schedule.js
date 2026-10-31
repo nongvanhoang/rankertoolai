@@ -82,7 +82,8 @@ const code = (text) => ({ type: 'code', code: { language: 'plain text', rich_tex
     const kids = [
       { type: 'callout', callout: { icon: { type: 'emoji', emoji: '🗓' }, rich_text: rt(
         `Hẹn giờ ${n} video trong: ${meta.tool}. Giờ gợi ý ${meta.time} (giờ Việt Nam). File video ở thư mục ${VIDEOS}, ảnh bìa trong thư mục covers. ` +
-        `Muốn thêm nhạc: làm trong CapCut trước rồi chọn file đã xuất. Hẹn xong cả tuần → tích ô "Đã hẹn giờ" ở đầu trang.`) } },
+        `Nhạc: thêm trong CapCut (điện thoại) trước, xuất file tên gốc + "_nhac", rồi hẹn giờ bằng file đó. Instagram/Facebook/YouTube: chọn nhạc có nhãn "Commercial use" để không bị tắt tiếng. ` +
+        `Hẹn xong cả tuần → tích ô "Đã hẹn giờ" ở đầu trang.`) } },
       ...settings(days[0].posts[0].kit[ch].caption).map((x) => ({ type: 'bulleted_list_item', bulleted_list_item: { rich_text: rt(x) } })),
     ];
     for (const { d, posts } of days) for (const p of posts) {
