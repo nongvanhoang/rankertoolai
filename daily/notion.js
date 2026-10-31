@@ -80,7 +80,7 @@ ${text}`);     // same text under two labels (Reddit title = Quora question) get
 // Page body: one toggle heading per channel (tap to open, caption inside).
 function videoCallout(fileName, tgUrl) {
   return { icon: { type: 'emoji', emoji: '🎬' }, rich_text: tgUrl
-    ? [...rt('Video: '), link(`${fileName} ↗ (mở Telegram để tải)`, tgUrl), ...rt('. Tải về → thêm nhạc trong CapCut. Mở từng kênh bên dưới → bấm Copy trên khung chữ xám → đăng → tích ô kênh ở đầu trang.')]
+    ? [...rt('Video: '), link(`${fileName} ↗ (mở Telegram để tải)`, tgUrl), ...rt('. Tải về (đã có giọng đọc + nhạc nền, không cần CapCut). Mở từng kênh bên dưới → bấm Copy trên khung chữ xám → đăng → tích ô kênh ở đầu trang.')]
     : rt(`Video: ${fileName} (file gốc ở Telegram, link hiện ở đây khi gói bài được gửi). Mở từng kênh bên dưới → bấm Copy trên khung chữ xám → đăng → tích ô kênh ở đầu trang.`) };
 }
 function pageChildren(post, snips) {

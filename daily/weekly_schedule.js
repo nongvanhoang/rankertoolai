@@ -82,15 +82,14 @@ const code = (text) => ({ type: 'code', code: { language: 'plain text', rich_tex
     const kids = [
       { type: 'callout', callout: { icon: { type: 'emoji', emoji: '🗓' }, rich_text: rt(
         `Hẹn giờ ${n} video trong: ${meta.tool}. Giờ gợi ý ${meta.time} (giờ Việt Nam). File video ở thư mục ${VIDEOS}, ảnh bìa trong thư mục covers. ` +
-        `Nhạc: thêm trong CapCut (điện thoại) trước, xuất file tên gốc + "_nhac", rồi hẹn giờ bằng file đó. Instagram/Facebook/YouTube: chọn nhạc có nhãn "Commercial use" để không bị tắt tiếng. ` +
+        `Nhạc: đã lồng sẵn (nhạc Mixkit dưới giọng đọc), dùng đúng file "_nhac.mp4" ghi ở từng ngày, không cần CapCut, không thêm nhạc trong app nữa. ` +
         `Hẹn xong cả tuần → tích ô "Đã hẹn giờ" ở đầu trang.`) } },
       ...settings(days[0].posts[0].kit[ch].caption).map((x) => ({ type: 'bulleted_list_item', bulleted_list_item: { rich_text: rt(x) } })),
     ];
     for (const { d, posts } of days) for (const p of posts) {
       const k = p.kit[ch];
-      const reel = path.basename(p.file, '.mp4');
       kids.push({ type: 'heading_3', heading_3: { rich_text: rt(`${label(d)} · ${meta.time} · ${p.title}`) } });
-      kids.push(para(rt(`File: ${path.basename(p.file)}  ·  Ảnh bìa: covers\\${reel}_cover.jpg`)));
+      kids.push(para(rt(`File: ${path.basename(p.file)}  ·  Ảnh bìa: covers\\${p.reel}_cover.jpg`)));
       for (const [l, t] of [...fields(k.caption), ...(k.comment ? fields(k.comment) : [])]) { kids.push(para(rt(l, true))); kids.push(code(t)); }
     }
     if (DRY) { console.log(`${id}  ${title}  (${n} video, ${kids.length} khối)`); continue; }
