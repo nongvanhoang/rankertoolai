@@ -41,12 +41,6 @@
     "first_reported": "2026-08-22",
     "last_reported": "2026-09-04"
   },
-  "Fotor Video Agent (AI)": {
-    "vertical_or_category": "AI video generation/editing (new Fotor suite feature)",
-    "tier": "WATCH",
-    "first_reported": "2026-09-01",
-    "last_reported": "2026-09-01"
-  },
   "Instinct": {
     "vertical_or_category": "AI personal assistant via SMS/calls (invite-only)",
     "tier": "WATCH",
