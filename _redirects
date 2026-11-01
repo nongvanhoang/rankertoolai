@@ -28,8 +28,12 @@ https://www.rankertoolai.com/* https://rankertoolai.com/:splat 301
 /blog/se-ranking-vs-semrush-tested/       /compare/semrush-vs-se-ranking/ 301
 /blog/mangools-vs-ahrefs-keyword-research/ /compare/mangools-vs-ahrefs/   301
 
-# Removed invented author personas (2026-10-04): bylines now credit the editorial team
-/author/*  /about/  301
+# Removed invented author personas (2026-10-04). Real author page /author/hoang-nong/ added 2026-11-01.
+/author/alex-chen/*  /author/hoang-nong/  301
+/author/maya-torres/*  /author/hoang-nong/  301
+/author/sara-lin/*  /author/hoang-nong/  301
+/author  /author/hoang-nong/  301
+/author/  /author/hoang-nong/  301
 
 # Legacy URLs from older site versions that GSC still reports as 404 (export 2026-10-18).
 # Only URLs with a genuinely equivalent live, indexable page are redirected; the rest stay 404 on purpose.
