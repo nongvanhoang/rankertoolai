@@ -8,7 +8,7 @@
 //   node daily/send_daily.js --captions-only [--date D] [--only rn]   # just the per-channel caption messages
 //
 // Each video becomes ONE card: the original MP4 as a file (not re-compressed by Telegram,
-// music bed already in when a _nhac.mp4 exists) whose caption holds the buttons, drawn by the posting-board Worker
+// ready for CapCut) whose caption holds the buttons, drawn by the posting-board Worker
 // (daily/worker): ☐/✅ per channel, 📋 caption picker, 💬 pinned comments, ⏭ skip.
 // The Worker remembers what was posted, so the board, /chuadang and duplicate warnings work
 // even when this PC is off. Before today's cards it lists cards still not fully posted, and it
@@ -233,22 +233,20 @@ function buildDay(site, date) {
   const day = calendar.find((d) => d.date === date) || { entries: [] };
   const entries = day.entries.filter((x) => x.site === site || x.site === 'both');
   const posts = []; const notes = []; let queueUsed = null;
-  // Prefer the version with the Mixkit music bed (reel_tools/add_music_bed.js) when it exists.
-  const videoFile = (reel) => { const f = path.join(VIDEOS, reel + '_nhac.mp4'); return fs.existsSync(f) ? f : path.join(VIDEOS, reel + '.mp4'); };
   const reelsToday = new Set(entries.filter((e) => e.type === 'reel').map((e) => e.reel));
   for (const e of entries) {
     if (e.type === 'note') { notes.push(e.text); continue; }
     const problem = reelProblem(e.reel, date);
     if (problem) { notes.push(`⏸ Bỏ qua ${e.title}: ${problem}`); continue; }
     if (e.type === 'reel') {
-      posts.push({ title: e.title, reel: e.reel, file: videoFile(e.reel), channels: REEL_CHANNELS[site], kit: reelKit(e.reel) });
+      posts.push({ title: e.title, reel: e.reel, file: path.join(VIDEOS, e.reel + '.mp4'), channels: REEL_CHANNELS[site], kit: reelKit(e.reel) });
     } else {
       // Extra rows: drop channels the main card already covers (cards now include X/LinkedIn).
       const chans = (e.channels || []).filter((c) => !REEL_CHANNELS[site].includes(c) && !(BLOCKED[site] || []).includes(c));
       if (!chans.length) continue;
       const main = posts.find((p) => p.reel === e.reel);
       if (main && reelsToday.has(e.reel)) { main.channels = [...main.channels, ...chans]; continue; }
-      posts.push({ title: e.title, reel: e.reel, file: videoFile(e.reel), channels: chans, kit: reelKit(e.reel) });
+      posts.push({ title: e.title, reel: e.reel, file: path.join(VIDEOS, e.reel + '.mp4'), channels: chans, kit: reelKit(e.reel) });
     }
   }
   // Owner 2026-10-29: queue items only had IG/FB/YT/TikTok captions; config rn_queue:false turns them off.
@@ -361,7 +359,7 @@ async function main() {
       const late = date !== TODAY;
       if (!posts.length && !notes.length && !(date === TODAY && carry.length)) { log(`${site} ${date}: nothing`); continue; }
       const head = `📅 <b>${dayLabel(date)} · ${BRAND[site]}</b>${late ? ' <i>(gửi bù, máy tắt hôm đó)</i>' : ''}\n` + (posts.length
-        ? `${posts.length} video. Lưu file video (đã có giọng đọc + nhạc nền) → đăng.` +
+        ? `${posts.length} video. Lưu file video → (tuỳ chọn) thêm nhạc trong CapCut → đăng.` +
           (boardOk ? ' Đăng xong kênh nào bấm tên kênh đó để ✅.' : ' Caption từng kênh ở các tin ngay dưới video.')
         : 'Không có video mới.');
       log(`${site} ${date}: ${posts.length} cards, ${notes.length} notes, ${date === TODAY ? carry.length : 0} carried`);
