@@ -7,6 +7,7 @@ Disallow: /deploy-checklist.html
 Disallow: /500.html
 
 Sitemap: https://rankertoolai.com/sitemap.xml
+Sitemap: https://rankertoolai.com/feed.xml
 
 # IndexNow
 IndexNow-Key: rankertoolai2026
