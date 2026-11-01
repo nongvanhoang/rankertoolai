@@ -69,3 +69,28 @@ const xml = [
 
 writeFileSync("feed.xml", xml, "utf8");
 console.log(`feed.xml: ${items.length} items (of ${posts.length} eligible), newest ${items[0].date}`);
+
+// Homepage "Latest reviews & guides" block (between LATEST markers) so new
+// pages get a link from the strongest page on the site right away.
+const LATEST = 12;
+const home = readFileSync("index.html", "utf8");
+const START = "<!-- LATEST:START -->", END = "<!-- LATEST:END -->";
+if (home.includes(START) && home.includes(END)) {
+  const label = (u) => ({ review: "Review", blog: "Guide", compare: "Compare", best: "Best of", alternatives: "Alternatives" }[u.split("/")[3]] || "");
+  const list = posts.slice(0, LATEST).map((p) =>
+    `      <a href="${p.url.replace(BASE_URL, "")}" style="display:block;padding:0.9rem 1rem;border:1px solid rgba(249,115,22,0.18);border-radius:10px;text-decoration:none;color:inherit;"><span style="font-size:0.7rem;font-weight:700;text-transform:uppercase;color:#f97316;">${label(p.url)}</span><div style="font-weight:700;font-size:0.92rem;margin-top:0.2rem;">${esc(p.title)}</div></a>`
+  ).join("\n");
+  const block = `${START}
+<section class="section">
+  <div class="container">
+    <h2 style="text-align:center;margin-bottom:1.25rem;">Latest Reviews &amp; Guides</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:0.75rem;">
+${list}
+    </div>
+  </div>
+</section>
+${END}`;
+  const next = home.slice(0, home.indexOf(START)) + block + home.slice(home.indexOf(END) + END.length);
+  if (next !== home) writeFileSync("index.html", next, "utf8");
+  console.log(`index.html: latest block ${LATEST} items`);
+}

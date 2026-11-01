@@ -81,5 +81,12 @@ https://www.rankertoolai.com/* https://rankertoolai.com/:splat 301
 /getresponse-coupon.html /review/getresponse/ 301
 /getresponse-discount.html /review/getresponse/ 301
 
+/se-ranking-vs-ahrefs.html /compare/se-ranking-vs-ahrefs/ 301
+/se-ranking-free-trial.html /review/se-ranking/ 301
+/writesonic-free-trial.html /review/writesonic/ 301
+/writesonic-vs-ahrefs.html /review/writesonic/ 301
+/writesonic-vs-semrush.html /review/writesonic/ 301
+/surferseo-vs-ahrefs.html /review/surfer-seo/ 301
+
 # 404 fallback
 /*  /404.html  404
