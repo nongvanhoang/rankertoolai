@@ -35,12 +35,6 @@
     "first_reported": "2026-08-22",
     "last_reported": "2026-09-21"
   },
-  "River AI": {
-    "vertical_or_category": "AI infrastructure / custom model training",
-    "tier": "WATCH",
-    "first_reported": "2026-08-22",
-    "last_reported": "2026-09-04"
-  },
   "Instinct": {
     "vertical_or_category": "AI personal assistant via SMS/calls (invite-only)",
     "tier": "WATCH",
@@ -64,12 +58,6 @@
     "tier": "WATCH",
     "first_reported": "2026-09-04",
     "last_reported": "2026-09-13"
-  },
-  "Musyx AI": {
-    "vertical_or_category": "AI music/song generation",
-    "tier": "WATCH",
-    "first_reported": "2026-09-04",
-    "last_reported": "2026-09-04"
   },
   "ThunderPhone": {
     "vertical_or_category": "AI phone/voice agent platform (developer API)",
