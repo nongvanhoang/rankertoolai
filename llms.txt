@@ -1,0 +1,42 @@
+# RankerToolAI
+
+> RankerToolAI is an independent, one-person publication run by Hoang Nong that reviews, compares and ranks AI tools and business software. Reviews score tools on five weighted criteria and state when a score rests on research rather than long-term use. The site earns affiliate commissions, which are disclosed.
+
+## Start here
+- [AI Tool Reviews](https://rankertoolai.com/review/): All reviews of individual tools, with pricing, pros and cons, and a verdict.
+- [Best AI Tools](https://rankertoolai.com/best/): Ranked lists by use case.
+- [Comparisons](https://rankertoolai.com/compare/): Head-to-head comparisons of competing tools.
+- [Alternatives](https://rankertoolai.com/alternatives/): Alternatives to popular tools, with feature and pricing differences.
+- [Blog](https://rankertoolai.com/blog/): Guides and explainers.
+
+## Best-of lists
+- [Best AI Tools for Shopify Dropshipping](https://rankertoolai.com/best/ai-shopify-tools/): Store builders, product page tools and sourcing tools compared.
+- [Best AI Writing Tools](https://rankertoolai.com/best/ai-writing-tools/): Writing assistants compared and ranked.
+- [Best AI Voice Generators](https://rankertoolai.com/best/ai-voice-generators/): Voice generation tools compared and ranked.
+- [Best Text-to-Speech AI Tools](https://rankertoolai.com/best/text-to-speech/): Text-to-speech tools compared and ranked.
+- [Best Consolidation Software](https://rankertoolai.com/best/consolidation-software/): Financial consolidation for Xero, QuickBooks and Sage.
+- [Best Management Reporting Software for Accountants](https://rankertoolai.com/best/management-reporting-software-for-accountants/): Reporting tools for accounting firms.
+
+## Reviews
+- [Synthesia Review](https://rankertoolai.com/review/synthesia/): AI avatar video platform.
+- [ElevenLabs Review](https://rankertoolai.com/review/elevenlabs/): AI voice generation.
+- [LLM Pulse Review](https://rankertoolai.com/review/llm-pulse/): Tracking brand visibility in AI answers, including results from a real trial.
+- [Joiin Review](https://rankertoolai.com/review/joiin/): Financial consolidation and reporting.
+- [Pictory Review](https://rankertoolai.com/review/pictory/): Turning text into video.
+- [Jasper Review](https://rankertoolai.com/review/jasper/): AI marketing writing.
+
+## Comparisons
+- [HeyGen vs Synthesia](https://rankertoolai.com/compare/heygen-vs-synthesia/)
+- [ChatGPT vs Gemini](https://rankertoolai.com/compare/chatgpt-vs-gemini/)
+- [Dropmagic vs PagePilot](https://rankertoolai.com/compare/dropmagic-vs-pagepilot/)
+- [ElevenLabs vs Murf](https://rankertoolai.com/compare/elevenlabs-vs-murf/)
+
+## Guides
+- [AI Tools Pricing Comparison](https://rankertoolai.com/blog/ai-tools-pricing-comparison-2026/): What popular AI tools cost.
+- [How to Get ChatGPT to Recommend Your Brand](https://rankertoolai.com/blog/how-to-get-chatgpt-to-recommend-your-brand/): A guide to visibility in AI answers.
+
+## About
+- [About RankerToolAI](https://rankertoolai.com/about/): Who runs the site and why.
+- [Hoang Nong](https://rankertoolai.com/author/hoang-nong/): Author profile.
+- [Review Methodology](https://rankertoolai.com/methodology/): The rating criteria and how reviews are produced.
+- [Affiliate Disclosure](https://rankertoolai.com/affiliate-disclosure/): How the site makes money.
