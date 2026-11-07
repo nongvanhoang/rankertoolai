@@ -187,6 +187,16 @@ Maintain this database. Update it when programs change.
     "status": "active"
   },
   {
+    "tool": "Windsor.ai",
+    "slug": "windsor-ai",
+    "platform": "FirstPromoter",
+    "commission": "30% recurring for the customer lifetime",
+    "tracking_url": "https://windsor.ai/?fpr=hoang-60cded",
+    "go_url": "https://rankertoolai.com/go/windsor-ai/",
+    "terms": "https://partners.windsor.ai/ (checked 2026-11-07): no paid ads at all, no coupons or promotions without consent, payout needs 2 active customers",
+    "status": "active"
+  },
+  {
     "tool": "Mangools",
     "slug": "mangools",
     "platform": "Direct",
