@@ -71,12 +71,6 @@
     "first_reported": "2026-09-08",
     "last_reported": "2026-09-20"
   },
-  "Keiki": {
-    "vertical_or_category": "AI agent for multi-channel customer-facing automation",
-    "tier": "WATCH",
-    "first_reported": "2026-09-09",
-    "last_reported": "2026-09-09"
-  },
   "Sider Code": {
     "vertical_or_category": "Chrome extension using AI to customize websites",
     "tier": "WATCH",
