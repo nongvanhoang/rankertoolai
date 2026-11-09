@@ -198,30 +198,34 @@ Cài đặt:
 - Ảnh: chụp 1 khung đẹp trong video (hoặc ảnh still bot đã tạo)
 
 =====================================================================
-10) REDDIT  (Bật app 1.1.1.1 (WARP) trước, Reddit bị chặn ở VN → tài khoản Reddit của RankerNest → Create post → chọn "Your profile" → đính kèm video)
+10) REDDIT · NUÔI TÀI KHOẢN (chỉ bình luận, KHÔNG đăng bài)  (Bật app 1.1.1.1 (WARP) → tài khoản Reddit của RankerNest → mở 1 link tìm bài bên dưới → chọn 2–3 bài người ta HỎI thật, đăng trong 7 ngày → viết bình luận giúp họ → xong thì tích ô Reddit)
 =====================================================================
-Tiêu đề (tối đa 300 ký tự):
-Black Friday: 3 checks before you buy a jump starter, doorbell or robot vacuum
+Tìm bài để bình luận:
+r/BuyItForLife: https://www.reddit.com/r/BuyItForLife/search/?q=Rexing%20%2F%20SwitchBot&restrict_sr=1&sort=new
+   (không có bài → https://www.reddit.com/r/BuyItForLife/new/)
+r/HomeImprovement: https://www.reddit.com/r/HomeImprovement/search/?q=Rexing%20%2F%20SwitchBot&restrict_sr=1&sort=new
+   (không có bài → https://www.reddit.com/r/HomeImprovement/new/)
+r/gadgets: https://www.reddit.com/r/gadgets/search/?q=Rexing%20%2F%20SwitchBot&restrict_sr=1&sort=new
+   (không có bài → https://www.reddit.com/r/gadgets/new/)
 
-Nội dung (body text):
-Three quick checks that matter more than the discount.
-
-• Jump starter: match peak amps to your engine's cold cranking amps (CCA). Rexing 3000A: 3000A peak, $129.99
-• Video doorbell: check what the cloud storage plan costs. Rexing SDB1: 1080p, 2-year warranty, $49.99
-• Robot vacuum: does the base wash the mop and refill water? SwitchBot S20 does both, $799.99 (specs-based pick)
-
-Extra 10% at Rexing with code RANKERNEST10.
-
-Prices at time of writing. Voiceover is AI-generated.
-
-Full write-up with prices: https://rankernest.com/gifts/?utm_source=reddit&utm_medium=social&utm_campaign=reel_video&utm_content=reel-bf-checks
-
-Disclosure: I run RankerNest. The review page has affiliate links; we may earn a commission at no extra cost to you.
+Ý để trả lời (KHÔNG dán nguyên văn):
+Facts you can use (rewrite in your own words, answer the actual question first):
+- Jump starter: match peak amps to your engine's cold cranking amps (CCA). Rexing 3000A: 3000A peak, $129.99
+- Video doorbell: check what the cloud storage plan costs. Rexing SDB1: 1080p, 2-year warranty, $49.99
+- Robot vacuum: does the base wash the mop and refill water? SwitchBot S20 does both, $799.99 (specs-based pick)
+- Extra 10% at Rexing with code RANKERNEST10.
+- Caveat: Prices at time of writing. Voiceover is AI-generated.
+If you name Rexing / SwitchBot, add at the end: "(I write reviews of tools like this, so take it with a grain of salt.)"
 
 Cài đặt:
-- Đăng lên TRANG CÁ NHÂN của tài khoản (u/...), đó là chỗ duy nhất tự quảng bá thoải mái
-- Muốn đăng vào cộng đồng (r/...): đọc luật cộng đồng trước; chỉ nơi cho phép tự quảng bá, tối đa 1 cộng đồng/tuần, XOÁ dòng link và giữ dòng Disclosure
-- KHÔNG nhờ người khác hay tài khoản phụ upvote, KHÔNG đăng cùng 1 bài vào nhiều cộng đồng (Reddit khoá cả tài khoản lẫn tên miền)
+- Giai đoạn nuôi: KHÔNG đăng video, KHÔNG đăng bài lên trang cá nhân. Chỉ 2–3 bình luận/ngày, rải ở 2–3 cộng đồng
+- Không tìm được bài liên quan → bình luận giúp 2 bài bất kỳ trong r/BuyItForLife (mục New) về chủ đề mình biết, vẫn tính là xong
+- KHÔNG BAO GIỜ dán link (kể cả rankernest.com, link rút gọn, link YouTube) và KHÔNG nhắc tên web trong bình luận
+- KHÔNG copy nguyên khung chữ: Reddit nhận ra văn mẫu. Đọc câu hỏi, trả lời đúng câu hỏi bằng 2–5 câu của mình. Ngại tiếng Anh: gõ ý bằng tiếng Việt rồi dịch (Google Dịch), giữ câu ngắn, có lỗi nhỏ cũng không sao
+- Bật WARP rồi để nguyên, đừng bật/tắt qua lại khi đang dùng Reddit. Vào Settings → xác minh email nếu chưa
+- Kiểm tra bị ẩn (shadowban) mỗi tuần: mở reddit.com/user/<tên> trong tab ẩn danh. Hiện "page not found" → báo Claude, đừng đăng tiếp
+- KHÔNG nhờ người khác hay tài khoản phụ upvote, KHÔNG đăng lại bài đã bị xoá
+- Đủ điều kiện sang giai đoạn đăng bài: tài khoản 30+ ngày, 100+ karma bình luận, đăng 1 bài trong r/WhatIsMyCQS được trả lời "Moderate" trở lên → báo Claude đổi chế độ
 
 =====================================================================
 11) QUORA  (Tài khoản Quora cá nhân (tên thật) → vào Space "RankerNest" → Post → đính kèm video (hoặc ảnh bìa))

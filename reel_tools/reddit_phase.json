@@ -1,0 +1,4 @@
+{
+  "_note": "Owner 2026-11-09: Reddit kept removing link posts from the new brand accounts. 'nuoi' = link-free helpful comments only. Switch to 'dang' only when the account is 30+ days old, has 100+ comment karma and r/WhatIsMyCQS says Moderate or better. Then re-run make_posts.js for every spec and notion_sync.js --refresh.",
+  "phase": "nuoi"
+}

@@ -159,20 +159,62 @@ channels.push({
 const ownDisclosure = `Disclosure: I run ${site.brand}. The review page has affiliate links; we may earn a commission at no extra cost to you.`;
 const valueBody = [s.summary, bullets, s.offer, s.caveat].filter(Boolean).join("\n\n");
 const redditTitle = (s.reddit && s.reddit.title) || s.youtubeTitle;
-const redditBody = [valueBody, `Full write-up with prices: ${link("reddit", "social")}`, ownDisclosure].join("\n\n");
 const quoraQuestion = (s.quora && s.quora.question) || s.youtubeTitle.replace(/\s*[|#].*$/, "");
 const quoraAnswer = [(s.quora && s.quora.intro) || s.hook.replace(/\s*\p{Extended_Pictographic}+\s*$/u, ""), valueBody,
   `I keep the full comparison and current prices here: ${link("quora", "answer")}`, ownDisclosure].join("\n").replace(/\n{2,}/g, "\n");
 // ^ single newlines: Quora's editor turns every pasted line into its own paragraph, so blank lines double up.
 if (redditTitle.length > 300) problems.push(`Reddit title ${redditTitle.length}/300`);
-channels.push({
-  key: "reddit", title: "REDDIT",
-  how: `Bật app 1.1.1.1 (WARP) trước, Reddit bị chặn ở VN → tài khoản Reddit của ${site.brand} → Create post → chọn "Your profile" → đính kèm video`,
-  fields: [["Tiêu đề (tối đa 300 ký tự)", redditTitle], ["Nội dung (body text)", redditBody]],
+// Owner 2026-11-09: link posts from the new brand accounts kept getting removed by Reddit's spam
+// filter (new account + own domain + affiliate link every day). Reddit copy is now ALWAYS link-free.
+// Phase "nuoi": no posting at all, only helpful comments in real threads to build karma.
+// Phase "dang": max 2 profile posts a week, still no link (link lives in the profile bio only).
+const redditPhase = JSON.parse(fs.readFileSync(path.join(__dirname, "reddit_phase.json"), "utf8")).phase;
+const REDDIT_SUBS = [
+  [/^synthesia/, ["instructionaldesign", "elearning", "VideoEditing"]],
+  [/^joiin/, ["Accounting", "Bookkeeping", "smallbusiness"]],
+  [/^dropmagic/, ["shopify", "ecommerce", "dropship"]],
+  [/^(llmpulse|mentionagent)/, ["SEO", "bigseo", "marketing"]],
+  [/^protoarc/, ["ergonomics", "WorkFromHome", "MouseReview"]],
+  [/^(switchbot|honiture)/, ["RobotVacuums", "CleaningTips", "smarthome"]],
+  [/^(gifts|friendshiplamps)/, ["GiftIdeas", "Gifts", "Frugal"]],
+  [/^silksilky/, ["SkincareAddiction", "HaircareScience", "Sleep"]],
+];
+const redditSubs = (s.reddit && s.reddit.subs && s.reddit.subs.map((x) => x.replace(/^r\//, "")))
+  || (REDDIT_SUBS.find(([re]) => re.test(s.slug)) || [null, s.site === "rta" ? ["artificial", "SaaS", "productivity"] : ["BuyItForLife", "HomeImprovement", "gadgets"]])[1];
+const redditSearch = redditSubs.map((sub) =>
+  `r/${sub}: https://www.reddit.com/r/${sub}/search/?q=${encodeURIComponent(s.brandName)}&restrict_sr=1&sort=new\n   (không có bài → https://www.reddit.com/r/${sub}/new/)`).join("\n");
+const redditNotes = [
+  `Facts you can use (rewrite in your own words, answer the actual question first):`,
+  ...s.points.map((p) => "- " + p), s.offer ? "- " + s.offer : "", s.caveat ? "- Caveat: " + s.caveat : "",
+  ``, `If you name ${s.brandName}, add at the end: "(I write reviews of tools like this, so take it with a grain of salt.)"`,
+].filter((x) => x !== "").join("\n");
+const redditCommon = [
+  `KHÔNG BAO GIỜ dán link (kể cả ${site.domain}, link rút gọn, link YouTube) và KHÔNG nhắc tên web trong bình luận`,
+  `KHÔNG copy nguyên khung chữ: Reddit nhận ra văn mẫu. Đọc câu hỏi, trả lời đúng câu hỏi bằng 2–5 câu của mình. Ngại tiếng Anh: gõ ý bằng tiếng Việt rồi dịch (Google Dịch), giữ câu ngắn, có lỗi nhỏ cũng không sao`,
+  `Bật WARP rồi để nguyên, đừng bật/tắt qua lại khi đang dùng Reddit. Vào Settings → xác minh email nếu chưa`,
+  `Kiểm tra bị ẩn (shadowban) mỗi tuần: mở reddit.com/user/<tên> trong tab ẩn danh. Hiện "page not found" → báo Claude, đừng đăng tiếp`,
+  `KHÔNG nhờ người khác hay tài khoản phụ upvote, KHÔNG đăng lại bài đã bị xoá`,
+];
+if (redditPhase === "nuoi") channels.push({
+  key: "reddit", title: "REDDIT · NUÔI TÀI KHOẢN (chỉ bình luận, KHÔNG đăng bài)",
+  how: `Bật app 1.1.1.1 (WARP) → tài khoản Reddit của ${site.brand} → mở 1 link tìm bài bên dưới → chọn 2–3 bài người ta HỎI thật, đăng trong 7 ngày → viết bình luận giúp họ → xong thì tích ô Reddit`,
+  fields: [["Tìm bài để bình luận", redditSearch], ["Ý để trả lời (KHÔNG dán nguyên văn)", redditNotes]],
   settings: [
-    `Đăng lên TRANG CÁ NHÂN của tài khoản (u/...), đó là chỗ duy nhất tự quảng bá thoải mái`,
-    `Muốn đăng vào cộng đồng (r/...): đọc luật cộng đồng trước; chỉ nơi cho phép tự quảng bá, tối đa 1 cộng đồng/tuần, XOÁ dòng link và giữ dòng Disclosure${s.reddit && s.reddit.subs ? `. Gợi ý: ${s.reddit.subs.join(", ")}` : ""}`,
-    `KHÔNG nhờ người khác hay tài khoản phụ upvote, KHÔNG đăng cùng 1 bài vào nhiều cộng đồng (Reddit khoá cả tài khoản lẫn tên miền)`,
+    `Giai đoạn nuôi: KHÔNG đăng video, KHÔNG đăng bài lên trang cá nhân. Chỉ 2–3 bình luận/ngày, rải ở 2–3 cộng đồng`,
+    `Không tìm được bài liên quan → bình luận giúp 2 bài bất kỳ trong r/${redditSubs[0]} (mục New) về chủ đề mình biết, vẫn tính là xong`,
+    ...redditCommon,
+    `Đủ điều kiện sang giai đoạn đăng bài: tài khoản 30+ ngày, 100+ karma bình luận, đăng 1 bài trong r/WhatIsMyCQS được trả lời "Moderate" trở lên → báo Claude đổi chế độ`,
+  ],
+});
+else channels.push({
+  key: "reddit", title: "REDDIT",
+  how: `Bật app 1.1.1.1 (WARP) → tài khoản Reddit của ${site.brand} → Create post → chọn "Your profile" → đính kèm video. Tối đa 2 bài/tuần, ngày khác chỉ bình luận`,
+  fields: [["Tiêu đề (tối đa 300 ký tự)", redditTitle], ["Nội dung (body text, KHÔNG link)", [valueBody, `Disclosure: I run ${site.brand}, a review site that earns affiliate commissions on some tools.`].join("\n\n")],
+    ["Tìm bài để bình luận (các ngày không đăng)", redditSearch], ["Ý để trả lời (KHÔNG dán nguyên văn)", redditNotes]],
+  settings: [
+    `Link web chỉ để ở phần giới thiệu trang cá nhân (Profile → Edit → Social links), KHÔNG để trong bài`,
+    `Cứ 1 bài của mình thì phải có ít nhất 9 bình luận giúp người khác`,
+    ...redditCommon,
   ],
 });
 channels.push({
