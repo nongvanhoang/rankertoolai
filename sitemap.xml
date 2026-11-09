@@ -952,7 +952,7 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/review/woodpecker/</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -964,7 +964,7 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/review/salestarget-ai/</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -1049,6 +1049,12 @@
   <url>
     <loc>https://rankertoolai.com/compare/joiin-vs-spotlight-reporting/</loc>
     <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/blog/how-to-keep-cold-emails-out-of-spam/</loc>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
