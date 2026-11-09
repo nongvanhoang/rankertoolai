@@ -12,9 +12,9 @@
 
 const CH = {
   instagram: "IG", facebook: "FB", youtube: "YT", tiktok: "TT", x: "X",
-  linkedin: "LinkedIn", pinterest: "Pin", threads: "Threads", email: "Email", reddit: "Reddit", quora: "Quora",
+  linkedin: "LinkedIn", pinterest: "Pin", threads: "Threads", email: "Email", reddit: "Reddit", quora: "Quora", zalo: "Zalo",
 };
-const BRAND = { rn: "RankerNest", rta: "RankerToolAI" };
+const BRAND = { rn: "RankerNest", rta: "RankerToolAI", thoc: "Thế Hưng Organic" };
 
 const esc = (s) => String(s).replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
 const vnDate = (ms = Date.now()) => new Date(ms + 7 * 3600e3).toISOString().slice(0, 10);
@@ -66,7 +66,7 @@ function slimKeyboard(it) {
 // Tick (or untick) every channel checkbox on the Notion row.
 async function notionTick(env, it, value) {
   if (!env.NOTION_TOKEN || !it.notion_page) return;
-  const NP = { instagram: "IG", facebook: "FB", youtube: "YouTube", tiktok: "TikTok", pinterest: "Pinterest", x: "X", linkedin: "LinkedIn", reddit: "Reddit", quora: "Quora" };
+  const NP = { instagram: "IG", facebook: "FB", youtube: "YouTube", tiktok: "TikTok", pinterest: "Pinterest", x: "X", linkedin: "LinkedIn", reddit: "Reddit", quora: "Quora", zalo: "Zalo" };
   const properties = {};
   for (const c of it.channels) if (NP[c]) properties[NP[c]] = { checkbox: value };
   const r = await fetch(`https://api.notion.com/v1/pages/${it.notion_page}`, {
@@ -308,7 +308,36 @@ async function pendingFromNotion(env, site) {
     left: (p.properties["Còn"] && p.properties["Còn"].formula && p.properties["Còn"].formula.number) || 0,
   }));
 }
+// Thế Hưng Organic (2026-11-09): own Notion board "Đăng bài Thế Hưng Organic — 30 ngày đầu",
+// posts land in the group's General topic (no thread). Needs the "Ranker Bot" connection on that DB.
+const THOC_DB = "96da0ec4a4e141f9b16e77790f984eaa";
+async function remindThoc(env) {
+  if (!env.NOTION_TOKEN) return;
+  const body = { filter: { and: [
+    { property: "Ngày", date: { on_or_before: vnDate() } },
+    { property: "Ngày", date: { on_or_after: vnDate(Date.now() - 14 * 864e5) } },
+    { property: "Trạng thái", formula: { string: { does_not_equal: "✅ Xong" } } },
+    { property: "Trạng thái", formula: { string: { does_not_equal: "⏭ Bỏ qua" } } },
+  ] }, sorts: [{ property: "Ngày", direction: "ascending" }], page_size: 20 };
+  const r = await fetch(`https://api.notion.com/v1/databases/${THOC_DB}/query`, {
+    method: "POST",
+    headers: { Authorization: `Bearer ${sec(env.NOTION_TOKEN)}`, "Notion-Version": "2022-06-28", "Content-Type": "application/json" },
+    body: JSON.stringify(body),
+  });
+  if (!r.ok) { console.log("remind thoc notion", r.status); return; }
+  const rows = (await r.json()).results.map((p) => ({
+    title: (p.properties["Bài"].title[0] || {}).plain_text || "", date: p.properties["Ngày"].date.start, url: p.url,
+    left: (p.properties["Còn"] && p.properties["Còn"].formula && p.properties["Còn"].formula.number) || 0,
+  }));
+  if (!rows.length) return;
+  const today = vnDate();
+  const text = `🌙 <b>Nhắc việc 21h · Thế Hưng Organic</b>\nCòn ${rows.length} bài chưa đăng xong:\n` +
+    rows.map((x) => `• <a href="${x.url}">${esc(x.title)}</a>${x.date === today ? " (hôm nay)" : ` (${dm(x.date)})`}${x.left ? `: còn ${x.left} kênh` : ""}`).join("\n") +
+    "\n\nĐăng xong thì bấm ✅ dưới bài (hoặc tích trong Notion). Không đăng nữa: tích “Bỏ qua” trong Notion.";
+  await tg(env, "sendMessage", { chat_id: env.CHAT_ID, text, parse_mode: "HTML", disable_web_page_preview: true });
+}
 async function remind(env) {
+  try { await remindThoc(env); } catch (e) { console.log("remind thoc", e.message); }
   const threads = JSON.parse(env.THREADS || "{}");
   for (const site of Object.keys(threads)) {
     let rows = [];
