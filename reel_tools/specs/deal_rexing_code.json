@@ -1,0 +1,15 @@
+{
+  "brand": "rn",
+  "hook": { "kicker": "Rexing · RankerNest code", "big": "10%", "unit": "off", "line": "dash cams, sitewide at Rexing<br /><span class=\"hl\">code RANKERNEST10</span>" },
+  "rows": { "kicker": "Our picks by budget", "items": [
+    { "n": "F30", "t": "4K front, 1080p rear<br />GPS in the mount" },
+    { "n": "C2 Pro", "t": "4K front and<br />4K rear" },
+    { "n": "V3C", "t": "infrared cabin cam<br />for Uber and Lyft" }
+  ] },
+  "rules": { "items": [
+    { "icon": "ok", "text": "Enter RANKERNEST10 at checkout on Rexing.com" },
+    { "icon": "warn", "text": "Check it stacks during sale events" },
+    { "icon": "warn", "text": "Specs from listings: we haven't road-tested these" }
+  ] },
+  "cta": { "logo": "RankerNest", "logoSrc": "social_videos/rankernest_silksilky_v2/logo.svg", "text": "Prices + full guide → link in bio", "url": "rankernest.com/<span class=\"hl\">dashcam</span>", "disclose": "#ad · affiliate links, at no extra cost to you" }
+}

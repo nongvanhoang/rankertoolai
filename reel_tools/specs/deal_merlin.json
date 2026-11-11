@@ -1,0 +1,15 @@
+{
+  "brand": "rta",
+  "hook": { "kicker": "Merlin AI · code MERLIN20", "big": "20%", "unit": "off", "line": "ChatGPT, Claude, DeepSeek<br /><span class=\"hl\">in one subscription</span>" },
+  "rows": { "kicker": "What you get", "items": [
+    { "n": "10+", "t": "top AI models<br />in one place" },
+    { "n": "$0", "t": "free plan<br />to try it first" },
+    { "n": "$19", "t": "a month for Pro<br />billed yearly ($228)" }
+  ] },
+  "rules": { "items": [
+    { "icon": "ok", "text": "Code MERLIN20 takes 20% off" },
+    { "icon": "ok", "text": "Web, Chrome extension, Mac and phone" },
+    { "icon": "warn", "text": "Fair-use limits: Pro is not unlimited" }
+  ] },
+  "cta": { "text": "Code + full review →", "url": "rankertoolai.com/<span class=\"hl\">deals</span>", "disclose": "#ad · Contains affiliate links" }
+}
