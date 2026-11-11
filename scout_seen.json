@@ -78,12 +78,6 @@
     "last_reported": "2026-09-20",
     "note": "Part of the wider Sider AI ecosystem (10M+ WAU, confirmed affiliate program via Trackdesk) - see new sibling entry Sider Omni Sidebar"
   },
-  "Notchling": {
-    "vertical_or_category": "AI novelty macOS app (animated companion in MacBook notch)",
-    "tier": "WATCH",
-    "first_reported": "2026-09-12",
-    "last_reported": "2026-09-12"
-  },
   "Hermes Agent (Nous Research)": {
     "vertical_or_category": "Self-improving open-source AI agent",
     "tier": "WATCH",
@@ -359,5 +353,11 @@
     "tier": "HOA_HONG_CAO",
     "first_reported": "2026-11-06",
     "last_reported": "2026-11-06"
+  },
+  "Ranked AI": {
+    "vertical_or_category": "AEO / AI visibility tracking + managed SEO-PPC",
+    "tier": "HOA_HONG_CAO",
+    "first_reported": "2026-11-12",
+    "last_reported": "2026-11-12"
   }
 }
