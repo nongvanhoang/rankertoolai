@@ -1,0 +1,15 @@
+{
+  "brand": "rta",
+  "hook": { "kicker": "Paying for Granola?", "pre": "up to", "big": "12", "unit": "months", "line": "of Wispr Flow <span class=\"hl\">free</span><br />when you switch" },
+  "rows": { "kicker": "How the switch works", "items": [
+    { "n": "3", "t": "free months<br />right away" },
+    { "n": "+", "t": "the rest of your<br />Granola plan covered" },
+    { "n": "12", "t": "months max:<br />Notetaker + dictation" }
+  ] },
+  "rules": { "items": [
+    { "icon": "ok", "text": "For anyone currently paying for Granola" },
+    { "icon": "ok", "text": "One per customer" },
+    { "icon": "warn", "text": "Limited time, no end date published" }
+  ] },
+  "cta": { "text": "How to claim it →", "url": "rankertoolai.com/<span class=\"hl\">deals</span>", "disclose": "#ad · Contains affiliate links" }
+}

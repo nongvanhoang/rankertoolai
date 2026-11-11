@@ -1,0 +1,14 @@
+{
+  "brand": "rn",
+  "hook": { "kicker": "SilkSilky · Black Friday", "pre": "up to", "big": "75%", "unit": "off", "line": "mulberry silk,<br /><span class=\"hl\">+ flash sales on best sellers</span>" },
+  "photos": [
+    { "src": "social_videos/rankernest_silksilky_v2/01.jpg", "text": "<span class=\"hl\">100% Grade 6A</span> mulberry silk", "small": "Pillowcases from about $22 (19 momme) before discounts" },
+    { "src": "social_videos/rankernest_silksilky_v2/04.jpg", "text": "<span class=\"hl\">OEKO-TEX + GOTS</span> certified", "small": "4.2/5 from 10,246 Trustpilot reviews" }
+  ],
+  "rules": { "items": [
+    { "icon": "ok", "text": "No code: discounts apply automatically" },
+    { "icon": "ok", "text": "Free shipping over $59" },
+    { "icon": "warn", "text": "Ships from China, allow 2–3 weeks" }
+  ], "ends": "Ends November 23" },
+  "cta": { "logo": "RankerNest", "logoSrc": "social_videos/rankernest_silksilky_v2/logo.svg", "text": "Full review → link in bio", "url": "rankernest.com/<span class=\"hl\">silk</span>", "disclose": "#ad · affiliate links, at no extra cost to you" }
+}

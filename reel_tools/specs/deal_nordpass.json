@@ -1,0 +1,14 @@
+{
+  "brand": "rta",
+  "hook": { "kicker": "NordPass · Black Friday", "pre": "up to", "big": "58%", "unit": "off", "line": "the annual Personal plan<br /><span class=\"hl\">+ 3 extra months</span>" },
+  "rows": { "kicker": "The 2026 offer", "items": [
+    { "n": "58%", "t": "max off the annual<br />Personal plan" },
+    { "n": "+3", "t": "extra months<br />on top" },
+    { "n": "20%", "t": "off Business plans<br />(up to 30 seats)" }
+  ] },
+  "rules": { "items": [
+    { "icon": "ok", "text": "Confirmed on NordPass's own Black Friday page" },
+    { "icon": "warn", "text": "Business: use the code shown on that page" }
+  ], "ends": "Ends December 9" },
+  "cta": { "text": "All Black Friday deals →", "url": "rankertoolai.com/<span class=\"hl\">deals</span>", "disclose": "#ad · Contains affiliate links" }
+}
