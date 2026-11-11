@@ -693,10 +693,10 @@
    },
    {
     "site": "rta",
-    "kind": "todo",
-    "title": "Video RankerToolAI mới",
-    "ch": "Instagram · YouTube Shorts · TikTok",
-    "note": "Chờ anh quay màn hình, Claude dựng xong mới đăng."
+    "kind": "video",
+    "file": "synthesia_syren_reel_v1",
+    "title": "Synthesia · 5 câu thành 1 video",
+    "ch": "Instagram · YouTube Shorts · TikTok"
    },
    {
     "site": "rn",
@@ -717,6 +717,13 @@
     "title": "Video “Top 3” (vd: 3 bàn phím cho WFH)",
     "ch": "Instagram · YouTube Shorts · TikTok",
     "note": "Nhắn Claude ghép từ ảnh có sẵn."
+   },
+   {
+    "site": "rn",
+    "kind": "video",
+    "title": "Quà cho người ghét dọn nhà",
+    "ch": "Tất cả kênh",
+    "file": "rankernest_gifts-cleaning_v1"
    }
   ]
  },
@@ -730,16 +737,40 @@
     "ch": "Email Brevo (list #3)"
    },
    {
+    "site": "rta",
+    "kind": "video",
+    "file": "synthesia_raw_reel_v1",
+    "title": "Synthesia · video AI nguyên bản",
+    "ch": "Instagram · YouTube Shorts · TikTok"
+   }
+  ]
+ },
+ {
+  "date": "2026-11-13",
+  "items": [
+   {
     "site": "rn",
     "kind": "video",
-    "title": "Quà cho người ghét dọn nhà",
-    "ch": "Tất cả kênh",
-    "file": "rankernest_gifts-cleaning_v1"
+    "file": "rankernest_silksilky-bf_v1",
+    "title": "SilkSilky Black Friday · motion (hết 23/11)",
+    "ch": "Tất cả kênh"
    }
   ]
  },
  {
   "date": "2026-11-14",
+  "items": [
+   {
+    "site": "rta",
+    "kind": "video",
+    "file": "pictory_bf_reel_v1",
+    "title": "Pictory Black Friday · motion (hết 2/12)",
+    "ch": "Instagram · YouTube Shorts · TikTok"
+   }
+  ]
+ },
+ {
+  "date": "2026-11-15",
   "items": [
    {
     "site": "rn",
@@ -751,19 +782,43 @@
   ]
  },
  {
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "items": [
    {
     "site": "rta",
-    "kind": "todo",
-    "title": "Video RankerToolAI mới",
-    "ch": "",
-    "note": "Chờ anh quay màn hình MentionAgent/Dropmagic (KICH_BAN_QUAY_3_VIDEO_RTA.txt)."
+    "kind": "video",
+    "file": "synthesia_freetest_reel_v1",
+    "title": "Synthesia · tài khoản miễn phí có gì",
+    "ch": "Instagram · YouTube Shorts · TikTok"
    }
   ]
  },
  {
   "date": "2026-11-17",
+  "items": [
+   {
+    "site": "rn",
+    "kind": "video",
+    "title": "Quà theo ngân sách · kiểu B",
+    "ch": "Tất cả kênh",
+    "file": "rankernest_gifts-budget_v1_hb"
+   }
+  ]
+ },
+ {
+  "date": "2026-11-18",
+  "items": [
+   {
+    "site": "rta",
+    "kind": "video",
+    "file": "nordpass_bf_reel_v1",
+    "title": "NordPass Black Friday · motion (hết 9/12)",
+    "ch": "Instagram · YouTube Shorts · TikTok"
+   }
+  ]
+ },
+ {
+  "date": "2026-11-19",
   "items": [
    {
     "site": "rn",
@@ -778,11 +833,11 @@
   "date": "2026-11-20",
   "items": [
    {
-    "site": "rn",
+    "site": "rta",
     "kind": "video",
-    "title": "Quà theo ngân sách · kiểu B",
-    "ch": "Tất cả kênh",
-    "file": "rankernest_gifts-budget_v1_hb"
+    "file": "synthesia_builder_reel_v1",
+    "title": "Synthesia · tạo người dẫn AI",
+    "ch": "Instagram · YouTube Shorts · TikTok"
    }
   ]
  },
@@ -790,11 +845,11 @@
   "date": "2026-11-21",
   "items": [
    {
-    "site": "rta",
-    "kind": "todo",
-    "title": "Video RankerToolAI mới",
-    "ch": "",
-    "note": "Chờ anh quay màn hình MentionAgent/Dropmagic (KICH_BAN_QUAY_3_VIDEO_RTA.txt)."
+    "site": "rn",
+    "kind": "video",
+    "title": "Quà thiết thực (Rexing) · kiểu B",
+    "ch": "Tất cả kênh",
+    "file": "rankernest_gifts-practical_v1_hb"
    }
   ]
  },
@@ -802,11 +857,11 @@
   "date": "2026-11-22",
   "items": [
    {
-    "site": "rn",
+    "site": "rta",
     "kind": "video",
-    "title": "Black Friday: 3 điều cần kiểm tra · kiểu B",
-    "ch": "Tất cả kênh",
-    "file": "rankernest_bf-checks_v1_hb"
+    "file": "wispr_granola_reel_v1",
+    "title": "Wispr Flow · đổi từ Granola · motion",
+    "ch": "Instagram · YouTube Shorts · TikTok"
    }
   ]
  },
@@ -819,6 +874,13 @@
     "title": "Tuần Black Friday: kiểm giá trước khi đăng mỗi ngày",
     "ch": "",
     "note": "Giá đổi liên tục trong tuần này. Bot kiểm giá thứ Hai; nếu thấy hãng giảm sâu hơn giá trong video, nhắn Claude làm video giá mới."
+   },
+   {
+    "site": "rn",
+    "kind": "video",
+    "title": "Black Friday: 3 điều cần kiểm tra · kiểu B",
+    "ch": "Tất cả kênh",
+    "file": "rankernest_bf-checks_v1_hb"
    }
   ]
  },
@@ -826,16 +888,16 @@
   "date": "2026-11-24",
   "items": [
    {
-    "site": "rn",
+    "site": "rta",
     "kind": "video",
-    "title": "Quà thiết thực (Rexing) · kiểu B",
-    "ch": "Tất cả kênh",
-    "file": "rankernest_gifts-practical_v1_hb"
+    "file": "synthesia_template_reel_v1",
+    "title": "Synthesia · cách này viết lại kịch bản",
+    "ch": "Instagram · YouTube Shorts · TikTok"
    }
   ]
  },
  {
-  "date": "2026-11-26",
+  "date": "2026-11-25",
   "items": [
    {
     "site": "rn",
@@ -847,14 +909,26 @@
   ]
  },
  {
+  "date": "2026-11-26",
+  "items": [
+   {
+    "site": "rta",
+    "kind": "video",
+    "file": "joiin_voice_reel_b_v1_r2",
+    "title": "Joiin · POV cuối tháng (đăng lại)",
+    "ch": "Instagram · YouTube Shorts · TikTok"
+   }
+  ]
+ },
+ {
   "date": "2026-11-27",
   "items": [
    {
     "site": "rn",
     "kind": "video",
-    "title": "Black Friday: 3 điều cần kiểm tra · kiểu C",
+    "title": "Quà cho người làm việc ở nhà · kiểu B",
     "ch": "Tất cả kênh",
-    "file": "rankernest_bf-checks_v1_hc"
+    "file": "rankernest_gifts-wfh_v1_hb"
    }
   ]
  },
@@ -863,10 +937,10 @@
   "items": [
    {
     "site": "rta",
-    "kind": "todo",
-    "title": "Video RankerToolAI mới",
-    "ch": "",
-    "note": "Chờ anh quay màn hình MentionAgent/Dropmagic (KICH_BAN_QUAY_3_VIDEO_RTA.txt)."
+    "kind": "video",
+    "file": "joiin_voice_reel_c_v1_r2",
+    "title": "Joiin · 3 lỗi Excel (đăng lại)",
+    "ch": "Instagram · YouTube Shorts · TikTok"
    }
   ]
  },
@@ -876,9 +950,9 @@
    {
     "site": "rn",
     "kind": "video",
-    "title": "Quà cho người làm việc ở nhà · kiểu B",
+    "title": "Black Friday: 3 điều cần kiểm tra · kiểu C",
     "ch": "Tất cả kênh",
-    "file": "rankernest_gifts-wfh_v1_hb"
+    "file": "rankernest_bf-checks_v1_hc"
    }
   ]
  },
@@ -910,18 +984,6 @@
   "date": "2026-12-05",
   "items": [
    {
-    "site": "rta",
-    "kind": "todo",
-    "title": "Video RankerToolAI mới",
-    "ch": "",
-    "note": "Chờ anh quay màn hình MentionAgent/Dropmagic (KICH_BAN_QUAY_3_VIDEO_RTA.txt)."
-   }
-  ]
- },
- {
-  "date": "2026-12-06",
-  "items": [
-   {
     "site": "rn",
     "kind": "video",
     "title": "Quà thiết thực (Rexing) · kiểu C",
@@ -931,7 +993,7 @@
   ]
  },
  {
-  "date": "2026-12-09",
+  "date": "2026-12-07",
   "items": [
    {
     "site": "rn",
@@ -943,7 +1005,7 @@
   ]
  },
  {
-  "date": "2026-12-12",
+  "date": "2026-12-09",
   "items": [
    {
     "site": "rn",
@@ -951,7 +1013,24 @@
     "title": "Quà cho người làm việc ở nhà · kiểu C",
     "ch": "Tất cả kênh",
     "file": "rankernest_gifts-wfh_v1_hc"
-   },
+   }
+  ]
+ },
+ {
+  "date": "2026-12-11",
+  "items": [
+   {
+    "site": "rn",
+    "kind": "video",
+    "title": "Quà cho người ghét dọn nhà · kiểu C",
+    "ch": "Tất cả kênh",
+    "file": "rankernest_gifts-cleaning_v1_hc"
+   }
+  ]
+ },
+ {
+  "date": "2026-12-12",
+  "items": [
    {
     "site": "rta",
     "kind": "todo",
@@ -970,18 +1049,6 @@
     "title": "Từ tuần này: hỏi hạn giao Giáng sinh của từng hãng",
     "ch": "",
     "note": "Không hứa \"giao kịp Giáng sinh\" khi chưa xem hạn giao trên web hãng."
-   }
-  ]
- },
- {
-  "date": "2026-12-15",
-  "items": [
-   {
-    "site": "rn",
-    "kind": "video",
-    "title": "Quà cho người ghét dọn nhà · kiểu C",
-    "ch": "Tất cả kênh",
-    "file": "rankernest_gifts-cleaning_v1_hc"
    }
   ]
  },

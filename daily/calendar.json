@@ -548,9 +548,10 @@
     "text": "Bản tin: Tool of the week (video mới) · Email Brevo (list #5)"
    },
    {
-    "type": "note",
+    "type": "reel",
     "site": "rta",
-    "text": "Video RankerToolAI mới · Instagram · YouTube Shorts · TikTok · Chờ anh quay màn hình, Claude dựng xong mới đăng."
+    "reel": "synthesia_syren_reel_v1",
+    "title": "Synthesia · 5 câu thành 1 video"
    },
    {
     "type": "note",
@@ -566,6 +567,12 @@
     "type": "note",
     "site": "rn",
     "text": "Video “Top 3” (vd: 3 bàn phím cho WFH) · Instagram · YouTube Shorts · TikTok · Nhắn Claude ghép từ ảnh có sẵn."
+   },
+   {
+    "type": "reel",
+    "site": "rn",
+    "reel": "rankernest_gifts-cleaning_v1",
+    "title": "Quà cho người ghét dọn nhà"
    }
   ]
  },
@@ -579,14 +586,36 @@
    },
    {
     "type": "reel",
+    "site": "rta",
+    "reel": "synthesia_raw_reel_v1",
+    "title": "Synthesia · video AI nguyên bản"
+   }
+  ]
+ },
+ {
+  "date": "2026-11-13",
+  "entries": [
+   {
+    "type": "reel",
     "site": "rn",
-    "reel": "rankernest_gifts-cleaning_v1",
-    "title": "Quà cho người ghét dọn nhà"
+    "reel": "rankernest_silksilky-bf_v1",
+    "title": "SilkSilky Black Friday · motion (hết 23/11)"
    }
   ]
  },
  {
   "date": "2026-11-14",
+  "entries": [
+   {
+    "type": "reel",
+    "site": "rta",
+    "reel": "pictory_bf_reel_v1",
+    "title": "Pictory Black Friday · motion (hết 2/12)"
+   }
+  ]
+ },
+ {
+  "date": "2026-11-15",
   "entries": [
    {
     "type": "reel",
@@ -597,17 +626,40 @@
   ]
  },
  {
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "entries": [
    {
-    "type": "note",
+    "type": "reel",
     "site": "rta",
-    "text": "Video RankerToolAI mới · Chờ anh quay màn hình MentionAgent/Dropmagic (KICH_BAN_QUAY_3_VIDEO_RTA.txt)."
+    "reel": "synthesia_freetest_reel_v1",
+    "title": "Synthesia · tài khoản miễn phí có gì"
    }
   ]
  },
  {
   "date": "2026-11-17",
+  "entries": [
+   {
+    "type": "reel",
+    "site": "rn",
+    "reel": "rankernest_gifts-budget_v1_hb",
+    "title": "Quà theo ngân sách · kiểu B"
+   }
+  ]
+ },
+ {
+  "date": "2026-11-18",
+  "entries": [
+   {
+    "type": "reel",
+    "site": "rta",
+    "reel": "nordpass_bf_reel_v1",
+    "title": "NordPass Black Friday · motion (hết 9/12)"
+   }
+  ]
+ },
+ {
+  "date": "2026-11-19",
   "entries": [
    {
     "type": "reel",
@@ -622,45 +674,14 @@
   "entries": [
    {
     "type": "reel",
-    "site": "rn",
-    "reel": "rankernest_gifts-budget_v1_hb",
-    "title": "Quà theo ngân sách · kiểu B"
+    "site": "rta",
+    "reel": "synthesia_builder_reel_v1",
+    "title": "Synthesia · tạo người dẫn AI"
    }
   ]
  },
  {
   "date": "2026-11-21",
-  "entries": [
-   {
-    "type": "note",
-    "site": "rta",
-    "text": "Video RankerToolAI mới · Chờ anh quay màn hình MentionAgent/Dropmagic (KICH_BAN_QUAY_3_VIDEO_RTA.txt)."
-   }
-  ]
- },
- {
-  "date": "2026-11-22",
-  "entries": [
-   {
-    "type": "reel",
-    "site": "rn",
-    "reel": "rankernest_bf-checks_v1_hb",
-    "title": "Black Friday: 3 điều cần kiểm tra · kiểu B"
-   }
-  ]
- },
- {
-  "date": "2026-11-23",
-  "entries": [
-   {
-    "type": "note",
-    "site": "rn",
-    "text": "Tuần Black Friday: kiểm giá trước khi đăng mỗi ngày · Giá đổi liên tục trong tuần này. Bot kiểm giá thứ Hai; nếu thấy hãng giảm sâu hơn giá trong video, nhắn Claude làm video giá mới."
-   }
-  ]
- },
- {
-  "date": "2026-11-24",
   "entries": [
    {
     "type": "reel",
@@ -671,7 +692,45 @@
   ]
  },
  {
-  "date": "2026-11-26",
+  "date": "2026-11-22",
+  "entries": [
+   {
+    "type": "reel",
+    "site": "rta",
+    "reel": "wispr_granola_reel_v1",
+    "title": "Wispr Flow · đổi từ Granola · motion"
+   }
+  ]
+ },
+ {
+  "date": "2026-11-23",
+  "entries": [
+   {
+    "type": "note",
+    "site": "rn",
+    "text": "Tuần Black Friday: kiểm giá trước khi đăng mỗi ngày · Giá đổi liên tục trong tuần này. Bot kiểm giá thứ Hai; nếu thấy hãng giảm sâu hơn giá trong video, nhắn Claude làm video giá mới."
+   },
+   {
+    "type": "reel",
+    "site": "rn",
+    "reel": "rankernest_bf-checks_v1_hb",
+    "title": "Black Friday: 3 điều cần kiểm tra · kiểu B"
+   }
+  ]
+ },
+ {
+  "date": "2026-11-24",
+  "entries": [
+   {
+    "type": "reel",
+    "site": "rta",
+    "reel": "synthesia_template_reel_v1",
+    "title": "Synthesia · cách này viết lại kịch bản"
+   }
+  ]
+ },
+ {
+  "date": "2026-11-25",
   "entries": [
    {
     "type": "reel",
@@ -682,13 +741,24 @@
   ]
  },
  {
+  "date": "2026-11-26",
+  "entries": [
+   {
+    "type": "reel",
+    "site": "rta",
+    "reel": "joiin_voice_reel_b_v1_r2",
+    "title": "Joiin · POV cuối tháng (đăng lại)"
+   }
+  ]
+ },
+ {
   "date": "2026-11-27",
   "entries": [
    {
     "type": "reel",
     "site": "rn",
-    "reel": "rankernest_bf-checks_v1_hc",
-    "title": "Black Friday: 3 điều cần kiểm tra · kiểu C"
+    "reel": "rankernest_gifts-wfh_v1_hb",
+    "title": "Quà cho người làm việc ở nhà · kiểu B"
    }
   ]
  },
@@ -696,9 +766,10 @@
   "date": "2026-11-28",
   "entries": [
    {
-    "type": "note",
+    "type": "reel",
     "site": "rta",
-    "text": "Video RankerToolAI mới · Chờ anh quay màn hình MentionAgent/Dropmagic (KICH_BAN_QUAY_3_VIDEO_RTA.txt)."
+    "reel": "joiin_voice_reel_c_v1_r2",
+    "title": "Joiin · 3 lỗi Excel (đăng lại)"
    }
   ]
  },
@@ -708,8 +779,8 @@
    {
     "type": "reel",
     "site": "rn",
-    "reel": "rankernest_gifts-wfh_v1_hb",
-    "title": "Quà cho người làm việc ở nhà · kiểu B"
+    "reel": "rankernest_bf-checks_v1_hc",
+    "title": "Black Friday: 3 điều cần kiểm tra · kiểu C"
    }
   ]
  },
@@ -739,16 +810,6 @@
   "date": "2026-12-05",
   "entries": [
    {
-    "type": "note",
-    "site": "rta",
-    "text": "Video RankerToolAI mới · Chờ anh quay màn hình MentionAgent/Dropmagic (KICH_BAN_QUAY_3_VIDEO_RTA.txt)."
-   }
-  ]
- },
- {
-  "date": "2026-12-06",
-  "entries": [
-   {
     "type": "reel",
     "site": "rn",
     "reel": "rankernest_gifts-practical_v1_hc",
@@ -757,7 +818,7 @@
   ]
  },
  {
-  "date": "2026-12-09",
+  "date": "2026-12-07",
   "entries": [
    {
     "type": "reel",
@@ -768,14 +829,30 @@
   ]
  },
  {
-  "date": "2026-12-12",
+  "date": "2026-12-09",
   "entries": [
    {
     "type": "reel",
     "site": "rn",
     "reel": "rankernest_gifts-wfh_v1_hc",
     "title": "Quà cho người làm việc ở nhà · kiểu C"
-   },
+   }
+  ]
+ },
+ {
+  "date": "2026-12-11",
+  "entries": [
+   {
+    "type": "reel",
+    "site": "rn",
+    "reel": "rankernest_gifts-cleaning_v1_hc",
+    "title": "Quà cho người ghét dọn nhà · kiểu C"
+   }
+  ]
+ },
+ {
+  "date": "2026-12-12",
+  "entries": [
    {
     "type": "note",
     "site": "rta",
@@ -790,17 +867,6 @@
     "type": "note",
     "site": "rn",
     "text": "Từ tuần này: hỏi hạn giao Giáng sinh của từng hãng · Không hứa \"giao kịp Giáng sinh\" khi chưa xem hạn giao trên web hãng."
-   }
-  ]
- },
- {
-  "date": "2026-12-15",
-  "entries": [
-   {
-    "type": "reel",
-    "site": "rn",
-    "reel": "rankernest_gifts-cleaning_v1_hc",
-    "title": "Quà cho người ghét dọn nhà · kiểu C"
    }
   ]
  },

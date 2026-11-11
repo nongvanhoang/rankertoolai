@@ -105,7 +105,8 @@ async function ensurePage(post, { refresh } = {}) {
   if (found && !refresh) return { id: found.id, url: found.url };
   if (found) {
     const f = found.properties['File video'].rich_text[0];
-    post = { ...post, tgUrl: post.tgUrl || (f && f.href) || null };
+    const sameFile = f && f.plain_text === post.fileName;   // a rescheduled day keeps no stale Telegram link
+    post = { ...post, tgUrl: post.tgUrl || (sameFile && f.href) || null };
     const snips = []; const kids = pageChildren(post, snips);
     await uploadSnips(snips);
     let cursor;
@@ -113,7 +114,8 @@ async function ensurePage(post, { refresh } = {}) {
     do { const j = await api('GET', `/blocks/${found.id}/children?page_size=100${cursor ? '&start_cursor=' + cursor : ''}`); old.push(...j.results); cursor = j.has_more ? j.next_cursor : null; } while (cursor);
     for (const b of old) await api('DELETE', `/blocks/${b.id}`);
     await api('PATCH', `/blocks/${found.id}/children`, { children: kids.slice(0, 90) });
-    await api('PATCH', `/pages/${found.id}`, { properties: { 'Số kênh': { number: post.channels.filter((c) => PROP[c]).length }, 'File video': fileProp(post.fileName, post.tgUrl) } });
+    // Title + file name follow the calendar too, so rescheduled days show the right video.
+    await api('PATCH', `/pages/${found.id}`, { properties: { Video: { title: rt(post.title) }, 'Số kênh': { number: post.channels.filter((c) => PROP[c]).length }, 'File video': fileProp(post.fileName, post.tgUrl) } });
     return { id: found.id, url: found.url };
   }
   const props = {

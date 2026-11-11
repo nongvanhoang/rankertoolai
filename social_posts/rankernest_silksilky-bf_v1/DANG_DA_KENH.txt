@@ -28,8 +28,6 @@ Cài đặt:
 =====================================================================
 2) PINTEREST  (Tạo Pin → tải video lên → điền các ô dưới)
 =====================================================================
-Video này ĐÃ có trong file CSV Pinterest (lên lịch sẵn). Nếu đã tải CSV lên thì BỎ QUA mục này.
-
 Tiêu đề:
 SilkSilky Black Friday: Up to 75% Off Mulberry Silk (Ends Nov 23)
 
