@@ -53,12 +53,6 @@
     "first_reported": "2026-09-04",
     "last_reported": "2026-09-20"
   },
-  "Pangram": {
-    "vertical_or_category": "AI-generated content detection",
-    "tier": "WATCH",
-    "first_reported": "2026-09-04",
-    "last_reported": "2026-09-13"
-  },
   "ThunderPhone": {
     "vertical_or_category": "AI phone/voice agent platform (developer API)",
     "tier": "WATCH",
@@ -77,12 +71,6 @@
     "first_reported": "2026-09-09",
     "last_reported": "2026-09-20",
     "note": "Part of the wider Sider AI ecosystem (10M+ WAU, confirmed affiliate program via Trackdesk) - see new sibling entry Sider Omni Sidebar"
-  },
-  "Hermes Agent (Nous Research)": {
-    "vertical_or_category": "Self-improving open-source AI agent",
-    "tier": "WATCH",
-    "first_reported": "2026-09-13",
-    "last_reported": "2026-09-13"
   },
   "Almanac (YC S26)": {
     "vertical_or_category": "AI agent with internal company-context (company-context agent)",
