@@ -47,6 +47,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .social a:hover,.social a:focus-visible{transform:translateY(-2px);background:rgba(249,115,22,0.12);border-color:rgba(249,115,22,0.4);}
     .social svg{width:19px;height:19px;fill:var(--text);}
     /* Sections */
+    .kw{font-size:.62rem;font-weight:800;letter-spacing:.08em;color:#080c18;background:linear-gradient(135deg,var(--orange),var(--amber));padding:.1rem .45rem;border-radius:999px;margin-right:.3rem;vertical-align:1px;}
+    .kwgrid{margin-top:.7rem;}
+    .nl{border-radius:16px;padding:1rem 1.1rem;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);}
+    .nl p{color:var(--muted);font-size:.86rem;line-height:1.45;margin:0 0 .75rem;}
+    .nl form{display:flex;gap:.5rem;flex-wrap:wrap;}
+    .nl input[type=email]{flex:1;min-width:0;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.15);border-radius:10px;padding:.7rem .9rem;color:inherit;font-size:.95rem;}
+    .nl button{border:none;border-radius:10px;padding:.7rem 1rem;font-weight:800;background:linear-gradient(135deg,var(--orange),var(--amber));color:#080c18;cursor:pointer;}
+    .nl .nl-ok{color:#4ade80;margin:.6rem 0 0;}
     .label{font-size:.7rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:rgba(251,191,36,0.75);margin:1.6rem 0 .7rem .2rem;}
     /* Featured */
     .feature{display:block;text-decoration:none;border-radius:18px;padding:1.1rem 1.15rem;background:linear-gradient(135deg,rgba(249,115,22,0.18),rgba(251,191,36,0.08));border:1px solid rgba(249,115,22,0.38);position:relative;transition:transform .15s,box-shadow .15s;}
@@ -99,6 +107,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           dataLayer.push({event: 'links_click', target: el.getAttribute('data-pass'), page: window.location.pathname});
         });
       });
+      // Newsletter: also send the lead to /api/subscribe (Brevo list), like main.js does on other pages.
+      var nf=document.getElementById('links-nl');
+      if(nf){nf.addEventListener('submit',function(){var e=nf.querySelector('[name=email]').value,hp=nf.querySelector('[name=_honey]').value;try{fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:e,source:'links-page',page:'/links/',honey:hp}),keepalive:true}).catch(function(){});}catch(x){}(window.dataLayer=window.dataLayer||[]).push({event:'form_submit',form_id:'links-page'});});}
+      if(location.search.indexOf('subscribed=1')!==-1){var ok=document.querySelector('.nl-ok');if(ok)ok.hidden=false;}
       setTimeout(function() { (window.dataLayer = window.dataLayer || []).push({event: 'engaged_60s'}); }, 60000);
     });
   </script>
@@ -138,11 +150,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </nav>
   </header>
 
-  <div class="label">Featured from our Reels</div>
+  <div class="label">From our Reels: tap the word from the video</div>
   <a href="/avatar/" class="feature" data-pass="avatar">
     <div class="top">
       <div class="logo"><img src="/assets/images/logos/synthesia.svg?v=2" onerror="this.onerror=null;this.src='/assets/images/logos/synthesia.png'" alt="Synthesia logo" width="34" height="34"></div>
-      <div><span class="tag">FROM THE REEL</span><strong>Synthesia: AI avatar videos</strong></div>
+      <div><span class="tag">AVATAR</span><strong>Synthesia: AI avatar videos</strong></div>
     </div>
     <p>Turn a script into a presenter video in 140+ languages. Free plan, pricing and the key facts in one page.</p>
     <span class="cta">See the key facts <span aria-hidden="true">→</span></span>
@@ -150,13 +162,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a href="/consolidation/" class="feature" data-pass="consolidation">
     <div class="top">
       <div class="logo"><img src="/assets/images/logos/joiin.png" alt="Joiin logo" width="34" height="34"></div>
-      <div><span class="tag">FROM THE REEL</span><strong>Consolidation cost calculator</strong></div>
+      <div><span class="tag">CONSOLIDATION</span><strong>Consolidation cost calculator</strong></div>
     </div>
     <p>Compare Joiin, Fathom and Spotlight by company count, plus a free Excel consolidation template.</p>
     <span class="cta">Open the free tools <span aria-hidden="true">→</span></span>
   </a>
 
-  <div class="label">Popular buyer's guides</div>
+  
+<div class="grid kwgrid">
+<a href="/shopify/" class="row" data-pass="shopify"><span class="ic"><img src="/assets/images/logos/dropmagic.png" alt="Dropmagic logo" width="28" height="28" loading="lazy"></span><span class="tx"><b class="kw">SHOPIFY</b> Dropmagic<span>One product link to a Shopify page</span></span></a>
+<a href="/geo/" class="row" data-pass="geo"><span class="ic"><img src="/assets/images/logos/llm-pulse.png" alt="LLM Pulse logo" width="28" height="28" loading="lazy"></span><span class="tx"><b class="kw">GEO</b> Does ChatGPT mention you?<span>Our LLM Pulse test</span></span></a>
+<a href="/outreach/" class="row" data-pass="outreach"><span class="ic"><img src="/assets/images/logos/mentionagent.png" alt="MentionAgent logo" width="28" height="28" loading="lazy"></span><span class="tx"><b class="kw">OUTREACH</b> MentionAgent<span>AI link-building outreach</span></span></a>
+<a href="/deals/" class="row" data-pass="deals-kw"><span class="ic brand"><svg viewBox="0 0 24 24"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8zM7 7h.01"/></svg></span><span class="tx"><b class="kw">DEALS</b> Current AI tool deals<span>Codes and Black Friday offers</span></span></a>
+</div>
+<div class="label">Popular buyer's guides</div>
   <div class="grid">
     <a href="/best/ai-video-tools/" class="row" data-pass="best-video"><span class="ic"><img src="/assets/images/logos/synthesia.svg?v=2" alt="" width="28" height="28" loading="lazy"></span><span class="tx">Best AI Video Tools<span>Avatars, editing, clips</span></span></a>
     <a href="/best/ai-voice-generators/" class="row" data-pass="best-voice"><span class="ic"><img src="/assets/images/logos/elevenlabs.svg" alt="" width="28" height="28" loading="lazy"></span><span class="tx">Best AI Voice Generators<span>TTS &amp; voice cloning</span></span></a>
@@ -186,7 +205,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <span class="tx">rankertoolai.com<span>Homepage &amp; newsletter</span></span><span class="chev" aria-hidden="true">›</span>
   </a>
 
-  <p class="disclosure">Some links on our site are affiliate links: we may earn a commission at no extra cost to you. It never changes our rankings. <a href="/affiliate-disclosure/">How we make money</a></p>
+  <div class="label">Free newsletter</div>
+<section class="nl">
+<p>One short email when we review a new tool or find a real deal. No spam, unsubscribe anytime.</p>
+<form action="https://formsubmit.co/b21365b0716308a5caecd30f63ea8e22" method="POST" id="links-nl" aria-label="Newsletter signup">
+<input type="hidden" name="_subject" value="New Newsletter Subscriber (links page) — RankerToolAI">
+<input type="hidden" name="_next" value="https://rankertoolai.com/links/?subscribed=1">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="source" value="links-page">
+<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+<input type="email" name="email" placeholder="your@email.com" required autocomplete="email">
+<button type="submit">Subscribe free</button>
+</form>
+<p class="nl-ok" hidden>Thanks, you are on the list.</p>
+</section>
+<p class="disclosure">Some links on our site are affiliate links: we may earn a commission at no extra cost to you. It never changes our rankings. <a href="/affiliate-disclosure/">How we make money</a></p>
   <p class="footer">© 2026 <a href="/">RankerTool AI</a> · <a href="/privacy-policy/">Privacy</a> · <a href="/contact/">Contact</a></p>
 </main>
 </body>
