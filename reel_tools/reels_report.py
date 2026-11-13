@@ -27,6 +27,10 @@ HERE = Path(__file__).resolve().parent.parent
 KEY = Path(r"C:\Users\Admin\RankerToolAI\ga4_service_account.json")
 SITES = {"RankerToolAI": "542190396", "RankerNest": "548066278"}
 MIN_VISITS = 20
+# utm_source values the posting kits use (make_posts.js); listed even when GA4 has no row for them.
+ALL_CHANNELS = ["instagram", "facebook", "youtube", "tiktok", "pinterest", "x", "linkedin", "threads", "reddit", "quora"]
+NO_LINK = {"reddit"}  # link-free warm-up phase (reddit_phase.json): 0 visits is expected, never flag
+LOW_28D = 3  # fewer visits than this in 28 days = channel is not sending anyone
 VID = re.compile(r"^reel-(?P<slug>.+?)(?:-h(?P<hook>[a-z]))?$")
 
 
@@ -109,6 +113,22 @@ def main():
         dead = [k for k, v in by_vid.items() if v["s"] == 0]
         if dead:
             lines.append("\nKhông ai vào: " + ", ".join(esc(x) for x in dead))
+    # 28-day view per channel, every channel listed even at 0, so a channel that never sends anyone
+    # shows up and the owner can spend less time on it (proposal 13/11: "4 tuần gần như 0 → giảm công").
+    ch28 = defaultdict(blank)
+    for site, prop in SITES.items():
+        try:
+            for rows, k in ((query(svc, prop, 28), "s"), (query(svc, prop, 28, "affiliate_click"), "c")):
+                for _, source, n in rows:
+                    ch28[source.lower()][k] += n
+        except Exception:
+            pass  # already reported in notes above
+    lines.append("\n<b>28 ngày theo kênh (cả 2 site)</b>")
+    for ch in sorted(set(ALL_CHANNELS) | set(ch28), key=lambda c: (-ch28[c]["c"], -ch28[c]["s"], c)):
+        v = ch28[ch]
+        flag = "  ⬇️ gần như 0: giảm công cho kênh này" if v["s"] < LOW_28D and ch in ALL_CHANNELS and ch not in NO_LINK else ("  (đang nuôi tài khoản, chưa đặt link)" if ch in NO_LINK else "")
+        lines.append(f"• {esc(ch)}: {v['s']:.0f} lượt vào · {v['c']:.0f} click{flag}")
+    lines.append("<i>Instagram/TikTok chỉ được đếm khi link ở bio có gắn utm_source; bio để link trần thì lượt vào rơi vào mục direct.</i>")
     if notes:
         lines.append("\n⚠️ " + "\n⚠️ ".join(esc(n) for n in notes))
     msg = "\n".join(lines)[:3900]

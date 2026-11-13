@@ -22,8 +22,12 @@ const SITES = {
   rta: { domain: "rankertoolai.com", brand: "RankerToolAI", tag: "RankerToolAI", email: "bản tin RankerToolAI (Brevo, list #5)" },
 };
 const site = SITES[s.site];
-const link = (source, medium, content = s.slug) =>
-  `https://${site.domain}/${s.kw}/?utm_source=${source}&utm_medium=${medium}&utm_campaign=reel_video&utm_content=reel-${content}`;
+// s.page (optional) = the deep page the reel is embedded on (e.g. review/merlin-ai). Clickable links
+// (YouTube, Facebook, X, LinkedIn, Threads, Quora, Pinterest, email) go straight there; Instagram/TikTok
+// keep the short keyword page because they only have a bio link.
+const target = s.page || s.kw;
+const link = (source, medium, content = s.slug, path = target) =>
+  `https://${site.domain}/${path}/?utm_source=${source}&utm_medium=${medium}&utm_campaign=reel_video&utm_content=reel-${content}`;
 const short = `${site.domain}/${s.kw}`;
 const what = s.disclose === "code" ? "affiliate code" : "affiliate link";
 const disclosure = `#ad — ${what}. We may earn a commission at no extra cost to you.`;
@@ -145,7 +149,7 @@ channels.push({ key: "threads", title: "THREADS", how: "Bài mới → đính k�
 channels.push({ key: "x", title: "X / TWITTER", how: `Bài mới → đính kèm video (${xLen}/280 ký tự)`, fields: [["Nội dung", xText], ["Trả lời ngay dưới bài (link)", xReply()]], settings: ["Nếu bài có link bị ít người xem: xoá link khỏi bài, chỉ để link trong phần trả lời"] });
 channels.push({
   key: "tiktok", title: "TIKTOK", how: "+ → Tải lên → chọn video → dán caption",
-  fields: [["Caption", tiktok], ["Bình luận ghim (đăng xong thì ghim)", ttComment()], ["Link bio (nếu tài khoản cho thêm link)", link("tiktok", "bio")]],
+  fields: [["Caption", tiktok], ["Bình luận ghim (đăng xong thì ghim)", ttComment()], ["Link bio (nếu tài khoản cho thêm link)", link("tiktok", "bio", s.slug, s.kw)]],
   settings: [`Bật "Content disclosure" → "Branded content"`, ai ? `Bật nhãn "AI-generated content"` : aiVoice ? `Bật nhãn "AI-generated content" (giọng đọc AI)` : `Không cần nhãn AI (ảnh sản phẩm thật)`,
     `Nhạc trend: chọn trong thư viện "Commercial" của TikTok/CapCut (tài khoản Business)`],
 });
@@ -237,7 +241,7 @@ fs.rmSync(outDir, { recursive: true, force: true });
 fs.mkdirSync(path.join(outDir, "tg"), { recursive: true });
 
 const bar = "=".repeat(69);
-let txt = `VIDEO: ${s.reel}.mp4  |  SẢN PHẨM: ${s.brandName}  |  TRANG ĐÍCH: ${short}\n`;
+let txt = `VIDEO: ${s.reel}.mp4  |  SẢN PHẨM: ${s.brandName}  |  TRANG ĐÍCH: ${site.domain}/${target}\n`;
 txt += `Mỗi kênh 1 link riêng (utm_source khác nhau) để sau 1 tuần biết kênh nào ra khách.\n`;
 txt += `Trước khi đăng: thêm nhạc trend trong CapCut (giữ âm thanh gốc${ai ? ", nhạc nhỏ 15–25% dưới giọng avatar" : ""}), xuất 1080p 30fps, tắt đoạn đuôi CapCut.\n`;
 if (s.expires) txt += `⚠️ HẠN: KHÔNG đăng sau ${s.expires} (${s.expiresNote}).\n`;
