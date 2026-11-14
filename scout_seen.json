@@ -72,12 +72,6 @@
     "last_reported": "2026-09-20",
     "note": "Part of the wider Sider AI ecosystem (10M+ WAU, confirmed affiliate program via Trackdesk) - see new sibling entry Sider Omni Sidebar"
   },
-  "Almanac (YC S26)": {
-    "vertical_or_category": "AI agent with internal company-context (company-context agent)",
-    "tier": "WATCH",
-    "first_reported": "2026-09-15",
-    "last_reported": "2026-09-15"
-  },
   "Sourclip 2.0": {
     "vertical_or_category": "AI research/productivity Chrome extension for Gemini Notebook/NotebookLM",
     "tier": "HOT",
@@ -347,5 +341,11 @@
     "tier": "HOA_HONG_CAO",
     "first_reported": "2026-11-12",
     "last_reported": "2026-11-12"
+  },
+  "SEOcrawl AI": {
+    "vertical_or_category": "AI SEO/GEO visibility tool",
+    "tier": "HOA_HONG_CAO",
+    "first_reported": "2026-11-15",
+    "last_reported": "2026-11-15"
   }
 }
