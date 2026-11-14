@@ -65,6 +65,8 @@ https://www.rankertoolai.com/* https://rankertoolai.com/:splat 301
 /reviews/jasper-ai-review /review/jasper/ 301
 /reviews/synthesia-review /review/synthesia/ 301
 /review/murf/ /review/murf-ai/ 301
+/compare/elevenlabs-vs-murf-ai/ /compare/elevenlabs-vs-murf/ 301
+/compare/elevenlabs-vs-murf-ai /compare/elevenlabs-vs-murf/ 301
 /review/play-ht/ /alternatives/playht/ 301
 /tool/clearscope /alternatives/clearscope/ 301
 /tool/elevenlabs /review/elevenlabs/ 301
