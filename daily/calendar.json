@@ -774,6 +774,17 @@
   ]
  },
  {
+  "date": "2026-11-28",
+  "entries": [
+   {
+    "type": "reel",
+    "site": "rta",
+    "reel": "bf_still_live_reel_v1",
+    "title": "Black Friday · deal còn chạy (Pictory 50%, NordPass 58%)"
+   }
+  ]
+ },
+ {
   "date": "2026-11-29",
   "entries": [
    {
@@ -785,6 +796,17 @@
   ]
  },
  {
+  "date": "2026-11-30",
+  "entries": [
+   {
+    "type": "reel",
+    "site": "rta",
+    "reel": "pictory_bf_reel_v1_r2",
+    "title": "Cyber Monday · Pictory 50% (đăng lại, hết 2/12)"
+   }
+  ]
+ },
+ {
   "date": "2026-12-01",
   "entries": [
    {
@@ -792,6 +814,17 @@
     "site": "rn",
     "reel": "rankernest_gifts-cleaning_v1_hb",
     "title": "Quà cho người ghét dọn nhà · kiểu B"
+   }
+  ]
+ },
+ {
+  "date": "2026-12-02",
+  "entries": [
+   {
+    "type": "reel",
+    "site": "rta",
+    "reel": "nordpass_bf_reel_v1_r2",
+    "title": "NordPass Black Friday · tuần cuối (đăng lại, hết 9/12)"
    }
   ]
  },

@@ -1,0 +1,13 @@
+{
+  "brand": "rta",
+  "hook": { "kicker": "Black Friday · still live", "pre": "up to", "big": "58%", "unit": "off", "line": "2 software deals we<br /><span class=\"hl\">confirmed on the brand's own site</span>" },
+  "rows": { "kicker": "Still running", "items": [
+    { "n": "50%", "t": "Pictory Professional yearly<br />ends Dec 2" },
+    { "n": "58%", "t": "NordPass Personal yearly<br />+ 3 months, ends Dec 9" }
+  ] },
+  "rules": { "items": [
+    { "icon": "ok", "text": "Both checked on the brand's own Black Friday page" },
+    { "icon": "warn", "text": "First-year price: check the renewal before you pay" }
+  ] },
+  "cta": { "text": "Live deal tracker →", "url": "rankertoolai.com/<span class=\"hl\">deals</span>", "disclose": "#ad · Contains affiliate links" }
+}
