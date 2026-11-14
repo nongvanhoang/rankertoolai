@@ -41,6 +41,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .faq-item h3{margin:0 0 0.5rem;font-size:1rem;}
     .faq-item p{margin:0;color:var(--color-text-muted);font-size:0.875rem;}
     .winner-box{background:linear-gradient(135deg,rgba(34,197,94,0.12),rgba(22,163,74,0.06));border:1px solid rgba(34,197,94,0.3);border-radius:var(--radius-lg);padding:1.25rem;margin-bottom:2rem;}
+    /* JOIIN_CTA_2026-11-14 */
+    .jc-bar{position:fixed;bottom:0;left:0;right:0;background:linear-gradient(90deg,#0a0f1e,#0d1528);border-top:1px solid rgba(22,163,74,0.3);padding:0.65rem 1rem;display:flex;align-items:center;justify-content:space-between;gap:0.75rem;z-index:100;transform:translateY(100%);transition:transform 0.3s ease;}
+    .jc-bar.visible{transform:translateY(0);}
+    .jc-bar-text{font-size:0.85rem;color:#f1f5f9;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+    .jc-bar-text span{color:#94a3b8;font-size:0.8rem;}
+    .jc-bar a{flex-shrink:0;padding:0.55rem 1.1rem;background:linear-gradient(135deg,#16a34a,#4ade80);color:#fff;font-weight:700;border-radius:var(--radius);text-decoration:none;font-size:0.85rem;white-space:nowrap;}
+    .jc-qa{margin:0.85rem 0 0;display:flex;flex-wrap:wrap;align-items:center;gap:0.5rem 0.75rem;}
+    .jc-qa a{display:inline-block;padding:0.55rem 1.2rem;background:linear-gradient(135deg,#16a34a,#4ade80);color:#fff;font-weight:800;border-radius:var(--radius);text-decoration:none;font-size:0.9rem;}
+    .jc-qa small{font-size:0.75rem;color:rgba(148,163,184,0.75);}
+    @media (max-width:600px){.jc-bar-text span{display:none;}}
   </style>
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="RankerToolAI">
@@ -141,6 +151,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="winner-box">
       <strong style="color:#4ade80;">Quick Answer</strong>
       <p style="margin:0.5rem 0 0;color:#e2e8f0;font-size:0.9rem;">MYOB doesn't consolidate company files on its own. Use a master company file or Excel for two simple companies; for more, connect them to an app like <a href="/go/joiin/" rel="nofollow sponsored" target="_blank"><strong style="color:#4ade80;">Joiin</strong></a> (read-only daily sync, eliminations included).</p>
+      <!-- JOIIN_CTA_2026-11-14 --><p class="jc-qa"><a href="/go/joiin/" rel="nofollow sponsored" target="_blank">Try Joiin free for 14 days &rarr;</a><small>Full Max plan, no credit card. Affiliate link.</small></p>
     </div>
 
     <div class="toc" style="margin-bottom:2rem;">
@@ -242,5 +253,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </footer>
 <script src="/assets/js/main.js?v=20261102"></script>
 <script src="/assets/js/cookie-consent.js" defer></script>
+<!-- JOIIN_CTA_2026-11-14 -->
+<div class="jc-bar" id="jc-bar"><div class="jc-bar-text"><strong>Joiin</strong> <span>&middot; 14-day free trial, no card &middot; from $23/mo billed annually</span></div><a href="/go/joiin/" rel="nofollow sponsored" target="_blank">Start Free Trial &rarr;</a></div>
+<script>(function(){var b=document.getElementById('jc-bar');if(!b)return;function f(){b.classList.toggle('visible',window.scrollY>400);}window.addEventListener('scroll',f,{passive:true});f();})();</script>
 </body>
 </html>
