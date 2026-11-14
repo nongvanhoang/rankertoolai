@@ -622,6 +622,17 @@
     "site": "rn",
     "reel": "rankernest_gifts-practical_v1",
     "title": "Quà thiết thực (Rexing) · kiểu A"
+   },
+   {
+    "type": "reel",
+    "site": "rta",
+    "reel": "gearup_price_reel_v1",
+    "title": "GearUP · miễn phí không? Giá trước khi trả tiền"
+   },
+   {
+    "type": "note",
+    "site": "rta",
+    "text": "YouTube bản DÀI (1:46): gearup_price_youtube_v1.mp4 · tiêu đề + mô tả trong RankerToolAI/tu_lieu_review/gearup/DANG_VIDEO_GEARUP.md · gửi Claude link YouTube · YouTube"
    }
   ]
  },
@@ -675,8 +686,8 @@
    {
     "type": "reel",
     "site": "rta",
-    "reel": "synthesia_builder_reel_v1",
-    "title": "Synthesia · tạo người dẫn AI"
+    "reel": "wispr_granola_reel_v1",
+    "title": "Wispr Flow · đổi từ Granola · motion"
    }
   ]
  },
@@ -697,8 +708,8 @@
    {
     "type": "reel",
     "site": "rta",
-    "reel": "wispr_granola_reel_v1",
-    "title": "Wispr Flow · đổi từ Granola · motion"
+    "reel": "merlin_code_reel_v1",
+    "title": "Merlin AI · code MERLIN20 · motion"
    }
   ]
  },
@@ -724,8 +735,8 @@
    {
     "type": "reel",
     "site": "rta",
-    "reel": "synthesia_template_reel_v1",
-    "title": "Synthesia · cách này viết lại kịch bản"
+    "reel": "joiin_voice_reel_b_v1_r2",
+    "title": "Joiin · POV cuối tháng (đăng lại)"
    }
   ]
  },
@@ -746,8 +757,8 @@
    {
     "type": "reel",
     "site": "rta",
-    "reel": "joiin_voice_reel_b_v1_r2",
-    "title": "Joiin · POV cuối tháng (đăng lại)"
+    "reel": "joiin_voice_reel_c_v1_r2",
+    "title": "Joiin · 3 lỗi Excel (đăng lại)"
    }
   ]
  },
@@ -763,17 +774,6 @@
   ]
  },
  {
-  "date": "2026-11-28",
-  "entries": [
-   {
-    "type": "reel",
-    "site": "rta",
-    "reel": "joiin_voice_reel_c_v1_r2",
-    "title": "Joiin · 3 lỗi Excel (đăng lại)"
-   }
-  ]
- },
- {
   "date": "2026-11-29",
   "entries": [
    {
@@ -781,17 +781,6 @@
     "site": "rn",
     "reel": "rankernest_bf-checks_v1_hc",
     "title": "Black Friday: 3 điều cần kiểm tra · kiểu C"
-   }
-  ]
- },
- {
-  "date": "2026-11-30",
-  "entries": [
-   {
-    "type": "reel",
-    "site": "rta",
-    "reel": "merlin_code_reel_v1",
-    "title": "Merlin AI · code MERLIN20 · motion"
    }
   ]
  },

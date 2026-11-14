@@ -778,6 +778,19 @@
     "title": "Quà thiết thực (Rexing) · kiểu A",
     "ch": "Tất cả kênh",
     "file": "rankernest_gifts-practical_v1"
+   },
+   {
+    "site": "rta",
+    "kind": "video",
+    "title": "GearUP · miễn phí không? Giá trước khi trả tiền",
+    "ch": "Instagram · YouTube Shorts · TikTok",
+    "file": "gearup_price_reel_v1"
+   },
+   {
+    "site": "rta",
+    "kind": "task",
+    "title": "YouTube bản DÀI (1:46): gearup_price_youtube_v1.mp4 · tiêu đề + mô tả trong RankerToolAI/tu_lieu_review/gearup/DANG_VIDEO_GEARUP.md · gửi Claude link YouTube",
+    "ch": "YouTube"
    }
   ]
  },
@@ -835,8 +848,8 @@
    {
     "site": "rta",
     "kind": "video",
-    "file": "synthesia_builder_reel_v1",
-    "title": "Synthesia · tạo người dẫn AI",
+    "file": "wispr_granola_reel_v1",
+    "title": "Wispr Flow · đổi từ Granola · motion",
     "ch": "Instagram · YouTube Shorts · TikTok"
    }
   ]
@@ -859,8 +872,8 @@
    {
     "site": "rta",
     "kind": "video",
-    "file": "wispr_granola_reel_v1",
-    "title": "Wispr Flow · đổi từ Granola · motion",
+    "file": "merlin_code_reel_v1",
+    "title": "Merlin AI · code MERLIN20 · motion",
     "ch": "Instagram · YouTube Shorts · TikTok"
    }
   ]
@@ -890,8 +903,8 @@
    {
     "site": "rta",
     "kind": "video",
-    "file": "synthesia_template_reel_v1",
-    "title": "Synthesia · cách này viết lại kịch bản",
+    "file": "joiin_voice_reel_b_v1_r2",
+    "title": "Joiin · POV cuối tháng (đăng lại)",
     "ch": "Instagram · YouTube Shorts · TikTok"
    }
   ]
@@ -914,8 +927,8 @@
    {
     "site": "rta",
     "kind": "video",
-    "file": "joiin_voice_reel_b_v1_r2",
-    "title": "Joiin · POV cuối tháng (đăng lại)",
+    "file": "joiin_voice_reel_c_v1_r2",
+    "title": "Joiin · 3 lỗi Excel (đăng lại)",
     "ch": "Instagram · YouTube Shorts · TikTok"
    }
   ]
@@ -933,18 +946,6 @@
   ]
  },
  {
-  "date": "2026-11-28",
-  "items": [
-   {
-    "site": "rta",
-    "kind": "video",
-    "file": "joiin_voice_reel_c_v1_r2",
-    "title": "Joiin · 3 lỗi Excel (đăng lại)",
-    "ch": "Instagram · YouTube Shorts · TikTok"
-   }
-  ]
- },
- {
   "date": "2026-11-29",
   "items": [
    {
@@ -953,18 +954,6 @@
     "title": "Black Friday: 3 điều cần kiểm tra · kiểu C",
     "ch": "Tất cả kênh",
     "file": "rankernest_bf-checks_v1_hc"
-   }
-  ]
- },
- {
-  "date": "2026-11-30",
-  "items": [
-   {
-    "site": "rta",
-    "kind": "video",
-    "file": "merlin_code_reel_v1",
-    "title": "Merlin AI · code MERLIN20 · motion",
-    "ch": "Instagram · YouTube Shorts · TikTok"
    }
   ]
  },

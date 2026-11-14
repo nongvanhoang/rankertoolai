@@ -14,7 +14,8 @@ const specPath = process.argv[2];
 const s = JSON.parse(fs.readFileSync(specPath, "utf8"));
 const ROOT = path.join(__dirname, "..");
 // Reels voiced by add_voice.js (AI voice): say so in the copy, like the Joiin voice reels' caveat.
-const aiVoice = !!JSON.parse(fs.readFileSync(path.join(__dirname, "voice_scripts.json"), "utf8"))[s.slug];
+// s.aiVoice: reel voiced outside add_voice.js (e.g. a long screen-recording edit) — same labels.
+const aiVoice = !!s.aiVoice || !!JSON.parse(fs.readFileSync(path.join(__dirname, "voice_scripts.json"), "utf8"))[s.slug];
 if (aiVoice && !/AI-generated/.test(s.caveat || "")) s.caveat = [s.caveat, "Voiceover is AI-generated."].filter(Boolean).join(" ");
 
 const SITES = {
