@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5Z86G265');</script>
+<!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <title>How to Use Mermaid Diagrams in Miro (and Let AI Draw Them)</title>
+  <meta name="description" content="Turn Mermaid code into editable Miro diagrams: paste it, build it from the Diagram format, or let Claude Code or Cursor draw it through Miro MCP. Steps, limits and pricing.">
+  <link rel="canonical" href="https://rankertoolai.com/blog/mermaid-diagrams-in-miro/">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"How to Use Mermaid Diagrams in Miro (and Let AI Draw Them)","description":"Turn Mermaid code into editable Miro diagrams: paste it, build it from the Diagram format, or let Claude Code or Cursor draw it through Miro MCP. Steps, limits and pricing.","datePublished":"2026-11-17","dateModified":"2026-11-17","author":{"@type":"Person","name":"Hoang Nong","url":"https://rankertoolai.com/author/hoang-nong/"},"publisher":{"@type":"Organization","name":"RankerToolAI","url":"https://rankertoolai.com/"},"mainEntityOfPage":"https://rankertoolai.com/blog/mermaid-diagrams-in-miro/"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does Miro support Mermaid?","acceptedAnswer":{"@type":"Answer","text":"Yes. Miro renders Mermaid code as a Diagram on the board. Flowcharts become native, editable Miro shapes; other Mermaid diagram types render as Mermaid SVG for now, with native state, sequence, class and ER diagrams listed as coming soon in Miro's help center."}},{"@type":"Question","name":"Is Mermaid in Miro free?","acceptedAnswer":{"@type":"Answer","text":"Miro's pricing page lists Mermaid diagrams and MCP on every plan, including Free. The Free plan is limited to 3 editable boards and a small monthly allowance of AI credits. Paid plans start at $8 per member per month billed yearly."}},{"@type":"Question","name":"Can I edit a Mermaid diagram visually in Miro?","acceptedAnswer":{"@type":"Answer","text":"Yes, for flowcharts. Changes you make on the board update the Mermaid code, and changes to the code re-render the diagram. Miro handles the layout automatically, so you can't drag individual shapes anywhere you like."}},{"@type":"Question","name":"Which AI tools can draw Mermaid diagrams on a Miro board?","acceptedAnswer":{"@type":"Answer","text":"Any client that connects to the Miro MCP server. Miro names Claude, Claude Code, Cursor, VS Code and Lovable. You authorize the connection with OAuth; on Enterprise plans an admin has to enable Miro MCP first."}},{"@type":"Question","name":"Can I get my Mermaid code back out of Miro?","acceptedAnswer":{"@type":"Answer","text":"Yes. You can copy the Mermaid syntax from the code panel back into your docs or repository, or export the diagram as JPG, SVG or PDF."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://rankertoolai.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://rankertoolai.com/blog/"},{"@type":"ListItem","position":3,"name":"Mermaid Diagrams in Miro","item":"https://rankertoolai.com/blog/mermaid-diagrams-in-miro/"}]}</script>
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico"><link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <style>
+    #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
+    @media(min-width:768px){#nav-toggle{display:none;}}
+    #nav-menu{display:none;}
+    #nav-menu.is-open{display:flex;flex-direction:column;position:absolute;top:64px;left:0;right:0;background:#080c18;border-bottom:1px solid rgba(255,255,255,0.08);padding:1rem;z-index:200;box-shadow:var(--shadow-lg);}
+    @media(min-width:768px){#nav-menu{display:flex!important;flex-direction:row;position:static;border:none;padding:0;box-shadow:none;}}
+    .site-header{position:relative;}
+    .tool-card{background:var(--color-bg-alt);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:1.5rem;margin-bottom:1.5rem;position:relative;}
+    .tool-card.featured{border-color:rgba(249,115,22,0.5);background:linear-gradient(135deg,rgba(249,115,22,0.05),rgba(251,191,36,0.02));}
+    .rank-badge{position:absolute;top:-12px;left:1.5rem;background:var(--color-primary);color:white;font-size:0.7rem;font-weight:800;padding:0.2rem 0.65rem;border-radius:9999px;text-transform:uppercase;letter-spacing:0.05em;}
+    .rank-badge.top3{background:linear-gradient(90deg,#f97316,#fbbf24);}
+    .tool-score{display:inline-flex;align-items:center;gap:0.35rem;background:#0d1224;border:1px solid var(--color-border);border-radius:var(--radius);padding:0.25rem 0.65rem;font-size:0.85rem;font-weight:700;color:#f97316;}
+    .tag{display:inline-block;background:rgba(249,115,22,0.1);border:1px solid rgba(249,115,22,0.25);color:#fbbf24;font-size:0.7rem;padding:0.15rem 0.5rem;border-radius:9999px;margin:0.15rem;}
+    .faq-item{border:1px solid var(--color-border);border-radius:var(--radius);margin-bottom:0.75rem;padding:1.25rem;}
+    .faq-item h3{margin:0 0 0.5rem;font-size:1rem;}
+    .faq-item p{margin:0;color:var(--color-text-muted);font-size:0.875rem;}
+    .winner-box{background:linear-gradient(135deg,rgba(34,197,94,0.12),rgba(22,163,74,0.06));border:1px solid rgba(34,197,94,0.3);border-radius:var(--radius-lg);padding:1.25rem;margin-bottom:2rem;}
+    .code-block{background:#0b1120;border:1px solid rgba(255,255,255,0.1);border-radius:var(--radius);padding:1rem 1.25rem;overflow-x:auto;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:0.85rem;line-height:1.6;color:#e2e8f0;margin:1rem 0;white-space:pre;}
+  </style>
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="RankerToolAI">
+  <meta property="og:title" content="How to Use Mermaid Diagrams in Miro (and Let AI Draw Them)">
+  <meta property="og:description" content="Turn Mermaid code into editable Miro diagrams: paste it, build it from the Diagram format, or let Claude Code or Cursor draw it through Miro MCP. Steps, limits and pricing.">
+  <meta property="og:url" content="https://rankertoolai.com/blog/mermaid-diagrams-in-miro/">
+  <meta property="og:image" content="https://rankertoolai.com/assets/images/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@rankertoolai">
+    <script async src="/assets/js/pint.js"></script>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7922606734780809" crossorigin="anonymous"></script>
+
+  <!-- ═══ ANALYTICS & ADS TRACKING ═══ -->
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var passKeys = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','gclid'];
+      var incoming = new URLSearchParams(window.location.search);
+      document.querySelectorAll('a[href*="/go/"]').forEach(function(el) {
+        el.addEventListener('click', function() {
+          try {
+            var dest = new URL(el.href, window.location.href);
+            passKeys.forEach(function(k) {
+              if (incoming.has(k) && !dest.searchParams.has(k)) dest.searchParams.set(k, incoming.get(k));
+            });
+            el.href = dest.toString();
+          } catch (e) {}
+
+          var _tool = (el.href.split('/go/')[1] || '').split(/[?#]/)[0].replace(/\//g,'') || 'unknown';
+          var _comm = (window.AFFILIATE_COMMISSIONS && window.AFFILIATE_COMMISSIONS[_tool]) || {value:1.0,currency:'USD'};
+          dataLayer.push({
+            event: 'affiliate_click',
+            tool: _tool,
+            page: window.location.pathname,
+            value: _comm.value,
+            currency: _comm.currency
+          });
+        });
+      });
+
+      setTimeout(function() {
+        dataLayer.push({event: 'engaged_60s'});
+      }, 60000);
+    });
+  </script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window,document,"clarity","script","x97zf4vn2v");
+  </script>
+  <!-- ══════════════════════════════════ -->
+  </head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Z86G265"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="/" class="site-logo" style="-webkit-text-fill-color:unset;background:none;display:flex;align-items:center;gap:0.5rem;text-decoration:none;">
+        <img src="/assets/images/logo-dark.webp" onerror="this.src='/assets/images/logo-dark.png'" alt="Dark logo" style="height:38px;width:38px;object-fit:contain;">
+        <span style="font-size:1.15rem;font-weight:900;background:linear-gradient(135deg,#f97316,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">RankerTool<span style="background:linear-gradient(135deg,#22c55e,#4ade80);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;"> AI</span></span>
+      </a>
+      <button id="nav-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
+      <nav aria-label="Primary" style="display:contents">
+      <ul class="nav-primary" id="nav-menu" role="list">
+        <li><a href="/review/">Reviews</a></li><li><a href="/compare/">Compare</a></li>
+        <li><a href="/alternatives/">Alternatives</a></li><li><a href="/best/" style="color:var(--color-primary);">Best Tools</a></li>
+        <li><a href="/category/">Categories</a></li><li><a href="/blog/">Blog</a></li>
+        <li><a href="/deals/" style="color:#fbbf24;font-weight:600;">Deals</a></li>
+      </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <nav class="breadcrumb">
+    <a href="/">Home</a><span class="breadcrumb-sep">›</span>
+    <a href="/blog/">Blog</a><span class="breadcrumb-sep">›</span>
+    <span>Mermaid Diagrams in Miro</span>
+  </nav>
+</div>
+
+<main class="container" style="padding-top:1rem;padding-bottom:4rem;">
+  <div style="max-width:760px;">
+    <h1 style="font-size:clamp(1.6rem,4vw,2.25rem);margin-bottom:0.5rem;">How to Use Mermaid Diagrams in Miro (and Let AI Draw Them for You)</h1>
+    <p style="color:var(--color-text-muted);font-size:1rem;margin-bottom:0.5rem;">By <a href="/author/hoang-nong/">Hoang Nong</a> · November 17, 2026 · Based on Miro's help center, product pages and pricing page, checked November 17, 2026. See our <a href="/methodology/">methodology</a>.</p>
+    <p style="font-size:0.8rem;color:rgba(148,163,184,0.7);margin-bottom:1rem;">Disclosure: this post is part of a paid content campaign from Miro, and links to Miro are marked as sponsored. The steps, limits and opinions below are our own. <a href="/affiliate-disclosure/">Read our disclosure</a>.</p>
+
+    <div class="winner-box">
+      <strong style="color:#4ade80;">Quick Answer</strong>
+      <p style="margin:0.5rem 0 0;color:#e2e8f0;font-size:0.9rem;">Paste Mermaid code straight onto a Miro board, or open <strong>Formats &gt; Diagram &gt; Build with code</strong>, and Miro turns it into a diagram. Flowcharts become real Miro shapes you can edit on the canvas, and the code updates as you edit. If you use an AI coding tool such as Claude Code or Cursor, connect it to the Miro MCP server and ask it to draw the diagram for you, for example an architecture map of your repository. Mermaid and MCP are listed on every Miro plan, including Free.</p>
+    </div>
+
+    <div class="toc" style="margin-bottom:2rem;">
+      <h4>Quick Navigation</h4>
+      <ol>
+        <li><a href="#what">What Mermaid Is, in 30 Seconds</a></li>
+        <li><a href="#three-ways">Three Ways to Get Mermaid into Miro</a></li>
+        <li><a href="#walkthrough">Walkthrough: From Code to an Editable Diagram</a></li>
+        <li><a href="#ai">Let an AI Agent Draw It Through Miro MCP</a></li>
+        <li><a href="#types">Which Diagram Types Are Editable</a></li>
+        <li><a href="#limits">Limits to Know Before You Rely on It</a></li>
+        <li><a href="#pricing">What It Costs</a></li>
+        <li><a href="#who">Who Should Use It</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ol>
+    </div>
+
+    <section id="what" style="margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.08);">
+      <h2 style="font-size:1.3rem;color:#f1f5f9;margin-bottom:1rem;">What Mermaid Is, in 30 Seconds</h2>
+      <p style="color:var(--color-text-muted);line-height:1.8;">Mermaid is a text format for diagrams. You describe boxes and arrows in a few lines, and a renderer draws them. Here is a complete flowchart of how a support chatbot might hand a ticket to a human:</p>
+<pre class="code-block"><code>flowchart TD
+    A[Customer message] --&gt; B{Can the bot answer?}
+    B -- Yes --&gt; C[Bot replies]
+    B -- No --&gt; D[Create ticket]
+    D --&gt; E[Assign to support agent]
+    E --&gt; F[Agent replies]
+    C --&gt; G((Done))
+    F --&gt; G</code></pre>
+      <p style="color:var(--color-text-muted);line-height:1.8;">Because it's plain text, Mermaid lives happily in README files, pull requests, docs and AI chats. ChatGPT, Claude and most coding assistants write it well. The weak spot has always been collaboration: a rendered Mermaid image is static, so non-technical teammates can't comment on it or move things around. That's the gap Miro's Mermaid support is built to close.</p>
+    </section>
+
+    <section id="three-ways" style="margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.08);">
+      <h2 style="font-size:1.3rem;color:#f1f5f9;margin-bottom:1rem;">Three Ways to Get Mermaid into Miro</h2>
+      <div style="overflow-x:auto;">
+        <table class="comparison-table">
+          <thead><tr><th>Method</th><th>How</th><th>Best when</th></tr></thead>
+          <tbody>
+            <tr><td><strong>1. Paste</strong></td><td>Copy Mermaid code from anywhere and paste it onto a board</td><td>You already have the code in a doc, PR or AI chat</td></tr>
+            <tr><td><strong>2. Build with code</strong></td><td>Creation bar &gt; <strong>Formats</strong> &gt; <strong>Diagram</strong> &gt; <strong>Build with code</strong>, then paste code or pick a Mermaid template</td><td>You're starting from scratch or want a template</td></tr>
+            <tr><td><strong>3. AI agent via MCP</strong></td><td>Connect Claude Code, Cursor, VS Code or another MCP client to Miro and ask it for a diagram</td><td>You want a diagram of real code, or you'd rather describe it than write it</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="color:var(--color-text-muted);line-height:1.8;">All three end in the same place: a Miro Diagram with the Mermaid code attached. Miro says it supports shapes from Mermaid versions 10 and 11, so code copied from Mermaid Live or other Mermaid tools should render with the shapes you intended. This replaces the older Mermaid app from the Miro Marketplace.</p>
+    </section>
+
+    <section id="walkthrough" style="margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.08);">
+      <h2 style="font-size:1.3rem;color:#f1f5f9;margin-bottom:1rem;">Walkthrough: From Code to an Editable Diagram</h2>
+      <p style="color:var(--color-text-muted);line-height:1.8;">These steps follow Miro's own guide. Use the chatbot flowchart above if you want something to practise with.</p>
+      <ol style="color:var(--color-text-muted);line-height:1.9;padding-left:1.5rem;">
+        <li><strong>Open a board</strong> and click the Creation bar on the left.</li>
+        <li><strong>Choose Formats, then Diagram</strong>, and click <strong>Build with code</strong>.</li>
+        <li><strong>Paste your Mermaid code</strong> into the code panel, or choose one of the Mermaid templates. The diagram renders as Miro shapes with an automatic layout.</li>
+        <li><strong>Open it in focus mode</strong> to edit. Select a shape, line or label and change it directly, switch the layout direction (top to bottom, left to right) or adjust spacing from narrow to wide.</li>
+        <li><strong>Edit the code if you prefer.</strong> Open the code panel and change the syntax. Miro keeps the code and the diagram in sync both ways, so whichever you edit, the other follows.</li>
+        <li><strong>Add meaning.</strong> Colour-code shapes to show status, an incident path or what's changing, then invite teammates to comment right on the diagram.</li>
+        <li><strong>Close the loop.</strong> Copy the Mermaid code back into your repo or docs, export the diagram as JPG, SVG or PDF, or share a focus-mode link.</li>
+      </ol>
+      <p style="color:var(--color-text-muted);line-height:1.8;">The two-way sync is the part worth noticing. With most Mermaid tools, someone edits the picture and the code goes stale, or the code changes and the picture in the slide deck doesn't. In Miro, the code panel and the board are the same object.</p>
+      <div style="background:linear-gradient(135deg,rgba(74,222,128,0.10),rgba(34,197,94,0.05));border:1px solid rgba(74,222,128,0.3);border-radius:var(--radius-lg);padding:1.5rem;margin:2rem 0;text-align:center;">
+        <p style="margin:0 0 0.25rem;font-weight:700;font-size:1.1rem;color:#f1f5f9;">Try Mermaid diagrams in Miro</p>
+        <p style="margin:0 0 1rem;font-size:0.875rem;color:rgba(148,163,184,0.8);">Listed on every plan, including Free (3 editable boards).</p>
+        <a href="https://miro.com/diagramming/mermaid-diagram/" class="btn btn-primary" rel="sponsored noopener" target="_blank" style="font-weight:800;padding:0.75rem 2rem;">Open Miro's Mermaid Editor →</a>
+        <p style="margin:0.75rem 0 0;font-size:0.75rem;color:rgba(148,163,184,0.6);">Sponsored link.</p>
+      </div>
+    </section>
+
+    <section id="ai" style="margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.08);">
+      <h2 style="font-size:1.3rem;color:#f1f5f9;margin-bottom:1rem;">Let an AI Agent Draw It Through Miro MCP</h2>
+      <p style="color:var(--color-text-muted);line-height:1.8;">MCP (Model Context Protocol) is the standard way AI assistants connect to outside tools. Miro runs an MCP server that lets an assistant read your boards and write to them, including Mermaid diagrams. Miro names Claude, Claude Code, Cursor, VS Code and Lovable as supported clients.</p>
+      <h3 style="font-size:1.05rem;color:#f1f5f9;margin:1.5rem 0 0.5rem;">How the connection works</h3>
+      <ol style="color:var(--color-text-muted);line-height:1.9;padding-left:1.5rem;">
+        <li><strong>Add the Miro MCP server</strong> in your AI client. Follow the client-specific setup in Miro's help center, because each client adds servers slightly differently.</li>
+        <li><strong>Authorize with OAuth.</strong> You sign in to Miro and choose what the assistant can reach. On Free, Starter and Business plans, MCP access is already switched on and only needs your authorization.</li>
+        <li><strong>On Enterprise,</strong> a company admin has to enable Miro MCP first, and can limit it to certain teams or user groups.</li>
+        <li><strong>Ask for a diagram</strong> and give the assistant a board link to write to.</li>
+      </ol>
+      <h3 style="font-size:1.05rem;color:#f1f5f9;margin:1.5rem 0 0.5rem;">Prompts worth trying</h3>
+      <p style="color:var(--color-text-muted);line-height:1.8;">The most useful requests are the ones that are tedious to draw by hand. A few starting points:</p>
+<pre class="code-block"><code>Read this repository and draw a flowchart of the main services
+and the calls between them on this Miro board: [board link]
+
+Turn the checkout logic in /src/payments into a Mermaid flowchart
+on the board, and colour the error paths red.
+
+Read the diagram on [board link] plus the team's comments, then
+draft an architecture decision record I can open as a pull request.</code></pre>
+      <p style="color:var(--color-text-muted);line-height:1.8;">Miro's own demo shows Claude Code reading a repository end to end and building an editable architecture diagram on a board. The last prompt above is the round trip Miro describes: an agent writes the diagram, people discuss it on the board, and another agent reads the diagram and comments back to update docs or code. When an agent changes a diagram, Miro says it can add a legend marking what it added, removed or changed, which makes AI edits easier to review.</p>
+      <p style="color:var(--color-text-muted);line-height:1.8;">Treat AI-drawn architecture diagrams like AI-written code: check them against the source before you share them as the truth. If you're choosing an assistant for this kind of work, our <a href="/review/claude/">Claude review</a>, <a href="/review/cursor/">Cursor review</a> and <a href="/best/ai-coding-tools/">best AI coding tools</a> list compare the main options.</p>
+    </section>
+
+    <section id="types" style="margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.08);">
+      <h2 style="font-size:1.3rem;color:#f1f5f9;margin-bottom:1rem;">Which Diagram Types Are Editable</h2>
+      <p style="color:var(--color-text-muted);line-height:1.8;">Not every Mermaid diagram becomes native Miro shapes yet. This is the support table from Miro's help center as of November 2026:</p>
+      <div style="overflow-x:auto;">
+        <table class="comparison-table">
+          <thead><tr><th>Diagram type</th><th>Rendered as</th><th>Visually editable?</th></tr></thead>
+          <tbody>
+            <tr><td>Flowcharts</td><td>Native Miro shapes</td><td>Yes</td></tr>
+            <tr><td>State</td><td>Native Miro shapes</td><td>Coming soon</td></tr>
+            <tr><td>Sequence</td><td>Native Miro shapes</td><td>Coming soon</td></tr>
+            <tr><td>Class</td><td>Native Miro shapes</td><td>Coming soon</td></tr>
+            <tr><td>ER (entity-relationship)</td><td>Native Miro shapes</td><td>Coming soon</td></tr>
+            <tr><td>Other Mermaid diagrams (Gantt, pie and so on)</td><td>Mermaid SVG</td><td>No</td></tr>
+            <tr><td>Diagrams Mermaid itself doesn't support, such as swimlanes</td><td colspan="2">Not available</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="color:var(--color-text-muted);line-height:1.8;">For sequence diagrams, for example, you can still paste the code and get a correct diagram on the board, but you'll change it by editing the code rather than by dragging shapes. Here's a short one to try:</p>
+<pre class="code-block"><code>sequenceDiagram
+    participant U as User
+    participant A as App
+    participant P as Payment API
+    U-&gt;&gt;A: Click "Pay"
+    A-&gt;&gt;P: Create charge
+    P--&gt;&gt;A: Charge succeeded
+    A--&gt;&gt;U: Show receipt</code></pre>
+      <p style="color:var(--color-text-muted);line-height:1.8;">Miro says Mermaid code can run to 30,000 lines and that it has tested flowcharts with more than 500 nodes, with no hard limit on how many Mermaid diagrams a board holds.</p>
+    </section>
+
+    <section id="limits" style="margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.08);">
+      <h2 style="font-size:1.3rem;color:#f1f5f9;margin-bottom:1rem;">Limits to Know Before You Rely on It</h2>
+      <ul style="color:var(--color-text-muted);line-height:2;padding-left:1.5rem;">
+        <li><strong>No free placement.</strong> Mermaid diagrams use Miro's automatic layout, so you can't drag a single shape to an exact spot. You choose direction and spacing, and Miro does the rest. If pixel-perfect placement matters, draw that diagram with regular Miro shapes instead.</li>
+        <li><strong>Only flowcharts are fully editable today.</strong> Sequence, class, state and ER diagrams are listed as coming soon; everything else stays an SVG.</li>
+        <li><strong>The Free plan is small.</strong> Three editable boards and a handful of AI credits is enough to try the feature, not to run a team's documentation on it.</li>
+        <li><strong>Enterprise needs an admin.</strong> MCP is off until an admin enables it, which is sensible for security but adds a step.</li>
+        <li><strong>MCP has daily limits.</strong> Miro says MCP is on all plans but with a different maximum number of API calls per day on each, so heavy agent use may push you to a higher plan.</li>
+      </ul>
+    </section>
+
+    <section id="pricing" style="margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.08);">
+      <h2 style="font-size:1.3rem;color:#f1f5f9;margin-bottom:1rem;">What It Costs</h2>
+      <div style="overflow-x:auto;">
+        <table class="comparison-table">
+          <thead><tr><th>Plan</th><th>Price</th><th>Boards</th><th>AI credits</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Free</strong></td><td>$0</td><td>3 editable boards</td><td>10 per month</td></tr>
+            <tr><td><strong>Starter</strong></td><td>$8/member/mo, billed yearly</td><td>Unlimited</td><td>25 per member/mo</td></tr>
+            <tr><td><strong>Business</strong></td><td>$20/member/mo, billed yearly</td><td>Unlimited</td><td>50 per member/mo</td></tr>
+            <tr><td><strong>Enterprise</strong></td><td>Custom, from 30 members</td><td>Unlimited</td><td>From 2,500 per month</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:0.8rem;color:rgba(148,163,184,0.6);margin-top:0.5rem;">From <a href="https://miro.com/pricing/" rel="sponsored noopener" target="_blank">Miro's pricing page</a>, checked November 17, 2026. Monthly billing costs more; check the page before you buy.</p>
+      <p style="color:var(--color-text-muted);line-height:1.8;">AI credits are spent by Miro's built-in AI features. If you connect your own assistant through MCP, that assistant's subscription is a separate cost.</p>
+    </section>
+
+    <section id="who" style="margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.08);">
+      <h2 style="font-size:1.3rem;color:#f1f5f9;margin-bottom:1rem;">Who Should Use It</h2>
+      <ul style="color:var(--color-text-muted);line-height:2;padding-left:1.5rem;">
+        <li><strong>Engineering teams</strong> that already keep Mermaid in their repos and want product managers and designers to comment without learning the syntax.</li>
+        <li><strong>Developers using Claude Code, Cursor or VS Code</strong> who want architecture and flow diagrams generated from real code instead of drawn from memory.</li>
+        <li><strong>Product and ops people</strong> who'd rather describe a process to an AI assistant than drag boxes around, then tidy the result on the board.</li>
+      </ul>
+      <p style="color:var(--color-text-muted);line-height:1.8;">If you only need a quick diagram in a README and nobody else will touch it, a free Mermaid renderer is enough. Miro earns its place when the diagram has to be discussed, changed by several people and kept in sync with the code.</p>
+    </section>
+
+    <section id="faq">
+      <h2>FAQ</h2>
+      <div class="faq-item"><h3>Does Miro support Mermaid?</h3><p>Yes. Miro renders Mermaid code as a Diagram on the board. Flowcharts become native, editable Miro shapes; other Mermaid diagram types render as Mermaid SVG for now, with native state, sequence, class and ER diagrams listed as coming soon in Miro's help center.</p></div>
+      <div class="faq-item"><h3>Is Mermaid in Miro free?</h3><p>Miro's pricing page lists Mermaid diagrams and MCP on every plan, including Free. The Free plan is limited to 3 editable boards and a small monthly allowance of AI credits. Paid plans start at $8 per member per month billed yearly.</p></div>
+      <div class="faq-item"><h3>Can I edit a Mermaid diagram visually in Miro?</h3><p>Yes, for flowcharts. Changes you make on the board update the Mermaid code, and changes to the code re-render the diagram. Miro handles the layout automatically, so you can't drag individual shapes anywhere you like.</p></div>
+      <div class="faq-item"><h3>Which AI tools can draw Mermaid diagrams on a Miro board?</h3><p>Any client that connects to the Miro MCP server. Miro names Claude, Claude Code, Cursor, VS Code and Lovable. You authorize the connection with OAuth; on Enterprise plans an admin has to enable Miro MCP first.</p></div>
+      <div class="faq-item"><h3>Can I get my Mermaid code back out of Miro?</h3><p>Yes. You can copy the Mermaid syntax from the code panel back into your docs or repository, or export the diagram as JPG, SVG or PDF.</p></div>
+    </section>
+    <div style="margin-top:3rem;">
+      <h3>Related</h3>
+      <div class="related-grid">
+        <a href="/review/claude/" class="related-card"><div class="related-card-label">Review</div><div class="related-card-title">Claude Review</div></a>
+        <a href="/review/cursor/" class="related-card"><div class="related-card-label">Review</div><div class="related-card-title">Cursor Review</div></a>
+        <a href="/review/github-copilot/" class="related-card"><div class="related-card-label">Review</div><div class="related-card-title">GitHub Copilot Review</div></a>
+        <a href="/best/ai-coding-tools/" class="related-card"><div class="related-card-label">Best Of</div><div class="related-card-title">Best AI Coding Tools</div></a>
+        <a href="/best/ai-productivity-tools/" class="related-card"><div class="related-card-label">Best Of</div><div class="related-card-title">Best AI Productivity Tools</div></a>
+        <a href="/blog/how-to-use-claude-ai/" class="related-card"><div class="related-card-label">Guide</div><div class="related-card-title">How to Use Claude AI</div></a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="/" style="display:flex;align-items:center;gap:0.5rem;text-decoration:none;"><img src="/assets/images/logo-dark.webp" onerror="this.src='/assets/images/logo-dark.png'" alt="Dark logo" style="height:32px;width:32px;object-fit:contain;" loading="lazy"><span style="font-size:1rem;font-weight:900;background:linear-gradient(135deg,#f97316,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">RankerTool AI</span></a><p class="footer-tagline">Independent AI &amp; software tool reviews.</p></div>
+      <div class="footer-col"><h5>This Category</h5><ul><li><a href="/review/claude/">Claude Review</a></li><li><a href="/review/cursor/">Cursor Review</a></li><li><a href="/best/ai-coding-tools/">AI Coding Tools</a></li></ul></div>
+      <div class="footer-col"><h5>Best Tools</h5><ul><li><a href="/best/data-recovery-backup-software/">Data Recovery & Backup</a></li><li><a href="/best/ai-writing-tools/">AI Writing Tools</a></li><li><a href="/best/free-ai-tools/">Free AI Tools</a></li></ul></div>
+      <div class="footer-col"><h5>About</h5><ul><li><a href="/methodology/">Methodology</a></li><li><a href="/affiliate-disclosure/">Disclosure</a></li><li><a href="/privacy-policy/">Privacy</a></li></ul></div>
+    </div>
+    <div class="footer-disclosure"><strong>Affiliate Disclosure:</strong> This page contains affiliate links. <a href="/affiliate-disclosure/" style="color:#9ca3af;">Full disclosure →</a></div>
+    <div class="footer-bottom"><span>© 2026 RankerToolAI</span><span>Updated: November 2026</span></div>
+  </div>
+</footer>
+<script src="/assets/js/main.js?v=20261102"></script>
+<script src="/assets/js/cookie-consent.js" defer></script>
+</body>
+</html>
