@@ -1286,4 +1286,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
+  <url>
+    <loc>https://rankertoolai.com/alternatives/midjourney/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
