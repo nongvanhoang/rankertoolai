@@ -109,18 +109,6 @@
     "last_reported": "2026-09-20",
     "note": "Affiliate program (Marquorum, 30% recurring lifetime) confirmed via press release, but the actual product homepage could not be confidently identified (revenuescout.io appears to be an unrelated lead-gen agency) - verify real domain before any action"
   },
-  "Wisry": {
-    "vertical_or_category": "AI ad creative / cloning quang cao ecommerce",
-    "tier": "WATCH",
-    "first_reported": "2026-09-19",
-    "last_reported": "2026-09-19"
-  },
-  "Fraime": {
-    "vertical_or_category": "AI media generation platform (open-source, self-hosted)",
-    "tier": "WATCH",
-    "first_reported": "2026-09-19",
-    "last_reported": "2026-09-19"
-  },
   "Loqua": {
     "vertical_or_category": "AI gõ chữ bằng giọng nói (voice dictation, Mac/Windows)",
     "tier": "WATCH",
@@ -335,5 +323,17 @@
     "tier": "HOA_HONG_CAO",
     "first_reported": "2026-11-15",
     "last_reported": "2026-11-15"
+  },
+  "Magai": {
+    "vertical_or_category": "AI SaaS affiliate",
+    "tier": "WATCH",
+    "first_reported": "2026-11-19",
+    "last_reported": "2026-11-19"
+  },
+  "GoEnhance AI": {
+    "vertical_or_category": "AI SaaS affiliate",
+    "tier": "WATCH",
+    "first_reported": "2026-11-19",
+    "last_reported": "2026-11-19"
   }
 }
