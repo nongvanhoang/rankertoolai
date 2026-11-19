@@ -23,12 +23,6 @@
     "first_reported": "2026-09-23",
     "last_reported": "2026-09-23"
   },
-  "Kilo Code": {
-    "vertical_or_category": "AI coding agent (IDE/CLI/cloud)",
-    "tier": "WATCH",
-    "first_reported": "2026-08-20",
-    "last_reported": "2026-09-20"
-  },
   "Naive": {
     "vertical_or_category": "AI business-automation infrastructure (Series A $28.5M, 30k+ dev signups)",
     "tier": "WATCH",
@@ -47,31 +41,6 @@
     "first_reported": "2026-09-02",
     "last_reported": "2026-09-26"
   },
-  "Monid": {
-    "vertical_or_category": "AI agent tool router / payments API for AI agents",
-    "tier": "WATCH",
-    "first_reported": "2026-09-04",
-    "last_reported": "2026-09-20"
-  },
-  "ThunderPhone": {
-    "vertical_or_category": "AI phone/voice agent platform (developer API)",
-    "tier": "WATCH",
-    "first_reported": "2026-09-07",
-    "last_reported": "2026-09-20"
-  },
-  "TrustedRouter": {
-    "vertical_or_category": "AI model router / dev infra API (privacy-first, gọi vốn hạt giống $1.25M)",
-    "tier": "WATCH",
-    "first_reported": "2026-09-08",
-    "last_reported": "2026-09-20"
-  },
-  "Sider Code": {
-    "vertical_or_category": "Chrome extension using AI to customize websites",
-    "tier": "WATCH",
-    "first_reported": "2026-09-09",
-    "last_reported": "2026-09-20",
-    "note": "Part of the wider Sider AI ecosystem (10M+ WAU, confirmed affiliate program via Trackdesk) - see new sibling entry Sider Omni Sidebar"
-  },
   "Sourclip 2.0": {
     "vertical_or_category": "AI research/productivity Chrome extension for Gemini Notebook/NotebookLM",
     "tier": "HOT",
@@ -83,37 +52,6 @@
     "tier": "HOT",
     "first_reported": "2026-09-20",
     "last_reported": "2026-10-01"
-  },
-  "Aristotle (AI Tutor)": {
-    "vertical_or_category": "Voice-first AI tutoring platform for teens (heyaristotle.com)",
-    "tier": "WATCH",
-    "first_reported": "2026-09-20",
-    "last_reported": "2026-09-20"
-  },
-  "Jev / TypeSafe AI": {
-    "vertical_or_category": "Non-LLM 'System One' decision model / dev infra API",
-    "tier": "WATCH",
-    "first_reported": "2026-09-20",
-    "last_reported": "2026-09-20"
-  },
-  "AINA": {
-    "vertical_or_category": "AI career coach (candidate-facing, free) / AI recruiting ATS SaaS (B2B, paid)",
-    "tier": "WATCH",
-    "first_reported": "2026-09-20",
-    "last_reported": "2026-09-20"
-  },
-  "Revenue Scout (via Marquorum)": {
-    "vertical_or_category": "AI sales-intent discovery across social platforms (Reddit/LinkedIn/X/etc)",
-    "tier": "WATCH",
-    "first_reported": "2026-09-20",
-    "last_reported": "2026-09-20",
-    "note": "Affiliate program (Marquorum, 30% recurring lifetime) confirmed via press release, but the actual product homepage could not be confidently identified (revenuescout.io appears to be an unrelated lead-gen agency) - verify real domain before any action"
-  },
-  "Loqua": {
-    "vertical_or_category": "AI gõ chữ bằng giọng nói (voice dictation, Mac/Windows)",
-    "tier": "WATCH",
-    "first_reported": "2026-09-20",
-    "last_reported": "2026-09-20"
   },
   "Tabbit AI (Tabbit Browser)": {
     "vertical_or_category": "AI-native browser / browser agent (Meituan GN06)",
@@ -335,5 +273,11 @@
     "tier": "WATCH",
     "first_reported": "2026-11-19",
     "last_reported": "2026-11-19"
+  },
+  "Rankscale AI": {
+    "vertical_or_category": "SEO/AEO tool",
+    "tier": "HOA_HONG_CAO",
+    "first_reported": "2026-11-20",
+    "last_reported": "2026-11-20"
   }
 }
