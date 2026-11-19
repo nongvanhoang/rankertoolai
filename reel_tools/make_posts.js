@@ -60,10 +60,12 @@ const fbCaption = [
 ].filter(Boolean).join("\n");
 const fbComment = `Full review: ${link("facebook", "reel")}\n(${what}: we may earn a commission at no extra cost to you)`;
 
-const threads = [s.hook, s.summary, s.offer, `Full review: ${link("threads", "social")}`, `#ad (${what})`]
+// Link goes in the first reply, not the post: posts with outbound links get less reach on X/Threads.
+const threads = [s.hook, s.summary, s.offer, `👇 Full review in the reply · #ad (${what})`]
   .filter(Boolean).join("\n\n");
+const threadsReply = `Full review + current price: ${link("threads", "social")}\n(${what}: we may earn a commission)`;
 
-const xText = `${s.x}\n\n${link("x", "social")}\n\n#ad ${tags(s.xTags || [])}`.trim();
+const xText = `${s.x}\n\n👇 Full review in the reply\n\n#ad ${tags(s.xTags || [])}`.trim();
 const xLen = xText.replace(/https?:\/\/\S+/g, "x".repeat(23)).length; // X counts any URL as 23
 
 // First comments: links in IG/TikTok/Shorts captions aren't clickable, so the comment points to the bio page.
@@ -146,8 +148,8 @@ channels.push({
   fields: [["Caption", fbCaption], ["Bình luận đầu tiên", fbComment]],
   settings: [`Dòng #ad ở đầu caption là đủ công khai; chỉ bật "Branded content" nếu có tag được trang của ${s.brandName}`],
 });
-channels.push({ key: "threads", title: "THREADS", how: "Bài mới → đính kèm video", fields: [["Nội dung", threads]], settings: [] });
-channels.push({ key: "x", title: "X / TWITTER", how: `Bài mới → đính kèm video (${xLen}/280 ký tự)`, fields: [["Nội dung", xText], ["Trả lời ngay dưới bài (link)", xReply()]], settings: ["Nếu bài có link bị ít người xem: xoá link khỏi bài, chỉ để link trong phần trả lời"] });
+channels.push({ key: "threads", title: "THREADS", how: "Bài mới → đính kèm video", fields: [["Nội dung", threads], ["Trả lời ngay dưới bài (link)", threadsReply]], settings: ["Bài chính KHÔNG có link; đăng xong bấm Trả lời ngay dưới bài và dán link"] });
+channels.push({ key: "x", title: "X / TWITTER", how: `Bài mới → đính kèm video (${xLen}/280 ký tự)`, fields: [["Nội dung", xText], ["Trả lời ngay dưới bài (link)", xReply()]], settings: ["Bài chính KHÔNG có link (bài có link bị X chia sẻ ít hơn); đăng xong bấm Trả lời ngay dưới bài và dán link"] });
 channels.push({
   key: "tiktok", title: "TIKTOK", how: "+ → Tải lên → chọn video → dán caption",
   fields: [["Caption", tiktok], ["Bình luận ghim (đăng xong thì ghim)", ttComment()], ["Link bio (nếu tài khoản cho thêm link)", link("tiktok", "bio", s.slug, s.kw)]],
