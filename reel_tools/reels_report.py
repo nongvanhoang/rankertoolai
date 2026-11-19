@@ -16,7 +16,7 @@ import re
 import subprocess
 import sys
 from collections import defaultdict
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 
 from google.oauth2 import service_account
@@ -31,16 +31,20 @@ MIN_VISITS = 20
 ALL_CHANNELS = ["instagram", "facebook", "youtube", "tiktok", "pinterest", "x", "linkedin", "threads", "reddit", "quora"]
 NO_LINK = {"reddit"}  # link-free warm-up phase (reddit_phase.json): 0 visits is expected, never flag
 LOW_28D = 3  # fewer visits than this in 28 days = channel is not sending anyone
+# 2026-11-20: X/Threads posts went link-free, link only in the first reply (make_posts.js d09056e).
+# Compare the same number of days before and after, until 8 weeks of "after" data exist.
+REPLY_SWITCH = date(2026, 11, 20)
+REPLY_CHANNELS = ["x", "threads"]
 VID = re.compile(r"^reel-(?P<slug>.+?)(?:-h(?P<hook>[a-z]))?$")
 
 
-def query(svc, prop, days, event=None):
+def query(svc, prop, days, event=None, start=None, end=None):
     # synthesia_reel = the Synthesia v3 links posted before the kits existed
     filt = [{"filter": {"fieldName": "sessionCampaignName", "inListFilter": {"values": ["reel_video", "synthesia_reel"]}}}]
     if event:
         filt.append({"filter": {"fieldName": "eventName", "stringFilter": {"value": event}}})
     body = {
-        "dateRanges": [{"startDate": f"{days}daysAgo", "endDate": "yesterday"}],
+        "dateRanges": [{"startDate": start or f"{days}daysAgo", "endDate": end or "yesterday"}],
         "dimensions": [{"name": "sessionManualAdContent"}, {"name": "sessionSource"}, {"name": "sessionCampaignName"}],
         "metrics": [{"name": "eventCount" if event else "sessions"}],
         "dimensionFilter": {"andGroup": {"expressions": filt}},
@@ -66,6 +70,31 @@ def hook_winner(hooks):
     score = lambda v: v["c"] / v["s"]  # click rate; raw visits depend on how often each hook was posted
     (best, bv), (_, rv) = sorted(hooks.items(), key=lambda kv: score(kv[1]), reverse=True)[:2]
     return f"  👑 {best}" if score(bv) > score(rv) else "  (hòa)"
+
+
+def reply_switch_section(svc, esc, blank):
+    yesterday = date.today() - timedelta(days=1)
+    n = (yesterday - REPLY_SWITCH).days + 1
+    if n < 1 or n > 56:
+        return []
+    windows = {"trước": (REPLY_SWITCH - timedelta(days=n), REPLY_SWITCH - timedelta(days=1)), "sau": (REPLY_SWITCH, yesterday)}
+    tot = {w: defaultdict(blank) for w in windows}
+    for prop in SITES.values():
+        for w, (s, e) in windows.items():
+            try:
+                for rows, k in ((query(svc, prop, 0, start=s.isoformat(), end=e.isoformat()), "s"),
+                                (query(svc, prop, 0, "affiliate_click", s.isoformat(), e.isoformat()), "c")):
+                    for _, source, v in rows:
+                        if source.lower() in REPLY_CHANNELS:
+                            tot[w][source.lower()][k] += v
+            except Exception:
+                pass
+    out = [f"\n<b>Link ở phần trả lời (X, Threads): {n} ngày trước vs {n} ngày sau 20/11</b>"]
+    for ch in REPLY_CHANNELS:
+        b, a = tot["trước"][ch], tot["sau"][ch]
+        out.append(f"• {esc(ch)}: trước {b['s']:.0f} lượt vào/{b['c']:.0f} click → sau {a['s']:.0f}/{a['c']:.0f}")
+    out.append("<i>Số bài đăng mỗi giai đoạn có thể khác nhau; xem xu hướng sau 3–4 tuần, đừng kết luận sau 1 tuần.</i>")
+    return out
 
 
 def main():
@@ -128,6 +157,7 @@ def main():
         v = ch28[ch]
         flag = "  ⬇️ gần như 0: giảm công cho kênh này" if v["s"] < LOW_28D and ch in ALL_CHANNELS and ch not in NO_LINK else ("  (đang nuôi tài khoản, chưa đặt link)" if ch in NO_LINK else "")
         lines.append(f"• {esc(ch)}: {v['s']:.0f} lượt vào · {v['c']:.0f} click{flag}")
+    lines += reply_switch_section(svc, esc, blank)
     lines.append("<i>Instagram/TikTok chỉ được đếm khi link ở bio có gắn utm_source; bio để link trần thì lượt vào rơi vào mục direct.</i>")
     if notes:
         lines.append("\n⚠️ " + "\n⚠️ ".join(esc(n) for n in notes))
