@@ -33,6 +33,7 @@
   "emailTitle": "Free tool: what does consolidation software cost for your group?",
   "variants": {
     "b": { "hook": "Consolidating 2, 10 or 50 companies: what does it cost? 📊" },
-    "c": { "hook": "Pricing consolidation software? Free calculator 📊" }
+    "c": { "hook": "Pricing consolidation software? Free calculator 📊" },
+    "d": { "hook": "Save this before you pay for consolidation software 📊" }
   }
 }

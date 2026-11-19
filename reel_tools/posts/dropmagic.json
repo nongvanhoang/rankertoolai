@@ -33,6 +33,7 @@
   "emailTitle": "Tool of the week: Dropmagic builds a Shopify page from one link",
   "variants": {
     "b": { "hook": "One AliExpress link → a full Shopify product page 🛒" },
-    "c": { "hook": "Still writing Shopify product pages by hand? 🛒" }
+    "c": { "hook": "Still writing Shopify product pages by hand? 🛒" },
+    "d": { "hook": "Save this: product link → Shopify page in 3 steps 🛒" }
   }
 }

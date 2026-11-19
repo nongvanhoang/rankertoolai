@@ -851,6 +851,13 @@
     "file": "wispr_granola_reel_v1",
     "title": "Wispr Flow · đổi từ Granola · motion",
     "ch": "Instagram · YouTube Shorts · TikTok"
+   },
+   {
+    "site": "rta",
+    "kind": "todo",
+    "title": "Thêm bài chữ ElevenLabs Black Friday ($1 tháng đầu) lên X / LinkedIn",
+    "ch": "",
+    "note": "Chép: \"ElevenLabs Black Friday: Starter is $1 for the first month (then $6), Creator $11 for the first month (then $22). No code, until Dec 1. Prices checked Nov 18: https://rankertoolai.com/pricing/elevenlabs/\" (ElevenLabs đang trả hoa hồng 30% đến ~18/12.)"
    }
   ]
  },
@@ -869,6 +876,13 @@
  {
   "date": "2026-11-22",
   "items": [
+   {
+    "site": "rta",
+    "kind": "todo",
+    "title": "Merlin: sửa chú thích reel, thêm deal Black Friday BF2",
+    "ch": "",
+    "note": "Thêm dòng cuối chú thích: \"Black Friday: Merlin has a $24/year plan (about $2/month, with ads) using code BF2, until about Dec 1. Details: https://rankertoolai.com/review/merlin-ai/\" Mã MERLIN20 trong video vẫn để nguyên (cho gói Pro thường)."
+   },
    {
     "site": "rta",
     "kind": "video",
@@ -930,6 +944,13 @@
     "file": "joiin_voice_reel_c_v1_r2",
     "title": "Joiin · 3 lỗi Excel (đăng lại)",
     "ch": "Instagram · YouTube Shorts · TikTok"
+   },
+   {
+    "site": "rta",
+    "kind": "todo",
+    "title": "Bài chữ \"AI Black Friday deals còn chạy\" lên X / LinkedIn",
+    "ch": "",
+    "note": "Chép: \"AI tool Black Friday deals that are actually live: Merlin $24/year (code BF2), ElevenLabs $1 first month, Pictory 50% off (BLACKFRIYAYY50), NordPass up to 58% off. Tracker: https://rankertoolai.com/deals/black-friday-ai-tools-2026/\" Kiểm lại giá sáng hôm đăng."
    }
   ]
  },
@@ -1018,6 +1039,19 @@
   ]
  },
  {
+  "date": "2026-12-04",
+  "items": [
+   {
+    "site": "rta",
+    "kind": "video",
+    "title": "Dropmagic · kiểu mở đầu D (Save this)",
+    "ch": "Instagram · YouTube Shorts · TikTok",
+    "file": "dropmagic_reel_v1_hd",
+    "note": "Thử kiểu mở đầu \"Save this\" (dạng đáng lưu lại). So với A/B/C trong báo cáo thứ Hai."
+   }
+  ]
+ },
+ {
   "date": "2026-12-05",
   "items": [
    {
@@ -1030,6 +1064,19 @@
   ]
  },
  {
+  "date": "2026-12-06",
+  "items": [
+   {
+    "site": "rta",
+    "kind": "video",
+    "title": "Joiin máy tính chi phí · kiểu mở đầu D (Save this)",
+    "ch": "Instagram · YouTube Shorts · TikTok",
+    "file": "joiin_calc_reel_v1_hd",
+    "note": "Thử kiểu mở đầu \"Save this\" (dạng đáng lưu lại). So với A/B/C trong báo cáo thứ Hai."
+   }
+  ]
+ },
+ {
   "date": "2026-12-07",
   "items": [
    {
@@ -1038,6 +1085,19 @@
     "title": "3 món quà dưới $100 · kiểu C",
     "ch": "Tất cả kênh",
     "file": "rankernest_gifts-under100_v1_hc"
+   }
+  ]
+ },
+ {
+  "date": "2026-12-08",
+  "items": [
+   {
+    "site": "rta",
+    "kind": "video",
+    "title": "Joiin mẫu Excel · kiểu mở đầu D (Save this)",
+    "ch": "Instagram · YouTube Shorts · TikTok",
+    "file": "joiin_template_reel_v2_hd",
+    "note": "Thử kiểu mở đầu \"Save this\" (dạng đáng lưu lại). So với A/B/C trong báo cáo thứ Hai."
    }
   ]
  },

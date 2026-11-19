@@ -33,6 +33,7 @@
   "emailTitle": "Free template: consolidate up to three companies in Excel",
   "variants": {
     "b": { "hook": "Free Excel consolidation template (up to 3 companies) 📊" },
-    "c": { "hook": "Month-end consolidation in Excel? Free template 📊" }
+    "c": { "hook": "Month-end consolidation in Excel? Free template 📊" },
+    "d": { "hook": "Save this: free Excel consolidation template (3 companies) 📊" }
   }
 }

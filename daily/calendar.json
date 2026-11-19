@@ -688,6 +688,11 @@
     "site": "rta",
     "reel": "wispr_granola_reel_v1",
     "title": "Wispr Flow · đổi từ Granola · motion"
+   },
+   {
+    "type": "note",
+    "site": "rta",
+    "text": "Thêm bài chữ ElevenLabs Black Friday ($1 tháng đầu) lên X / LinkedIn · Chép: \"ElevenLabs Black Friday: Starter is $1 for the first month (then $6), Creator $11 for the first month (then $22). No code, until Dec 1. Prices checked Nov 18: https://rankertoolai.com/pricing/elevenlabs/\" (ElevenLabs đang trả hoa hồng 30% đến ~18/12.)"
    }
   ]
  },
@@ -705,6 +710,11 @@
  {
   "date": "2026-11-22",
   "entries": [
+   {
+    "type": "note",
+    "site": "rta",
+    "text": "Merlin: sửa chú thích reel, thêm deal Black Friday BF2 · Thêm dòng cuối chú thích: \"Black Friday: Merlin has a $24/year plan (about $2/month, with ads) using code BF2, until about Dec 1. Details: https://rankertoolai.com/review/merlin-ai/\" Mã MERLIN20 trong video vẫn để nguyên (cho gói Pro thường)."
+   },
    {
     "type": "reel",
     "site": "rta",
@@ -759,6 +769,11 @@
     "site": "rta",
     "reel": "joiin_voice_reel_c_v1_r2",
     "title": "Joiin · 3 lỗi Excel (đăng lại)"
+   },
+   {
+    "type": "note",
+    "site": "rta",
+    "text": "Bài chữ \"AI Black Friday deals còn chạy\" lên X / LinkedIn · Chép: \"AI tool Black Friday deals that are actually live: Merlin $24/year (code BF2), ElevenLabs $1 first month, Pictory 50% off (BLACKFRIYAYY50), NordPass up to 58% off. Tracker: https://rankertoolai.com/deals/black-friday-ai-tools-2026/\" Kiểm lại giá sáng hôm đăng."
    }
   ]
  },
@@ -840,6 +855,17 @@
   ]
  },
  {
+  "date": "2026-12-04",
+  "entries": [
+   {
+    "type": "reel",
+    "site": "rta",
+    "reel": "dropmagic_reel_v1_hd",
+    "title": "Dropmagic · kiểu mở đầu D (Save this)"
+   }
+  ]
+ },
+ {
   "date": "2026-12-05",
   "entries": [
    {
@@ -851,6 +877,17 @@
   ]
  },
  {
+  "date": "2026-12-06",
+  "entries": [
+   {
+    "type": "reel",
+    "site": "rta",
+    "reel": "joiin_calc_reel_v1_hd",
+    "title": "Joiin máy tính chi phí · kiểu mở đầu D (Save this)"
+   }
+  ]
+ },
+ {
   "date": "2026-12-07",
   "entries": [
    {
@@ -858,6 +895,17 @@
     "site": "rn",
     "reel": "rankernest_gifts-under100_v1_hc",
     "title": "3 món quà dưới $100 · kiểu C"
+   }
+  ]
+ },
+ {
+  "date": "2026-12-08",
+  "entries": [
+   {
+    "type": "reel",
+    "site": "rta",
+    "reel": "joiin_template_reel_v2_hd",
+    "title": "Joiin mẫu Excel · kiểu mở đầu D (Save this)"
    }
   ]
  },
