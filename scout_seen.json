@@ -255,5 +255,11 @@
     "tier": "WATCH",
     "first_reported": "2026-11-21",
     "last_reported": "2026-11-21"
+  },
+  "Zebracat": {
+    "vertical_or_category": "AI video",
+    "tier": "HOA_HONG_CAO",
+    "first_reported": "2026-11-22",
+    "last_reported": "2026-11-22"
   }
 }
