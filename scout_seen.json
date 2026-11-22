@@ -11,18 +11,6 @@
     "first_reported": "2026-09-29",
     "last_reported": "2026-09-29"
   },
-  "Sai (Simular AI)": {
-    "vertical_or_category": "AI computer-use agent / robosecretary",
-    "tier": "WATCH",
-    "first_reported": "2026-09-23",
-    "last_reported": "2026-09-23"
-  },
-  "ProductBridge": {
-    "vertical_or_category": "AI customer support / feedback agent",
-    "tier": "WATCH",
-    "first_reported": "2026-09-23",
-    "last_reported": "2026-09-23"
-  },
   "Instinct": {
     "vertical_or_category": "AI personal assistant via SMS/calls (invite-only)",
     "tier": "WATCH",
