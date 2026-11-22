@@ -31,7 +31,9 @@ if (!T) throw new Error("brand must be rta or rn");
 // ---------- timing ----------
 const scenes = [];
 let t = 0;
-const add = (id, dur) => { scenes.push({ id, start: +t.toFixed(2), dur }); t += dur; return scenes[scenes.length - 1]; };
+// s.stretch (optional, e.g. 1.6): hold every scene longer so an AI voiceover (add_voice.js) fits without freezing the last frame.
+const K = s.stretch || 1;
+const add = (id, dur) => { dur = +(dur * K).toFixed(2); scenes.push({ id, start: +t.toFixed(2), dur }); t += dur; return scenes[scenes.length - 1]; };
 const sHook = add("hook", s.hook.photo ? 3.4 : 3);
 const sPrice = s.price ? add("price", 4.2) : null;
 const sPhotos = (s.photos || []).map((p, i) => add("photo" + i, 3.2));

@@ -63,32 +63,32 @@
     </style>
   </head>
   <body>
-    <div id="root" data-composition-id="main" data-start="0" data-duration="12.85" data-width="1080" data-height="1920">
-      <div id="bg" class="clip" data-start="0" data-duration="12.85" data-track-index="0">
+    <div id="root" data-composition-id="main" data-start="0" data-duration="20.56" data-width="1080" data-height="1920">
+      <div id="bg" class="clip" data-start="0" data-duration="20.56" data-track-index="0">
         <div id="grid"></div>
         <div id="glow1" class="glow"></div>
         <div id="glow2" class="glow"></div>
       </div>
 
-      <div id="hook" class="scene clip " data-start="0" data-duration="3" data-track-index="1">
+      <div id="hook" class="scene clip " data-start="0" data-duration="4.8" data-track-index="1">
 <div class="kicker">WriteHuman · AI humanizer</div>
 <div class="stamp">3<small>in 1</small></div>
 <div class="bar"></div>
 <div class="mid">Humanizer + AI text detector<br /><span class="hl">+ AI image detector</span></div>
       </div>
 
-      <div id="rows" class="scene clip " data-start="3" data-duration="3.65" data-track-index="1">
+      <div id="rows" class="scene clip " data-start="4.8" data-duration="5.84" data-track-index="1">
 <div class="kicker">Plans</div>
 <div class="rows"><div class="row"><div class="n">$0</div><div class="t">3 requests a month<br />250 words each</div></div><div class="row"><div class="n">$12</div><div class="t">Basic a month<br />billed yearly</div></div><div class="row"><div class="n">1,200</div><div class="t">words per request<br />on Pro</div></div></div>
       </div>
 
-      <div id="rules" class="scene clip " data-start="6.65" data-duration="3.4" data-track-index="1">
+      <div id="rules" class="scene clip " data-start="10.64" data-duration="5.44" data-track-index="1">
 <div class="rule"><div class="tick ok">✓</div><div>For copy and emails you stand behind</div></div>
 <div class="rule"><div class="tick no">✕</div><div>Not for school work where AI is banned</div></div>
 <div class="rule"><div class="tick warn">!</div><div>No tool passes every detector</div></div>
       </div>
 
-      <div id="cta" class="scene clip " data-start="10.05" data-duration="2.8" data-track-index="1">
+      <div id="cta" class="scene clip " data-start="16.08" data-duration="4.48" data-track-index="1">
 <div class="cta">Full review + prices →</div>
 <div class="url">rankertoolai.com/review/<br /><span class="hl">writehuman</span></div>
 <div class="disclose">#ad · Contains affiliate links</div>
@@ -96,7 +96,7 @@
     </div>
 
     <script>
-      const D = 12.85;
+      const D = 20.56;
       const tl = gsap.timeline({ paused: true });
       tl.fromTo("#glow1", { x: 0, y: 0 }, { x: 240, y: 520, duration: D, ease: "none" }, 0);
       tl.fromTo("#glow2", { x: 0, y: 0 }, { x: -200, y: -480, duration: D, ease: "none" }, 0);
@@ -111,13 +111,13 @@
       tl.fromTo("#hook .stamp", { opacity: 0, scale: 2.2, rotation: -8 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.55, ease: "back.out(1.7)", transformOrigin: "left center" }, 0.3);
       tl.fromTo("#hook .bar", { scaleX: 0 }, { scaleX: 1, duration: 0.4, ease: "power2.out" }, 0.85);
       tl.fromTo("#hook .mid", inUp, shown, 1.05);
-      tl.to("#hook .stamp", { scale: 1.04, duration: 0.25, yoyo: true, repeat: 1, ease: "power1.inOut", transformOrigin: "left center" }, 2.2);
-      tl.fromTo("#rows .kicker", inUp, shown, 3.05);
-      gsap.utils.toArray("#rows .row").forEach((el, i) => tl.fromTo(el, { opacity: 0, x: -160 }, { opacity: 1, x: 0, duration: 0.45, ease: "power3.out" }, 3.4 + i * 0.4));
-      gsap.utils.toArray("#rules .rule").forEach((el, i) => { tl.fromTo(el, inUp, shown, 6.75 + i * 0.55); tl.fromTo(el.querySelector(".tick"), { scale: 0 }, { scale: 1, duration: 0.35, ease: "back.out(2.2)" }, 6.9 + i * 0.55); });
-      tl.fromTo("#cta .cta", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.8)" }, 10.35);
-      tl.fromTo("#cta .url", inUp, shown, 10.65);
-      tl.fromTo("#cta .disclose", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 10.95);
+      tl.to("#hook .stamp", { scale: 1.04, duration: 0.25, yoyo: true, repeat: 1, ease: "power1.inOut", transformOrigin: "left center" }, 4);
+      tl.fromTo("#rows .kicker", inUp, shown, 4.85);
+      gsap.utils.toArray("#rows .row").forEach((el, i) => tl.fromTo(el, { opacity: 0, x: -160 }, { opacity: 1, x: 0, duration: 0.45, ease: "power3.out" }, 5.2 + i * 0.4));
+      gsap.utils.toArray("#rules .rule").forEach((el, i) => { tl.fromTo(el, inUp, shown, 10.74 + i * 0.55); tl.fromTo(el.querySelector(".tick"), { scale: 0 }, { scale: 1, duration: 0.35, ease: "back.out(2.2)" }, 10.89 + i * 0.55); });
+      tl.fromTo("#cta .cta", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.8)" }, 16.38);
+      tl.fromTo("#cta .url", inUp, shown, 16.68);
+      tl.fromTo("#cta .disclose", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 16.98);
       window.__timelines = window.__timelines || {};
       window.__timelines["main"] = tl;
       tl.seek(0);
