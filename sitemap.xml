@@ -1334,4 +1334,28 @@
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
+  <url>
+    <loc>https://rankertoolai.com/review/snov-io/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/review/zebracat/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/review/magai/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://rankertoolai.com/review/dubly/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
 </urlset>
