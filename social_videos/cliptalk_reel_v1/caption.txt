@@ -1,0 +1,5 @@
+An AI video editor you can run from Claude or ChatGPT 🎞️
+ClipTalk is an AI video editor that plans, scripts, creates and edits short vertical videos from an idea, script, article or link. Its MCP server (24 tools) lets you make and edit videos from Claude, ChatGPT, Cursor and other AI assistants.
+
+Full review → rankertoolai.com/review/cliptalk
+#ad #ClipTalk #AIvideo #VideoEditing #ContentCreator

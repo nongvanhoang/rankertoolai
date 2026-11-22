@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" role="img" aria-label="RankerNest logo mark, single color white">
+  <path d="M12,52 Q50,94 88,52" fill="none" stroke="#ffffff" stroke-width="14" stroke-linecap="round"/>
+  <path d="M23,56 Q50,80 77,56" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity="0.55"/>
+  <ellipse cx="50" cy="38" rx="13" ry="16" fill="#ffffff"/>
+</svg>
