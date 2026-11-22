@@ -9,16 +9,34 @@
  "rows": {
   "kicker": "10-person team",
   "items": [
-   { "n": "$960", "t": "a year on Insightful<br />Workforce Analytics" },
-   { "n": "$360", "t": "a year on Mera Work<br />every feature included" },
-   { "n": "24 vs 3", "t": "months of data kept<br />Insightful vs Mera" }
+   {
+    "n": "$960",
+    "t": "a year on Insightful<br />Workforce Analytics"
+   },
+   {
+    "n": "$360",
+    "t": "a year on Mera Work<br />every feature included"
+   },
+   {
+    "n": "24 vs 3",
+    "t": "months of data kept<br />Insightful vs Mera"
+   }
   ]
  },
  "rules": {
   "items": [
-   { "icon": "ok", "text": "Insightful: capacity view + 7-day trial, no card" },
-   { "icon": "ok", "text": "Mera Work: $4 if you pay monthly" },
-   { "icon": "warn", "text": "Tell your team: clear monitoring policy" }
+   {
+    "icon": "ok",
+    "text": "Insightful: 7-day free trial, no card"
+   },
+   {
+    "icon": "ok",
+    "text": "Mera Work: $4 if you pay monthly"
+   },
+   {
+    "icon": "warn",
+    "text": "Tell your team: clear monitoring policy"
+   }
   ]
  },
  "cta": {

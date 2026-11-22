@@ -3,22 +3,39 @@
  "hook": {
   "kicker": "Leave management · small teams",
   "big": "$2.50",
-  "unit": "/user",
-  "line": "Leave, time tracking + shifts<br /><span class=\"hl\">in one plan</span>"
+  "line": "Per user: leave, time + shifts<br /><span class=\"hl\">in one plan</span>"
  },
  "rows": {
   "kicker": "Leavo, from the guide",
   "items": [
-   { "n": "30", "t": "day free trial<br />no card, unlimited members" },
-   { "n": "$450", "t": "a year for 15 people<br />billed yearly" },
-   { "n": "100+", "t": "countries' holiday sets<br />built in" }
+   {
+    "n": "30",
+    "t": "day free trial<br />no card, unlimited members"
+   },
+   {
+    "n": "$450",
+    "t": "a year for 15 people<br />billed yearly"
+   },
+   {
+    "n": "100+",
+    "t": "countries' holiday sets<br />built in"
+   }
   ]
  },
  "rules": {
   "items": [
-   { "icon": "ok", "text": "Just holiday booking? Timetastic from $1.50" },
-   { "icon": "ok", "text": "Leave inside Slack or Teams: Vacation Tracker" },
-   { "icon": "warn", "text": "Leavo has no permanent free plan" }
+   {
+    "icon": "ok",
+    "text": "Just holiday booking? Timetastic from $1.50"
+   },
+   {
+    "icon": "ok",
+    "text": "Leave inside Slack or Teams: Vacation Tracker"
+   },
+   {
+    "icon": "warn",
+    "text": "Leavo has no permanent free plan"
+   }
   ]
  },
  "cta": {
