@@ -1,0 +1,46 @@
+{
+  "site": "rta",
+  "slug": "cliptalk",
+  "reel": "cliptalk_reel_v1",
+  "kw": "review/cliptalk",
+  "kwLabel": "reviews",
+  "page": "review/cliptalk",
+  "brandName": "ClipTalk",
+  "disclose": "link",
+  "category": "Science & Technology",
+  "hook": "An AI video editor you can run from Claude or ChatGPT 🎞️",
+  "summary": "ClipTalk is an AI video editor that plans, scripts, creates and edits short vertical videos from an idea, script, article or link. Its MCP server (24 tools) lets you make and edit videos from Claude, ChatGPT, Cursor and other AI assistants.",
+  "points": [
+    "Free sign-up with 50 trial credits, no card",
+    "Basic $19/mo (3,000 credits), Pro $39/mo with API + full MCP",
+    "Captions, silence removal and auto-editing don't use credits"
+  ],
+  "caveat": "Free videos carry a watermark and no refund policy is published.",
+  "pinterest": {
+    "title": "ClipTalk Review: AI Video Editor With an MCP Server",
+    "board": "AI video tools",
+    "alt": "ClipTalk offer card: AI video editor with 24 MCP tools for Claude and ChatGPT",
+    "keywords": "ai video editor, short video maker, mcp server, claude, faceless videos"
+  },
+  "youtubeTitle": "ClipTalk: an AI video editor you can run from Claude or ChatGPT (24 MCP tools)",
+  "x": "ClipTalk is an AI video editor with an MCP server: make and edit short videos from Claude, ChatGPT or Cursor.\n\n50 free trial credits, no card. Pro $39/mo includes API + full MCP.",
+  "xTags": [
+    "AIvideo",
+    "MCP"
+  ],
+  "tiktokLine": "Short videos from Claude or ChatGPT.",
+  "tiktokTags": [
+    "AIvideo",
+    "videoediting",
+    "claude",
+    "contentcreator",
+    "techtok"
+  ],
+  "hashtags": [
+    "ClipTalk",
+    "AIvideo",
+    "VideoEditing",
+    "ContentCreator"
+  ],
+  "emailTitle": "ClipTalk: an AI video editor with MCP"
+}

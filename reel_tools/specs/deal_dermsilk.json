@@ -1,0 +1,49 @@
+{
+ "brand": "rn",
+ "hook": {
+  "kicker": "DermSilk · is it legit?",
+  "pre": "Free US shipping from",
+  "big": "$50",
+  "line": "Obagi, SkinMedica, EltaMD<br /><span class=\"hl\">bought direct from the brands, it says</span>"
+ },
+ "rows": {
+  "kicker": "Know before you buy",
+  "items": [
+   {
+    "n": "LA",
+    "t": "ships from<br />Los Angeles"
+   },
+   {
+    "n": "$4.99",
+    "t": "shipping on<br />orders under $50"
+   },
+   {
+    "n": "3",
+    "t": "returns a year<br />unopened only"
+   }
+  ]
+ },
+ "rules": {
+  "items": [
+   {
+    "icon": "ok",
+    "text": "Written authorized-retailer policy"
+   },
+   {
+    "icon": "warn",
+    "text": "Refunds come as store credit"
+   },
+   {
+    "icon": "warn",
+    "text": "Only 2 Trustpilot reviews so far"
+   }
+  ]
+ },
+ "cta": {
+  "logo": "RankerNest",
+  "logoSrc": "social_videos/rankernest_silksilky_v2/logo.svg",
+  "text": "Full review → link in bio",
+  "url": "rankernest.com/review/<span class=\"hl\">dermsilk</span>",
+  "disclose": "#ad · affiliate links, at no extra cost to you"
+ }
+}

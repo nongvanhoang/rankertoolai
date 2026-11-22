@@ -1,0 +1,47 @@
+{
+ "brand": "rta",
+ "hook": {
+  "kicker": "Higgsfield AI · video + image",
+  "big": "1",
+  "unit": "plan",
+  "line": "Kling, Veo, Seedance and more<br /><span class=\"hl\">in one subscription</span>"
+ },
+ "rows": {
+  "kicker": "Plans",
+  "items": [
+   {
+    "n": "$19",
+    "t": "Starter a month<br />commercial use"
+   },
+   {
+    "n": "$47",
+    "t": "Plus a month yearly<br />1,200 credits, 4K"
+   },
+   {
+    "n": "$99",
+    "t": "Ultra a month yearly<br />3,000 credits"
+   }
+  ]
+ },
+ "rules": {
+  "items": [
+   {
+    "icon": "ok",
+    "text": "Lip-sync, UGC ads, camera moves built in"
+   },
+   {
+    "icon": "warn",
+    "text": "Credits expire each month"
+   },
+   {
+    "icon": "no",
+    "text": "Free plan: no commercial use"
+   }
+  ]
+ },
+ "cta": {
+  "text": "Full review + prices →",
+  "url": "rankertoolai.com/review/<span class=\"hl\">higgsfield</span>",
+  "disclose": "#ad · Contains affiliate links"
+ }
+}

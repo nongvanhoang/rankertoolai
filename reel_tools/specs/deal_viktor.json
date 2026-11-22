@@ -1,0 +1,47 @@
+{
+ "brand": "rta",
+ "hook": {
+  "kicker": "Viktor · AI employee",
+  "big": "$100",
+  "unit": "free",
+  "line": "in credits to start, no card<br /><span class=\"hl\">an AI teammate in Slack or Teams</span>"
+ },
+ "rows": {
+  "kicker": "How it works",
+  "items": [
+   {
+    "n": "9,800+",
+    "t": "tools it can<br />log into"
+   },
+   {
+    "n": "$100",
+    "t": "a month per workspace<br />not per seat"
+   },
+   {
+    "n": "80–400",
+    "t": "tasks from<br />40,000 credits"
+   }
+  ]
+ },
+ "rules": {
+  "items": [
+   {
+    "icon": "ok",
+    "text": "Asks before big changes"
+   },
+   {
+    "icon": "ok",
+    "text": "Every feature on every plan"
+   },
+   {
+    "icon": "warn",
+    "text": "Credit use varies by task"
+   }
+  ]
+ },
+ "cta": {
+  "text": "Full review + prices →",
+  "url": "rankertoolai.com/review/<span class=\"hl\">viktor</span>",
+  "disclose": "#ad · Contains affiliate links"
+ }
+}

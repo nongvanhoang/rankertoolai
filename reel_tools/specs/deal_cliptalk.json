@@ -1,0 +1,47 @@
+{
+ "brand": "rta",
+ "hook": {
+  "kicker": "ClipTalk · AI video editor",
+  "big": "24",
+  "unit": "tools",
+  "line": "Make short videos from<br /><span class=\"hl\">Claude or ChatGPT (MCP)</span>"
+ },
+ "rows": {
+  "kicker": "Plans",
+  "items": [
+   {
+    "n": "50",
+    "t": "free trial credits<br />no card"
+   },
+   {
+    "n": "$19",
+    "t": "Basic a month<br />3,000 credits"
+   },
+   {
+    "n": "$39",
+    "t": "Pro a month<br />API + full MCP"
+   }
+  ]
+ },
+ "rules": {
+  "items": [
+   {
+    "icon": "ok",
+    "text": "Captions and silence cuts: no credits"
+   },
+   {
+    "icon": "warn",
+    "text": "Free videos carry a watermark"
+   },
+   {
+    "icon": "warn",
+    "text": "No refund policy published"
+   }
+  ]
+ },
+ "cta": {
+  "text": "Full review + prices →",
+  "url": "rankertoolai.com/review/<span class=\"hl\">cliptalk</span>",
+  "disclose": "#ad · Contains affiliate links"
+ }
+}

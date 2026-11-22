@@ -1,0 +1,46 @@
+{
+  "site": "rta",
+  "slug": "answerthis",
+  "reel": "answerthis_reel_v1",
+  "kw": "review/answerthis",
+  "kwLabel": "reviews",
+  "page": "review/answerthis",
+  "brandName": "AnswerThis",
+  "disclose": "link",
+  "category": "Education",
+  "hook": "Cited answers from 250M+ papers for your literature review 📚",
+  "summary": "AnswerThis searches 250M+ academic papers and returns cited answers and summaries, with a library that exports to Zotero, Mendeley and EndNote. Pro adds an AI Writer and PRISMA systematic reviews.",
+  "points": [
+    "Free plan, no card: cited search and 5 saved projects",
+    "2,000+ citation styles in the AI Writer",
+    "Pro $35/mo with agent-led PRISMA systematic reviews"
+  ],
+  "caveat": "AI summaries still need checking against the original papers before you cite them.",
+  "pinterest": {
+    "title": "AnswerThis Review: AI Literature Review Assistant (Free Plan)",
+    "board": "AI tools for students",
+    "alt": "AnswerThis offer card: cited answers from 250M+ academic papers, free plan",
+    "keywords": "literature review, ai research assistant, phd tools, academic writing, citation tool"
+  },
+  "youtubeTitle": "AnswerThis: cited answers from 250M+ papers for your literature review (free plan)",
+  "x": "AnswerThis: ask a research question, get answers cited from 250M+ academic papers. Exports to Zotero, Mendeley, EndNote.\n\nFree plan, no card. Pro $35/mo adds PRISMA systematic reviews.",
+  "xTags": [
+    "AcademicTwitter",
+    "PhD"
+  ],
+  "tiktokLine": "Free plan, no card.",
+  "tiktokTags": [
+    "phd",
+    "gradschool",
+    "research",
+    "studytok",
+    "AItools"
+  ],
+  "hashtags": [
+    "AnswerThis",
+    "PhD",
+    "Research",
+    "AcademicWriting"
+  ],
+  "emailTitle": "AnswerThis: an AI assistant for literature reviews"
+}

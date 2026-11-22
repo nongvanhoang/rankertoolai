@@ -1,0 +1,47 @@
+{
+ "brand": "rta",
+ "hook": {
+  "kicker": "WriteHuman · AI humanizer",
+  "big": "3",
+  "unit": "in 1",
+  "line": "Humanizer + AI text detector<br /><span class=\"hl\">+ AI image detector</span>"
+ },
+ "rows": {
+  "kicker": "Plans",
+  "items": [
+   {
+    "n": "$0",
+    "t": "3 requests a month<br />250 words each"
+   },
+   {
+    "n": "$12",
+    "t": "Basic a month<br />billed yearly"
+   },
+   {
+    "n": "1,200",
+    "t": "words per request<br />on Pro"
+   }
+  ]
+ },
+ "rules": {
+  "items": [
+   {
+    "icon": "ok",
+    "text": "For copy and emails you stand behind"
+   },
+   {
+    "icon": "no",
+    "text": "Not for school work where AI is banned"
+   },
+   {
+    "icon": "warn",
+    "text": "No tool passes every detector"
+   }
+  ]
+ },
+ "cta": {
+  "text": "Full review + prices →",
+  "url": "rankertoolai.com/review/<span class=\"hl\">writehuman</span>",
+  "disclose": "#ad · Contains affiliate links"
+ }
+}

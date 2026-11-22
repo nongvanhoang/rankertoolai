@@ -30,6 +30,7 @@ const target = s.page || s.kw;
 const link = (source, medium, content = s.slug, path = target) =>
   `https://${site.domain}/${path}/?utm_source=${source}&utm_medium=${medium}&utm_campaign=reel_video&utm_content=reel-${content}`;
 const short = `${site.domain}/${s.kw}`;
+const KWL = (s.kwLabel || s.kw).toUpperCase(); // s.kwLabel: word to tap on the /links bio page when kw is a deep path
 const what = s.disclose === "code" ? "affiliate code" : "affiliate link";
 const disclosure = `#ad — ${what}. We may earn a commission at no extra cost to you.`;
 const tags = (list) => list.map((t) => "#" + t).join(" ");
@@ -37,8 +38,12 @@ const allTags = [...s.hashtags, site.tag];
 
 // ---- copy per channel (English, for US audience) ----
 const bullets = s.points.map((p) => "• " + p).join("\n");
-const pinDesc = [s.summary, s.points.join(". ") + ".", s.offer, s.caveat, `#ad ${what[0].toUpperCase() + what.slice(1)}.`]
+// Pinterest caps descriptions at 500: drop the last points one by one (never the caveat or #ad) until it fits.
+const pinFor = (pts) => [s.summary, pts.length ? pts.join(". ") + "." : "", s.offer, s.caveat, `#ad ${what[0].toUpperCase() + what.slice(1)}.`]
   .filter(Boolean).join(" ");
+let pinPts = [...s.points];
+while (pinFor(pinPts).length > 500 && pinPts.length) pinPts.pop();
+const pinDesc = pinFor(pinPts);
 
 const ytDesc = [
   s.summary,
@@ -69,11 +74,11 @@ const xText = `${s.x}\n\n👇 Full review in the reply\n\n#ad ${tags(s.xTags || 
 const xLen = xText.replace(/https?:\/\/\S+/g, "x".repeat(23)).length; // X counts any URL as 23
 
 // First comments: links in IG/TikTok/Shorts captions aren't clickable, so the comment points to the bio page.
-const igComment = () => `Full review + current price 👉 link in bio, tap ${s.kw.toUpperCase()}\n(${short} · #ad ${what})`;
-const ttComment = () => `Link in bio → ${s.kw.toUpperCase()} 👆 (${short}) · #ad ${what}`;
+const igComment = () => `Full review + current price 👉 link in bio, tap ${KWL}\n(${short} · #ad ${what})`;
+const ttComment = () => `Link in bio → ${KWL} 👆 (${short}) · #ad ${what}`;
 const xReply = () => `Full review: ${link("x", "social")}\n(${what}: we may earn a commission)`;
 
-const tiktok = `#ad ${s.hook} ${s.tiktokLine || ""} Link in bio → ${s.kw.toUpperCase()}\n${tags(s.tiktokTags || allTags)}`.replace(/  +/g, " ");
+const tiktok = `#ad ${s.hook} ${s.tiktokLine || ""} Link in bio → ${KWL}\n${tags(s.tiktokTags || allTags)}`.replace(/  +/g, " ");
 
 const email = {
   title: s.emailTitle,
@@ -105,7 +110,7 @@ channels.push({
     `Nhạc trend: chọn trong thư viện của Instagram, giữ âm thanh gốc${ai ? " (nhạc nhỏ dưới giọng avatar)" : ""}`,
     ai ? `Bật nhãn "AI info" (video có người dẫn AI)` : `Không cần nhãn AI`,
     `Dòng #ad trong caption là đủ công khai; chỉ dùng nhãn "Paid partnership" khi ${s.brandName} đồng ý`,
-    `Link bio: https://${site.domain}/links (người xem chọn từ khoá ${s.kw.toUpperCase()})`,
+    `Link bio: https://${site.domain}/links (người xem chọn từ khoá ${KWL})`,
   ],
 });
 channels.push({
@@ -282,7 +287,7 @@ for (const [k, v] of Object.entries(s.variants || {})) {
   const yt = [v.hook, s.summary, bullets, s.offer, s.caveat,
     `Full review + current price:\n${link("youtube", "shorts", content)}`, disclosure, tags(allTags.slice(0, 5))]
     .filter(Boolean).join("\n\n");
-  const tt = `#ad ${v.hook} ${s.tiktokLine || ""} Link in bio → ${s.kw.toUpperCase()}\n${tags(s.tiktokTags || allTags)}`.replace(/  +/g, " ");
+  const tt = `#ad ${v.hook} ${s.tiktokLine || ""} Link in bio → ${KWL}\n${tags(s.tiktokTags || allTags)}`.replace(/  +/g, " ");
   const ytTitle = v.hook.replace(/[\s\p{Extended_Pictographic}‍️]+$/u, "") + ` | ${s.brandName} #shorts`;
   if (ytTitle.length > 100) { console.error(`${reel}: YouTube title ${ytTitle.length}/100`); process.exit(1); }
   const fields = [["INSTAGRAM caption", ig], ["YOUTUBE tiêu đề", ytTitle], ["YOUTUBE mô tả", yt], ["TIKTOK caption", tt]];

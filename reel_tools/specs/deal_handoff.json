@@ -1,0 +1,47 @@
+{
+ "brand": "rta",
+ "hook": {
+  "kicker": "Handoff AI · US contractors",
+  "big": "7",
+  "unit": "days free",
+  "line": "Voice notes, photos or plans<br /><span class=\"hl\">→ an itemised estimate</span>"
+ },
+ "rows": {
+  "kicker": "What you get",
+  "items": [
+   {
+    "n": "$119",
+    "t": "Flex a month<br />billed yearly"
+   },
+   {
+    "n": "50",
+    "t": "AI credits a month<br />on Flex"
+   },
+   {
+    "n": "Daily",
+    "t": "local US material<br />and labour costs"
+   }
+  ]
+ },
+ "rules": {
+  "items": [
+   {
+    "icon": "ok",
+    "text": "Trial needs no card"
+   },
+   {
+    "icon": "warn",
+    "text": "Pro and Scale: 12-month commitment"
+   },
+   {
+    "icon": "warn",
+    "text": "Check every AI number before sending"
+   }
+  ]
+ },
+ "cta": {
+  "text": "Full review + prices →",
+  "url": "rankertoolai.com/review/<span class=\"hl\">handoff</span>",
+  "disclose": "#ad · Contains affiliate links"
+ }
+}

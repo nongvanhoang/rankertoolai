@@ -1,0 +1,47 @@
+{
+ "brand": "rta",
+ "hook": {
+  "kicker": "AnswerThis · AI research",
+  "big": "$0",
+  "unit": "to start",
+  "line": "Cited answers from 250M+ papers<br /><span class=\"hl\">for your literature review</span>"
+ },
+ "rows": {
+  "kicker": "What you get",
+  "items": [
+   {
+    "n": "5",
+    "t": "saved projects<br />on the free plan"
+   },
+   {
+    "n": "2,000+",
+    "t": "citation styles<br />in the AI Writer"
+   },
+   {
+    "n": "$35",
+    "t": "Pro a month<br />PRISMA reviews"
+   }
+  ]
+ },
+ "rules": {
+  "items": [
+   {
+    "icon": "ok",
+    "text": "Exports to Zotero, Mendeley, EndNote"
+   },
+   {
+    "icon": "ok",
+    "text": "Says it removes unsourced claims"
+   },
+   {
+    "icon": "warn",
+    "text": "Check summaries against the papers"
+   }
+  ]
+ },
+ "cta": {
+  "text": "Full review + prices →",
+  "url": "rankertoolai.com/review/<span class=\"hl\">answerthis</span>",
+  "disclose": "#ad · Contains affiliate links"
+ }
+}

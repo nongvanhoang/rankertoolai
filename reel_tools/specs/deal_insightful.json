@@ -1,0 +1,47 @@
+{
+ "brand": "rta",
+ "hook": {
+  "kicker": "Insightful · team analytics",
+  "big": "$8",
+  "unit": "/seat",
+  "line": "See where your team's hours go<br /><span class=\"hl\">office, remote or hybrid</span>"
+ },
+ "rows": {
+  "kicker": "What you get",
+  "items": [
+   {
+    "n": "7",
+    "t": "day free trial<br />no card, no seat limit"
+   },
+   {
+    "n": "Auto",
+    "t": "timesheets and<br />attendance"
+   },
+   {
+    "n": "$16",
+    "t": "Combo per seat<br />+ account manager"
+   }
+  ]
+ },
+ "rules": {
+  "items": [
+   {
+    "icon": "ok",
+    "text": "Capacity view: who is over- or under-loaded"
+   },
+   {
+    "icon": "warn",
+    "text": "Listed prices are billed yearly"
+   },
+   {
+    "icon": "warn",
+    "text": "Tell your team: clear monitoring policy"
+   }
+  ]
+ },
+ "cta": {
+  "text": "Free demo + full review →",
+  "url": "rankertoolai.com/review/<span class=\"hl\">insightful</span>",
+  "disclose": "#ad · Contains affiliate links"
+ }
+}
