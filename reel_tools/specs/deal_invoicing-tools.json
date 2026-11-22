@@ -1,0 +1,30 @@
+{
+ "brand": "rta",
+ "hook": {
+  "kicker": "Invoicing for freelancers",
+  "big": "$9.99",
+  "unit": "/mo",
+  "line": "Unlimited clients + users<br /><span class=\"hl\">one flat plan</span>"
+ },
+ "rows": {
+  "kicker": "Billing Now, from the guide",
+  "items": [
+   { "n": "$99.90", "t": "a year<br />about $8.33 a month" },
+   { "n": "AI", "t": "drafts invoices + logs<br />receipts by chat or voice" },
+   { "n": "Stripe", "t": "payment links mark<br />invoices paid" }
+  ]
+ },
+ "rules": {
+  "items": [
+   { "icon": "ok", "text": "Need free? Zoho Invoice: 500 invoices a year" },
+   { "icon": "ok", "text": "Invoice Ninja: free for 5 clients" },
+   { "icon": "warn", "text": "Billing Now trial is only 3 days" }
+  ]
+ },
+ "cta": {
+  "text": "4 tools compared →",
+  "url": "rankertoolai.com/best/<br /><span class=\"hl\">invoicing-software-<br />for-freelancers</span>",
+  "disclose": "#ad · Contains affiliate links"
+ },
+ "stretch": 1.6
+}
