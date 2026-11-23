@@ -1,0 +1,42 @@
+{
+  "site": "rta",
+  "slug": "bf5-deals",
+  "reel": "bf5_deals_reel_v1",
+  "kw": "bf",
+  "kwLabel": "BF",
+  "page": "bf",
+  "brandName": "5 AI tool deals",
+  "disclose": "link",
+  "category": "Science & Technology",
+  "expires": "2026-12-01",
+  "expiresNote": "ElevenLabs + Merlin hết hạn khoảng 1/12",
+  "hook": "5 AI tool Black Friday deals that are actually live 🛒",
+  "summary": "Five Black Friday offers we checked on each brand's own website on November 23, 2026, sorted by which ends first.",
+  "points": [
+    "ElevenLabs: up to 55% off year one of Creator & Pro annual, ends Dec 1",
+    "Merlin AI: Black Friday plan $24 for a whole year, code BF2",
+    "Pictory: 50% off all plans, code BLACKFRIYAYY50",
+    "NordPass: up to 58% off annual Personal + 3 months, ends Dec 9",
+    "EaseUS: up to 70% off, code BFBEST2026"
+  ],
+  "offer": "",
+  "caveat": "First-year prices renew higher: check the renewal price before you pay.",
+  "pinterest": {
+    "title": "5 AI Tool Black Friday Deals 2026: ElevenLabs, Pictory, NordPass, EaseUS, Merlin",
+    "board": "AI tools",
+    "alt": "Deal card: 5 AI tool Black Friday deals up to 70% off, with codes and end dates",
+    "keywords": "black friday ai tools, black friday software deals 2026, elevenlabs black friday, pictory coupon, nordpass black friday, easeus coupon"
+  },
+  "youtubeTitle": "5 AI tool Black Friday deals that are actually live (codes + end dates)",
+  "x": "5 AI tool Black Friday deals, checked on each brand's site:\n\nElevenLabs up to 55% off yr 1 (ends Dec 1)\nMerlin $24/yr, code BF2\nPictory 50% off, BLACKFRIYAYY50\nNordPass up to 58% off (Dec 9)\nEaseUS up to 70%, BFBEST2026",
+  "xTags": ["BlackFriday", "AItools"],
+  "tiktokLine": "Codes and end dates on one page.",
+  "tiktokTags": ["BlackFriday", "AItools", "BlackFridayDeals", "software", "techtok"],
+  "hashtags": ["BlackFriday", "CyberMonday", "AItools", "BlackFridayDeals", "ElevenLabs", "Pictory", "NordPass"],
+  "emailTitle": "5 AI tool Black Friday deals that are actually live",
+  "linkedin": "Five AI tool Black Friday offers that are live right now, each checked on the brand's own website on November 23:\n\nElevenLabs: up to 55% off the first year of Creator and Pro annual plans, until December 1.\nMerlin AI: a Black Friday plan at $24 for a whole year with code BF2.\nPictory: 50% off every plan with code BLACKFRIYAYY50.\nNordPass: up to 58% off an annual Personal plan plus 3 extra months, until December 9.\nEaseUS: up to 70% off with code BFBEST2026.\n\nFirst-year prices renew higher, so check the renewal before you pay. All five with codes are in the first comment.",
+  "linkedinTags": ["BlackFriday", "AItools", "SmallBusiness"],
+  "variants": {
+    "b": { "hook": "We checked 18 AI tools for Black Friday. Only 5 are on sale 👀" }
+  }
+}

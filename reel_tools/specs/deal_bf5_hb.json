@@ -1,0 +1,53 @@
+{
+  "brand": "rta",
+  "hook": {
+    "kicker": "Black Friday · we checked 18 AI tools",
+    "pre": "only",
+    "big": "5",
+    "unit": "on sale",
+    "line": "the real deals,<br /><span class=\"hl\">ends soonest first</span>"
+  },
+  "rows": {
+    "kicker": "Ends soonest first",
+    "items": [
+      {
+        "n": "55%",
+        "t": "ElevenLabs · year one<br />ends Dec 1"
+      },
+      {
+        "n": "$24",
+        "t": "Merlin AI · a whole year<br />code BF2"
+      },
+      {
+        "n": "50%",
+        "t": "Pictory · all plans<br />code BLACKFRIYAYY50"
+      },
+      {
+        "n": "58%",
+        "t": "NordPass · + 3 months<br />ends Dec 9"
+      },
+      {
+        "n": "70%",
+        "t": "EaseUS · up to<br />code BFBEST2026"
+      }
+    ]
+  },
+  "rules": {
+    "items": [
+      {
+        "icon": "ok",
+        "text": "Every deal checked on the brand's own website"
+      },
+      {
+        "icon": "warn",
+        "text": "First-year prices: check the renewal before you pay"
+      }
+    ]
+  },
+  "cta": {
+    "text": "Comment BF for all 5 links",
+    "url": "rankertoolai.com/<span class=\"hl\">bf</span>",
+    "disclose": "#ad · Contains affiliate links"
+  },
+  "stretch": 1.4
+}

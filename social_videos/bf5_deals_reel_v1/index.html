@@ -63,14 +63,14 @@
     </style>
   </head>
   <body>
-    <div id="root" data-composition-id="main" data-start="0" data-duration="13.75" data-width="1080" data-height="1920">
-      <div id="bg" class="clip" data-start="0" data-duration="13.75" data-track-index="0">
+    <div id="root" data-composition-id="main" data-start="0" data-duration="19.25" data-width="1080" data-height="1920">
+      <div id="bg" class="clip" data-start="0" data-duration="19.25" data-track-index="0">
         <div id="grid"></div>
         <div id="glow1" class="glow"></div>
         <div id="glow2" class="glow"></div>
       </div>
 
-      <div id="hook" class="scene clip " data-start="0" data-duration="3" data-track-index="1">
+      <div id="hook" class="scene clip " data-start="0" data-duration="4.2" data-track-index="1">
 <div class="kicker">Black Friday · checked Nov 23</div>
 <div class="pre">up to</div>
 <div class="stamp">70%<small>off</small></div>
@@ -78,17 +78,17 @@
 <div class="mid">5 AI tool deals<br /><span class="hl">live on each brand's own site</span></div>
       </div>
 
-      <div id="rows" class="scene clip " data-start="3" data-duration="5.15" data-track-index="1">
+      <div id="rows" class="scene clip " data-start="4.2" data-duration="7.21" data-track-index="1">
 <div class="kicker">Ends soonest first</div>
 <div class="rows"><div class="row"><div class="n">55%</div><div class="t">ElevenLabs · year one<br />ends Dec 1</div></div><div class="row"><div class="n">$24</div><div class="t">Merlin AI · a whole year<br />code BF2</div></div><div class="row"><div class="n">50%</div><div class="t">Pictory · all plans<br />code BLACKFRIYAYY50</div></div><div class="row"><div class="n">58%</div><div class="t">NordPass · + 3 months<br />ends Dec 9</div></div><div class="row"><div class="n">70%</div><div class="t">EaseUS · up to<br />code BFBEST2026</div></div></div>
       </div>
 
-      <div id="rules" class="scene clip " data-start="8.15" data-duration="2.8" data-track-index="1">
+      <div id="rules" class="scene clip " data-start="11.41" data-duration="3.92" data-track-index="1">
 <div class="rule"><div class="tick ok">✓</div><div>Every deal checked on the brand's own website</div></div>
 <div class="rule"><div class="tick warn">!</div><div>First-year prices: check the renewal before you pay</div></div>
       </div>
 
-      <div id="cta" class="scene clip " data-start="10.95" data-duration="2.8" data-track-index="1">
+      <div id="cta" class="scene clip " data-start="15.33" data-duration="3.92" data-track-index="1">
 <div class="cta">Comment BF for all 5 links</div>
 <div class="url">rankertoolai.com/<span class="hl">bf</span></div>
 <div class="disclose">#ad · Contains affiliate links</div>
@@ -96,7 +96,7 @@
     </div>
 
     <script>
-      const D = 13.75;
+      const D = 19.25;
       const tl = gsap.timeline({ paused: true });
       tl.fromTo("#glow1", { x: 0, y: 0 }, { x: 240, y: 520, duration: D, ease: "none" }, 0);
       tl.fromTo("#glow2", { x: 0, y: 0 }, { x: -200, y: -480, duration: D, ease: "none" }, 0);
@@ -112,13 +112,13 @@
       tl.fromTo("#hook .stamp", { opacity: 0, scale: 2.2, rotation: -8 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.55, ease: "back.out(1.7)", transformOrigin: "left center" }, 0.3);
       tl.fromTo("#hook .bar", { scaleX: 0 }, { scaleX: 1, duration: 0.4, ease: "power2.out" }, 0.85);
       tl.fromTo("#hook .mid", inUp, shown, 1.05);
-      tl.to("#hook .stamp", { scale: 1.04, duration: 0.25, yoyo: true, repeat: 1, ease: "power1.inOut", transformOrigin: "left center" }, 2.2);
-      tl.fromTo("#rows .kicker", inUp, shown, 3.05);
-      gsap.utils.toArray("#rows .row").forEach((el, i) => tl.fromTo(el, { opacity: 0, x: -160 }, { opacity: 1, x: 0, duration: 0.45, ease: "power3.out" }, 3.4 + i * 0.4));
-      gsap.utils.toArray("#rules .rule").forEach((el, i) => { tl.fromTo(el, inUp, shown, 8.25 + i * 0.55); tl.fromTo(el.querySelector(".tick"), { scale: 0 }, { scale: 1, duration: 0.35, ease: "back.out(2.2)" }, 8.4 + i * 0.55); });
-      tl.fromTo("#cta .cta", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.8)" }, 11.25);
-      tl.fromTo("#cta .url", inUp, shown, 11.55);
-      tl.fromTo("#cta .disclose", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 11.85);
+      tl.to("#hook .stamp", { scale: 1.04, duration: 0.25, yoyo: true, repeat: 1, ease: "power1.inOut", transformOrigin: "left center" }, 3.4);
+      tl.fromTo("#rows .kicker", inUp, shown, 4.25);
+      gsap.utils.toArray("#rows .row").forEach((el, i) => tl.fromTo(el, { opacity: 0, x: -160 }, { opacity: 1, x: 0, duration: 0.45, ease: "power3.out" }, 4.6 + i * 0.4));
+      gsap.utils.toArray("#rules .rule").forEach((el, i) => { tl.fromTo(el, inUp, shown, 11.51 + i * 0.55); tl.fromTo(el.querySelector(".tick"), { scale: 0 }, { scale: 1, duration: 0.35, ease: "back.out(2.2)" }, 11.66 + i * 0.55); });
+      tl.fromTo("#cta .cta", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.8)" }, 15.63);
+      tl.fromTo("#cta .url", inUp, shown, 15.93);
+      tl.fromTo("#cta .disclose", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 16.23);
       window.__timelines = window.__timelines || {};
       window.__timelines["main"] = tl;
       tl.seek(0);
