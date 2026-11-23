@@ -35,24 +35,6 @@
     "first_reported": "2026-09-20",
     "last_reported": "2026-10-01"
   },
-  "Switch (by SandboxAQ)": {
-    "vertical_or_category": "AI agent-into-team-chat coordination layer / dev infra",
-    "tier": "WATCH",
-    "first_reported": "2026-09-24",
-    "last_reported": "2026-09-24"
-  },
-  "Toone": {
-    "vertical_or_category": "AI agent team / workflow builder (no-code)",
-    "tier": "WATCH",
-    "first_reported": "2026-09-24",
-    "last_reported": "2026-09-24"
-  },
-  "Arcjet (Agent Runtime Security)": {
-    "vertical_or_category": "AI agent runtime security/observability (dev infra, B2B)",
-    "tier": "WATCH",
-    "first_reported": "2026-09-24",
-    "last_reported": "2026-09-24"
-  },
   "Ami AI": {
     "vertical_or_category": "AI outbound sales/campaign agent",
     "tier": "WATCH",
@@ -126,10 +108,10 @@
     "last_reported": "2026-10-05"
   },
   "Answrr": {
-    "vertical_or_category": "AI receptionist SaaS (30% hoa hong dinh ky tron doi - chua xac minh chinh thuc)",
-    "tier": "WATCH",
+    "vertical_or_category": "AI receptionist SaaS (30% hoa hong dinh ky tron doi, EST ~$104/don theo gia goi re nhat $29/mo)",
+    "tier": "HOA_HONG_CAO",
     "first_reported": "2026-10-09",
-    "last_reported": "2026-10-09"
+    "last_reported": "2026-11-24"
   },
   "Scrunch AI": {
     "vertical_or_category": "AI visibility / GEO-AEO tracking (agency referral program, xet duyet thu cong)",
@@ -249,5 +231,17 @@
     "tier": "HOA_HONG_CAO",
     "first_reported": "2026-11-22",
     "last_reported": "2026-11-22"
+  },
+  "FormWise AI": {
+    "vertical_or_category": "AI form/survey builder SaaS (25% dinh ky qua FirstPromoter, chua xac minh chinh chu)",
+    "tier": "WATCH",
+    "first_reported": "2026-11-24",
+    "last_reported": "2026-11-24"
+  },
+  "Sembly AI": {
+    "vertical_or_category": "AI meeting assistant SaaS (25% dinh ky toi da 24 thang qua FirstPromoter, chua xac minh chinh chu)",
+    "tier": "WATCH",
+    "first_reported": "2026-11-24",
+    "last_reported": "2026-11-24"
   }
 }
