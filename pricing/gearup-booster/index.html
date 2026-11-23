@@ -326,6 +326,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+
+<!-- NL_TOP5_2026_11_23: email signup on a top Bing page -->
+<div class="newsletter-section">
+  <h3>Get an email if GearUP Booster drops its price</h3>
+  <p>One short email when GearUP or another tool we cover runs a real sale. No spam, unsubscribe anytime.</p>
+  <form class="newsletter-form" id="nl-gearup-pricing" action="https://formsubmit.co/b21365b0716308a5caecd30f63ea8e22" method="POST">
+    <input type="hidden" name="_subject" value="Newsletter signup (gearup-pricing): RankerToolAI">
+    <input type="hidden" name="_next" value="https://rankertoolai.com/pricing/gearup-booster/?subscribed=1">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+    <input type="hidden" name="source" value="gearup-pricing">
+    <input type="email" name="email" placeholder="your@email.com" required autocomplete="email">
+    <button type="submit">Subscribe free &rarr;</button>
+  </form>
+  <p class="nl-ok" hidden style="color:#4ade80;margin:.75rem 0 0;">Thanks, you are on the list.</p>
+</div>
+<script>
+(function(){var nf=document.getElementById("nl-gearup-pricing");if(!nf)return;
+nf.addEventListener("submit",function(){var e=nf.querySelector("[name=email]").value,hp=nf.querySelector("[name=_honey]").value;try{fetch("/api/subscribe",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({email:e,source:"gearup-pricing",page:"/pricing/gearup-booster/",honey:hp}),keepalive:true}).catch(function(){});}catch(x){}(window.dataLayer=window.dataLayer||[]).push({event:"form_submit",form_id:"gearup-pricing"});});
+if(location.search.indexOf("subscribed=1")!==-1){var ok=nf.parentNode.querySelector(".nl-ok");if(ok)ok.hidden=false;}})();
+</script>
 </main>
 
 <footer style="border-top:1px solid rgba(255,255,255,0.06);padding:2.5rem 0;margin-top:2rem;">

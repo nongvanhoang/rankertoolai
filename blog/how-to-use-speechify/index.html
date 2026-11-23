@@ -316,6 +316,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </a>
     </div>
   </div>
+
+<!-- NL_TOP5_2026_11_23: email signup on a top Bing page -->
+<div class="newsletter-section">
+  <h3>Get our weekly AI tool tips and deals</h3>
+  <p>One short email a week: new AI tool reviews, real deals and how-to guides like this one. No spam, unsubscribe anytime.</p>
+  <form class="newsletter-form" id="nl-speechify-howto" action="https://formsubmit.co/b21365b0716308a5caecd30f63ea8e22" method="POST">
+    <input type="hidden" name="_subject" value="Newsletter signup (speechify-howto): RankerToolAI">
+    <input type="hidden" name="_next" value="https://rankertoolai.com/blog/how-to-use-speechify/?subscribed=1">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+    <input type="hidden" name="source" value="speechify-howto">
+    <input type="email" name="email" placeholder="your@email.com" required autocomplete="email">
+    <button type="submit">Subscribe free &rarr;</button>
+  </form>
+  <p class="nl-ok" hidden style="color:#4ade80;margin:.75rem 0 0;">Thanks, you are on the list.</p>
+</div>
+<script>
+(function(){var nf=document.getElementById("nl-speechify-howto");if(!nf)return;
+nf.addEventListener("submit",function(){var e=nf.querySelector("[name=email]").value,hp=nf.querySelector("[name=_honey]").value;try{fetch("/api/subscribe",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({email:e,source:"speechify-howto",page:"/blog/how-to-use-speechify/",honey:hp}),keepalive:true}).catch(function(){});}catch(x){}(window.dataLayer=window.dataLayer||[]).push({event:"form_submit",form_id:"speechify-howto"});});
+if(location.search.indexOf("subscribed=1")!==-1){var ok=nf.parentNode.querySelector(".nl-ok");if(ok)ok.hidden=false;}})();
+</script>
 </main>
 
 <footer class="site-footer">
