@@ -116,6 +116,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <p class="sp-note">Affiliate link: we may earn a commission at no extra cost to you.</p>
   </section>
 
+  <div class="newsletter-section" style="margin:0 0 1.25rem;">
+    <h3>Get the next AI tool deal by email</h3>
+    <p>One short email when a real deal goes live (Cyber Monday is Nov 30). No spam, unsubscribe anytime.</p>
+    <form class="newsletter-form" id="bf-nl" action="https://formsubmit.co/b21365b0716308a5caecd30f63ea8e22" method="POST">
+      <input type="hidden" name="_subject" value="Deal alert signup (/bf/ reel page): RankerToolAI">
+      <input type="hidden" name="_next" value="https://rankertoolai.com/bf/?subscribed=1">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+      <input type="hidden" name="source" value="bf_reel_page">
+      <input type="email" name="email" placeholder="your@email.com" required autocomplete="email">
+      <button type="submit">Send me deals &rarr;</button>
+    </form>
+    <p class="nl-ok" hidden style="color:#4ade80;margin:.75rem 0 0;">Thanks, you are on the list.</p>
+  </div>
+
   <a href="/deals/black-friday-ai-tools-2026/" class="sp-btn outline">See all 18 tools on our Black Friday tracker</a>
   <p class="sp-note">We have not bought these plans at the sale price; offers come from each brand's own pricing page. <a href="/links/">All our links</a> · <a href="/affiliate-disclosure/">Affiliate disclosure</a></p>
 </main>
@@ -139,6 +154,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         dataLayer.push({event: 'affiliate_click', tool: _tool, page: window.location.pathname, value: 1.0, currency: 'USD'});
       });
     });
+    // Newsletter: also send the lead to /api/subscribe (Brevo list), like the /links/ page.
+    var nf=document.getElementById("bf-nl");
+    if(nf){nf.addEventListener("submit",function(){var e=nf.querySelector("[name=email]").value,hp=nf.querySelector("[name=_honey]").value;try{fetch("/api/subscribe",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({email:e,source:"bf-reel-page",page:"/bf/",honey:hp}),keepalive:true}).catch(function(){});}catch(x){}(window.dataLayer=window.dataLayer||[]).push({event:"form_submit",form_id:"bf-reel-page"});});}
+    if(location.search.indexOf("subscribed=1")!==-1){var ok=document.querySelector(".nl-ok");if(ok)ok.hidden=false;}
     document.querySelectorAll('button[data-code]').forEach(function(b) {
       b.addEventListener('click', function() {
         var c = b.getAttribute('data-code');
