@@ -21,14 +21,35 @@ const FROM = new Date(Date.parse(DATE + 'T00:00:00Z') - 6 * 864e5).toISOString()
 const config = JSON.parse(fs.readFileSync(path.join(DIR, 'config.json'), 'utf8'));
 const calendar = JSON.parse(fs.readFileSync(path.join(DIR, 'calendar.json'), 'utf8'));
 
+// Ảnh RN: chỉ dùng file có thật trong RankerNest/public (email/<tên>.jpg hoặc videos/<tên>-poster.jpg), rút đuôi phụ (silksilky-bf -> silksilky)
+function rnAnh(slug) {
+  const pub = 'C:/Users/Admin/RankerNest/public/assets';
+  const thu = (c) => [['email', c === 'switchbot-s20' ? 'switchbot-s20-vacuum.jpg' : c + '.jpg'], ['videos', c + '-poster.jpg']]
+    .find(([d, f]) => fs.existsSync(path.join(pub, d, f)));
+  const parts = String(slug).split('-');
+  for (let n = parts.length; n > 0; n--) { const r = thu(parts.slice(0, n).join('-')); if (r) return `https://rankernest.com/assets/${r[0]}/${r[1]}`; }
+  return fs.existsSync(pub) ? '' : `https://rankernest.com/assets/email/${slug}.jpg`;
+}
+
+// Logo RTA: chỉ dùng file có thật (git origin/main), vì mã bài hay có đuôi phụ (pictory-bf, gearup-price, nordpass-bf)
+let RTA_LOGOS = null;
+function rtaLogo(slug) {
+  if (!RTA_LOGOS) {
+    try { RTA_LOGOS = require('child_process').execFileSync('git', ['-C', 'C:/Users/Admin/RankerToolAI', 'ls-tree', '--name-only', 'origin/main', 'assets/images/logos/'], { encoding: 'utf8' })
+      .split(/\r?\n/).map((l) => (l.match(/logos\/([^/]+)\.png$/) || [])[1]).filter(Boolean); } catch (_) { RTA_LOGOS = []; }
+  }
+  const parts = String(slug).split('-');
+  for (let n = parts.length; n > 0; n--) { const c = parts.slice(0, n).join('-'); if (RTA_LOGOS.includes(c)) return c; }
+  return RTA_LOGOS.find((l) => l.startsWith(parts[0] + '-')) || (RTA_LOGOS.length ? '' : slug.replace(/-lang$/, ''));
+}
+
 const SITES = {
   rn: { name: 'RankerNest', domain: 'https://rankernest.com', list: 3, key: 'RN_BREVO_API_KEY', sender: 'hello@rankernest.com',
     color: '#06D6C4', accent: '#FF4D6D', dark: '#090c0f', tagline: 'Smart buys, explained',
-    img: (slug) => /^gifts-/.test(slug) ? `https://rankernest.com/assets/videos/${slug}-poster.jpg`
-      : `https://rankernest.com/assets/email/${slug === 'switchbot-s20' ? 'switchbot-s20-vacuum' : slug}.jpg` },
+    img: (slug) => rnAnh(slug) },
   rta: { name: 'RankerToolAI', domain: 'https://rankertoolai.com', list: 5, key: 'RTA_BREVO_API_KEY', sender: 'hello@rankertoolai.com',
     color: '#f97316', accent: '#fbbf24', dark: '#0f1e38', tagline: 'AI tools, tried on the free plan first',
-    img: (slug) => `https://rankertoolai.com/assets/images/logos/${slug.replace(/-lang$/, '')}.png` },
+    img: (slug) => { const f = rtaLogo(slug); return f ? `https://rankertoolai.com/assets/images/logos/${f}.png` : ''; } },
 };
 const FONT = "font-family:'Segoe UI',Helvetica,Arial,sans-serif;";
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -64,7 +85,7 @@ function block(site, s, campaign) {
 <tr><td style="padding:22px 28px 6px;">
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #e5e7eb;border-radius:14px;">
     <tr><td style="padding:18px;text-align:center;background:#ffffff;border-radius:14px 14px 0 0;">
-      <a href="${url}"><img src="${S.img(s.slug)}" width="260" alt="${esc(s.emailTitle)}" style="display:inline-block;max-width:260px;height:auto;border:0;"></a>
+      ${S.img(s.slug) ? `<a href="${url}"><img src="${S.img(s.slug)}" width="260" alt="${esc(s.emailTitle)}" style="display:inline-block;max-width:260px;height:auto;border:0;"></a>` : ''}
     </td></tr>
     <tr><td style="padding:4px 20px 20px;${FONT}">
       <h2 style="margin:0 0 8px;font-size:20px;line-height:1.3;color:#111827;">${esc(s.emailTitle)}</h2>
