@@ -35,12 +35,6 @@
     "first_reported": "2026-09-20",
     "last_reported": "2026-10-01"
   },
-  "Ami AI": {
-    "vertical_or_category": "AI outbound sales/campaign agent",
-    "tier": "WATCH",
-    "first_reported": "2026-09-25",
-    "last_reported": "2026-09-25"
-  },
   "PixVerse R2": {
     "vertical_or_category": "AI video generation (real-time world model)",
     "tier": "HOT",
