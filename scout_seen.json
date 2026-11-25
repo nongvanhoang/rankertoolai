@@ -1,144 +1,210 @@
 {
-  "Cuey": {
-    "vertical_or_category": "AI tools (browser extension / model comparison)",
-    "tier": "WATCH",
-    "first_reported": "2026-09-29",
-    "last_reported": "2026-09-29"
-  },
-  "Harmony": {
-    "vertical_or_category": "AI agent (IT/HR/ESM automation cho doanh nghiệp)",
-    "tier": "WATCH",
-    "first_reported": "2026-09-29",
-    "last_reported": "2026-09-29"
-  },
-  "Instinct": {
-    "vertical_or_category": "AI personal assistant via SMS/calls (invite-only)",
-    "tier": "WATCH",
-    "first_reported": "2026-09-02",
-    "last_reported": "2026-10-13"
-  },
-  "AIR": {
-    "vertical_or_category": "AI security / enterprise agent permission auditing",
-    "tier": "WATCH",
-    "first_reported": "2026-09-02",
-    "last_reported": "2026-09-26"
-  },
-  "Sourclip 2.0": {
-    "vertical_or_category": "AI research/productivity Chrome extension for Gemini Notebook/NotebookLM",
-    "tier": "HOT",
-    "first_reported": "2026-09-16",
-    "last_reported": "2026-10-01"
-  },
-  "Sider Omni Sidebar": {
-    "vertical_or_category": "AI agent sidebar for every Mac app (screen-aware assistant)",
-    "tier": "HOT",
-    "first_reported": "2026-09-20",
-    "last_reported": "2026-10-01"
-  },
-  "PixVerse R2": {
-    "vertical_or_category": "AI video generation (real-time world model)",
-    "tier": "HOT",
-    "first_reported": "2026-09-26",
-    "last_reported": "2026-10-01"
-  },
-  "Makersclaw 2.0": {
-    "vertical_or_category": "AI agent operating system",
-    "tier": "WATCH",
-    "first_reported": "2026-09-26",
-    "last_reported": "2026-09-26"
-  },
-  "Bullet (YC S26 coding agent)": {
-    "vertical_or_category": "AI coding agent / dev tools",
-    "tier": "WATCH",
-    "first_reported": "2026-09-26",
-    "last_reported": "2026-09-26"
-  },
-  "Raft (multi-agent workspace)": {
-    "vertical_or_category": "AI agent orchestration / multi-model workspace",
-    "tier": "WATCH",
-    "first_reported": "2026-09-26",
-    "last_reported": "2026-09-26"
-  },
-  "Clipnote": {
-    "vertical_or_category": "AI notepad / persistent AI conversation memory",
-    "tier": "WATCH",
-    "first_reported": "2026-09-28",
-    "last_reported": "2026-09-28"
-  },
-  "HappyShrimp (Alibaba AI music generator)": {
-    "vertical_or_category": "AI music generation (Suno competitor)",
-    "tier": "WATCH",
-    "first_reported": "2026-09-30",
-    "last_reported": "2026-09-30"
-  },
-  "RankSpot": {
-    "vertical_or_category": "AI SEO blog automation",
-    "tier": "WATCH",
-    "first_reported": "2026-10-02",
-    "last_reported": "2026-10-02"
-  },
-  "Fabraix (Nyx)": {
-    "vertical_or_category": "AI agent security / red-teaming (dev infra, B2B)",
-    "tier": "WATCH",
-    "first_reported": "2026-10-03",
-    "last_reported": "2026-10-03"
-  },
-  "Yeta AI": {
-    "vertical_or_category": "AI tools (real-time YouTube video dubbing)",
-    "tier": "WATCH",
-    "first_reported": "2026-10-04",
-    "last_reported": "2026-10-04"
-  },
-  "OpenJobs AI": {
-    "vertical_or_category": "AI agent (tuyen dung tu dong end-to-end)",
-    "tier": "WATCH",
-    "first_reported": "2026-10-04",
-    "last_reported": "2026-10-04"
-  },
-  "LLM Pulse": {
-    "vertical_or_category": "AI visibility / GEO-AEO tracking (theo doi thuong hieu tren ChatGPT, Perplexity, Google AI Mode)",
-    "tier": "HOT",
-    "first_reported": "2026-10-05",
-    "last_reported": "2026-10-05"
+  "AI Studios (aistudios.com / DeepBrain AI)": {
+    "first_reported": "2026-11-06",
+    "last_reported": "2026-11-06",
+    "tier": "HOA_HONG_CAO",
+    "vertical_or_category": "AI video / AI avatar tool"
   },
   "Answrr": {
-    "vertical_or_category": "AI receptionist SaaS (30% hoa hong dinh ky tron doi, EST ~$104/don theo gia goi re nhat $29/mo)",
-    "tier": "HOA_HONG_CAO",
     "first_reported": "2026-10-09",
-    "last_reported": "2026-11-24"
+    "last_reported": "2026-11-24",
+    "tier": "HOA_HONG_CAO",
+    "vertical_or_category": "AI receptionist SaaS (30% hoa hong dinh ky tron doi, EST ~$104/don theo gia goi re nhat $29/mo)"
   },
-  "Scrunch AI": {
-    "vertical_or_category": "AI visibility / GEO-AEO tracking (agency referral program, xet duyet thu cong)",
+  "Clipnote": {
+    "first_reported": "2026-09-28",
+    "last_reported": "2026-09-28",
     "tier": "WATCH",
-    "first_reported": "2026-10-11",
-    "last_reported": "2026-10-11"
-  },
-  "Robofy": {
-    "vertical_or_category": "AI chatbot builder (no-code, cho SMB)",
-    "tier": "WATCH",
-    "first_reported": "2026-10-12",
-    "last_reported": "2026-10-12"
+    "vertical_or_category": "AI notepad / persistent AI conversation memory"
   },
   "CodeRabbit": {
-    "vertical_or_category": "AI code review / AI coding tool",
-    "tier": "WATCH",
     "first_reported": "2026-10-20",
-    "last_reported": "2026-10-20"
-  },
-  "Lindy AI": {
-    "vertical_or_category": "No-code AI agent / workflow automation builder",
+    "last_reported": "2026-10-20",
     "tier": "WATCH",
-    "first_reported": "2026-10-22",
-    "last_reported": "2026-10-22"
+    "vertical_or_category": "AI code review / AI coding tool"
+  },
+  "Cuey": {
+    "first_reported": "2026-09-29",
+    "last_reported": "2026-09-29",
+    "tier": "WATCH",
+    "vertical_or_category": "AI tools (browser extension / model comparison)"
+  },
+  "CustomGPT.ai": {
+    "first_reported": "2026-10-31",
+    "last_reported": "2026-10-31",
+    "tier": "HOA_HONG_CAO",
+    "vertical_or_category": "AI chatbot builder tren du lieu rieng (RAG)"
+  },
+  "Fabraix (Nyx)": {
+    "first_reported": "2026-10-03",
+    "last_reported": "2026-10-03",
+    "tier": "WATCH",
+    "vertical_or_category": "AI agent security / red-teaming (dev infra, B2B)"
+  },
+  "FormWise AI": {
+    "first_reported": "2026-11-24",
+    "last_reported": "2026-11-24",
+    "tier": "WATCH",
+    "vertical_or_category": "AI form/survey builder SaaS (25% dinh ky qua FirstPromoter, chua xac minh chinh chu)"
+  },
+  "GoEnhance AI": {
+    "first_reported": "2026-11-19",
+    "last_reported": "2026-11-19",
+    "tier": "WATCH",
+    "vertical_or_category": "AI SaaS affiliate"
+  },
+  "HappyShrimp (Alibaba AI music generator)": {
+    "first_reported": "2026-09-30",
+    "last_reported": "2026-09-30",
+    "tier": "WATCH",
+    "vertical_or_category": "AI music generation (Suno competitor)"
+  },
+  "Harmony": {
+    "first_reported": "2026-09-29",
+    "last_reported": "2026-09-29",
+    "tier": "WATCH",
+    "vertical_or_category": "AI agent (IT/HR/ESM automation cho doanh nghiệp)"
   },
   "Higgsfield AI": {
-    "vertical_or_category": "AI video/image generation (UGC ads, viral social video effects)",
-    "tier": "WATCH",
     "first_reported": "2026-10-22",
-    "last_reported": "2026-10-22"
+    "last_reported": "2026-10-22",
+    "tier": "WATCH",
+    "vertical_or_category": "AI video/image generation (UGC ads, viral social video effects)"
+  },
+  "Instinct": {
+    "first_reported": "2026-09-02",
+    "last_reported": "2026-10-13",
+    "tier": "WATCH",
+    "vertical_or_category": "AI personal assistant via SMS/calls (invite-only)"
+  },
+  "LLM Pulse": {
+    "first_reported": "2026-10-05",
+    "last_reported": "2026-10-05",
+    "tier": "HOT",
+    "vertical_or_category": "AI visibility / GEO-AEO tracking (theo doi thuong hieu tren ChatGPT, Perplexity, Google AI Mode)"
+  },
+  "Lindy AI": {
+    "first_reported": "2026-10-22",
+    "last_reported": "2026-10-22",
+    "tier": "WATCH",
+    "vertical_or_category": "No-code AI agent / workflow automation builder"
+  },
+  "Lovable.dev (AI app builder)": {
+    "first_reported": "2026-10-29",
+    "last_reported": "2026-10-29",
+    "tier": "HOA_HONG_CAO",
+    "vertical_or_category": "AI app builder / no-code dev tool"
+  },
+  "Magai": {
+    "first_reported": "2026-11-19",
+    "last_reported": "2026-11-19",
+    "tier": "WATCH",
+    "vertical_or_category": "AI SaaS affiliate"
+  },
+  "OpenJobs AI": {
+    "first_reported": "2026-10-04",
+    "last_reported": "2026-10-04",
+    "tier": "WATCH",
+    "vertical_or_category": "AI agent (tuyen dung tu dong end-to-end)"
+  },
+  "PixVerse R2": {
+    "first_reported": "2026-09-26",
+    "last_reported": "2026-10-01",
+    "tier": "HOT",
+    "vertical_or_category": "AI video generation (real-time world model)"
+  },
+  "RankSpot": {
+    "first_reported": "2026-10-02",
+    "last_reported": "2026-10-02",
+    "tier": "WATCH",
+    "vertical_or_category": "AI SEO blog automation"
+  },
+  "Ranked AI": {
+    "first_reported": "2026-11-12",
+    "last_reported": "2026-11-12",
+    "tier": "HOA_HONG_CAO",
+    "vertical_or_category": "AEO / AI visibility tracking + managed SEO-PPC"
+  },
+  "Rankscale AI": {
+    "first_reported": "2026-11-20",
+    "last_reported": "2026-11-20",
+    "tier": "HOA_HONG_CAO",
+    "vertical_or_category": "SEO/AEO tool"
+  },
+  "Robofy": {
+    "first_reported": "2026-10-12",
+    "last_reported": "2026-10-12",
+    "tier": "WATCH",
+    "vertical_or_category": "AI chatbot builder (no-code, cho SMB)"
+  },
+  "SEOcrawl AI": {
+    "first_reported": "2026-11-15",
+    "last_reported": "2026-11-15",
+    "tier": "HOA_HONG_CAO",
+    "vertical_or_category": "AI SEO/GEO visibility tool"
+  },
+  "Scrunch AI": {
+    "first_reported": "2026-10-11",
+    "last_reported": "2026-10-11",
+    "tier": "WATCH",
+    "vertical_or_category": "AI visibility / GEO-AEO tracking (agency referral program, xet duyet thu cong)"
+  },
+  "Sembly AI": {
+    "first_reported": "2026-11-24",
+    "last_reported": "2026-11-24",
+    "tier": "WATCH",
+    "vertical_or_category": "AI meeting assistant SaaS (25% dinh ky toi da 24 thang qua FirstPromoter, chua xac minh chinh chu)"
+  },
+  "SharpAPI": {
+    "first_reported": "2026-11-21",
+    "last_reported": "2026-11-21",
+    "tier": "WATCH",
+    "vertical_or_category": "AI/SaaS dev tools"
+  },
+  "Sider Omni Sidebar": {
+    "first_reported": "2026-09-20",
+    "last_reported": "2026-10-01",
+    "tier": "HOT",
+    "vertical_or_category": "AI agent sidebar for every Mac app (screen-aware assistant)"
+  },
+  "Sourclip 2.0": {
+    "first_reported": "2026-09-16",
+    "last_reported": "2026-10-01",
+    "tier": "HOT",
+    "vertical_or_category": "AI research/productivity Chrome extension for Gemini Notebook/NotebookLM"
+  },
+  "Viktor (AI coworker / Dub affiliate)": {
+    "first_reported": "2026-10-28",
+    "last_reported": "2026-10-28",
+    "tier": "HOA_HONG_CAO",
+    "vertical_or_category": "AI \"nhan vien ao\" workflow automation qua Slack/Teams"
+  },
+  "Winston AI": {
+    "first_reported": "2026-11-26",
+    "last_reported": "2026-11-26",
+    "tier": "HOA_HONG_CAO",
+    "vertical_or_category": "AI content detection"
+  },
+  "Yeta AI": {
+    "first_reported": "2026-10-04",
+    "last_reported": "2026-10-04",
+    "tier": "WATCH",
+    "vertical_or_category": "AI tools (real-time YouTube video dubbing)"
+  },
+  "Zebracat": {
+    "first_reported": "2026-11-22",
+    "last_reported": "2026-11-22",
+    "tier": "HOA_HONG_CAO",
+    "vertical_or_category": "AI video"
   },
   "_pending_reminders": {
-    "siift": {
+    "canva-ai": {
+      "last_reminded": "2026-09-30"
+    },
+    "clearscope": {
+      "last_reminded": "2026-09-30"
+    },
+    "marketmuse": {
       "last_reminded": "2026-09-30"
     },
     "reception": {
@@ -147,95 +213,11 @@
     "runway": {
       "last_reminded": "2026-09-30"
     },
-    "marketmuse": {
-      "last_reminded": "2026-09-30"
-    },
-    "clearscope": {
-      "last_reminded": "2026-09-30"
-    },
-    "canva-ai": {
-      "last_reminded": "2026-09-30"
-    },
     "semrush": {
       "last_reminded": "2026-09-30"
+    },
+    "siift": {
+      "last_reminded": "2026-09-30"
     }
-  },
-  "Viktor (AI coworker / Dub affiliate)": {
-    "vertical_or_category": "AI \"nhan vien ao\" workflow automation qua Slack/Teams",
-    "tier": "HOA_HONG_CAO",
-    "first_reported": "2026-10-28",
-    "last_reported": "2026-10-28"
-  },
-  "Lovable.dev (AI app builder)": {
-    "vertical_or_category": "AI app builder / no-code dev tool",
-    "tier": "HOA_HONG_CAO",
-    "first_reported": "2026-10-29",
-    "last_reported": "2026-10-29"
-  },
-  "CustomGPT.ai": {
-    "vertical_or_category": "AI chatbot builder tren du lieu rieng (RAG)",
-    "tier": "HOA_HONG_CAO",
-    "first_reported": "2026-10-31",
-    "last_reported": "2026-10-31"
-  },
-  "AI Studios (aistudios.com / DeepBrain AI)": {
-    "vertical_or_category": "AI video / AI avatar tool",
-    "tier": "HOA_HONG_CAO",
-    "first_reported": "2026-11-06",
-    "last_reported": "2026-11-06"
-  },
-  "Ranked AI": {
-    "vertical_or_category": "AEO / AI visibility tracking + managed SEO-PPC",
-    "tier": "HOA_HONG_CAO",
-    "first_reported": "2026-11-12",
-    "last_reported": "2026-11-12"
-  },
-  "SEOcrawl AI": {
-    "vertical_or_category": "AI SEO/GEO visibility tool",
-    "tier": "HOA_HONG_CAO",
-    "first_reported": "2026-11-15",
-    "last_reported": "2026-11-15"
-  },
-  "Magai": {
-    "vertical_or_category": "AI SaaS affiliate",
-    "tier": "WATCH",
-    "first_reported": "2026-11-19",
-    "last_reported": "2026-11-19"
-  },
-  "GoEnhance AI": {
-    "vertical_or_category": "AI SaaS affiliate",
-    "tier": "WATCH",
-    "first_reported": "2026-11-19",
-    "last_reported": "2026-11-19"
-  },
-  "Rankscale AI": {
-    "vertical_or_category": "SEO/AEO tool",
-    "tier": "HOA_HONG_CAO",
-    "first_reported": "2026-11-20",
-    "last_reported": "2026-11-20"
-  },
-  "SharpAPI": {
-    "vertical_or_category": "AI/SaaS dev tools",
-    "tier": "WATCH",
-    "first_reported": "2026-11-21",
-    "last_reported": "2026-11-21"
-  },
-  "Zebracat": {
-    "vertical_or_category": "AI video",
-    "tier": "HOA_HONG_CAO",
-    "first_reported": "2026-11-22",
-    "last_reported": "2026-11-22"
-  },
-  "FormWise AI": {
-    "vertical_or_category": "AI form/survey builder SaaS (25% dinh ky qua FirstPromoter, chua xac minh chinh chu)",
-    "tier": "WATCH",
-    "first_reported": "2026-11-24",
-    "last_reported": "2026-11-24"
-  },
-  "Sembly AI": {
-    "vertical_or_category": "AI meeting assistant SaaS (25% dinh ky toi da 24 thang qua FirstPromoter, chua xac minh chinh chu)",
-    "tier": "WATCH",
-    "first_reported": "2026-11-24",
-    "last_reported": "2026-11-24"
   }
 }
