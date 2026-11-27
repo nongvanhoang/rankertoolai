@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5Z86G265');</script>
+<!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <title>Intercompany Eliminations Explained (With a Worked Example)</title>
+  <meta name="description" content="What intercompany eliminations are, a worked two-company example, what to eliminate, how to do it in Excel, and how tools like Joiin handle it.">
+  <link rel="canonical" href="https://rankertoolai.com/blog/intercompany-eliminations-explained/">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Intercompany Eliminations Explained (With a Worked Example)","datePublished":"2026-11-27","dateModified":"2026-11-27","author":{"@type":"Person","name":"Hoang Nong","url":"https://rankertoolai.com/author/hoang-nong/"},"publisher":{"@type":"Organization","name":"RankerToolAI","url":"https://rankertoolai.com/"},"mainEntityOfPage":"https://rankertoolai.com/blog/intercompany-eliminations-explained/"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do intercompany eliminations change group profit?","acceptedAnswer":{"@type":"Answer","text":"A simple sale between group companies doesn't: the seller's income and the buyer's cost cancel out, so revenue and costs both fall by the same amount. Profit changes only in cases such as unrealised profit on goods still held in stock at period end."}},{"@type":"Question","name":"Are eliminations recorded in each company's books?","acceptedAnswer":{"@type":"Answer","text":"No. Eliminations are made only in the consolidated reports. Each company's own accounts keep the intercompany sale, cost, receivable or payable as recorded."}},{"@type":"Question","name":"Can I do intercompany eliminations in Excel?","acceptedAnswer":{"@type":"Answer","text":"Yes, for a small group with clearly labelled intercompany accounts: put each company's trial balance in its own column, add an eliminations column with equal and opposite amounts, and check it sums to zero. It becomes hard to maintain with three or more companies, foreign currencies or monthly reporting."}},{"@type":"Question","name":"Does Joiin handle intercompany eliminations?","acceptedAnswer":{"@type":"Answer","text":"Joiin's pricing page lists chart-of-accounts mapping and eliminations on every plan, including Core. Multi-currency reporting needs the Pro plan or higher."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://rankertoolai.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://rankertoolai.com/blog/"},{"@type":"ListItem","position":3,"name":"Intercompany Eliminations Explained","item":"https://rankertoolai.com/blog/intercompany-eliminations-explained/"}]}</script>
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico"><link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <style>
+    #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
+    @media(min-width:768px){#nav-toggle{display:none;}}
+    #nav-menu{display:none;}
+    #nav-menu.is-open{display:flex;flex-direction:column;position:absolute;top:64px;left:0;right:0;background:#080c18;border-bottom:1px solid rgba(255,255,255,0.08);padding:1rem;z-index:200;box-shadow:var(--shadow-lg);}
+    @media(min-width:768px){#nav-menu{display:flex!important;flex-direction:row;position:static;border:none;padding:0;box-shadow:none;}}
+    .site-header{position:relative;}
+    .tool-card{background:var(--color-bg-alt);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:1.5rem;margin-bottom:1.5rem;position:relative;}
+    .tool-card.featured{border-color:rgba(249,115,22,0.5);background:linear-gradient(135deg,rgba(249,115,22,0.05),rgba(251,191,36,0.02));}
+    .rank-badge{position:absolute;top:-12px;left:1.5rem;background:var(--color-primary);color:white;font-size:0.7rem;font-weight:800;padding:0.2rem 0.65rem;border-radius:9999px;text-transform:uppercase;letter-spacing:0.05em;}
+    .rank-badge.top3{background:linear-gradient(90deg,#f97316,#fbbf24);}
+    .tool-score{display:inline-flex;align-items:center;gap:0.35rem;background:#0d1224;border:1px solid var(--color-border);border-radius:var(--radius);padding:0.25rem 0.65rem;font-size:0.85rem;font-weight:700;color:#f97316;}
+    .tag{display:inline-block;background:rgba(249,115,22,0.1);border:1px solid rgba(249,115,22,0.25);color:#fbbf24;font-size:0.7rem;padding:0.15rem 0.5rem;border-radius:9999px;margin:0.15rem;}
+    .faq-item{border:1px solid var(--color-border);border-radius:var(--radius);margin-bottom:0.75rem;padding:1.25rem;}
+    .faq-item h3{margin:0 0 0.5rem;font-size:1rem;}
+    .faq-item p{margin:0;color:var(--color-text-muted);font-size:0.875rem;}
+    .winner-box{background:linear-gradient(135deg,rgba(34,197,94,0.12),rgba(22,163,74,0.06));border:1px solid rgba(34,197,94,0.3);border-radius:var(--radius-lg);padding:1.25rem;margin-bottom:2rem;}
+    /* JOIIN_CTA_2026-11-14 */
+    .jc-bar{position:fixed;bottom:0;left:0;right:0;background:linear-gradient(90deg,#0a0f1e,#0d1528);border-top:1px solid rgba(22,163,74,0.3);padding:0.65rem 1rem;display:flex;align-items:center;justify-content:space-between;gap:0.75rem;z-index:100;transform:translateY(100%);transition:transform 0.3s ease;}
+    .jc-bar.visible{transform:translateY(0);}
+    .jc-bar-text{font-size:0.85rem;color:#f1f5f9;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+    .jc-bar-text span{color:#94a3b8;font-size:0.8rem;}
+    .jc-bar a{flex-shrink:0;padding:0.55rem 1.1rem;background:linear-gradient(135deg,#16a34a,#4ade80);color:#fff;font-weight:700;border-radius:var(--radius);text-decoration:none;font-size:0.85rem;white-space:nowrap;}
+    .jc-qa{margin:0.85rem 0 0;display:flex;flex-wrap:wrap;align-items:center;gap:0.5rem 0.75rem;}
+    .jc-qa a{display:inline-block;padding:0.55rem 1.2rem;background:linear-gradient(135deg,#16a34a,#4ade80);color:#fff;font-weight:800;border-radius:var(--radius);text-decoration:none;font-size:0.9rem;}
+    .jc-qa small{font-size:0.75rem;color:rgba(148,163,184,0.75);}
+    @media (max-width:600px){.jc-bar-text span{display:none;}}
+  </style>
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="RankerToolAI">
+  <meta property="og:title" content="Intercompany Eliminations Explained">
+  <meta property="og:description" content="What intercompany eliminations are, a worked two-company example, what to eliminate, how to do it in Excel, and how tools like Joiin handle it.">
+  <meta property="og:url" content="https://rankertoolai.com/blog/intercompany-eliminations-explained/">
+  <meta property="og:image" content="https://rankertoolai.com/assets/images/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@rankertoolai">
+    <script async src="/assets/js/pint.js"></script>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7922606734780809" crossorigin="anonymous"></script>
+
+  <!-- ═══ ANALYTICS & ADS TRACKING ═══ -->
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var passKeys = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','gclid'];
+      var incoming = new URLSearchParams(window.location.search);
+      document.querySelectorAll('a[href*="/go/"]').forEach(function(el) {
+        el.addEventListener('click', function() {
+          try {
+            var dest = new URL(el.href, window.location.href);
+            passKeys.forEach(function(k) {
+              if (incoming.has(k) && !dest.searchParams.has(k)) dest.searchParams.set(k, incoming.get(k));
+            });
+            el.href = dest.toString();
+          } catch (e) {}
+
+          var _tool = (el.href.split('/go/')[1] || '').split(/[?#]/)[0].replace(/\//g,'') || 'unknown';
+          var _comm = (window.AFFILIATE_COMMISSIONS && window.AFFILIATE_COMMISSIONS[_tool]) || {value:1.0,currency:'USD'};
+          dataLayer.push({
+            event: 'affiliate_click',
+            tool: _tool,
+            page: window.location.pathname,
+            value: _comm.value,
+            currency: _comm.currency
+          });
+        });
+      });
+
+      setTimeout(function() {
+        dataLayer.push({event: 'engaged_60s'});
+      }, 60000);
+    });
+  </script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window,document,"clarity","script","x97zf4vn2v");
+  </script>
+  <!-- ══════════════════════════════════ -->
+  </head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Z86G265"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="/" class="site-logo" style="-webkit-text-fill-color:unset;background:none;display:flex;align-items:center;gap:0.5rem;text-decoration:none;">
+        <img src="/assets/images/logo-dark.webp" onerror="this.src='/assets/images/logo-dark.png'" alt="Dark logo" style="height:38px;width:38px;object-fit:contain;">
+        <span style="font-size:1.15rem;font-weight:900;background:linear-gradient(135deg,#f97316,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">RankerTool<span style="background:linear-gradient(135deg,#22c55e,#4ade80);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;"> AI</span></span>
+      </a>
+      <button id="nav-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
+      <nav aria-label="Primary" style="display:contents">
+      <ul class="nav-primary" id="nav-menu" role="list">
+        <li><a href="/review/">Reviews</a></li><li><a href="/compare/">Compare</a></li>
+        <li><a href="/alternatives/">Alternatives</a></li><li><a href="/best/" style="color:var(--color-primary);">Best Tools</a></li>
+        <li><a href="/category/">Categories</a></li><li><a href="/blog/">Blog</a></li>
+        <li><a href="/deals/" style="color:#fbbf24;font-weight:600;">Deals</a></li>
+      </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <nav class="breadcrumb">
+    <a href="/">Home</a><span class="breadcrumb-sep">›</span>
+    <a href="/blog/">Blog</a><span class="breadcrumb-sep">›</span>
+    <span>Intercompany Eliminations</span>
+  </nav>
+</div>
+
+
+<main class="container" style="padding-top:1rem;padding-bottom:4rem;">
+  <div style="max-width:760px;">
+    <h1 style="font-size:clamp(1.6rem,4vw,2.25rem);margin-bottom:0.5rem;">Intercompany Eliminations Explained (With a Worked Example)</h1>
+    <p style="color:var(--color-text-muted);font-size:1rem;margin-bottom:0.5rem;">Guide by RankerToolAI · Updated November 2026 · A plain-English explainer for small groups, not accounting advice. Tool details come from each vendor's published pages. See our <a href="/methodology/">methodology</a>.</p>
+    <p style="font-size:0.8rem;color:rgba(148,163,184,0.7);margin-bottom:1rem;">Disclosure: this page contains affiliate links, including to Joiin. We may earn a commission if you buy through them, at no extra cost to you. <a href="/affiliate-disclosure/">Read our disclosure</a>.</p>
+
+    <div class="winner-box">
+      <strong style="color:#4ade80;">Quick Answer</strong>
+      <p style="margin:0.5rem 0 0;color:#e2e8f0;font-size:0.9rem;">When companies in the same group trade with each other, the group hasn't earned anything from outsiders, so those amounts must be removed before you add the companies together. Otherwise group revenue, costs, receivables and payables are overstated. In the example below, $6,000 of sales between two sister companies is eliminated: group sales fall from $76,500 to $70,500, and group profit doesn't change. You can do this in a spreadsheet, or set it once in a consolidation app such as <a href="/go/joiin/" rel="nofollow sponsored" target="_blank"><strong style="color:#4ade80;">Joiin</strong></a>, where eliminations are included on every plan.</p>
+      <!-- JOIIN_CTA_2026-11-14 --><p class="jc-qa"><a href="/go/joiin/" rel="nofollow sponsored" target="_blank">Try Joiin free for 14 days &rarr;</a><small>Full Max plan, no credit card. Affiliate link.</small></p>
+    </div>
+
+    <div class="toc" style="margin-bottom:2rem;">
+      <h4>Quick Navigation</h4>
+      <ol>
+        <li><a href="#what">What an Intercompany Elimination Is</a></li>
+        <li><a href="#example">Worked Example: A Coffee Shop and a Bakery</a></li>
+        <li><a href="#types">What Usually Needs Eliminating</a></li>
+        <li><a href="#excel">How to Do It in a Spreadsheet</a></li>
+        <li><a href="#software">How Consolidation Software Handles It</a></li>
+        <li><a href="#mistakes">Common Mistakes</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ol>
+    </div>
+
+    <section id="what" style="margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.08);">
+      <h2 style="font-size:1.3rem;color:#f1f5f9;margin-bottom:1rem;">What an Intercompany Elimination Is</h2>
+      <p style="color:var(--color-text-muted);line-height:1.8;">Each company in a group keeps its own books. When one company sells to, lends to or charges another, both sets of books record it: a sale and a receivable on one side, a cost and a payable on the other. That's correct for each company on its own.</p>
+      <p style="color:var(--color-text-muted);line-height:1.8;">Consolidated reports treat the group as one business. Money moving from one pocket to another isn't income, so when you add the companies together you remove both sides of every intercompany transaction. That removal is the elimination. It only happens in the group reports; each company's own books stay as they are.</p>
+    </section>
+
+    <section id="example" style="margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.08);">
+      <h2 style="font-size:1.3rem;color:#f1f5f9;margin-bottom:1rem;">Worked Example: A Coffee Shop and a Bakery</h2>
+      <p style="color:var(--color-text-muted);line-height:1.8;">Harbor Group (sample figures) owns two companies. In October, Harbor Bakery sold $6,000 of bread to Harbor Coffee, which sold it on to customers. Here is October's profit and loss:</p>
+      <div style="overflow-x:auto;">
+        <table class="comparison-table">
+          <thead><tr><th>USD</th><th>Harbor Coffee</th><th>Harbor Bakery</th><th>Simple total</th><th>Elimination</th><th>Group</th></tr></thead>
+          <tbody>
+            <tr><td>Sales to customers</td><td>42,000</td><td>22,500</td><td>64,500</td><td></td><td>64,500</td></tr>
+            <tr><td>Sales to Harbor Coffee</td><td>0</td><td>6,000</td><td>6,000</td><td>(6,000)</td><td>0</td></tr>
+            <tr><td><strong>Total sales</strong></td><td><strong>42,000</strong></td><td><strong>28,500</strong></td><td><strong>76,500</strong></td><td><strong>(6,000)</strong></td><td><strong>70,500</strong></td></tr>
+            <tr><td>Cost of sales (outside suppliers)</td><td>(9,800)</td><td>(9,200)</td><td>(19,000)</td><td></td><td>(19,000)</td></tr>
+            <tr><td>Purchases from Harbor Bakery</td><td>(6,000)</td><td>0</td><td>(6,000)</td><td>6,000</td><td>0</td></tr>
+            <tr><td>Wages, rent, utilities, marketing</td><td>(17,600)</td><td>(11,950)</td><td>(29,550)</td><td></td><td>(29,550)</td></tr>
+            <tr><td><strong>Profit</strong></td><td><strong>8,600</strong></td><td><strong>7,350</strong></td><td><strong>15,950</strong></td><td><strong>0</strong></td><td><strong>15,950</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:0.8rem;color:rgba(148,163,184,0.6);margin-top:0.5rem;">Sample figures made up for illustration.</p>
+      <p style="color:var(--color-text-muted);line-height:1.8;">Without the elimination, the group would report $76,500 of sales and $25,000 of cost of sales. After it, sales are $70,500 and cost of sales is $19,000. Profit is $15,950 either way, because the bakery's $6,000 of income and the coffee shop's $6,000 of cost cancel out. What changes is the size of the business you report, and every ratio built on it, such as gross margin.</p>
+      <p style="color:var(--color-text-muted);line-height:1.8;">If Harbor Coffee hadn't paid the bakery by month end, the bakery would show a $6,000 receivable and the coffee shop a $6,000 payable. Those are eliminated from the group balance sheet too.</p>
+    </section>
+
+    <section id="types" style="margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.08);">
+      <h2 style="font-size:1.3rem;color:#f1f5f9;margin-bottom:1rem;">What Usually Needs Eliminating</h2>
+      <ul style="color:var(--color-text-muted);line-height:2;padding-left:1.5rem;">
+        <li><strong>Sales and purchases</strong> between group companies, as in the example.</li>
+        <li><strong>Management fees and recharges</strong>, such as a parent charging subsidiaries for shared staff, rent or software.</li>
+        <li><strong>Intercompany balances</strong>: receivables and payables between group companies.</li>
+        <li><strong>Loans and interest</strong>: the loan asset and liability, and the interest income and expense.</li>
+        <li><strong>Dividends</strong> paid by a subsidiary to its parent.</li>
+        <li><strong>Profit still sitting in stock</strong>: if one company sells goods to another at a markup and they haven't been sold to outside customers by period end, that unrealised profit is removed from group inventory and profit. This is where small groups most often need an accountant's help.</li>
+        <li><strong>The parent's investment in a subsidiary</strong> against the subsidiary's share capital, on the balance sheet. Usually set up once, with your accountant.</li>
+      </ul>
+    </section>
+
+    <section id="excel" style="margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.08);">
+      <h2 style="font-size:1.3rem;color:#f1f5f9;margin-bottom:1rem;">How to Do It in a Spreadsheet</h2>
+      <ol style="color:var(--color-text-muted);line-height:2;padding-left:1.5rem;">
+        <li>Give intercompany transactions their own accounts in every company's ledger, such as "Sales to group companies" and "Due from Harbor Coffee". This is the step that makes everything else possible.</li>
+        <li>Export each company's trial balance for the same period end and put each in its own column.</li>
+        <li>Map every account to one group chart of accounts.</li>
+        <li>Add an eliminations column. For each intercompany pair, enter equal and opposite amounts so both sides go to zero.</li>
+        <li>Check that the eliminations column sums to zero, the intercompany accounts net to zero, and the consolidated balance sheet still balances.</li>
+      </ol>
+      <p style="color:var(--color-text-muted);line-height:1.8;">Our <a href="/free/consolidation-excel-template/">free consolidation Excel template</a> has the columns and checks built in. If the two sides don't match (the bakery says $6,000, the coffee shop recorded $5,800), find and fix the difference in the companies' books before you consolidate; don't force it in the eliminations column.</p>
+    </section>
+
+    <section id="software" style="margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.08);">
+      <h2 style="font-size:1.3rem;color:#f1f5f9;margin-bottom:1rem;">How Consolidation Software Handles It</h2>
+      <p style="color:var(--color-text-muted);line-height:1.8;">Consolidation apps connect to each company's ledger and let you map intercompany accounts once, so the eliminations repeat every month without retyping.</p>
+      <ul style="color:var(--color-text-muted);line-height:2;padding-left:1.5rem;">
+        <li><strong>Joiin</strong> connects to Xero, QuickBooks Online, Sage, MYOB, FreeAgent, Zoho Books and others. Its pricing page (checked November 27, 2026) lists chart-of-accounts mapping and eliminations on every plan, priced by number of companies: two companies cost $36/mo, or $29/mo billed annually, with unlimited users and a 14-day free trial of the Max plan. See our <a href="/review/joiin/">Joiin review</a>.</li>
+        <li><strong>Intuit Enterprise Suite</strong>, Intuit's multi-entity product, adds consolidated reports with eliminations for QuickBooks groups. Standard QuickBooks Online plans don't consolidate. See <a href="/blog/how-to-consolidate-quickbooks-companies/">how to consolidate QuickBooks companies</a>.</li>
+        <li><strong>Xero</strong> has no built-in consolidation across organisations; groups use an app or a spreadsheet. See <a href="/blog/how-to-consolidate-multiple-xero-organisations/">how to consolidate multiple Xero organisations</a>.</li>
+      </ul>
+      <p style="color:var(--color-text-muted);line-height:1.8;">Comparing tools? Start with our <a href="/best/consolidation-software/">best consolidation software</a> list and the <a href="/tools/consolidation-software-cost-calculator/">consolidation cost calculator</a>.</p>
+    </section>
+
+    <div style="background:linear-gradient(135deg,rgba(74,222,128,0.10),rgba(34,197,94,0.05));border:1px solid rgba(74,222,128,0.3);border-radius:var(--radius-lg);padding:1.5rem;margin:2rem 0;text-align:center;">
+      <p style="margin:0 0 0.25rem;font-weight:700;font-size:1.1rem;color:#f1f5f9;">Set your eliminations once</p>
+      <p style="margin:0 0 1rem;font-size:0.875rem;color:rgba(148,163,184,0.8);">Connect your companies to Joiin's 14-day Max trial, no credit card, and compare the group totals with your spreadsheet.</p>
+      <a href="/go/joiin/" class="btn btn-primary" rel="nofollow sponsored" target="_blank" style="font-weight:800;padding:0.75rem 2rem;">Start a Free Joiin Trial →</a>
+      <p style="margin:0.75rem 0 0;font-size:0.75rem;color:rgba(148,163,184,0.6);">Affiliate link. We may earn a commission at no extra cost to you.</p>
+    </div>
+
+    <section id="mistakes" style="margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.08);">
+      <h2 style="font-size:1.3rem;color:#f1f5f9;margin-bottom:1rem;">Common Mistakes</h2>
+      <ul style="color:var(--color-text-muted);line-height:2;padding-left:1.5rem;">
+        <li><strong>Mixing intercompany items into normal accounts.</strong> If the bakery's sale to the coffee shop sits in ordinary "Sales", nobody can find it later.</li>
+        <li><strong>Eliminating only one side.</strong> Removing the sale but not the cost changes profit, which an elimination should never do on its own.</li>
+        <li><strong>Different period ends or methods.</strong> One company on accrual and another on cash, or different month-ends, means the two sides won't match.</li>
+        <li><strong>Currency differences.</strong> A loan in euros to a U.S. subsidiary can leave a balance that doesn't cancel after translation. Multi-currency groups need a tool or an accountant that handles exchange differences.</li>
+        <li><strong>Forgetting the balance sheet.</strong> Receivables, payables and loans between companies also need eliminating, not only sales.</li>
+      </ul>
+    </section>
+
+    <section id="faq">
+      <h2>FAQ</h2>
+      <div class="faq-item"><h3>Do intercompany eliminations change group profit?</h3><p>A simple sale between group companies doesn't: the seller's income and the buyer's cost cancel out, so revenue and costs both fall by the same amount. Profit changes only in cases such as unrealised profit on goods still held in stock at period end.</p></div>
+      <div class="faq-item"><h3>Are eliminations recorded in each company's books?</h3><p>No. Eliminations are made only in the consolidated reports. Each company's own accounts keep the intercompany sale, cost, receivable or payable as recorded.</p></div>
+      <div class="faq-item"><h3>Can I do intercompany eliminations in Excel?</h3><p>Yes, for a small group with clearly labelled intercompany accounts: put each company's trial balance in its own column, add an eliminations column with equal and opposite amounts, and check it sums to zero. It becomes hard to maintain with three or more companies, foreign currencies or monthly reporting.</p></div>
+      <div class="faq-item"><h3>Does Joiin handle intercompany eliminations?</h3><p>Joiin's pricing page lists chart-of-accounts mapping and eliminations on every plan, including Core. Multi-currency reporting needs the Pro plan or higher.</p></div>
+    </section>
+    <div style="margin-top:3rem;">
+      <h3>Related</h3>
+      <div class="related-grid">
+        <a href="/review/joiin/" class="related-card"><div class="related-card-label">Review</div><div class="related-card-title">Joiin Review</div></a>
+        <a href="/blog/how-to-consolidate-quickbooks-companies/" class="related-card"><div class="related-card-label">Guide</div><div class="related-card-title">Consolidate QuickBooks Companies</div></a>
+        <a href="/free/consolidation-excel-template/" class="related-card"><div class="related-card-label">Free</div><div class="related-card-title">Consolidation Excel Template</div></a>
+        <a href="/best/consolidation-software/" class="related-card"><div class="related-card-label">Best Of</div><div class="related-card-title">Best Consolidation Software</div></a>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="/" style="display:flex;align-items:center;gap:0.5rem;text-decoration:none;"><img src="/assets/images/logo-dark.webp" onerror="this.src='/assets/images/logo-dark.png'" alt="Dark logo" style="height:32px;width:32px;object-fit:contain;" loading="lazy"><span style="font-size:1rem;font-weight:900;background:linear-gradient(135deg,#f97316,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">RankerTool AI</span></a><p class="footer-tagline">Independent AI &amp; software tool reviews.</p></div>
+      <div class="footer-col"><h5>This Category</h5><ul><li><a href="/review/joiin/">Joiin Review</a></li><li><a href="/best/consolidation-software/">Consolidation Software</a></li><li><a href="/alternatives/fathom/">Fathom Alternatives</a></li></ul></div>
+      <div class="footer-col"><h5>Best Tools</h5><ul><li><a href="/best/data-recovery-backup-software/">Data Recovery & Backup</a></li><li><a href="/best/ai-writing-tools/">AI Writing Tools</a></li><li><a href="/best/free-ai-tools/">Free AI Tools</a></li></ul></div>
+      <div class="footer-col"><h5>About</h5><ul><li><a href="/methodology/">Methodology</a></li><li><a href="/affiliate-disclosure/">Disclosure</a></li><li><a href="/privacy-policy/">Privacy</a></li></ul></div>
+    </div>
+    <div class="footer-disclosure"><strong>Affiliate Disclosure:</strong> This page contains affiliate links. <a href="/affiliate-disclosure/" style="color:#9ca3af;">Full disclosure →</a></div>
+    <div class="footer-bottom"><span>© 2026 RankerToolAI</span><span>Updated: November 2026</span></div>
+  </div>
+</footer>
+<script src="/assets/js/main.js?v=20261102"></script>
+<script src="/assets/js/cookie-consent.js" defer></script>
+<!-- JOIIN_CTA_2026-11-14 -->
+<div class="jc-bar" id="jc-bar"><div class="jc-bar-text"><strong>Joiin</strong> <span>&middot; 14-day free trial, no card &middot; from $23/mo billed annually</span></div><a href="/go/joiin/" rel="nofollow sponsored" target="_blank">Start Free Trial &rarr;</a></div>
+<script>(function(){var b=document.getElementById('jc-bar');if(!b)return;function f(){b.classList.toggle('visible',window.scrollY>400);}window.addEventListener('scroll',f,{passive:true});f();})();</script>
+</body>
+</html>
