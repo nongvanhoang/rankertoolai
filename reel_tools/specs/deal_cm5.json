@@ -1,0 +1,53 @@
+{
+  "brand": "rta",
+  "hook": {
+    "kicker": "Cyber Monday · AI tools",
+    "pre": "still live:",
+    "big": "5",
+    "unit": "deals",
+    "line": "checked Nov 27,<br /><span class=\"hl\">ends soonest first</span>"
+  },
+  "rows": {
+    "kicker": "Ends soonest first",
+    "items": [
+      {
+        "n": "$24",
+        "t": "Merlin AI · a whole year<br />ends Nov 30"
+      },
+      {
+        "n": "55%",
+        "t": "ElevenLabs · year one<br />ends Dec 1"
+      },
+      {
+        "n": "70%",
+        "t": "EaseUS · up to<br />code BFBEST2026"
+      },
+      {
+        "n": "40%",
+        "t": "GetResponse · up to<br />ends Dec 3"
+      },
+      {
+        "n": "58%",
+        "t": "NordPass · + 3 months<br />ends Dec 9"
+      }
+    ]
+  },
+  "rules": {
+    "items": [
+      {
+        "icon": "ok",
+        "text": "Every deal checked on the brand's own website"
+      },
+      {
+        "icon": "warn",
+        "text": "First-year prices: check the renewal before you pay"
+      }
+    ]
+  },
+  "cta": {
+    "text": "All 5 links → link in bio",
+    "url": "rankertoolai.com/<span class=\"hl\">bf</span>",
+    "disclose": "#ad · Contains affiliate links"
+  },
+  "stretch": 1.4
+}
