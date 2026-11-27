@@ -174,11 +174,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </section>
 <script>
 (function () {
-  var P = {"joiin":{"1":[28,23],"2":[36,29],"5":[70,57],"10":[111,92],"20":[167,139],"50":[217,174],"100":[336,252],"over100_base":336,"over100_each":2.8},"fathom":{"base":[59,315,450,805],"included":[1,10,25,50],"more":[59,31,17,13],"names":["Starter","Silver","Gold","Platinum"]},"spotlight":[[10,329,"Basic"],[25,495,"Super VCFO 25"],[75,995,"Super VCFO 75"]]};
+  var P = {"joiin":{"1":[35,28],"2":[41,32],"5":[77,62],"10":[122,97],"20":[183,147],"50":[224,179],"100":[350,280],"over100_base":350,"over100_each":3},"fathom":{"base":[59,315,450,805],"included":[1,10,25,50],"more":[59,31,17,13],"names":["Starter","Silver","Gold","Platinum"]},"spotlight":[[10,329,"Basic"],[25,495,"Super VCFO 25"],[75,995,"Super VCFO 75"]]};
   function fmt(n, cur) { return cur + (Math.round(n * 100) / 100).toLocaleString('en-US', {minimumFractionDigits: n % 1 ? 2 : 0, maximumFractionDigits: 2}); }
   function joiin(n, annual) {
     if (P.joiin[String(n)]) return {price: P.joiin[String(n)][annual ? 1 : 0], plan: annual ? 'Annual billing' : 'Monthly billing'};
-    if (n > 100) return {price: annual ? null : P.joiin.over100_base + P.joiin.over100_each * (n - 100), plan: 'From $336 + $2.80 per company over 100 (monthly)'};
+    if (n > 100) return {price: annual ? null : P.joiin.over100_base + P.joiin.over100_each * (n - 100), plan: 'From $350 + about $3 per company over 100 (monthly)'};
     return {price: null, plan: 'Not published'};
   }
   function fathom(n) {
@@ -222,7 +222,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <h2 style="font-size:1.3rem;color:#f1f5f9;margin-bottom:1rem;">How Each Tool Prices Consolidation</h2>
       <ul style="color:var(--color-text-muted);line-height:2;padding-left:1.5rem;">
-        <li><strong>Joiin</strong> publishes one price per company count, with unlimited users, reports and clients and a discount for annual billing. Over 100 companies it's $336/mo plus $2.80 per extra company. Its page no longer lists separate prices for Core, Pro and Max; multi-currency starts on Pro.</li>
+        <li><strong>Joiin</strong> publishes one price per company count, with unlimited users, reports and clients and a discount for annual billing. Over 100 companies it's $350/mo plus about $3 per extra company (monthly). Its page no longer lists separate prices for Core, Pro and Max; multi-currency starts on Pro.</li>
         <li><strong>Fathom Pro</strong> has four tiers: Starter $59/month for 1 company (+$59 each extra), Silver $315 for 10 (+$31), Gold $450 for 25 (+$17) and Platinum $805 for 50 (+$13). Its pricing page applies the cheapest tier for your count. Enterprise is quoted for 51+ companies.</li>
         <li><strong>Spotlight Reporting</strong> sells advisor plans in NZD excluding GST: Basic NZ$329 for up to 10 organisations, Super VCFO 25 at NZ$495 and Super VCFO 75 at NZ$995, then Enterprise on request.</li>
       </ul>
@@ -279,7 +279,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script src="/assets/js/main.js?v=20261102"></script>
 <script src="/assets/js/cookie-consent.js" defer></script>
 <!-- JOIIN_CTA_2026-11-14 -->
-<div class="jc-bar" id="jc-bar"><div class="jc-bar-text"><strong>Joiin</strong> <span>&middot; 14-day free trial, no card &middot; from $23/mo billed annually</span></div><a href="/go/joiin/" rel="nofollow sponsored" target="_blank">Start Free Trial &rarr;</a></div>
+<div class="jc-bar" id="jc-bar"><div class="jc-bar-text"><strong>Joiin</strong> <span>&middot; 14-day free trial, no card &middot; from $28/mo billed annually</span></div><a href="/go/joiin/" rel="nofollow sponsored" target="_blank">Start Free Trial &rarr;</a></div>
 <script>(function(){var b=document.getElementById('jc-bar');if(!b)return;function f(){b.classList.toggle('visible',window.scrollY>400);}window.addEventListener('scroll',f,{passive:true});f();})();</script>
 </body>
 </html>
