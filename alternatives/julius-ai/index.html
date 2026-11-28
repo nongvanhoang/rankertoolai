@@ -28,7 +28,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -41,9 +41,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .quick-pick-row:last-child{border:none;}
     .quick-pick-badge{font-size:0.7rem;padding:0.2rem 0.5rem;border-radius:9999px;font-weight:700;background:var(--color-primary-light);color:var(--color-primary);white-space:nowrap;}
     .why-switch{background:linear-gradient(135deg,#fef3c7,#fffbeb);border:1px solid #fcd34d;border-radius:var(--radius-lg);padding:1.5rem;margin-bottom:2rem;}
-    .why-switch h3,.why-switch li,.why-switch strong,.why-switch p{color:#92400e;}
+    .why-switch h3:not(:where(.hl3,.hl4,.hl5,.hl6)),.why-switch li,.why-switch strong,.why-switch p,
+    .why-switch .hl3{color:#92400e;}
     .before-switch{background:linear-gradient(135deg,#f0fdf4,#dcfce7);border:1px solid #86efac;border-radius:var(--radius-lg);padding:1.75rem;margin-bottom:2rem;}
-    .before-switch h3{color:#14532d;margin-bottom:0.75rem;}
+    .before-switch h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .before-switch .hl3{color:#14532d;margin-bottom:0.75rem;}
     .before-switch p,.before-switch li{color:#166534;}
     .before-switch strong{color:#14532d;}
     .coupon-badge{display:inline-block;background:#14532d;color:#bbf7d0;font-family:monospace;font-size:1rem;font-weight:700;padding:0.3rem 0.75rem;border-radius:6px;letter-spacing:0.08em;border:1px dashed #4ade80;}
@@ -52,7 +54,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .julius-wins{background:rgba(34,197,94,0.08);border:1px solid rgba(34,197,94,0.25);border-radius:10px;padding:0.9rem 1.1rem;margin-top:1rem;font-size:0.875rem;color:#4ade80;}
     .julius-wins strong{color:#86efac;}
     .verdict-box{background:linear-gradient(135deg,rgba(249,115,22,0.1),rgba(251,191,36,0.08));border:1px solid rgba(249,115,22,0.3);border-radius:var(--radius-lg);padding:1.75rem;margin-top:2rem;}
-    .verdict-box h3{color:#fbbf24;margin-bottom:0.75rem;}
+    .verdict-box h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .verdict-box .hl3{color:#fbbf24;margin-bottom:0.75rem;}
       #back-to-top{display:none;position:fixed;bottom:80px;right:1.5rem;width:44px;height:44px;border-radius:50%;background:var(--color-primary);color:white;align-items:center;justify-content:center;font-size:1.25rem;cursor:pointer;border:none;box-shadow:var(--shadow-lg);z-index:50;}
     .sticky-cta{position:fixed;bottom:0;left:0;right:0;background:linear-gradient(90deg,#0a0f1e,#0d1528);border-top:1px solid rgba(249,115,22,0.3);padding:0.75rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;z-index:100;transform:translateY(100%);transition:transform 0.3s ease;backdrop-filter:blur(12px);}
     .sticky-cta.visible{transform:translateY(0);}
@@ -185,7 +188,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- WHY PEOPLE LOOK -->
     <div class="why-switch">
-      <h3 style="margin-bottom:0.75rem;">Why People Look for Julius AI Alternatives</h3>
+      <h2 class="hl3" style="margin-bottom:0.75rem;">Why People Look for Julius AI Alternatives</h2>
       <ul style="margin:0;padding-left:1.25rem;line-height:1.9;">
         <li><strong>Price:</strong> Julius Plus at $20/month feels steep if you analyze data only occasionally — the free plan's 5 analyses/month fills up fast</li>
         <li><strong>Use case breadth:</strong> Julius is purpose-built for data analysis — users who also want general AI chat, writing help, or coding assistance need a multi-purpose tool like ChatGPT or Claude</li>
@@ -275,7 +278,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>For a developer who wants to write exploratory data analysis in natural language and then iterate on the generated Python code, ChatGPT Code Interpreter is arguably more capable than Julius AI. But for a marketing manager, operations analyst, or small business owner who just needs answers from their data without understanding Python, Julius AI is faster and more intuitive.</p>
 
       <div class="pros-cons">
-        <div class="pros"><h4>&#x2705; Pros vs Julius AI</h4><ul>
+        <div class="pros"><h3 class="hl4">&#x2705; Pros vs Julius AI</h3><ul>
           <li>More powerful for complex, multi-step statistical analysis</li>
           <li>Shows the Python code — developers can audit and reuse it</li>
           <li>Handles more file types (SQLite, JSON, text logs)</li>
@@ -324,7 +327,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>Claude's Artifacts feature is genuinely impressive — it can generate a formatted HTML table, a markdown report, or even a simple SVG chart as a separate document you can copy and use. But for serious data analysis with visual charts, real calculations, and interactive outputs, Julius AI is in a different category entirely.</p>
 
       <div class="pros-cons">
-        <div class="pros"><h4>&#x2705; Pros vs Julius AI</h4><ul>
+        <div class="pros"><h3 class="hl4">&#x2705; Pros vs Julius AI</h3><ul>
           <li>Exceptional written analysis quality and prose</li>
           <li>Better for qualitative interpretation of data patterns</li>
           <li>Artifacts produces clean structured documents</li>
@@ -373,7 +376,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>However, Perplexity cannot analyze your CSV or Excel files. It has no data analysis mode, no code execution, and no chart generation. It is fundamentally a research and knowledge tool, not a data analysis tool. Listing it as a Julius AI alternative is only valid for the narrow use case of finding external data benchmarks — for actual data analysis, there is no comparison.</p>
 
       <div class="pros-cons">
-        <div class="pros"><h4>&#x2705; Pros vs Julius AI</h4><ul>
+        <div class="pros"><h3 class="hl4">&#x2705; Pros vs Julius AI</h3><ul>
           <li>Excellent for researching external data, benchmarks, and statistics</li>
           <li>Real-time web access with cited sources</li>
           <li>Free plan is very generous for research tasks</li>
@@ -422,7 +425,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>But the target audience is entirely different from Julius AI's. Google Colab requires you to understand what a notebook is, how to run cells, and at least basic Python syntax. Gemini helps write the code, but you still need to understand what you're running. For business users who just want answers from their spreadsheets, the cognitive overhead of Colab + Gemini is prohibitive. Julius AI's clean web interface and zero-setup experience is simply more appropriate for the non-technical majority.</p>
 
       <div class="pros-cons">
-        <div class="pros"><h4>&#x2705; Pros vs Julius AI</h4><ul>
+        <div class="pros"><h3 class="hl4">&#x2705; Pros vs Julius AI</h3><ul>
           <li>Completely free (Colab free tier is very generous)</li>
           <li>Full Python environment — unlimited analysis capabilities</li>
           <li>Handles massive datasets with Google Drive + BigQuery</li>
@@ -471,7 +474,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>The limitation compared to Julius AI is depth and intelligence of insight. Microsoft Copilot in Excel is good at executing specific instructions — "create this chart," "add this formula" — but it doesn't proactively surface insights the way Julius AI does. Julius AI will look at your dataset and tell you "revenue has declined 23% in Q3, with the steepest drop in the Northeast region" without you asking. Excel Copilot waits for you to ask the right question. Additionally, Microsoft Copilot requires a Microsoft 365 Business Standard or higher plan ($12.50+/user/month), which is expensive if you only need data analysis.</p>
 
       <div class="pros-cons">
-        <div class="pros"><h4>&#x2705; Pros vs Julius AI</h4><ul>
+        <div class="pros"><h3 class="hl4">&#x2705; Pros vs Julius AI</h3><ul>
           <li>Works inside Excel — no export or upload required</li>
           <li>Results stay in .xlsx format for easy sharing</li>
           <li>Formula and pivot table generation directly in cells</li>
@@ -520,7 +523,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>The trade-off is price and complexity. Akkio starts at $49/month (close to Julius Plus at $45) and scales up for team plans. For individual analysts or business users who just need to answer ad-hoc questions from their data, Akkio's BI infrastructure is overkill. Julius AI's conversational interface is faster and more intuitive for exploratory data work. Akkio is better when you need structured, repeatable reporting; Julius AI is better for dynamic, question-driven exploration.</p>
 
       <div class="pros-cons">
-        <div class="pros"><h4>&#x2705; Pros vs Julius AI</h4><ul>
+        <div class="pros"><h3 class="hl4">&#x2705; Pros vs Julius AI</h3><ul>
           <li>Persistent dashboards that auto-refresh from connected data sources</li>
           <li>Predictive modeling (churn, forecasting, lead scoring) without code</li>
           <li>White-label client reports for agencies and consultants</li>
@@ -814,7 +817,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem;margin-top:1.25rem;">
       <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.25rem;">
-        <h4 style="color:#f1f5f9;margin-bottom:0.5rem;font-size:0.95rem;">Non-Technical Usability</h4>
+        <h3 class="hl4" style="color:#f1f5f9;margin-bottom:0.5rem;font-size:0.95rem;">Non-Technical Usability</h3>
         <p style="color:rgba(148,163,184,0.8);margin:0;font-size:0.875rem;line-height:1.65;">Can someone with no Python or statistics background use this tool effectively? Julius AI and Microsoft Copilot score highest here. Google Colab and ChatGPT Code Interpreter score lower — they're more powerful but require technical knowledge to use well.</p>
       </div>
       <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.25rem;">
@@ -844,7 +847,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div style="display:flex;flex-direction:column;gap:1rem;margin-top:1rem;">
       <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.25rem;">
-        <h4 style="color:#f1f5f9;margin:0 0 0.5rem;font-size:0.95rem;">Sales and Revenue Analysis</h4>
+        <h3 class="hl4" style="color:#f1f5f9;margin:0 0 0.5rem;font-size:0.95rem;">Sales and Revenue Analysis</h3>
         <p style="color:rgba(148,163,184,0.8);margin:0;font-size:0.875rem;line-height:1.65;">Upload your monthly sales export from Salesforce, HubSpot, or Shopify. Julius automatically identifies your top-performing products, regions, or reps — breaking down performance by any dimension in the data. It flags month-over-month changes, identifies seasonal patterns, and surfaces the specific line items driving the biggest revenue swings. A task that would take an analyst hours in Excel takes Julius seconds.</p>
       </div>
       <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.25rem;">
@@ -884,7 +887,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p class="footer-tagline">Independent AI tool reviews. No sponsored rankings.</p>
       </div>
       <div class="footer-col">
-        <h5>Data Analysis</h5>
+        <h3 class="hl5">Data Analysis</h3>
         <ul>
           <li><a href="/review/julius-ai/">Julius AI Review</a></li>
           <li><a href="/best/ai-data-tools/">Best AI Data Tools</a></li>
@@ -892,7 +895,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </ul>
       </div>
       <div class="footer-col">
-        <h5>Compare</h5>
+        <h4 class="hl5">Compare</h4>
         <ul>
           <li><a href="/compare/julius-ai-vs-chatgpt/">Julius AI vs ChatGPT</a></li>
           <li></li>
@@ -917,7 +920,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </footer>
 
-<script src="/assets/js/main.js?v=20261102"></script>
+<script src="/assets/js/main.js?v=20261128"></script>
 <script src="/assets/js/cookie-consent.js" defer></script>
 <script>
   // Back to top

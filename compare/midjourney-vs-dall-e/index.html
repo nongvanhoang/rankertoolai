@@ -24,7 +24,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;color:var(--color-text);}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -44,7 +44,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .vs-tool-sub{font-size:0.78rem;color:rgba(148,163,184,0.6);}
     .vs-badge{background:rgba(249,115,22,0.12);border:2px solid rgba(249,115,22,0.4);border-radius:9999px;padding:0.5rem 1.25rem;font-weight:700;font-size:1.1rem;color:#f97316;}
     .winner-callout{background:linear-gradient(135deg,rgba(34,197,94,0.1),rgba(22,163,74,0.07));border:1px solid rgba(34,197,94,0.3);border-radius:var(--radius-lg);padding:1.5rem;margin:2rem 0;}
-    .winner-callout h3{color:#4ade80;margin-bottom:0.5rem;}
+    .winner-callout h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .winner-callout .hl3{color:#4ade80;margin-bottom:0.5rem;}
     .winner-callout p{color:rgba(148,163,184,0.9);margin:0;font-size:0.95rem;line-height:1.7;}
     .compare-table{width:100%;border-collapse:collapse;margin:1.5rem 0;}
     .compare-table th{text-align:left;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.05em;color:rgba(148,163,184,0.6);padding:0.75rem 1rem;border-bottom:1px solid rgba(255,255,255,0.08);}
@@ -58,11 +59,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .choose-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin:2rem 0;}
     @media(max-width:580px){.choose-grid{grid-template-columns:1fr;}}
     .choose-box{border:1.5px solid var(--color-border);border-radius:var(--radius-lg);padding:1.5rem;}
-    .choose-box h3{font-size:1rem;margin-bottom:0.75rem;color:#f1f5f9;}
+    .choose-box h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .choose-box .hl3{font-size:1rem;margin-bottom:0.75rem;color:#f1f5f9;}
     .choose-box ul{font-size:0.875rem;color:rgba(148,163,184,0.85);line-height:1.9;}
     .faq-item{border-bottom:1px solid rgba(255,255,255,0.07);padding:1.25rem 0;}
     .faq-item:last-child{border-bottom:none;}
-    .faq-item h3{font-size:1rem;color:#f1f5f9;margin-bottom:0.5rem;}
+    .faq-item h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .faq-item .hl3{font-size:1rem;color:#f1f5f9;margin-bottom:0.5rem;}
     .faq-item p{font-size:0.9rem;color:rgba(148,163,184,0.85);margin:0;line-height:1.7;}
   </style>
   <meta property="og:type" content="article">
@@ -195,7 +198,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 
   <div class="winner-callout">
-    <h3>Bottom Line</h3>
+    <h2 class="hl3">Bottom Line</h2>
     <p><strong>Midjourney wins on raw image quality</strong> — it produces more artistic, visually stunning outputs with better composition and aesthetic. DALL-E 3 wins on prompt accuracy, text-in-image, and accessibility (it's built right into ChatGPT). For professional creative work and marketing visuals, Midjourney is the industry standard. For casual use and easy access, DALL-E 3 via ChatGPT is the more convenient option.</p>
   </div>
 
@@ -389,7 +392,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="https://dev.to/rankertoolai" rel="noopener noreferrer" target="_blank" aria-label="Dev.to" style="width:32px;height:32px;border-radius:8px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;color:#94a3b8;text-decoration:none;transition:background 150ms,color 150ms;font-size:9px;font-weight:900;letter-spacing:-0.5px;" onmouseover="this.style.background='rgba(255,255,255,0.14)';this.style.color='#f1f5f9'" onmouseout="this.style.background='rgba(255,255,255,0.07)';this.style.color='#94a3b8'">DEV</a>
         </div>
       </div>
-      <div class="footer-col"><h5>Reviews</h5><ul><li><a href="/category/ai-image/">AI Image Tools</a></li><li><a href="/review/">All Reviews</a></li></ul></div>
+      <div class="footer-col"><h4 class="hl5">Reviews</h4><ul><li><a href="/category/ai-image/">AI Image Tools</a></li><li><a href="/review/">All Reviews</a></li></ul></div>
       <div class="footer-col"><h5>Compare</h5><ul><li><a href="/compare/">All Comparisons</a></li><li><a href="/alternatives/midjourney/">Midjourney Alternatives</a></li></ul></div>
       <div class="footer-col"><h5>Company</h5><ul><li><a href="/about/">About Us</a></li><li><a href="/methodology/">Methodology</a></li><li><a href="/affiliate-disclosure/">Disclosure</a></li><li><a href="/privacy-policy/">Privacy</a></li><li><a href="/terms/">Terms</a></li><li><a href="/contact/">Contact</a></li></ul></div>
     </div>
@@ -397,7 +400,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="footer-bottom"><span>© 2026 RankerToolAI. All rights reserved.</span><span><a href="/sitemap.xml" style="color:#9ca3af;">Sitemap</a></span></div>
   </div>
 </footer>
-<script src="/assets/js/main.js?v=20261102"></script>
+<script src="/assets/js/main.js?v=20261128"></script>
 <script src="/assets/js/cookie-consent.js" defer></script>
 </body>
 </html>

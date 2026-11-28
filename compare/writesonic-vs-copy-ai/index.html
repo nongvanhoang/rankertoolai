@@ -23,7 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -40,7 +40,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .vs-tool-score{font-size:2rem;font-weight:800;color:#a5b4fc;}
     .vs-badge{background:rgba(249,115,22,0.12);border:2px solid rgba(249,115,22,0.4);border-radius:9999px;padding:0.5rem 1.25rem;font-weight:700;font-size:1.1rem;color:#c7d2fe;}
     .winner-callout{background:linear-gradient(135deg,rgba(34,197,94,0.15),rgba(22,163,74,0.1));border:1px solid rgba(34,197,94,0.3);border-radius:var(--radius-lg);padding:1.5rem;margin:2rem 0;}
-    .winner-callout h3{color:white;margin-bottom:0.5rem;}
+    .winner-callout h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .winner-callout .hl3{color:white;margin-bottom:0.5rem;}
     .choose-box{border:2px solid var(--color-border);border-radius:var(--radius-lg);padding:1.5rem;margin-bottom:1rem;}
     .choose-box.winner{border-color:var(--color-accent);}
     .winner-col{background:rgba(34,197,94,0.08);font-weight:600;color:#4ade80;}
@@ -175,12 +176,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="winner-callout">
-      <h3>⚠️ Product Update: Neither Tool Is an AI Writer Anymore</h3>
+      <h2 class="hl3">⚠️ Product Update: Neither Tool Is an AI Writer Anymore</h2>
       <p style="color:#e2e8f0;margin:0;">Both tools repositioned away from AI writing in 2026. <strong>Writesonic</strong> is now an AI Search Growth Engine tracking brand visibility in ChatGPT/Claude/Gemini answers ($79+/mo, no free tier — see our <a href="/review/writesonic/" style="color:#fbbf24;">Writesonic review</a>). <strong>Copy.ai</strong> is now a "GTM AI" platform automating sales/marketing workflows ($29-3,000+/mo, no free tier — see our <a href="/review/copy-ai/" style="color:#fbbf24;">Copy.ai review</a>). They're not interchangeable with each other or with the old AI-writer versions of themselves. If you want a budget AI writer, see <a href="/review/jasper/" style="color:#fbbf24;">Jasper</a> instead. The rest of this page is kept for reference but reflects both tools' old products.</p>
     </div>
 
     <div class="toc">
-      <h4>Contents</h4>
+      <h3 class="hl4">Contents</h3>
       <ol>
         <li><a href="#pricing">Pricing Comparison</a></li>
         <li><a href="#features">Feature Comparison</a></li>
@@ -422,7 +423,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand"><a href="/" style="display:flex;align-items:center;gap:0.5rem;text-decoration:none;"><img src="/assets/images/logo-dark.webp" onerror="this.src='/assets/images/logo-dark.png'" alt="Dark logo" style="height:32px;width:32px;object-fit:contain;" loading="lazy"><span style="font-size:1rem;font-weight:900;background:linear-gradient(135deg,#f97316,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">RankerTool AI</span></a><p class="footer-tagline">Independent AI tool reviews. No sponsored rankings.</p></div>
-      <div class="footer-col"><h5>Reviews</h5><ul><li><a href="/review/writesonic/">Writesonic</a></li><li><a href="/review/copy-ai/">Copy.ai</a></li></ul></div>
+      <div class="footer-col"><h4 class="hl5">Reviews</h4><ul><li><a href="/review/writesonic/">Writesonic</a></li><li><a href="/review/copy-ai/">Copy.ai</a></li></ul></div>
       <div class="footer-col"><h5>Compare</h5><ul><li><a href="/compare/jasper-vs-writesonic/">Jasper vs Writesonic</a></li></ul></div>
       <div class="footer-col"><h5>About</h5><ul><li><a href="/affiliate-disclosure/">Disclosure</a></li><li><a href="/privacy-policy/">Privacy</a></li></ul></div>
     </div>
@@ -430,7 +431,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="footer-bottom"><span>© 2026 RankerToolAI</span><span>Updated: October 12, 2026</span></div>
   </div>
 </footer>
-<script src="/assets/js/main.js?v=20261102"></script>
+<script src="/assets/js/main.js?v=20261128"></script>
 <script src="/assets/js/cookie-consent.js" defer></script>
 </body>
 </html>

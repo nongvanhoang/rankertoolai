@@ -104,7 +104,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
 
   <style>
     /* Nav */
@@ -117,7 +117,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     /* TOC */
     .toc{background:var(--color-bg-alt);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:1.25rem 1.5rem;margin-bottom:2rem;}
-    .toc h3{font-size:0.85rem;font-weight:700;margin-bottom:0.75rem;color:var(--color-text-muted);text-transform:uppercase;letter-spacing:0.05em;}
+    .toc h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .toc .hl3{font-size:0.85rem;font-weight:700;margin-bottom:0.75rem;color:var(--color-text-muted);text-transform:uppercase;letter-spacing:0.05em;}
     .toc-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.3rem 1.5rem;}
     @media(max-width:600px){.toc-grid{grid-template-columns:1fr;}}
     .toc-grid a{font-size:0.85rem;color:var(--color-primary);text-decoration:none;padding:0.25rem 0;display:block;border-bottom:1px solid rgba(255,255,255,0.04);}
@@ -322,7 +323,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- TOC -->
   <div class="toc" id="toc">
-    <h3>Jump to a Category</h3>
+    <h2 class="hl3">Jump to a Category</h2>
     <div class="toc-grid">
       <a href="#seo-tools">&#128269; SEO Tools</a>
       <a href="#ai-writing">&#9997; AI Writing Tools</a>

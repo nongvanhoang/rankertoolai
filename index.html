@@ -87,7 +87,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     /* ══════════════════════════════════════════════
        HERO — Neon Dark Tech (matching brand image)
@@ -588,7 +588,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       align-items: center;
       margin-bottom: 1.5rem;
     }
-    .section-header h2 { margin: 0; font-size: 1.5rem; color: var(--color-text); }
+    .section-header h2:not(:where(.hl3,.hl4,.hl5,.hl6)) { margin: 0; font-size: 1.5rem; color: var(--color-text); }
     .section-header a { font-size: 0.875rem; color: var(--color-primary); font-weight: 600; }
     .review-card {
       display: flex;
@@ -714,7 +714,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       background: radial-gradient(ellipse, rgba(249,115,22,0.1) 0%, transparent 70%);
       pointer-events: none;
     }
-    .newsletter-box h2 {
+    .newsletter-box h2:not(:where(.hl3,.hl4,.hl5,.hl6)) {
       background: linear-gradient(135deg, #f97316, #fbbf24);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -785,7 +785,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     #back-to-top:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(249,115,22,0.6); }
   </style>
   <script async src="/assets/js/pint.js"></script>
-  <script defer src="/assets/js/main.js?v=20261102"></script>
+  <script defer src="/assets/js/main.js?v=20261128"></script>
   
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7922606734780809" crossorigin="anonymous"></script>
   
@@ -1948,7 +1948,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
       <div class="footer-col">
-        <h5>Top Reviews</h5>
+        <h3 class="hl5">Top Reviews</h3>
         <ul>
           <li><a href="/review/claude/">Claude AI</a></li>
           <li><a href="/review/chatgpt/">ChatGPT</a></li>
@@ -1959,7 +1959,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </ul>
       </div>
       <div class="footer-col">
-        <h5>Compare</h5>
+        <h4 class="hl5">Compare</h4>
         <ul>
           <li><a href="/best/ai-tools-for-students/">For Students</a></li>
           <li><a href="/best/ai-tools-for-developers/">For Developers</a></li>

@@ -32,7 +32,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;color:var(--color-text);}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -52,15 +52,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .score-label{font-size:0.7rem;color:rgba(148,163,184,0.6);font-weight:700;text-transform:uppercase;letter-spacing:0.05em;margin-top:0.25rem;}
     .score-stars{color:#fbbf24;font-size:1.1rem;margin:0.5rem 0;}
     .verdict-box{background:linear-gradient(135deg,rgba(34,197,94,0.08),rgba(22,163,74,0.05));border:1px solid rgba(34,197,94,0.25);border-radius:var(--radius-lg);padding:1.5rem;margin:2rem 0;}
-    .verdict-box h3{color:#4ade80;margin-bottom:0.5rem;font-size:1rem;}
+    .verdict-box h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .verdict-box .hl3{color:#4ade80;margin-bottom:0.5rem;font-size:1rem;}
     .verdict-box p{color:rgba(148,163,184,0.9);margin:0;font-size:0.95rem;line-height:1.7;}
     .pros-cons{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin:2rem 0;}
     @media(max-width:580px){.pros-cons{grid-template-columns:1fr;}}
     .pros-box,.cons-box{border-radius:var(--radius-lg);padding:1.5rem;}
     .pros-box{background:rgba(34,197,94,0.06);border:1px solid rgba(34,197,94,0.2);}
     .cons-box{background:rgba(239,68,68,0.06);border:1px solid rgba(239,68,68,0.2);}
-    .pros-box h3{color:#4ade80;margin-bottom:1rem;font-size:1rem;}
-    .cons-box h3{color:#f87171;margin-bottom:1rem;font-size:1rem;}
+    .pros-box h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .pros-box .hl3{color:#4ade80;margin-bottom:1rem;font-size:1rem;}
+    .cons-box h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .cons-box .hl3{color:#f87171;margin-bottom:1rem;font-size:1rem;}
     .pros-box li,.cons-box li{font-size:0.875rem;color:rgba(148,163,184,0.9);line-height:1.8;}
     .criteria-table{width:100%;border-collapse:collapse;margin:1.5rem 0;}
     .criteria-table th{text-align:left;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.05em;color:rgba(148,163,184,0.6);padding:0.75rem 1rem;border-bottom:1px solid rgba(255,255,255,0.08);}
@@ -69,7 +72,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .score-bar{background:rgba(255,255,255,0.06);border-radius:999px;height:8px;overflow:hidden;width:120px;}
     .score-fill{height:100%;border-radius:999px;background:linear-gradient(90deg,#16a34a,#4ade80);}
     .affiliate-box{background:linear-gradient(135deg,#0d1224,#131c2e);border:2px solid rgba(22,163,74,0.3);border-radius:var(--radius-xl);padding:2rem;text-align:center;margin:2.5rem 0;}
-    .affiliate-box h3{color:#f1f5f9;margin-bottom:0.5rem;}
+    .affiliate-box h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .affiliate-box .hl3{color:#f1f5f9;margin-bottom:0.5rem;}
     .affiliate-box p{color:rgba(148,163,184,0.8);font-size:0.9rem;margin-bottom:1.25rem;}
     .btn-affiliate-lg{display:inline-flex;align-items:center;gap:0.5rem;padding:0.875rem 2.5rem;background:linear-gradient(135deg,#16a34a,#4ade80);color:white;font-weight:800;font-size:1rem;border-radius:999px;text-decoration:none;box-shadow:0 4px 24px rgba(22,163,74,0.5);transition:all 0.2s;}
     .btn-affiliate-lg:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(22,163,74,0.65);text-decoration:none;color:white;}
@@ -77,12 +81,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .review-layout{display:grid;grid-template-columns:1fr 280px;gap:2.5rem;padding:2rem 0 4rem;}
     @media(max-width:900px){.review-layout{grid-template-columns:1fr;}}
     .toc-sidebar{position:sticky;top:80px;background:linear-gradient(135deg,#131c2e,#0f1829);border:1px solid rgba(255,255,255,0.07);border-radius:var(--radius-lg);padding:1.5rem;}
-    .toc-sidebar h4{font-size:0.8rem;text-transform:uppercase;letter-spacing:0.05em;color:rgba(148,163,184,0.6);margin-bottom:1rem;font-weight:700;}
+    .toc-sidebar h4:not(:where(.hl3,.hl4,.hl5,.hl6)){font-size:0.8rem;text-transform:uppercase;letter-spacing:0.05em;color:rgba(148,163,184,0.6);margin-bottom:1rem;font-weight:700;}
     .toc-sidebar a{display:block;font-size:0.875rem;color:rgba(148,163,184,0.7);text-decoration:none;padding:0.4rem 0;border-left:2px solid transparent;padding-left:0.75rem;transition:all 0.15s;}
     .toc-sidebar a:hover{color:#4ade80;border-left-color:#4ade80;}
     .faq-item{border-bottom:1px solid rgba(255,255,255,0.07);padding:1.25rem 0;}
     .faq-item:last-child{border-bottom:none;}
-    .faq-item h3{font-size:1rem;color:#f1f5f9;margin-bottom:0.5rem;}
+    .faq-item h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .faq-item .hl3{font-size:1rem;color:#f1f5f9;margin-bottom:0.5rem;}
     .faq-item p{font-size:0.9rem;color:rgba(148,163,184,0.85);margin:0;line-height:1.7;}
     #back-to-top{display:none;position:fixed;bottom:1.5rem;right:1.5rem;width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#16a34a,#4ade80);color:white;align-items:center;justify-content:center;font-size:1.25rem;cursor:pointer;border:none;box-shadow:0 4px 20px rgba(22,163,74,0.5);z-index:50;transition:all 0.15s;}
     .sticky-cta{position:fixed;bottom:0;left:0;right:0;background:linear-gradient(90deg,#0a0f1e,#0d1528);border-top:1px solid rgba(22,163,74,0.3);padding:0.75rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;z-index:100;transform:translateY(100%);transition:transform 0.3s ease;backdrop-filter:blur(12px);}
@@ -212,7 +217,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <article>
       <div class="verdict-box" id="verdict">
-        <h3>Our Verdict</h3>
+        <h2 class="hl3">Our Verdict</h2>
         <p>Viktor is an AI agent that joins your Slack or Microsoft Teams workspace like a colleague. You mention it in a channel, it logs into the tools you connect (CRMs such as HubSpot, Salesforce and Pipedrive, Linear, Jira, GitHub, Google Ads, Meta Ads and 9,800+ others) and hands back finished work: thread summaries, CRM follow-ups, reports, dashboards, website edits and even small internal apps. It proposes actions and asks for approval before significant changes. Pricing is per workspace, not per seat: the free start gives up to $100 in credits with no credit card, and the Team plan is $100 a month for 40,000 shared credits, with unused credits rolling over for one month. Viktor says a quick Slack question costs about 50&ndash;100 credits and a deep multi-step task 500&ndash;2,000, so 40,000 credits is roughly 80&ndash;400 tasks. Every plan gets every feature and integration; registered nonprofits get 15% off. The trade-offs: credit costs vary with task complexity, so monthly spend is harder to predict than a flat seat price, scheduled automations also use credits, and it only works inside Slack or Teams. Viktor reports a 4.9/5 rating on G2 and 75,000+ teams. This verdict is built from Viktor's own published pages &mdash; RankerToolAI has not run a hands-on lab test of Viktor.</p>
       </div>
 
@@ -451,7 +456,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 </footer>
-<script src="/assets/js/main.js?v=20261102"></script>
+<script src="/assets/js/main.js?v=20261128"></script>
 <script src="/assets/js/cookie-consent.js" defer></script>
 <script src="/assets/js/compare-widget.js" defer></script>
 <script>

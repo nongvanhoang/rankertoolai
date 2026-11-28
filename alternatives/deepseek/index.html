@@ -23,7 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -36,11 +36,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .quick-pick-row:last-child{border:none;}
     .quick-pick-badge{font-size:0.7rem;padding:0.2rem 0.5rem;border-radius:9999px;font-weight:700;background:var(--color-primary-light);color:var(--color-primary);white-space:nowrap;}
     .why-switch{background:linear-gradient(135deg,#fef3c7,#fffbeb);border:1px solid #fcd34d;border-radius:var(--radius-lg);padding:1.5rem;margin-bottom:2rem;}
-    .why-switch h3,.why-switch li,.why-switch strong{color:#92400e;}
+    .why-switch h3:not(:where(.hl3,.hl4,.hl5,.hl6)),.why-switch li,.why-switch strong,
+    .why-switch .hl3{color:#92400e;}
     .alt-rank-num{width:36px;height:36px;border-radius:50%;background:var(--color-primary);color:white;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1rem;flex-shrink:0;}
     
     .warning-box{background:linear-gradient(135deg,#fef2f2,#fff5f5);border:1px solid #fca5a5;border-radius:var(--radius-lg);padding:1.5rem;margin-bottom:2rem;}
-    .warning-box h3{color:#991b1b;margin-bottom:0.5rem;}
+    .warning-box h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .warning-box .hl3{color:#991b1b;margin-bottom:0.5rem;}
     .warning-box p,.warning-box li{color:#7f1d1d;}
       #back-to-top{display:none;position:fixed;bottom:80px;right:1.5rem;width:44px;height:44px;border-radius:50%;background:var(--color-primary);color:white;align-items:center;justify-content:center;font-size:1.25rem;cursor:pointer;border:none;box-shadow:var(--shadow-lg);z-index:50;}
     .sticky-cta{position:fixed;bottom:0;left:0;right:0;background:linear-gradient(90deg,#0a0f1e,#0d1528);border-top:1px solid rgba(249,115,22,0.3);padding:0.75rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;z-index:100;transform:translateY(100%);transition:transform 0.3s ease;backdrop-filter:blur(12px);}
@@ -163,7 +165,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="warning-box">
-      <h3>⚠️ Why Look for DeepSeek Alternatives?</h3>
+      <h2 class="hl3">⚠️ Why Look for DeepSeek Alternatives?</h2>
       <ul style="margin:0;padding-left:1.25rem;line-height:1.9;">
         <li><strong>Data privacy:</strong> DeepSeek stores user data on servers in China, subject to Chinese government access laws</li>
         <li><strong>Content filtering:</strong> DeepSeek refuses to discuss Tiananmen Square, Taiwan independence, and other China-sensitive topics</li>
@@ -208,7 +210,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>ChatGPT is the most direct DeepSeek alternative: it's US-based (OpenAI, backed by Microsoft), has a strong free tier, and covers all the same use cases DeepSeek covers — coding, math, writing, analysis — with no China content restrictions. GPT-4o is generally on par with or slightly above DeepSeek V3 on most tasks. For DeepSeek users primarily concerned about privacy, switching to ChatGPT's free tier is the zero-friction move.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs DeepSeek</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs DeepSeek</h3><ul>
           <li>US-based — no Chinese government data access</li>
           <li>No content restrictions on political/sensitive topics</li>
           <li>Larger model ecosystem (o1 reasoning, DALL-E, voice)</li>
@@ -242,7 +244,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Claude by Anthropic (US-based, safety-focused) is the best DeepSeek alternative for users who care about output quality on writing and complex reasoning tasks. Claude Sonnet is available free and is stronger than DeepSeek V3 for following nuanced instructions, writing long documents, and avoiding factual hallucinations. Anthropic's Constitutional AI approach also means safer, more reliable outputs for professional use.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs DeepSeek</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs DeepSeek</h3><ul>
           <li>US-based, Anthropic safety research — trusted</li>
           <li>Better writing quality and instruction following</li>
           <li>200K context window (largest available free)</li>
@@ -276,7 +278,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Google Gemini (US-based, Google-regulated) is a privacy-safe alternative to DeepSeek with deep Google Workspace integration. Gemini 2.0 Flash is available free and performs comparably to DeepSeek V3 on general tasks. If you use Gmail, Google Docs, or Drive, Gemini's integration makes it uniquely valuable — it can draft emails, summarize your docs, and search your Drive without any content restrictions.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs DeepSeek</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs DeepSeek</h3><ul>
           <li>US-based (Google) — no Chinese data jurisdiction</li>
           <li>Google Workspace integration (Gmail, Docs, Drive)</li>
           <li>Gemini Flash free with no content restrictions</li>
@@ -311,7 +313,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Grok by xAI (Elon Musk's company, US-based) is the most direct Western alternative for users who used DeepSeek because it was less filtered than ChatGPT. Grok 3 is notably less restrictive on controversial topics, has real-time access to X/Twitter, and performs competitively on coding and math benchmarks. For users who want Western data sovereignty without heavy content moderation, Grok is the closest match to DeepSeek's personality.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs DeepSeek</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs DeepSeek</h3><ul>
           <li>US-based — Western data sovereignty</li>
           <li>Less content filtering than ChatGPT (no China restrictions)</li>
           <li>Real-time X/Twitter access</li>
@@ -345,7 +347,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Perplexity is a US-based AI search engine that cites real-time sources for every answer. For research-oriented DeepSeek users (fact-checking, learning, news), Perplexity's source citations make it dramatically more trustworthy than DeepSeek's hallucination-prone outputs. The free tier is excellent and covers most research needs without a subscription.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs DeepSeek</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs DeepSeek</h3><ul>
           <li>US-based — fully Western-hosted</li>
           <li>Cites real sources for every claim</li>
           <li>Real-time web access always on</li>
@@ -379,7 +381,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Mistral AI is a French AI company whose models are fully GDPR-compliant, EU-hosted, and open-source. For European users who want to replace DeepSeek with a model that doesn't send data to China or the US, Mistral is the ideal choice. Mistral Large matches GPT-4-class performance. Le Chat (Mistral's chatbot) is free with no content restrictions and competitive response quality.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs DeepSeek</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs DeepSeek</h3><ul>
           <li>EU-hosted — GDPR compliant</li>
           <li>Open-source models (self-hostable)</li>
           <li>No content restrictions</li>
@@ -412,7 +414,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Meta's Llama 3 models are the best open-source DeepSeek alternative for users who want to run AI locally on their own hardware. Via Ollama (free tool), you can run Llama 3 on your own Mac or PC — no internet required, no data sent anywhere, complete privacy. Llama 3.1 405B (the largest model) matches GPT-4 performance on benchmarks. For enterprises or privacy-conscious users who want full data control, running Llama locally beats all cloud alternatives.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs DeepSeek</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs DeepSeek</h3><ul>
           <li>Self-hostable — zero data sent externally</li>
           <li>Open-source — inspect the code</li>
           <li>Free to run locally via Ollama</li>
@@ -717,15 +719,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand"><a href="/" style="display:flex;align-items:center;gap:0.5rem;text-decoration:none;"><img src="/assets/images/logo-dark.webp" onerror="this.src='/assets/images/logo-dark.png'" alt="Dark logo" style="height:32px;width:32px;object-fit:contain;" loading="lazy"><span style="font-size:1rem;font-weight:900;background:linear-gradient(135deg,#f97316,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">RankerTool AI</span></a><p class="footer-tagline">Independent AI tool reviews. No sponsored rankings.</p></div>
-      <div class="footer-col"><h5>Reviews</h5><ul><li><a href="/review/deepseek/">DeepSeek</a></li><li><a href="/review/chatgpt/">ChatGPT</a></li><li><a href="/review/claude/">Claude</a></li></ul></div>
-      <div class="footer-col"><h5>Alternatives</h5><ul><li><a href="/alternatives/chatgpt/">ChatGPT Alt</a></li><li><a href="/alternatives/gemini/">Gemini Alt</a></li></ul></div>
+      <div class="footer-col"><h3 class="hl5">Reviews</h3><ul><li><a href="/review/deepseek/">DeepSeek</a></li><li><a href="/review/chatgpt/">ChatGPT</a></li><li><a href="/review/claude/">Claude</a></li></ul></div>
+      <div class="footer-col"><h4 class="hl5">Alternatives</h4><ul><li><a href="/alternatives/chatgpt/">ChatGPT Alt</a></li><li><a href="/alternatives/gemini/">Gemini Alt</a></li></ul></div>
       <div class="footer-col"><h5>About</h5><ul><li><a href="/affiliate-disclosure/">Disclosure</a></li><li><a href="/privacy-policy/">Privacy</a></li></ul></div>
     </div>
     <div class="footer-disclosure"><strong>Affiliate Disclosure:</strong> This page contains affiliate links. <a href="/affiliate-disclosure/" style="color:#9ca3af;">Full disclosure →</a></div>
     <div class="footer-bottom"><span>© 2026 RankerToolAI</span><span>Updated: June 23, 2026</span></div>
   </div>
 </footer>
-<script src="/assets/js/main.js?v=20261102"></script>
+<script src="/assets/js/main.js?v=20261128"></script>
 <script src="/assets/js/cookie-consent.js" defer></script>
 </body>
 </html>

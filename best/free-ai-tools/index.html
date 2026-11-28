@@ -30,7 +30,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -45,13 +45,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .tag{display:inline-block;background:rgba(249,115,22,0.1);border:1px solid rgba(249,115,22,0.25);color:#fbbf24;font-size:0.7rem;padding:0.15rem 0.5rem;border-radius:9999px;margin:0.15rem;}
     .free-badge{display:inline-block;background:#052e16;border:1px solid #166534;color:#4ade80;font-size:0.7rem;padding:0.15rem 0.5rem;border-radius:9999px;font-weight:700;margin-left:0.35rem;}
     .category-header{border-top:2px solid rgba(249,115,22,0.3);padding-top:1.5rem;margin:2rem 0 1rem;}
-    .category-header h2{font-size:1.25rem;margin:0;color:#f97316;}
+    .category-header h2:not(:where(.hl3,.hl4,.hl5,.hl6)){font-size:1.25rem;margin:0;color:#f97316;}
     .comparison-table{width:100%;border-collapse:collapse;font-size:0.85rem;margin:1.5rem 0;}
     .comparison-table th{background:#0d1224;padding:0.6rem 0.75rem;text-align:left;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.05em;color:#94a3b8;border-bottom:1px solid var(--color-border);}
     .comparison-table td{padding:0.65rem 0.75rem;border-bottom:1px solid rgba(255,255,255,0.05);font-size:0.85rem;}
     .comparison-table tr:last-child td{border:none;}
     .faq-item{border:1px solid var(--color-border);border-radius:var(--radius);margin-bottom:0.75rem;padding:1.25rem;}
-    .faq-item h3{margin:0 0 0.5rem;font-size:1rem;}
+    .faq-item h3:not(:where(.hl3,.hl4,.hl5,.hl6)){margin:0 0 0.5rem;font-size:1rem;}
     .faq-item p{margin:0;color:var(--color-text-muted);font-size:0.875rem;}
     #back-to-top{display:none;position:fixed;bottom:1.5rem;right:1.5rem;width:44px;height:44px;border-radius:50%;background:var(--color-primary);color:white;align-items:center;justify-content:center;font-size:1.25rem;cursor:pointer;border:none;box-shadow:var(--shadow-lg);z-index:50;}
   </style>
@@ -529,7 +529,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <h2 style="color:#f1f5f9;font-size:1.2rem;margin-bottom:1rem;">Frequently Asked Questions</h2>
   <div style="display:flex;flex-direction:column;gap:0.75rem;">
     <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.25rem;">
-      <h4 style="color:#f1f5f9;margin:0 0 0.5rem;font-size:0.95rem;">What is the best free AI tool?</h4>
+      <h3 class="hl4" style="color:#f1f5f9;margin:0 0 0.5rem;font-size:0.95rem;">What is the best free AI tool?</h3>
       <p style="color:rgba(148,163,184,0.8);margin:0;font-size:0.875rem;line-height:1.65;">The best free AI tool depends on your primary need. For AI chat and writing: Claude Free or ChatGPT Free (both offer meaningful daily message limits). For AI image generation: Adobe Firefly (25 credits/month) or Ideogram (25 credits/day). For AI code assistance: Codeium (unlimited completions) or GitHub Copilot free tier. For AI research: Perplexity AI free tier. For meeting transcription: Otter.ai free (300 minutes/month).</p>
     </div>
     <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.25rem;">
@@ -589,7 +589,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 </footer>
-<script src="/assets/js/main.js?v=20261102"></script>
+<script src="/assets/js/main.js?v=20261128"></script>
 <script src="/assets/js/cookie-consent.js" defer></script>
 </body>
 </html>

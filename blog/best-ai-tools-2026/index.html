@@ -32,7 +32,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -52,7 +52,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .callout p{margin:0;font-size:0.9rem;color:var(--color-text-muted);}
     .cat-header{font-size:1.3rem;font-weight:800;margin:2.5rem 0 1rem;padding-bottom:0.5rem;border-bottom:1px solid rgba(255,255,255,0.08);background:linear-gradient(135deg,#ffffff,#f97316);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
     .toc{background:var(--color-bg-alt);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:1.25rem 1.5rem;margin-bottom:2rem;}
-    .toc h3{font-size:0.9rem;font-weight:700;margin-bottom:0.75rem;color:var(--color-text-muted);text-transform:uppercase;letter-spacing:0.05em;}
+    .toc h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .toc .hl3{font-size:0.9rem;font-weight:700;margin-bottom:0.75rem;color:var(--color-text-muted);text-transform:uppercase;letter-spacing:0.05em;}
     .toc ol{padding-left:1.2rem;margin:0;}
     .toc li{font-size:0.875rem;margin-bottom:0.4rem;color:var(--color-text-muted);}
     .toc a{color:var(--color-primary);text-decoration:none;}
@@ -154,7 +155,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 
   <div class="toc">
-    <h3>What's in this guide</h3>
+    <h2 class="hl3">What's in this guide</h2>
     <ol>
       <li><a href="#ai-assistants">Best AI Assistants: Claude, ChatGPT, Gemini, Perplexity</a></li>
       <li><a href="#ai-writing">Best AI Writing Tools: Jasper, Rytr</a></li>
@@ -354,7 +355,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="footer-bottom"><span>© 2026 RankerToolAI. All rights reserved.</span></div>
   </div>
 </footer>
-<script src="/assets/js/main.js?v=20261102"></script>
+<script src="/assets/js/main.js?v=20261128"></script>
 <script src="/assets/js/cookie-consent.js" defer></script>
 </body>
 </html>

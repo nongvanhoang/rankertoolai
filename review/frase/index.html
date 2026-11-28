@@ -83,22 +83,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     /* Verdict box */
     .verdict{background:linear-gradient(135deg,rgba(249,115,22,0.08),rgba(251,191,36,0.04));border:2px solid rgba(249,115,22,0.35);border-radius:var(--radius);padding:1.75rem;margin:2rem 0}
-    .verdict h3{font-size:1.1rem;font-weight:800;color:var(--brand);margin-bottom:0.75rem}
+    .verdict h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .verdict .hl3{font-size:1.1rem;font-weight:800;color:var(--brand);margin-bottom:0.75rem}
 
     /* Pros / Cons */
     .pros-cons{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:2rem 0}
     .pros-card,.cons-card{background:var(--bg2);border-radius:var(--radius);padding:1.25rem}
     .pros-card{border-left:3px solid var(--green)}
     .cons-card{border-left:3px solid var(--red)}
-    .pros-card h3{color:var(--green);font-size:0.9rem;font-weight:700;margin-bottom:0.75rem}
-    .cons-card h3{color:var(--red);font-size:0.9rem;font-weight:700;margin-bottom:0.75rem}
+    .pros-card h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .pros-card .hl3{color:var(--green);font-size:0.9rem;font-weight:700;margin-bottom:0.75rem}
+    .cons-card h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .cons-card .hl3{color:var(--red);font-size:0.9rem;font-weight:700;margin-bottom:0.75rem}
     .pros-card li,.cons-card li{font-size:0.85rem;color:var(--muted);margin:0.3rem 0;list-style:none;display:flex;gap:0.4rem}
     .pros-card li::before{content:"✓";color:var(--green);flex-shrink:0}
     .cons-card li::before{content:"✗";color:var(--red);flex-shrink:0}
 
     /* Feature sections */
     .section{margin:2.5rem 0}
-    .section h2{font-size:1.3rem;font-weight:800;margin-bottom:1rem;border-left:3px solid var(--brand);padding-left:0.75rem}
+    .section h2:not(:where(.hl3,.hl4,.hl5,.hl6)){font-size:1.3rem;font-weight:800;margin-bottom:1rem;border-left:3px solid var(--brand);padding-left:0.75rem}
     .section p{font-size:0.95rem;color:var(--muted);margin-bottom:0.75rem}
 
     /* Score table */
@@ -225,7 +228,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="container">
 
   <div class="verdict">
-    <h3>Bottom Line</h3>
+    <h2 class="hl3">Bottom Line</h2>
     <p>Frase is the fastest way to create data-driven content briefs. It pulls the top 20 Google results for your keyword, extracts headings, stats, and questions, then builds a structured outline in under 2 minutes. If research and briefing slow down your content team, Frase pays for itself in time saved. It's not as strong on real-time content scoring as Surfer SEO, but the research workflow is unmatched.</p>
   </div>
 

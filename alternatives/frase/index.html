@@ -42,7 +42,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid rgba(255,255,255,0.1);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;color:var(--color-text);}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -52,8 +52,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .site-header{position:relative;}
     .alts-hero{background:linear-gradient(160deg,#060a14 0%,#0b1120 100%);border-bottom:1px solid rgba(255,255,255,0.06);padding:3rem 0 2.5rem;}
     .alts-content{max-width:820px;margin:0 auto;padding:3rem 0 5rem;line-height:1.8;font-size:0.975rem;}
-    .alts-content h2{font-size:1.45rem;font-weight:800;margin:2.5rem 0 1rem;color:#f1f5f9;}
-    .alts-content h3{font-size:1.05rem;font-weight:700;margin:1.5rem 0 0.5rem;color:#e2e8f0;}
+    .alts-content h2:not(:where(.hl3,.hl4,.hl5,.hl6)){font-size:1.45rem;font-weight:800;margin:2.5rem 0 1rem;color:#f1f5f9;}
+    .alts-content h3:not(:where(.hl3,.hl4,.hl5,.hl6)){font-size:1.05rem;font-weight:700;margin:1.5rem 0 0.5rem;color:#e2e8f0;}
     .alts-content p{color:rgba(148,163,184,0.9);margin-bottom:1.1rem;}
     .alts-content ul,.alts-content ol{color:rgba(148,163,184,0.9);padding-left:1.5rem;margin-bottom:1.1rem;}
     .alts-content li{margin-bottom:0.45rem;}
@@ -70,16 +70,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .pros-list,.cons-list{background:rgba(255,255,255,0.03);border-radius:8px;padding:0.75rem 1rem;}
     .pros-list{border-left:3px solid rgba(34,197,94,0.4);}
     .cons-list{border-left:3px solid rgba(239,68,68,0.4);}
-    .pros-list h5,.cons-list h5{font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.5rem;}
-    .pros-list h5{color:#4ade80;}
-    .cons-list h5{color:#f87171;}
+    .pros-list h5,.cons-list h5,
+    .pros-list .hl5,.cons-list .hl5{font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.5rem;}
+    .pros-list h5,
+    .pros-list .hl5{color:#4ade80;}
+    .cons-list h5,
+    .cons-list .hl5{color:#f87171;}
     .pros-list ul,.cons-list ul{padding-left:1rem;margin:0;font-size:0.82rem;color:rgba(148,163,184,0.85);}
     .pros-list li,.cons-list li{margin-bottom:0.3rem;}
     .best-for-tag{display:inline-block;background:rgba(249,115,22,0.1);border:1px solid rgba(249,115,22,0.25);border-radius:6px;padding:0.2rem 0.6rem;font-size:0.72rem;font-weight:700;color:#f97316;margin-bottom:0.75rem;}
     .try-btn{display:inline-block;background:linear-gradient(135deg,#f97316,#ea580c);color:#fff;font-weight:700;font-size:0.82rem;padding:0.5rem 1rem;border-radius:6px;text-decoration:none;margin-top:0.75rem;}
     .try-btn:hover{opacity:0.9;text-decoration:none;}
     .toc{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:1.25rem 1.5rem;margin-bottom:2.5rem;}
-    .toc h4{font-size:0.85rem;font-weight:700;color:rgba(148,163,184,0.6);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.75rem;}
+    .toc h4:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .toc .hl4{font-size:0.85rem;font-weight:700;color:rgba(148,163,184,0.6);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.75rem;}
     .toc ol{padding-left:1.25rem;margin:0;}
     .toc li{font-size:0.875rem;margin-bottom:0.3rem;}
     .toc a{color:rgba(148,163,184,0.8);text-decoration:none;}
@@ -200,7 +204,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="alts-content">
 
     <div class="toc">
-      <h4>Table of Contents</h4>
+      <h2 class="hl4">Table of Contents</h2>
       <ol>
         <li><a href="#why">Why People Switch From Frase</a></li>
         <li><a href="#quick">Quick Comparison Table</a></li>
@@ -256,7 +260,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>What Surfer does better than Frase: the NLP term extraction is more specific, the scoring correlation with actual rankings is stronger, and you get keyword research + site audit built in. Surfer AI can also generate complete optimized drafts — not just paragraph assists.</p>
       <p>The tradeoff: $89/month vs Frase's $45/month. But when you factor in Frase's $35/month AI add-on, the price gap narrows considerably.</p>
       <div class="pros-cons">
-        <div class="pros-list"><h5>Pros</h5><ul>
+        <div class="pros-list"><h3 class="hl5">Pros</h3><ul>
           <li>Best NLP scoring accuracy</li>
           <li>Keyword research tool included</li>
           <li>Site audit included</li>
@@ -264,7 +268,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li>Google Docs + WordPress integration</li>
           <li>White-label reports (Scale plan)</li>
         </ul></div>
-        <div class="cons-list"><h5>Cons</h5><ul>
+        <div class="cons-list"><h4 class="hl5">Cons</h4><ul>
           <li>$89/mo vs Frase $45/mo</li>
           <li>Surfer AI costs extra on Essential</li>
           <li>Less intuitive brief auto-generation</li>
@@ -286,7 +290,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>The SEO Writing Assistant gives you a content score, recommended keywords, readability score, tone consistency, and originality check as you write in Google Docs. It is less detailed than Surfer SEO's Content Editor but gives you more dimensions of feedback and integrates with the rest of Semrush's data.</p>
       <p>The main advantage over Frase: Semrush replaces 4–5 tools (Frase + a keyword tool + a rank tracker + a backlink checker + a site auditor) in one subscription. The main disadvantage: it is $139.95/month minimum, making it expensive if you only need content optimization.</p>
       <div class="pros-cons">
-        <div class="pros-list"><h5>Pros</h5><ul>
+        <div class="pros-list"><h3 class="hl5">Pros</h3><ul>
           <li>Replaces multiple tools at once</li>
           <li>25.5 billion keyword database</li>
           <li>Full rank tracking included</li>
@@ -294,7 +298,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li>Site audit for technical SEO</li>
           <li>PPC research tools</li>
         </ul></div>
-        <div class="cons-list"><h5>Cons</h5><ul>
+        <div class="cons-list"><h4 class="hl5">Cons</h4><ul>
           <li>$139.95/mo — most expensive on this list</li>
           <li>Content scoring less precise than Surfer</li>
           <li>Steep learning curve</li>
@@ -315,14 +319,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>Like Surfer SEO, Clearscope analyzes SERP competitors and generates a list of terms to include with weighting by importance. The interface is clean and the reports are easy to share with writers. Unlike Frase, there is no AI writing — Clearscope is a pure optimization tool.</p>
       <p>The downside: $170/month minimum with limited document credits, making it the most expensive pure content optimization tool. For large teams publishing frequently, the per-seat pricing model and document credit system can add up fast. For solo operators or small teams, it is hard to justify vs Surfer SEO at $89/month.</p>
       <div class="pros-cons">
-        <div class="pros-list"><h5>Pros</h5><ul>
+        <div class="pros-list"><h3 class="hl5">Pros</h3><ul>
           <li>Highly accurate content grading</li>
           <li>Clean, easy-to-share reports</li>
           <li>Trusted by enterprise teams</li>
           <li>Excellent Google Docs integration</li>
           <li>Strong team collaboration features</li>
         </ul></div>
-        <div class="cons-list"><h5>Cons</h5><ul>
+        <div class="cons-list"><h4 class="hl5">Cons</h4><ul>
           <li>$170/mo+ — most expensive option</li>
           <li>Limited document credits</li>
           <li>No AI writing, no keyword research</li>
@@ -343,7 +347,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>SE Ranking's content tools include a Content Editor with optimization scoring, an AI writer, and topic research. The content scoring is not as refined as Surfer SEO, but it is solid — especially when combined with SE Ranking's keyword data and rank tracking to measure the results of your optimization work.</p>
       <p>The key reason to choose SE Ranking over Frase: if you need content optimization AND keyword research AND rank tracking, SE Ranking does all three in one $129/month plan instead of paying $45+ for Frase plus a separate keyword tool plus a separate rank tracker.</p>
       <div class="pros-cons">
-        <div class="pros-list"><h5>Pros</h5><ul>
+        <div class="pros-list"><h3 class="hl5">Pros</h3><ul>
           <li>Full SEO suite at $52/mo</li>
           <li>Keyword research included</li>
           <li>Rank tracking included</li>
@@ -351,7 +355,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li>White-label reports included</li>
           <li>14-day free trial (no credit card)</li>
         </ul></div>
-        <div class="cons-list"><h5>Cons</h5><ul>
+        <div class="cons-list"><h4 class="hl5">Cons</h4><ul>
           <li>Content scoring less precise than Surfer SEO</li>
           <li>Smaller keyword database than Semrush</li>
           <li>AI writing less developed</li>
@@ -372,14 +376,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>Jasper's Brand Voice feature trains on your existing content and ensures every piece sounds consistent — a major advantage for marketing teams. Its integration with Surfer SEO means you can write in Jasper and see your Surfer Content Score in real time, combining the best AI writing with the best content scoring.</p>
       <p>At $59/month (Creator plan), Jasper + Surfer SEO together cost $128/month — more than Frase with AI, but you get a significantly better AI writer and better content scoring than either Frase or Jasper alone.</p>
       <div class="pros-cons">
-        <div class="pros-list"><h5>Pros</h5><ul>
+        <div class="pros-list"><h3 class="hl5">Pros</h3><ul>
           <li>Best AI writing quality</li>
           <li>Brand Voice for consistent tone</li>
           <li>Native Surfer SEO integration</li>
           <li>Long-form document assistant</li>
           <li>50+ templates for different content types</li>
         </ul></div>
-        <div class="cons-list"><h5>Cons</h5><ul>
+        <div class="cons-list"><h4 class="hl5">Cons</h4><ul>
           <li>No content scoring — need Surfer SEO separately</li>
           <li>No keyword research or SEO data</li>
           <li>$59/mo just for Jasper; add Surfer = $128/mo total</li>
@@ -400,13 +404,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>Rytr includes 40+ use-case templates covering blog sections, ad copy, and social captions, plus tone and language controls. The output quality is good — not at Jasper's level for brand consistency, but solid for rapid first drafts.</p>
       <p>If you are leaving Frase because you mainly used the AI writing and found it too expensive, Rytr is a practical budget alternative. You lose the content optimization scoring but gain faster content generation at a much lower price. <strong>Note:</strong> Writesonic, previously recommended in this slot, repositioned in 2026 as an AI Search Growth Engine and dropped its content-writing product, so it's no longer a budget writing option.</p>
       <div class="pros-cons">
-        <div class="pros-list"><h5>Pros</h5><ul>
+        <div class="pros-list"><h3 class="hl5">Pros</h3><ul>
           <li>Very affordable — starts at $9/mo, free tier available</li>
           <li>Fast AI drafting across 40+ templates</li>
           <li>Simple, low learning curve</li>
           <li>Good for social + ad copy too</li>
         </ul></div>
-        <div class="cons-list"><h5>Cons</h5><ul>
+        <div class="cons-list"><h4 class="hl5">Cons</h4><ul>
           <li>No content optimization scoring</li>
           <li>AI writing quality below Jasper</li>
           <li>No keyword research or SEO data</li>
@@ -427,14 +431,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>The content scoring is solid for the price, the UI is clean, and it includes an AI writing assistant. For solo bloggers and small teams on a tight budget who need proper NLP-based content scoring (not just Frase's topic coverage model), NeuronWriter is the best budget alternative.</p>
       <p>The limitations: smaller feature set than Surfer SEO, no keyword research tool, less accurate NLP at the margins, and less polished integrations. But for the price, it punches above its weight for content optimization.</p>
       <div class="pros-cons">
-        <div class="pros-list"><h5>Pros</h5><ul>
+        <div class="pros-list"><h3 class="hl5">Pros</h3><ul>
           <li>Most affordable NLP content scorer</li>
           <li>Lifetime deal available on AppSumo</li>
           <li>Solid NLP term recommendations</li>
           <li>AI writing assistant included</li>
           <li>Chrome extension available</li>
         </ul></div>
-        <div class="cons-list"><h5>Cons</h5><ul>
+        <div class="cons-list"><h4 class="hl5">Cons</h4><ul>
           <li>Less accurate than Surfer SEO at the margins</li>
           <li>No keyword research tool</li>
           <li>No rank tracking or site audit</li>
@@ -514,7 +518,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </a>
         <p class="footer-tagline">Independent reviews of the best AI &amp; SEO tools.</p>
       </div>
-      <div class="footer-col"><h5>Content Tool Alternatives</h5><ul>
+      <div class="footer-col"><h4 class="hl5">Content Tool Alternatives</h4><ul>
         <li><a href="/alternatives/surfer-seo/">Surfer SEO Alternatives</a></li>
         <li><a href="/alternatives/jasper/">Jasper Alternatives</a></li>
         <li><a href="/alternatives/writesonic/">Writesonic Alternatives</a></li>
@@ -539,7 +543,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 </footer>
-<script src="/assets/js/main.js?v=20261102"></script>
+<script src="/assets/js/main.js?v=20261128"></script>
 <script src="/assets/js/cookie-consent.js" defer></script>
 </body>
 </html>

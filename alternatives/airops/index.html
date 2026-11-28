@@ -23,7 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -36,7 +36,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .quick-pick-row:last-child{border:none;}
     .quick-pick-badge{font-size:0.7rem;padding:0.2rem 0.5rem;border-radius:9999px;font-weight:700;background:var(--color-primary-light);color:var(--color-primary);white-space:nowrap;}
     .why-switch{background:linear-gradient(135deg,#fef3c7,#fffbeb);border:1px solid #fcd34d;border-radius:var(--radius-lg);padding:1.5rem;margin-bottom:2rem;}
-    .why-switch h3,.why-switch li,.why-switch strong{color:#92400e;}
+    .why-switch h3:not(:where(.hl3,.hl4,.hl5,.hl6)),.why-switch li,.why-switch strong,
+    .why-switch .hl3{color:#92400e;}
     .alt-rank-num{width:36px;height:36px;border-radius:50%;background:var(--color-primary);color:white;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1rem;flex-shrink:0;}
     #back-to-top{display:none;position:fixed;bottom:80px;right:1.5rem;width:44px;height:44px;border-radius:50%;background:var(--color-primary);color:white;align-items:center;justify-content:center;font-size:1.25rem;cursor:pointer;border:none;box-shadow:var(--shadow-lg);z-index:50;}
     .sticky-cta{position:fixed;bottom:0;left:0;right:0;background:linear-gradient(90deg,#0a0f1e,#0d1528);border-top:1px solid rgba(249,115,22,0.3);padding:0.75rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;z-index:100;transform:translateY(100%);transition:transform 0.3s ease;backdrop-filter:blur(12px);}
@@ -160,7 +161,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>We reviewed each of these six tools specifically against the jobs AirOps is asked to do — not in isolation — so the comparisons below focus on what a content team would actually gain or lose by choosing the narrower tool over AirOps' broader platform, including onboarding time, ongoing maintenance effort, and how each pricing model behaves as content volume and team headcount scale up over the following year.</p>
 
     <div class="why-switch">
-      <h3 style="margin-bottom:0.75rem;">Why People Look for AirOps Alternatives</h3>
+      <h2 class="hl3" style="margin-bottom:0.75rem;">Why People Look for AirOps Alternatives</h2>
       <ul style="margin:0;padding-left:1.25rem;line-height:1.9;">
         <li><strong>Learning curve:</strong> AirOps' workflow builder requires real setup investment before it pays off — too much for teams that just want fast drafts</li>
         <li><strong>Pricing predictability:</strong> task-based billing is hard to forecast without months of usage history</li>
@@ -204,7 +205,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Jasper gets you to a finished draft in minutes with no workflow-building required — Brand Voice, Campaigns, and 50+ templates cover most content needs out of the box. If your bottleneck is writing speed rather than coordinating research, internal linking, and publishing across hundreds of pages, Jasper gets you there faster with far less setup than AirOps.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs AirOps</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs AirOps</h3><ul>
           <li>Usable in minutes — no workflow setup required</li>
           <li>Simple, predictable per-seat pricing</li>
           <li>Strong brand voice consistency across drafts</li>
@@ -236,7 +237,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Surfer SEO focuses specifically on real-time NLP content scoring and keyword research — a narrower, more polished job than AirOps' full pipeline automation. If your core need is optimizing individual pages against what's already ranking, rather than orchestrating research-to-publish workflows across a content operation, Surfer's focused tool is faster to learn and directly measurable.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs AirOps</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs AirOps</h3><ul>
           <li>Real-time content scoring against top-ranking pages</li>
           <li>Much gentler learning curve</li>
           <li>Google Docs integration for in-editor optimization</li>
@@ -268,7 +269,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Copy.ai occupies a middle ground between Jasper's simplicity and AirOps' full pipeline depth — it offers workflow automation for GTM teams with a noticeably gentler learning curve than AirOps. After repositioning in 2026 as a "GTM AI" platform, it no longer has a free plan, and its focus shifted further toward sales/marketing automation rather than SEO content — if you want some automation without AirOps' steep setup investment for a genuinely GTM-adjacent use case, Copy.ai's workflows are still a reasonable middle step, just no longer a budget one.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs AirOps</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs AirOps</h3><ul>
           <li>Gentler learning curve for workflow automation</li>
           <li>Strong for GTM/sales-adjacent content workflows</li>
         </ul></div>
@@ -299,7 +300,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Clearscope is purpose-built for content grading and brief creation — giving writers a clear target score and keyword list before they draft. It's a narrower tool than AirOps by design: no workflow orchestration, no publishing automation, just a focused grading layer that fits into whatever writing process you already have.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs AirOps</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs AirOps</h3><ul>
           <li>Best-in-class content grading and brief generation</li>
           <li>Simple to adopt alongside an existing writing workflow</li>
           <li>Clear, actionable optimization targets for writers</li>
@@ -331,7 +332,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Frase combines SERP research, content briefs, and AI drafting at a lower price point than AirOps, making it a reasonable budget pick for solo SEO writers who need research and drafting help without full workflow automation. It won't orchestrate a multi-step content pipeline the way AirOps does, but for a single writer producing SEO content, that's often more tool than needed anyway.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs AirOps</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs AirOps</h3><ul>
           <li>Lower cost, more accessible for solo writers</li>
           <li>Combines SERP research, briefs, and drafting in one simpler tool</li>
         </ul></div>
@@ -362,7 +363,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>MarketMuse focuses on content strategy and topic modeling — identifying content gaps and prioritizing what to write across an entire site — rather than AirOps' end-to-end workflow execution. Teams that already have a strategy layer but need AirOps-style execution automation would use the two together rather than as substitutes; teams that only need the strategic planning layer can stop at MarketMuse.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs AirOps</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs AirOps</h3><ul>
           <li>Stronger topic modeling and content gap analysis</li>
           <li>Purpose-built for planning a large site's content strategy</li>
         </ul></div>

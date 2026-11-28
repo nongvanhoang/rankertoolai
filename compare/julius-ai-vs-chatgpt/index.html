@@ -24,7 +24,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -41,7 +41,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .vs-tool-score{font-size:2rem;font-weight:800;color:#a5b4fc;}
     .vs-badge{background:rgba(249,115,22,0.12);border:2px solid rgba(249,115,22,0.4);border-radius:9999px;padding:0.5rem 1.25rem;font-weight:700;font-size:1.1rem;color:#c7d2fe;}
     .winner-callout{background:linear-gradient(135deg,rgba(34,197,94,0.15),rgba(22,163,74,0.1));border:1px solid rgba(34,197,94,0.3);border-radius:var(--radius-lg);padding:1.5rem;margin:2rem 0;}
-    .winner-callout h3{color:white;margin-bottom:0.5rem;}
+    .winner-callout h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .winner-callout .hl3{color:white;margin-bottom:0.5rem;}
     .winner-col{background:rgba(34,197,94,0.08);font-weight:600;color:#4ade80;}
     .compare-table{width:100%;border-collapse:collapse;margin:2rem 0;font-size:0.9rem;}
     .compare-table th{padding:1rem;text-align:center;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.05em;color:rgba(148,163,184,0.6);border-bottom:2px solid rgba(255,255,255,0.08);}
@@ -55,13 +56,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .choose-box{border:2px solid var(--color-border);border-radius:var(--radius-lg);padding:1.5rem;margin-bottom:1rem;}
     .choose-box.winner{border-color:rgba(34,197,94,0.4);}
     .toc{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.07);border-radius:var(--radius-lg);padding:1.5rem;margin:2rem 0;}
-    .toc h4{font-size:0.8rem;text-transform:uppercase;letter-spacing:0.05em;color:rgba(148,163,184,0.6);margin-bottom:1rem;font-weight:700;}
+    .toc h4:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .toc .hl4{font-size:0.8rem;text-transform:uppercase;letter-spacing:0.05em;color:rgba(148,163,184,0.6);margin-bottom:1rem;font-weight:700;}
     .toc ol{margin:0;padding-left:1.25rem;display:flex;flex-direction:column;gap:0.4rem;}
     .toc li a{color:rgba(148,163,184,0.7);text-decoration:none;font-size:0.9rem;}
     .toc li a:hover{color:#f97316;}
     .faq-item{border-bottom:1px solid rgba(255,255,255,0.07);padding:1.25rem 0;}
     .faq-item:last-child{border-bottom:none;}
-    .faq-item h3{font-size:1rem;color:#f1f5f9;margin-bottom:0.5rem;}
+    .faq-item h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .faq-item .hl3{font-size:1rem;color:#f1f5f9;margin-bottom:0.5rem;}
     .faq-item p{font-size:0.9rem;color:rgba(148,163,184,0.85);margin:0;line-height:1.7;}
     .coupon-box{display:inline-flex;align-items:center;gap:0.75rem;background:rgba(124,58,237,0.12);border:1px dashed rgba(124,58,237,0.5);border-radius:var(--radius);padding:0.6rem 1.25rem;cursor:pointer;}
     .coupon-code{font-family:monospace;font-weight:700;font-size:1.1rem;color:#c4b5fd;letter-spacing:0.08em;}
@@ -207,12 +210,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="winner-callout">
-      <h3>Verdict: Julius AI Wins for Data Analysis</h3>
+      <h2 class="hl3">Verdict: Julius AI Wins for Data Analysis</h2>
       <p style="color:#e2e8f0;margin:0;">Julius AI is the clear winner for structured data analysis. It's purpose-built for the task — it maintains full dataset context, produces polished charts automatically, and handles CSV, Excel, SQL, and Google Sheets without workarounds. ChatGPT (with Code Interpreter) is capable but requires significantly more prompting, loses context between sessions, and produces inconsistent chart quality. For general conversation, reasoning, and writing, ChatGPT wins. For data specifically, Julius AI is in a different class.</p>
     </div>
 
     <div class="toc">
-      <h4>Contents</h4>
+      <h3 class="hl4">Contents</h3>
       <ol>
         <li><a href="#data-analysis">Data Analysis Quality</a></li>
         <li><a href="#file-handling">File Handling</a></li>

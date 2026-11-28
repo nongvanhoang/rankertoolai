@@ -23,7 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -38,7 +38,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .tool-score{display:inline-flex;align-items:center;gap:0.35rem;background:#0d1224;border:1px solid var(--color-border);border-radius:var(--radius);padding:0.25rem 0.65rem;font-size:0.85rem;font-weight:700;color:#f97316;}
     .tag{display:inline-block;background:rgba(249,115,22,0.1);border:1px solid rgba(249,115,22,0.25);color:#fbbf24;font-size:0.7rem;padding:0.15rem 0.5rem;border-radius:9999px;margin:0.15rem;}
     .faq-item{border:1px solid var(--color-border);border-radius:var(--radius);margin-bottom:0.75rem;padding:1.25rem;}
-    .faq-item h3{margin:0 0 0.5rem;font-size:1rem;}
+    .faq-item h3:not(:where(.hl3,.hl4,.hl5,.hl6)){margin:0 0 0.5rem;font-size:1rem;}
     .faq-item p{margin:0;color:var(--color-text-muted);font-size:0.875rem;}
     .winner-box{background:linear-gradient(135deg,rgba(34,197,94,0.12),rgba(22,163,74,0.06));border:1px solid rgba(34,197,94,0.3);border-radius:var(--radius-lg);padding:1.25rem;margin-bottom:2rem;}
   </style>
@@ -143,7 +143,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="toc" style="margin-bottom:2rem;">
-      <h4>Quick Navigation</h4>
+      <h2 class="hl4">Quick Navigation</h2>
       <ol>
         <li><a href="#contabo">Contabo — Best VPS for Specs-Per-Dollar</a></li>
         <li><a href="#turbify">Turbify — Best for Beginner WordPress/WooCommerce</a></li>
@@ -164,7 +164,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="tag">From €5.50/mo</span><span class="tag">Unlimited Traffic</span><span class="tag">Free DDoS Protection</span><span class="tag">10,484 Reviews</span>
         </div>
         <p>Contabo's Cloud VPS lineup leads on raw specs-per-euro: the entry Cloud VPS 4 plan gives 4 vCPU, 8GB RAM, and 100GB SSD for €5.50/month, scaling up to Cloud VPS 18 (18 vCPU, 96GB RAM, 600GB SSD) at €49/month. Every tier includes unlimited traffic under a fair-use policy, a free firewall, and free DDoS protection — extras that some competitors charge separately for. Rated 4.6/5 on Trustpilot from 10,484 reviews, a large and consistent sample for a hosting provider.</p>
-        <h4>Pros</h4>
+        <h3 class="hl4">Pros</h3>
         <ul>
           <li>Best RAM/storage-per-euro of any mainstream VPS provider at this price point</li>
           <li>Unlimited traffic and free DDoS protection included on every tier</li>
@@ -193,7 +193,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="tag">From $0.99/mo intro</span><span class="tag">Free Domain + SSL</span><span class="tag">WooCommerce Tier</span><span class="tag">1,438 Reviews</span>
         </div>
         <p>Turbify (formerly Yahoo Small Business) offers three managed plans — WordPress Standard, Web Hosting Professional, and WooCommerce Professional — each bundling a free domain and SSL certificate for the first term. It's the simpler option of the two: no server administration, just pick a plan and start building. The $0.99/month rate is a 1-year introductory price; regular rates run roughly $11.25-$17.99/month depending on the plan, so factor the renewal into your decision. Rated 4.0/5 on Trustpilot from 1,438 reviews.</p>
-        <h4>Pros</h4>
+        <h3 class="hl4">Pros</h3>
         <ul>
           <li>Free domain and SSL bundled into every plan's first term</li>
           <li>Dedicated WooCommerce Professional tier for stores, not a generic bolt-on</li>
@@ -286,7 +286,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand"><a href="/" style="display:flex;align-items:center;gap:0.5rem;text-decoration:none;"><img src="/assets/images/logo-dark.webp" onerror="this.src='/assets/images/logo-dark.png'" alt="Dark logo" style="height:32px;width:32px;object-fit:contain;" loading="lazy"><span style="font-size:1rem;font-weight:900;background:linear-gradient(135deg,#f97316,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">RankerTool AI</span></a><p class="footer-tagline">Independent AI &amp; software tool reviews.</p></div>
-      <div class="footer-col"><h5>This Category</h5><ul><li><a href="/go/contabo/">Contabo</a></li><li><a href="/go/turbify/">Turbify</a></li></ul></div>
+      <div class="footer-col"><h4 class="hl5">This Category</h4><ul><li><a href="/go/contabo/">Contabo</a></li><li><a href="/go/turbify/">Turbify</a></li></ul></div>
       <div class="footer-col"><h5>Best Tools</h5><ul><li><a href="/best/data-recovery-backup-software/">Data Recovery & Backup</a></li><li><a href="/best/ai-writing-tools/">AI Writing Tools</a></li><li><a href="/best/free-ai-tools/">Free AI Tools</a></li></ul></div>
       <div class="footer-col"><h5>About</h5><ul><li><a href="/methodology/">Methodology</a></li><li><a href="/affiliate-disclosure/">Disclosure</a></li><li><a href="/privacy-policy/">Privacy</a></li></ul></div>
     </div>
@@ -294,7 +294,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="footer-bottom"><span>© 2026 RankerToolAI</span><span>Updated: October 2026</span></div>
   </div>
 </footer>
-<script src="/assets/js/main.js?v=20261102"></script>
+<script src="/assets/js/main.js?v=20261128"></script>
 <script src="/assets/js/cookie-consent.js" defer></script>
 </body>
 </html>

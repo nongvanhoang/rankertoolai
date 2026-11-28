@@ -30,7 +30,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -47,7 +47,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .vs-tool-score{font-size:2rem;font-weight:800;color:#a5b4fc;}
     .vs-badge{background:rgba(249,115,22,0.12);border:2px solid rgba(249,115,22,0.4);border-radius:9999px;padding:0.5rem 1.25rem;font-weight:700;font-size:1.1rem;color:#c7d2fe;}
     .winner-callout{background:linear-gradient(135deg,rgba(34,197,94,0.15),rgba(22,163,74,0.1));border:1px solid rgba(34,197,94,0.3);border-radius:var(--radius-lg);padding:1.5rem;margin:2rem 0;}
-    .winner-callout h3{color:white;margin-bottom:0.5rem;}
+    .winner-callout h3:not(:where(.hl3,.hl4,.hl5,.hl6)){color:white;margin-bottom:0.5rem;}
     .winner-col{background:rgba(34,197,94,0.08);font-weight:600;color:#4ade80;}
     .compare-table{width:100%;border-collapse:collapse;margin:2rem 0;font-size:0.9rem;}
     .compare-table th{padding:1rem;text-align:center;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.05em;color:rgba(148,163,184,0.6);border-bottom:2px solid rgba(255,255,255,0.08);}
@@ -61,11 +61,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .choose-box{border:2px solid var(--color-border);border-radius:var(--radius-lg);padding:1.5rem;margin-bottom:1rem;}
     .choose-box.winner{border-color:rgba(34,197,94,0.4);}
     .toc{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.07);border-radius:var(--radius-lg);padding:1.5rem;margin:2rem 0;}
-    .toc h4{font-size:0.8rem;text-transform:uppercase;letter-spacing:0.05em;color:rgba(148,163,184,0.6);margin-bottom:1rem;font-weight:700;}
+    .toc h4:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .toc .hl4{font-size:0.8rem;text-transform:uppercase;letter-spacing:0.05em;color:rgba(148,163,184,0.6);margin-bottom:1rem;font-weight:700;}
     .toc a{display:block;color:rgba(148,163,184,0.8);font-size:0.875rem;padding:0.3rem 0;text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.04);}
     .toc a:hover{color:#a855f7;}
     .faq-item{border:1px solid var(--color-border);border-radius:var(--radius);margin-bottom:0.75rem;padding:1.25rem;}
-    .faq-item h3{margin:0 0 0.5rem;font-size:1rem;}
+    .faq-item h3:not(:where(.hl3,.hl4,.hl5,.hl6)){margin:0 0 0.5rem;font-size:1rem;}
     .faq-item p{margin:0;color:var(--color-text-muted);font-size:0.875rem;line-height:1.7;}
     #back-to-top{display:none;position:fixed;bottom:4rem;right:1.5rem;width:44px;height:44px;border-radius:50%;background:var(--color-primary);color:white;align-items:center;justify-content:center;font-size:1.25rem;cursor:pointer;border:none;box-shadow:var(--shadow-lg);z-index:50;}
     .sticky-cta{position:fixed;bottom:0;left:0;right:0;background:linear-gradient(90deg,#0a0f1e,#0d1528);border-top:1px solid rgba(249,115,22,0.3);padding:0.75rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;z-index:100;transform:translateY(100%);transition:transform 0.3s ease;backdrop-filter:blur(12px);}
@@ -192,7 +193,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <article class="main-content">
 
     <div class="toc">
-      <h4>In This Comparison</h4>
+      <h2 class="hl4">In This Comparison</h2>
       <a href="#winner">Quick Verdict</a>
       <a href="#comparison-table">Full Comparison Table</a>
       <a href="#julius-wins">When Julius AI Wins</a>

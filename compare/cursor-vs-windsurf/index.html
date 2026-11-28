@@ -23,7 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -40,7 +40,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .vs-tool-score{font-size:2rem;font-weight:800;color:#a5b4fc;}
     .vs-badge{background:rgba(249,115,22,0.12);border:2px solid rgba(249,115,22,0.4);border-radius:9999px;padding:0.5rem 1.25rem;font-weight:700;font-size:1.1rem;color:#c7d2fe;}
     .winner-callout{background:linear-gradient(135deg,rgba(34,197,94,0.15),rgba(22,163,74,0.1));border:1px solid rgba(34,197,94,0.3);border-radius:var(--radius-lg);padding:1.5rem;margin:2rem 0;}
-    .winner-callout h3{color:white;margin-bottom:0.5rem;}
+    .winner-callout h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .winner-callout .hl3{color:white;margin-bottom:0.5rem;}
     .choose-box{border:2px solid var(--color-border);border-radius:var(--radius-lg);padding:1.5rem;margin-bottom:1rem;}
     .choose-box.winner{border-color:var(--color-accent);}
     .winner-col{background:rgba(34,197,94,0.08);font-weight:600;color:#4ade80;}
@@ -173,13 +174,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 
   <div class="winner-callout">
-    <h3>🏆 Winner: Cursor (slightly) — Windsurf wins on value</h3>
+    <h2 class="hl3">🏆 Winner: Cursor (slightly) — Windsurf wins on value</h2>
     <p style="color:rgba(203,213,225,0.8);margin:0;">Cursor edges Windsurf on deep codebase understanding and complex multi-file editing. But Windsurf is remarkably close — especially for the price. At $15/mo vs $20/mo, with a better free tier, Windsurf is the right choice for most developers who don't need Cursor's edge cases.</p>
   </div>
 
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:2rem 0;">
     <div class="choose-box winner">
-      <h4 style="color:#4ade80;margin-bottom:0.75rem;">Choose Cursor if you…</h4>
+      <h3 class="hl4" style="color:#4ade80;margin-bottom:0.75rem;">Choose Cursor if you…</h3>
       <ul style="color:rgba(203,213,225,0.85);font-size:0.9rem;margin:0;padding-left:1.2rem;">
         <li>Work on large, complex codebases (50k+ lines)</li>
         <li>Need the absolute best multi-file editing</li>

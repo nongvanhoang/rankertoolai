@@ -23,7 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -36,7 +36,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .quick-pick-row:last-child{border:none;}
     .quick-pick-badge{font-size:0.7rem;padding:0.2rem 0.5rem;border-radius:9999px;font-weight:700;background:var(--color-primary-light);color:var(--color-primary);white-space:nowrap;}
     .why-switch{background:linear-gradient(135deg,#fef3c7,#fffbeb);border:1px solid #fcd34d;border-radius:var(--radius-lg);padding:1.5rem;margin-bottom:2rem;}
-    .why-switch h3,.why-switch li,.why-switch strong{color:#92400e;}
+    .why-switch h3:not(:where(.hl3,.hl4,.hl5,.hl6)),.why-switch li,.why-switch strong,
+    .why-switch .hl3{color:#92400e;}
     .alt-rank-num{width:36px;height:36px;border-radius:50%;background:var(--color-primary);color:white;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1rem;flex-shrink:0;}
     #back-to-top{display:none;position:fixed;bottom:80px;right:1.5rem;width:44px;height:44px;border-radius:50%;background:var(--color-primary);color:white;align-items:center;justify-content:center;font-size:1.25rem;cursor:pointer;border:none;box-shadow:var(--shadow-lg);z-index:50;}
     .sticky-cta{position:fixed;bottom:0;left:0;right:0;background:linear-gradient(90deg,#0a0f1e,#0d1528);border-top:1px solid rgba(249,115,22,0.3);padding:0.75rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;z-index:100;transform:translateY(100%);transition:transform 0.3s ease;backdrop-filter:blur(12px);}
@@ -164,7 +165,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="why-switch">
-      <h3 style="margin-bottom:0.75rem;">Why People Look for NordPass Alternatives</h3>
+      <h2 class="hl3" style="margin-bottom:0.75rem;">Why People Look for NordPass Alternatives</h2>
       <ul style="margin:0;padding-left:1.25rem;line-height:1.9;">
         <li><strong>Free tier limits:</strong> NordPass's free plan restricts you to one active device at a time — Bitwarden's free plan has no device limit</li>
         <li><strong>Open-source auditability:</strong> NordPass's code isn't open source; some security-conscious users only trust password managers that can be independently audited</li>
@@ -207,7 +208,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Bitwarden is the closest direct competitor to NordPass — cross-platform password management with a genuinely unlimited free tier: unlimited passwords, unlimited devices, and a built-in TOTP two-factor authenticator at $0. Premium adds encrypted file storage, emergency access, and priority support for about $1.65/month (Premium is $19.80/year following a January 2026 price increase), noticeably cheaper than NordPass's $1.99-3.69/month range. Bitwarden is also fully open source, meaning its encryption code has been independently audited by outside security researchers rather than only NordPass's own team.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs NordPass</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs NordPass</h3><ul>
           <li>Free plan has no device limit (NordPass free restricts you to one device at a time)</li>
           <li>Cheaper Premium tier (~$1.65/mo vs NordPass's $1.99-3.69/mo)</li>
           <li>Fully open source — independently audited encryption</li>
@@ -239,7 +240,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>1Password is the category leader for teams and businesses — its admin console, SSO/SCIM integration, and per-item activity logs are more mature than NordPass's business tier. Individual pricing sits around €43.80/year (roughly $3.90/month, following a March 2026 price increase), and Business runs about $7.99/user/month. Its standout consumer feature, Travel Mode, temporarily hides sensitive vaults from your device when crossing borders — something NordPass doesn't offer.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs NordPass</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs NordPass</h3><ul>
           <li>More mature admin console and SSO/SCIM support for teams</li>
           <li>Travel Mode hides sensitive vaults when crossing borders</li>
           <li>Widely regarded as the most polished, intuitive interface in the category</li>
@@ -270,7 +271,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Dashlane's standout differentiator is bundling a Hotspot Shield VPN directly into its Premium subscription (about €3.68/month, excluding tax) — a genuinely unique combination in this category, since NordPass keeps its password manager and NordVPN as separate products/subscriptions. Family plans cover 10 accounts at roughly €5.55/month. The tradeoff is a slightly heavier, more feature-dense interface than NordPass's simpler design.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs NordPass</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs NordPass</h3><ul>
           <li>VPN included in Premium — no separate subscription needed</li>
           <li>Dark web monitoring is broader and updates more frequently</li>
           <li>Family plan covers 10 accounts vs typical 6-person family plans</li>
@@ -301,7 +302,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>LastPass remains one of the most recognized names in password management, largely from years as a default recommendation before its 2022 security breaches (encrypted vault data was stolen, later linked to real-world cryptocurrency thefts). We include it here because brand recognition still drives real search demand, but we can't recommend it over NordPass or the other tools on this list given that history — a newer platform with a clean security record and modern encryption (NordPass, Bitwarden, or 1Password) is the safer default for most people in 2026.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs NordPass</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs NordPass</h3><ul>
           <li>Long-established brand, familiar to non-technical users</li>
           <li>Broad browser extension and OS support built up over many years</li>
         </ul></div>
@@ -332,7 +333,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>KeePass takes the opposite approach from NordPass entirely: a free, open-source password database stored as a local file on your own device, with zero built-in cloud sync (you can add your own via Dropbox/OneDrive/Syncthing if you want cross-device access). It's the right tool specifically for technical users who don't want any vendor holding even encrypted copies of their vault — not a fit for anyone who wants a polished, zero-setup experience.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs NordPass</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs NordPass</h3><ul>
           <li>Completely free, no subscription ever</li>
           <li>Zero vendor cloud dependency — you control where the file lives</li>
           <li>Open source, widely audited over two decades</li>

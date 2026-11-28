@@ -23,7 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -36,7 +36,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .quick-pick-row:last-child{border:none;}
     .quick-pick-badge{font-size:0.7rem;padding:0.2rem 0.5rem;border-radius:9999px;font-weight:700;background:var(--color-primary-light);color:var(--color-primary);white-space:nowrap;}
     .why-switch{background:linear-gradient(135deg,#fef3c7,#fffbeb);border:1px solid #fcd34d;border-radius:var(--radius-lg);padding:1.5rem;margin-bottom:2rem;}
-    .why-switch h3,.why-switch li,.why-switch strong{color:#92400e;}
+    .why-switch h3:not(:where(.hl3,.hl4,.hl5,.hl6)),.why-switch li,.why-switch strong,
+    .why-switch .hl3{color:#92400e;}
     .alt-rank-num{width:36px;height:36px;border-radius:50%;background:var(--color-primary);color:white;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1rem;flex-shrink:0;}
     #back-to-top{display:none;position:fixed;bottom:1.5rem;right:1.5rem;width:44px;height:44px;border-radius:50%;background:var(--color-primary);color:white;align-items:center;justify-content:center;font-size:1.25rem;cursor:pointer;border:none;box-shadow:var(--shadow-lg);z-index:50;}
   </style>
@@ -151,7 +152,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p style="color:#94a3b8;">Context.dev is our default recommendation for AI agents and RAG pipelines that need clean web content plus brand metadata in a single API call. But it's a narrow, developer-facing product in a space with several well-established competitors, each solving a slightly different piece of the web-data-extraction problem. Here's how the real, currently-available alternatives actually stack up in practice, and when each one genuinely makes more sense than Context.dev for your specific pipeline.</p>
 
     <div class="why-switch">
-      <h3 style="margin-bottom:0.75rem;">Why People Look at Alternatives to Context.dev</h3>
+      <h2 class="hl3" style="margin-bottom:0.75rem;">Why People Look at Alternatives to Context.dev</h2>
       <ul style="margin:0;padding-left:1.25rem;line-height:1.9;"><li><strong>Structured extraction needs:</strong> teams that need pre-built extraction for specific content types (articles, products, discussions) rather than general markdown conversion</li><li><strong>Scraping scale:</strong> high-volume or geographically-distributed scraping that benefits from a large proxy network</li><li><strong>Pre-built scrapers:</strong> wanting a marketplace of ready-made scrapers instead of building extraction logic from scratch</li><li><strong>Ecosystem maturity:</strong> teams already standardized on an established scraping platform with a large open-source community</li></ul>
     </div>
 
@@ -185,7 +186,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>Firecrawl is the closest direct competitor to Context.dev — both convert web pages into clean, LLM-ready markdown for AI agents and RAG pipelines, and both handle JS-rendered pages and full-site crawling via sitemaps. Firecrawl has built a large open-source developer community and is a common default choice for teams building AI agents that need to read the web.</p>
       <p>Where Context.dev differs is scope: it bundles brand intelligence extraction (logos, colors, fonts, company metadata) alongside content conversion, which Firecrawl doesn't offer as a built-in feature. If your workflow only needs clean page content for RAG ingestion, either tool covers the core use case well; Context.dev's brand data extraction is the differentiator if you need it. Integration effort is comparable for both — a single API call in, clean markdown or structured data out — so the decision usually comes down to whether brand/company metadata is part of your pipeline, not raw scraping capability.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Context.dev</h4><ul><li>Large open-source community and ecosystem</li><li>Strong full-site crawl tooling</li><li>Free tier plus usage-based paid plans</li></ul></div>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Context.dev</h3><ul><li>Large open-source community and ecosystem</li><li>Strong full-site crawl tooling</li><li>Free tier plus usage-based paid plans</li></ul></div>
         <div class="cons"><h4>❌ Cons vs Context.dev</h4><ul><li>No built-in brand/company metadata extraction</li><li>Fewer official SDKs than Context.dev's 5</li></ul></div>
       </div>
       <div style="margin-top:1rem;font-size:0.85rem;color:var(--color-text-muted);">Only need clean markdown, not brand data? <a href="/go/context/" rel="nofollow sponsored" target="_blank" style="color:#f97316;font-weight:600;">Try Context.dev's free tier first →</a></div>
@@ -205,7 +206,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>Diffbot is one of the longest-running players in automated web data extraction, with dedicated APIs for specific content types — articles, products, discussions — plus a knowledge graph product for entity-level data. Rather than returning generic markdown, Diffbot's extraction APIs return structured fields (author, publish date, price, availability) tuned to each content type.</p>
       <p>This makes Diffbot a stronger fit for teams building structured datasets (e.g., product catalogs, news aggregation) rather than feeding raw page content to an LLM. Context.dev's general-purpose markdown/JSON output is faster to integrate for RAG use cases but doesn't offer the same type-specific field extraction out of the box. If your team is building a database of structured records rather than an LLM knowledge base, Diffbot's type-aware extraction saves the post-processing work you'd otherwise do on top of generic markdown.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Context.dev</h4><ul><li>Purpose-built extraction APIs per content type</li><li>Knowledge graph / entity data product</li><li>Long track record with enterprise customers</li></ul></div>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Context.dev</h3><ul><li>Purpose-built extraction APIs per content type</li><li>Knowledge graph / entity data product</li><li>Long track record with enterprise customers</li></ul></div>
         <div class="cons"><h4>❌ Cons vs Context.dev</h4><ul><li>More enterprise-oriented pricing and sales process</li><li>Less tuned for direct LLM/RAG ingestion workflows</li></ul></div>
       </div>
       <div style="margin-top:1rem;font-size:0.85rem;color:var(--color-text-muted);">Building a RAG pipeline, not a structured database? <a href="/go/context/" rel="nofollow sponsored" target="_blank" style="color:#f97316;font-weight:600;">Context.dev is the simpler fit →</a></div>
@@ -225,7 +226,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>Apify takes a different approach: instead of one general-purpose API, it offers a marketplace of thousands of pre-built "Actors" (scrapers) for specific sites and use cases, plus infrastructure to build and run your own. For teams that need a scraper for a specific platform (e.g., a particular e-commerce site or social network) rather than generic page-to-markdown conversion, Apify's marketplace often has something ready to use.</p>
       <p>This flexibility comes with more setup surface area than Context.dev's single-endpoint API — Apify is better suited to teams comfortable browsing and configuring existing Actors or writing their own scraping logic, rather than teams that want the simplest possible URL-in, clean-content-out API for LLM pipelines. Developers who want to move fast without evaluating a marketplace of options tend to prefer Context.dev's single, opinionated endpoint over Apify's broader but more open-ended toolkit.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Context.dev</h4><ul><li>Marketplace of thousands of pre-built scrapers</li><li>Free monthly credits plus pay-as-you-go</li><li>Supports fully custom scraping pipelines</li></ul></div>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Context.dev</h3><ul><li>Marketplace of thousands of pre-built scrapers</li><li>Free monthly credits plus pay-as-you-go</li><li>Supports fully custom scraping pipelines</li></ul></div>
         <div class="cons"><h4>❌ Cons vs Context.dev</h4><ul><li>More setup and configuration than a single API call</li><li>No built-in brand intelligence extraction</li></ul></div>
       </div>
       <div style="margin-top:1rem;font-size:0.85rem;color:var(--color-text-muted);">Want a single endpoint instead of browsing a marketplace? <a href="/go/context/" rel="nofollow sponsored" target="_blank" style="color:#f97316;font-weight:600;">Try Context.dev →</a></div>
@@ -245,7 +246,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>Bright Data is primarily a proxy network and web data infrastructure company — residential, datacenter, and mobile proxies at large scale, plus scraping tools and a dataset marketplace built on top. It's the go-to choice for teams that need to scrape at very high volume or need to appear as requests from specific geographies, which requires proxy infrastructure Context.dev doesn't provide directly.</p>
       <p>For teams whose bottleneck is IP blocking, rate limits, or geo-restricted content at scale, Bright Data's infrastructure solves a problem Context.dev isn't built to address. For simpler RAG/AI-agent content ingestion without heavy anti-bot resistance requirements, Context.dev's simpler API is faster to integrate and easier to reason about. Most AI agent and RAG-ingestion use cases never hit the anti-bot walls Bright Data is designed to solve, so reaching for it before you've confirmed that's actually your bottleneck usually adds unnecessary infrastructure cost and complexity.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Context.dev</h4><ul><li>Large-scale residential/datacenter proxy network</li><li>Built for high-volume, anti-bot-resistant scraping</li><li>Dataset marketplace for pre-scraped data</li></ul></div>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Context.dev</h3><ul><li>Large-scale residential/datacenter proxy network</li><li>Built for high-volume, anti-bot-resistant scraping</li><li>Dataset marketplace for pre-scraped data</li></ul></div>
         <div class="cons"><h4>❌ Cons vs Context.dev</h4><ul><li>More complex, enterprise-oriented setup</li><li>Overkill for simple RAG content-ingestion use cases</li></ul></div>
       </div>
       <div style="margin-top:1rem;font-size:0.85rem;color:var(--color-text-muted);">Not hitting anti-bot walls yet? <a href="/go/context/" rel="nofollow sponsored" target="_blank" style="color:#f97316;font-weight:600;">Start with Context.dev's simpler API →</a></div>

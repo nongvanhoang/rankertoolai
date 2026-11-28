@@ -90,7 +90,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -121,7 +121,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .score-card .value{font-size:2rem;font-weight:900;}
     .score-card .sub{font-size:0.75rem;color:var(--color-text-muted);margin-top:0.2rem;}
     .cta-box{background:linear-gradient(135deg,rgba(14,165,233,0.08),rgba(2,132,199,0.04));border:1px solid rgba(14,165,233,0.25);border-radius:var(--radius-lg);padding:1.5rem;margin:2rem 0;text-align:center;}
-    .cta-box h3{font-size:1rem;font-weight:800;color:#f1f5f9;margin:0 0 0.5rem;}
+    .cta-box h3:not(:where(.hl3,.hl4,.hl5,.hl6)){font-size:1rem;font-weight:800;color:#f1f5f9;margin:0 0 0.5rem;}
     .cta-box p{color:var(--color-text-muted);font-size:0.875rem;margin:0 0 1rem;}
     .cta-box .btn-cta{display:inline-block;background:linear-gradient(135deg,#0ea5e9,#0284c7);color:#fff;font-weight:800;font-size:0.9rem;padding:0.75rem 2rem;border-radius:var(--radius);text-decoration:none;}
     .cta-box .btn-cta:hover{transform:translateY(-1px);text-decoration:none;color:#fff;}
@@ -130,8 +130,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .test-card .tool-name{font-size:0.7rem;text-transform:uppercase;letter-spacing:0.05em;font-weight:700;margin-bottom:0.5rem;}
     .test-card .tool-score{font-size:1.5rem;font-weight:900;margin-bottom:0.25rem;}
     .test-card .tool-desc{font-size:0.8rem;color:var(--color-text-muted);line-height:1.5;}
-    h2{font-size:1.3rem;margin:2rem 0 1rem;}
-    h3{font-size:1.05rem;margin:1.5rem 0 0.75rem;}
+    h2:not(:where(.hl3,.hl4,.hl5,.hl6)){font-size:1.3rem;margin:2rem 0 1rem;}
+    h3:not(:where(.hl3,.hl4,.hl5,.hl6)){font-size:1.05rem;margin:1.5rem 0 0.75rem;}
     .nav-active{color:var(--color-primary)!important;}
     .footer-heading{color:var(--color-text);font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.75rem;}
     .footer-links{list-style:none;padding:0;}
@@ -144,7 +144,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .pros-cons{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin:2rem 0;}
     @media(max-width:640px){.pros-cons{grid-template-columns:1fr;}}
     .pros,.cons{background:var(--color-bg-alt);border-radius:var(--radius-lg);padding:1.5rem;border:1px solid var(--color-border);}
-    .pros h4,.cons h4{margin-bottom:0.75rem;font-size:0.95rem;}
+    .pros h4:not(:where(.hl3,.hl4,.hl5,.hl6)),.cons h4:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .pros .hl4,.cons .hl4{margin-bottom:0.75rem;font-size:0.95rem;}
     .pros ul,.cons ul{list-style:none;padding:0;}
     .faq-item{border-bottom:1px solid var(--color-border);padding:1.1rem 0;}
     .faq-item:last-child{border-bottom:none;}
@@ -400,7 +401,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <div class="pros-cons">
     <div class="pros">
-      <h4>Writesonic Pros</h4>
+      <h3 class="hl4">Writesonic Pros</h3>
       <ul>
         <li>5x more generous free plan (10k vs 2k words)</li>
         <li>Better long-form article coherence</li>
@@ -506,7 +507,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </footer>
 
-<script src="/assets/js/main.js?v=20261102"></script>
+<script src="/assets/js/main.js?v=20261128"></script>
 <script src="/assets/js/cookie-consent.js" defer></script>
 <script>
   const navToggle = document.getElementById('nav-toggle');

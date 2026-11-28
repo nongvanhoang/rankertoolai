@@ -23,7 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -36,7 +36,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .quick-pick-row:last-child{border:none;}
     .quick-pick-badge{font-size:0.7rem;padding:0.2rem 0.5rem;border-radius:9999px;font-weight:700;background:var(--color-primary-light);color:var(--color-primary);white-space:nowrap;}
     .why-switch{background:linear-gradient(135deg,#fef3c7,#fffbeb);border:1px solid #fcd34d;border-radius:var(--radius-lg);padding:1.5rem;margin-bottom:2rem;}
-    .why-switch h3,.why-switch li,.why-switch strong{color:#92400e;}
+    .why-switch h3:not(:where(.hl3,.hl4,.hl5,.hl6)),.why-switch li,.why-switch strong,
+    .why-switch .hl3{color:#92400e;}
     .alt-rank-num{width:36px;height:36px;border-radius:50%;background:var(--color-primary);color:white;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1rem;flex-shrink:0;}
     #back-to-top{display:none;position:fixed;bottom:80px;right:1.5rem;width:44px;height:44px;border-radius:50%;background:var(--color-primary);color:white;align-items:center;justify-content:center;font-size:1.25rem;cursor:pointer;border:none;box-shadow:var(--shadow-lg);z-index:50;}
     .sticky-cta{position:fixed;bottom:0;left:0;right:0;background:linear-gradient(90deg,#0a0f1e,#0d1528);border-top:1px solid rgba(249,115,22,0.3);padding:0.75rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;z-index:100;transform:translateY(100%);transition:transform 0.3s ease;backdrop-filter:blur(12px);}
@@ -166,7 +167,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>We rated each tool against the specific job it's actually built for rather than penalizing it for lacking features outside that scope — Otter.ai's score reflects meeting transcription quality, not how well it dictates a system-wide email, since that was never its intended use case. Read every score below in that context rather than as a direct head-to-head ranking against Wispr Flow's general-purpose scope.</p>
 
     <div class="why-switch">
-      <h3 style="margin-bottom:0.75rem;">Why People Look for Wispr Flow Alternatives</h3>
+      <h2 class="hl3" style="margin-bottom:0.75rem;">Why People Look for Wispr Flow Alternatives</h2>
       <ul style="margin:0;padding-left:1.25rem;line-height:1.9;">
         <li><strong>Pricing model:</strong> Wispr Flow has no lifetime license — some users prefer a one-time purchase over an ongoing subscription</li>
         <li><strong>Privacy:</strong> Wispr Flow processes dictation in the cloud by default; privacy-conscious users want local/offline processing</li>
@@ -210,7 +211,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Superwhisper is the closest direct competitor to Wispr Flow — system-wide AI dictation for Mac, Windows, and iOS. Its free tier is more generous with no weekly word cap: unlimited use of small local AI models, dictation in any app, meeting recording, and 100+ languages, forever. Pro unlocks bring-your-own-key API access, unlimited cloud/large local models, and translation, starting at $7.08/month (annual) or a $249.99 one-time lifetime license — an option Wispr Flow doesn't offer at all.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Wispr Flow</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Wispr Flow</h3><ul>
           <li>Cheaper subscription ($7.08-8.49/mo vs $12-15/mo)</li>
           <li>One-time lifetime license option ($249.99) — no ongoing subscription needed</li>
           <li>Local/offline AI models for privacy-sensitive dictation</li>
@@ -243,7 +244,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Otter.ai isn't a system-wide dictation tool like Wispr Flow — it's purpose-built for recording and transcribing meetings, with speaker labels, live captions, and automated summaries. If your actual need is capturing what was said in a Zoom call or in-person meeting rather than dictating your own writing, Otter is the better-fit tool entirely, not just a cheaper alternative.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Wispr Flow</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Wispr Flow</h3><ul>
           <li>Speaker-labeled meeting transcripts and automated summaries</li>
           <li>Live captions during video calls</li>
           <li>Integrates directly with Zoom, Google Meet, Microsoft Teams</li>
@@ -275,7 +276,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Dragon Professional (by Nuance/Microsoft) is legacy desktop dictation software with deep Windows-level integration and voice-command control over the operating system itself, not just text entry. It's a one-time license rather than a subscription, which some enterprise buyers prefer for procurement reasons, but the interface and setup process feel dated next to Wispr Flow's modern, near-instant onboarding.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Wispr Flow</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Wispr Flow</h3><ul>
           <li>Deep Windows OS-level voice command integration</li>
           <li>One-time license, common in enterprise procurement</li>
           <li>Long track record in regulated industries (legal, medical)</li>
@@ -307,7 +308,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Both macOS and Windows ship with free, built-in system-wide dictation. It costs nothing and works in any text field, same as Wispr Flow — but punctuation, formatting, and jargon handling are noticeably weaker, and there's no AI cleanup layer to turn rambling speech into polished text. It's a reasonable stopgap for occasional use, not a serious daily-writing replacement.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Wispr Flow</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Wispr Flow</h3><ul>
           <li>Completely free, built into the OS already</li>
           <li>No account, no setup, no subscription ever</li>
         </ul></div>
@@ -338,7 +339,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Whisper Memos is built around a narrower job: recording voice memos and turning them into structured, cleaned-up text — journal entries, quick notes, idea capture — rather than replacing your keyboard system-wide. If your dictation need is mostly "capture a thought while walking" rather than "write emails and Slack messages by voice," its focused workflow can be simpler than Wispr Flow's always-on system integration.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Wispr Flow</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Wispr Flow</h3><ul>
           <li>Simpler, more focused workflow for voice notes specifically</li>
           <li>Cleaned-up, structured output tuned for journaling</li>
         </ul></div>
@@ -368,7 +369,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Aqua Voice is built specifically for dictating longer, structured documents — think reports and specs rather than quick Slack replies — with voice commands for formatting and editing built into the dictation flow itself. It's a narrower tool than Wispr Flow, but for writers who dictate entire documents rather than short messages, that focus can produce cleaner structured output.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Wispr Flow</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Wispr Flow</h3><ul>
           <li>Voice commands for document structure and formatting built in</li>
           <li>Tuned specifically for long-form structured writing</li>
         </ul></div>

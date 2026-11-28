@@ -23,7 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -38,7 +38,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .tool-score{display:inline-flex;align-items:center;gap:0.35rem;background:#0d1224;border:1px solid var(--color-border);border-radius:var(--radius);padding:0.25rem 0.65rem;font-size:0.85rem;font-weight:700;color:#f97316;}
     .tag{display:inline-block;background:rgba(249,115,22,0.1);border:1px solid rgba(249,115,22,0.25);color:#fbbf24;font-size:0.7rem;padding:0.15rem 0.5rem;border-radius:9999px;margin:0.15rem;}
     .faq-item{border:1px solid var(--color-border);border-radius:var(--radius);margin-bottom:0.75rem;padding:1.25rem;}
-    .faq-item h3{margin:0 0 0.5rem;font-size:1rem;}
+    .faq-item h3:not(:where(.hl3,.hl4,.hl5,.hl6)){margin:0 0 0.5rem;font-size:1rem;}
     .faq-item p{margin:0;color:var(--color-text-muted);font-size:0.875rem;}
     .winner-box{background:linear-gradient(135deg,rgba(34,197,94,0.12),rgba(22,163,74,0.06));border:1px solid rgba(34,197,94,0.3);border-radius:var(--radius-lg);padding:1.25rem;margin-bottom:2rem;}
   </style>
@@ -143,7 +143,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p style="margin:0.5rem 0 0;color:#e2e8f0;font-size:0.9rem;">Best all-round for non-coders: <strong>Lovable</strong> (free plan, Pro $25/mo with custom domains). Biggest free plan: <strong>Bolt.new</strong> (1M tokens a month). Best-looking marketing or portfolio site: <strong>Framer</strong> (from $10/mo). React and Next.js developers: <strong>v0 by Vercel</strong>. Cheapest site with hosting and domain in one bill: <strong>Hostinger</strong> (from $1.99/mo on a 48-month term). Full control for free if you can follow a few technical steps: <strong>Claude</strong>.</p>
     </div>
     <div class="toc" style="margin-bottom:2rem;">
-      <h4>Quick Navigation</h4>
+      <h2 class="hl4">Quick Navigation</h2>
       <ol>
         <li><a href="#lovable">Lovable: Best Overall for Non-Coders</a></li>
         <li><a href="#bolt">Bolt.new: Best Free Plan</a></li>
@@ -166,7 +166,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div style="margin-bottom:1rem;"><span class="tag">Free plan</span><span class="tag">Custom domains on Pro</span><span class="tag">Apps, not only pages</span><span class="tag">2 months free on yearly</span></div>
         <p>Lovable turns a written prompt into a working web app or site and lets you keep editing it by chatting. The <strong>Free</strong> plan gives 5 build credits a day (up to 30 a month) plus 20 Cloud credits a month, and lets you publish on up to 5 lovable.app addresses. <strong>Pro</strong> is <strong>$25 a month</strong> and adds 100 monthly credits on top of the daily ones, plus custom domains. <strong>Business</strong> is $50 a month, and Enterprise is volume-priced with GitHub Enterprise and data-residency options. Yearly billing gives two months free.</p>
-        <h4>Pros</h4>
+        <h3 class="hl4">Pros</h3>
         <ul>
           <li>The easiest start here for someone who has never written code</li>
           <li>Builds full apps (logins, data, forms), not only static pages</li>
@@ -193,7 +193,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div style="margin-bottom:1rem;"><span class="tag">1M free tokens/month</span><span class="tag">Hosting included</span><span class="tag">Up to 28% off yearly</span></div>
         <p>Bolt.new builds sites and apps from a prompt and shows you the code as it goes. The <strong>Free</strong> plan includes <strong>1 million tokens a month</strong> (with a 300K daily limit), website hosting, a 10MB upload limit and up to 3 collaborators. <strong>Pro</strong> is <strong>$25 a month</strong>, starts at 10 million tokens a month with no daily limit, and adds custom domain support. <strong>Teams</strong> is $30 per member per month. Bolt says yearly billing saves up to 28%.</p>
-        <h4>Pros</h4>
+        <h3 class="hl4">Pros</h3>
         <ul>
           <li>Largest free allowance among the prompt-to-app builders</li>
           <li>Hosting is included even on Free</li>
@@ -219,7 +219,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div style="margin-bottom:1rem;"><span class="tag">Design-first</span><span class="tag">Free custom domain on paid plans</span><span class="tag">2&times; credits first month</span></div>
         <p>Framer is a visual builder for landing pages, portfolios and company sites, with AI credits for generating and editing pages. <strong>Free</strong> includes 500 AI credits a month on a framer domain, 1GB bandwidth and up to 10 CMS collections; a custom domain needs a paid plan. <strong>Basic</strong> is <strong>$10 a month</strong> with 1,000 AI credits, 30 site pages, 2 CMS collections and a free custom domain. <strong>Pro</strong> is $30 a month with 3,000 credits, 150 pages and 10 CMS collections. Paid plans currently get double credits in the first month, and yearly plans include a complimentary domain.</p>
-        <h4>Pros</h4>
+        <h3 class="hl4">Pros</h3>
         <ul>
           <li>The most polished-looking results for marketing sites</li>
           <li>Cheapest paid plan with a custom domain among the dedicated builders</li>
@@ -245,7 +245,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div style="margin-bottom:1rem;"><span class="tag">Deploys to Vercel</span><span class="tag">Credit-based</span><span class="tag">Developer-friendly</span></div>
         <p>v0 is Vercel's AI builder for full-stack web apps. New users on <strong>Free</strong> get $5 of one-time credits with a 7-message daily limit, and can deploy to Vercel. <strong>Plus</strong> is <strong>$30 per user per month</strong> with $30 of monthly credits plus $2 of free daily credits when you log in. <strong>Business</strong> is $100 per user per month, and Enterprise is custom.</p>
-        <h4>Pros</h4>
+        <h3 class="hl4">Pros</h3>
         <ul>
           <li>Clean React and Next.js output that developers can keep working on</li>
           <li>One-click path to Vercel hosting</li>
@@ -270,7 +270,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div style="margin-bottom:1rem;"><span class="tag">Domain free for 1 year</span><span class="tag">Ecommerce on Unlimited</span><span class="tag">Black Friday: 2&times; credits</span></div>
         <p>Hostinger includes an AI website builder in its hosting plans, so the builder, hosting and domain come on one bill. <strong>Premium</strong> is <strong>$1.99 a month</strong> on a 48-month term and renews at $10.99; <strong>Unlimited</strong> is $2.79 (renews at $16.99) and adds ecommerce free for the first year; <strong>Cloud Startup</strong> is $7.99 (renews at $25.99). Every plan includes a custom domain free for the first year. During Black Friday, Hostinger is doubling the builder's AI credits (for example 500 instead of 250 on Premium).</p>
-        <h4>Pros</h4>
+        <h3 class="hl4">Pros</h3>
         <ul>
           <li>Lowest monthly price for a live site on your own domain</li>
           <li>Hosting, domain and builder in one place</li>
@@ -296,7 +296,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div style="margin-bottom:1rem;"><span class="tag">You own every file</span><span class="tag">Host anywhere</span><span class="tag">More steps</span></div>
         <p>Many of the "I built this site with one prompt" videos use a general assistant like Claude rather than a website builder. You describe the page or share a screenshot you like, Claude writes the HTML, CSS and JavaScript, and you preview it in the chat. You then download the files and put them on any host, including free static hosting. Claude has a free plan, and Claude Pro is $20 a month for higher limits. The trade-off is that publishing, domains and forms are your job.</p>
-        <h4>Pros</h4>
+        <h3 class="hl4">Pros</h3>
         <ul>
           <li>No lock-in: the code is yours and runs on any host</li>
           <li>Strong at design variations and animations from a reference</li>
@@ -369,7 +369,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand"><a href="/" style="display:flex;align-items:center;gap:0.5rem;text-decoration:none;"><img src="/assets/images/logo-dark.webp" onerror="this.src='/assets/images/logo-dark.png'" alt="Dark logo" style="height:32px;width:32px;object-fit:contain;" loading="lazy"><span style="font-size:1rem;font-weight:900;background:linear-gradient(135deg,#f97316,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">RankerTool AI</span></a><p class="footer-tagline">Independent AI &amp; software tool reviews.</p></div>
-      <div class="footer-col"><h5>This Category</h5><ul><li><a href="/best/ai-website-builders/">AI Website Builders</a></li><li><a href="/best/ai-coding-tools/">AI Coding Tools</a></li><li><a href="/review/claude/">Claude Review</a></li></ul></div>
+      <div class="footer-col"><h4 class="hl5">This Category</h4><ul><li><a href="/best/ai-website-builders/">AI Website Builders</a></li><li><a href="/best/ai-coding-tools/">AI Coding Tools</a></li><li><a href="/review/claude/">Claude Review</a></li></ul></div>
       <div class="footer-col"><h5>Best Tools</h5><ul><li><a href="/best/ai-shopify-tools/">AI Shopify Tools</a></li><li><a href="/best/ai-writing-tools/">AI Writing Tools</a></li><li><a href="/best/free-ai-tools/">Free AI Tools</a></li></ul></div>
       <div class="footer-col"><h5>About</h5><ul><li><a href="/methodology/">Methodology</a></li><li><a href="/affiliate-disclosure/">Disclosure</a></li><li><a href="/privacy-policy/">Privacy</a></li></ul></div>
     </div>
@@ -377,7 +377,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="footer-bottom"><span>© 2026 RankerToolAI</span><span>Updated: November 2026</span></div>
   </div>
 </footer>
-<script src="/assets/js/main.js?v=20261102"></script>
+<script src="/assets/js/main.js?v=20261128"></script>
 <script src="/assets/js/cookie-consent.js" defer></script>
 </body>
 </html>

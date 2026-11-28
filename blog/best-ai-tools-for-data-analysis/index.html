@@ -101,7 +101,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -132,15 +132,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .score-card .value{font-size:1.75rem;font-weight:900;}
     .score-card .sub{font-size:0.7rem;color:var(--color-text-muted);margin-top:0.2rem;}
     .cta-box{background:linear-gradient(135deg,rgba(249,115,22,0.08),rgba(251,191,36,0.04));border:1px solid rgba(249,115,22,0.25);border-radius:var(--radius-lg);padding:1.5rem;margin:2rem 0;text-align:center;}
-    .cta-box h3{font-size:1rem;font-weight:800;color:#f1f5f9;margin:0 0 0.5rem;}
+    .cta-box h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .cta-box .hl3{font-size:1rem;font-weight:800;color:#f1f5f9;margin:0 0 0.5rem;}
     .cta-box p{color:var(--color-text-muted);font-size:0.875rem;margin:0 0 1rem;}
     .cta-box .btn-cta{display:inline-block;background:linear-gradient(135deg,#f97316,#fbbf24);color:#000;font-weight:800;font-size:0.9rem;padding:0.75rem 2rem;border-radius:var(--radius);text-decoration:none;}
     .cta-box .btn-cta:hover{transform:translateY(-1px);text-decoration:none;color:#000;}
     .coupon-badge{display:inline-block;background:rgba(34,197,94,0.1);border:1px dashed rgba(34,197,94,0.4);color:#4ade80;font-size:0.8rem;font-weight:700;padding:0.3rem 0.75rem;border-radius:var(--radius);letter-spacing:0.05em;font-family:monospace;}
     .stat-highlight{font-size:1.5rem;font-weight:900;background:linear-gradient(135deg,#f97316,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
-    h2{font-size:1.3rem;margin:2rem 0 1rem;}
-    h3{font-size:1.05rem;margin:1.5rem 0 0.75rem;}
-    .faq-section h2{margin-bottom:1.25rem;}
+    h2:not(:where(.hl3,.hl4,.hl5,.hl6)){font-size:1.3rem;margin:2rem 0 1rem;}
+    h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .hl3{font-size:1.05rem;margin:1.5rem 0 0.75rem;}
+    .faq-section h2:not(:where(.hl3,.hl4,.hl5,.hl6)){margin-bottom:1.25rem;}
     .nav-active{color:var(--color-primary)!important;}
     .footer-heading{color:var(--color-text);font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.75rem;}
     .footer-links{list-style:none;padding:0;}
@@ -311,7 +313,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- First Julius AI CTA -->
   <div class="cta-box">
-    <h3>Julius AI — #1 for Non-Technical Data Analysis</h3>
+    <h2 class="hl3">Julius AI — #1 for Non-Technical Data Analysis</h2>
     <p>Upload your spreadsheet, ask in plain English, get instant charts. Free plan available — no credit card needed.</p>
     <a href="/go/julius-ai/" rel="nofollow sponsored" target="_blank" class="btn-cta">Try Julius AI Free →</a>
     <p style="font-size:0.8rem;color:var(--color-text-muted);margin:0.5rem 0 0;">Use code <span class="coupon-badge">25RQK3UL</span> for 10% off your first Julius AI payment</p>
@@ -633,7 +635,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </footer>
 
-<script src="/assets/js/main.js?v=20261102"></script>
+<script src="/assets/js/main.js?v=20261128"></script>
 <script src="/assets/js/cookie-consent.js" defer></script>
 <script>
   const navToggle = document.getElementById('nav-toggle');

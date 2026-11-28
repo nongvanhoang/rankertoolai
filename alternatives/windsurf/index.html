@@ -23,7 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -36,7 +36,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .quick-pick-row:last-child{border:none;}
     .quick-pick-badge{font-size:0.7rem;padding:0.2rem 0.5rem;border-radius:9999px;font-weight:700;background:var(--color-primary-light);color:var(--color-primary);white-space:nowrap;}
     .why-switch{background:linear-gradient(135deg,#fef3c7,#fffbeb);border:1px solid #fcd34d;border-radius:var(--radius-lg);padding:1.5rem;margin-bottom:2rem;}
-    .why-switch h3,.why-switch li,.why-switch strong{color:#92400e;}
+    .why-switch h3:not(:where(.hl3,.hl4,.hl5,.hl6)),.why-switch li,.why-switch strong,
+    .why-switch .hl3{color:#92400e;}
     .alt-rank-num{width:36px;height:36px;border-radius:50%;background:var(--color-primary);color:white;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1rem;flex-shrink:0;}
     #back-to-top{display:none;position:fixed;bottom:1.5rem;right:1.5rem;width:44px;height:44px;border-radius:50%;background:var(--color-primary);color:white;align-items:center;justify-content:center;font-size:1.25rem;cursor:pointer;border:none;box-shadow:var(--shadow-lg);z-index:50;}
   </style>
@@ -152,7 +153,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="why-switch">
-      <h3 style="margin-bottom:0.75rem;">Why People Switch from Windsurf</h3>
+      <h2 class="hl3" style="margin-bottom:0.75rem;">Why People Switch from Windsurf</h2>
       <ul style="margin:0;padding-left:1.25rem;line-height:1.9;"><li><strong>Power features:</strong> Cursor's Composer handles more complex multi-file edits than Windsurf's Cascade</li><li><strong>Cascade limits:</strong> Windsurf's free plan includes only 5 Cascade flow actions per day — heavy users exhaust this quickly</li><li><strong>Plugin preference:</strong> many developers prefer staying in VS Code + Copilot rather than switching IDEs</li><li><strong>Privacy:</strong> Tabnine's zero-data-retention policy is stronger than Windsurf's for enterprise compliance</li><li><strong>Performance:</strong> Windsurf can be slower on large codebases compared to VS Code with extensions</li></ul>
     </div>
 
@@ -192,7 +193,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>Cursor is the most capable AI coding IDE in 2026. Its Composer (agentic multi-file editing) handles complex tasks that Windsurf's Cascade struggles with: large-scale refactors, architecture changes spanning many files, and debugging sessions requiring broad codebase context. Cursor's context window in Composer mode can reference the entire codebase, making suggestions that are deeply aware of your project's patterns and conventions.</p>
       <p>At $20/month, Cursor is $5 more than Windsurf per month — roughly the cost of a coffee. For professional developers where AI coding assistance has a real productivity ROI, the additional capability of Cursor's Composer justifies the premium. Cursor's free trial (2 weeks of Pro features) is the best way to evaluate whether the quality difference matters for your specific workflow before committing.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Windsurf</h4><ul><li>Most capable agentic editing (Composer)</li><li>Largest context window for codebase understanding</li><li>@ mentions for precise context control</li><li>Supports Claude, GPT-4o, and custom models</li><li>Best multi-file refactoring</li></ul></div>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Windsurf</h3><ul><li>Most capable agentic editing (Composer)</li><li>Largest context window for codebase understanding</li><li>@ mentions for precise context control</li><li>Supports Claude, GPT-4o, and custom models</li><li>Best multi-file refactoring</li></ul></div>
         <div class="cons"><h4>❌ Cons vs Windsurf</h4><ul><li>$20/mo — $5 more than Windsurf</li><li>Free trial limited (2 weeks)</li><li>Heavier than VS Code with extensions</li></ul></div>
       </div>
       <div style="display:flex;align-items:center;gap:1rem;margin-top:1rem;flex-wrap:wrap;">
@@ -217,7 +218,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>GitHub Copilot works as a plugin inside your existing IDE — VS Code, IntelliJ, Neovim, Xcode, Visual Studio — rather than requiring an IDE switch. For developers with deeply customized VS Code setups or JetBrains configurations they don't want to abandon, Copilot's inline completion and Copilot Chat provide AI assistance without the workflow disruption of switching to Windsurf or Cursor.</p>
       <p>Copilot's inline completion quality is comparable to Windsurf's for standard coding tasks. Its GitHub repository integration — codebase-aware suggestions, PR summaries, code review assistance — provides context-aware completions that Windsurf's standalone IDE approach can't replicate for GitHub-centric workflows. For teams that live in GitHub, Copilot's ecosystem integration is a genuine daily productivity advantage over switching to Windsurf.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Windsurf</h4><ul><li>Works in your existing IDE</li><li>Deep GitHub ecosystem integration</li><li>PR summaries and code review AI</li><li>Reliable completion accuracy</li><li>No IDE switching required</li></ul></div>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Windsurf</h3><ul><li>Works in your existing IDE</li><li>Deep GitHub ecosystem integration</li><li>PR summaries and code review AI</li><li>Reliable completion accuracy</li><li>No IDE switching required</li></ul></div>
         <div class="cons"><h4>❌ Cons vs Windsurf</h4><ul><li>No free plan (individual)</li><li>$10/mo — more expensive than Codeium's free tier</li><li>Less powerful agentic editing than Cursor/Windsurf</li></ul></div>
       </div>
       <div style="display:flex;align-items:center;gap:1rem;margin-top:1rem;flex-wrap:wrap;">
@@ -242,7 +243,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>Codeium's VS Code extension offers unlimited AI completions and chat completely free — no credit card, no usage limits. This makes it the best free alternative for developers who want AI coding assistance without a subscription. Codeium also makes Windsurf (its IDE product), so using the free Codeium extension is essentially getting Windsurf's completion engine inside your existing VS Code environment.</p>
       <p>Codeium's free plan covers 85-90% of what most developers use Windsurf's paid Cascade for: inline completions, code chat, multi-file search, and test generation. The missing piece is the deep agentic 'flow' capability that Cascade provides for complex multi-step tasks. For individual developers doing standard daily coding work who don't need agentic AI on a regular basis, Codeium's free extension is a genuinely complete tool.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Windsurf</h4><ul><li>Completely free — unlimited completions and chat</li><li>Same completion engine as Windsurf</li><li>40+ IDE support (VS Code, JetBrains, Vim, Emacs, etc.)</li><li>No credit card required</li><li>Codebase search integration</li></ul></div>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Windsurf</h3><ul><li>Completely free — unlimited completions and chat</li><li>Same completion engine as Windsurf</li><li>40+ IDE support (VS Code, JetBrains, Vim, Emacs, etc.)</li><li>No credit card required</li><li>Codebase search integration</li></ul></div>
         <div class="cons"><h4>❌ Cons vs Windsurf</h4><ul><li>No Cascade-equivalent agentic AI on free plan</li><li>Less powerful than Windsurf Pro for complex tasks</li><li>Team features require paid plan</li></ul></div>
       </div>
       <div style="display:flex;align-items:center;gap:1rem;margin-top:1rem;flex-wrap:wrap;">
@@ -267,7 +268,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>Tabnine provides the strongest privacy guarantees in AI coding assistance: it never trains on your code, offers zero-data-retention with contractual guarantees, was trained exclusively on permissively licensed open source code (no copyleft or private code), and can be deployed fully on-premises for regulated environments. For enterprises with strict IP protection policies, government contractors, and regulated industries, Tabnine's privacy architecture is the only acceptable option among AI coding tools.</p>
       <p>Tabnine's completion quality is solid for common patterns but slightly below Cursor and Copilot on complex novel code. This tradeoff is explicit: Tabnine sacrifices some model capability to maintain strict data privacy. For security-conscious organizations where the risk of code exposure to a third-party AI provider outweighs marginal quality gains, Tabnine's privacy-first architecture justifies the choice. Tabnine's on-premises enterprise deployment (running the model on your own infrastructure) is unique in the market.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Windsurf</h4><ul><li>Zero-data-retention contractual guarantee</li><li>Trained only on permissive open source code</li><li>On-premises deployment available</li><li>Strong enterprise compliance (SOC2)</li><li>Works in VS Code, JetBrains, and 15+ IDEs</li></ul></div>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Windsurf</h3><ul><li>Zero-data-retention contractual guarantee</li><li>Trained only on permissive open source code</li><li>On-premises deployment available</li><li>Strong enterprise compliance (SOC2)</li><li>Works in VS Code, JetBrains, and 15+ IDEs</li></ul></div>
         <div class="cons"><h4>❌ Cons vs Windsurf</h4><ul><li>Completion quality below Cursor/Copilot for complex code</li><li>More expensive than GitHub Copilot for enterprise</li><li>No full IDE — plugin only</li></ul></div>
       </div>
       <div style="display:flex;align-items:center;gap:1rem;margin-top:1rem;flex-wrap:wrap;">
@@ -292,7 +293,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>Zed is a new open source code editor written in Rust — designed to be dramatically faster than VS Code, Cursor, or Windsurf. On large codebases, Zed's startup time and file operations are noticeably snappier. Its built-in AI assistant (powered by Claude) handles code completion, editing, and chat. For developers who feel VS Code and its forks have become bloated and slow, Zed's performance-first approach is a compelling alternative.</p>
       <p>Zed's AI features are less mature than Windsurf's Cascade or Cursor's Composer — the agentic multi-file editing capability is more limited. Zed is best suited for developers who want fast editing with good AI assistance rather than deep agentic AI as their primary workflow. The open source nature and Rust implementation also make it attractive for developers who care about editor performance and transparency in their tooling. Zed is free and open source.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Windsurf</h4><ul><li>Dramatically faster than VS Code-based editors</li><li>Free and open source</li><li>Built-in AI via Claude</li><li>Collaborative editing built-in</li><li>Clean, modern interface</li></ul></div>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Windsurf</h3><ul><li>Dramatically faster than VS Code-based editors</li><li>Free and open source</li><li>Built-in AI via Claude</li><li>Collaborative editing built-in</li><li>Clean, modern interface</li></ul></div>
         <div class="cons"><h4>❌ Cons vs Windsurf</h4><ul><li>Less mature AI features than Windsurf/Cursor</li><li>Smaller extension ecosystem</li><li>macOS/Linux only (Windows support in progress)</li></ul></div>
       </div>
       <div style="display:flex;align-items:center;gap:1rem;margin-top:1rem;flex-wrap:wrap;">
@@ -317,7 +318,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>JetBrains AI Assistant integrates directly into IntelliJ IDEA, PyCharm, WebStorm, GoLand, and other JetBrains IDEs. For developers already paying for JetBrains subscriptions ($77.90/year), adding AI Assistant at $10/month gives deep AI integration without switching to a different IDE. JetBrains AI provides smart completions, code generation from comments, test generation, documentation writing, and commit message generation — all with awareness of your project's specific language and framework.</p>
       <p>The IDE-native integration means JetBrains AI has access to deeper code analysis than plugin-based tools: it can refactor with understanding of your project's actual type system, suggest improvements based on static analysis findings, and generate tests that match your existing test patterns. For Java, Kotlin, Python, and Go developers who use JetBrains IDEs as their primary environment, the integrated AI experience is more cohesive than switching to Windsurf.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Windsurf</h4><ul><li>Deep integration with JetBrains IDEs</li><li>Understands project type system for accurate completions</li><li>Bundled with existing JetBrains subscription</li><li>No IDE switching required</li><li>Strong Java/Kotlin support</li></ul></div>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Windsurf</h3><ul><li>Deep integration with JetBrains IDEs</li><li>Understands project type system for accurate completions</li><li>Bundled with existing JetBrains subscription</li><li>No IDE switching required</li><li>Strong Java/Kotlin support</li></ul></div>
         <div class="cons"><h4>❌ Cons vs Windsurf</h4><ul><li>Only works in JetBrains IDEs</li><li>Less capable agentic editing than Windsurf/Cursor</li><li>Additional $10/mo on top of JetBrains subscription</li></ul></div>
       </div>
       <div style="display:flex;align-items:center;gap:1rem;margin-top:1rem;flex-wrap:wrap;">
@@ -342,7 +343,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>Replit is a browser-based IDE with built-in AI coding assistance — no installation required. Its AI agent (Replit Agent) can scaffold entire projects from a text prompt, debug code, explain errors, and suggest fixes. For developers who work across multiple machines, students, or teams that want immediate collaboration without environment setup, Replit's zero-install browser experience is its primary advantage over Windsurf's desktop-only model.</p>
       <p>Replit's AI features are improving rapidly but the depth of the coding environment is more limited than Windsurf for professional production work. It's not ideal for large complex codebases or projects with complex build systems. For prototyping, teaching, and quick experiments, Replit's speed of getting from idea to running code is unmatched — Replit Agent can produce a working web app from a description in minutes with no setup. For learning to code with AI assistance, Replit is the most accessible entry point.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Windsurf</h4><ul><li>Zero setup — runs entirely in browser</li><li>AI agent scaffolds projects from prompts</li><li>Free plan with decent limits</li><li>Built-in hosting and deployment</li><li>Best for beginners and students</li></ul></div>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Windsurf</h3><ul><li>Zero setup — runs entirely in browser</li><li>AI agent scaffolds projects from prompts</li><li>Free plan with decent limits</li><li>Built-in hosting and deployment</li><li>Best for beginners and students</li></ul></div>
         <div class="cons"><h4>❌ Cons vs Windsurf</h4><ul><li>Less powerful than desktop IDEs for professional work</li><li>Slower execution than local environments</li><li>Limited debugging tools vs Windsurf/Cursor</li></ul></div>
       </div>
       <div style="display:flex;align-items:center;gap:1rem;margin-top:1rem;flex-wrap:wrap;">

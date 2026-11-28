@@ -23,7 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -36,7 +36,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .quick-pick-row:last-child{border:none;}
     .quick-pick-badge{font-size:0.7rem;padding:0.2rem 0.5rem;border-radius:9999px;font-weight:700;background:var(--color-primary-light);color:var(--color-primary);white-space:nowrap;}
     .why-switch{background:linear-gradient(135deg,#fef3c7,#fffbeb);border:1px solid #fcd34d;border-radius:var(--radius-lg);padding:1.5rem;margin-bottom:2rem;}
-    .why-switch h3,.why-switch li,.why-switch strong{color:#92400e;}
+    .why-switch h3:not(:where(.hl3,.hl4,.hl5,.hl6)),.why-switch li,.why-switch strong,
+    .why-switch .hl3{color:#92400e;}
     .alt-rank-num{width:36px;height:36px;border-radius:50%;background:var(--color-primary);color:white;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1rem;flex-shrink:0;}
     #back-to-top{display:none;position:fixed;bottom:80px;right:1.5rem;width:44px;height:44px;border-radius:50%;background:var(--color-primary);color:white;align-items:center;justify-content:center;font-size:1.25rem;cursor:pointer;border:none;box-shadow:var(--shadow-lg);z-index:50;}
     .sticky-cta{position:fixed;bottom:0;left:0;right:0;background:linear-gradient(90deg,#0a0f1e,#0d1528);border-top:1px solid rgba(249,115,22,0.3);padding:0.75rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;z-index:100;transform:translateY(100%);transition:transform 0.3s ease;backdrop-filter:blur(12px);}
@@ -160,7 +161,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>Stable Diffusion's open-weight architecture spawned much of the ecosystem these alternatives now compete in — Flux itself was built by former Stability AI researchers, and Leonardo.ai's fine-tuning approach borrows directly from Stable Diffusion's checkpoint/LoRA model. Understanding that lineage matters when picking an alternative: some of these tools are trying to out-execute Stable Diffusion's own ideas in a hosted package, while others (DALL-E 3, Adobe Firefly) solve an entirely different problem that Stable Diffusion was never designed to address in the first place.</p>
 
     <div class="why-switch">
-      <h3 style="margin-bottom:0.75rem;">Why People Look for Stable Diffusion Alternatives</h3>
+      <h2 class="hl3" style="margin-bottom:0.75rem;">Why People Look for Stable Diffusion Alternatives</h2>
       <ul style="margin:0;padding-left:1.25rem;line-height:1.9;">
         <li><strong>Hardware requirements:</strong> running Stable Diffusion well locally needs a capable GPU, or ongoing cloud compute costs</li>
         <li><strong>Learning curve:</strong> prompting, checkpoints, LoRAs, and samplers require more technical understanding than hosted tools</li>
@@ -204,7 +205,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Midjourney V7 sets the industry standard for artistic coherence, rich textures, and improved anatomical accuracy — for concept art, marketing visuals, and book covers, it has a clear quality edge over out-of-the-box Stable Diffusion. It runs entirely hosted via Discord or its web app, with no local hardware or model management required.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Stable Diffusion</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Stable Diffusion</h3><ul>
           <li>Higher out-of-the-box artistic quality with no fine-tuning needed</li>
           <li>No GPU or local setup required — fully hosted</li>
           <li>Strong, active community and prompt-sharing ecosystem</li>
@@ -236,7 +237,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Flux, built by Black Forest Labs (founded by former Stable Diffusion creators), is the closest thing to a direct spiritual successor — open-weight, photorealistic, and with quality that rivals Midjourney while keeping open-source accessibility similar to Stable Diffusion. It's available both as a downloadable model and via hosted APIs.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Stable Diffusion</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Stable Diffusion</h3><ul>
           <li>Stronger prompt adherence and photorealism out of the box</li>
           <li>Open-weight models available, similar philosophy to Stable Diffusion</li>
           <li>Actively developed by the original Stable Diffusion team</li>
@@ -267,7 +268,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>DALL-E 3's tight integration with ChatGPT means you can describe an image conversationally and get accurate results without the prompt-engineering skill Stable Diffusion often requires. It leads the field in understanding complex, nuanced natural-language instructions and rendering coherent text.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Stable Diffusion</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Stable Diffusion</h3><ul>
           <li>Best natural-language prompt understanding, no prompt engineering needed</li>
           <li>Integrated directly into ChatGPT's conversational interface</li>
           <li>Strong text rendering compared to most diffusion models</li>
@@ -298,7 +299,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Ideogram has become the go-to AI image generator for anything involving legible text — logos, posters, and designs with words — an area where Stable Diffusion and most diffusion models historically struggle badly. It also offers a strong free tier for testing before committing to a paid plan.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Stable Diffusion</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Stable Diffusion</h3><ul>
           <li>Far more reliable text rendering inside generated images</li>
           <li>Generous free daily credits, no GPU required</li>
           <li>Design-focused output well-suited to marketing assets</li>
@@ -329,7 +330,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Adobe Firefly is trained on licensed and public-domain content, giving businesses commercial-use confidence that Stable Diffusion's broader web-scraped training data doesn't guarantee in the same way. Its free credits and tight Photoshop/Creative Cloud integration make it a natural fit for teams already in Adobe's ecosystem.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Stable Diffusion</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Stable Diffusion</h3><ul>
           <li>Clearer commercial licensing safety for business use</li>
           <li>Native integration with Photoshop and Creative Cloud</li>
           <li>Free credits included, no GPU required</li>
@@ -360,7 +361,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Leonardo.ai offers the experience most similar to Stable Diffusion itself — custom model training, fine-tuning, and a hosted interface that gives creators much of Stable Diffusion's flexibility without needing to manage local GPU infrastructure. It's a natural middle ground for users who want control without the hardware requirement.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Stable Diffusion</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Stable Diffusion</h3><ul>
           <li>Custom model fine-tuning without local hardware</li>
           <li>Hosted interface removes setup and dependency management</li>
           <li>Free daily credits to test before paying</li>

@@ -23,7 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -36,7 +36,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .quick-pick-row:last-child{border:none;}
     .quick-pick-badge{font-size:0.7rem;padding:0.2rem 0.5rem;border-radius:9999px;font-weight:700;background:var(--color-primary-light);color:var(--color-primary);white-space:nowrap;}
     .why-switch{background:linear-gradient(135deg,#fef3c7,#fffbeb);border:1px solid #fcd34d;border-radius:var(--radius-lg);padding:1.5rem;margin-bottom:2rem;}
-    .why-switch h3,.why-switch li,.why-switch strong{color:#92400e;}
+    .why-switch h3:not(:where(.hl3,.hl4,.hl5,.hl6)),.why-switch li,.why-switch strong,
+    .why-switch .hl3{color:#92400e;}
     .alt-rank-num{width:36px;height:36px;border-radius:50%;background:var(--color-primary);color:white;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1rem;flex-shrink:0;}
     
       #back-to-top{display:none;position:fixed;bottom:80px;right:1.5rem;width:44px;height:44px;border-radius:50%;background:var(--color-primary);color:white;align-items:center;justify-content:center;font-size:1.25rem;cursor:pointer;border:none;box-shadow:var(--shadow-lg);z-index:50;}
@@ -160,7 +161,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="why-switch">
-      <h3 style="margin-bottom:0.75rem;">Why People Switch from Cursor</h3>
+      <h2 class="hl3" style="margin-bottom:0.75rem;">Why People Switch from Cursor</h2>
       <ul style="margin:0;padding-left:1.25rem;line-height:1.9;">
         <li><strong>Cost:</strong> Cursor Pro is $20/month — GitHub Copilot does the same basics for $10/month</li>
         <li><strong>Editor lock-in:</strong> Cursor is a fork of VS Code, but many devs prefer to stay in their existing editor (VS Code, JetBrains, Neovim)</li>
@@ -205,7 +206,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>GitHub Copilot is the most widely used AI coding assistant, with native support for VS Code, JetBrains, Neovim, and Visual Studio. At $10/month (or free for students and open-source maintainers), it offers autocomplete, chat, and multi-file editing — the core Cursor features — without requiring you to switch editors. Copilot Workspace adds agentic, multi-step coding tasks similar to Cursor's Composer mode.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Cursor</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Cursor</h3><ul>
           <li>$10/mo vs Cursor's $20/mo Pro</li>
           <li>Works inside VS Code, JetBrains, Neovim — no editor switch</li>
           <li>Free for students and open-source maintainers</li>
@@ -242,7 +243,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Windsurf is Codeium's answer to Cursor: a full AI-powered IDE built on VS Code with a free tier that includes unlimited autocomplete and 5 Cascade (agentic) flows per day. Cascade, Windsurf's multi-step coding agent, is directly competitive with Cursor's Composer — it can write, run, debug, and iterate on code across your entire codebase. For developers who want Cursor's power without the $20/month cost, Windsurf is the best free alternative.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Cursor</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Cursor</h3><ul>
           <li>Generous free tier (unlimited autocomplete + 5 Cascade/day)</li>
           <li>Pro is $15/mo vs Cursor's $20/mo</li>
           <li>Cascade agentic mode matches Cursor Composer</li>
@@ -277,7 +278,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Aider is a free, open-source AI coding agent that runs entirely in your terminal. You tell it what to build in natural language, and it edits your files, runs tests, and iterates — all from the command line. It supports Claude, GPT-4, Gemini, and local models via Ollama, giving you full control over which AI you use and what data it sees. For developers comfortable with CLI workflows, Aider is more powerful than Cursor for autonomous coding tasks.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Cursor</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Cursor</h3><ul>
           <li>Completely free and open-source</li>
           <li>Works in any terminal — no editor required</li>
           <li>Supports Claude, GPT-4, Gemini, local models</li>
@@ -311,7 +312,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Continue.dev is an open-source VS Code and JetBrains plugin that brings Cursor-style AI assistance to your existing editor. You connect your own API key (Anthropic, OpenAI, Ollama for local models) and get chat, autocomplete, and multi-file editing inside VS Code — exactly what Cursor provides, but as a plugin rather than a separate editor. Best for privacy-conscious developers who want full control over their AI stack.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Cursor</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Cursor</h3><ul>
           <li>Works inside VS Code — no editor switch</li>
           <li>Open-source — full code transparency</li>
           <li>Bring your own model (any API or local)</li>
@@ -345,7 +346,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Tabnine is the enterprise-grade AI coding assistant for teams that can't send code to third-party servers. It offers private, self-hosted deployment options where your code never leaves your infrastructure — something Cursor and Copilot can't offer. Tabnine Enterprise runs on-premises with custom model training on your codebase. For banks, healthcare companies, and enterprises with strict data governance, Tabnine is the only serious option.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Cursor</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Cursor</h3><ul>
           <li>Private deployment — code stays on your servers</li>
           <li>Train on your own codebase</li>
           <li>SOC 2 Type 2 compliant</li>
@@ -379,7 +380,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Replit is an online IDE that runs entirely in the browser with an AI agent (Replit AI) that can build apps from a simple text description. No setup, no local environment, no dependency management — just describe what you want and Replit builds and hosts it. For beginners, students, and rapid prototyping, Replit removes the complexity of development setup that Cursor requires.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Cursor</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Cursor</h3><ul>
           <li>Zero setup — runs in the browser</li>
           <li>Built-in hosting and deployment</li>
           <li>AI builds entire apps from prompts</li>
@@ -413,7 +414,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Zed is a next-generation code editor built in Rust — it's the fastest code editor available, with virtually zero input lag even on large codebases. Zed's AI integration (via Claude) adds inline editing, code generation, and chat directly into the editor. For developers who are frustrated by VS Code's performance and want a Cursor alternative that doesn't sacrifice speed, Zed is the answer.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Cursor</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Cursor</h3><ul>
           <li>Dramatically faster — built in Rust with GPU rendering</li>
           <li>Zero input lag on any codebase size</li>
           <li>Native Claude AI integration</li>
@@ -716,15 +717,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand"><a href="/" style="display:flex;align-items:center;gap:0.5rem;text-decoration:none;"><img src="/assets/images/logo-dark.webp" onerror="this.src='/assets/images/logo-dark.png'" alt="Dark logo" style="height:32px;width:32px;object-fit:contain;" loading="lazy"><span style="font-size:1rem;font-weight:900;background:linear-gradient(135deg,#f97316,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">RankerTool AI</span></a><p class="footer-tagline">Independent AI tool reviews. No sponsored rankings.</p></div>
-      <div class="footer-col"><h5>Reviews</h5><ul><li><a href="/review/cursor/">Cursor</a></li><li><a href="/review/github-copilot/">GitHub Copilot</a></li></ul></div>
-      <div class="footer-col"><h5>Compare</h5><ul><li><a href="/compare/cursor-vs-github-copilot/">Cursor vs Copilot</a></li></ul></div>
+      <div class="footer-col"><h3 class="hl5">Reviews</h3><ul><li><a href="/review/cursor/">Cursor</a></li><li><a href="/review/github-copilot/">GitHub Copilot</a></li></ul></div>
+      <div class="footer-col"><h4 class="hl5">Compare</h4><ul><li><a href="/compare/cursor-vs-github-copilot/">Cursor vs Copilot</a></li></ul></div>
       <div class="footer-col"><h5>About</h5><ul><li><a href="/affiliate-disclosure/">Disclosure</a></li><li><a href="/privacy-policy/">Privacy</a></li></ul></div>
     </div>
     <div class="footer-disclosure"><strong>Affiliate Disclosure:</strong> This page contains affiliate links. <a href="/affiliate-disclosure/" style="color:#9ca3af;">Full disclosure →</a></div>
     <div class="footer-bottom"><span>© 2026 RankerToolAI</span><span>Updated: June 23, 2026</span></div>
   </div>
 </footer>
-<script src="/assets/js/main.js?v=20261102"></script>
+<script src="/assets/js/main.js?v=20261128"></script>
 <script src="/assets/js/cookie-consent.js" defer></script>
 </body>
 </html>

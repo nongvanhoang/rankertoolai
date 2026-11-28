@@ -23,7 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -40,7 +40,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .vs-tool-score{font-size:2rem;font-weight:800;color:#a5b4fc;}
     .vs-badge{background:rgba(249,115,22,0.12);border:2px solid rgba(249,115,22,0.4);border-radius:9999px;padding:0.5rem 1.25rem;font-weight:700;font-size:1.1rem;color:#c7d2fe;}
     .winner-callout{background:linear-gradient(135deg,rgba(34,197,94,0.15),rgba(22,163,74,0.1));border:1px solid rgba(34,197,94,0.3);border-radius:var(--radius-lg);padding:1.5rem;margin:2rem 0;}
-    .winner-callout h3{color:white;margin-bottom:0.5rem;}
+    .winner-callout h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .winner-callout .hl3{color:white;margin-bottom:0.5rem;}
     .choose-box{border:2px solid var(--color-border);border-radius:var(--radius-lg);padding:1.5rem;margin-bottom:1rem;}
     .choose-box.winner{border-color:var(--color-accent);}
     .winner-col{background:rgba(34,197,94,0.08);font-weight:600;color:#4ade80;}
@@ -177,12 +178,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <article class="main-content">
 
     <div class="winner-callout">
-      <h3>Quick Verdict: Different Tools for Different Jobs</h3>
+      <h2 class="hl3">Quick Verdict: Different Tools for Different Jobs</h2>
       <p style="color:#e2e8f0;margin:0;"><strong style="color:#4ade80;">ElevenLabs wins</strong> for voice quality and creating narration, voiceover, or synthetic speech from scratch — it's the best AI voice generator available. <strong style="color:#a5b4fc;">Descript wins</strong> for podcast editors and video producers who need to transcribe audio, edit by text, fix recording mistakes with Overdub voice cloning, and manage a full production workflow in one place. These tools serve different core use cases — but for pure voice generation quality, ElevenLabs is the clear choice.</p>
     </div>
 
     <div class="toc">
-      <h4>Contents</h4>
+      <h3 class="hl4">Contents</h3>
       <ol>
         <li><a href="#voice-quality">Voice Quality &amp; Realism</a></li>
         <li><a href="#cloning">Voice Cloning: Overdub vs ElevenLabs</a></li>

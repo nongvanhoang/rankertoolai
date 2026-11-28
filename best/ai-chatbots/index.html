@@ -23,7 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -38,7 +38,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .tool-score{display:inline-flex;align-items:center;gap:0.35rem;background:#0d1224;border:1px solid var(--color-border);border-radius:var(--radius);padding:0.25rem 0.65rem;font-size:0.85rem;font-weight:700;color:#f97316;}
     .tag{display:inline-block;background:rgba(249,115,22,0.1);border:1px solid rgba(249,115,22,0.25);color:#fbbf24;font-size:0.7rem;padding:0.15rem 0.5rem;border-radius:9999px;margin:0.15rem;}
     .faq-item{border:1px solid var(--color-border);border-radius:var(--radius);margin-bottom:0.75rem;padding:1.25rem;}
-    .faq-item h3{margin:0 0 0.5rem;font-size:1rem;}
+    .faq-item h3:not(:where(.hl3,.hl4,.hl5,.hl6)){margin:0 0 0.5rem;font-size:1rem;}
     .faq-item p{margin:0;color:var(--color-text-muted);font-size:0.875rem;}
     .winner-box{background:linear-gradient(135deg,rgba(34,197,94,0.12),rgba(22,163,74,0.06));border:1px solid rgba(34,197,94,0.3);border-radius:var(--radius-lg);padding:1.25rem;margin-bottom:2rem;}
   </style>
@@ -151,7 +151,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="toc" style="margin-bottom:2rem;">
-      <h4>Quick Navigation</h4>
+      <h2 class="hl4">Quick Navigation</h2>
       <ol>
         <li><a href="#claude">#1 Claude — 9.2/10</a></li>
         <li><a href="#chatgpt">#2 ChatGPT — 9.0/10</a></li>
@@ -174,7 +174,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="tag">Best Writing</span><span class="tag">Best Coding</span><span class="tag">200k Context</span><span class="tag">$20/mo</span><span class="tag">Free Tier</span>
         </div>
         <p>Claude is the best AI chatbot for knowledge work in 2026. Its writing quality is the highest of any model tested — prose flows naturally, maintains tone over long documents, and follows complex multi-constraint instructions more reliably than any competitor. For coding, Claude's debugging explanations are detailed and educational, not just patches.</p>
-        <h4>Pros</h4>
+        <h3 class="hl4">Pros</h3>
         <ul>
           <li>Best writing quality — natural prose, excellent tone control, long-form coherence</li>
           <li>Best instruction following — respects complex, multi-constraint prompts reliably</li>
@@ -207,7 +207,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="tag">Most Versatile</span><span class="tag">DALL-E Images</span><span class="tag">GPT Store</span><span class="tag">Voice Mode</span><span class="tag">$20/mo</span>
         </div>
         <p>ChatGPT is the most versatile AI chatbot available. While Claude edges it on pure writing and coding quality, ChatGPT wins on breadth: built-in image generation (DALL-E 3), voice mode with realistic conversation, the GPT Store with thousands of custom GPTs, code interpreter for data analysis, and the widest plugin ecosystem. If you need one tool that does everything reasonably well, ChatGPT is it.</p>
-        <h4>Pros</h4>
+        <h3 class="hl4">Pros</h3>
         <ul>
           <li>Built-in DALL-E 3 image generation on Plus plan</li>
           <li>Advanced Voice Mode — natural two-way conversation with emotion</li>
@@ -412,15 +412,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand"><a href="/" style="display:flex;align-items:center;gap:0.5rem;text-decoration:none;"><img src="/assets/images/logo-dark.webp" onerror="this.src='/assets/images/logo-dark.png'" alt="Dark logo" style="height:32px;width:32px;object-fit:contain;" loading="lazy"><span style="font-size:1rem;font-weight:900;background:linear-gradient(135deg,#f97316,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">RankerTool AI</span></a><p class="footer-tagline">Independent AI tool reviews.</p></div>
-      <div class="footer-col"><h5>AI Chatbots</h5><ul><li><a href="/review/claude/">Claude Review</a></li><li><a href="/review/chatgpt/">ChatGPT Review</a></li><li><a href="/review/gemini/">Gemini Review</a></li><li><a href="/compare/claude-vs-gemini/">Claude vs Gemini</a></li></ul></div>
-      <div class="footer-col"><h5>Best Tools</h5><ul><li><a href="/best/ai-writing-tools/">AI Writing Tools</a></li><li><a href="/best/text-to-speech/">Text-to-Speech AI</a></li><li><a href="/best/free-ai-tools/">Free AI Tools</a></li></ul></div>
+      <div class="footer-col"><h3 class="hl5">AI Chatbots</h3><ul><li><a href="/review/claude/">Claude Review</a></li><li><a href="/review/chatgpt/">ChatGPT Review</a></li><li><a href="/review/gemini/">Gemini Review</a></li><li><a href="/compare/claude-vs-gemini/">Claude vs Gemini</a></li></ul></div>
+      <div class="footer-col"><h4 class="hl5">Best Tools</h4><ul><li><a href="/best/ai-writing-tools/">AI Writing Tools</a></li><li><a href="/best/text-to-speech/">Text-to-Speech AI</a></li><li><a href="/best/free-ai-tools/">Free AI Tools</a></li></ul></div>
       <div class="footer-col"><h5>About</h5><ul><li><a href="/affiliate-disclosure/">Disclosure</a></li><li><a href="/privacy-policy/">Privacy</a></li></ul></div>
     </div>
     <div class="footer-disclosure"><strong>Affiliate Disclosure:</strong> This page contains affiliate links. <a href="/affiliate-disclosure/" style="color:#9ca3af;">Full disclosure →</a></div>
     <div class="footer-bottom"><span>© 2026 RankerToolAI</span><span>Updated: June 23, 2026</span></div>
   </div>
 </footer>
-<script src="/assets/js/main.js?v=20261102"></script>
+<script src="/assets/js/main.js?v=20261128"></script>
 <script src="/assets/js/cookie-consent.js" defer></script>
 </body>
 </html>

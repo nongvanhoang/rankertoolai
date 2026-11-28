@@ -35,7 +35,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -67,7 +67,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .compare-table td{padding:0.75rem;border-bottom:1px solid rgba(255,255,255,0.05);color:rgba(148,163,184,0.85);}
     .winner-cell{color:#4ade80;font-weight:700;}
     .ser-sidebar{background:linear-gradient(135deg,rgba(34,197,94,0.06),rgba(34,197,94,0.02));border:1px solid rgba(34,197,94,0.25);border-radius:12px;padding:1.25rem;margin:1.5rem 0;}
-    .ser-sidebar h4{color:#4ade80;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.05em;margin:0 0 0.6rem;}
+    .ser-sidebar h4:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .ser-sidebar .hl4{color:#4ade80;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.05em;margin:0 0 0.6rem;}
     .before-switch{background:linear-gradient(135deg,rgba(249,115,22,0.07),rgba(249,115,22,0.02));border:1px solid rgba(249,115,22,0.3);border-radius:12px;padding:1.5rem;margin-bottom:2rem;}
     .pros-cons-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:0.75rem 0 1rem;font-size:0.875rem;}
     @media(max-width:600px){.pros-cons-grid{grid-template-columns:1fr;}}
@@ -347,7 +348,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- SE Ranking Sidebar CTA #1 (after alt #2) -->
   <div class="ser-sidebar">
-    <h4>Not sure yet? SE Ranking still wins on value</h4>
+    <h3 class="hl4">Not sure yet? SE Ranking still wins on value</h3>
     <p style="color:rgba(148,163,184,0.85);font-size:0.875rem;line-height:1.7;margin:0 0 0.75rem;">SE Ranking covers everything Mangools does — plus a full site audit and competitor research suite — but costs about twice as much. The 14-day free trial lets you compare both tools risk-free before spending a cent.</p>
     <a href="/go/se-ranking/" rel="nofollow sponsored" target="_blank" class="btn btn-primary" style="font-size:0.85rem;">Try SE Ranking Free for 14 Days &#8594;</a>
   </div>
@@ -442,7 +443,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- SE Ranking Sidebar CTA #2 (after alt #4) -->
   <div class="ser-sidebar">
-    <h4>Moz Pro now costs less than SE Ranking Core</h4>
+    <h3 class="hl4">Moz Pro now costs less than SE Ranking Core</h3>
     <p style="color:rgba(148,163,184,0.85);font-size:0.875rem;line-height:1.7;margin:0 0 0.75rem;">SE Ranking covers keyword research, rank tracking, backlink analysis, and site audit from $103.20/month billed yearly. Unless you specifically need DA/PA metrics for client reporting, SE Ranking delivers more value per dollar. Test it free for 14 days and see for yourself.</p>
     <a href="/go/se-ranking/" rel="nofollow sponsored" target="_blank" class="btn btn-primary" style="font-size:0.85rem;">Compare SE Ranking vs Moz — Try Free &#8594;</a>
   </div>
@@ -536,7 +537,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- SE Ranking Sidebar CTA #3 (after alt #6) -->
   <div class="ser-sidebar">
-    <h4>SpyFu + SE Ranking is better than either alone</h4>
+    <h3 class="hl4">SpyFu + SE Ranking is better than either alone</h3>
     <p style="color:rgba(148,163,184,0.85);font-size:0.875rem;line-height:1.7;margin:0 0 0.75rem;">For agencies managing both organic SEO and Google Ads clients, SpyFu's historical PPC data combined with SE Ranking's comprehensive organic SEO suite creates a powerful, cost-effective stack. SE Ranking's white-label reporting covers both workflows in client reports — no extra tool needed for that part.</p>
     <a href="/go/se-ranking/" rel="nofollow sponsored" target="_blank" class="btn btn-primary" style="font-size:0.85rem;">Start SE Ranking Free Trial &#8594;</a>
   </div>
@@ -827,7 +828,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p class="footer-tagline">Independent AI tool reviews.</p>
       </div>
       <div class="footer-col">
-        <h5>Alternatives</h5>
+        <h4 class="hl5">Alternatives</h4>
         <ul>
           <li><a href="/alternatives/semrush/">Semrush Alternatives</a></li>
           <li><a href="/alternatives/surfer-seo/">Surfer SEO Alternatives</a></li>
@@ -860,7 +861,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </footer>
 
-<script src="/assets/js/main.js?v=20261102"></script>
+<script src="/assets/js/main.js?v=20261128"></script>
 <script src="/assets/js/cookie-consent.js" defer></script>
 </body>
 </html>

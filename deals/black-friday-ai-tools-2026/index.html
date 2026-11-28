@@ -30,7 +30,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -66,12 +66,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .featured-deal{background:linear-gradient(135deg,rgba(249,115,22,0.08),rgba(251,191,36,0.04));border:2px solid rgba(249,115,22,0.4);border-radius:var(--radius-lg);padding:2rem;margin-bottom:2.5rem;display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:center;}
     @media(max-width:600px){.featured-deal{grid-template-columns:1fr;}}
     .featured-label{font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:#f97316;font-weight:700;margin-bottom:0.5rem;}
-    .featured-deal h2{font-size:1.5rem;margin:0 0 0.5rem;}
+    .featured-deal h2:not(:where(.hl3,.hl4,.hl5,.hl6)){font-size:1.5rem;margin:0 0 0.5rem;}
     .featured-saving{font-size:1.1rem;font-weight:700;color:#4ade80;margin:0.5rem 0;}
     .featured-cta{text-align:center;min-width:160px;}
 
     .deal-tips{background:var(--color-bg-alt);border-radius:var(--radius-lg);padding:1.5rem;margin-top:2rem;}
-    .deal-tips h3{font-size:1rem;margin-bottom:1rem;}
+    .deal-tips h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .deal-tips .hl3{font-size:1rem;margin-bottom:1rem;}
     .deal-tips li{color:var(--color-text-muted);font-size:0.875rem;line-height:1.8;}
     #back-to-top{display:none;position:fixed;bottom:1.5rem;right:1.5rem;width:44px;height:44px;border-radius:50%;background:var(--color-primary);color:white;align-items:center;justify-content:center;font-size:1.25rem;cursor:pointer;border:none;box-shadow:var(--shadow-lg);z-index:50;}
   </style>
@@ -181,7 +182,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 
   <div class="newsletter-section" style="margin:0 0 2.5rem;">
-    <h3>Get an email when these deals go live</h3>
+    <h2 class="hl3">Get an email when these deals go live</h2>
     <p>One short email when the big AI tool Black Friday offers open, plus our weekly AI tool roundup. No spam, unsubscribe anytime.</p>
     <form class="newsletter-form" action="https://formsubmit.co/b21365b0716308a5caecd30f63ea8e22" method="POST">
       <input type="hidden" name="_subject" value="Black Friday alert signup: RankerToolAI">
@@ -387,7 +388,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 </footer>
-<script src="/assets/js/main.js?v=20261102"></script>
+<script src="/assets/js/main.js?v=20261128"></script>
 <script src="/assets/js/cookie-consent.js" defer></script>
 </body>
 </html>

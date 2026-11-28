@@ -23,7 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -38,7 +38,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .tool-score{display:inline-flex;align-items:center;gap:0.35rem;background:#0d1224;border:1px solid var(--color-border);border-radius:var(--radius);padding:0.25rem 0.65rem;font-size:0.85rem;font-weight:700;color:#f97316;}
     .tag{display:inline-block;background:rgba(249,115,22,0.1);border:1px solid rgba(249,115,22,0.25);color:#fbbf24;font-size:0.7rem;padding:0.15rem 0.5rem;border-radius:9999px;margin:0.15rem;}
     .faq-item{border:1px solid var(--color-border);border-radius:var(--radius);margin-bottom:0.75rem;padding:1.25rem;}
-    .faq-item h3{margin:0 0 0.5rem;font-size:1rem;}
+    .faq-item h3:not(:where(.hl3,.hl4,.hl5,.hl6)){margin:0 0 0.5rem;font-size:1rem;}
     .faq-item p{margin:0;color:var(--color-text-muted);font-size:0.875rem;}
     .winner-box{background:linear-gradient(135deg,rgba(34,197,94,0.12),rgba(22,163,74,0.06));border:1px solid rgba(34,197,94,0.3);border-radius:var(--radius-lg);padding:1.25rem;margin-bottom:2rem;}
   </style>
@@ -143,7 +143,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="toc" style="margin-bottom:2rem;">
-      <h4>Quick Navigation</h4>
+      <h2 class="hl4">Quick Navigation</h2>
       <ol>
         <li><a href="#comparison">Comparison Table</a></li>
         <li><a href="#our-data">What Our Own Tracking Showed</a></li>
@@ -195,7 +195,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div style="margin-bottom:1rem;"><h2 style="margin:0.5rem 0 0.25rem;">1. LLM Pulse</h2><p style="color:var(--color-text-muted);margin:0;">Weekly tracking across five AI models at a low entry price</p></div>
         <div style="margin-bottom:1rem;"><span class="tag">From €49/mo</span><span class="tag">50 prompts</span><span class="tag">5 AI models</span><span class="tag">14-day trial</span></div>
         <p>LLM Pulse tracks your prompts across ChatGPT, Perplexity, Gemini, Google AI Overviews and Google AI Mode on every plan, so you don't pay extra per engine. Starter is €49/mo (€40.83 billed annually) for 50 prompts and 1 project, Growth is €99/mo for 150 prompts and 2 projects, and Scale is €299/mo for 450 prompts and 5 projects. These are weekly-tracking plans, and the 14-day trial requires a card. Every plan and the trial also include a ten-lesson GEO course with a certificate from LLM Pulse. It's the only tool on this list we have used. LLM Pulse gave us a free 30-day Growth trial, and we also earn a commission if you subscribe, so weigh this ranking with that in mind.</p>
-        <h4>Pros</h4>
+        <h3 class="hl4">Pros</h3>
         <ul>
           <li>Five AI models on every plan, with no per-engine add-ons</li>
           <li>More prompts for the entry price than any tool here with a public price</li>
@@ -219,7 +219,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div style="margin-bottom:1rem;"><h2 style="margin:0.5rem 0 0.25rem;">2. Otterly.AI</h2><p style="color:var(--color-text-muted);margin:0;">The lowest listed entry price for a small test</p></div>
         <div style="margin-bottom:1rem;"><span class="tag">From $29/mo</span><span class="tag">15 prompts</span><span class="tag">4 engines included</span><span class="tag">Free trial</span></div>
         <p>Otterly's Lite plan is $29/mo ($25 billed annually) for 15 prompts across ChatGPT, Google AI Overviews, Perplexity and Microsoft Copilot. Standard is $189/mo ($160 annually) for 100 prompts, and Premium is $489/mo ($422 annually) for 400. Gemini and Google AI Mode each add $9/mo on Lite, and Claude adds $29/mo. Those add-ons cost more on the higher plans. We researched Otterly from its pricing page and haven't used it.</p>
-        <h4>Pros</h4>
+        <h3 class="hl4">Pros</h3>
         <ul>
           <li>Cheapest way here to start</li>
           <li>Includes Microsoft Copilot</li>
@@ -242,7 +242,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div style="margin-bottom:1rem;"><h2 style="margin:0.5rem 0 0.25rem;">3. Semrush AI Visibility Toolkit</h2><p style="color:var(--color-text-muted);margin:0;">AI tracking for teams already working in Semrush</p></div>
         <div style="margin-bottom:1rem;"><span class="tag">$99/mo per domain</span><span class="tag">25 prompts</span><span class="tag">Daily</span><span class="tag">4 engines</span></div>
         <p>Semrush lists its AI Visibility Toolkit at $99/mo per domain, billed annually, for 25 custom prompts tracked daily across ChatGPT, Google AI, Gemini and Perplexity. It makes the most sense if your SEO work already lives in Semrush. We researched this toolkit from its pricing page and haven't used it.</p>
-        <h4>Pros</h4>
+        <h3 class="hl4">Pros</h3>
         <ul>
           <li>Sits beside the rest of your Semrush data</li>
           <li>Daily prompt tracking</li>
@@ -264,7 +264,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div style="margin-bottom:1rem;"><h2 style="margin:0.5rem 0 0.25rem;">4. Peec AI</h2><p style="color:var(--color-text-muted);margin:0;">Flexible tracking with a choice of AI models</p></div>
         <div style="margin-bottom:1rem;"><span class="tag">From $95/mo</span><span class="tag">50 prompts</span><span class="tag">Choose 3 models</span><span class="tag">Free trial</span></div>
         <p>Peec's Starter plan is listed at $95/mo for 50 prompts, Pro at $245/mo for 150, and Advanced at $495/mo for 350. On each, you choose 3 models from ChatGPT, Google AI Mode, Google AI Overviews, Microsoft Copilot, Gemini and Naver AI, and extra models cost more. We researched Peec from its pricing page and haven't used it. We saw prices in US dollars from a US location, and they may display differently elsewhere.</p>
-        <h4>Pros</h4>
+        <h3 class="hl4">Pros</h3>
         <ul>
           <li>Choose the models that matter to you</li>
           <li>Includes Copilot and Naver AI as options</li>
@@ -286,7 +286,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div style="margin-bottom:1rem;"><h2 style="margin:0.5rem 0 0.25rem;">5. Profound</h2><p style="color:var(--color-text-muted);margin:0;">Enterprise AI visibility with the widest engine coverage here</p></div>
         <div style="margin-bottom:1rem;"><span class="tag">7-day free trial</span><span class="tag">Enterprise: custom</span><span class="tag">Up to 9 engines</span></div>
         <p>Profound's pricing page shows a free 7-day trial with 50 prompts across ChatGPT, Gemini and Google AI Overviews, then a custom-priced Enterprise plan tracking up to 9 engines. There's no self-serve price to compare, so it's realistically a tool for larger teams with a budget and a sales process. We researched Profound from its pricing page and haven't used it.</p>
-        <h4>Pros</h4>
+        <h3 class="hl4">Pros</h3>
         <ul>
           <li>Up to 9 answer engines on Enterprise</li>
           <li>A free trial to see the data first</li>
@@ -308,7 +308,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div style="margin-bottom:1rem;"><h2 style="margin:0.5rem 0 0.25rem;">BabyLoveGrowth</h2><p style="color:var(--color-text-muted);margin:0;">Writes and publishes content for you, with AI tracking included</p></div>
         <div style="margin-bottom:1rem;"><span class="tag">From $99/mo</span><span class="tag">30 articles/mo</span><span class="tag">3 AI models</span><span class="tag">3-day trial</span></div>
         <p>BabyLoveGrowth isn't a tracker like the five tools above, so we haven't ranked it against them. Instead of only measuring your AI visibility, it does the work: the Grow plan is $99/mo for 30 AI-written articles a month, auto-published to WordPress, Shopify, Webflow and other platforms, plus backlinks from its exchange network, Reddit and Quora posts, and 10 prompts tracked daily on ChatGPT, Claude and Gemini. Scale is $399/mo for 120 articles in up to 4 languages and 50 prompts. There's a 3-day free trial and a 90-day money-back guarantee if none of your organic clicks, impressions or Domain Rating grow, but only if you publish every article it produces. We researched BabyLoveGrowth from its pricing page and terms and haven't used it. We earn a commission if you subscribe.</p>
-        <h4>Pros</h4>
+        <h3 class="hl4">Pros</h3>
         <ul>
           <li>Produces and publishes content, not just reports</li>
           <li>Tracks ChatGPT, Claude and Gemini daily</li>
@@ -333,7 +333,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div style="margin-bottom:1rem;"><h2 style="margin:0.5rem 0 0.25rem;">RankBolt</h2><p style="color:var(--color-text-muted);margin:0;">Picks keywords, writes and publishes articles, and tracks AI answers</p></div>
         <div style="margin-bottom:1rem;"><span class="tag">From 69 CHF/mo</span><span class="tag">10 articles/mo</span><span class="tag">4 AI engines</span><span class="tag">3-day trial</span></div>
         <p>RankBolt works like BabyLoveGrowth: it finds keywords worth targeting, writes the articles and publishes them to WordPress, Webflow or Shopify. Starter is 69 CHF/mo for 1 site, 10 articles a month, 25 tracked keywords checked weekly and 20 AI prompts tracked daily across 4 engines. Pro is 149 CHF/mo for 3 sites, 30 articles, daily rank checks and 75 prompts. Agency is 299 CHF/mo for 10 sites and 60 articles. The 3-day free trial needs no card. We researched RankBolt from its website and haven't used it. We earn a commission if you subscribe.</p>
-        <h4>Pros</h4>
+        <h3 class="hl4">Pros</h3>
         <ul>
           <li>Lower entry price than BabyLoveGrowth, with fewer articles</li>
           <li>Tracks AI prompts daily on every plan</li>
@@ -358,7 +358,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div style="margin-bottom:1rem;"><h2 style="margin:0.5rem 0 0.25rem;">Alli AI</h2><p style="color:var(--color-text-muted);margin:0;">Deploys technical SEO, AEO and GEO changes across whole sites</p></div>
         <div style="margin-bottom:1rem;"><span class="tag">From $249/mo (annual)</span><span class="tag">5 sites</span><span class="tag">10-day trial</span></div>
         <p>Alli AI doesn't track AI answers the way the ranked tools do. It makes changes: it pushes technical SEO, AEO and GEO optimizations across every page of a site without editing pages one by one. Business is $249/mo billed annually, or $299 month to month, for 5 sites, 5 team members, 500 keywords and 1,250 pages. Agency is $499/mo billed annually, or $599 monthly, for 15 sites and 5,000 pages. Every plan has a 10-day free trial. We researched Alli AI from its pricing page and haven't used it. We earn a commission if you subscribe.</p>
-        <h4>Pros</h4>
+        <h3 class="hl4">Pros</h3>
         <ul>
           <li>Changes many pages at once instead of reporting problems</li>
           <li>Covers several sites, which suits agencies</li>
@@ -382,7 +382,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div style="margin-bottom:1rem;"><h2 style="margin:0.5rem 0 0.25rem;">Rankscale</h2><p style="color:var(--color-text-muted);margin:0;">Tracks 17+ AI engines with flexible scheduling and many brand dashboards</p></div>
         <div style="margin-bottom:1rem;"><span class="tag">From &euro;99/mo</span><span class="tag">10 brands</span><span class="tag">7-day trial</span></div>
         <p>Rankscale measures whether AI engines mention, cite and describe your brand, with visibility score, share of voice, sentiment, position and cited sources per prompt, engine and country. It covers ChatGPT, Google AI Mode, AI Overviews, Gemini and Bing AI Mode, plus API models from OpenAI, Anthropic, Google, Perplexity, DeepSeek and Mistral. Every plan has unlimited prompts, and you choose how often each prompt runs, from hourly to every two months. Pro is &euro;99/mo, or about 15% less billed yearly, for 1,200 credits (up to 4,800 AI answers a month) and 10 brand dashboards, with a 7-day trial. Pro+ is &euro;229/mo for 3,000 credits and 25 brands. We researched Rankscale from its pricing page and haven't used it. We earn a commission if you subscribe.</p>
-        <h4>Pros</h4>
+        <h3 class="hl4">Pros</h3>
         <ul>
           <li>Wide engine coverage, including Google AI Mode and AI Overviews</li>
           <li>Unlimited prompts and 10 brand dashboards on the entry plan</li>
@@ -433,7 +433,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand"><a href="/" style="display:flex;align-items:center;gap:0.5rem;text-decoration:none;"><img src="/assets/images/logo-dark.webp" onerror="this.src='/assets/images/logo-dark.png'" alt="Dark logo" style="height:32px;width:32px;object-fit:contain;" loading="lazy"><span style="font-size:1rem;font-weight:900;background:linear-gradient(135deg,#f97316,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">RankerTool AI</span></a><p class="footer-tagline">Independent AI &amp; software tool reviews.</p></div>
-      <div class="footer-col"><h5>This Category</h5><ul><li><a href="/review/llm-pulse/">LLM Pulse</a></li><li><a href="/review/semrush/">Semrush</a></li><li><a href="/blog/how-to-get-chatgpt-to-recommend-your-brand/">Get Recommended by ChatGPT</a></li></ul></div>
+      <div class="footer-col"><h4 class="hl5">This Category</h4><ul><li><a href="/review/llm-pulse/">LLM Pulse</a></li><li><a href="/review/semrush/">Semrush</a></li><li><a href="/blog/how-to-get-chatgpt-to-recommend-your-brand/">Get Recommended by ChatGPT</a></li></ul></div>
       <div class="footer-col"><h5>Best Tools</h5><ul><li><a href="/best/data-recovery-backup-software/">Data Recovery & Backup</a></li><li><a href="/best/ai-writing-tools/">AI Writing Tools</a></li><li><a href="/best/free-ai-tools/">Free AI Tools</a></li></ul></div>
       <div class="footer-col"><h5>About</h5><ul><li><a href="/methodology/">Methodology</a></li><li><a href="/affiliate-disclosure/">Disclosure</a></li><li><a href="/privacy-policy/">Privacy</a></li></ul></div>
     </div>
@@ -441,7 +441,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="footer-bottom"><span>© 2026 RankerToolAI</span><span>Updated: November 2026</span></div>
   </div>
 </footer>
-<script src="/assets/js/main.js?v=20261102"></script>
+<script src="/assets/js/main.js?v=20261128"></script>
 <script src="/assets/js/cookie-consent.js" defer></script>
 </body>
 </html>

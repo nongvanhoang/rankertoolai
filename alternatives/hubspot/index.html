@@ -23,7 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -36,7 +36,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .quick-pick-row:last-child{border:none;}
     .quick-pick-badge{font-size:0.7rem;padding:0.2rem 0.5rem;border-radius:9999px;font-weight:700;background:var(--color-primary-light);color:var(--color-primary);white-space:nowrap;}
     .why-switch{background:linear-gradient(135deg,#fef3c7,#fffbeb);border:1px solid #fcd34d;border-radius:var(--radius-lg);padding:1.5rem;margin-bottom:2rem;}
-    .why-switch h3,.why-switch li,.why-switch strong{color:#92400e;}
+    .why-switch h3:not(:where(.hl3,.hl4,.hl5,.hl6)),.why-switch li,.why-switch strong,
+    .why-switch .hl3{color:#92400e;}
     .alt-rank-num{width:36px;height:36px;border-radius:50%;background:var(--color-primary);color:white;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1rem;flex-shrink:0;}
     #back-to-top{display:none;position:fixed;bottom:80px;right:1.5rem;width:44px;height:44px;border-radius:50%;background:var(--color-primary);color:white;align-items:center;justify-content:center;font-size:1.25rem;cursor:pointer;border:none;box-shadow:var(--shadow-lg);z-index:50;}
     .sticky-cta{position:fixed;bottom:0;left:0;right:0;background:linear-gradient(90deg,#0a0f1e,#0d1528);border-top:1px solid rgba(249,115,22,0.3);padding:0.75rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;z-index:100;transform:translateY(100%);transition:transform 0.3s ease;backdrop-filter:blur(12px);}
@@ -160,7 +161,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>We picked these five specifically because they represent the realistic shortlist most teams evaluating HubSpot actually compare it against during procurement — not every CRM on the market, but the ones that come up repeatedly when a team is deciding whether HubSpot's price is justified by its breadth, or whether a more focused (and cheaper) tool solves the same underlying business problem. Each comparison below focuses on the specific tradeoff a team would actually make, not a generic feature checklist that treats every CRM as interchangeable, since that kind of comparison rarely helps anyone make an actual decision.</p>
 
     <div class="why-switch">
-      <h3 style="margin-bottom:0.75rem;">Why People Look for HubSpot Alternatives</h3>
+      <h2 class="hl3" style="margin-bottom:0.75rem;">Why People Look for HubSpot Alternatives</h2>
       <ul style="margin:0;padding-left:1.25rem;line-height:1.9;">
         <li><strong>Pricing that scales fast:</strong> HubSpot's tiered, per-contact pricing can jump significantly as your contact list or feature needs grow</li>
         <li><strong>Complexity for small teams:</strong> HubSpot's full suite includes far more than many small businesses actually use</li>
@@ -205,7 +206,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>ActiveCampaign's automation builder is arguably more powerful for the price than HubSpot's — conditional logic, split testing within automations, and 900+ triggers and actions, all at a meaningfully lower cost. If your bottleneck is building sophisticated email/lifecycle automation rather than needing HubSpot's full CRM-plus-service-hub bundle, ActiveCampaign gets you there for less money and less unnecessary complexity along the way.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs HubSpot</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs HubSpot</h3><ul>
           <li>More flexible automation builder with conditional logic and split testing</li>
           <li>Lower cost for equivalent email marketing power</li>
           <li>900+ pre-built automation triggers and actions</li>
@@ -236,7 +237,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Pipedrive is built specifically to help sales reps track deals, optimize leads, and move opportunities across the pipeline — a much narrower, more focused product than HubSpot's broader marketing-plus-CRM approach. Its visual pipeline and reporting are faster to adopt for reps whose whole job is closing deals, not managing marketing campaigns or juggling unrelated service-desk tickets.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs HubSpot</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs HubSpot</h3><ul>
           <li>More intuitive visual pipeline built specifically for sales reps</li>
           <li>Faster onboarding — no marketing/service hub clutter</li>
           <li>Lower cost for teams that only need sales pipeline management</li>
@@ -267,7 +268,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Zoho CRM is the best pick if deep customization and a wide, well-integrated app ecosystem matter most to your team. Zoho One bundles 45+ business applications — CRM, email marketing, help desk, HR, accounting, and more — at a price that undercuts assembling the equivalent functionality across HubSpot's separate paid hubs.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs HubSpot</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs HubSpot</h3><ul>
           <li>Extremely deep customization options for workflows and fields</li>
           <li>Zoho One bundles 45+ business apps beyond just CRM/marketing</li>
           <li>Lower cost for equivalent breadth of functionality</li>
@@ -298,7 +299,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>EngageBay is designed as an all-in-one HubSpot alternative for small, budget-conscious businesses that can't afford HubSpot's tier structure — marketing automation, CRM, sales pipelines, email marketing, and customer service in one product. Its Growth plan costs a fraction of HubSpot Marketing Hub Professional's per-month cost for a comparable team size.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs HubSpot</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs HubSpot</h3><ul>
           <li>Dramatically lower cost for equivalent all-in-one functionality</li>
           <li>Covers marketing, sales, and service in one bundled product</li>
           <li>Built specifically for small business budgets</li>
@@ -329,7 +330,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Salesforce is the more battle-tested, long-established choice for large enterprises needing extensive customization, complex approval workflows, and a vast third-party app ecosystem (AppExchange) beyond what HubSpot or any of the other alternatives here offer. It's overkill for small teams, but for organizations already operating at real enterprise scale, its ceiling is higher than HubSpot's.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs HubSpot</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs HubSpot</h3><ul>
           <li>Higher ceiling for enterprise-grade customization and scale</li>
           <li>Vast third-party app ecosystem via AppExchange</li>
           <li>Deeper support for complex, multi-team approval workflows</li>
@@ -357,7 +358,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Team Pulse suits small agencies and service teams that use HubSpot mostly to track deals and then manage the client work somewhere else. It puts projects, tasks, chat, files and a sales pipeline in one workspace. The free plan covers 2 projects with unlimited collaborators. Starter is $29/mo for 5 projects but has no pipeline; Growth at $79/mo adds 1 pipeline and 10 projects, and Pro at $159/mo has 2 pipelines and 20 projects. Its plans list no marketing email or automation like HubSpot's Marketing Hub, so it replaces HubSpot's CRM, not its marketing tools. We earn a commission if you subscribe.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs HubSpot</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs HubSpot</h3><ul>
           <li>Project management and CRM in the same tool</li>
           <li>Unlimited collaborators on every plan, including free</li>
           <li>Flat monthly pricing instead of per-seat costs</li>

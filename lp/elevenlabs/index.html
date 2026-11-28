@@ -45,10 +45,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .lp-score-inner{width:64px;height:64px;border-radius:50%;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center}
     .lp-score-num{font-size:1.4rem;font-weight:900;color:var(--brand);line-height:1}
     .lp-score-label{font-size:0.6rem;color:var(--muted)}
-    .lp-score-text h3{font-size:1.1rem;font-weight:700;margin-bottom:0.25rem}
+    .lp-score-text h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .lp-score-text .hl3{font-size:1.1rem;font-weight:700;margin-bottom:0.25rem}
     .lp-score-text p{font-size:0.875rem;color:var(--muted)}
     .lp-section{margin-bottom:2rem}
-    .lp-section h2{font-size:1.15rem;font-weight:700;margin-bottom:0.75rem;border-bottom:1px solid var(--border);padding-bottom:0.5rem}
+    .lp-section h2:not(:where(.hl3,.hl4,.hl5,.hl6)){font-size:1.15rem;font-weight:700;margin-bottom:0.75rem;border-bottom:1px solid var(--border);padding-bottom:0.5rem}
     .lp-pros{list-style:none;padding:0}
     .lp-pros li{padding:0.4rem 0;font-size:0.9rem;color:var(--text);display:flex;gap:0.5rem}
     .lp-pros li::before{content:"✓";color:var(--green);font-weight:700;flex-shrink:0}
@@ -145,7 +146,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
     <div class="lp-score-text">
-      <h3>RankerToolAI Score</h3>
+      <h2 class="hl3">RankerToolAI Score</h2>
       <p>Updated July 2026.<br>Category: AI Voice Generator</p>
     </div>
   </div>

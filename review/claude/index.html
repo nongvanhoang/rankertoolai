@@ -31,7 +31,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -58,7 +58,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .plan-badge{background:var(--color-primary);color:white;font-size:0.65rem;padding:0.15rem 0.5rem;border-radius:9999px;font-weight:700;text-transform:uppercase;margin-left:0.5rem;}
     .feature-section{border-top:1px solid var(--color-border);padding-top:1.5rem;margin-top:1.5rem;}
     .faq-item{border:1px solid var(--color-border);border-radius:var(--radius);margin-bottom:0.75rem;padding:1.25rem;}
-    .faq-item h3{margin:0 0 0.5rem;font-size:1rem;}
+    .faq-item h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .faq-item .hl3{margin:0 0 0.5rem;font-size:1rem;}
     .faq-item p{margin:0;color:var(--color-text-muted);font-size:0.875rem;}
     .benchmark-row{display:flex;align-items:center;gap:1rem;padding:0.6rem 0;border-bottom:1px solid rgba(255,255,255,0.05);font-size:0.875rem;}
     .benchmark-row:last-child{border:none;}
@@ -220,7 +221,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 
   <div style="background:var(--color-bg-alt);border-radius:var(--radius-lg);padding:1.25rem;margin-bottom:2rem;">
-    <h3 style="margin:0 0 0.75rem;font-size:1rem;">Bottom Line</h3>
+    <h2 class="hl3" style="margin:0 0 0.75rem;font-size:1rem;">Bottom Line</h2>
     <p style="margin:0;font-size:0.9rem;color:var(--color-text-muted);">Claude is the best AI for <strong style="color:var(--color-text);">writing, analysis, coding, and working with long documents</strong>. If you need image generation, use ChatGPT. If you need research citations, use Perplexity. For everything text-based, Claude is the top choice.</p>
   </div>
 
@@ -374,7 +375,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <h2 style="color:#f1f5f9;font-size:1.2rem;margin-bottom:1rem;">Frequently Asked Questions</h2>
   <div style="display:flex;flex-direction:column;gap:0.75rem;">
     <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.25rem;">
-      <h4 style="color:#f1f5f9;margin:0 0 0.5rem;font-size:0.95rem;">Is Claude AI free?</h4>
+      <h3 class="hl4" style="color:#f1f5f9;margin:0 0 0.5rem;font-size:0.95rem;">Is Claude AI free?</h3>
       <p style="color:rgba(148,163,184,0.8);margin:0;font-size:0.875rem;line-height:1.65;">Yes — Claude has a free tier with access to Claude Sonnet (Anthropic's mid-tier model) with daily message limits. Claude Pro at $20/month provides access to Claude Sonnet 4 (the most capable model), higher daily limits, and priority access. The free tier is sufficient for occasional use; professionals who use Claude daily will quickly hit the limits.</p>
     </div>
     <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.25rem;">
@@ -497,7 +498,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 </footer>
-<script src="/assets/js/main.js?v=20261102"></script>
+<script src="/assets/js/main.js?v=20261128"></script>
 <script src="/assets/js/cookie-consent.js" defer></script>
 <script src="/assets/js/compare-widget.js" defer></script>
 </body>

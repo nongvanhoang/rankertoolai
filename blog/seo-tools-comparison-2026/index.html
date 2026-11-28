@@ -109,7 +109,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -146,7 +146,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .badge-green{background:rgba(34,197,94,0.15);color:#4ade80;border:1px solid rgba(34,197,94,0.3);}
     .badge-orange{background:rgba(249,115,22,0.15);color:#fbbf24;border:1px solid rgba(249,115,22,0.3);}
     .cta-box{background:linear-gradient(135deg,rgba(249,115,22,0.08),rgba(251,191,36,0.04));border:1px solid rgba(249,115,22,0.25);border-radius:var(--radius-lg);padding:1.5rem;margin:2rem 0;text-align:center;}
-    .cta-box h3{font-size:1rem;font-weight:800;color:#f1f5f9;margin:0 0 0.5rem;}
+    .cta-box h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .cta-box .hl3{font-size:1rem;font-weight:800;color:#f1f5f9;margin:0 0 0.5rem;}
     .cta-box p{color:var(--color-text-muted);font-size:0.875rem;margin:0 0 1rem;}
     .cta-box .btn-cta{display:inline-block;background:linear-gradient(135deg,#f97316,#fbbf24);color:#000;font-weight:800;font-size:0.9rem;padding:0.75rem 2rem;border-radius:var(--radius);text-decoration:none;}
     .cta-box .btn-cta:hover{transform:translateY(-1px);text-decoration:none;color:#000;}
@@ -154,9 +155,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .cta-box .btn-cta-blue:hover{transform:translateY(-1px);text-decoration:none;color:#fff;}
     .cta-dual{display:flex;gap:0.75rem;justify-content:center;flex-wrap:wrap;}
     .stat-highlight{font-size:1.5rem;font-weight:900;background:linear-gradient(135deg,#f97316,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
-    h2{font-size:1.3rem;margin:2rem 0 1rem;}
-    h3{font-size:1.05rem;margin:1.5rem 0 0.75rem;}
-    .faq-section h2{margin-bottom:1.25rem;}
+    h2:not(:where(.hl3,.hl4,.hl5,.hl6)){font-size:1.3rem;margin:2rem 0 1rem;}
+    h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .hl3{font-size:1.05rem;margin:1.5rem 0 0.75rem;}
+    .faq-section h2:not(:where(.hl3,.hl4,.hl5,.hl6)){margin-bottom:1.25rem;}
     .emoji-check{color:#4ade80;}
     .emoji-warn{color:#fbbf24;}
     .nav-active{color:var(--color-primary)!important;}
@@ -178,7 +180,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .trial-card .trial-days{font-size:1.4rem;font-weight:900;margin-bottom:0.15rem;}
     .trial-card .trial-note{font-size:0.72rem;color:var(--color-text-muted);}
     .toc{background:var(--color-bg-alt);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:1.25rem 1.5rem;margin:1.5rem 0;}
-    .toc h3{margin:0 0 0.75rem;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.05em;color:var(--color-text-muted);}
+    .toc h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .toc .hl3{margin:0 0 0.75rem;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.05em;color:var(--color-text-muted);}
     .toc ol{margin:0;padding-left:1.25rem;color:var(--color-text-muted);font-size:0.875rem;line-height:2;}
     .toc a{color:var(--color-text-muted);text-decoration:none;}
     .toc a:hover{color:var(--color-primary);}
@@ -304,7 +307,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- Table of Contents -->
   <div class="toc">
-    <h3>Table of Contents</h3>
+    <h2 class="hl3">Table of Contents</h2>
     <ol>
       <li><a href="#quick-verdict">Quick Verdict Scoring Table — All 10 Tools</a></li>
       <li><a href="#rank-tracking">Rank Tracking Comparison</a></li>
@@ -1248,7 +1251,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </footer>
 
-<script src="/assets/js/main.js?v=20261102"></script>
+<script src="/assets/js/main.js?v=20261128"></script>
 <script src="/assets/js/cookie-consent.js" defer></script>
 <script>
   const navToggle = document.getElementById('nav-toggle');

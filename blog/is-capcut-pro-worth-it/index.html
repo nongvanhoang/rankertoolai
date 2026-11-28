@@ -24,7 +24,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -36,7 +36,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .article-hero h1{color:white;font-size:clamp(1.6rem,4vw,2.5rem);margin-bottom:0.75rem;line-height:1.25;}
     .verdict-box{border-radius:var(--radius-xl);padding:1.75rem 2rem;margin:2rem 0;background:linear-gradient(135deg,rgba(249,115,22,0.14),rgba(234,88,12,0.08));border:1px solid rgba(249,115,22,0.4);}
     .warn-box{background:rgba(239,68,68,0.08);border:1px solid rgba(239,68,68,0.25);border-radius:var(--radius-lg);padding:1.25rem 1.5rem;margin:2rem 0;}
-    .warn-box h4{color:#f87171;margin-bottom:0.5rem;font-size:0.95rem;}
+    .warn-box h4:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .warn-box .hl4{color:#f87171;margin-bottom:0.5rem;font-size:0.95rem;}
     .warn-box p{color:rgba(148,163,184,0.9);margin:0;font-size:0.9rem;line-height:1.7;}
     .score-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem;margin:2rem 0;}
     .score-card{background:linear-gradient(135deg,#241407,#2e1a0d);border:1px solid rgba(255,255,255,0.07);border-radius:var(--radius);padding:1rem;text-align:center;}
@@ -49,8 +50,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .pros,.cons{background:linear-gradient(135deg,#241407,#2e1a0d);border-radius:var(--radius-xl);padding:1.5rem;}
     .pros{border-top:3px solid #f97316;}
     .cons{border-top:3px solid #ef4444;}
-    .pros h3{color:#fbbf24;margin-bottom:1rem;font-size:1rem;}
-    .cons h3{color:#ef4444;margin-bottom:1rem;font-size:1rem;}
+    .pros h3:not(:where(.hl3,.hl4,.hl5,.hl6)){color:#fbbf24;margin-bottom:1rem;font-size:1rem;}
+    .cons h3:not(:where(.hl3,.hl4,.hl5,.hl6)){color:#ef4444;margin-bottom:1rem;font-size:1rem;}
     .pros ul,.cons ul{list-style:none;padding:0;display:flex;flex-direction:column;gap:0.6rem;}
     .pros li{font-size:0.875rem;color:#94a3b8;padding-left:1.25rem;position:relative;}
     .pros li::before{content:"✓";color:#fbbf24;position:absolute;left:0;font-weight:700;}
@@ -61,10 +62,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .steps-list li::before{counter-increment:step;content:counter(step);position:absolute;left:0.9rem;top:50%;transform:translateY(-50%);width:1.5rem;height:1.5rem;border-radius:50%;background:linear-gradient(135deg,#f97316,#fbbf24);color:#000;font-weight:800;font-size:0.8rem;display:flex;align-items:center;justify-content:center;}
     .section-heading{font-size:1.4rem;font-weight:800;color:#f1f5f9;margin:2.5rem 0 1rem;}
     p{color:rgba(148,163,184,0.85);line-height:1.8;margin-bottom:1rem;}
-    h2{color:#f1f5f9;}
+    h2:not(:where(.hl3,.hl4,.hl5,.hl6)){color:#f1f5f9;}
     .faq-item{border-bottom:1px solid rgba(255,255,255,0.07);padding:1.25rem 0;}
     .faq-item:last-child{border-bottom:none;}
-    .faq-item h3{font-size:1rem;color:#f1f5f9;margin-bottom:0.5rem;}
+    .faq-item h3:not(:where(.hl3,.hl4,.hl5,.hl6)){font-size:1rem;color:#f1f5f9;margin-bottom:0.5rem;}
     .faq-item p{font-size:0.9rem;margin:0;}
   </style>
   <meta property="og:type" content="article">
@@ -196,7 +197,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <p>Whether that's worth ~$20/month comes down to one question: do you actually hit the free tier's AI-credit or storage limits in a normal month? If you're an occasional editor who mostly uses templates and basic cuts, you likely never will. If you're generating AI clips or images regularly and burning through credits fast, Pro's expanded allowance can genuinely pay for itself in time saved.</p>
 
   <div class="warn-box">
-    <h4>⚠ The real reason CapCut sits at 1.2/5 on Trustpilot</h4>
+    <h3 class="hl4">⚠ The real reason CapCut sits at 1.2/5 on Trustpilot</h3>
     <p>CapCut's Trustpilot score (1,221 reviews, roughly 87% 1-star) is dragged down almost entirely by one recurring theme: getting charged when a free trial ends, struggling to find the cancel option, and being billed after already canceling. It is not primarily about editing quality or crashes — read a sample of the actual 1-star reviews and the billing pattern is specific and repeated enough to treat as a real risk, not review-platform noise.</p>
   </div>
 

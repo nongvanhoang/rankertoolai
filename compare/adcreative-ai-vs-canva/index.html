@@ -23,7 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;color:var(--color-text);}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -43,7 +43,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .vs-tool-sub{font-size:0.78rem;color:rgba(148,163,184,0.6);}
     .vs-badge{background:rgba(236,72,153,0.12);border:2px solid rgba(236,72,153,0.4);border-radius:9999px;padding:0.5rem 1.25rem;font-weight:700;font-size:1.1rem;color:#f9a8d4;}
     .winner-callout{background:linear-gradient(135deg,rgba(34,197,94,0.1),rgba(22,163,74,0.07));border:1px solid rgba(34,197,94,0.3);border-radius:var(--radius-lg);padding:1.5rem;margin:2rem 0;}
-    .winner-callout h3{color:#4ade80;margin-bottom:0.5rem;}
+    .winner-callout h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .winner-callout .hl3{color:#4ade80;margin-bottom:0.5rem;}
     .winner-callout p{color:rgba(148,163,184,0.9);margin:0;font-size:0.95rem;line-height:1.7;}
     .compare-table{width:100%;border-collapse:collapse;margin:1.5rem 0;}
     .compare-table th{text-align:left;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.05em;color:rgba(148,163,184,0.6);padding:0.75rem 1rem;border-bottom:1px solid rgba(255,255,255,0.08);}
@@ -57,11 +58,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .choose-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin:2rem 0;}
     @media(max-width:580px){.choose-grid{grid-template-columns:1fr;}}
     .choose-box{border:1.5px solid var(--color-border);border-radius:var(--radius-lg);padding:1.5rem;}
-    .choose-box h3{font-size:1rem;margin-bottom:0.75rem;color:#f1f5f9;}
+    .choose-box h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .choose-box .hl3{font-size:1rem;margin-bottom:0.75rem;color:#f1f5f9;}
     .choose-box ul{font-size:0.875rem;color:rgba(148,163,184,0.85);line-height:1.9;}
     .faq-item{border-bottom:1px solid rgba(255,255,255,0.07);padding:1.25rem 0;}
     .faq-item:last-child{border-bottom:none;}
-    .faq-item h3{font-size:1rem;color:#f1f5f9;margin-bottom:0.5rem;}
+    .faq-item h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .faq-item .hl3{font-size:1rem;color:#f1f5f9;margin-bottom:0.5rem;}
     .faq-item p{font-size:0.9rem;color:rgba(148,163,184,0.85);margin:0;line-height:1.7;}
   </style>
   <meta property="og:type" content="article">
@@ -190,7 +193,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 
   <div class="winner-callout">
-    <h3>Bottom Line</h3>
+    <h2 class="hl3">Bottom Line</h2>
     <p><strong>AdCreative.ai wins when your bottleneck is volume and prioritization</strong> — its Creative Scoring AI, trained on 450M+ ads and $34B+ in ad spend, generates 20+ variants in under 5 minutes and tells you which ones are worth testing first. <strong>Canva wins on design flexibility and cost</strong> — a real free plan, 1,000+ templates, and hands-on control that goes far beyond ads (social posts, presentations, documents). Many performance marketing teams use both: brand assets built in Canva, then fed into AdCreative.ai for rapid variant generation and scoring.</p>
   </div>
 
@@ -309,7 +312,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="footer-bottom"><span>© 2026 RankerToolAI. All rights reserved.</span><span><a href="/sitemap.xml" style="color:#9ca3af;">Sitemap</a></span></div>
   </div>
 </footer>
-<script src="/assets/js/main.js?v=20261102"></script>
+<script src="/assets/js/main.js?v=20261128"></script>
 <script>document.getElementById('nav-toggle').addEventListener('click',function(){var m=document.getElementById('nav-menu');var e=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',!e);m.classList.toggle('is-open');});</script>
 <script src="/assets/js/cookie-consent.js" defer></script>
 </body>

@@ -23,7 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -38,7 +38,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .tool-score{display:inline-flex;align-items:center;gap:0.35rem;background:#0d1224;border:1px solid var(--color-border);border-radius:var(--radius);padding:0.25rem 0.65rem;font-size:0.85rem;font-weight:700;color:#f97316;}
     .tag{display:inline-block;background:rgba(249,115,22,0.1);border:1px solid rgba(249,115,22,0.25);color:#fbbf24;font-size:0.7rem;padding:0.15rem 0.5rem;border-radius:9999px;margin:0.15rem;}
     .faq-item{border:1px solid var(--color-border);border-radius:var(--radius);margin-bottom:0.75rem;padding:1.25rem;}
-    .faq-item h3{margin:0 0 0.5rem;font-size:1rem;}
+    .faq-item h3:not(:where(.hl3,.hl4,.hl5,.hl6)){margin:0 0 0.5rem;font-size:1rem;}
     .faq-item p{margin:0;color:var(--color-text-muted);font-size:0.875rem;}
     .winner-box{background:linear-gradient(135deg,rgba(34,197,94,0.12),rgba(22,163,74,0.06));border:1px solid rgba(34,197,94,0.3);border-radius:var(--radius-lg);padding:1.25rem;margin-bottom:2rem;}
   </style>
@@ -152,7 +152,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="toc" style="margin-bottom:2rem;">
-      <h4>Quick Navigation</h4>
+      <h2 class="hl4">Quick Navigation</h2>
       <ol>
         <li><a href="#elevenlabs">#1 ElevenLabs — 9.1/10</a></li>
         <li><a href="#murf">#2 Murf AI — 8.4/10</a></li>
@@ -175,7 +175,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="tag">Best Voice Quality</span><span class="tag">Voice Cloning</span><span class="tag">32 Languages</span><span class="tag">Developer API</span><span class="tag">$5/mo Entry</span>
         </div>
         <p>ElevenLabs is the gold standard for AI voice quality in 2026. ElevenLabs voices are widely regarded as hard to tell apart from human speech, especially on the newer Flash V2.5 model. The voice cloning is industry-leading: Instant Voice Cloning works from a 1-minute audio sample and is available on all paid plans starting at $5/month.</p>
-        <h4>Pros</h4>
+        <h3 class="hl4">Pros</h3>
         <ul>
           <li>Most natural-sounding AI voices available — is widely regarded as close to human speech</li>
           <li>Voice cloning from 1 minute of audio on all paid plans</li>
@@ -208,7 +208,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="tag">Video Studio</span><span class="tag">Slides Integration</span><span class="tag">Team Collab</span><span class="tag">120+ Voices</span><span class="tag">$19/mo Entry</span>
         </div>
         <p>Murf AI is the complete voiceover studio for marketers and video creators. Where ElevenLabs is an API-first voice engine, Murf is a production environment: visual timeline editor, Google Slides and PowerPoint integration, 1,500+ royalty-free music tracks, and team collaboration features. If you create explainer videos, e-learning, or presentation narration, Murf's workflow is faster than any alternative.</p>
-        <h4>Pros</h4>
+        <h3 class="hl4">Pros</h3>
         <ul>
           <li>Full visual studio with timeline editor and video sync</li>
           <li>Google Slides and PowerPoint integration — import and narrate per slide</li>
@@ -251,7 +251,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="tag">Personal Use</span><span class="tag">Accessibility</span><span class="tag">Mobile App</span><span class="tag">Speed Control</span>
         </div>
         <p>Speechify occupies a different niche: it's primarily a personal listening tool, not a content production platform. It excels at reading documents, articles, PDFs, and ebooks aloud — with speed controls up to 4.5× and a genuinely excellent mobile app. If you want to consume written content by ear, Speechify is the best tool for it. For content creation, use ElevenLabs or Murf.</p>
-        <h4>Pros</h4>
+        <h3 class="hl4">Pros</h3>
         <ul>
           <li>Best mobile app for personal listening</li>
           <li>Reads any format: PDF, ebook, web article, Google Doc</li>
@@ -281,7 +281,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="tag">AWS Integration</span><span class="tag">Enterprise</span><span class="tag">Pay-per-use</span><span class="tag">SSML</span>
         </div>
         <p>Amazon Polly is the default TTS choice for teams already on AWS. Its pay-per-character pricing (no monthly subscription) makes it cost-effective for variable or low-volume workloads. Voice quality is functional but below ElevenLabs — Polly's neural voices are good, not great. Full SSML support gives developers precise control over pronunciation, pacing, and emphasis.</p>
-        <h4>Pros</h4>
+        <h3 class="hl4">Pros</h3>
         <ul>
           <li>No subscription — pay per character used</li>
           <li>5M characters/month free for 12 months (AWS free tier)</li>
@@ -378,7 +378,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <h2 style="color:#f1f5f9;font-size:1.2rem;margin-bottom:1rem;">Frequently Asked Questions</h2>
   <div style="display:flex;flex-direction:column;gap:0.75rem;">
     <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.25rem;">
-      <h4 style="color:#f1f5f9;margin:0 0 0.5rem;font-size:0.95rem;">What is the best text-to-speech AI?</h4>
+      <h3 class="hl4" style="color:#f1f5f9;margin:0 0 0.5rem;font-size:0.95rem;">What is the best text-to-speech AI?</h3>
       <p style="color:rgba(148,163,184,0.8);margin:0;font-size:0.875rem;line-height:1.65;">ElevenLabs is the best AI text-to-speech tool for natural-sounding voices and voice cloning quality. Murf AI is best for video production workflows (built-in video sync studio). Amazon Polly is best for enterprise-scale, high-volume API TTS. The right choice depends on your volume, language needs, and workflow.</p>
     </div>
     <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.25rem;">
@@ -409,7 +409,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="footer-bottom"><span>© 2026 RankerToolAI</span><span>Updated: October 12, 2026</span></div>
   </div>
 </footer>
-<script src="/assets/js/main.js?v=20261102"></script>
+<script src="/assets/js/main.js?v=20261128"></script>
 <script src="/assets/js/cookie-consent.js" defer></script>
 </body>
 </html>

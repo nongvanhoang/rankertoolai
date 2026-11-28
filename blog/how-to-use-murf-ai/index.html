@@ -45,7 +45,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid rgba(255,255,255,0.1);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;color:var(--color-text);}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -58,8 +58,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .post-meta a{color:rgba(148,163,184,0.8);text-decoration:none;}
     .post-tag{background:rgba(251,146,60,0.12);color:#fdba74;border:1px solid rgba(251,146,60,0.25);padding:0.2rem 0.65rem;border-radius:999px;font-size:0.72rem;font-weight:700;}
     .blog-content{max-width:780px;margin:0 auto;padding:3rem 0 5rem;line-height:1.8;font-size:0.975rem;}
-    .blog-content h2{font-size:1.45rem;font-weight:800;margin:2.5rem 0 1rem;color:#f1f5f9;}
-    .blog-content h3{font-size:1.1rem;font-weight:700;margin:1.75rem 0 0.6rem;color:#f1f5f9;}
+    .blog-content h2:not(:where(.hl3,.hl4,.hl5,.hl6)){font-size:1.45rem;font-weight:800;margin:2.5rem 0 1rem;color:#f1f5f9;}
+    .blog-content h3:not(:where(.hl3,.hl4,.hl5,.hl6)){font-size:1.1rem;font-weight:700;margin:1.75rem 0 0.6rem;color:#f1f5f9;}
     .blog-content p{color:rgba(148,163,184,0.9);margin-bottom:1.1rem;}
     .blog-content ul,.blog-content ol{color:rgba(148,163,184,0.9);padding-left:1.5rem;margin-bottom:1.1rem;}
     .blog-content li{margin-bottom:0.5rem;}
@@ -68,10 +68,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .blog-content a:hover{text-decoration:underline;}
     .step-box{background:linear-gradient(135deg,#131c2e,#221408);border:1px solid rgba(255,255,255,0.08);border-left:3px solid #fb923c;border-radius:0 10px 10px 0;padding:1.25rem 1.5rem;margin:1.5rem 0;}
     .step-label{font-size:0.72rem;font-weight:800;color:#fdba74;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:0.4rem;}
-    .step-box h4{color:#f1f5f9;font-size:1rem;font-weight:700;margin-bottom:0.5rem;}
+    .step-box h4:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .step-box .hl4{color:#f1f5f9;font-size:1rem;font-weight:700;margin-bottom:0.5rem;}
     .step-box p{font-size:0.875rem;color:rgba(148,163,184,0.85);margin:0;}
     .toc{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:1.25rem 1.5rem;margin-bottom:2.5rem;}
-    .toc h4{font-size:0.85rem;font-weight:700;color:rgba(148,163,184,0.6);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.75rem;}
+    .toc h4:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .toc .hl4{font-size:0.85rem;font-weight:700;color:rgba(148,163,184,0.6);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.75rem;}
     .toc ol{padding-left:1.25rem;margin:0;}
     .toc li{font-size:0.875rem;margin-bottom:0.3rem;}
     .toc a{color:rgba(148,163,184,0.8);text-decoration:none;}
@@ -178,7 +180,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <main class="container">
   <div class="blog-content">
     <div class="toc">
-      <h4>Table of Contents</h4>
+      <h2 class="hl4">Table of Contents</h2>
       <ol>
         <li><a href="#what">What Murf AI Actually Does</a></li>
         <li><a href="#setup">Getting Started: Account Setup</a></li>
@@ -197,7 +199,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="step-box">
       <div class="step-label">What Murf AI Does Best</div>
-      <h4>Timing sync between voiceover and visual content</h4>
+      <h3 class="hl4">Timing sync between voiceover and visual content</h3>
       <p>The Studio Editor lets you align narration to specific timestamps in a video or slide deck — a workflow gap most basic TTS tools don't address at all.</p>
     </div>
 
@@ -251,7 +253,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="step-box">
       <div class="step-label">Step 1 — 15 min</div>
-      <h4>Finalize the script broken into slide-matched segments</h4>
+      <h3 class="hl4">Finalize the script broken into slide-matched segments</h3>
       <p>Write with your slide breaks in mind from the start, not as an afterthought.</p>
     </div>
     <div class="step-box">
@@ -320,7 +322,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </a>
         <p class="footer-tagline">Independent reviews and comparisons of the best AI tools.</p>
       </div>
-      <div class="footer-col"><h5>AI Voice</h5><ul>
+      <div class="footer-col"><h4 class="hl5">AI Voice</h4><ul>
         <li><a href="/review/murf-ai/">Murf AI Review</a></li>
         <li><a href="/review/elevenlabs/">ElevenLabs Review</a></li>
       </ul></div>
@@ -340,7 +342,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 </footer>
-<script src="/assets/js/main.js?v=20261102"></script>
+<script src="/assets/js/main.js?v=20261128"></script>
 <script src="/assets/js/cookie-consent.js" defer></script>
 </body>
 </html>

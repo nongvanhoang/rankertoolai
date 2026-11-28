@@ -23,7 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -36,7 +36,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .quick-pick-row:last-child{border:none;}
     .quick-pick-badge{font-size:0.7rem;padding:0.2rem 0.5rem;border-radius:9999px;font-weight:700;background:var(--color-primary-light);color:var(--color-primary);white-space:nowrap;}
     .why-switch{background:linear-gradient(135deg,#fef3c7,#fffbeb);border:1px solid #fcd34d;border-radius:var(--radius-lg);padding:1.5rem;margin-bottom:2rem;}
-    .why-switch h3,.why-switch li,.why-switch strong{color:#92400e;}
+    .why-switch h3:not(:where(.hl3,.hl4,.hl5,.hl6)),.why-switch li,.why-switch strong,
+    .why-switch .hl3{color:#92400e;}
     .alt-rank-num{width:36px;height:36px;border-radius:50%;background:var(--color-primary);color:white;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1rem;flex-shrink:0;}
     #back-to-top{display:none;position:fixed;bottom:1.5rem;right:1.5rem;width:44px;height:44px;border-radius:50%;background:var(--color-primary);color:white;align-items:center;justify-content:center;font-size:1.25rem;cursor:pointer;border:none;box-shadow:var(--shadow-lg);z-index:50;}
   </style>
@@ -152,7 +153,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="why-switch">
-      <h3 style="margin-bottom:0.75rem;">Why People Switch from HeyGen</h3>
+      <h2 class="hl3" style="margin-bottom:0.75rem;">Why People Switch from HeyGen</h2>
       <ul style="margin:0;padding-left:1.25rem;line-height:1.9;"><li><strong>Price:</strong> HeyGen's Creator plan at $29/mo limits monthly video minutes — high-volume users hit caps quickly</li><li><strong>Avatar realism:</strong> HeyGen's avatars are best-in-class but still identifiably AI on close inspection for some use cases</li><li><strong>Enterprise compliance:</strong> Synthesia has stronger GDPR/SOC2 compliance documentation for regulated industries</li><li><strong>Multilingual depth:</strong> some tools offer better localization quality for specific language pairs</li><li><strong>Custom avatar quality:</strong> D-ID and Colossyan use different training approaches that may produce better results for specific vocal styles</li></ul>
     </div>
 
@@ -193,7 +194,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>Synthesia is the enterprise standard for AI avatar video — used by 50,000+ companies including Heineken, Zoom, and Reuters for corporate training, onboarding, and compliance videos. Its 160+ diverse avatars are produced in professional studio conditions and optimized for corporate video aesthetics. Synthesia's Enterprise plan adds SCORM export for LMS integration, brand kits, SSO and a dedicated customer success manager — features HeyGen's consumer-focused platform doesn't match.</p>
       <p>For large organizations producing high volumes of internal training videos, Synthesia's enterprise tier includes a customer success manager, priority rendering, and custom avatar creation from your own employees' recordings. The per-minute pricing model on Synthesia's higher plans is better than HeyGen's minute-cap model for teams producing 20+ videos per month. If your use case is corporate L&D rather than marketing content, Synthesia's enterprise positioning and compliance documentation make it the stronger organizational choice.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs HeyGen</h4><ul><li>SOC2 Type II, GDPR, WCAG 2.1 compliant</li><li>160+ professional studio avatars</li><li>SCORM export for LMS integration</li><li>50,000+ enterprise customers</li><li>Dedicated support on enterprise plans</li></ul></div>
+        <div class="pros"><h3 class="hl4">✅ Pros vs HeyGen</h3><ul><li>SOC2 Type II, GDPR, WCAG 2.1 compliant</li><li>160+ professional studio avatars</li><li>SCORM export for LMS integration</li><li>50,000+ enterprise customers</li><li>Dedicated support on enterprise plans</li></ul></div>
         <div class="cons"><h4>❌ Cons vs HeyGen</h4><ul><li>Less realistic avatar lip-sync than HeyGen on casual review</li><li>More expensive at comparable feature tiers</li><li>Less consumer-friendly interface</li></ul></div>
       </div>
       <div style="display:flex;align-items:center;gap:1rem;margin-top:1rem;flex-wrap:wrap;">
@@ -218,7 +219,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>D-ID (Digital Identities) creates talking avatar videos from a photo + text or audio input — you upload a portrait photo, paste a script, and D-ID generates a realistic talking-head video. At $5.90/month for the Lite plan, it's the most accessible AI avatar tool available. D-ID is also known for its Photo Animator feature that animates still photos to speak, which has creative and memorial video use cases beyond the standard corporate avatar format.</p>
       <p>D-ID's avatar realism is slightly below HeyGen's best avatars, particularly on lip-sync accuracy for fast speech and emotional range. But for straightforward explainer videos, product demos, and social media content where budget is the primary constraint, D-ID's dramatically lower price point makes it the first tool to try. The free 14-day trial includes 5 minutes of video — enough to evaluate the quality for your specific use case.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs HeyGen</h4><ul><li>Most affordable entry plan ($5.90/mo)</li><li>Animate any photo to speak</li><li>Good API for programmatic generation</li><li>14-day free trial</li><li>Supports 100+ languages</li></ul></div>
+        <div class="pros"><h3 class="hl4">✅ Pros vs HeyGen</h3><ul><li>Most affordable entry plan ($5.90/mo)</li><li>Animate any photo to speak</li><li>Good API for programmatic generation</li><li>14-day free trial</li><li>Supports 100+ languages</li></ul></div>
         <div class="cons"><h4>❌ Cons vs HeyGen</h4><ul><li>Lip-sync less accurate than HeyGen on complex speech</li><li>Fewer avatar styles than Synthesia/HeyGen</li><li>Limited video length on budget plans</li></ul></div>
       </div>
       <div style="display:flex;align-items:center;gap:1rem;margin-top:1rem;flex-wrap:wrap;">
@@ -243,7 +244,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>Colossyan is purpose-built for workplace learning and development (L&D) teams — its interface is designed to make video creation accessible to non-video professionals like HR managers and compliance officers. It includes 150+ diverse avatars, AI script writing, SCORM and xAPI export for LMS platforms, auto-translation into 70+ languages, and accessibility features including closed captions and screen reader support. Colossyan's focus on enterprise L&D makes it a strong HeyGen alternative for corporate training use cases.</p>
       <p>Colossyan's standout feature is its 'Scenarios' capability — interactive branching video scenarios where viewers make choices that lead to different video outcomes, built without coding. For compliance training, safety procedures, and customer service simulations where learner decision-making matters, Colossyan's interactive video format provides learning outcomes that linear avatar video can't match. No other tool in this comparison offers this feature.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs HeyGen</h4><ul><li>Interactive branching scenarios (unique feature)</li><li>SCORM/xAPI export for any LMS</li><li>Auto-translate into 70+ languages</li><li>Purpose-built for L&D workflows</li><li>150+ diverse professional avatars</li></ul></div>
+        <div class="pros"><h3 class="hl4">✅ Pros vs HeyGen</h3><ul><li>Interactive branching scenarios (unique feature)</li><li>SCORM/xAPI export for any LMS</li><li>Auto-translate into 70+ languages</li><li>Purpose-built for L&D workflows</li><li>150+ diverse professional avatars</li></ul></div>
         <div class="cons"><h4>❌ Cons vs HeyGen</h4><ul><li>Less consumer-friendly than HeyGen</li><li>No voice cloning on Starter plan</li><li>Higher price than D-ID for similar basic avatar video</li></ul></div>
       </div>
       <div style="display:flex;align-items:center;gap:1rem;margin-top:1rem;flex-wrap:wrap;">
@@ -268,7 +269,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>Runway Gen-3 generates original video content from text descriptions — not stock clips, not avatar presenters, but genuinely new AI-generated footage. This is a fundamentally different capability from HeyGen's avatar approach: instead of a digital human reading your script, Runway creates cinematic scenes, product shots, abstract visuals, and creative sequences from text prompts. For brand content, advertising, music videos, and creative projects where original visual storytelling matters, Runway's Gen-3 model produces results no avatar tool can match.</p>
       <p>Runway doesn't replace HeyGen for explainer or training video production — it solves a different creative problem. But for marketers and creative directors who want to produce visually distinctive content without stock footage limitations, Runway's AI video generation opens creative possibilities that weren't commercially viable before. Runway also includes a professional video editor, green screen removal, motion tracking, and inpainting, making it a comprehensive creative video production platform.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs HeyGen</h4><ul><li>Most realistic AI-generated video (Gen-3)</li><li>No stock footage limits — generate anything</li><li>Full creative video editor included</li><li>Motion tracking and VFX tools</li><li>Strong free plan (125 credits)</li></ul></div>
+        <div class="pros"><h3 class="hl4">✅ Pros vs HeyGen</h3><ul><li>Most realistic AI-generated video (Gen-3)</li><li>No stock footage limits — generate anything</li><li>Full creative video editor included</li><li>Motion tracking and VFX tools</li><li>Strong free plan (125 credits)</li></ul></div>
         <div class="cons"><h4>❌ Cons vs HeyGen</h4><ul><li>Not for talking-head presenter video</li><li>Short clip length (5-10 sec per generation)</li><li>Learning curve for prompt engineering</li><li>Requires more creative direction than avatar tools</li></ul></div>
       </div>
       <div style="display:flex;align-items:center;gap:1rem;margin-top:1rem;flex-wrap:wrap;">
@@ -293,7 +294,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>ElevenLabs doesn't produce avatar video, but if your use case is voice-over narration for video content — not a talking-head presenter — ElevenLabs produces the most realistic AI voice available and is significantly cheaper than HeyGen for audio-only applications. Many content teams use ElevenLabs for video voice-over combined with stock footage or screen recordings, achieving professional narration quality without the cost and uncanny valley risk of AI avatar video.</p>
       <p>ElevenLabs' Instant Voice Cloning creates a convincing clone of your voice from 1 minute of audio, enabling you to generate narration in your own voice at scale without re-recording. This is particularly useful for YouTube creators who want to produce more content than their recording schedule allows. For podcast producers who need consistent narrator voices across episodes, ElevenLabs' voice consistency across sessions is also superior to HeyGen's voice synthesis.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs HeyGen</h4><ul><li>Best voice realism — indistinguishable from human</li><li>Voice cloning from 1-min audio sample</li><li>Free plan: 10,000 chars/month</li><li>29-language support with accent accuracy</li><li>Full developer API</li></ul></div>
+        <div class="pros"><h3 class="hl4">✅ Pros vs HeyGen</h3><ul><li>Best voice realism — indistinguishable from human</li><li>Voice cloning from 1-min audio sample</li><li>Free plan: 10,000 chars/month</li><li>29-language support with accent accuracy</li><li>Full developer API</li></ul></div>
         <div class="cons"><h4>❌ Cons vs HeyGen</h4><ul><li>No video — audio only</li><li>Not a replacement for avatar video use cases</li><li>Character-based pricing can add up at scale</li></ul></div>
       </div>
       <div style="display:flex;align-items:center;gap:1rem;margin-top:1rem;flex-wrap:wrap;">
@@ -318,7 +319,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>Pictory converts scripts and blog posts into polished stock-footage videos with AI voice-over — a cost-effective alternative to HeyGen when you don't need a human-looking presenter. Pictory's core workflow matches Getty and Storyblocks stock footage to your script automatically, though it also offers stock avatars. The result is professional video content that works well for educational explainers, product highlights, and social media content without the uncanny valley risk of AI avatar video.</p>
       <p>At $25/month billed yearly, Pictory's Starter costs less than HeyGen's $29/month Creator plan and includes unlimited video exports on the Starter plan. For content teams that produce high volumes of informational video where B-roll footage works better than a presenter (how-to guides, product feature explainers, news summaries), Pictory's automated stock-footage approach is more scalable and cost-effective than HeyGen's per-minute avatar model.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs HeyGen</h4><ul><li>$25/mo billed yearly vs HeyGen's $29/mo</li><li>Unlimited video projects on paid plans</li><li>5M+ stock videos on Starter, 18M+ on Professional, auto-matched to script</li><li>Automatic subtitles, exportable as .srt, .vtt or txt</li><li>No recording required</li></ul></div>
+        <div class="pros"><h3 class="hl4">✅ Pros vs HeyGen</h3><ul><li>$25/mo billed yearly vs HeyGen's $29/mo</li><li>Unlimited video projects on paid plans</li><li>5M+ stock videos on Starter, 18M+ on Professional, auto-matched to script</li><li>Automatic subtitles, exportable as .srt, .vtt or txt</li><li>No recording required</li></ul></div>
         <div class="cons"><h4>❌ Cons vs HeyGen</h4><ul><li>Stock avatars available, but footage is the main focus</li><li>Less engaging for personal brand content</li><li>Generic-looking without custom branding</li></ul></div>
       </div>
       <div style="display:flex;align-items:center;gap:1rem;margin-top:1rem;flex-wrap:wrap;">
@@ -343,7 +344,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>Murf AI is a professional voice studio that generates AI narration and pairs it with video in a single editing environment. Unlike ElevenLabs (audio only) or HeyGen (avatar video), Murf lets you compose a script, select from 120+ AI voices across 20+ languages, and sync the narration directly to slides, screen recordings, or video clips — all within the same tool. For corporate presentations, e-learning modules, and product demo videos that use slide-based or screen-recorded footage rather than avatar video, Murf's integrated voice-plus-video workflow is the most efficient production path.</p>
       <p>Murf's voice quality is high — natural pacing, clear pronunciation across languages, and emotional tone control — though not at ElevenLabs' absolute realism level. The real advantage is workflow integration: you don't need to export audio from one tool and import it into another editor. For teams producing consistent voice-over content at volume, Murf's studio environment and voice consistency across sessions reduces production overhead compared to managing HeyGen avatar videos separately.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs HeyGen</h4><ul><li>120+ voices in 20+ languages</li><li>Video + voice in one tool</li><li>Pronunciation editor for technical terms</li><li>Voice consistency across sessions</li><li>Enterprise team collaboration features</li></ul></div>
+        <div class="pros"><h3 class="hl4">✅ Pros vs HeyGen</h3><ul><li>120+ voices in 20+ languages</li><li>Video + voice in one tool</li><li>Pronunciation editor for technical terms</li><li>Voice consistency across sessions</li><li>Enterprise team collaboration features</li></ul></div>
         <div class="cons"><h4>❌ Cons vs HeyGen</h4><ul><li>No avatar presenter like HeyGen</li><li>Less voice realism than ElevenLabs top models</li><li>Video features limited vs dedicated video editors</li></ul></div>
       </div>
       <div style="display:flex;align-items:center;gap:1rem;margin-top:1rem;flex-wrap:wrap;">
@@ -368,7 +369,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>Magiclight AI targets a different job than HeyGen's talking-head avatar format: it converts a story, script, or image into a multi-scene generated video up to 50 minutes long, with character consistency across scenes and a choice of underlying model (Sora 2, Kling 3.0, VEO 3, Gemini 3). Where HeyGen personalizes an avatar delivering a script, Magiclight generates the scenes themselves — better suited to kids' stories, dramatized explainers, or narrative content than a single presenter shot.</p>
       <p>It's not a like-for-like HeyGen replacement — avatar/lip-sync is a secondary feature bolted onto the story-generation core, not the polished centerpiece it is in HeyGen. There's also a real trust caveat: Magiclight sits at 2.8/5 on Trustpilot (115 reviews), with recurring complaints about credits being consumed faster than the plan's advertised video-minute estimates suggest — test a short project before committing to a paid tier.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs HeyGen</h4><ul><li>Up to 50 minutes of video vs HeyGen's per-credit short clips</li><li>Multi-scene narrative with character consistency, not one presenter shot</li><li>Multiple foundation models (Sora 2, Kling 3.0, VEO 3) in one interface</li><li>Free plan to sample the workflow before paying</li></ul></div>
+        <div class="pros"><h3 class="hl4">✅ Pros vs HeyGen</h3><ul><li>Up to 50 minutes of video vs HeyGen's per-credit short clips</li><li>Multi-scene narrative with character consistency, not one presenter shot</li><li>Multiple foundation models (Sora 2, Kling 3.0, VEO 3) in one interface</li><li>Free plan to sample the workflow before paying</li></ul></div>
         <div class="cons"><h4>❌ Cons vs HeyGen</h4><ul><li>2.8/5 Trustpilot — real complaints about credit costs exceeding advertised estimates</li><li>Avatar/lip-sync is secondary, not as polished as HeyGen's core avatar product</li><li>Free plan too narrow to produce a real finished video</li><li>No enterprise LMS or compliance features</li></ul></div>
       </div>
       <div style="display:flex;align-items:center;gap:1rem;margin-top:1rem;flex-wrap:wrap;">

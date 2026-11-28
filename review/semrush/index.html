@@ -33,7 +33,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -49,14 +49,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     @media(max-width:640px){.pros-cons{grid-template-columns:1fr;}}
     .pros-box{background:rgba(34,197,94,0.06);border:1px solid rgba(34,197,94,0.2);border-radius:var(--radius);padding:1rem;}
     .cons-box{background:rgba(239,68,68,0.06);border:1px solid rgba(239,68,68,0.2);border-radius:var(--radius);padding:1rem;}
-    .pros-box h3{color:#4ade80;font-size:0.8rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:0.5rem;}
-    .cons-box h3{color:#f87171;font-size:0.8rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:0.5rem;}
+    .pros-box h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .pros-box .hl3{color:#4ade80;font-size:0.8rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:0.5rem;}
+    .cons-box h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .cons-box .hl3{color:#f87171;font-size:0.8rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:0.5rem;}
     .pros-box li,.cons-box li{font-size:0.875rem;color:var(--color-text-muted);margin-bottom:0.3rem;padding-left:0.5rem;}
     .pricing-table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.875rem;}
     .pricing-table th{background:#0d1224;padding:0.6rem 0.75rem;text-align:left;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.05em;color:#94a3b8;border-bottom:1px solid var(--color-border);}
     .pricing-table td{padding:0.65rem 0.75rem;border-bottom:1px solid rgba(255,255,255,0.05);}
     .pricing-table tr.highlight td{background:rgba(249,115,22,0.06);border-color:rgba(249,115,22,0.15);}
-    .content-section h2{margin-top:2rem;font-size:1.2rem;}
+    .content-section h2:not(:where(.hl3,.hl4,.hl5,.hl6)){margin-top:2rem;font-size:1.2rem;}
     .content-section p{line-height:1.8;color:var(--color-text-muted);margin-bottom:0.85rem;}
     .content-section strong{color:var(--color-text);}
     .score-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:0.75rem;margin:1.5rem 0;}
@@ -64,7 +66,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .score-card-value{font-size:1.5rem;font-weight:800;background:linear-gradient(135deg,#f97316,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
     .score-card-label{font-size:0.75rem;color:#94a3b8;margin-top:0.25rem;}
     .verdict-box{background:linear-gradient(135deg,rgba(249,115,22,0.08),rgba(251,191,36,0.05));border:1px solid rgba(249,115,22,0.25);border-radius:var(--radius-lg);padding:1.5rem;margin:2rem 0;}
-    .verdict-box h2{color:#f97316;font-size:1.1rem;margin-bottom:0.5rem;}
+    .verdict-box h2:not(:where(.hl3,.hl4,.hl5,.hl6)){color:#f97316;font-size:1.1rem;margin-bottom:0.5rem;}
     .verdict-box p{color:rgba(148,163,184,0.9);margin:0;line-height:1.7;font-size:0.95rem;}
   </style>
     <script async src="/assets/js/pint.js"></script>
@@ -193,7 +195,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
 
       <div class="pros-cons">
-        <div class="pros-box"><h3>Pros</h3><ul style="list-style:none;padding:0;margin:0;">
+        <div class="pros-box"><h2 class="hl3">Pros</h2><ul style="list-style:none;padding:0;margin:0;">
           <li>✓ 25B+ keyword database — largest available</li>
           <li>✓ Comprehensive backlink analysis</li>
           <li>✓ All-in-one: SEO + PPC + social + content</li>
@@ -322,7 +324,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <h2 style="color:#f1f5f9;font-size:1.2rem;margin-bottom:1rem;">Frequently Asked Questions</h2>
   <div style="display:flex;flex-direction:column;gap:0.75rem;">
     <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.25rem;">
-      <h4 style="color:#f1f5f9;margin:0 0 0.5rem;font-size:0.95rem;">How much does Semrush cost?</h4>
+      <h3 class="hl4" style="color:#f1f5f9;margin:0 0 0.5rem;font-size:0.95rem;">How much does Semrush cost?</h3>
       <p style="color:rgba(148,163,184,0.8);margin:0;font-size:0.875rem;line-height:1.65;">Semrush offers three main plans: Pro ($130/month) for freelancers and startups — 5 projects, 500 tracked keywords, 10,000 results per report. Guru ($250/month) for agencies and growing businesses — 15 projects, 1,500 keywords, historical data, content marketing tools. Business ($500/month) for large agencies — 40 projects, 5,000 keywords, API access. Annual billing saves approximately 17%.</p>
     </div>
     <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.25rem;">
@@ -375,7 +377,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="footer-bottom"><span>© 2026 RankerToolAI. All rights reserved.</span></div>
   </div>
 </footer>
-<script src="/assets/js/main.js?v=20261102"></script>
+<script src="/assets/js/main.js?v=20261128"></script>
 <script>document.getElementById('nav-toggle').addEventListener('click',function(){var m=document.getElementById('nav-menu');var e=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',!e);m.classList.toggle('is-open');});</script>
 <script src="/assets/js/cookie-consent.js" defer></script>
 <script src="/assets/js/compare-widget.js" defer></script>

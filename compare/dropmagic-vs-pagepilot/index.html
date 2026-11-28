@@ -23,7 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -40,7 +40,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .vs-tool-score{font-size:2rem;font-weight:800;color:#a5b4fc;}
     .vs-badge{background:rgba(99,102,241,0.12);border:2px solid rgba(99,102,241,0.4);border-radius:9999px;padding:0.5rem 1.25rem;font-weight:700;font-size:1.1rem;color:#c7d2fe;}
     .winner-callout{background:linear-gradient(135deg,rgba(34,197,94,0.15),rgba(22,163,74,0.1));border:1px solid rgba(34,197,94,0.3);border-radius:var(--radius-lg);padding:1.5rem;margin:2rem 0;}
-    .winner-callout h3{color:white;margin-bottom:0.5rem;}
+    .winner-callout h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .winner-callout .hl3{color:white;margin-bottom:0.5rem;}
     .choose-box{border:2px solid var(--color-border);border-radius:var(--radius-lg);padding:1.5rem;margin-bottom:1rem;}
     .choose-box.winner{border-color:#6366f1;}
     .winner-col{background:rgba(34,197,94,0.08);font-weight:600;color:#4ade80;}
@@ -177,13 +178,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 
   <div class="winner-callout">
-    <h3>🏆 It depends on whether you already have a store</h3>
+    <h2 class="hl3">🏆 It depends on whether you already have a store</h2>
     <p style="color:rgba(203,213,225,0.8);margin:0;"><strong>Dropmagic</strong> wins for launching new stores: one product link becomes a full branded store, and Pro covers unlimited stores for $79/mo. <strong>PagePilot</strong> wins on price for sellers who already run a store and just need product pages, starting at $39/mo with more AI images per dollar.</p>
   </div>
 
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:2rem 0;">
     <div class="choose-box winner">
-      <h4 style="color:#4ade80;margin-bottom:0.75rem;">Choose Dropmagic if you…</h4>
+      <h3 class="hl4" style="color:#4ade80;margin-bottom:0.75rem;">Choose Dropmagic if you…</h3>
       <ul style="color:rgba(203,213,225,0.85);font-size:0.9rem;margin:0;padding-left:1.2rem;">
         <li>Are starting from zero and want a whole store, not just one page</li>
         <li>Launch a separate store per niche or product, since Pro covers unlimited stores</li>
@@ -287,8 +288,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand"><a href="/" style="display:flex;align-items:center;gap:0.5rem;text-decoration:none;"><img src="/assets/images/logo-dark.webp" onerror="this.src='/assets/images/logo-dark.png'" alt="Dark logo" style="height:32px;width:32px;object-fit:contain;" loading="lazy"><span style="font-size:1rem;font-weight:900;background:linear-gradient(135deg,#f97316,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">RankerTool AI</span></a><p class="footer-tagline">Independent AI tool reviews.</p></div>
-      <div class="footer-col"><h5>Compare</h5><ul><li><a href="/compare/">All Comparisons</a></li></ul></div>
-      <div class="footer-col"><h5>Reviews</h5><ul><li><a href="/review/dropmagic/">Dropmagic Review</a></li><li><a href="/review/">All Reviews</a></li></ul></div>
+      <div class="footer-col"><h3 class="hl5">Compare</h3><ul><li><a href="/compare/">All Comparisons</a></li></ul></div>
+      <div class="footer-col"><h4 class="hl5">Reviews</h4><ul><li><a href="/review/dropmagic/">Dropmagic Review</a></li><li><a href="/review/">All Reviews</a></li></ul></div>
       <div class="footer-col"><h5>Legal</h5><ul><li><a href="/affiliate-disclosure/">Affiliate Disclosure</a></li><li><a href="/privacy-policy/">Privacy Policy</a></li><li><a href="/terms/">Terms</a></li></ul></div>
     </div>
     <div class="footer-bottom"><p>&copy; 2026 RankerToolAI. All rights reserved.</p><p><a href="/affiliate-disclosure/">Affiliate Disclosure</a></p></div>

@@ -23,7 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -36,7 +36,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .quick-pick-row:last-child{border:none;}
     .quick-pick-badge{font-size:0.7rem;padding:0.2rem 0.5rem;border-radius:9999px;font-weight:700;background:var(--color-primary-light);color:var(--color-primary);white-space:nowrap;}
     .why-switch{background:linear-gradient(135deg,#fef3c7,#fffbeb);border:1px solid #fcd34d;border-radius:var(--radius-lg);padding:1.5rem;margin-bottom:2rem;}
-    .why-switch h3,.why-switch li,.why-switch strong{color:#92400e;}
+    .why-switch h3:not(:where(.hl3,.hl4,.hl5,.hl6)),.why-switch li,.why-switch strong,
+    .why-switch .hl3{color:#92400e;}
     .alt-rank-num{width:36px;height:36px;border-radius:50%;background:var(--color-primary);color:white;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1rem;flex-shrink:0;}
     #back-to-top{display:none;position:fixed;bottom:1.5rem;right:1.5rem;width:44px;height:44px;border-radius:50%;background:var(--color-primary);color:white;align-items:center;justify-content:center;font-size:1.25rem;cursor:pointer;border:none;box-shadow:var(--shadow-lg);z-index:50;}
   </style>
@@ -150,7 +151,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="why-switch">
-      <h3 style="margin-bottom:0.75rem;">Why People Switch from Perplexity AI</h3>
+      <h2 class="hl3" style="margin-bottom:0.75rem;">Why People Switch from Perplexity AI</h2>
       <ul style="margin:0;padding-left:1.25rem;line-height:1.9;"><li><strong>No document upload on free:</strong> Perplexity Pro ($20/mo) is needed for file uploads and advanced models</li><li><strong>Hallucination risk:</strong> Perplexity cites sources but still synthesizes incorrectly on complex queries</li><li><strong>Cost:</strong> $20/mo Pro — same price as ChatGPT Plus or Claude Pro with broader capabilities</li><li><strong>Writing quality:</strong> for long-form content generation, Claude and ChatGPT produce better prose than Perplexity</li><li><strong>Privacy:</strong> Kagi is a privacy-first alternative without ad-based tracking</li></ul>
     </div>
 
@@ -190,7 +191,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>ChatGPT with GPT-4o is the most versatile AI assistant available — it handles web search, document analysis (PDFs, spreadsheets, images), code execution, image generation with DALL-E, and extended reasoning with o3. At the same $20/month price as Perplexity Pro, ChatGPT Plus provides significantly broader capabilities. ChatGPT's web search feature (built into GPT-4o) retrieves and cites current web information — the same core function as Perplexity — while also supporting the full range of tasks Perplexity can't handle.</p>
       <p>The main advantage Perplexity retains over ChatGPT for research is speed and interface focus: Perplexity's UI is purpose-built for search, showing citations prominently and following up with related questions automatically. ChatGPT's web search works well but is embedded in a broader conversational interface not optimized for rapid research workflows. For users who primarily want cited web search, Perplexity's focused interface is genuinely faster. For users who want one tool for everything, ChatGPT's breadth wins.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Perplexity AI</h4><ul><li>Web search + document analysis + code execution in one</li><li>DALL-E image generation built in</li><li>Deep Research mode for comprehensive topic reports</li><li>GPT-4o + o3 reasoning models</li><li>1,000+ third-party integrations</li></ul></div>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Perplexity AI</h3><ul><li>Web search + document analysis + code execution in one</li><li>DALL-E image generation built in</li><li>Deep Research mode for comprehensive topic reports</li><li>GPT-4o + o3 reasoning models</li><li>1,000+ third-party integrations</li></ul></div>
         <div class="cons"><h4>❌ Cons vs Perplexity AI</h4><ul><li>Less focused search UX than Perplexity</li><li>ChatGPT Deep Research slower than Perplexity for quick queries</li><li>Free tier has usage limits on GPT-4o</li></ul></div>
       </div>
       <div style="display:flex;align-items:center;gap:1rem;margin-top:1rem;flex-wrap:wrap;">
@@ -215,7 +216,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>Claude by Anthropic is the best AI for analyzing long documents — its 200,000 token context window can process entire books, legal contracts, research papers, and code repositories in a single conversation. For researchers who need to extract insights from large documents rather than search the web, Claude's document analysis capability is the strongest in the market. Claude also produces the highest-quality long-form prose among AI assistants — more natural, less formulaic writing than ChatGPT or Perplexity.</p>
       <p>Claude's web search feature (available on paid plans) provides current information with citations, overlapping with Perplexity's core use case. But Claude's real advantage over Perplexity is depth over breadth: for complex research tasks that involve synthesizing multiple documents, crafting well-argued reports, or analyzing nuanced topics, Claude's reasoning quality and writing style produce more sophisticated outputs than Perplexity's search-optimized format. At the same $20/month price, Claude Pro offers more capability for document-intensive research workflows.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Perplexity AI</h4><ul><li>200K context — analyze full books/contracts</li><li>Best writing quality among AI assistants</li><li>Web search with citations on paid plans</li><li>Strong reasoning for complex analysis</li><li>Privacy-conscious — no data used for training by default</li></ul></div>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Perplexity AI</h3><ul><li>200K context — analyze full books/contracts</li><li>Best writing quality among AI assistants</li><li>Web search with citations on paid plans</li><li>Strong reasoning for complex analysis</li><li>Privacy-conscious — no data used for training by default</li></ul></div>
         <div class="cons"><h4>❌ Cons vs Perplexity AI</h4><ul><li>Less optimized for quick web search vs Perplexity</li><li>Smaller integration ecosystem than ChatGPT</li><li>No image generation</li></ul></div>
       </div>
       <div style="display:flex;align-items:center;gap:1rem;margin-top:1rem;flex-wrap:wrap;">
@@ -240,7 +241,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>You.com (YouChat) provides AI-powered web search with cited sources on a free plan — the most direct free alternative to Perplexity. YouChat synthesizes search results using AI and presents answers with numbered source citations, a format nearly identical to Perplexity's. The free tier has no hard usage limits for basic searches. You.com also includes specialized modes: ResearchMode for academic queries, CodeMode for programming questions, and WritingMode for content creation.</p>
       <p>You.com's answer quality is slightly below Perplexity Pro on complex research queries — it uses a mix of models on the free tier rather than Perplexity's consistent use of Claude/GPT-4 on Pro. But for everyday research queries, news summaries, and factual lookups where Perplexity's $20/month Pro cost is difficult to justify, You.com's free tier provides 80-85% of the value. The privacy-oriented feature (no profile building on free tier) is also appealing for users concerned about search data collection.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Perplexity AI</h4><ul><li>Free plan with cited AI search — no limits</li><li>Specialized modes (Research, Code, Writing)</li><li>Privacy-focused — no profiling</li><li>Good integration with standard search results</li><li>Quick source citation like Perplexity</li></ul></div>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Perplexity AI</h3><ul><li>Free plan with cited AI search — no limits</li><li>Specialized modes (Research, Code, Writing)</li><li>Privacy-focused — no profiling</li><li>Good integration with standard search results</li><li>Quick source citation like Perplexity</li></ul></div>
         <div class="cons"><h4>❌ Cons vs Perplexity AI</h4><ul><li>Answer quality below Perplexity Pro on complex queries</li><li>Less polished UI than Perplexity</li><li>Fewer follow-up research features</li></ul></div>
       </div>
       <div style="display:flex;align-items:center;gap:1rem;margin-top:1rem;flex-wrap:wrap;">
@@ -265,7 +266,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>Google Gemini integrates natively with Google Search, giving it the most current and comprehensive web information access among AI assistants — it draws from Google's full search index rather than a separate crawl. For users who live in Google Workspace (Gmail, Docs, Sheets, Slides, Drive), Gemini Advanced integrates directly into these tools, enabling AI assistance within your existing workflow without switching to a separate app.</p>
       <p>Gemini 1.5 Pro's 1 million token context window (the largest available) can process hours of video, entire codebases, or massive document collections in a single query — a capability that neither Perplexity nor most alternatives match. For researchers dealing with very large data sets, Gemini's context advantage is practical. Gemini's search quality benefits from Google's knowledge graph and real-time search index, making it particularly reliable for factual queries where Perplexity's independently crawled sources might lag.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Perplexity AI</h4><ul><li>Best search integration — full Google index</li><li>1M token context window (Gemini 1.5 Pro)</li><li>Native Google Workspace integration</li><li>Free plan with Gemini 1.5 Flash</li><li>Multimodal: text, images, video, audio</li></ul></div>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Perplexity AI</h3><ul><li>Best search integration — full Google index</li><li>1M token context window (Gemini 1.5 Pro)</li><li>Native Google Workspace integration</li><li>Free plan with Gemini 1.5 Flash</li><li>Multimodal: text, images, video, audio</li></ul></div>
         <div class="cons"><h4>❌ Cons vs Perplexity AI</h4><ul><li>Less focused research UI than Perplexity</li><li>Gemini Advanced $20/mo same as Perplexity Pro</li><li>Less polished writing quality than Claude</li></ul></div>
       </div>
       <div style="display:flex;align-items:center;gap:1rem;margin-top:1rem;flex-wrap:wrap;">
@@ -290,7 +291,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>Kagi is a paid, privacy-first search engine with built-in AI features (Kagi Assistant powered by multiple models including Claude and GPT-4). Unlike Perplexity, Kagi has no advertising, no tracking, and no data collection — your searches and AI queries are not used to build a profile or train models. For users who value search privacy and are willing to pay for it, Kagi's ad-free, tracker-free experience with AI search is a compelling alternative.</p>
       <p>Kagi's AI Assistant (on the $25/month Ultimate plan) provides multi-model AI with web search, document analysis, and cited answers — directly comparable to Perplexity Pro at a higher price but with stronger privacy guarantees. Kagi also allows users to customize search result rankings (boost sites you trust, block sites you find low quality), a unique feature that makes search results significantly more relevant than Perplexity's for power users with specific source preferences.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Perplexity AI</h4><ul><li>Zero advertising, zero tracking</li><li>AI search with multiple model options</li><li>Customize search results (boost/block sources)</li><li>High-quality organic search results</li><li>No data used for advertising or training</li></ul></div>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Perplexity AI</h3><ul><li>Zero advertising, zero tracking</li><li>AI search with multiple model options</li><li>Customize search results (boost/block sources)</li><li>High-quality organic search results</li><li>No data used for advertising or training</li></ul></div>
         <div class="cons"><h4>❌ Cons vs Perplexity AI</h4><ul><li>$10-25/mo — more expensive than Perplexity for comparable AI features</li><li>Smaller index than Google for obscure queries</li><li>Less known — smaller community and documentation</li></ul></div>
       </div>
       <div style="display:flex;align-items:center;gap:1rem;margin-top:1rem;flex-wrap:wrap;">
@@ -315,7 +316,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>Notion AI integrates AI search, summarization, and generation directly within Notion's workspace — ideal for researchers who take notes, build knowledge bases, and organize information in Notion. Notion AI can search across your entire Notion workspace and the web simultaneously, synthesize information from both, and save results directly into your notes. For researchers who want to capture and organize information rather than just get quick answers, Notion AI's integration with knowledge management is uniquely valuable.</p>
       <p>Notion AI answers questions using both your personal knowledge base and web sources, providing personalized research that Perplexity can't match (Perplexity has no awareness of your past research). For academics building literature reviews, consultants maintaining client knowledge bases, or anyone who regularly revisits and builds on previous research, Notion AI's workspace integration means each research session improves the quality of future research by adding to your personal knowledge graph.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Perplexity AI</h4><ul><li>Searches your Notion notes + web simultaneously</li><li>Saves research directly into organized notes</li><li>Builds personal knowledge base over time</li><li>Integrated writing and summarization</li><li>Good for academic and professional research workflows</li></ul></div>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Perplexity AI</h3><ul><li>Searches your Notion notes + web simultaneously</li><li>Saves research directly into organized notes</li><li>Builds personal knowledge base over time</li><li>Integrated writing and summarization</li><li>Good for academic and professional research workflows</li></ul></div>
         <div class="cons"><h4>❌ Cons vs Perplexity AI</h4><ul><li>Requires Notion subscription ($16/mo) plus AI add-on ($10/mo)</li><li>More expensive than Perplexity for web-only research</li><li>Less fast for quick single-question lookups</li></ul></div>
       </div>
       <div style="display:flex;align-items:center;gap:1rem;margin-top:1rem;flex-wrap:wrap;">
@@ -340,7 +341,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>Microsoft Copilot (formerly Bing Chat) provides GPT-4-powered AI search for free — with no usage limits on basic queries. It integrates Bing's real-time search index with GPT-4's reasoning, producing cited answers comparable to Perplexity's format. For users who don't want to pay for AI search, Microsoft Copilot is the most capable free option: real-time web access, multi-turn conversation, image generation (DALL-E 3), and document analysis in Edge browser.</p>
       <p>Microsoft Copilot's free tier includes features that Perplexity charges $20/month for: access to a frontier model (GPT-4o), image generation, and document upload. For Microsoft ecosystem users (Windows, Edge, Office), Copilot's deep integration — Copilot in Word, Copilot in Teams, Copilot in Excel — provides value that standalone Perplexity can't match. The primary limitation is that heavy users may find Microsoft's free tier slower during peak hours compared to Perplexity's dedicated infrastructure.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Perplexity AI</h4><ul><li>Free — GPT-4 powered with no usage limits</li><li>Bing real-time search index with citations</li><li>DALL-E 3 image generation free</li><li>Microsoft 365 integration for paid users</li><li>No account required for basic use</li></ul></div>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Perplexity AI</h3><ul><li>Free — GPT-4 powered with no usage limits</li><li>Bing real-time search index with citations</li><li>DALL-E 3 image generation free</li><li>Microsoft 365 integration for paid users</li><li>No account required for basic use</li></ul></div>
         <div class="cons"><h4>❌ Cons vs Perplexity AI</h4><ul><li>Slower during peak hours on free tier</li><li>Privacy concerns for Microsoft data collection</li><li>Less research-focused UX than Perplexity</li></ul></div>
       </div>
       <div style="display:flex;align-items:center;gap:1rem;margin-top:1rem;flex-wrap:wrap;">

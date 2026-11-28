@@ -33,7 +33,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;color:var(--color-text);}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -53,15 +53,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .score-label{font-size:0.7rem;color:rgba(148,163,184,0.6);font-weight:700;text-transform:uppercase;letter-spacing:0.05em;margin-top:0.25rem;}
     .score-stars{color:#60a5fa;font-size:1.1rem;margin:0.5rem 0;}
     .verdict-box{background:linear-gradient(135deg,rgba(59,130,246,0.08),rgba(37,99,235,0.05));border:1px solid rgba(59,130,246,0.25);border-radius:var(--radius-lg);padding:1.5rem;margin:2rem 0;}
-    .verdict-box h3{color:#60a5fa;margin-bottom:0.5rem;font-size:1rem;}
+    .verdict-box h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .verdict-box .hl3{color:#60a5fa;margin-bottom:0.5rem;font-size:1rem;}
     .verdict-box p{color:rgba(148,163,184,0.9);margin:0;font-size:0.95rem;line-height:1.7;}
     .pros-cons{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin:2rem 0;}
     @media(max-width:580px){.pros-cons{grid-template-columns:1fr;}}
     .pros-box,.cons-box{border-radius:var(--radius-lg);padding:1.5rem;}
     .pros-box{background:rgba(34,197,94,0.06);border:1px solid rgba(34,197,94,0.2);}
     .cons-box{background:rgba(239,68,68,0.06);border:1px solid rgba(239,68,68,0.2);}
-    .pros-box h3{color:#4ade80;margin-bottom:1rem;font-size:1rem;}
-    .cons-box h3{color:#f87171;margin-bottom:1rem;font-size:1rem;}
+    .pros-box h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .pros-box .hl3{color:#4ade80;margin-bottom:1rem;font-size:1rem;}
+    .cons-box h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .cons-box .hl3{color:#f87171;margin-bottom:1rem;font-size:1rem;}
     .pros-box li,.cons-box li{font-size:0.875rem;color:rgba(148,163,184,0.9);line-height:1.8;}
     .criteria-table{width:100%;border-collapse:collapse;margin:1.5rem 0;}
     .criteria-table th{text-align:left;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.05em;color:rgba(148,163,184,0.6);padding:0.75rem 1rem;border-bottom:1px solid rgba(255,255,255,0.08);}
@@ -71,7 +74,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .score-fill{height:100%;border-radius:999px;background:linear-gradient(90deg,#3b82f6,#60a5fa);}
     .score-fill.warn{background:linear-gradient(90deg,#dc2626,#f87171);}
     .affiliate-box{background:linear-gradient(135deg,#0d1224,#131c2e);border:2px solid rgba(59,130,246,0.3);border-radius:var(--radius-xl);padding:2rem;text-align:center;margin:2.5rem 0;}
-    .affiliate-box h3{color:#f1f5f9;margin-bottom:0.5rem;}
+    .affiliate-box h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .affiliate-box .hl3{color:#f1f5f9;margin-bottom:0.5rem;}
     .affiliate-box p{color:rgba(148,163,184,0.8);font-size:0.9rem;margin-bottom:1.25rem;}
     .btn-affiliate-lg{display:inline-flex;align-items:center;gap:0.5rem;padding:0.875rem 2.5rem;background:linear-gradient(135deg,#3b82f6,#60a5fa);color:#000;font-weight:800;font-size:1rem;border-radius:999px;text-decoration:none;box-shadow:0 4px 24px rgba(59,130,246,0.5);transition:all 0.2s;}
     .btn-affiliate-lg:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(59,130,246,0.65);text-decoration:none;color:#000;}
@@ -79,12 +83,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .review-layout{display:grid;grid-template-columns:1fr 280px;gap:2.5rem;padding:2rem 0 4rem;}
     @media(max-width:900px){.review-layout{grid-template-columns:1fr;}}
     .toc-sidebar{position:sticky;top:80px;background:linear-gradient(135deg,#131c2e,#0f1829);border:1px solid rgba(255,255,255,0.07);border-radius:var(--radius-lg);padding:1.5rem;}
-    .toc-sidebar h4{font-size:0.8rem;text-transform:uppercase;letter-spacing:0.05em;color:rgba(148,163,184,0.6);margin-bottom:1rem;font-weight:700;}
+    .toc-sidebar h4:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .toc-sidebar .hl4{font-size:0.8rem;text-transform:uppercase;letter-spacing:0.05em;color:rgba(148,163,184,0.6);margin-bottom:1rem;font-weight:700;}
     .toc-sidebar a{display:block;font-size:0.875rem;color:rgba(148,163,184,0.7);text-decoration:none;padding:0.4rem 0;border-left:2px solid transparent;padding-left:0.75rem;transition:all 0.15s;}
     .toc-sidebar a:hover{color:#60a5fa;border-left-color:#60a5fa;}
     .faq-item{border-bottom:1px solid rgba(255,255,255,0.07);padding:1.25rem 0;}
     .faq-item:last-child{border-bottom:none;}
-    .faq-item h3{font-size:1rem;color:#f1f5f9;margin-bottom:0.5rem;}
+    .faq-item h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .faq-item .hl3{font-size:1rem;color:#f1f5f9;margin-bottom:0.5rem;}
     .faq-item p{font-size:0.9rem;color:rgba(148,163,184,0.85);margin:0;line-height:1.7;}
     #back-to-top{display:none;position:fixed;bottom:1.5rem;right:1.5rem;width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#3b82f6,#60a5fa);color:#000;align-items:center;justify-content:center;font-size:1.25rem;cursor:pointer;border:none;box-shadow:0 4px 20px rgba(59,130,246,0.5);z-index:50;transition:all 0.15s;}
     .sticky-cta{position:fixed;bottom:0;left:0;right:0;background:linear-gradient(90deg,#0a0f1e,#0d1528);border-top:1px solid rgba(59,130,246,0.3);padding:0.75rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;z-index:100;transform:translateY(100%);transition:transform 0.3s ease;backdrop-filter:blur(12px);}
@@ -92,10 +98,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .sticky-cta-btn{flex-shrink:0;padding:0.55rem 1.25rem;background:linear-gradient(135deg,#3b82f6,#60a5fa);color:#000;font-weight:700;border-radius:var(--radius);text-decoration:none;font-size:0.85rem;white-space:nowrap;}
     .sticky-cta-btn:hover{color:#000;text-decoration:none;}
     .warn-box{background:rgba(239,68,68,0.08);border:1px solid rgba(239,68,68,0.25);border-radius:var(--radius-lg);padding:1.25rem 1.5rem;margin:1.5rem 0;}
-    .warn-box h4{color:#f87171;margin-bottom:0.5rem;font-size:0.9rem;}
+    .warn-box h4:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .warn-box .hl4{color:#f87171;margin-bottom:0.5rem;font-size:0.9rem;}
     .warn-box p{color:rgba(148,163,184,0.9);margin:0;font-size:0.875rem;line-height:1.7;}
     .sibling-card{background:var(--color-bg-alt);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:1.5rem;margin-bottom:1.25rem;}
-    .sibling-card h3{margin:0 0 0.35rem;color:#f1f5f9;}
+    .sibling-card h3:not(:where(.hl3,.hl4,.hl5,.hl6)),
+    .sibling-card .hl3{margin:0 0 0.35rem;color:#f1f5f9;}
     .sibling-rating{display:inline-flex;align-items:center;gap:0.35rem;font-size:0.85rem;color:#e2e8f0;margin-bottom:0.75rem;}
   </style>
   <script async src="/assets/js/pint.js"></script>
@@ -227,12 +235,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <article>
       <div class="verdict-box" id="verdict">
-        <h3>Our Verdict</h3>
+        <h2 class="hl3">Our Verdict</h2>
         <p>LiveChat is a mature, established live-chat widget (in the market since 2002) with AI-driven chat routing, canned responses, and integrations for the major CRM/helpdesk/e-commerce platforms. The 14-day free trial requires no credit card, so there's no real barrier to testing it against your own traffic before paying. The tradeoff is trust: LiveChat sits at a below-average 2.8/5 on Trustpilot from 96 reviews, and the recurring complaint theme is billing — customers report being charged before an invoice arrives and being billed after cancellation with refunds denied. This verdict is built from LiveChat's published feature set, pricing, and independent third-party reviews — RankerToolAI has not run a hands-on lab test of LiveChat.</p>
       </div>
 
       <div class="warn-box">
-        <h4>⚠ Before you enter card details</h4>
+        <h3 class="hl4">⚠ Before you enter card details</h3>
         <p>The most consistent complaint pattern in LiveChat's Trustpilot reviews is around billing: payments processed before an invoice is issued (unusual compared to typical SaaS billing flows), and some reviewers reporting they were charged after canceling with refund requests denied. This doesn't appear to reflect the chat widget's actual functionality — longer-tenured users describe the product itself favorably. Read the cancellation terms in your plan before committing, and confirm cancellation in writing.</p>
       </div>
 
@@ -448,7 +456,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 </footer>
-<script src="/assets/js/main.js?v=20261102"></script>
+<script src="/assets/js/main.js?v=20261128"></script>
 <script src="/assets/js/cookie-consent.js" defer></script>
 <script src="/assets/js/compare-widget.js" defer></script>
 <script>

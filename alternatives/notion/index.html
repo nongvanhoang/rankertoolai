@@ -23,7 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -36,7 +36,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .quick-pick-row:last-child{border:none;}
     .quick-pick-badge{font-size:0.7rem;padding:0.2rem 0.5rem;border-radius:9999px;font-weight:700;background:var(--color-primary-light);color:var(--color-primary);white-space:nowrap;}
     .why-switch{background:linear-gradient(135deg,#fef3c7,#fffbeb);border:1px solid #fcd34d;border-radius:var(--radius-lg);padding:1.5rem;margin-bottom:2rem;}
-    .why-switch h3,.why-switch li,.why-switch strong{color:#92400e;}
+    .why-switch h3:not(:where(.hl3,.hl4,.hl5,.hl6)),.why-switch li,.why-switch strong,
+    .why-switch .hl3{color:#92400e;}
     .alt-rank-num{width:36px;height:36px;border-radius:50%;background:var(--color-primary);color:white;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1rem;flex-shrink:0;}
     
       #back-to-top{display:none;position:fixed;bottom:80px;right:1.5rem;width:44px;height:44px;border-radius:50%;background:var(--color-primary);color:white;align-items:center;justify-content:center;font-size:1.25rem;cursor:pointer;border:none;box-shadow:var(--shadow-lg);z-index:50;}
@@ -160,7 +161,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="why-switch">
-      <h3 style="margin-bottom:0.75rem;">Why People Switch from Notion</h3>
+      <h2 class="hl3" style="margin-bottom:0.75rem;">Why People Switch from Notion</h2>
       <ul style="margin:0;padding-left:1.25rem;line-height:1.9;">
         <li><strong>Performance:</strong> large Notion databases load slowly — especially on mobile and with poor internet</li>
         <li><strong>Offline mode:</strong> limited offline functionality makes it unreliable when you lose connectivity</li>
@@ -207,7 +208,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Obsidian is the most popular Notion alternative for personal knowledge management and is completely free for personal use. Unlike Notion (cloud-first), Obsidian stores all your notes as plain Markdown files on your local device — you own your data, it works fully offline, and it's lightning-fast regardless of how many notes you have. The backlinks and graph view make it unmatched for building a personal knowledge base (PKM).</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Notion</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Notion</h3><ul>
           <li>Free for personal use — no subscription</li>
           <li>100% offline — no internet required</li>
           <li>Notes stored as plain Markdown (future-proof)</li>
@@ -244,7 +245,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Coda combines docs and spreadsheets into one powerful tool with a formula engine that rivals Google Sheets — far more powerful than Notion's database formulas. It has robust automation, conditional buttons, and native integrations with Slack, GitHub, and Jira. For teams that have hit the ceiling of Notion's database capabilities, Coda is the natural upgrade.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Notion</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Notion</h3><ul>
           <li>More powerful formula engine than Notion</li>
           <li>Conditional buttons and automation</li>
           <li>Better native integrations (Slack, GitHub, Jira)</li>
@@ -278,7 +279,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>ClickUp is the most feature-complete Notion alternative for teams that primarily need project management. It includes everything Notion offers (docs, wikis, databases) plus dedicated task management, Gantt charts, time tracking, sprints, OKRs, and whiteboarding — all in one platform. The free plan is generous: unlimited tasks, unlimited members, 100MB storage.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Notion</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Notion</h3><ul>
           <li>Superior task/project management features</li>
           <li>Generous free plan (unlimited tasks + members)</li>
           <li>Gantt charts, sprints, time tracking built-in</li>
@@ -312,7 +313,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Confluence by Atlassian is the gold standard for engineering team documentation. Its tight Jira integration means developers can link tickets to documentation pages, track decisions against tasks, and maintain runbooks alongside the sprints that produced them. If your team runs on Jira, Confluence is the natural and most powerful Notion alternative for your wiki and documentation needs.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Notion</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Notion</h3><ul>
           <li>Best-in-class Jira integration</li>
           <li>Enterprise security and compliance (SOC 2, GDPR)</li>
           <li>Structured page templates for engineering</li>
@@ -346,7 +347,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Craft is a beautifully designed document and note-taking app built natively for Apple platforms (Mac, iPhone, iPad). It's faster than Notion on Apple devices, exports to beautiful PDF and Markdown, and has offline-first architecture. For users who live in the Apple ecosystem and want a polished Notion alternative with a native Mac feel, Craft is unmatched.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Notion</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Notion</h3><ul>
           <li>Native Apple design — fastest on Mac/iOS</li>
           <li>Offline-first architecture</li>
           <li>Beautiful document export (PDF, Markdown, Word)</li>
@@ -380,7 +381,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Roam Research pioneered the bidirectional linking (backlinks) that made Obsidian famous. It's the most powerful tool for building a "second brain" — connecting ideas across notes, tracking daily journals, and building research databases. Roam is beloved by academics, researchers, and writers who want to explore non-linear thinking. The downside: $15/month with no free plan, and it has a steep learning curve.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Notion</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Notion</h3><ul>
           <li>Best bidirectional linking in the market</li>
           <li>Daily notes + journal system built-in</li>
           <li>Graph database model for idea connections</li>
@@ -413,7 +414,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Bear is a minimalist, markdown-based note-taking app for Apple devices. Where Notion does everything, Bear does notes — and does them beautifully. It's the cleanest writing environment available on Mac and iOS, with tag-based organization, native Markdown rendering, and distraction-free focus mode. If you want Notion's "just let me write" mode without all the database complexity, Bear delivers it better.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Notion</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Notion</h3><ul>
           <li>Fastest, most minimal writing experience</li>
           <li>Beautiful native Markdown support</li>
           <li>Tag-based organization (flexible)</li>
@@ -447,7 +448,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Logseq is a free, open-source outliner and knowledge management app that stores all data locally as plain text files (Markdown or Org-mode). It has Roam-style bidirectional linking, a journal system, graph view, and a growing plugin ecosystem. For users who want Obsidian's data ownership combined with Roam's outliner workflow — completely free — Logseq is the answer.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs Notion</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs Notion</h3><ul>
           <li>Completely free and open-source</li>
           <li>Local storage — full data ownership</li>
           <li>Bidirectional links + graph view</li>
@@ -742,7 +743,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="footer-bottom"><span>© 2026 RankerToolAI</span><span>Updated: October 4, 2026</span></div>
   </div>
 </footer>
-<script src="/assets/js/main.js?v=20261102"></script>
+<script src="/assets/js/main.js?v=20261128"></script>
 <script src="/assets/js/cookie-consent.js" defer></script>
 </body>
 </html>

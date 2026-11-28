@@ -23,7 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128">
   <style>
     #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
     @media(min-width:768px){#nav-toggle{display:none;}}
@@ -36,7 +36,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .quick-pick-row:last-child{border:none;}
     .quick-pick-badge{font-size:0.7rem;padding:0.2rem 0.5rem;border-radius:9999px;font-weight:700;background:var(--color-primary-light);color:var(--color-primary);white-space:nowrap;}
     .why-switch{background:linear-gradient(135deg,#fef3c7,#fffbeb);border:1px solid #fcd34d;border-radius:var(--radius-lg);padding:1.5rem;margin-bottom:2rem;}
-    .why-switch h3,.why-switch li,.why-switch strong{color:#92400e;}
+    .why-switch h3:not(:where(.hl3,.hl4,.hl5,.hl6)),.why-switch li,.why-switch strong,
+    .why-switch .hl3{color:#92400e;}
     .alt-rank-num{width:36px;height:36px;border-radius:50%;background:var(--color-primary);color:white;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1rem;flex-shrink:0;}
     #back-to-top{display:none;position:fixed;bottom:80px;right:1.5rem;width:44px;height:44px;border-radius:50%;background:var(--color-primary);color:white;align-items:center;justify-content:center;font-size:1.25rem;cursor:pointer;border:none;box-shadow:var(--shadow-lg);z-index:50;}
     .sticky-cta{position:fixed;bottom:0;left:0;right:0;background:linear-gradient(90deg,#0a0f1e,#0d1528);border-top:1px solid rgba(249,115,22,0.3);padding:0.75rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;z-index:100;transform:translateY(100%);transition:transform 0.3s ease;backdrop-filter:blur(12px);}
@@ -158,7 +159,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>beehiiv has quickly become one of the most recommended newsletter platforms for creators focused on growth, but it isn't automatically the right fit for every writer or every stage of a publication's life. Below we break down the seven alternatives worth genuinely considering, what each one does better than beehiiv, and — just as importantly — what you'd be giving up by switching.</p>
 
     <div class="why-switch">
-      <h3 style="margin-bottom:0.75rem;">Why People Look for beehiiv Alternatives</h3>
+      <h2 class="hl3" style="margin-bottom:0.75rem;">Why People Look for beehiiv Alternatives</h2>
       <ul style="margin:0;padding-left:1.25rem;line-height:1.9;">
         <li><strong>Pre-monetization cost:</strong> below ~$490/month in paid subscription revenue, a percentage-based platform like Substack costs less than beehiiv's flat monthly fee</li>
         <li><strong>Simplicity:</strong> beehiiv's growth/monetization tooling (boosts, ad marketplace, automations) is more than some writers want to manage</li>
@@ -204,7 +205,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Substack charges zero monthly fee, ever — it only takes a 10% cut once you turn on paid subscriptions, on top of standard Stripe processing fees. For a small or all-free newsletter, that means paying nothing at all, which beehiiv's free plan matches only up to 2,500 subscribers. Substack also has a built-in reader recommendation network that drives real organic discovery between newsletters.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs beehiiv</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs beehiiv</h3><ul>
           <li>Zero monthly fee at any subscriber count</li>
           <li>Built-in reader recommendation network</li>
           <li>Simpler, more minimalist writing experience</li>
@@ -238,7 +239,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>ConvertKit rebranded to Kit in late 2024, repositioning itself as an "email-first operating system for creators." It's the strongest option for creators selling digital products, courses, or coaching alongside a newsletter — its automation and funnel-building tools go deeper than beehiiv's for complex customer journeys tied to product sales rather than pure subscription monetization. Where beehiiv optimizes for growing and monetizing the newsletter itself, Kit optimizes for turning subscribers into customers of a separate product line, which is a meaningfully different job to be done.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs beehiiv</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs beehiiv</h3><ul>
           <li>Deeper automation for digital product/course sales funnels</li>
           <li>Built-in commerce features beyond subscriptions</li>
           <li>Strong landing page and opt-in form builder</li>
@@ -270,7 +271,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Ghost is an open-source publishing platform that combines a full website/CMS, email newsletter, and native paid memberships. Unlike beehiiv or Substack, you can self-host Ghost for free if you have the technical ability, giving you complete data ownership — or use the managed Ghost Pro starting around $9/month. It's the right choice when the newsletter is secondary to a content-rich website. Publications that think of themselves as a media brand first and a newsletter second — with archives, tagging, and a real navigation structure — tend to outgrow beehiiv's website builder faster than they outgrow Ghost's.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs beehiiv</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs beehiiv</h3><ul>
           <li>Full CMS/website builder, not just a newsletter template</li>
           <li>Self-hostable — complete data ownership, no vendor lock-in</li>
           <li>Native paid memberships with 0% platform commission (Ghost Pro)</li>
@@ -302,7 +303,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Mailchimp serves a fundamentally different market than beehiiv: established businesses needing coordinated email, SMS, and social marketing campaigns, often tied to e-commerce platforms like Shopify. For pure newsletter creators it's overbuilt and comparatively expensive, but for brands that need marketing automation beyond a newsletter, it remains comprehensive. If your newsletter is one channel among several inside a broader marketing operation, Mailchimp's ability to unify those channels in one dashboard can outweigh beehiiv's growth-specific advantages.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs beehiiv</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs beehiiv</h3><ul>
           <li>Deep e-commerce integrations (Shopify, WooCommerce)</li>
           <li>Multi-channel campaigns (email, SMS, social ads) in one tool</li>
           <li>Mature, enterprise-grade platform</li>
@@ -334,7 +335,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>MailerLite is a low-cost email marketing tool that covers the newsletter-sending basics well without beehiiv's growth-specific tooling. It's a reasonable pick for creators who mainly want reliable, affordable email delivery and a simple website builder, without needing an ad marketplace or referral network. For a newsletter that isn't trying to monetize aggressively, the savings versus beehiiv's flat fee can matter more than the growth tooling you'd be giving up.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs beehiiv</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs beehiiv</h3><ul>
           <li>Lower cost at most subscriber tiers</li>
           <li>Clean, simple drag-and-drop editor</li>
           <li>Generous free tier for smaller lists</li>
@@ -366,7 +367,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Buttondown is a deliberately minimal, developer-friendly newsletter tool — plain-text-first, with an API and Markdown support that technical writers appreciate. It skips the growth/monetization ecosystem beehiiv builds around, focused instead on being the simplest possible way to send a clean, well-deliverable newsletter. Technical writers who'd rather script their publishing workflow than click through a dashboard tend to prefer Buttondown's API-first philosophy over beehiiv's more visual, growth-oriented interface.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs beehiiv</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs beehiiv</h3><ul>
           <li>Minimalist, distraction-free writing experience</li>
           <li>Strong API and Markdown-first workflow for technical writers</li>
           <li>Transparent, simple pricing</li>
@@ -398,7 +399,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p>Brevo (formerly Sendinblue) targets small businesses needing email marketing, SMS, and light CRM in one tool, priced by email volume rather than subscriber count. It's a solid pick for a small business newsletter bundled with transactional email and marketing automation, but it isn't built around growing or monetizing an independent creator newsletter the way beehiiv is. Businesses that already send transactional receipts or order confirmations through Brevo sometimes prefer keeping the newsletter in the same system rather than adding a second platform just for beehiiv's creator-focused features.</p>
       <div class="pros-cons">
-        <div class="pros"><h4>✅ Pros vs beehiiv</h4><ul>
+        <div class="pros"><h3 class="hl4">✅ Pros vs beehiiv</h3><ul>
           <li>Volume-based pricing can be cheaper for small, infrequent sends</li>
           <li>Built-in CRM and SMS marketing</li>
           <li>Transactional email support</li>
