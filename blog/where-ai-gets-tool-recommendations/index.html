@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5Z86G265');</script>
+<!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <title>Where AI Gets Its AI Tool Recommendations: 630 Answers, 5 Models</title>
+  <meta name="description" content="We asked ChatGPT, Perplexity, Gemini, Google AI Overviews and AI Mode 42 AI tool questions, 3 times each. Google's AI cited YouTube in 71% of answers; ChatGPT leaned on small comparison sites.">
+  <link rel="canonical" href="https://rankertoolai.com/blog/where-ai-gets-tool-recommendations/">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Where AI Gets Its AI Tool Recommendations: 630 Answers, 5 Models", "description": "We asked ChatGPT, Perplexity, Gemini, Google AI Overviews and AI Mode 42 AI tool questions, 3 times each. Google's AI cited YouTube in 71% of answers; ChatGPT leaned on small comparison sites.", "datePublished": "2026-11-28", "dateModified": "2026-11-28", "author": {"@type": "Person", "name": "Hoang Nong", "url": "https://rankertoolai.com/author/hoang-nong/"}, "publisher": {"@type": "Organization", "name": "RankerToolAI", "url": "https://rankertoolai.com/"}, "mainEntityOfPage": "https://rankertoolai.com/blog/where-ai-gets-tool-recommendations/"}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Which websites do AI assistants cite most for AI tool recommendations?", "acceptedAnswer": {"@type": "Answer", "text": "In our 630 answers, YouTube (30% of answers), Reddit (21%) and Zapier (21%). A single answer can cite several sites."}}, {"@type": "Question", "name": "Does ChatGPT cite different sources than Google's AI?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Google AI Overviews and AI Mode cited YouTube in 65% to 78% of their answers. ChatGPT barely cited YouTube and instead leaned on small comparison sites such as iTechGuides (40% of its answers), Dupple (31%) and Rankite (29%)."}}, {"@type": "Question", "name": "Do AI tool directories get cited by AI assistants?", "acceptedAnswer": {"@type": "Answer", "text": "Rarely. G2 appeared in 28 of 630 answers; Futurepedia, There's An AI For That, Toolify and FutureTools together appeared in 15."}}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://rankertoolai.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://rankertoolai.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "Where AI Gets Tool Recommendations", "item": "https://rankertoolai.com/blog/where-ai-gets-tool-recommendations/"}]}</script>
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico"><link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
+  <link rel="stylesheet" href="/assets/css/base.css?v=20261128h2">
+  <style>
+    #nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--color-border);border-radius:var(--radius);background:none;cursor:pointer;font-size:1.25rem;}
+    @media(min-width:768px){#nav-toggle{display:none;}}
+    #nav-menu{display:none;}
+    #nav-menu.is-open{display:flex;flex-direction:column;position:absolute;top:64px;left:0;right:0;background:#080c18;border-bottom:1px solid rgba(255,255,255,0.08);padding:1rem;z-index:200;box-shadow:var(--shadow-lg);}
+    @media(min-width:768px){#nav-menu{display:flex!important;flex-direction:row;position:static;border:none;padding:0;box-shadow:none;}}
+    .site-header{position:relative;}
+    .tool-card{background:var(--color-bg-alt);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:1.5rem;margin-bottom:1.5rem;position:relative;}
+    .tool-card.featured{border-color:rgba(249,115,22,0.5);background:linear-gradient(135deg,rgba(249,115,22,0.05),rgba(251,191,36,0.02));}
+    .rank-badge{position:absolute;top:-12px;left:1.5rem;background:var(--color-primary);color:white;font-size:0.7rem;font-weight:800;padding:0.2rem 0.65rem;border-radius:9999px;text-transform:uppercase;letter-spacing:0.05em;}
+    .rank-badge.top3{background:linear-gradient(90deg,#f97316,#fbbf24);}
+    .tool-score{display:inline-flex;align-items:center;gap:0.35rem;background:#0d1224;border:1px solid var(--color-border);border-radius:var(--radius);padding:0.25rem 0.65rem;font-size:0.85rem;font-weight:700;color:#f97316;}
+    .tag{display:inline-block;background:rgba(249,115,22,0.1);border:1px solid rgba(249,115,22,0.25);color:#fbbf24;font-size:0.7rem;padding:0.15rem 0.5rem;border-radius:9999px;margin:0.15rem;}
+    .faq-item{border:1px solid var(--color-border);border-radius:var(--radius);margin-bottom:0.75rem;padding:1.25rem;}
+    .faq-item h3:not(:where(.hl3,.hl4,.hl5,.hl6)){margin:0 0 0.5rem;font-size:1rem;}
+    .faq-item p{margin:0;color:var(--color-text-muted);font-size:0.875rem;}
+    .winner-box{background:linear-gradient(135deg,rgba(34,197,94,0.12),rgba(22,163,74,0.06));border:1px solid rgba(34,197,94,0.3);border-radius:var(--radius-lg);padding:1.25rem;margin-bottom:2rem;}
+    .code-block{background:#0b1120;border:1px solid rgba(255,255,255,0.1);border-radius:var(--radius);padding:1rem 1.25rem;overflow-x:auto;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:0.85rem;line-height:1.6;color:#e2e8f0;margin:1rem 0;white-space:pre;}
+  </style>
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="RankerToolAI">
+  <meta property="og:title" content="Where AI Gets Its AI Tool Recommendations: 630 Answers, 5 Models">
+  <meta property="og:description" content="We asked ChatGPT, Perplexity, Gemini, Google AI Overviews and AI Mode 42 AI tool questions, 3 times each. Google's AI cited YouTube in 71% of answers; ChatGPT leaned on small comparison sites.">
+  <meta property="og:url" content="https://rankertoolai.com/blog/where-ai-gets-tool-recommendations/">
+  <meta property="og:image" content="https://rankertoolai.com/assets/images/blog/30-days-tracking-ai-citations/rta-citations.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@rankertoolai">
+    <script async src="/assets/js/pint.js"></script>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7922606734780809" crossorigin="anonymous"></script>
+
+  <!-- ═══ ANALYTICS & ADS TRACKING ═══ -->
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var passKeys = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','gclid'];
+      var incoming = new URLSearchParams(window.location.search);
+      document.querySelectorAll('a[href*="/go/"]').forEach(function(el) {
+        el.addEventListener('click', function() {
+          try {
+            var dest = new URL(el.href, window.location.href);
+            passKeys.forEach(function(k) {
+              if (incoming.has(k) && !dest.searchParams.has(k)) dest.searchParams.set(k, incoming.get(k));
+            });
+            el.href = dest.toString();
+          } catch (e) {}
+
+          var _tool = (el.href.split('/go/')[1] || '').split(/[?#]/)[0].replace(/\//g,'') || 'unknown';
+          var _comm = (window.AFFILIATE_COMMISSIONS && window.AFFILIATE_COMMISSIONS[_tool]) || {value:1.0,currency:'USD'};
+          dataLayer.push({
+            event: 'affiliate_click',
+            tool: _tool,
+            page: window.location.pathname,
+            value: _comm.value,
+            currency: _comm.currency
+          });
+        });
+      });
+
+      setTimeout(function() {
+        dataLayer.push({event: 'engaged_60s'});
+      }, 60000);
+    });
+  </script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window,document,"clarity","script","x97zf4vn2v");
+  </script>
+  <!-- ══════════════════════════════════ -->
+  </head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Z86G265"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="/" class="site-logo" style="-webkit-text-fill-color:unset;background:none;display:flex;align-items:center;gap:0.5rem;text-decoration:none;">
+        <img src="/assets/images/logo-dark.webp" onerror="this.src='/assets/images/logo-dark.png'" alt="Dark logo" style="height:38px;width:38px;object-fit:contain;">
+        <span style="font-size:1.15rem;font-weight:900;background:linear-gradient(135deg,#f97316,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">RankerTool<span style="background:linear-gradient(135deg,#22c55e,#4ade80);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;"> AI</span></span>
+      </a>
+      <button id="nav-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
+      <nav aria-label="Primary" style="display:contents">
+      <ul class="nav-primary" id="nav-menu" role="list">
+        <li><a href="/review/">Reviews</a></li><li><a href="/compare/">Compare</a></li>
+        <li><a href="/alternatives/">Alternatives</a></li><li><a href="/best/" style="color:var(--color-primary);">Best Tools</a></li>
+        <li><a href="/category/">Categories</a></li><li><a href="/blog/">Blog</a></li>
+        <li><a href="/deals/" style="color:#fbbf24;font-weight:600;">Deals</a></li>
+      </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <nav class="breadcrumb">
+    <a href="/">Home</a><span class="breadcrumb-sep">›</span>
+    <a href="/blog/">Blog</a><span class="breadcrumb-sep">›</span>
+    <span>Where AI Gets Tool Recommendations</span>
+  </nav>
+</div>
+
+<main class="container" style="padding-top:1rem;padding-bottom:4rem;">
+  <article style="max-width:760px;">
+    <h1 style="font-size:clamp(1.6rem,4vw,2.25rem);margin-bottom:0.5rem;">Where AI Gets Its AI Tool Recommendations: 630 Answers Across 5 Models</h1>
+    <p style="color:var(--color-text-muted);font-size:1rem;margin-bottom:0.5rem;">By <a href="/author/hoang-nong/">Hoang Nong</a> · November 28, 2026 · Data collected October 28 to November 9, 2026. See our <a href="/methodology/">methodology</a>.</p>
+    <p style="font-size:0.8rem;color:rgba(148,163,184,0.7);margin-bottom:1rem;">Disclosure: the data comes from LLM Pulse, which we used on a free 30-day trial, and we are an LLM Pulse affiliate. LLM Pulse had no say in this report. <a href="/affiliate-disclosure/">Read our disclosure</a>.</p>
+    <div class="winner-box">
+      <strong style="color:#4ade80;">Short Answer</strong>
+      <p style="margin:0.5rem 0 0;color:#e2e8f0;font-size:0.9rem;">There is no single source to win. Google's AI products lean heavily on YouTube (cited in 71% of their answers). ChatGPT leans on a handful of small comparison sites. Reddit and Zapier show up almost everywhere. AI tool directories barely appear.</p>
+    </div>
+    <p style="color:var(--color-text-muted);line-height:1.8;">We asked 5 AI systems the same 42 questions about choosing AI tools, such as "best AI meeting notes app", on three dates, then counted which websites each answer cited. Our own site was cited in 2 of the 630 answers, so we report this as observers, not winners. For what happened to our own pages over a full month, see <a href="/blog/30-days-tracking-ai-citations/">our 30-day tracking report</a>.</p>
+    <section id="top-sources" style="margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.08);">
+      <h2 style="font-size:1.3rem;color:#f1f5f9;margin-bottom:1rem;">The sources cited most often</h2>
+      <div style="overflow-x:auto;"><table class="comparison-table"><thead><tr><th>Website</th><th>Answers citing it</th><th>Share of 630</th></tr></thead><tbody><tr><td>youtube.com</td><td>188</td><td>29.8%</td></tr><tr><td>reddit.com</td><td>135</td><td>21.4%</td></tr><tr><td>zapier.com</td><td>132</td><td>21.0%</td></tr><tr><td>canva.com</td><td>69</td><td>11.0%</td></tr><tr><td>heygen.com</td><td>50</td><td>7.9%</td></tr><tr><td>itechguides.com</td><td>50</td><td>7.9%</td></tr><tr><td>dupple.com</td><td>40</td><td>6.3%</td></tr><tr><td>rankite.com</td><td>38</td><td>6.0%</td></tr><tr><td>medium.com</td><td>36</td><td>5.7%</td></tr><tr><td>theairankings.com</td><td>35</td><td>5.6%</td></tr></tbody></table></div>
+      <p style="color:var(--color-text-muted);line-height:1.8;">A single answer can cite many sites, so the shares add up to more than 100%. Across all answers we saw 1,825 different domains, so the long tail is very long.</p>
+    </section>
+    <section id="by-model" style="margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.08);">
+      <h2 style="font-size:1.3rem;color:#f1f5f9;margin-bottom:1rem;">Each AI behaves differently</h2>
+      <p style="color:var(--color-text-muted);line-height:1.8;">Each AI gave 126 answers. These are its top three sources.</p><div style="overflow-x:auto;"><table class="comparison-table"><thead><tr><th>AI</th><th>1st</th><th>2nd</th><th>3rd</th></tr></thead><tbody><tr><td>Google AI Overview</td><td>YouTube (77.8%)</td><td>Reddit (35.7%)</td><td>Zapier (19.8%)</td></tr><tr><td>Google AI Mode</td><td>YouTube (65.1%)</td><td>Reddit (34.9%)</td><td>Zapier (22.2%)</td></tr><tr><td>ChatGPT</td><td>iTechGuides (39.7%)</td><td>Dupple (31.0%)</td><td>Rankite (29.4%)</td></tr><tr><td>Perplexity</td><td>Zapier (19.0%)</td><td>Reddit (15.1%)</td><td>Pictory (11.9%)</td></tr><tr><td>Gemini</td><td>Zapier (31.0%)</td><td>Reddit (18.3%)</td><td>HeyGen, Lindy (11.9% each)</td></tr></tbody></table></div>
+      <ul style="color:var(--color-text-muted);line-height:2;padding-left:1.5rem;">
+        <li><strong>YouTube is mostly a Google AI source.</strong> Of the 188 answers citing YouTube, 180 came from AI Overviews and AI Mode. ChatGPT, Perplexity and Gemini together cited it 8 times in 378 answers.</li>
+        <li><strong>ChatGPT favored small comparison sites.</strong> iTechGuides, Dupple, Rankite and The AI Rankings (22.2%) are not household names, yet each appeared in a fifth or more of ChatGPT's answers. None came close to that on the other systems.</li>
+        <li><strong>Zapier was the most consistent.</strong> It was in the top 10 on all five systems, cited in 16 to 39 answers on each.</li>
+        <li><strong>Reddit was second on four of the five systems.</strong> Only ChatGPT left it out of its top three.</li>
+      </ul>
+    </section>
+    <section id="cited-pages" style="margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.08);">
+      <h2 style="font-size:1.3rem;color:#f1f5f9;margin-bottom:1rem;">What the pages ChatGPT cites look like</h2>
+      <p style="color:var(--color-text-muted);line-height:1.8;">In early November we read one cited page from each of those four sites. This is a small, hand-picked sample.</p><div style="overflow-x:auto;"><table class="comparison-table"><thead><tr><th>Page</th><th>Near the top</th><th>Comparison table</th><th>Date shown</th><th>Stated basis</th></tr></thead><tbody><tr><td>iTechGuides, text-to-video</td><td>Picks by need, in the first lines</td><td>Yes, 21 tools</td><td>None in the text we read</td><td>Not stated in the part we read</td></tr><tr><td>Dupple, meeting assistants</td><td>Key facts and a short answer</td><td>Yes, 8 tools</td><td>Updated October 2026</td><td>Pricing pages, documentation, public user reports</td></tr><tr><td>Rankite, text-to-video</td><td>Key takeaways</td><td>Yes, 9 tools</td><td>Last verified Oct 26, 2026</td><td>Pricing pages, documentation, public user reviews</td></tr><tr><td>The AI Rankings, data analysis</td><td>A labeled quick answer</td><td>Yes, several tables</td><td>Updated October 2026</td><td>Published benchmarks and pricing</td></tr></tbody></table></div>
+      <p style="color:var(--color-text-muted);line-height:1.8;">All four give a summary early, compare tools in a table and sort them by what the reader needs. Three show a recent date. Two say they work from pricing pages, documentation and public reviews, so a lab test does not appear to be required to get cited.</p>
+      <p style="color:var(--color-text-muted);line-height:1.8;">These pages are not neutral. iTechGuides and Dupple disclose affiliate links, and Rankite's page says vendors can request a listing or ask about featured placement. We did not study the pages ChatGPT skipped, so we cannot say these features are why it chose them.</p>
+    </section>
+    <section id="directories" style="margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.08);">
+      <h2 style="font-size:1.3rem;color:#f1f5f9;margin-bottom:1rem;">AI tool directories barely appear</h2>
+      <div style="overflow-x:auto;"><table class="comparison-table"><thead><tr><th>Directory or review platform</th><th>Answers citing it (of 630)</th></tr></thead><tbody><tr><td>G2</td><td>28</td></tr><tr><td>Capterra</td><td>6</td></tr><tr><td>Futurepedia</td><td>6</td></tr><tr><td>There's An AI For That</td><td>5</td></tr><tr><td>Trustpilot</td><td>4</td></tr><tr><td>Toolify</td><td>3</td></tr><tr><td>FutureTools</td><td>1</td></tr></tbody></table></div>
+      <p style="color:var(--color-text-muted);line-height:1.8;">We expected directories to compete with review sites. In these answers, they mostly did not.</p>
+    </section>
+    <section id="review-sites" style="margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.08);">
+      <h2 style="font-size:1.3rem;color:#f1f5f9;margin-bottom:1rem;">What one AI said about review sites</h2>
+      <p style="color:var(--color-text-muted);line-height:1.8;">Asked where to find honest AI tool reviews, Google AI Mode warned that the space is "flooded with affiliate-driven 'top 10' listicles and incentivized feedback", and pointed people to Reddit, low-star G2 and Capterra reviews, newsletters and independent YouTube testers. That is one answer, not a trend. We publish affiliate reviews ourselves, so it is fair to include it.</p>
+    </section>
+    <section id="what-to-do" style="margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.08);">
+      <h2 style="font-size:1.3rem;color:#f1f5f9;margin-bottom:1rem;">What we would do with this</h2>
+      <p style="color:var(--color-text-muted);line-height:1.8;">These numbers show what gets cited, not why, so treat these as reasonable bets rather than proven tactics.</p>
+      <ol style="color:var(--color-text-muted);line-height:2;padding-left:1.5rem;">
+        <li><strong>Decide which AI matters to you first.</strong> A plan for Google's AI answers looks different from a plan for ChatGPT. Check where your AI referral visits actually come from.</li>
+        <li><strong>For Google's AI answers, publish real demos on YouTube.</strong> It was cited in 65% to 78% of answers on the two Google systems.</li>
+        <li><strong>For ChatGPT, make comparison pages easy to read and keep them current.</strong> Put the answer first, use a table and show when you last checked.</li>
+        <li><strong>Answer real questions on Reddit</strong> without dropping links.</li>
+        <li><strong>Do not count on directory listings alone</strong> for AI visibility.</li>
+      </ol>
+      <p style="color:var(--color-text-muted);line-height:1.8;">To track this for your own site, see our <a href="/best/geo-tools/">GEO tools roundup</a> or our <a href="/review/llm-pulse/">LLM Pulse review</a>.</p>
+    </section>
+    <section id="method" style="margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.08);">
+      <h2 style="font-size:1.3rem;color:#f1f5f9;margin-bottom:1rem;">How we did this, and what it cannot tell you</h2>
+      <ul style="color:var(--color-text-muted);line-height:2;padding-left:1.5rem;">
+        <li><strong>Tool:</strong> <a href="/review/llm-pulse/">LLM Pulse</a> ran each question and recorded the answers and their cited sources.</li>
+        <li><strong>Sample:</strong> 42 generic questions with no brand named, in US English, run on October 28, November 2 and November 9, 2026, on 5 systems: 630 answers.</li>
+        <li><strong>Counting:</strong> an answer counts once for a site, however many times it links there.</li>
+        <li><strong>"Cited" means listed as a source.</strong> LLM Pulse records some sources without a rank (background sources). We could not confirm whether our counts exclude them, so a cited site may not be linked in the visible answer.</li>
+        <li><strong>We wrote the questions,</strong> and they lean toward the tools we cover. Different questions would give different results.</li>
+        <li><strong>This is a snapshot.</strong> Three runs over two weeks cannot show a long-term trend.</li>
+        <li><strong>Some domains are not ordinary publishers.</strong> google.com (53 answers) and chatgpt.com (34) are left out of the first table. Canva and HeyGen sell the tools being discussed, so they are not independent sources.</li>
+        <li><strong>Correlation only.</strong> Being cited does not prove a site is accurate, or that it earns traffic.</li>
+      </ul>
+      <p style="color:var(--color-text-muted);line-height:1.8;">You are welcome to quote these numbers. Please link to this page as the source.</p>
+    </section>
+    <section id="faq" style="margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.08);">
+      <h2 style="font-size:1.3rem;color:#f1f5f9;margin-bottom:1rem;">FAQ</h2>
+      <div class="faq-item"><h3>Which websites do AI assistants cite most for AI tool recommendations?</h3><p>In our 630 answers, YouTube (30% of answers), Reddit (21%) and Zapier (21%). A single answer can cite several sites.</p></div>
+      <div class="faq-item"><h3>Does ChatGPT cite different sources than Google's AI?</h3><p>Yes. Google AI Overviews and AI Mode cited YouTube in 65% to 78% of their answers. ChatGPT barely cited YouTube and instead leaned on small comparison sites such as iTechGuides (40% of its answers), Dupple (31%) and Rankite (29%).</p></div>
+      <div class="faq-item"><h3>Do AI tool directories get cited by AI assistants?</h3><p>Rarely. G2 appeared in 28 of 630 answers; Futurepedia, There's An AI For That, Toolify and FutureTools together appeared in 15.</p></div>
+    </section>
+  </article>
+</main>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="/" style="display:flex;align-items:center;gap:0.5rem;text-decoration:none;"><img src="/assets/images/logo-dark.webp" onerror="this.src='/assets/images/logo-dark.png'" alt="Dark logo" style="height:32px;width:32px;object-fit:contain;" loading="lazy"><span style="font-size:1rem;font-weight:900;background:linear-gradient(135deg,#f97316,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">RankerTool AI</span></a><p class="footer-tagline">Independent AI &amp; software tool reviews.</p></div>
+      <div class="footer-col"><h4 class="hl5">This Category</h4><ul><li><a href="/review/claude/">Claude Review</a></li><li><a href="/review/cursor/">Cursor Review</a></li><li><a href="/best/ai-coding-tools/">AI Coding Tools</a></li></ul></div>
+      <div class="footer-col"><h5>Best Tools</h5><ul><li><a href="/best/data-recovery-backup-software/">Data Recovery & Backup</a></li><li><a href="/best/ai-writing-tools/">AI Writing Tools</a></li><li><a href="/best/free-ai-tools/">Free AI Tools</a></li></ul></div>
+      <div class="footer-col"><h5>About</h5><ul><li><a href="/methodology/">Methodology</a></li><li><a href="/affiliate-disclosure/">Disclosure</a></li><li><a href="/privacy-policy/">Privacy</a></li></ul></div>
+    </div>
+    <div class="footer-disclosure"><strong>Affiliate Disclosure:</strong> This page contains affiliate links. <a href="/affiliate-disclosure/" style="color:#9ca3af;">Full disclosure →</a></div>
+    <div class="footer-bottom"><span>© 2026 RankerToolAI</span><span>Updated: November 2026</span></div>
+  </div>
+</footer>
+<script src="/assets/js/main.js?v=20261128h2"></script>
+<script src="/assets/js/cookie-consent.js" defer></script>
+</body>
+</html>
