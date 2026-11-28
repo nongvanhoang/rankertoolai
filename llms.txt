@@ -9,6 +9,10 @@
 - [Alternatives](https://rankertoolai.com/alternatives/): Alternatives to popular tools, with feature and pricing differences.
 - [Blog](https://rankertoolai.com/blog/): Guides and explainers.
 
+## Original research
+- [Where AI Gets Its AI Tool Recommendations](https://rankertoolai.com/blog/where-ai-gets-tool-recommendations/): Which websites 5 AI systems cited across 630 answers to AI tool questions, broken down by AI.
+- [30 Days Tracking AI Citations](https://rankertoolai.com/blog/30-days-tracking-ai-citations/): What got our own pages cited by ChatGPT, Perplexity and Google AI over a month.
+
 ## Best-of lists
 - [Best AI Tools for Shopify Dropshipping](https://rankertoolai.com/best/ai-shopify-tools/): Store builders, product page tools and sourcing tools compared.
 - [Best GEO Tools](https://rankertoolai.com/best/geo-tools/): AI visibility trackers compared, with results from our own tracking.
@@ -24,6 +28,8 @@
 - [LLM Pulse Review](https://rankertoolai.com/review/llm-pulse/): Tracking brand visibility in AI answers, including results from a real trial.
 - [Joiin Review](https://rankertoolai.com/review/joiin/): Financial consolidation and reporting.
 - [Pictory Review](https://rankertoolai.com/review/pictory/): Turning text into video.
+- [GearUP Booster Review](https://rankertoolai.com/review/gearup-booster/): Game network booster: what it does, safety, supported games.
+- [GearUP Booster Pricing](https://rankertoolai.com/pricing/gearup-booster/): Is GearUP Booster free, every plan, and refund rules by region.
 - [Jasper Review](https://rankertoolai.com/review/jasper/): AI marketing writing.
 
 ## Comparisons
