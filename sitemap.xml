@@ -89,12 +89,6 @@
 
   <!-- Review Pages -->
   <url>
-    <loc>https://rankertoolai.com/review/adcreative-ai/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
     <loc>https://rankertoolai.com/review/airops/</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
@@ -109,12 +103,6 @@
   <url>
     <loc>https://rankertoolai.com/review/beehiiv/</loc>
     <lastmod>2026-11-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://rankertoolai.com/review/capcut/</loc>
-    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -197,32 +185,14 @@
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://rankertoolai.com/review/frase/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
     <loc>https://rankertoolai.com/review/gearup-booster/</loc>
     <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://rankertoolai.com/review/getresponse/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
     <loc>https://rankertoolai.com/review/grammarly/</loc>
     <lastmod>2026-11-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://rankertoolai.com/review/headshotpro/</loc>
-    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -257,26 +227,8 @@
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://rankertoolai.com/review/livechat/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
     <loc>https://rankertoolai.com/review/llm-pulse/</loc>
     <lastmod>2026-11-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://rankertoolai.com/review/macaws/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://rankertoolai.com/review/magiclight/</loc>
-    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -293,25 +245,7 @@
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://rankertoolai.com/review/murf-ai/</loc>
-    <lastmod>2026-11-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
     <loc>https://rankertoolai.com/review/nordpass/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://rankertoolai.com/review/notion/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://rankertoolai.com/review/omnisend/</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -335,20 +269,8 @@
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://rankertoolai.com/review/postsnag/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
     <loc>https://rankertoolai.com/review/reditus/</loc>
     <lastmod>2026-10-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://rankertoolai.com/review/rytr/</loc>
-    <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -389,12 +311,6 @@
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://rankertoolai.com/review/tunee-ai/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
     <loc>https://rankertoolai.com/review/viralityai/</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
@@ -421,36 +337,6 @@
 
   <!-- Compare Pages -->
   <url>
-    <loc>https://rankertoolai.com/compare/adcreative-ai-vs-canva/</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
-  <url>
-    <loc>https://rankertoolai.com/compare/airops-vs-copy-ai/</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
-  <url>
-    <loc>https://rankertoolai.com/compare/anyword-vs-copy-ai/</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
-  <url>
-    <loc>https://rankertoolai.com/compare/beehiiv-vs-substack/</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
-  <url>
-    <loc>https://rankertoolai.com/compare/chatgpt-vs-copilot/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
-  <url>
     <loc>https://rankertoolai.com/compare/chatgpt-vs-gemini/</loc>
     <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
@@ -465,12 +351,6 @@
   <url>
     <loc>https://rankertoolai.com/compare/context-dev-vs-firecrawl/</loc>
     <lastmod>2026-11-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
-  <url>
-    <loc>https://rankertoolai.com/compare/descript-vs-riverside/</loc>
-    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
@@ -505,49 +385,7 @@
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://rankertoolai.com/compare/hubspot-vs-salesforce/</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
-  <url>
-    <loc>https://rankertoolai.com/compare/jasper-vs-copy-ai/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
-  <url>
     <loc>https://rankertoolai.com/compare/julius-ai-vs-chatgpt/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
-  <url>
-    <loc>https://rankertoolai.com/compare/julius-ai-vs-excel/</loc>
-    <lastmod>2026-11-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
-  <url>
-    <loc>https://rankertoolai.com/compare/mangools-vs-ahrefs/</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
-  <url>
-    <loc>https://rankertoolai.com/compare/mangools-vs-semrush/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
-  <url>
-    <loc>https://rankertoolai.com/compare/nordpass-vs-bitwarden/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
-  <url>
-    <loc>https://rankertoolai.com/compare/notion-vs-chatgpt/</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
@@ -555,24 +393,6 @@
   <url>
     <loc>https://rankertoolai.com/compare/pictory-vs-invideo/</loc>
     <lastmod>2026-11-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
-  <url>
-    <loc>https://rankertoolai.com/compare/rytr-vs-jasper/</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
-  <url>
-    <loc>https://rankertoolai.com/compare/se-ranking-vs-ahrefs/</loc>
-    <lastmod>2026-11-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
-  <url>
-    <loc>https://rankertoolai.com/compare/se-ranking-vs-mangools/</loc>
-    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
@@ -589,49 +409,13 @@
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://rankertoolai.com/compare/surfer-seo-vs-frase/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
-  <url>
-    <loc>https://rankertoolai.com/compare/surfer-seo-vs-semrush/</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
-  <url>
     <loc>https://rankertoolai.com/compare/wispr-flow-vs-superwhisper/</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
-  <url>
-    <loc>https://rankertoolai.com/compare/writesonic-vs-copy-ai/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
 
   <!-- Alternatives Pages -->
-  <url>
-    <loc>https://rankertoolai.com/alternatives/airops/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://rankertoolai.com/alternatives/clearscope/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://rankertoolai.com/alternatives/copy-ai/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
   <url>
     <loc>https://rankertoolai.com/alternatives/gearup-booster/</loc>
     <lastmod>2026-11-05</lastmod>
@@ -641,12 +425,6 @@
   <url>
     <loc>https://rankertoolai.com/alternatives/speechify/</loc>
     <lastmod>2026-11-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://rankertoolai.com/alternatives/hubspot/</loc>
-    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -681,12 +459,6 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://rankertoolai.com/alternatives/surfer-seo/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
     <loc>https://rankertoolai.com/alternatives/synthesia/</loc>
     <lastmod>2026-11-07</lastmod>
     <changefreq>monthly</changefreq>
@@ -694,12 +466,6 @@
   </url>
   <url>
     <loc>https://rankertoolai.com/alternatives/wispr-flow/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://rankertoolai.com/alternatives/writesonic/</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -831,20 +597,8 @@
     <priority>0.72</priority>
   </url>
   <url>
-    <loc>https://rankertoolai.com/blog/how-to-use-se-ranking/</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.72</priority>
-  </url>
-  <url>
     <loc>https://rankertoolai.com/blog/how-to-use-speechify/</loc>
     <lastmod>2026-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.72</priority>
-  </url>
-  <url>
-    <loc>https://rankertoolai.com/blog/is-speechify-worth-it/</loc>
-    <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.72</priority>
   </url>
@@ -886,12 +640,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
   </url>
-  <url>
-    <loc>https://rankertoolai.com/coupons/writesonic/</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.88</priority>
-  </url>
 
   <!-- Tools Pages -->
 
@@ -915,28 +663,10 @@
     <priority>0.86</priority>
   </url>
   <url>
-    <loc>https://rankertoolai.com/pricing/iubenda/</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.86</priority>
-  </url>
-  <url>
     <loc>https://rankertoolai.com/pricing/mangools/</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.86</priority>
-  </url>
-  <url>
-    <loc>https://rankertoolai.com/compare/jasper-vs-writesonic/</loc>
-    <lastmod>2026-10-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://rankertoolai.com/compare/surfer-seo-vs-clearscope/</loc>
-    <lastmod>2026-10-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://rankertoolai.com/deals/wispr-flow-granola-switch/</loc>
@@ -1247,12 +977,6 @@
   <url>
     <loc>https://rankertoolai.com/blog/best-free-ai-image-generators/</loc>
     <lastmod>2026-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://rankertoolai.com/review/runway/</loc>
-    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
